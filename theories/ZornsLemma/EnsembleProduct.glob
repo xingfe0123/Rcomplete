@@ -1,0 +1,276 @@
+DIGEST 1ed3221f17c392cc1f7fbb18062fc9af
+FZornsLemma.EnsembleProduct
+R31:47 ZornsLemma.EnsemblesImplicit <> <> lib
+R49:60 ZornsLemma.InverseImage <> <> lib
+def 75:89 <> EnsembleProduct
+binder 92:92 <> X:1
+binder 94:94 <> Y:2
+R112:119 Coq.Sets.Ensembles <> Ensemble def
+R121:121 ZornsLemma.EnsembleProduct <> X:1 var
+binder 107:108 <> SX:3
+R130:137 Coq.Sets.Ensembles <> Ensemble def
+R139:139 ZornsLemma.EnsembleProduct <> Y:2 var
+binder 125:126 <> SY:4
+R144:151 Coq.Sets.Ensembles <> Ensemble def
+R155:157 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R154:154 ZornsLemma.EnsembleProduct <> X:1 var
+R158:158 ZornsLemma.EnsembleProduct <> Y:2 var
+binder 170:170 <> p:5
+R188:191 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R175:176 Coq.Sets.Ensembles <> In def
+R182:184 Coq.Init.Datatypes <> fst def
+R186:186 ZornsLemma.EnsembleProduct <> p:5 var
+R178:179 ZornsLemma.EnsembleProduct <> SX:3 var
+R192:193 Coq.Sets.Ensembles <> In def
+R199:201 Coq.Init.Datatypes <> snd def
+R203:203 ZornsLemma.EnsembleProduct <> p:5 var
+R195:196 ZornsLemma.EnsembleProduct <> SY:4 var
+prf 214:233 <> EnsembleProduct_Full
+binder 236:236 <> X:6
+binder 238:238 <> Y:7
+R290:292 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R253:267 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R269:269 ZornsLemma.EnsembleProduct <> X:6 var
+R271:271 ZornsLemma.EnsembleProduct <> Y:7 var
+R273:280 Coq.Sets.Ensembles <> Full_set ind
+R282:289 Coq.Sets.Ensembles <> Full_set ind
+R293:300 Coq.Sets.Ensembles <> Full_set ind
+R318:341 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R318:341 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 442:464 <> EnsembleProduct_Empty_l
+binder 467:467 <> X:8
+binder 469:469 <> Y:9
+binder 479:479 <> V:10
+R517:519 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R486:500 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R502:502 ZornsLemma.EnsembleProduct <> X:8 var
+R504:504 ZornsLemma.EnsembleProduct <> Y:9 var
+R506:514 Coq.Sets.Ensembles <> Empty_set ind
+R516:516 ZornsLemma.EnsembleProduct <> V:10 var
+R520:528 Coq.Sets.Ensembles <> Empty_set ind
+R546:569 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R546:569 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 660:682 <> EnsembleProduct_Empty_r
+binder 685:685 <> X:11
+binder 687:687 <> Y:12
+binder 697:697 <> U:13
+R735:737 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R704:718 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R720:720 ZornsLemma.EnsembleProduct <> X:11 var
+R722:722 ZornsLemma.EnsembleProduct <> Y:12 var
+R724:724 ZornsLemma.EnsembleProduct <> U:13 var
+R726:734 Coq.Sets.Ensembles <> Empty_set ind
+R738:746 Coq.Sets.Ensembles <> Empty_set ind
+R764:787 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R764:787 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 879:899 <> EnsembleProduct_Union
+binder 902:902 <> X:14
+binder 904:904 <> Y:15
+R925:932 Coq.Sets.Ensembles <> Ensemble def
+R934:934 ZornsLemma.EnsembleProduct <> X:14 var
+binder 917:918 <> U0:16
+binder 920:921 <> U1:17
+R946:953 Coq.Sets.Ensembles <> Ensemble def
+R955:955 ZornsLemma.EnsembleProduct <> Y:15 var
+binder 938:939 <> V0:18
+binder 941:942 <> V1:19
+R962:969 Coq.Sets.Ensembles <> Included def
+R1039:1053 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1070:1074 Coq.Sets.Ensembles <> Union ind
+R1079:1080 ZornsLemma.EnsembleProduct <> V1:19 var
+R1076:1077 ZornsLemma.EnsembleProduct <> V0:18 var
+R1056:1060 Coq.Sets.Ensembles <> Union ind
+R1065:1066 ZornsLemma.EnsembleProduct <> U1:17 var
+R1062:1063 ZornsLemma.EnsembleProduct <> U0:16 var
+R972:976 Coq.Sets.Ensembles <> Union ind
+R1003:1017 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1022:1023 ZornsLemma.EnsembleProduct <> V1:19 var
+R1019:1020 ZornsLemma.EnsembleProduct <> U1:17 var
+R979:993 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R998:999 ZornsLemma.EnsembleProduct <> V0:18 var
+R995:996 ZornsLemma.EnsembleProduct <> U0:16 var
+prf 1222:1249 <> EnsembleProduct_Intersection
+binder 1252:1252 <> X:20
+binder 1254:1254 <> Y:21
+R1275:1282 Coq.Sets.Ensembles <> Ensemble def
+R1284:1284 ZornsLemma.EnsembleProduct <> X:20 var
+binder 1267:1268 <> U0:22
+binder 1270:1271 <> U1:23
+R1296:1303 Coq.Sets.Ensembles <> Ensemble def
+R1305:1305 ZornsLemma.EnsembleProduct <> Y:21 var
+binder 1288:1289 <> V0:24
+binder 1291:1292 <> V1:25
+R1372:1376 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1312:1323 Coq.Sets.Ensembles <> Intersection ind
+R1350:1364 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1369:1370 ZornsLemma.EnsembleProduct <> V1:25 var
+R1366:1367 ZornsLemma.EnsembleProduct <> U1:23 var
+R1326:1340 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1345:1346 ZornsLemma.EnsembleProduct <> V0:24 var
+R1342:1343 ZornsLemma.EnsembleProduct <> U0:22 var
+R1377:1391 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1415:1426 Coq.Sets.Ensembles <> Intersection ind
+R1431:1432 ZornsLemma.EnsembleProduct <> V1:25 var
+R1428:1429 ZornsLemma.EnsembleProduct <> V0:24 var
+R1394:1405 Coq.Sets.Ensembles <> Intersection ind
+R1410:1411 ZornsLemma.EnsembleProduct <> U1:23 var
+R1407:1408 ZornsLemma.EnsembleProduct <> U0:22 var
+R1451:1474 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1451:1474 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1703:1719 <> inverse_image_fst
+binder 1722:1722 <> X:26
+binder 1724:1724 <> Y:27
+R1739:1746 Coq.Sets.Ensembles <> Ensemble def
+R1748:1748 ZornsLemma.EnsembleProduct <> X:26 var
+binder 1735:1735 <> U:28
+R1774:1776 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1755:1767 ZornsLemma.InverseImage <> inverse_image def
+R1773:1773 ZornsLemma.EnsembleProduct <> U:28 var
+R1769:1771 Coq.Init.Datatypes <> fst def
+R1777:1791 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R1797:1804 Coq.Sets.Ensembles <> Full_set ind
+R1806:1806 ZornsLemma.EnsembleProduct <> Y:27 var
+R1793:1793 ZornsLemma.EnsembleProduct <> U:28 var
+R1825:1848 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1825:1848 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1960:1976 <> inverse_image_snd
+binder 1979:1979 <> X:29
+binder 1981:1981 <> Y:30
+R1996:2003 Coq.Sets.Ensembles <> Ensemble def
+R2005:2005 ZornsLemma.EnsembleProduct <> Y:30 var
+binder 1992:1992 <> V:31
+R2031:2033 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2012:2024 ZornsLemma.InverseImage <> inverse_image def
+R2030:2030 ZornsLemma.EnsembleProduct <> V:31 var
+R2026:2028 Coq.Init.Datatypes <> snd def
+R2034:2048 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R2064:2064 ZornsLemma.EnsembleProduct <> V:31 var
+R2052:2059 Coq.Sets.Ensembles <> Full_set ind
+R2061:2061 ZornsLemma.EnsembleProduct <> X:29 var
+R2082:2105 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2082:2105 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 2217:2236 <> EnsembleProduct_proj
+binder 2239:2239 <> X:32
+binder 2241:2241 <> Y:33
+R2256:2263 Coq.Sets.Ensembles <> Ensemble def
+R2265:2265 ZornsLemma.EnsembleProduct <> X:32 var
+binder 2252:2252 <> U:34
+R2273:2280 Coq.Sets.Ensembles <> Ensemble def
+R2282:2282 ZornsLemma.EnsembleProduct <> Y:33 var
+binder 2269:2269 <> V:35
+R2308:2310 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2289:2303 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R2307:2307 ZornsLemma.EnsembleProduct <> V:35 var
+R2305:2305 ZornsLemma.EnsembleProduct <> U:34 var
+R2311:2322 Coq.Sets.Ensembles <> Intersection ind
+R2384:2396 ZornsLemma.InverseImage <> inverse_image def
+R2402:2402 ZornsLemma.EnsembleProduct <> V:35 var
+R2398:2400 Coq.Init.Datatypes <> snd def
+R2325:2337 ZornsLemma.InverseImage <> inverse_image def
+R2343:2343 ZornsLemma.EnsembleProduct <> U:34 var
+R2339:2341 Coq.Init.Datatypes <> fst def
+R2421:2444 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2421:2444 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 2621:2644 <> EnsembleProduct_Included
+binder 2647:2647 <> X:36
+binder 2649:2649 <> Y:37
+R2670:2677 Coq.Sets.Ensembles <> Ensemble def
+R2679:2679 ZornsLemma.EnsembleProduct <> X:36 var
+binder 2662:2663 <> U0:38
+binder 2665:2666 <> U1:39
+R2691:2698 Coq.Sets.Ensembles <> Ensemble def
+R2700:2700 ZornsLemma.EnsembleProduct <> Y:37 var
+binder 2683:2684 <> V0:40
+binder 2686:2687 <> V1:41
+R2721:2724 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2707:2714 Coq.Sets.Ensembles <> Included def
+R2719:2720 ZornsLemma.EnsembleProduct <> U1:39 var
+R2716:2717 ZornsLemma.EnsembleProduct <> U0:38 var
+R2739:2744 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2725:2732 Coq.Sets.Ensembles <> Included def
+R2737:2738 ZornsLemma.EnsembleProduct <> V1:41 var
+R2734:2735 ZornsLemma.EnsembleProduct <> V0:40 var
+R2745:2752 Coq.Sets.Ensembles <> Included def
+R2779:2793 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R2798:2799 ZornsLemma.EnsembleProduct <> V1:41 var
+R2795:2796 ZornsLemma.EnsembleProduct <> U1:39 var
+R2755:2769 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R2774:2775 ZornsLemma.EnsembleProduct <> V0:40 var
+R2771:2772 ZornsLemma.EnsembleProduct <> U0:38 var
+prf 2887:2912 <> EnsembleProduct_Complement
+binder 2915:2915 <> X:42
+binder 2917:2917 <> Y:43
+R2934:2941 Coq.Sets.Ensembles <> Ensemble def
+R2943:2943 ZornsLemma.EnsembleProduct <> X:42 var
+binder 2930:2930 <> U:44
+R2951:2958 Coq.Sets.Ensembles <> Ensemble def
+R2960:2960 ZornsLemma.EnsembleProduct <> Y:43 var
+binder 2947:2947 <> V:45
+R2999:3003 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2967:2976 Coq.Sets.Ensembles <> Complement def
+R2979:2993 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R2997:2997 ZornsLemma.EnsembleProduct <> V:45 var
+R2995:2995 ZornsLemma.EnsembleProduct <> U:44 var
+R3004:3008 Coq.Sets.Ensembles <> Union ind
+R3061:3075 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R3092:3099 Coq.Sets.Ensembles <> Full_set ind
+R3078:3087 Coq.Sets.Ensembles <> Complement def
+R3089:3089 ZornsLemma.EnsembleProduct <> U:44 var
+R3011:3025 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R3037:3046 Coq.Sets.Ensembles <> Complement def
+R3048:3048 ZornsLemma.EnsembleProduct <> V:45 var
+R3027:3034 Coq.Sets.Ensembles <> Full_set ind
+R3118:3141 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3118:3141 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3198:3207 Coq.Logic.Classical_Prop <> not_and_or thm
+R3198:3207 Coq.Logic.Classical_Prop <> not_and_or thm
+prf 3463:3488 <> EnsembleProduct_Union_dist
+binder 3491:3491 <> X:46
+binder 3493:3493 <> Y:47
+R3510:3517 Coq.Sets.Ensembles <> Ensemble def
+R3519:3519 ZornsLemma.EnsembleProduct <> X:46 var
+binder 3506:3506 <> U:48
+R3531:3538 Coq.Sets.Ensembles <> Ensemble def
+R3540:3540 ZornsLemma.EnsembleProduct <> Y:47 var
+binder 3523:3524 <> V0:49
+binder 3526:3527 <> V1:50
+R3598:3602 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3547:3551 Coq.Sets.Ensembles <> Union ind
+R3577:3591 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R3595:3596 ZornsLemma.EnsembleProduct <> V1:50 var
+R3593:3593 ZornsLemma.EnsembleProduct <> U:48 var
+R3554:3568 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R3572:3573 ZornsLemma.EnsembleProduct <> V0:49 var
+R3570:3570 ZornsLemma.EnsembleProduct <> U:48 var
+R3603:3617 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R3622:3626 Coq.Sets.Ensembles <> Union ind
+R3631:3632 ZornsLemma.EnsembleProduct <> V1:50 var
+R3628:3629 ZornsLemma.EnsembleProduct <> V0:49 var
+R3619:3619 ZornsLemma.EnsembleProduct <> U:48 var
+R3651:3674 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3651:3674 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 3970:4002 <> EnsembleProduct_Intersection_dist
+binder 4005:4005 <> X:51
+binder 4007:4007 <> Y:52
+R4024:4031 Coq.Sets.Ensembles <> Ensemble def
+R4033:4033 ZornsLemma.EnsembleProduct <> X:51 var
+binder 4020:4020 <> U:53
+R4045:4052 Coq.Sets.Ensembles <> Ensemble def
+R4054:4054 ZornsLemma.EnsembleProduct <> Y:52 var
+binder 4037:4038 <> V0:54
+binder 4040:4041 <> V1:55
+R4119:4123 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4061:4072 Coq.Sets.Ensembles <> Intersection ind
+R4098:4112 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R4116:4117 ZornsLemma.EnsembleProduct <> V1:55 var
+R4114:4114 ZornsLemma.EnsembleProduct <> U:53 var
+R4075:4089 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R4093:4094 ZornsLemma.EnsembleProduct <> V0:54 var
+R4091:4091 ZornsLemma.EnsembleProduct <> U:53 var
+R4124:4138 ZornsLemma.EnsembleProduct <> EnsembleProduct def
+R4143:4154 Coq.Sets.Ensembles <> Intersection ind
+R4159:4160 ZornsLemma.EnsembleProduct <> V1:55 var
+R4156:4157 ZornsLemma.EnsembleProduct <> V0:54 var
+R4140:4140 ZornsLemma.EnsembleProduct <> U:53 var
+R4179:4202 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4179:4202 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax

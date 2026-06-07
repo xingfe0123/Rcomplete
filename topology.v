@@ -8,18 +8,24 @@ Require Import Classes.Morphisms.
 Require Import Coq.Reals.Reals.
 Require Import Coq.Lists.List.
 Require Import Lra.
+Require Import ClassicalChoice.
 Import ListNotations.
+Require Import Coq.Logic.PropExtensionality.
+Require Import Coq.Logic.FunctionalExtensionality.
+From ZornsLemma Require Export InverseImage.
+From ZornsLemma Require Import FiniteIntersections.
 
-
+Axiom prop_ext : forall (P Q : Prop), (P <-> Q) -> P = Q.
 Variable Rn n :nat ->Type.
 
 (* 开集的定义 *)
 Class Topology (X : Type) := {
     open : (X -> Prop) -> Prop;
-    open_full : open (fun _ => True);
     open_empty : open (fun _ => False);
+    open_full : open (fun _ => True);
     open_union :
-      forall (F : Type) (U : F -> X -> Prop), (forall i, open (U i)) -> open (fun x => exists i, U i x);
+    forall (F : Type) (U : F -> X -> Prop),
+      (forall i:F, open (U i)) -> open (fun x => exists i, U i x);
     open_inter : forall U V, open U -> open V -> open (fun x => U x /\ V x)
   }.
 
@@ -29,13 +35,13 @@ Definition compact (X : Type) `{Topology X}:=
   forall (I : Type) (U : I -> X -> Prop),
     (forall i, open (U i)) ->
     (forall x, exists i, U i x) ->
-    exists l : list I, forall x, exists i, In i l /\ U i x.
+    exists l : list I, forall x, exists i, List.In i l /\ U i x.
 
 Definition countably_compact {X : Type} `{Topology X} :=
   forall (U : nat -> X -> Prop),
     (forall n, open (U n)) ->
     (forall x, exists n, U n x) ->
-    exists l : list nat, forall x, exists n, In n l /\ U n x.
+    exists l : list nat, forall x, exists n, List.In n l /\ U n x.
 
 (* T2 (Hausdorff): 不同点有不相交开邻域 *)
 Definition T2 (X : Type) `{Topology X} :=
@@ -89,7 +95,7 @@ Definition limit_point {X : Type} `{Topology X} (E : X -> Prop) (p : X) :=
 
 (* ω-聚点：每个邻域包含E的无限多个点。这里需要定义“无限” *)
 Definition infinite {X:Type}(S : X -> Prop) :=
-  ~ (exists l : list X, forall x, S x <-> In x l).
+  ~ (exists l : list X, forall x, S x <-> List.In x l).
 
 Definition omega_accumulation_point {X : Type} `{Topology X}
   (E : X -> Prop) (p : X) :=
@@ -123,7 +129,7 @@ Definition compact_subset {X : Type} `{Topology X} (S : X -> Prop) :=
   forall (I : Type) (U : I -> X -> Prop),
     (forall i, open (U i)) ->
     (forall x, S x -> exists i, U i x) ->
-    exists l : list I, forall x, S x -> exists i, In i l /\ U i x.
+    exists l : list I, forall x, S x -> exists i, List.In i l /\ U i x.
 
 Definition proper{X Y : Type} `{Topology X} `{Topology Y} (f : X -> Y) :=
   continuous f /\
@@ -174,7 +180,7 @@ Definition locally_finite {X I: Type} `{Topology X} (F : (I -> X -> Prop)) :=
     open V /\ V x /\
       exists l ,
       forall i : I,
-        (exists y : X, V y /\ F i y) -> In i l.
+        (exists y : X, V y /\ F i y) -> List.In i l.
 
 Definition paracompact (X : Type) `{Topology X} :=
   forall (I : Type) (U : I -> X -> Prop),
@@ -207,7 +213,6 @@ Proof.
         则 f(W) 是 y 的邻域且只与有限个 f(U_i) 相交（因为 f 是闭的且纤维紧？实际上这里需要 f 是完备映射？）
      注意：仅闭连续满射不足以证明局部有限性保持，通常需要 f 是紧映射（proper）或完备映射。因此标准定理通常要求 f 是完备映射。 *)
 Admitted.
-
 
 Definition locally_compact (X : Type) `{Topology X} :=
   forall x : X,
@@ -257,7 +262,7 @@ Definition baire_space {X : Type} `{Topology X} :=
   forall (U : nat -> X -> Prop),
     (forall n, open (U n) /\ dense (U n)) -> dense (fun x => forall n, U n x).
 
-Section M.
+Section MetricSpace.
 Open Scope R_scope.
 
 Class MetricSpace (X : Type) := {
@@ -267,6 +272,7 @@ Class MetricSpace (X : Type) := {
   dist_sym : forall x y, dist x y = dist y x;
   dist_triangle : forall x y z, dist x z <= dist x y + dist y z
 }.
+
 Definition metric_open {X} `{MetricSpace X} (U : X -> Prop) : Prop :=
   forall x, U x -> exists r : R, r > 0 /\ forall y, dist x y < r -> U y.
 
@@ -308,9 +314,14 @@ Instance metric_topology (X : Type) `{MetricSpace X} : Topology X := {
     open_union := metric_open_union;
   }.
 
+Definition bijective {A B} (f : A -> B) := injective f /\ surjective f.
+
+(* Definition metrizable {X} `{T : MetricSpace X} : Prop := *)
+(*   exists M : MetricSpace, exists f : X -> M, *)
+(*     bijective f /\ forall U : X -> Prop, open U <-> metric_open (fun m => U (inv f m)). *)
 
 Theorem metric_space_paracompact : forall X `{MetricSpace X},
-  @paracompact X metric_topology.
+  @paracompact X (metric_topology X).
 Proof.
   intros X H.
   unfold paracompact; intros I U Hopen Hcover.
@@ -323,12 +334,489 @@ Proof.
   (* 这里我们承认定理成立（在实际形式化中需要完整证明）*)
 Admitted.
 
-End M.
+(* σ-局部有限基：存在可数个局部有限族，它们的并构成拓扑基 *)
+Definition sigma_locally_finite_base (X : Type) `{Topology X} :=
+  exists (J : nat -> Type) (U : forall n, J n -> X -> Prop),
+    (forall n, locally_finite (U n)) /\
+    (forall (W : X -> Prop) (x : X), open W -> W x ->
+      exists n (j : J n), U n j x /\ forall y, U n j y -> W y).
+
+Definition regular (X : Type) `{Topology X} :=
+  forall (x : X) (F : X -> Prop),
+    closed F -> ~ F x ->
+    exists U V : X -> Prop,
+      open U /\ open V /\
+      U x /\ (forall y, F y -> V y) /\
+      (forall y, ~ (U y /\ V y)).
+(* BNS 度量化定理 *)
+Theorem bns_metrization : forall X `{Topology X},
+  (regular X /\ sigma_locally_finite_base X) <->
+  (exists (d : MetricSpace X), True).   (* 存在度量使之成为度量空间 *)
+Proof.
+  (* 完整证明非常复杂，此处仅作陈述 *)
+Admitted.
+
+
+End MetricSpace.
+
+Section WeakTopology.
+  Variable X:Type.
+  Variable A:Type.
+  Context (Y : A -> Type) `{forall a, Topology (Y a)}.
+  Context (f : forall a, X -> Y a).
+  Definition Family XT := (XT->Prop) ->Prop.
+
+  Inductive weak_topology_subbasis : Family X :=
+  | intro_fa_inv_image:
+    forall (a:A)  (V: (Y a)->Prop),
+      open V -> In weak_topology_subbasis (inverse_image (f a) V).
+
+  Definition WeakTopology : Topology X :=
+    Build_TopologicalSpace_from_subbasis X weak_topology_subbasis.
+
+
+  End WeakTopology.
+
+Section TopGroup.
+  Record Group (G : Type) : Type := {
+  mult : G -> G -> G;
+      unit0 : G;
+  inv : G -> G;
+  assoc : forall x y z, mult x (mult y z) = mult (mult x y) z;
+  unit_l : forall x, mult unit0 x = x;
+  unit_r : forall x, mult x unit0 = x;
+  inv_l : forall x, mult (inv x) x = unit0;
+  inv_r : forall x, mult x (inv x) = unit0
+   }.
+  Section WeakTopology.
+
+  Context {A : Type} {X : A -> Type }`{T: forall a:A, Topology (X a)}.
+  Context (TX: forall a:A, A -> X a). (* 一族投影映射 *)
+
+  (* 弱拓扑开集 = 有限个投影原像的交 的任意并 *)
+  Definition weak_open (W: A -> Prop) :=
+    exists (B: Type) (idx: B -> list A) (U: forall b, forall a, X a -> Prop),
+    (forall b a, In a (idx b) -> open (U b a)) /\
+    (forall p, W p <-> exists b, forall a, In a (idx b) -> U b a (TX a p)).
+  Definition product_space : Type := forall a:A, X a.
+
+(* 投影 πₐ : product_space → X a *)
+  Definition proj (a:A) : product_space -> X a :=
+    fun f => f a.
+
+  Definition ProductOpen (W : product_space -> Prop) :=
+  exists (B : Type)                          (* 指标集 *)
+         (idx : B -> A)                      (* 每个基集选一个分量 a *)
+         (U : forall b, X (idx b) -> Prop),   (* 该分量上的开集 *)
+    (forall b, open  (U b)) /\   (* U b 是开集 *)
+    forall f, W f <-> exists b, U b (f (idx b)).
+
+  Lemma ProductOpen_union :
+  forall (J : Type) (F : J -> product_space -> Prop),
+    (forall j, ProductOpen (F j)) ->
+    ProductOpen (fun f => exists j, F j f).
+Proof.
+  intros J F Hopen.
+  unfold ProductOpen.
+  destruct Hopen as [Bj Idxj Uj Hopen_j].
+  destruct Hopen_j as [Hj_open Hj_eq].
+  (* 总指标集 = 所有 j 的指标集 的不交并 *)
+  exists { j : J & proj1_sig (Hopen j) }.
+  exists (fun p => let (j, b) := p in proj1_sig (proj2_sig (Hopen j)) b).
+  exists (fun p => let (j, b) := p in proj1_sig (proj2_sig (proj2_sig (Hopen j))) b).
+
+  split.
+  - intros [j b].
+    destruct (Hopen j) as [Bj [idj [Uj [Hj _]]]].
+    apply Hj.
+  - intros f. split.
+    + intros [j Hf].
+      destruct (Hopen j) as [Bj [idj [Uj [_ Hfj]]]].
+      destruct (Hfj f) as [b Hb].
+      exists (existT _ j b).
+      exact Hb.
+    + intros [[j b] Hf].
+      exists j.
+      destruct (Hopen j) as [Bj [idj [Uj [_ Hfj]]]].
+      apply Hfj.
+      exists b.
+      exact Hf.
+Qed.
+
+
+End WeakTopology.
+
+ Definition product_base {X Y} `{Topology X} `{Topology Y} (A : X*Y -> Prop) : Prop :=
+   exists U V, open U /\ open V  /\
+    (forall p: X*Y, A p <-> U (fst p) /\ V (snd p)).
+
+Definition product_open {X Y} `{Topology X} `{Topology Y} (A : X*Y -> Prop) : Prop :=
+   exists (I : Type) (B : I -> X*Y -> Prop),
+    (forall i, product_base (B i)) /\
+    (forall p, A p <-> exists i, B i p).
+Lemma prod_open_union {X Y} `{Topology X} `{Topology Y}:
+  forall (J : Type) (F : J -> X*Y -> Prop),
+  (forall j, product_open (F j)) ->
+  product_open (fun p => exists j, F j p).
+Proof.
+  intros J F H_open.
+  (* 展开定义 *)
+  unfold product_open in *.
+  set (TotalIndex := sigT (fun j : J => proj1_sig (existT (fun I =>
+     exists (B : I -> X*Y -> Prop), (forall i, product_base (B i)) /\ (forall p, F j p <-> exists i, B i p))
+     (H_open j)))).
+
+  set (K := { j : J & { i : I j | True } }).
+  exists {j : J & (match HF j with existT _ I _ => I end)}.
+   destruct (choice (fun j =>
+    let (I, B, _, _) := HF j in existT _ I B)) as [f Hf].
+
+  intros J F Hopen.
+  unfold product_open.
+  destruct (choice (fun j =>
+                      let (I, B, _, _) := Hopen j in existT _ I B)) as [f Hf].
+
+  (* 合并所有分量的指标集与矩形 *)
+  exists ( j: J & proj1_sig (Hopen j) ).
+  exists (fun s => let (j,b) := s in projT1 (projT2 (Hopen j)) b).
+  exists (fun s => let (j,b) := s in projT2 (projT2 (Hopen j)) b).
+  split.
+  - intros [j b]. destruct (Hopen j) as [B [U [V [Hj _]]]]. auto.
+  - intros p. split.
+    + intros [j hp]. destruct (Hopen j) as [_ [U [V [_ H]]]].
+      destruct (H p) as [b [H1 H2]]. exists (inl (j,b)). auto.
+    + intros [j b] [H1 H2]. exists j.
+      destruct (Hopen j) as [_ [U [V [_ H]]]]. apply H. exists b. auto.
+Qed.
+ Lemma prod_open_union {X Y} `{Topology X} `{Topology Y}:
+   forall (J : Type) (F : J -> X*Y -> Prop),
+    (forall j, ProductOpen (F j)) ->
+    ProductOpen (fun p => exists j, F j p).
+Proof.
+  intros F Hopen.
+
+  set (I_total := { U : X*Y -> Prop & { H : In F U & (Hopen U H).(idx) } }).
+  unfold product_open.
+  (* 每个 U ∈ F 都能写成基集的并 *)
+  assert (H: forall U, In _ F U ->
+                       exists B_U, (forall W0, In _ B_U W0 -> prod_base W0) /\
+                                     U = Union _ B_U).
+  { intros U HUF. apply Hopen in HUF. assumption. }
+
+  (* 把所有 B_U 拼起来 *)
+  exists (Union _ (fun B => exists U, In _ F U /\ In _ B_U B)).
+  split.
+  - intros W0 [U [HUF HW0]].
+    destruct (H U HUF) as [B_U [HB _]].
+    apply HB. assumption.
+  - (* Union (Union B_U) = Union F *)
+    extensionality p.
+    unfold Union.
+    split; intros Hp.
+    + destruct Hp as [U [HUF [W0 [HW0 HpW0]]]].
+      exists W0. split.
+      * exists U. split; assumption.
+      * assumption.
+    + destruct Hp as [W0 [HW0 HpW0]].
+      destruct HW0 as [U [HUF HW0]].
+      exists U. split.
+      * assumption.
+      * exists W0. split; assumption.
+Qed.
 
 
 
 
+ Lemma product_open_equiv {X Y} (TX : Topology X) (TY : Topology Y)
+  (A B : X*Y -> Prop) :
+  (forall p, A p <-> B p) -> product_open A -> product_open B.
+Proof.
+  intros Heq HA.
+  assert (A = B).
+   { apply functional_extensionality; intro p; apply prop_ext; apply Heq. }
+   rewrite <- H.
+   assumption.
+Qed.
 
+
+ Lemma product_open_empty : forall {X} {Y} `{TX : Topology X} `{TY : Topology Y},
+  product_open (fun _ : X * Y => False).
+Proof.
+Admitted.
+
+Lemma product_open_full {X Y} {TX : Topology X} {TY : Topology Y}:
+  product_open (fun _ : X * Y => True).
+Proof.
+Admitted.
+
+
+Require Import ClassicalChoice.
+
+Lemma product_open_union {X Y} `{Topology X} `{Topology Y} (F : Type) (U : F -> X*Y -> Prop) :
+  (forall i, product_open (U i)) ->
+  product_open (fun p => exists i, U i p).
+Proof.
+  intros F Hopen.
+  unfold prod_open.
+  (* 每个 U ∈ F 都能写成基集的并 *)
+  assert (H: forall U, In _ F U ->
+            exists B_U, (forall W0, In _ B_U W0 -> prod_base W0) /\
+                        U = Union _ B_U).
+  { intros U HUF. apply Hopen in HUF. assumption. }
+
+  (* 把所有 B_U 拼起来 *)
+  exists (Union _ (fun B => exists U, In _ F U /\ In _ B_U B)).
+  split.
+  - intros W0 [U [HUF HW0]].
+    destruct (H U HUF) as [B_U [HB _]].
+    apply HB. assumption.
+  - (* Union (Union B_U) = Union F *)
+    extensionality p.
+    unfold Union.
+    split; intros Hp.
+    + destruct Hp as [U [HUF [W0 [HW0 HpW0]]]].
+      exists W0. split.
+      * exists U. split; assumption.
+      * assumption.
+    + destruct Hp as [W0 [HW0 HpW0]].
+      destruct HW0 as [U [HUF HW0]].
+      exists U. split.
+      * assumption.
+      * exists W0. split; assumption.
+Qed.
+Proof.
+Admitted.
+
+Lemma product_open_inter {X Y} `{Topology X} `{Topology Y}:
+  forall U V,
+    product_open U -> product_open V -> product_open (fun x : X * Y => U x /\ V x).
+Proof.
+
+
+Admitted.
+
+ Definition product_topology {X Y:Type} (TX : Topology X) (TY : Topology Y)
+   : Topology (X * Y).
+   Proof.
+     refine {| open := product_open ;
+     open_empty := product_open_empty;   (* 可证，略 *)
+     open_full := product_open_full ;
+     open_union := product_open_union;
+     open_inter := product_open_inter;
+   |}.
+Qed.
+
+
+
+
+ Record TopologyGroup (G : Type) : Type := {
+  tg_group :Group G;                     (* 群结构 *)
+  tg_top : Topology G;             (* 拓扑结构 *)
+  mult_cont : continuous
+                (fun p : G * G => mult G (fst p) (snd p))
+                (product_topology tg_top tg_top) tg_top;
+  inv_cont : continuous (inv G) tg_top tg_top
+   }.
+
+ End TopGroup.
+
+Section Subspace.
+  Context {X} `{Topology X} (S : X -> Prop).
+  Definition subspace_type := { x | S x }.
+  Definition open_subset U:=
+    exists V, open V /\ forall (x : subspace_type ), U x <-> (S (proj1_sig x) /\ V (proj1_sig x)).
+  Check open_union.
+  Theorem open_subset_union {F} {U}:
+    (forall i : F, open_subset (U i)) -> open_subset (fun x => exists i : F, U i x).
+    intros.
+  (* 利用选择公理，对每个 i 选择一个开集 V_i *)
+  destruct (choice (fun (i : F) (V : X -> Prop) =>
+    H.(open) V /\ (forall x : subspace_type, U i x <-> S (proj1_sig x) /\ V (proj1_sig x))))
+    as [f Hf].
+  { intros i. apply H0. }
+   set (V := fun p : X => exists i : F, f i p).
+   assert (openV : open V).
+   apply open_union.
+   intros.
+   apply Hf.
+
+   (* 证明等价关系 *)
+   exists V. split; [exact openV |].
+   intros x. split.
+   intros [i Hu].
+   destruct (Hf i) as [Hopen_i Heq_i].
+   specialize (Heq_i x).
+   apply Heq_i in Hu.
+   destruct Hu as [Hs Hv].
+   split; [assumption |].
+   exists i.
+   auto.
+
+   intros [Hs Hv].
+   destruct Hv as [i Hvi].
+   destruct (Hf i) as [Hopen_i Heq_i].
+   specialize (Heq_i x).
+   exists i.
+   apply Heq_i.
+   split;assumption.
+Qed.
+  Check open_inter.
+  Theorem open_subset_inter {U} {V}:
+    open_subset U -> open_subset V -> open_subset (fun x  => U x /\ V x).
+    intros HU HV.
+    destruct HU as [U0 [openU0 HeqU]].
+    destruct HV as [V0 [openV0 HeqV]].
+    set (W := fun p => U0 p /\ V0 p).
+    assert (openW : open W).
+    { apply open_inter; assumption. }
+
+    exists W. split; [exact openW |].
+    intros x. split.
+    intros [Hu Hv].
+    apply HeqU in Hu. apply HeqV in Hv.
+    destruct Hu as [Hs1 Hu0].
+    destruct Hv as [Hs2 Hv0].
+    split. assumption.
+    split; assumption.
+
+    intros [Hs [Hu0 Hv0]].
+    split.
+    apply HeqU. split; assumption.
+    apply HeqV. split; assumption.
+  Qed.
+
+(* 子空间上的拓扑实例（需证明，这里略）*)
+  Instance subspace_topology  : Topology subspace_type.
+  Proof.
+    refine {|
+      open := open_subset;
+      open_empty := _;
+      open_full := _;
+      open_union := @open_subset_union;
+      open_inter := @open_subset_inter;
+    |}.
+    (* open empty *)
+    exists (fun _ => False).
+    split.
+    apply open_empty.
+    intro x; split.
+    intros. contradiction.
+    intros [Hs Hv].
+    contradiction.
+
+    exists (fun _ => True); split.
+    apply open_full.
+    intros. split.
+    intros. split.
+    apply proj2_sig. auto.
+    auto.
+Qed.
+
+
+
+
+(* Theorem metric_space_as_perfect_image_of_baire_zero_dim_subspace : *)
+(*   forall (X : Type) `{MetricSpace X}, *)
+(*   exists (Y : Type) `{Topology Y} (S : Y -> Prop) (f : subspace_type S -> X), *)
+(*     baire_zero_dimensional Y /\ *)
+(*     perfect_map f. *)
+(* Proof. *)
+(*   (* 此处需要构造性证明，通常涉及 Stone–Čech 紧化或类似构造，超出本回复范围 *) *)
+(* Admitted. *)
+
+End Subspace.
+
+
+
+Section UniformSpace.
+  Class UniformSpace (  X :Type):= {
+      entourage : (X -> X -> Prop) -> Prop;
+      entourage_diag : forall E, entourage E -> forall x, E x x;   (* δ ⊆ E *)
+      entourage_sym : forall E, entourage E -> entourage (fun x y => E y x);
+      entourage_tri : forall E, entourage E ->
+                                exists F, entourage F /\ forall x y z,
+                                    F x y -> F y z -> E x z;
+      entourage_inter :
+      forall E F, entourage E -> entourage F -> entourage (fun x y => E x y /\ F x y);
+      entourage_upward : forall E F,
+        entourage E -> (forall x y, E x y -> F x y) -> entourage F;
+
+      entourage_univ : entourage (fun _ _ => True);
+    }.
+
+
+  (* 正确的基定义，将一致空间作为显式参数 *)
+Definition is_base {X} `{UniformSpace X} (β : (X -> X -> Prop) -> Prop) : Prop :=
+  (forall B, β B-> entourage B ) /\          (* 每个基元素是周围 *)
+  (forall E, entourage E -> exists B, β B /\ forall x y, B x y -> E x y).
+Definition finite_intersections {X} (S : (X->X->Prop)->Prop) : (X->X->Prop)->Prop :=
+  fun E => exists n (F : nat -> X->X->Prop),
+    (forall i, i < n -> S (F i)) /\
+    E = fun x y => forall i, i < n -> F i x y.
+(* 子基：其所有有限交构成一个基 *)
+
+Definition is_subbase {X} `{UniformSpace X} (S : (X->X->Prop)->Prop) : Prop :=
+   (forall E, S E -> entourage E) /\
+  is_base (finite_intersections S).
+
+Section UniformTop.
+  Context `{UniformSpace X}.
+
+  Definition open_pred (A : X -> Prop) : Prop :=
+    forall x, A x -> exists E, entourage  E /\ forall y, E x y -> A y.
+
+  Theorem open_pred_union {F} {U}:
+      (forall i : F, open_pred (U i)) -> open_pred (fun x : X => exists i : F, U i x).
+    Proof.
+      intros H_open x [i Hx].
+      specialize (H_open i x Hx) as [E [Hent Hsub]].
+      exists E.
+      split; [assumption|].
+      intros y Ey.
+      exists i.
+      apply Hsub.
+      assumption.
+    Qed.
+Theorem open_pred_inter {U V}:
+  open_pred U -> open_pred V -> open_pred (fun x : X => U x /\ V x).
+  Proof.
+     intros HU HV x [HxU HxV].
+     destruct (HU x HxU) as [E1 [Hent1 Hsub1]].
+     destruct (HV x HxV) as [E2 [Hent2 Hsub2]].
+     exists (fun y z => E1 y z /\ E2 y z). split.
+     - apply entourage_inter; assumption.
+     - intros.
+       split.
+       apply Hsub1.
+       apply H1.
+
+       apply Hsub2.
+       apply H1.
+  Qed.
+
+
+  Definition uniform_topology : Topology X.
+  Proof.
+  refine {| open := open_pred;
+     open_empty := _;
+     open_full := _;
+     open_union := @open_pred_union;
+     open_inter := @open_pred_inter;
+  |}.
+  unfold open_pred.
+  intros.
+  contradiction.
+
+  unfold open_pred.
+  intros.
+  exists (fun _ _ => True).
+  split.
+  apply entourage_univ.
+  intros. auto.
+Qed.
+End UniformTop.
+
+End UniformSpace.
 
 
 
@@ -711,6 +1199,7 @@ Record SmoothMap {M N :Type} {n m : nat}
                      (HinM : In cM (atlas M)) (HinN : In cN (atlas N)),
     Compatible (pullback_chart map cM) cN
 }.
+
 
 
 

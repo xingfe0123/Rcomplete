@@ -1,0 +1,918 @@
+DIGEST baf9e5b71b7210b7e6c74b523662b0c4
+FZornsLemma.Filters
+R33:45 ZornsLemma.EnsemblesSpec <> <> lib
+R49:60 ZornsLemma.DecidableDec <> <> lib
+R64:82 ZornsLemma.FiniteIntersections <> <> lib
+R86:103 ZornsLemma.FunctionProperties <> <> lib
+rec 114:119 <> Filter
+proj 144:156 <> filter_family
+proj 171:189 <> filter_intersection
+proj 312:331 <> filter_upward_closed
+proj 431:441 <> filter_full
+proj 473:484 <> filter_empty
+binder 122:122 <> X:1
+R159:164 ZornsLemma.Families <> Family def
+R166:166 ZornsLemma.Filters <> X:1 var
+R205:212 Coq.Sets.Ensembles <> Ensemble def
+R214:214 ZornsLemma.Filters <> X:1 var
+binder 199:200 <> S1:4
+binder 202:203 <> S2:5
+R240:243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R221:222 Coq.Sets.Ensembles <> In def
+R238:239 ZornsLemma.Filters <> S1:4 var
+R224:236 ZornsLemma.Filters <> filter_family:3 meth
+R263:270 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R244:245 Coq.Sets.Ensembles <> In def
+R261:262 ZornsLemma.Filters <> S2:5 var
+R247:259 ZornsLemma.Filters <> filter_family:3 meth
+R271:272 Coq.Sets.Ensembles <> In def
+R289:300 Coq.Sets.Ensembles <> Intersection ind
+R305:306 ZornsLemma.Filters <> S2:5 var
+R302:303 ZornsLemma.Filters <> S1:4 var
+R274:286 ZornsLemma.Filters <> filter_family:3 meth
+R347:354 Coq.Sets.Ensembles <> Ensemble def
+R356:356 ZornsLemma.Filters <> X:1 var
+binder 341:342 <> S1:7
+binder 344:345 <> S2:8
+R382:385 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R363:364 Coq.Sets.Ensembles <> In def
+R380:381 ZornsLemma.Filters <> S1:7 var
+R366:378 ZornsLemma.Filters <> filter_family:3 meth
+R400:407 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R386:393 Coq.Sets.Ensembles <> Included def
+R398:399 ZornsLemma.Filters <> S2:8 var
+R395:396 ZornsLemma.Filters <> S1:7 var
+R408:409 Coq.Sets.Ensembles <> In def
+R425:426 ZornsLemma.Filters <> S2:8 var
+R411:423 ZornsLemma.Filters <> filter_family:3 meth
+R444:445 Coq.Sets.Ensembles <> In def
+R461:468 Coq.Sets.Ensembles <> Full_set ind
+R447:459 ZornsLemma.Filters <> filter_family:3 meth
+R487:488 Coq.Init.Logic <> ::type_scope:'~'_x not
+R489:490 Coq.Sets.Ensembles <> In def
+R506:514 Coq.Sets.Ensembles <> Empty_set ind
+R492:504 ZornsLemma.Filters <> filter_family:3 meth
+R530:542 ZornsLemma.Filters <> filter_family proj
+R530:542 ZornsLemma.Filters <> filter_family proj
+rec 557:568 <> filter_basis
+proj 619:639 <> filter_basis_elements
+proj 674:690 <> filter_basis_cond
+binder 571:571 <> X:12
+R582:587 ZornsLemma.Filters <> Filter rec
+R589:589 ZornsLemma.Filters <> X:12 var
+binder 580:580 <> F:13
+R595:600 ZornsLemma.Families <> Family def
+R602:602 ZornsLemma.Filters <> X:12 var
+binder 593:593 <> B:14
+R642:649 Coq.Sets.Ensembles <> Included def
+R654:666 ZornsLemma.Filters <> filter_family proj
+R668:668 ZornsLemma.Filters <> F:13 var
+R651:651 ZornsLemma.Filters <> B:14 var
+R702:709 Coq.Sets.Ensembles <> Ensemble def
+R711:711 ZornsLemma.Filters <> X:12 var
+binder 700:700 <> S:17
+R740:743 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R718:719 Coq.Sets.Ensembles <> In def
+R739:739 ZornsLemma.Filters <> S:17 var
+R722:734 ZornsLemma.Filters <> filter_family proj
+R736:736 ZornsLemma.Filters <> F:13 var
+R744:750 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R764:769 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R754:761 Coq.Sets.Ensembles <> Ensemble def
+R763:763 ZornsLemma.Filters <> X:12 var
+binder 751:752 <> S':18
+R777:780 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R770:771 Coq.Sets.Ensembles <> In def
+R775:776 ZornsLemma.Filters <> S':18 var
+R773:773 ZornsLemma.Filters <> B:14 var
+R781:788 Coq.Sets.Ensembles <> Included def
+R793:793 ZornsLemma.Filters <> S:17 var
+R790:791 ZornsLemma.Filters <> S':18 var
+R830:844 ZornsLemma.IndexedFamilies <> <> lib
+R878:888 ZornsLemma.FiniteTypes <> <> lib
+prf 898:931 <> filter_finite_indexed_intersection
+binder 942:942 <> X:20
+R953:958 ZornsLemma.Filters <> Filter rec
+R960:960 ZornsLemma.Filters <> X:20 var
+binder 951:951 <> F:21
+binder 966:966 <> A:22
+R977:989 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R993:993 ZornsLemma.Filters <> X:20 var
+R991:991 ZornsLemma.Filters <> A:22 var
+binder 975:975 <> S:23
+R1008:1011 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R999:1005 ZornsLemma.FiniteTypes <> FiniteT ind
+R1007:1007 ZornsLemma.Filters <> A:22 var
+R1012:1012 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1051:1057 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1022:1022 ZornsLemma.Filters <> A:22 var
+binder 1020:1020 <> a:24
+R1025:1026 Coq.Sets.Ensembles <> In def
+R1047:1047 ZornsLemma.Filters <> S:23 var
+R1049:1049 ZornsLemma.Filters <> a:24 var
+R1029:1041 ZornsLemma.Filters <> filter_family proj
+R1043:1043 ZornsLemma.Filters <> F:21 var
+R1058:1059 Coq.Sets.Ensembles <> In def
+R1080:1098 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R1100:1100 ZornsLemma.Filters <> S:23 var
+R1062:1074 ZornsLemma.Filters <> filter_family proj
+R1076:1076 ZornsLemma.Filters <> F:21 var
+R1142:1167 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R1142:1167 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R1142:1167 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R1178:1188 ZornsLemma.Filters <> filter_full proj
+R1178:1188 ZornsLemma.Filters <> filter_full proj
+R1201:1239 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R1201:1239 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R1201:1239 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R1250:1268 ZornsLemma.Filters <> filter_intersection proj
+R1250:1268 ZornsLemma.Filters <> filter_intersection proj
+R1347:1373 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R1347:1373 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R1347:1373 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R1347:1373 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R1402:1426 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R1402:1426 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+prf 1486:1511 <> filter_finite_intersection
+binder 1514:1514 <> X:25
+R1529:1534 ZornsLemma.Filters <> Filter rec
+R1536:1536 ZornsLemma.Filters <> X:25 var
+binder 1525:1525 <> F:26
+R1544:1549 ZornsLemma.Families <> Family def
+R1551:1551 ZornsLemma.Filters <> X:25 var
+binder 1540:1540 <> S:27
+R1586:1591 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1558:1565 Coq.Sets.Ensembles <> Included def
+R1570:1582 ZornsLemma.Filters <> filter_family proj
+R1584:1584 ZornsLemma.Filters <> F:26 var
+R1567:1567 ZornsLemma.Filters <> S:27 var
+R1592:1599 Coq.Sets.Ensembles <> Included def
+R1627:1639 ZornsLemma.Filters <> filter_family proj
+R1641:1641 ZornsLemma.Filters <> F:26 var
+R1602:1621 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R1623:1623 ZornsLemma.Filters <> S:27 var
+R1696:1706 ZornsLemma.Filters <> filter_full proj
+R1696:1706 ZornsLemma.Filters <> filter_full proj
+R1729:1747 ZornsLemma.Filters <> filter_intersection proj
+R1729:1747 ZornsLemma.Filters <> filter_intersection proj
+sec 1776:1792 <> filter_from_basis
+var 1805:1805 filter_from_basis X
+var 1822:1822 filter_from_basis B
+R1824:1829 ZornsLemma.Families <> Family def
+R1831:1831 ZornsLemma.Filters <> filter_from_basis.X var
+var 1845:1854 filter_from_basis B_nonempty
+R1857:1865 Coq.Sets.Ensembles <> Inhabited ind
+R1867:1867 ZornsLemma.Filters <> filter_from_basis.B var
+var 1881:1887 filter_from_basis B_empty
+R1890:1891 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1892:1893 Coq.Sets.Ensembles <> In def
+R1897:1905 Coq.Sets.Ensembles <> Empty_set ind
+R1895:1895 ZornsLemma.Filters <> filter_from_basis.B var
+var 1919:1930 filter_from_basis B_basis_cond
+R1946:1953 Coq.Sets.Ensembles <> Ensemble def
+R1955:1955 ZornsLemma.Filters <> filter_from_basis.X var
+binder 1940:1941 <> S1:32
+binder 1943:1944 <> S2:33
+R1967:1970 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1960:1961 Coq.Sets.Ensembles <> In def
+R1965:1966 ZornsLemma.Filters <> S1:32 var
+R1963:1963 ZornsLemma.Filters <> filter_from_basis.B var
+R1978:1981 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1971:1972 Coq.Sets.Ensembles <> In def
+R1976:1977 ZornsLemma.Filters <> S2:33 var
+R1974:1974 ZornsLemma.Filters <> filter_from_basis.B var
+R1982:1988 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2001:2004 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1991:1998 Coq.Sets.Ensembles <> Ensemble def
+R2000:2000 ZornsLemma.Filters <> filter_from_basis.X var
+binder 1989:1989 <> T:34
+R2011:2014 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2005:2006 Coq.Sets.Ensembles <> In def
+R2010:2010 ZornsLemma.Filters <> T:34 var
+R2008:2008 ZornsLemma.Filters <> filter_from_basis.B var
+R2015:2022 Coq.Sets.Ensembles <> Included def
+R2027:2038 Coq.Sets.Ensembles <> Intersection ind
+R2043:2044 ZornsLemma.Filters <> S2:33 var
+R2040:2041 ZornsLemma.Filters <> S1:32 var
+R2024:2024 ZornsLemma.Filters <> T:34 var
+def 2060:2082 <> Build_Filter_from_basis
+R2086:2091 ZornsLemma.Filters <> Filter rec
+R2093:2093 ZornsLemma.Filters <> filter_from_basis.X var
+R2104:2115 ZornsLemma.Filters <> Build_Filter constr
+R2117:2117 ZornsLemma.Filters <> filter_from_basis.X var
+R2119:2120 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2122:2122 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2133:2135 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2202:2203 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2123:2130 Coq.Sets.Ensembles <> Ensemble def
+R2132:2132 ZornsLemma.Filters <> filter_from_basis.X var
+binder 2121:2121 <> S:36
+R2136:2142 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2155:2179 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2145:2152 Coq.Sets.Ensembles <> Ensemble def
+R2154:2154 ZornsLemma.Filters <> filter_from_basis.X var
+binder 2143:2143 <> T:37
+R2186:2189 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2180:2181 Coq.Sets.Ensembles <> In def
+R2185:2185 ZornsLemma.Filters <> T:37 var
+R2183:2183 ZornsLemma.Filters <> filter_from_basis.B var
+R2190:2197 Coq.Sets.Ensembles <> Included def
+R2201:2201 ZornsLemma.Filters <> S:36 var
+R2199:2199 ZornsLemma.Filters <> T:37 var
+R2104:2115 ZornsLemma.Filters <> Build_Filter constr
+R2117:2117 ZornsLemma.Filters <> filter_from_basis.X var
+R2119:2120 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2122:2122 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2133:2135 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2202:2203 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R2123:2130 Coq.Sets.Ensembles <> Ensemble def
+R2132:2132 ZornsLemma.Filters <> filter_from_basis.X var
+binder 2121:2121 <> S:38
+R2136:2142 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2155:2179 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2145:2152 Coq.Sets.Ensembles <> Ensemble def
+R2154:2154 ZornsLemma.Filters <> filter_from_basis.X var
+binder 2143:2143 <> T:39
+R2186:2189 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2180:2181 Coq.Sets.Ensembles <> In def
+R2185:2185 ZornsLemma.Filters <> T:39 var
+R2183:2183 ZornsLemma.Filters <> filter_from_basis.B var
+R2190:2197 Coq.Sets.Ensembles <> Included def
+R2201:2201 ZornsLemma.Filters <> S:38 var
+R2199:2199 ZornsLemma.Filters <> T:39 var
+R2317:2328 ZornsLemma.Filters <> filter_from_basis.B_basis_cond var
+R2317:2328 ZornsLemma.Filters <> filter_from_basis.B_basis_cond var
+R2591:2600 ZornsLemma.Filters <> filter_from_basis.B_nonempty var
+R2729:2731 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2732:2740 Coq.Sets.Ensembles <> Empty_set ind
+R2729:2731 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2732:2740 Coq.Sets.Ensembles <> Empty_set ind
+R2754:2777 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2754:2777 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2836:2842 ZornsLemma.Filters <> filter_from_basis.B_empty var
+R2836:2842 ZornsLemma.Filters <> filter_from_basis.B_empty var
+prf 2861:2883 <> filter_from_basis_basis
+R2886:2897 ZornsLemma.Filters <> filter_basis rec
+R2923:2923 ZornsLemma.Filters <> filter_from_basis.B var
+R2899:2921 ZornsLemma.Filters <> Build_Filter_from_basis def
+R3083:3099 ZornsLemma.Filters filter_from_basis <> sec
+R3113:3135 ZornsLemma.Filters <> Build_Filter_from_basis def
+R3113:3135 ZornsLemma.Filters <> Build_Filter_from_basis def
+R3174:3184 ZornsLemma.FiniteTypes <> <> lib
+R3218:3232 ZornsLemma.IndexedFamilies <> <> lib
+rec 3243:3257 <> filter_subbasis
+proj 3308:3331 <> filter_subbasis_elements
+proj 3366:3385 <> filter_subbasis_cond
+binder 3260:3260 <> X:40
+R3271:3276 ZornsLemma.Filters <> Filter rec
+R3278:3278 ZornsLemma.Filters <> X:40 var
+binder 3269:3269 <> F:41
+R3284:3289 ZornsLemma.Families <> Family def
+R3291:3291 ZornsLemma.Filters <> X:40 var
+binder 3282:3282 <> B:42
+R3334:3341 Coq.Sets.Ensembles <> Included def
+R3346:3358 ZornsLemma.Filters <> filter_family proj
+R3360:3360 ZornsLemma.Filters <> F:41 var
+R3343:3343 ZornsLemma.Filters <> B:42 var
+R3397:3404 Coq.Sets.Ensembles <> Ensemble def
+R3406:3406 ZornsLemma.Filters <> X:40 var
+binder 3395:3395 <> S:45
+R3435:3438 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3413:3414 Coq.Sets.Ensembles <> In def
+R3434:3434 ZornsLemma.Filters <> S:45 var
+R3417:3429 ZornsLemma.Filters <> filter_family proj
+R3431:3431 ZornsLemma.Filters <> F:41 var
+R3439:3445 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3452:3453 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3446:3446 <> J:46
+R3463:3476 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3454:3460 ZornsLemma.FiniteTypes <> FiniteT ind
+R3462:3462 ZornsLemma.Filters <> J:46 var
+R3477:3483 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3499:3510 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3487:3488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3486:3486 ZornsLemma.Filters <> J:46 var
+R3489:3496 Coq.Sets.Ensembles <> Ensemble def
+R3498:3498 ZornsLemma.Filters <> X:40 var
+binder 3484:3484 <> T:47
+R3511:3511 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3534:3548 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3521:3521 ZornsLemma.Filters <> J:46 var
+binder 3519:3519 <> j:48
+R3524:3525 Coq.Sets.Ensembles <> In def
+R3530:3530 ZornsLemma.Filters <> T:47 var
+R3532:3532 ZornsLemma.Filters <> j:48 var
+R3527:3527 ZornsLemma.Filters <> B:42 var
+R3549:3556 Coq.Sets.Ensembles <> Included def
+R3582:3582 ZornsLemma.Filters <> S:45 var
+R3559:3577 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R3579:3579 ZornsLemma.Filters <> T:47 var
+R3619:3637 ZornsLemma.FiniteIntersections <> <> lib
+sec 3649:3668 <> filter_from_subbasis
+var 3681:3681 filter_from_subbasis X
+var 3698:3698 filter_from_subbasis B
+R3700:3705 ZornsLemma.Families <> Family def
+R3707:3707 ZornsLemma.Filters <> filter_from_subbasis.X var
+var 3721:3735 filter_from_subbasis B_subbasis_cond
+binder 3746:3746 <> J:52
+R3758:3759 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3757:3757 ZornsLemma.Filters <> J:52 var
+R3760:3767 Coq.Sets.Ensembles <> Ensemble def
+R3769:3769 ZornsLemma.Filters <> filter_from_subbasis.X var
+binder 3755:3755 <> V:53
+R3784:3787 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3775:3781 ZornsLemma.FiniteTypes <> FiniteT ind
+R3783:3783 ZornsLemma.Filters <> J:52 var
+R3788:3788 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3811:3817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3798:3798 ZornsLemma.Filters <> J:52 var
+binder 3796:3796 <> j:54
+R3801:3802 Coq.Sets.Ensembles <> In def
+R3807:3807 ZornsLemma.Filters <> V:53 var
+R3809:3809 ZornsLemma.Filters <> j:54 var
+R3804:3804 ZornsLemma.Filters <> filter_from_subbasis.B var
+R3818:3826 Coq.Sets.Ensembles <> Inhabited ind
+R3829:3847 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R3849:3849 ZornsLemma.Filters <> V:53 var
+def 3865:3890 <> Build_Filter_from_subbasis
+R3893:3898 ZornsLemma.Filters <> Filter rec
+R3900:3900 ZornsLemma.Filters <> filter_from_subbasis.X var
+R3911:3933 ZornsLemma.Filters <> Build_Filter_from_basis def
+R3936:3955 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R3957:3957 ZornsLemma.Filters <> filter_from_subbasis.B var
+R3911:3933 ZornsLemma.Filters <> Build_Filter_from_basis def
+R3936:3955 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R3957:3957 ZornsLemma.Filters <> filter_from_subbasis.B var
+R3977:3984 Coq.Sets.Ensembles <> Full_set ind
+R3977:3984 Coq.Sets.Ensembles <> Full_set ind
+R4030:4079 ZornsLemma.FiniteIntersections <> finite_intersection_is_finite_indexed_intersection thm
+R4030:4079 ZornsLemma.FiniteIntersections <> finite_intersection_is_finite_indexed_intersection thm
+R4132:4140 Coq.Sets.Ensembles <> Inhabited ind
+R4143:4161 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R4132:4140 Coq.Sets.Ensembles <> Inhabited ind
+R4143:4161 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R4178:4192 ZornsLemma.Filters <> filter_from_subbasis.B_subbasis_cond var
+R4178:4192 ZornsLemma.Filters <> filter_from_subbasis.B_subbasis_cond var
+R4279:4290 Coq.Sets.Ensembles <> Intersection ind
+R4279:4290 Coq.Sets.Ensembles <> Intersection ind
+prf 4365:4393 <> filter_from_subbasis_subbasis
+R4398:4412 ZornsLemma.Filters <> filter_subbasis rec
+R4441:4441 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4414:4439 ZornsLemma.Filters <> Build_Filter_from_subbasis def
+R4459:4470 ZornsLemma.Filters <> filter_basis rec
+R4500:4519 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R4521:4521 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4472:4497 ZornsLemma.Filters <> Build_Filter_from_subbasis def
+R4459:4470 ZornsLemma.Filters <> filter_basis rec
+R4500:4519 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R4521:4521 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4472:4497 ZornsLemma.Filters <> Build_Filter_from_subbasis def
+R4534:4556 ZornsLemma.Filters <> filter_from_basis_basis thm
+R4534:4556 ZornsLemma.Filters <> filter_from_basis_basis thm
+R4596:4603 Coq.Sets.Ensembles <> Included def
+R4608:4627 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R4629:4629 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4605:4605 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4596:4603 Coq.Sets.Ensembles <> Included def
+R4608:4627 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R4629:4629 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4605:4605 ZornsLemma.Filters <> filter_from_subbasis.B var
+R4761:4810 ZornsLemma.FiniteIntersections <> finite_intersection_is_finite_indexed_intersection thm
+R4761:4810 ZornsLemma.FiniteIntersections <> finite_intersection_is_finite_indexed_intersection thm
+R4950:4969 ZornsLemma.Filters filter_from_subbasis <> sec
+R4983:5008 ZornsLemma.Filters <> Build_Filter_from_subbasis def
+R4983:5008 ZornsLemma.Filters <> Build_Filter_from_subbasis def
+def 5027:5037 <> ultrafilter
+binder 5040:5040 <> X:56
+R5051:5056 ZornsLemma.Filters <> Filter rec
+R5058:5058 ZornsLemma.Filters <> X:56 var
+binder 5049:5049 <> F:57
+R5082:5089 Coq.Sets.Ensembles <> Ensemble def
+R5091:5091 ZornsLemma.Filters <> X:56 var
+binder 5080:5080 <> S:58
+R5116:5142 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5094:5095 Coq.Sets.Ensembles <> In def
+R5115:5115 ZornsLemma.Filters <> S:58 var
+R5098:5110 ZornsLemma.Filters <> filter_family proj
+R5112:5112 ZornsLemma.Filters <> F:57 var
+R5143:5144 Coq.Sets.Ensembles <> In def
+R5165:5184 Coq.Sets.Ensembles <> Complement def
+R5186:5186 ZornsLemma.Filters <> S:58 var
+R5147:5159 ZornsLemma.Filters <> filter_family proj
+R5161:5161 ZornsLemma.Filters <> F:57 var
+R5222:5231 ZornsLemma.ZornsLemma <> <> lib
+prf 5241:5261 <> ultrafilter_extension
+binder 5272:5272 <> X:59
+R5283:5288 ZornsLemma.Filters <> Filter rec
+R5290:5290 ZornsLemma.Filters <> X:59 var
+binder 5281:5281 <> F:60
+R5296:5302 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5313:5314 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5305:5310 ZornsLemma.Filters <> Filter rec
+R5312:5312 ZornsLemma.Filters <> X:59 var
+binder 5303:5303 <> U:61
+R5359:5383 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5315:5322 Coq.Sets.Ensembles <> Included def
+R5343:5355 ZornsLemma.Filters <> filter_family proj
+R5357:5357 ZornsLemma.Filters <> U:61 var
+R5325:5337 ZornsLemma.Filters <> filter_family proj
+R5339:5339 ZornsLemma.Filters <> F:60 var
+R5384:5394 ZornsLemma.Filters <> ultrafilter def
+R5396:5396 ZornsLemma.Filters <> U:61 var
+R5426:5427 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5430:5430 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5439:5441 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5487:5488 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5431:5436 ZornsLemma.Filters <> Filter rec
+binder 5428:5429 <> F':62
+R5442:5449 Coq.Sets.Ensembles <> Included def
+R5470:5482 ZornsLemma.Filters <> filter_family proj
+R5484:5485 ZornsLemma.Filters <> F':62 var
+R5452:5464 ZornsLemma.Filters <> filter_family proj
+R5426:5427 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5430:5430 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5439:5441 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5487:5488 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R5431:5436 ZornsLemma.Filters <> Filter rec
+binder 5428:5429 <> F':63
+R5442:5449 Coq.Sets.Ensembles <> Included def
+R5470:5482 ZornsLemma.Filters <> filter_family proj
+R5484:5485 ZornsLemma.Filters <> F':63 var
+R5452:5464 ZornsLemma.Filters <> filter_family proj
+binder 5513:5515 <> F1':64
+binder 5517:5519 <> F2':65
+R5530:5537 Coq.Sets.Ensembles <> Included def
+R5572:5584 ZornsLemma.Filters <> filter_family proj
+R5587:5595 Coq.Init.Specif <> proj1_sig def
+R5597:5599 ZornsLemma.Filters <> F2':65 var
+R5540:5552 ZornsLemma.Filters <> filter_family proj
+R5555:5563 Coq.Init.Specif <> proj1_sig def
+R5565:5567 ZornsLemma.Filters <> F1':64 var
+binder 5513:5515 <> F1':66
+binder 5517:5519 <> F2':67
+R5530:5537 Coq.Sets.Ensembles <> Included def
+R5572:5584 ZornsLemma.Filters <> filter_family proj
+R5587:5595 Coq.Init.Specif <> proj1_sig def
+R5597:5599 ZornsLemma.Filters <> F2':67 var
+R5540:5552 ZornsLemma.Filters <> filter_family proj
+R5555:5563 Coq.Init.Specif <> proj1_sig def
+R5565:5567 ZornsLemma.Filters <> F1':66 var
+R5613:5619 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5624:5625 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5620:5620 <> U:68
+R5626:5635 ZornsLemma.ZornsLemma <> premaximal def
+R5644:5644 ZornsLemma.Filters <> U:68 var
+R5613:5619 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5624:5625 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5620:5620 <> U:69
+R5626:5635 ZornsLemma.ZornsLemma <> premaximal def
+R5644:5644 ZornsLemma.Filters <> U:69 var
+R5656:5677 ZornsLemma.ZornsLemma <> ZornsLemmaForPreorders thm
+R5656:5677 ZornsLemma.ZornsLemma <> ZornsLemmaForPreorders thm
+R5940:5950 ZornsLemma.DecidableDec <> classic_dec thm
+R5953:5961 Coq.Sets.Ensembles <> Inhabited ind
+R5940:5950 ZornsLemma.DecidableDec <> classic_dec thm
+R5953:5961 Coq.Sets.Ensembles <> Inhabited ind
+binder 6017:6018 <> H0:70
+binder 6030:6031 <> H1:71
+binder 6043:6044 <> H2:72
+binder 6056:6057 <> H3:73
+R6081:6092 ZornsLemma.Filters <> Build_Filter constr
+R6097:6108 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R6118:6118 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6121:6121 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6124:6126 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6134:6134 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 6119:6120 <> F':74
+R6127:6128 Coq.Sets.Ensembles <> In def
+R6132:6133 ZornsLemma.Filters <> F':74 var
+binder 6115:6116 <> F':75
+R6149:6161 ZornsLemma.Filters <> filter_family proj
+R6164:6172 Coq.Init.Specif <> proj1_sig def
+R6175:6183 Coq.Init.Specif <> proj1_sig def
+R6185:6186 ZornsLemma.Filters <> F':75 var
+R6192:6193 ZornsLemma.Filters <> H0:70 var
+R6195:6196 ZornsLemma.Filters <> H1:71 var
+R6198:6199 ZornsLemma.Filters <> H2:72 var
+R6201:6202 ZornsLemma.Filters <> H3:73 var
+binder 6077:6078 <> ub:76
+binder 6017:6018 <> H0:77
+binder 6030:6031 <> H1:78
+binder 6043:6044 <> H2:79
+binder 6056:6057 <> H3:80
+R6081:6092 ZornsLemma.Filters <> Build_Filter constr
+R6097:6108 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R6118:6118 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6121:6121 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6124:6126 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6134:6134 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 6119:6120 <> F':81
+R6127:6128 Coq.Sets.Ensembles <> In def
+R6132:6133 ZornsLemma.Filters <> F':81 var
+binder 6115:6116 <> F':82
+R6149:6161 ZornsLemma.Filters <> filter_family proj
+R6164:6172 Coq.Init.Specif <> proj1_sig def
+R6175:6183 Coq.Init.Specif <> proj1_sig def
+R6185:6186 ZornsLemma.Filters <> F':82 var
+R6192:6193 ZornsLemma.Filters <> H0:77 var
+R6195:6196 ZornsLemma.Filters <> H1:78 var
+R6198:6199 ZornsLemma.Filters <> H2:79 var
+R6201:6202 ZornsLemma.Filters <> H3:80 var
+binder 6077:6078 <> ub:83
+R6507:6511 Coq.Init.Specif <> exist constr
+R6523:6527 Coq.Init.Specif <> exist constr
+R6507:6511 Coq.Init.Specif <> exist constr
+R6523:6527 Coq.Init.Specif <> exist constr
+R6631:6635 Coq.Init.Specif <> exist constr
+R6640:6644 Coq.Init.Specif <> exist constr
+R6631:6635 Coq.Init.Specif <> exist constr
+R6640:6644 Coq.Init.Specif <> exist constr
+R6697:6715 ZornsLemma.Filters <> filter_intersection proj
+R6697:6715 ZornsLemma.Filters <> filter_intersection proj
+R6808:6812 Coq.Init.Specif <> exist constr
+R6817:6821 Coq.Init.Specif <> exist constr
+R6808:6812 Coq.Init.Specif <> exist constr
+R6817:6821 Coq.Init.Specif <> exist constr
+R6872:6890 ZornsLemma.Filters <> filter_intersection proj
+R6872:6890 ZornsLemma.Filters <> filter_intersection proj
+R6989:6993 Coq.Init.Specif <> exist constr
+R6998:7002 Coq.Init.Specif <> exist constr
+R6989:6993 Coq.Init.Specif <> exist constr
+R6998:7002 Coq.Init.Specif <> exist constr
+R7047:7066 ZornsLemma.Filters <> filter_upward_closed proj
+R7047:7066 ZornsLemma.Filters <> filter_upward_closed proj
+R7129:7133 Coq.Init.Specif <> exist constr
+R7129:7133 Coq.Init.Specif <> exist constr
+R7173:7183 ZornsLemma.Filters <> filter_full proj
+R7173:7183 ZornsLemma.Filters <> filter_full proj
+R7279:7290 ZornsLemma.Filters <> filter_empty proj
+R7279:7290 ZornsLemma.Filters <> filter_empty proj
+R7309:7316 Coq.Sets.Ensembles <> Included def
+R7337:7349 ZornsLemma.Filters <> filter_family proj
+R7319:7331 ZornsLemma.Filters <> filter_family proj
+R7309:7316 Coq.Sets.Ensembles <> Included def
+R7337:7349 ZornsLemma.Filters <> filter_family proj
+R7319:7331 ZornsLemma.Filters <> filter_family proj
+R7445:7449 Coq.Init.Specif <> exist constr
+R7445:7449 Coq.Init.Specif <> exist constr
+R7568:7572 Coq.Init.Specif <> exist constr
+R7568:7572 Coq.Init.Specif <> exist constr
+R7657:7661 Coq.Init.Specif <> exist constr
+R7657:7661 Coq.Init.Specif <> exist constr
+R7718:7725 Coq.Sets.Ensembles <> Included def
+R7746:7758 ZornsLemma.Filters <> filter_family proj
+R7728:7740 ZornsLemma.Filters <> filter_family proj
+R7718:7725 Coq.Sets.Ensembles <> Included def
+R7746:7758 ZornsLemma.Filters <> filter_family proj
+R7728:7740 ZornsLemma.Filters <> filter_family proj
+R7805:7809 Coq.Init.Specif <> exist constr
+R7805:7809 Coq.Init.Specif <> exist constr
+R7984:7991 Coq.Sets.Ensembles <> Ensemble def
+binder 7981:7982 <> S':84
+R8019:8024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7996:7997 Coq.Sets.Ensembles <> In def
+R8017:8018 ZornsLemma.Filters <> S':84 var
+R8000:8012 ZornsLemma.Filters <> filter_family proj
+R8025:8033 Coq.Sets.Ensembles <> Inhabited ind
+R8036:8047 Coq.Sets.Ensembles <> Intersection ind
+R8053:8072 Coq.Sets.Ensembles <> Complement def
+R8049:8050 ZornsLemma.Filters <> S':84 var
+R7984:7991 Coq.Sets.Ensembles <> Ensemble def
+binder 7981:7982 <> S':85
+R8019:8024 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7996:7997 Coq.Sets.Ensembles <> In def
+R8017:8018 ZornsLemma.Filters <> S':85 var
+R8000:8012 ZornsLemma.Filters <> filter_family proj
+R8025:8033 Coq.Sets.Ensembles <> Inhabited ind
+R8036:8047 Coq.Sets.Ensembles <> Intersection ind
+R8053:8072 Coq.Sets.Ensembles <> Complement def
+R8049:8050 ZornsLemma.Filters <> S':85 var
+R8098:8101 Coq.Logic.Classical_Prop <> NNPP thm
+R8098:8101 Coq.Logic.Classical_Prop <> NNPP thm
+R8144:8163 ZornsLemma.Filters <> filter_upward_closed proj
+R8144:8163 ZornsLemma.Filters <> filter_upward_closed proj
+R8206:8209 Coq.Logic.Classical_Prop <> NNPP thm
+R8206:8209 Coq.Logic.Classical_Prop <> NNPP thm
+binder 8297:8298 <> H2:86
+binder 8310:8311 <> H3:87
+binder 8323:8324 <> H4:88
+R8346:8368 ZornsLemma.Filters <> Build_Filter_from_basis def
+R8480:8481 ZornsLemma.Filters <> H4:88 var
+R8477:8478 ZornsLemma.Filters <> H3:87 var
+R8474:8475 ZornsLemma.Filters <> H2:86 var
+R8378:8379 Coq.Sets.Image <> Im ind
+R8407:8414 Coq.Sets.Ensembles <> Ensemble def
+binder 8404:8405 <> S':89
+R8431:8442 Coq.Sets.Ensembles <> Intersection ind
+R8448:8467 Coq.Sets.Ensembles <> Complement def
+R8444:8445 ZornsLemma.Filters <> S':89 var
+R8382:8394 ZornsLemma.Filters <> filter_family proj
+binder 8338:8341 <> Uext:90
+binder 8297:8298 <> H2:91
+binder 8310:8311 <> H3:92
+binder 8323:8324 <> H4:93
+R8346:8368 ZornsLemma.Filters <> Build_Filter_from_basis def
+R8480:8481 ZornsLemma.Filters <> H4:93 var
+R8477:8478 ZornsLemma.Filters <> H3:92 var
+R8474:8475 ZornsLemma.Filters <> H2:91 var
+R8378:8379 Coq.Sets.Image <> Im ind
+R8407:8414 Coq.Sets.Ensembles <> Ensemble def
+binder 8404:8405 <> S':94
+R8431:8442 Coq.Sets.Ensembles <> Intersection ind
+R8448:8467 Coq.Sets.Ensembles <> Complement def
+R8444:8445 ZornsLemma.Filters <> S':94 var
+R8382:8394 ZornsLemma.Filters <> filter_family proj
+binder 8338:8341 <> Uext:95
+R8500:8519 Coq.Sets.Ensembles <> Complement def
+R8500:8519 Coq.Sets.Ensembles <> Complement def
+R8534:8541 Coq.Sets.Ensembles <> Full_set ind
+R8534:8541 Coq.Sets.Ensembles <> Full_set ind
+R8554:8564 ZornsLemma.Filters <> filter_full proj
+R8554:8564 ZornsLemma.Filters <> filter_full proj
+R8577:8600 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8577:8600 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8789:8800 Coq.Sets.Ensembles <> Intersection ind
+R8789:8800 Coq.Sets.Ensembles <> Intersection ind
+R8844:8855 Coq.Sets.Ensembles <> Intersection ind
+R8844:8855 Coq.Sets.Ensembles <> Intersection ind
+R8874:8892 ZornsLemma.Filters <> filter_intersection proj
+R8874:8892 ZornsLemma.Filters <> filter_intersection proj
+R8925:8948 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8925:8948 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R9075:9082 Coq.Sets.Ensembles <> Included def
+R9103:9115 ZornsLemma.Filters <> filter_family proj
+R9085:9097 ZornsLemma.Filters <> filter_family proj
+R9075:9082 Coq.Sets.Ensembles <> Included def
+R9103:9115 ZornsLemma.Filters <> filter_family proj
+R9085:9097 ZornsLemma.Filters <> filter_family proj
+R9179:9190 Coq.Sets.Ensembles <> Intersection ind
+R9195:9214 Coq.Sets.Ensembles <> Complement def
+R9152:9171 ZornsLemma.Filters <> filter_upward_closed proj
+R9179:9190 Coq.Sets.Ensembles <> Intersection ind
+R9195:9214 Coq.Sets.Ensembles <> Complement def
+R9152:9171 ZornsLemma.Filters <> filter_upward_closed proj
+R9235:9246 ZornsLemma.Filters <> filter_basis rec
+R9262:9263 Coq.Sets.Image <> Im ind
+R9291:9298 Coq.Sets.Ensembles <> Ensemble def
+binder 9288:9289 <> S':96
+R9338:9349 Coq.Sets.Ensembles <> Intersection ind
+R9355:9374 Coq.Sets.Ensembles <> Complement def
+R9351:9352 ZornsLemma.Filters <> S':96 var
+R9266:9278 ZornsLemma.Filters <> filter_family proj
+R9235:9246 ZornsLemma.Filters <> filter_basis rec
+R9262:9263 Coq.Sets.Image <> Im ind
+R9291:9298 Coq.Sets.Ensembles <> Ensemble def
+binder 9288:9289 <> S':97
+R9338:9349 Coq.Sets.Ensembles <> Intersection ind
+R9355:9374 Coq.Sets.Ensembles <> Complement def
+R9351:9352 ZornsLemma.Filters <> S':97 var
+R9266:9278 ZornsLemma.Filters <> filter_family proj
+R9397:9419 ZornsLemma.Filters <> filter_from_basis_basis thm
+R9397:9419 ZornsLemma.Filters <> filter_from_basis_basis thm
+R9540:9547 Coq.Sets.Ensembles <> Included def
+R9568:9580 ZornsLemma.Filters <> filter_family proj
+R9550:9562 ZornsLemma.Filters <> filter_family proj
+R9540:9547 Coq.Sets.Ensembles <> Included def
+R9568:9580 ZornsLemma.Filters <> filter_family proj
+R9550:9562 ZornsLemma.Filters <> filter_family proj
+R9630:9634 Coq.Init.Specif <> exist constr
+R9644:9648 Coq.Init.Specif <> exist constr
+R9630:9634 Coq.Init.Specif <> exist constr
+R9644:9648 Coq.Init.Specif <> exist constr
+R9723:9724 Coq.Sets.Ensembles <> In def
+R9748:9767 Coq.Sets.Ensembles <> Complement def
+R9727:9739 ZornsLemma.Filters <> filter_family proj
+R9723:9724 Coq.Sets.Ensembles <> In def
+R9748:9767 Coq.Sets.Ensembles <> Complement def
+R9727:9739 ZornsLemma.Filters <> filter_family proj
+R9784:9795 ZornsLemma.Filters <> filter_basis rec
+R9803:9804 Coq.Sets.Image <> Im ind
+R9836:9843 Coq.Sets.Ensembles <> Ensemble def
+binder 9833:9834 <> S':98
+R9850:9861 Coq.Sets.Ensembles <> Intersection ind
+R9867:9886 Coq.Sets.Ensembles <> Complement def
+R9863:9864 ZornsLemma.Filters <> S':98 var
+R9807:9819 ZornsLemma.Filters <> filter_family proj
+R9784:9795 ZornsLemma.Filters <> filter_basis rec
+R9803:9804 Coq.Sets.Image <> Im ind
+R9836:9843 Coq.Sets.Ensembles <> Ensemble def
+binder 9833:9834 <> S':99
+R9850:9861 Coq.Sets.Ensembles <> Intersection ind
+R9867:9886 Coq.Sets.Ensembles <> Complement def
+R9863:9864 ZornsLemma.Filters <> S':99 var
+R9807:9819 ZornsLemma.Filters <> filter_family proj
+R9905:9927 ZornsLemma.Filters <> filter_from_basis_basis thm
+R9905:9927 ZornsLemma.Filters <> filter_from_basis_basis thm
+R9988:9995 Coq.Sets.Ensembles <> Full_set ind
+R9988:9995 Coq.Sets.Ensembles <> Full_set ind
+R10008:10018 ZornsLemma.Filters <> filter_full proj
+R10008:10018 ZornsLemma.Filters <> filter_full proj
+R10033:10053 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R10033:10053 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R10033:10053 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R10106:10117 ZornsLemma.InverseImage <> <> lib
+def 10132:10150 <> filter_direct_image
+binder 10153:10153 <> X:100
+binder 10155:10155 <> Y:101
+R10167:10168 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10166:10166 ZornsLemma.Filters <> X:100 var
+R10169:10169 ZornsLemma.Filters <> Y:101 var
+binder 10164:10164 <> f:102
+R10175:10180 ZornsLemma.Filters <> Filter rec
+R10182:10182 ZornsLemma.Filters <> X:100 var
+binder 10173:10173 <> F:103
+R10187:10192 ZornsLemma.Filters <> Filter rec
+R10194:10194 ZornsLemma.Filters <> Y:101 var
+R10205:10216 ZornsLemma.Filters <> Build_Filter constr
+R10222:10223 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10225:10225 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10236:10238 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10279:10280 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10226:10233 Coq.Sets.Ensembles <> Ensemble def
+binder 10224:10224 <> S:104
+R10239:10240 Coq.Sets.Ensembles <> In def
+R10261:10273 ZornsLemma.InverseImage <> inverse_image def
+R10277:10277 ZornsLemma.Filters <> S:104 var
+R10243:10255 ZornsLemma.Filters <> filter_family proj
+R10205:10216 ZornsLemma.Filters <> Build_Filter constr
+R10222:10223 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10225:10225 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10236:10238 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10279:10280 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10226:10233 Coq.Sets.Ensembles <> Ensemble def
+binder 10224:10224 <> S:105
+R10239:10240 Coq.Sets.Ensembles <> In def
+R10261:10273 ZornsLemma.InverseImage <> inverse_image def
+R10277:10277 ZornsLemma.Filters <> S:105 var
+R10243:10255 ZornsLemma.Filters <> filter_family proj
+R10358:10383 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R10358:10383 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R10358:10383 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R10394:10412 ZornsLemma.Filters <> filter_intersection proj
+R10394:10412 ZornsLemma.Filters <> filter_intersection proj
+R10498:10510 ZornsLemma.InverseImage <> inverse_image def
+R10471:10490 ZornsLemma.Filters <> filter_upward_closed proj
+R10498:10510 ZornsLemma.InverseImage <> inverse_image def
+R10471:10490 ZornsLemma.Filters <> filter_upward_closed proj
+R10560:10577 ZornsLemma.InverseImage <> inverse_image_full thm
+R10560:10577 ZornsLemma.InverseImage <> inverse_image_full thm
+R10560:10577 ZornsLemma.InverseImage <> inverse_image_full thm
+R10588:10598 ZornsLemma.Filters <> filter_full proj
+R10588:10598 ZornsLemma.Filters <> filter_full proj
+R10639:10657 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10639:10657 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10639:10657 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10683:10694 ZornsLemma.Filters <> filter_empty proj
+R10683:10694 ZornsLemma.Filters <> filter_empty proj
+sec 10715:10724 <> filter_sum
+var 10737:10737 filter_sum X
+var 10754:10754 filter_sum F
+var 10756:10756 filter_sum G
+R10758:10763 ZornsLemma.Filters <> Filter rec
+R10765:10765 ZornsLemma.Filters <> filter_sum.X var
+var 10779:10788 filter_sum F_G_compat
+R10802:10809 Coq.Sets.Ensembles <> Ensemble def
+R10811:10811 ZornsLemma.Filters <> filter_sum.X var
+binder 10798:10798 <> S:109
+binder 10800:10800 <> T:110
+R10838:10841 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10816:10817 Coq.Sets.Ensembles <> In def
+R10837:10837 ZornsLemma.Filters <> S:109 var
+R10820:10832 ZornsLemma.Filters <> filter_family proj
+R10834:10834 ZornsLemma.Filters <> filter_sum.F var
+R10864:10869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10842:10843 Coq.Sets.Ensembles <> In def
+R10863:10863 ZornsLemma.Filters <> T:110 var
+R10846:10858 ZornsLemma.Filters <> filter_family proj
+R10860:10860 ZornsLemma.Filters <> filter_sum.G var
+R10870:10878 Coq.Sets.Ensembles <> Inhabited ind
+R10881:10892 Coq.Sets.Ensembles <> Intersection ind
+R10896:10896 ZornsLemma.Filters <> T:110 var
+R10894:10894 ZornsLemma.Filters <> S:109 var
+def 10912:10921 <> filter_sum
+R10925:10930 ZornsLemma.Filters <> Filter rec
+R10932:10932 ZornsLemma.Filters <> filter_sum.X var
+R10943:10965 ZornsLemma.Filters <> Build_Filter_from_basis def
+R10970:10971 Coq.Sets.Image <> Im ind
+R11114:11114 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11125:11127 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11138:11138 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11115:11122 Coq.Sets.Ensembles <> Ensemble def
+R11124:11124 ZornsLemma.Filters <> filter_sum.X var
+R11128:11135 Coq.Sets.Ensembles <> Ensemble def
+R11137:11137 ZornsLemma.Filters <> filter_sum.X var
+binder 11112:11112 <> p:112
+R11154:11154 ZornsLemma.Filters <> p:112 var
+binder 11148:11148 <> S:113
+binder 11150:11150 <> T:114
+R11166:11177 Coq.Sets.Ensembles <> Intersection ind
+R11181:11181 ZornsLemma.Filters <> T:114 var
+R11179:11179 ZornsLemma.Filters <> S:113 var
+R10973:10974 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10976:10976 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R11002:11012 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R11100:11101 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10977:10977 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10988:10990 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11001:11001 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10978:10985 Coq.Sets.Ensembles <> Ensemble def
+R10987:10987 ZornsLemma.Filters <> filter_sum.X var
+R10991:10998 Coq.Sets.Ensembles <> Ensemble def
+R11000:11000 ZornsLemma.Filters <> filter_sum.X var
+binder 10975:10975 <> p:115
+R11024:11024 ZornsLemma.Filters <> p:115 var
+binder 11018:11018 <> S:116
+binder 11020:11020 <> T:117
+R11051:11077 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R11029:11030 Coq.Sets.Ensembles <> In def
+R11050:11050 ZornsLemma.Filters <> S:116 var
+R11033:11045 ZornsLemma.Filters <> filter_family proj
+R11047:11047 ZornsLemma.Filters <> filter_sum.F var
+R11078:11079 Coq.Sets.Ensembles <> In def
+R11099:11099 ZornsLemma.Filters <> T:117 var
+R11082:11094 ZornsLemma.Filters <> filter_family proj
+R11096:11096 ZornsLemma.Filters <> filter_sum.G var
+R10943:10965 ZornsLemma.Filters <> Build_Filter_from_basis def
+R10970:10971 Coq.Sets.Image <> Im ind
+R11114:11114 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11125:11127 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11138:11138 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11115:11122 Coq.Sets.Ensembles <> Ensemble def
+R11124:11124 ZornsLemma.Filters <> filter_sum.X var
+R11128:11135 Coq.Sets.Ensembles <> Ensemble def
+R11137:11137 ZornsLemma.Filters <> filter_sum.X var
+binder 11112:11112 <> p:118
+R11154:11154 ZornsLemma.Filters <> p:118 var
+binder 11148:11148 <> S:119
+binder 11150:11150 <> T:120
+R11166:11177 Coq.Sets.Ensembles <> Intersection ind
+R11181:11181 ZornsLemma.Filters <> T:120 var
+R11179:11179 ZornsLemma.Filters <> S:119 var
+R10973:10974 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10976:10976 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R11002:11012 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R11100:11101 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R10977:10977 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10988:10990 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R11001:11001 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R10978:10985 Coq.Sets.Ensembles <> Ensemble def
+R10987:10987 ZornsLemma.Filters <> filter_sum.X var
+R10991:10998 Coq.Sets.Ensembles <> Ensemble def
+R11000:11000 ZornsLemma.Filters <> filter_sum.X var
+binder 10975:10975 <> p:121
+R11024:11024 ZornsLemma.Filters <> p:121 var
+binder 11018:11018 <> S:122
+binder 11020:11020 <> T:123
+R11051:11077 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R11029:11030 Coq.Sets.Ensembles <> In def
+R11050:11050 ZornsLemma.Filters <> S:122 var
+R11033:11045 ZornsLemma.Filters <> filter_family proj
+R11047:11047 ZornsLemma.Filters <> filter_sum.F var
+R11078:11079 Coq.Sets.Ensembles <> In def
+R11099:11099 ZornsLemma.Filters <> T:123 var
+R11082:11094 ZornsLemma.Filters <> filter_family proj
+R11096:11096 ZornsLemma.Filters <> filter_sum.G var
+R11204:11211 Coq.Sets.Ensembles <> Full_set ind
+R11204:11211 Coq.Sets.Ensembles <> Full_set ind
+R11225:11225 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11234:11235 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11244:11244 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11226:11233 Coq.Sets.Ensembles <> Full_set ind
+R11236:11243 Coq.Sets.Ensembles <> Full_set ind
+R11225:11225 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11234:11235 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11244:11244 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11226:11233 Coq.Sets.Ensembles <> Full_set ind
+R11236:11243 Coq.Sets.Ensembles <> Full_set ind
+R11283:11293 ZornsLemma.Filters <> filter_full proj
+R11283:11293 ZornsLemma.Filters <> filter_full proj
+R11283:11293 ZornsLemma.Filters <> filter_full proj
+R11308:11328 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R11308:11328 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R11308:11328 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R11445:11453 Coq.Sets.Ensembles <> Inhabited ind
+R11456:11467 Coq.Sets.Ensembles <> Intersection ind
+R11445:11453 Coq.Sets.Ensembles <> Inhabited ind
+R11456:11467 Coq.Sets.Ensembles <> Intersection ind
+R11486:11495 ZornsLemma.Filters <> filter_sum.F_G_compat var
+R11486:11495 ZornsLemma.Filters <> filter_sum.F_G_compat var
+R11676:11687 Coq.Sets.Ensembles <> Intersection ind
+R11676:11687 Coq.Sets.Ensembles <> Intersection ind
+R11775:11775 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11794:11795 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11814:11814 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11776:11787 Coq.Sets.Ensembles <> Intersection ind
+R11796:11807 Coq.Sets.Ensembles <> Intersection ind
+R11775:11775 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11794:11795 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11814:11814 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R11776:11787 Coq.Sets.Ensembles <> Intersection ind
+R11796:11807 Coq.Sets.Ensembles <> Intersection ind
+R11849:11867 ZornsLemma.Filters <> filter_intersection proj
+R11849:11867 ZornsLemma.Filters <> filter_intersection proj
+R11849:11867 ZornsLemma.Filters <> filter_intersection proj
+R11917:11940 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R11917:11940 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R12167:12176 ZornsLemma.Filters filter_sum <> sec
+R12190:12199 ZornsLemma.Filters <> filter_sum def
+R12190:12199 ZornsLemma.Filters <> filter_sum def

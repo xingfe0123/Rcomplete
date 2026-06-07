@@ -1,0 +1,454 @@
+DIGEST 635d6123d392af16ec93dad61c7e4fa8
+FZornsLemma.Classical_Wf
+R26:34 Coq.Logic.Classical <> <> lib
+R38:46 Coq.Sets.Ensembles <> <> lib
+R50:69 Coq.Relations.Relation_Definitions <> <> lib
+R105:121 ZornsLemma.EnsemblesImplicit <> <> lib
+sec 133:147 <> MinimalElements
+var 160:160 MinimalElements T
+var 177:177 MinimalElements R
+R179:186 Coq.Relations.Relation_Definitions <> relation def
+R188:188 ZornsLemma.Classical_Wf <> MinimalElements.T var
+def 295:318 <> minimal_element_property
+R341:348 Coq.Sets.Ensembles <> Ensemble def
+R350:350 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 339:339 <> S:3
+R364:367 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R353:361 Coq.Sets.Ensembles <> Inhabited ind
+R363:363 ZornsLemma.Classical_Wf <> S:3 var
+R368:374 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R378:379 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R377:377 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 375:375 <> x:4
+R386:393 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R380:381 Coq.Sets.Ensembles <> In def
+R385:385 ZornsLemma.Classical_Wf <> x:4 var
+R383:383 ZornsLemma.Classical_Wf <> S:3 var
+R403:403 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 401:401 <> y:5
+R412:415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R406:407 Coq.Sets.Ensembles <> In def
+R411:411 ZornsLemma.Classical_Wf <> y:5 var
+R409:409 ZornsLemma.Classical_Wf <> S:3 var
+R416:417 Coq.Init.Logic <> ::type_scope:'~'_x not
+R418:418 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R420:420 ZornsLemma.Classical_Wf <> y:5 var
+R422:422 ZornsLemma.Classical_Wf <> x:4 var
+prf 432:445 <> WF_implies_MEP
+R462:465 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R448:459 Coq.Init.Wf <> well_founded def
+R461:461 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R466:489 ZornsLemma.Classical_Wf <> minimal_element_property def
+R506:517 Coq.Init.Wf <> well_founded def
+R527:550 ZornsLemma.Classical_Wf <> minimal_element_property def
+R606:621 Coq.Init.Wf <> well_founded_ind thm
+R623:623 ZornsLemma.Classical_Wf <> MinimalElements.T var
+R625:625 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R638:638 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 636:636 <> x:6
+R651:654 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R645:646 Coq.Sets.Ensembles <> In def
+R650:650 ZornsLemma.Classical_Wf <> x:6 var
+R655:661 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R665:666 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R664:664 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 662:662 <> y:7
+R673:677 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R707:707 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R667:668 Coq.Sets.Ensembles <> In def
+R672:672 ZornsLemma.Classical_Wf <> y:7 var
+R687:687 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 685:685 <> z:8
+R696:699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R690:691 Coq.Sets.Ensembles <> In def
+R695:695 ZornsLemma.Classical_Wf <> z:8 var
+R700:701 Coq.Init.Logic <> ::type_scope:'~'_x not
+R702:702 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R704:704 ZornsLemma.Classical_Wf <> z:8 var
+R706:706 ZornsLemma.Classical_Wf <> y:7 var
+R606:621 Coq.Init.Wf <> well_founded_ind thm
+R623:623 ZornsLemma.Classical_Wf <> MinimalElements.T var
+R625:625 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R638:638 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 636:636 <> x:9
+R651:654 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R645:646 Coq.Sets.Ensembles <> In def
+R650:650 ZornsLemma.Classical_Wf <> x:9 var
+R655:661 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R665:666 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R664:664 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 662:662 <> y:10
+R673:677 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R707:707 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R667:668 Coq.Sets.Ensembles <> In def
+R672:672 ZornsLemma.Classical_Wf <> y:10 var
+R687:687 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 685:685 <> z:11
+R696:699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R690:691 Coq.Sets.Ensembles <> In def
+R695:695 ZornsLemma.Classical_Wf <> z:11 var
+R700:701 Coq.Init.Logic <> ::type_scope:'~'_x not
+R702:702 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R704:704 ZornsLemma.Classical_Wf <> z:11 var
+R706:706 ZornsLemma.Classical_Wf <> y:10 var
+R726:732 Coq.Logic.Classical_Prop <> classic prfax
+R744:744 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 742:742 <> y:12
+R753:756 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R747:748 Coq.Sets.Ensembles <> In def
+R752:752 ZornsLemma.Classical_Wf <> y:12 var
+R757:758 Coq.Init.Logic <> ::type_scope:'~'_x not
+R759:759 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R761:761 ZornsLemma.Classical_Wf <> y:12 var
+R726:732 Coq.Logic.Classical_Prop <> classic prfax
+R744:744 ZornsLemma.Classical_Wf <> MinimalElements.T var
+binder 742:742 <> y:13
+R753:756 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R747:748 Coq.Sets.Ensembles <> In def
+R752:752 ZornsLemma.Classical_Wf <> y:13 var
+R757:758 Coq.Init.Logic <> ::type_scope:'~'_x not
+R759:759 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R761:761 ZornsLemma.Classical_Wf <> y:13 var
+R838:851 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R838:851 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R883:894 Coq.Logic.Classical_Prop <> imply_to_and thm
+R883:894 Coq.Logic.Classical_Prop <> imply_to_and thm
+R947:950 Coq.Logic.Classical_Prop <> NNPP thm
+R947:950 Coq.Logic.Classical_Prop <> NNPP thm
+prf 1231:1246 <> MEP_inh_impl_LEM
+R1276:1281 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1252:1275 ZornsLemma.Classical_Wf <> minimal_element_property def
+R1282:1282 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1300:1307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1333:1333 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1283:1289 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1293:1294 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1290:1290 <> x:14
+binder 1292:1292 <> y:15
+R1295:1295 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1297:1297 ZornsLemma.Classical_Wf <> y:15 var
+R1299:1299 ZornsLemma.Classical_Wf <> x:14 var
+binder 1315:1315 <> P:16
+R1326:1329 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1325:1325 ZornsLemma.Classical_Wf <> P:16 var
+R1330:1331 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1332:1332 ZornsLemma.Classical_Wf <> P:16 var
+R1402:1406 Coq.Sets.Ensembles <> Union ind
+binder 1427:1427 <> a:17
+R1437:1440 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1432:1432 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1409:1417 Coq.Sets.Ensembles <> Singleton ind
+R1402:1406 Coq.Sets.Ensembles <> Union ind
+binder 1427:1427 <> a:18
+R1437:1440 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1432:1432 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1409:1417 Coq.Sets.Ensembles <> Singleton ind
+prf 1747:1760 <> MEP_implies_WF
+R1787:1790 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1763:1786 ZornsLemma.Classical_Wf <> minimal_element_property def
+R1791:1802 Coq.Init.Wf <> well_founded def
+R1804:1804 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1888:1903 ZornsLemma.Classical_Wf <> MEP_inh_impl_LEM thm
+R1888:1903 ZornsLemma.Classical_Wf <> MEP_inh_impl_LEM thm
+R1946:1948 Coq.Init.Wf <> Acc ind
+R1950:1950 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1946:1948 Coq.Init.Wf <> Acc ind
+R1950:1950 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1997:2005 Coq.Sets.Ensembles <> Inhabited ind
+binder 2012:2012 <> x:19
+R2017:2018 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2019:2021 Coq.Init.Wf <> Acc ind
+R2025:2025 ZornsLemma.Classical_Wf <> x:19 var
+R2023:2023 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R1997:2005 Coq.Sets.Ensembles <> Inhabited ind
+binder 2012:2012 <> x:20
+R2017:2018 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2019:2021 Coq.Init.Wf <> Acc ind
+R2025:2025 ZornsLemma.Classical_Wf <> x:20 var
+R2023:2023 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R2106:2107 Coq.Sets.Ensembles <> In def
+R2177:2179 Coq.Init.Wf <> Acc ind
+R2181:2181 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R2177:2179 Coq.Init.Wf <> Acc ind
+R2181:2181 ZornsLemma.Classical_Wf <> MinimalElements.R var
+R2261:2275 ZornsLemma.Classical_Wf MinimalElements <> sec
+R2294:2308 Coq.Logic.ClassicalChoice <> <> lib
+sec 2320:2338 <> DecreasingSequences
+var 2461:2461 DecreasingSequences T
+var 2478:2478 DecreasingSequences R
+R2480:2487 Coq.Relations.Relation_Definitions <> relation def
+R2489:2489 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+def 2504:2531 <> decreasing_sequence_property
+R2550:2551 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2547:2549 Coq.Init.Datatypes <> nat ind
+R2552:2552 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 2545:2545 <> a:23
+R2555:2561 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2567:2568 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2564:2566 Coq.Init.Datatypes <> nat ind
+binder 2562:2562 <> n:24
+R2569:2570 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2571:2571 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2574:2574 ZornsLemma.Classical_Wf <> a:23 var
+R2577:2577 Coq.Init.Datatypes <> S constr
+R2579:2579 ZornsLemma.Classical_Wf <> n:24 var
+R2584:2584 ZornsLemma.Classical_Wf <> a:23 var
+R2586:2586 ZornsLemma.Classical_Wf <> n:24 var
+prf 2597:2610 <> WF_implies_DSP
+R2627:2630 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2613:2624 Coq.Init.Wf <> well_founded def
+R2626:2626 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2631:2658 ZornsLemma.Classical_Wf <> decreasing_sequence_property def
+R2675:2702 ZornsLemma.Classical_Wf <> decreasing_sequence_property def
+R2766:2781 Coq.Init.Wf <> well_founded_ind thm
+R2793:2793 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 2791:2791 <> x:25
+R2812:2813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2809:2811 Coq.Init.Datatypes <> nat ind
+R2814:2814 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 2807:2807 <> a:26
+R2824:2827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2818:2820 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2817:2817 ZornsLemma.Classical_Wf <> x:25 var
+R2821:2821 ZornsLemma.Classical_Wf <> a:26 var
+R2828:2834 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2840:2841 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2837:2839 Coq.Init.Datatypes <> nat ind
+binder 2835:2835 <> n:27
+R2842:2843 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2844:2844 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2847:2847 ZornsLemma.Classical_Wf <> a:26 var
+R2850:2850 Coq.Init.Datatypes <> S constr
+R2852:2852 ZornsLemma.Classical_Wf <> n:27 var
+R2857:2857 ZornsLemma.Classical_Wf <> a:26 var
+R2859:2859 ZornsLemma.Classical_Wf <> n:27 var
+R2766:2781 Coq.Init.Wf <> well_founded_ind thm
+R2793:2793 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 2791:2791 <> x:28
+R2812:2813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2809:2811 Coq.Init.Datatypes <> nat ind
+R2814:2814 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 2807:2807 <> a:29
+R2824:2827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2818:2820 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2817:2817 ZornsLemma.Classical_Wf <> x:28 var
+R2821:2821 ZornsLemma.Classical_Wf <> a:29 var
+R2828:2834 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2840:2841 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2837:2839 Coq.Init.Datatypes <> nat ind
+binder 2835:2835 <> n:30
+R2842:2843 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2844:2844 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2847:2847 ZornsLemma.Classical_Wf <> a:29 var
+R2850:2850 Coq.Init.Datatypes <> S constr
+R2852:2852 ZornsLemma.Classical_Wf <> n:30 var
+R2857:2857 ZornsLemma.Classical_Wf <> a:29 var
+R2859:2859 ZornsLemma.Classical_Wf <> n:30 var
+R2879:2885 Coq.Logic.Classical_Prop <> classic prfax
+R2888:2888 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2879:2885 Coq.Logic.Classical_Prop <> classic prfax
+R2888:2888 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2933:2935 Coq.Init.Datatypes <> nat ind
+binder 2931:2931 <> n:31
+R2943:2943 Coq.Init.Datatypes <> S constr
+R2945:2945 ZornsLemma.Classical_Wf <> n:31 var
+R2933:2935 Coq.Init.Datatypes <> nat ind
+binder 2931:2931 <> n:32
+R2943:2943 Coq.Init.Datatypes <> S constr
+R2945:2945 ZornsLemma.Classical_Wf <> n:32 var
+R2960:2966 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2972:2973 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2969:2971 Coq.Init.Datatypes <> nat ind
+binder 2967:2967 <> n:33
+R2974:2975 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2976:2976 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2982:2982 Coq.Init.Datatypes <> S constr
+R2984:2984 ZornsLemma.Classical_Wf <> n:33 var
+R2991:2991 ZornsLemma.Classical_Wf <> n:33 var
+R2960:2966 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2972:2973 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2969:2971 Coq.Init.Datatypes <> nat ind
+binder 2967:2967 <> n:34
+R2974:2975 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2976:2976 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R2982:2982 Coq.Init.Datatypes <> S constr
+R2984:2984 ZornsLemma.Classical_Wf <> n:34 var
+R2991:2991 ZornsLemma.Classical_Wf <> n:34 var
+R3100:3100 Coq.Init.Datatypes <> S constr
+R3100:3100 Coq.Init.Datatypes <> S constr
+prf 3177:3190 <> DSP_implies_WF
+R3221:3224 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3193:3220 ZornsLemma.Classical_Wf <> decreasing_sequence_property def
+R3225:3236 Coq.Init.Wf <> well_founded def
+R3238:3238 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3255:3282 ZornsLemma.Classical_Wf <> decreasing_sequence_property def
+R3302:3315 ZornsLemma.Classical_Wf <> MEP_implies_WF thm
+R3302:3315 ZornsLemma.Classical_Wf <> MEP_implies_WF thm
+R3325:3348 ZornsLemma.Classical_Wf <> minimal_element_property def
+R3375:3378 Coq.Logic.Classical_Prop <> NNPP thm
+R3375:3378 Coq.Logic.Classical_Prop <> NNPP thm
+R3409:3409 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3407:3407 <> x:35
+R3419:3422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3412:3413 Coq.Sets.Ensembles <> In def
+R3418:3418 ZornsLemma.Classical_Wf <> x:35 var
+R3423:3429 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3433:3434 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3432:3432 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3430:3430 <> y:36
+R3442:3445 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3435:3436 Coq.Sets.Ensembles <> In def
+R3441:3441 ZornsLemma.Classical_Wf <> y:36 var
+R3446:3446 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3448:3448 ZornsLemma.Classical_Wf <> y:36 var
+R3450:3450 ZornsLemma.Classical_Wf <> x:35 var
+R3409:3409 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3407:3407 <> x:37
+R3419:3422 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3412:3413 Coq.Sets.Ensembles <> In def
+R3418:3418 ZornsLemma.Classical_Wf <> x:37 var
+R3423:3429 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3433:3434 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3432:3432 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3430:3430 <> y:38
+R3442:3445 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3435:3436 Coq.Sets.Ensembles <> In def
+R3441:3441 ZornsLemma.Classical_Wf <> y:38 var
+R3446:3446 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3448:3448 ZornsLemma.Classical_Wf <> y:38 var
+R3450:3450 ZornsLemma.Classical_Wf <> x:37 var
+R3472:3475 Coq.Logic.Classical_Prop <> NNPP thm
+R3472:3475 Coq.Logic.Classical_Prop <> NNPP thm
+R3510:3510 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3508:3508 <> y:39
+R3513:3514 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3531:3531 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3522:3525 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3515:3516 Coq.Sets.Ensembles <> In def
+R3521:3521 ZornsLemma.Classical_Wf <> y:39 var
+R3526:3526 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3528:3528 ZornsLemma.Classical_Wf <> y:39 var
+R3510:3510 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3508:3508 <> y:40
+R3513:3514 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3531:3531 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3522:3525 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3515:3516 Coq.Sets.Ensembles <> In def
+R3521:3521 ZornsLemma.Classical_Wf <> y:40 var
+R3526:3526 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3528:3528 ZornsLemma.Classical_Wf <> y:40 var
+R3545:3558 Coq.Logic.Classical_Pred_Type <> not_ex_all_not thm
+R3545:3558 Coq.Logic.Classical_Pred_Type <> not_ex_all_not thm
+R3686:3686 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3688:3688 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3690:3692 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3700:3700 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3689:3689 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3687:3687 <> x:41
+R3693:3694 Coq.Sets.Ensembles <> In def
+R3699:3699 ZornsLemma.Classical_Wf <> x:41 var
+R3686:3686 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3688:3688 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3690:3692 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3700:3700 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3689:3689 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3687:3687 <> x:42
+R3693:3694 Coq.Sets.Ensembles <> In def
+R3699:3699 ZornsLemma.Classical_Wf <> x:42 var
+R3712:3718 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3737:3738 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3727:3730 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3719:3719 <> f:43
+binder 3746:3746 <> x:44
+R3758:3758 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3761:3769 Coq.Init.Specif <> proj1_sig def
+R3772:3772 ZornsLemma.Classical_Wf <> f:43 var
+R3774:3774 ZornsLemma.Classical_Wf <> x:44 var
+R3779:3787 Coq.Init.Specif <> proj1_sig def
+R3789:3789 ZornsLemma.Classical_Wf <> x:44 var
+R3712:3718 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3737:3738 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3727:3730 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3719:3719 <> f:45
+binder 3746:3746 <> x:46
+R3758:3758 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3761:3769 Coq.Init.Specif <> proj1_sig def
+R3772:3772 ZornsLemma.Classical_Wf <> f:45 var
+R3774:3774 ZornsLemma.Classical_Wf <> x:46 var
+R3779:3787 Coq.Init.Specif <> proj1_sig def
+R3789:3789 ZornsLemma.Classical_Wf <> x:46 var
+binder 3822:3822 <> x:47
+binder 3824:3824 <> y:48
+R3836:3836 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3839:3847 Coq.Init.Specif <> proj1_sig def
+R3849:3849 ZornsLemma.Classical_Wf <> y:48 var
+R3853:3861 Coq.Init.Specif <> proj1_sig def
+R3863:3863 ZornsLemma.Classical_Wf <> x:47 var
+R3802:3807 Coq.Logic.ClassicalChoice <> choice thm
+binder 3822:3822 <> x:49
+binder 3824:3824 <> y:50
+R3836:3836 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R3839:3847 Coq.Init.Specif <> proj1_sig def
+R3849:3849 ZornsLemma.Classical_Wf <> y:50 var
+R3853:3861 Coq.Init.Specif <> proj1_sig def
+R3863:3863 ZornsLemma.Classical_Wf <> x:49 var
+R3802:3807 Coq.Logic.ClassicalChoice <> choice thm
+R3961:3965 Coq.Init.Specif <> exist constr
+R3974:3974 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3972:3972 <> x:51
+R3979:3980 Coq.Sets.Ensembles <> In def
+R3985:3985 ZornsLemma.Classical_Wf <> x:51 var
+R3961:3965 Coq.Init.Specif <> exist constr
+R3974:3974 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 3972:3972 <> x:52
+R3979:3980 Coq.Sets.Ensembles <> In def
+R3985:3985 ZornsLemma.Classical_Wf <> x:52 var
+R4065:4072 Coq.Init.Datatypes <> nat_rect scheme
+R4141:4143 Coq.Init.Datatypes <> nat ind
+binder 4139:4139 <> n:53
+binder 4147:4147 <> x:54
+R4162:4162 ZornsLemma.Classical_Wf <> x:54 var
+R4099:4103 Coq.Init.Specif <> exist constr
+R4112:4112 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 4110:4110 <> x:55
+R4117:4118 Coq.Sets.Ensembles <> In def
+R4123:4123 ZornsLemma.Classical_Wf <> x:55 var
+R4081:4083 Coq.Init.Datatypes <> nat ind
+binder 4079:4079 <> n:56
+R4065:4072 Coq.Init.Datatypes <> nat_rect scheme
+R4141:4143 Coq.Init.Datatypes <> nat ind
+binder 4139:4139 <> n:57
+binder 4147:4147 <> x:58
+R4162:4162 ZornsLemma.Classical_Wf <> x:58 var
+R4099:4103 Coq.Init.Specif <> exist constr
+R4112:4112 ZornsLemma.Classical_Wf <> DecreasingSequences.T var
+binder 4110:4110 <> x:59
+R4117:4118 Coq.Sets.Ensembles <> In def
+R4123:4123 ZornsLemma.Classical_Wf <> x:59 var
+R4081:4083 Coq.Init.Datatypes <> nat ind
+binder 4079:4079 <> n:60
+R4196:4198 Coq.Init.Datatypes <> nat ind
+binder 4194:4194 <> n:61
+R4204:4212 Coq.Init.Specif <> proj1_sig def
+R4217:4217 ZornsLemma.Classical_Wf <> n:61 var
+R4196:4198 Coq.Init.Datatypes <> nat ind
+binder 4194:4194 <> n:62
+R4204:4212 Coq.Init.Specif <> proj1_sig def
+R4217:4217 ZornsLemma.Classical_Wf <> n:62 var
+R4240:4242 Coq.Init.Datatypes <> nat ind
+binder 4238:4238 <> n:63
+R4245:4245 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R4251:4251 Coq.Init.Datatypes <> S constr
+R4253:4253 ZornsLemma.Classical_Wf <> n:63 var
+R4260:4260 ZornsLemma.Classical_Wf <> n:63 var
+R4240:4242 Coq.Init.Datatypes <> nat ind
+binder 4238:4238 <> n:64
+R4245:4245 ZornsLemma.Classical_Wf <> DecreasingSequences.R var
+R4251:4251 Coq.Init.Datatypes <> S constr
+R4253:4253 ZornsLemma.Classical_Wf <> n:64 var
+R4260:4260 ZornsLemma.Classical_Wf <> n:64 var
+R4331:4344 Coq.Logic.Classical_Pred_Type <> ex_not_not_all thm
+R4331:4344 Coq.Logic.Classical_Pred_Type <> ex_not_not_all thm
+R4363:4376 Coq.Logic.Classical_Pred_Type <> all_not_not_ex thm
+R4363:4376 Coq.Logic.Classical_Pred_Type <> all_not_not_ex thm
+R4395:4413 ZornsLemma.Classical_Wf DecreasingSequences <> sec

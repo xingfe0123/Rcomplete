@@ -1,0 +1,747 @@
+DIGEST 6a9b58128bed2af1a5b6d737d291d4b4
+FZornsLemma.FiniteIntersections
+R26:40 Coq.Logic.ClassicalChoice <> <> lib
+R44:46 Coq.micromega.Lia <> <> lib
+R50:65 Coq.Program.Equality <> <> lib
+R101:117 ZornsLemma.EnsemblesImplicit <> <> lib
+R121:132 ZornsLemma.InverseImage <> <> lib
+R136:152 ZornsLemma.Proj1SigInjective <> <> lib
+R188:201 ZornsLemma.CountableTypes <> <> lib
+R205:212 ZornsLemma.Families <> <> lib
+R216:226 ZornsLemma.FiniteTypes <> <> lib
+R230:240 ZornsLemma.Finite_sets <> <> lib
+R244:258 ZornsLemma.IndexedFamilies <> <> lib
+R262:275 ZornsLemma.Powerset_facts <> <> lib
+ind 289:308 <> finite_intersections
+constr 350:359 <> intro_full
+constr 403:409 <> intro_S
+constr 477:494 <> intro_intersection
+binder 311:311 <> X:1
+R322:327 ZornsLemma.Families <> Family def
+R329:329 ZornsLemma.FiniteIntersections <> X:1 var
+binder 320:320 <> S:2
+R334:339 ZornsLemma.Families <> Family def
+R362:363 Coq.Sets.Ensembles <> In def
+R390:397 Coq.Sets.Ensembles <> Full_set ind
+R366:385 ZornsLemma.FiniteIntersections <> finite_intersections:3 ind
+R387:387 ZornsLemma.FiniteIntersections <> S:2 var
+R421:428 Coq.Sets.Ensembles <> Ensemble def
+R430:430 ZornsLemma.FiniteIntersections <> X:1 var
+binder 419:419 <> U:5
+R439:442 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R433:434 Coq.Sets.Ensembles <> In def
+R438:438 ZornsLemma.FiniteIntersections <> U:5 var
+R436:436 ZornsLemma.FiniteIntersections <> S:2 var
+R443:444 Coq.Sets.Ensembles <> In def
+R471:471 ZornsLemma.FiniteIntersections <> U:5 var
+R447:466 ZornsLemma.FiniteIntersections <> finite_intersections:3 ind
+R468:468 ZornsLemma.FiniteIntersections <> S:2 var
+R508:515 Coq.Sets.Ensembles <> Ensemble def
+R517:517 ZornsLemma.FiniteIntersections <> X:1 var
+binder 504:504 <> U:6
+binder 506:506 <> V:7
+R553:556 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R524:525 Coq.Sets.Ensembles <> In def
+R552:552 ZornsLemma.FiniteIntersections <> U:6 var
+R528:547 ZornsLemma.FiniteIntersections <> finite_intersections:3 ind
+R549:549 ZornsLemma.FiniteIntersections <> S:2 var
+R586:593 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R557:558 Coq.Sets.Ensembles <> In def
+R585:585 ZornsLemma.FiniteIntersections <> V:7 var
+R561:580 ZornsLemma.FiniteIntersections <> finite_intersections:3 ind
+R582:582 ZornsLemma.FiniteIntersections <> S:2 var
+R594:595 Coq.Sets.Ensembles <> In def
+R623:634 Coq.Sets.Ensembles <> Intersection ind
+R638:638 ZornsLemma.FiniteIntersections <> V:7 var
+R636:636 ZornsLemma.FiniteIntersections <> U:6 var
+R598:617 ZornsLemma.FiniteIntersections <> finite_intersections:3 ind
+R619:619 ZornsLemma.FiniteIntersections <> S:2 var
+scheme 289:308 <> finite_intersections_ind
+scheme 289:308 <> finite_intersections_sind
+prf 649:698 <> finite_intersection_is_finite_indexed_intersection
+binder 711:711 <> X:8
+R722:727 ZornsLemma.Families <> Family def
+R729:729 ZornsLemma.FiniteIntersections <> X:8 var
+binder 720:720 <> S:9
+R735:742 Coq.Sets.Ensembles <> Ensemble def
+R744:744 ZornsLemma.FiniteIntersections <> X:8 var
+binder 733:733 <> U:10
+R779:782 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R750:751 Coq.Sets.Ensembles <> In def
+R778:778 ZornsLemma.FiniteIntersections <> U:10 var
+R754:773 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R775:775 ZornsLemma.FiniteIntersections <> S:9 var
+R783:789 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R796:797 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 790:790 <> J:11
+R807:812 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R798:804 ZornsLemma.FiniteTypes <> FiniteT ind
+R806:806 ZornsLemma.FiniteIntersections <> J:11 var
+R813:819 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R835:838 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R823:824 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R822:822 ZornsLemma.FiniteIntersections <> J:11 var
+R825:832 Coq.Sets.Ensembles <> Ensemble def
+R834:834 ZornsLemma.FiniteIntersections <> X:8 var
+binder 820:820 <> V:12
+R839:839 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R862:866 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R849:849 ZornsLemma.FiniteIntersections <> J:11 var
+binder 847:847 <> j:13
+R852:853 Coq.Sets.Ensembles <> In def
+R858:858 ZornsLemma.FiniteIntersections <> V:12 var
+R860:860 ZornsLemma.FiniteIntersections <> j:13 var
+R855:855 ZornsLemma.FiniteIntersections <> S:9 var
+R868:870 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R867:867 ZornsLemma.FiniteIntersections <> U:10 var
+R871:889 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R891:891 ZornsLemma.FiniteIntersections <> V:12 var
+R931:935 Coq.Init.Logic <> False ind
+R931:935 Coq.Init.Logic <> False ind
+R976:985 Coq.Init.Logic <> False_rect scheme
+R976:985 Coq.Init.Logic <> False_rect scheme
+R1042:1067 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R1042:1067 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R1079:1082 Coq.Init.Logic <> True ind
+R1079:1082 Coq.Init.Logic <> True ind
+R1104:1114 ZornsLemma.FiniteTypes <> True_finite thm
+R1104:1114 ZornsLemma.FiniteTypes <> True_finite thm
+R1129:1137 Coq.Init.Logic <> True_rect scheme
+R1129:1137 Coq.Init.Logic <> True_rect scheme
+R1209:1232 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1209:1232 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1367:1367 Coq.Init.Logic <> I constr
+R1367:1367 Coq.Init.Logic <> I constr
+R1494:1494 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+R1494:1494 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+R1525:1534 ZornsLemma.FiniteTypes <> finite_sum thm
+R1525:1534 ZornsLemma.FiniteTypes <> finite_sum thm
+R1566:1566 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+binder 1562:1562 <> s:14
+R1579:1579 ZornsLemma.FiniteIntersections <> s:14 var
+R1592:1594 Coq.Init.Datatypes <> inl constr
+R1611:1613 Coq.Init.Datatypes <> inr constr
+R1566:1566 Coq.Init.Datatypes <> ::type_scope:x_'+'_x not
+binder 1562:1562 <> s:16
+R1579:1579 ZornsLemma.FiniteIntersections <> s:16 var
+R1592:1594 Coq.Init.Datatypes <> inl constr
+R1611:1613 Coq.Init.Datatypes <> inr constr
+R1682:1705 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1682:1705 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2013:2015 Coq.Init.Datatypes <> inl constr
+R2013:2015 Coq.Init.Datatypes <> inl constr
+R2105:2107 Coq.Init.Datatypes <> inr constr
+R2105:2107 Coq.Init.Datatypes <> inr constr
+prf 2128:2177 <> finite_indexed_intersection_is_finite_intersection
+binder 2190:2190 <> X:18
+R2201:2206 ZornsLemma.Families <> Family def
+R2208:2208 ZornsLemma.FiniteIntersections <> X:18 var
+binder 2199:2199 <> S:19
+binder 2212:2212 <> J:20
+R2224:2225 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2223:2223 ZornsLemma.FiniteIntersections <> J:20 var
+R2226:2233 Coq.Sets.Ensembles <> Ensemble def
+R2235:2235 ZornsLemma.FiniteIntersections <> X:18 var
+binder 2221:2221 <> V:21
+R2250:2253 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2241:2247 ZornsLemma.FiniteTypes <> FiniteT ind
+R2249:2249 ZornsLemma.FiniteIntersections <> J:20 var
+R2254:2254 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2277:2283 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2264:2264 ZornsLemma.FiniteIntersections <> J:20 var
+binder 2262:2262 <> j:22
+R2267:2268 Coq.Sets.Ensembles <> In def
+R2273:2273 ZornsLemma.FiniteIntersections <> V:21 var
+R2275:2275 ZornsLemma.FiniteIntersections <> j:22 var
+R2270:2270 ZornsLemma.FiniteIntersections <> S:19 var
+R2284:2285 Coq.Sets.Ensembles <> In def
+R2313:2331 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R2333:2333 ZornsLemma.FiniteIntersections <> V:21 var
+R2288:2307 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R2309:2309 ZornsLemma.FiniteIntersections <> S:19 var
+R2375:2400 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R2375:2400 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R2375:2400 ZornsLemma.IndexedFamilies <> empty_indexed_intersection thm
+R2428:2466 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R2428:2466 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R2428:2466 ZornsLemma.IndexedFamilies <> IndexedIntersection_option_Intersection thm
+R2553:2579 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R2553:2579 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R2553:2579 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R2553:2579 ZornsLemma.IndexedFamilies <> IndexedIntersection_surj_fn thm
+R2608:2632 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R2608:2632 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+sec 2686:2691 <> Lemmas
+ind 2721:2744 <> finite_intersections_len
+constr 2812:2828 <> intro_fi_len_full
+constr 2879:2892 <> intro_fi_len_S
+constr 2969:2993 <> intro_fi_len_intersection
+binder 2747:2747 <> X:23
+R2762:2767 ZornsLemma.Families <> Family def
+R2769:2769 ZornsLemma.FiniteIntersections <> X:23 var
+binder 2758:2758 <> F:24
+R2774:2786 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R2793:2800 Coq.Sets.Ensembles <> Ensemble def
+R2788:2790 Coq.Init.Datatypes <> nat ind
+R2832:2833 Coq.Sets.Ensembles <> In def
+R2866:2873 Coq.Sets.Ensembles <> Full_set ind
+R2836:2859 ZornsLemma.FiniteIntersections <> finite_intersections_len:25 ind
+R2861:2861 ZornsLemma.FiniteIntersections <> F:24 var
+R2907:2914 Coq.Sets.Ensembles <> Ensemble def
+R2916:2916 ZornsLemma.FiniteIntersections <> X:23 var
+binder 2903:2903 <> U:27
+R2925:2928 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2919:2920 Coq.Sets.Ensembles <> In def
+R2924:2924 ZornsLemma.FiniteIntersections <> U:27 var
+R2922:2922 ZornsLemma.FiniteIntersections <> F:24 var
+R2929:2930 Coq.Sets.Ensembles <> In def
+R2963:2963 ZornsLemma.FiniteIntersections <> U:27 var
+R2933:2956 ZornsLemma.FiniteIntersections <> finite_intersections_len:25 ind
+R2958:2958 ZornsLemma.FiniteIntersections <> F:24 var
+R3011:3018 Coq.Sets.Ensembles <> Ensemble def
+R3020:3020 ZornsLemma.FiniteIntersections <> X:23 var
+binder 3005:3005 <> U:28
+binder 3007:3007 <> V:29
+R3030:3032 Coq.Init.Datatypes <> nat ind
+binder 3024:3024 <> m:30
+binder 3026:3026 <> k:31
+R3096:3124 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3061:3062 Coq.Sets.Ensembles <> In def
+R3095:3095 ZornsLemma.FiniteIntersections <> U:28 var
+R3065:3088 ZornsLemma.FiniteIntersections <> finite_intersections_len:25 ind
+R3092:3092 ZornsLemma.FiniteIntersections <> m:30 var
+R3090:3090 ZornsLemma.FiniteIntersections <> F:24 var
+R3160:3188 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3125:3126 Coq.Sets.Ensembles <> In def
+R3159:3159 ZornsLemma.FiniteIntersections <> V:29 var
+R3129:3152 ZornsLemma.FiniteIntersections <> finite_intersections_len:25 ind
+R3156:3156 ZornsLemma.FiniteIntersections <> k:31 var
+R3154:3154 ZornsLemma.FiniteIntersections <> F:24 var
+R3189:3190 Coq.Sets.Ensembles <> In def
+R3230:3241 Coq.Sets.Ensembles <> Intersection ind
+R3245:3245 ZornsLemma.FiniteIntersections <> V:29 var
+R3243:3243 ZornsLemma.FiniteIntersections <> U:28 var
+R3193:3216 ZornsLemma.FiniteIntersections <> finite_intersections_len:25 ind
+R3222:3224 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3221:3221 ZornsLemma.FiniteIntersections <> m:30 var
+R3225:3225 ZornsLemma.FiniteIntersections <> k:31 var
+R3218:3218 ZornsLemma.FiniteIntersections <> F:24 var
+scheme 2721:2744 <> finite_intersections_len_ind
+scheme 2721:2744 <> finite_intersections_len_sind
+prf 3256:3290 <> finite_intersections_len_0_full_set
+binder 3295:3295 <> X:32
+R3312:3317 ZornsLemma.Families <> Family def
+R3319:3319 ZornsLemma.FiniteIntersections <> X:32 var
+binder 3308:3308 <> F:33
+R3329:3336 Coq.Sets.Ensembles <> Ensemble def
+R3338:3338 ZornsLemma.FiniteIntersections <> X:32 var
+binder 3325:3325 <> U:34
+R3380:3383 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3345:3346 Coq.Sets.Ensembles <> In def
+R3379:3379 ZornsLemma.FiniteIntersections <> U:34 var
+R3349:3372 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R3374:3374 ZornsLemma.FiniteIntersections <> F:33 var
+R3385:3387 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3384:3384 ZornsLemma.FiniteIntersections <> U:34 var
+R3388:3395 Coq.Sets.Ensembles <> Full_set ind
+R3520:3540 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R3520:3540 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R3520:3540 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+prf 3614:3642 <> finite_intersections_len_1_in
+binder 3647:3647 <> X:35
+R3664:3669 ZornsLemma.Families <> Family def
+R3671:3671 ZornsLemma.FiniteIntersections <> X:35 var
+binder 3660:3660 <> F:36
+R3681:3688 Coq.Sets.Ensembles <> Ensemble def
+R3690:3690 ZornsLemma.FiniteIntersections <> X:35 var
+binder 3677:3677 <> U:37
+R3732:3735 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3697:3698 Coq.Sets.Ensembles <> In def
+R3731:3731 ZornsLemma.FiniteIntersections <> U:37 var
+R3701:3724 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R3726:3726 ZornsLemma.FiniteIntersections <> F:36 var
+R3736:3737 Coq.Sets.Ensembles <> In def
+R3741:3741 ZornsLemma.FiniteIntersections <> U:37 var
+R3739:3739 ZornsLemma.FiniteIntersections <> F:36 var
+R3885:3919 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R3925:3945 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R3885:3919 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R3885:3919 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R3925:3945 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R3925:3945 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4004:4038 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4045:4068 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4071:4091 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4004:4038 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4004:4038 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4045:4068 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4045:4068 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4071:4091 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4071:4091 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+prf 4162:4201 <> finite_intersections_len_SS_intersection
+binder 4206:4206 <> X:38
+R4223:4228 ZornsLemma.Families <> Family def
+R4230:4230 ZornsLemma.FiniteIntersections <> X:38 var
+binder 4219:4219 <> F:39
+R4240:4247 Coq.Sets.Ensembles <> Ensemble def
+R4249:4249 ZornsLemma.FiniteIntersections <> X:38 var
+binder 4236:4236 <> U:40
+R4259:4261 Coq.Init.Datatypes <> nat ind
+binder 4255:4255 <> n:41
+R4311:4316 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4268:4269 Coq.Sets.Ensembles <> In def
+R4310:4310 ZornsLemma.FiniteIntersections <> U:40 var
+R4272:4295 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R4300:4300 Coq.Init.Datatypes <> S constr
+R4303:4303 Coq.Init.Datatypes <> S constr
+R4305:4305 ZornsLemma.FiniteIntersections <> n:41 var
+R4297:4297 ZornsLemma.FiniteIntersections <> F:39 var
+R4317:4323 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4331:4336 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4324:4324 <> m:42
+binder 4326:4326 <> k:43
+binder 4328:4328 <> V:44
+binder 4330:4330 <> W:45
+R4376:4383 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4337:4338 Coq.Sets.Ensembles <> In def
+R4375:4375 ZornsLemma.FiniteIntersections <> V:44 var
+R4341:4364 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R4369:4369 Coq.Init.Datatypes <> S constr
+R4371:4371 ZornsLemma.FiniteIntersections <> m:42 var
+R4366:4366 ZornsLemma.FiniteIntersections <> F:39 var
+R4423:4430 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4384:4385 Coq.Sets.Ensembles <> In def
+R4422:4422 ZornsLemma.FiniteIntersections <> W:45 var
+R4388:4411 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R4416:4416 Coq.Init.Datatypes <> S constr
+R4418:4418 ZornsLemma.FiniteIntersections <> k:43 var
+R4413:4413 ZornsLemma.FiniteIntersections <> F:39 var
+R4451:4458 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4432:4434 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4431:4431 ZornsLemma.FiniteIntersections <> U:40 var
+R4435:4446 Coq.Sets.Ensembles <> Intersection ind
+R4450:4450 ZornsLemma.FiniteIntersections <> W:45 var
+R4448:4448 ZornsLemma.FiniteIntersections <> V:44 var
+R4460:4462 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4459:4459 ZornsLemma.FiniteIntersections <> n:41 var
+R4464:4466 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4463:4463 ZornsLemma.FiniteIntersections <> m:42 var
+R4467:4467 ZornsLemma.FiniteIntersections <> k:43 var
+R4597:4631 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4637:4657 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4597:4631 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4597:4631 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4637:4657 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4637:4657 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4716:4750 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4757:4780 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4783:4803 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4716:4750 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4716:4750 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R4757:4780 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4757:4780 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R4783:4803 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R4783:4803 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+prf 4930:4962 <> finite_intersections_len_S_exists
+binder 4967:4967 <> X:46
+R4984:4989 ZornsLemma.Families <> Family def
+R4991:4991 ZornsLemma.FiniteIntersections <> X:46 var
+binder 4980:4980 <> F:47
+R5001:5008 Coq.Sets.Ensembles <> Ensemble def
+R5010:5010 ZornsLemma.FiniteIntersections <> X:46 var
+binder 4997:4997 <> U:48
+R5020:5022 Coq.Init.Datatypes <> nat ind
+binder 5016:5016 <> n:49
+R5068:5073 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5029:5030 Coq.Sets.Ensembles <> In def
+R5067:5067 ZornsLemma.FiniteIntersections <> U:48 var
+R5033:5056 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5061:5061 Coq.Init.Datatypes <> S constr
+R5063:5063 ZornsLemma.FiniteIntersections <> n:49 var
+R5058:5058 ZornsLemma.FiniteIntersections <> F:47 var
+R5074:5080 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5084:5089 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5081:5081 <> V:50
+binder 5083:5083 <> W:51
+R5125:5132 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5090:5091 Coq.Sets.Ensembles <> In def
+R5124:5124 ZornsLemma.FiniteIntersections <> V:50 var
+R5094:5117 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5121:5121 ZornsLemma.FiniteIntersections <> n:49 var
+R5119:5119 ZornsLemma.FiniteIntersections <> F:47 var
+R5168:5175 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5133:5134 Coq.Sets.Ensembles <> In def
+R5167:5167 ZornsLemma.FiniteIntersections <> W:51 var
+R5137:5160 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5162:5162 ZornsLemma.FiniteIntersections <> F:47 var
+R5177:5179 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5176:5176 ZornsLemma.FiniteIntersections <> U:48 var
+R5180:5191 Coq.Sets.Ensembles <> Intersection ind
+R5195:5195 ZornsLemma.FiniteIntersections <> W:51 var
+R5193:5193 ZornsLemma.FiniteIntersections <> V:50 var
+R5260:5275 Coq.Init.Wf <> well_founded_ind thm
+binder 5295:5295 <> n:52
+binder 5309:5309 <> U:53
+R5355:5360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5316:5317 Coq.Sets.Ensembles <> In def
+R5354:5354 ZornsLemma.FiniteIntersections <> U:53 var
+R5320:5343 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5348:5348 Coq.Init.Datatypes <> S constr
+R5350:5350 ZornsLemma.FiniteIntersections <> n:52 var
+R5361:5367 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5371:5376 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5368:5368 <> V:54
+binder 5370:5370 <> W:55
+R5412:5419 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5377:5378 Coq.Sets.Ensembles <> In def
+R5411:5411 ZornsLemma.FiniteIntersections <> V:54 var
+R5381:5404 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5408:5408 ZornsLemma.FiniteIntersections <> n:52 var
+R5455:5462 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5420:5421 Coq.Sets.Ensembles <> In def
+R5454:5454 ZornsLemma.FiniteIntersections <> W:55 var
+R5424:5447 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5464:5466 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5463:5463 ZornsLemma.FiniteIntersections <> U:53 var
+R5467:5478 Coq.Sets.Ensembles <> Intersection ind
+R5482:5482 ZornsLemma.FiniteIntersections <> W:55 var
+R5480:5480 ZornsLemma.FiniteIntersections <> V:54 var
+R5277:5288 Coq.Arith.Wf_nat <> lt_wf thm
+R5260:5275 Coq.Init.Wf <> well_founded_ind thm
+binder 5295:5295 <> n:56
+binder 5309:5309 <> U:57
+R5355:5360 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5316:5317 Coq.Sets.Ensembles <> In def
+R5354:5354 ZornsLemma.FiniteIntersections <> U:57 var
+R5320:5343 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5348:5348 Coq.Init.Datatypes <> S constr
+R5350:5350 ZornsLemma.FiniteIntersections <> n:56 var
+R5361:5367 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5371:5376 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5368:5368 <> V:58
+binder 5370:5370 <> W:59
+R5412:5419 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5377:5378 Coq.Sets.Ensembles <> In def
+R5411:5411 ZornsLemma.FiniteIntersections <> V:58 var
+R5381:5404 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5408:5408 ZornsLemma.FiniteIntersections <> n:56 var
+R5455:5462 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5420:5421 Coq.Sets.Ensembles <> In def
+R5454:5454 ZornsLemma.FiniteIntersections <> W:59 var
+R5424:5447 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R5464:5466 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5463:5463 ZornsLemma.FiniteIntersections <> U:57 var
+R5467:5478 Coq.Sets.Ensembles <> Intersection ind
+R5482:5482 ZornsLemma.FiniteIntersections <> W:59 var
+R5480:5480 ZornsLemma.FiniteIntersections <> V:58 var
+R5277:5288 Coq.Arith.Wf_nat <> lt_wf thm
+R5515:5543 ZornsLemma.FiniteIntersections <> finite_intersections_len_1_in thm
+R5515:5543 ZornsLemma.FiniteIntersections <> finite_intersections_len_1_in thm
+R5560:5567 Coq.Sets.Ensembles <> Full_set ind
+R5560:5567 Coq.Sets.Ensembles <> Full_set ind
+R5619:5639 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R5619:5639 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R5619:5639 ZornsLemma.Powerset_facts <> Intersection_Full_set thm
+R5650:5689 ZornsLemma.FiniteIntersections <> finite_intersections_len_SS_intersection thm
+R5650:5689 ZornsLemma.FiniteIntersections <> finite_intersections_len_SS_intersection thm
+R5765:5784 Coq.Arith.PeanoNat Nat add_0_r thm
+R5765:5784 Coq.Arith.PeanoNat Nat add_0_r thm
+R5765:5784 Coq.Arith.PeanoNat Nat add_0_r thm
+R5917:5925 Coq.Init.Peano <> plus_n_Sm thm
+R5917:5925 Coq.Init.Peano <> plus_n_Sm thm
+R5917:5925 Coq.Init.Peano <> plus_n_Sm thm
+R5940:5951 Coq.Sets.Ensembles <> Intersection ind
+R5940:5951 Coq.Sets.Ensembles <> Intersection ind
+R6028:6051 ZornsLemma.Powerset_facts <> Intersection_associative thm
+R6077:6100 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R6125:6148 ZornsLemma.Powerset_facts <> Intersection_associative thm
+R6028:6051 ZornsLemma.Powerset_facts <> Intersection_associative thm
+R6028:6051 ZornsLemma.Powerset_facts <> Intersection_associative thm
+R6077:6100 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R6077:6100 Coq.Sets.Powerset_facts <> Intersection_commutative thm
+R6125:6148 ZornsLemma.Powerset_facts <> Intersection_associative thm
+R6125:6148 ZornsLemma.Powerset_facts <> Intersection_associative thm
+prf 6167:6199 <> finite_intersections_len_S_choice
+binder 6204:6204 <> X:60
+R6221:6226 ZornsLemma.Families <> Family def
+R6228:6228 ZornsLemma.FiniteIntersections <> X:60 var
+binder 6217:6217 <> F:61
+R6238:6240 Coq.Init.Datatypes <> nat ind
+binder 6234:6234 <> n:62
+R6247:6253 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6457:6460 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6316:6332 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6258:6258 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6260:6262 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6273:6275 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6315:6315 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6263:6270 Coq.Sets.Ensembles <> Ensemble def
+R6272:6272 ZornsLemma.FiniteIntersections <> X:60 var
+binder 6259:6259 <> U:63
+R6276:6277 Coq.Sets.Ensembles <> In def
+R6314:6314 ZornsLemma.FiniteIntersections <> U:63 var
+R6280:6303 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6308:6308 Coq.Init.Datatypes <> S constr
+R6310:6310 ZornsLemma.FiniteIntersections <> n:62 var
+R6305:6305 ZornsLemma.FiniteIntersections <> F:61 var
+R6387:6402 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6333:6333 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6335:6337 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6348:6350 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6386:6386 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6338:6345 Coq.Sets.Ensembles <> Ensemble def
+R6347:6347 ZornsLemma.FiniteIntersections <> X:60 var
+binder 6334:6334 <> U:64
+R6351:6352 Coq.Sets.Ensembles <> In def
+R6385:6385 ZornsLemma.FiniteIntersections <> U:64 var
+R6355:6378 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6382:6382 ZornsLemma.FiniteIntersections <> n:62 var
+R6380:6380 ZornsLemma.FiniteIntersections <> F:61 var
+R6403:6403 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6405:6407 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6418:6420 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6456:6456 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6408:6415 Coq.Sets.Ensembles <> Ensemble def
+R6417:6417 ZornsLemma.FiniteIntersections <> X:60 var
+binder 6404:6404 <> U:65
+R6421:6422 Coq.Sets.Ensembles <> In def
+R6455:6455 ZornsLemma.FiniteIntersections <> U:65 var
+R6425:6448 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6450:6450 ZornsLemma.FiniteIntersections <> F:61 var
+binder 6254:6254 <> f:66
+binder 6468:6468 <> U:67
+R6482:6484 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6471:6479 Coq.Init.Specif <> proj1_sig def
+R6481:6481 ZornsLemma.FiniteIntersections <> U:67 var
+R6485:6496 Coq.Sets.Ensembles <> Intersection ind
+R6523:6531 Coq.Init.Specif <> proj1_sig def
+R6534:6536 Coq.Init.Datatypes <> snd def
+R6539:6539 ZornsLemma.FiniteIntersections <> f:66 var
+R6541:6541 ZornsLemma.FiniteIntersections <> U:67 var
+R6499:6507 Coq.Init.Specif <> proj1_sig def
+R6510:6512 Coq.Init.Datatypes <> fst def
+R6515:6515 ZornsLemma.FiniteIntersections <> f:66 var
+R6517:6517 ZornsLemma.FiniteIntersections <> U:67 var
+R6588:6588 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6590:6592 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6603:6605 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6645:6645 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6593:6600 Coq.Sets.Ensembles <> Ensemble def
+binder 6589:6589 <> U:68
+R6606:6607 Coq.Sets.Ensembles <> In def
+R6644:6644 ZornsLemma.FiniteIntersections <> U:68 var
+R6610:6633 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6638:6638 Coq.Init.Datatypes <> S constr
+binder 6584:6584 <> U:69
+R6714:6726 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6660:6660 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6662:6664 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6675:6677 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6713:6713 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6665:6672 Coq.Sets.Ensembles <> Ensemble def
+binder 6661:6661 <> U:70
+R6678:6679 Coq.Sets.Ensembles <> In def
+R6712:6712 ZornsLemma.FiniteIntersections <> U:70 var
+R6682:6705 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6727:6727 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6729:6731 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6742:6744 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6780:6780 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6732:6739 Coq.Sets.Ensembles <> Ensemble def
+binder 6728:6728 <> U:71
+R6745:6746 Coq.Sets.Ensembles <> In def
+R6779:6779 ZornsLemma.FiniteIntersections <> U:71 var
+R6749:6772 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+binder 6656:6656 <> y:72
+R6800:6802 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6789:6797 Coq.Init.Specif <> proj1_sig def
+R6799:6799 ZornsLemma.FiniteIntersections <> U:69 var
+R6803:6814 Coq.Sets.Ensembles <> Intersection ind
+R6837:6845 Coq.Init.Specif <> proj1_sig def
+R6848:6850 Coq.Init.Datatypes <> snd def
+R6852:6852 ZornsLemma.FiniteIntersections <> y:72 var
+R6817:6825 Coq.Init.Specif <> proj1_sig def
+R6828:6830 Coq.Init.Datatypes <> fst def
+R6832:6832 ZornsLemma.FiniteIntersections <> y:72 var
+R6560:6565 Coq.Logic.ClassicalChoice <> choice thm
+R6588:6588 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6590:6592 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6603:6605 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6645:6645 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6593:6600 Coq.Sets.Ensembles <> Ensemble def
+binder 6589:6589 <> U:73
+R6606:6607 Coq.Sets.Ensembles <> In def
+R6644:6644 ZornsLemma.FiniteIntersections <> U:73 var
+R6610:6633 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6638:6638 Coq.Init.Datatypes <> S constr
+binder 6584:6584 <> U:74
+R6714:6726 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R6660:6660 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6662:6664 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6675:6677 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6713:6713 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6665:6672 Coq.Sets.Ensembles <> Ensemble def
+binder 6661:6661 <> U:75
+R6678:6679 Coq.Sets.Ensembles <> In def
+R6712:6712 ZornsLemma.FiniteIntersections <> U:75 var
+R6682:6705 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R6727:6727 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6729:6731 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6742:6744 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6780:6780 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R6732:6739 Coq.Sets.Ensembles <> Ensemble def
+binder 6728:6728 <> U:76
+R6745:6746 Coq.Sets.Ensembles <> In def
+R6779:6779 ZornsLemma.FiniteIntersections <> U:76 var
+R6749:6772 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+binder 6656:6656 <> y:77
+R6800:6802 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6789:6797 Coq.Init.Specif <> proj1_sig def
+R6799:6799 ZornsLemma.FiniteIntersections <> U:74 var
+R6803:6814 Coq.Sets.Ensembles <> Intersection ind
+R6837:6845 Coq.Init.Specif <> proj1_sig def
+R6848:6850 Coq.Init.Datatypes <> snd def
+R6852:6852 ZornsLemma.FiniteIntersections <> y:77 var
+R6817:6825 Coq.Init.Specif <> proj1_sig def
+R6828:6830 Coq.Init.Datatypes <> fst def
+R6832:6832 ZornsLemma.FiniteIntersections <> y:77 var
+R6560:6565 Coq.Logic.ClassicalChoice <> choice thm
+R6883:6915 ZornsLemma.FiniteIntersections <> finite_intersections_len_S_exists thm
+R6883:6915 ZornsLemma.FiniteIntersections <> finite_intersections_len_S_exists thm
+R6956:6956 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6969:6970 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6983:6983 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6957:6961 Coq.Init.Specif <> exist constr
+R6971:6975 Coq.Init.Specif <> exist constr
+R6956:6956 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6969:6970 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6983:6983 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6957:6961 Coq.Init.Specif <> exist constr
+R6971:6975 Coq.Init.Specif <> exist constr
+prf 6998:7027 <> finite_intersections_len_union
+binder 7032:7032 <> X:78
+R7049:7054 ZornsLemma.Families <> Family def
+R7056:7056 ZornsLemma.FiniteIntersections <> X:78 var
+binder 7045:7045 <> F:79
+R7104:7106 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7063:7074 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R7077:7100 ZornsLemma.FiniteIntersections <> finite_intersections_len ind
+R7102:7102 ZornsLemma.FiniteIntersections <> F:79 var
+R7107:7126 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R7128:7128 ZornsLemma.FiniteIntersections <> F:79 var
+R7144:7167 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7144:7167 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7247:7256 ZornsLemma.FiniteIntersections <> intro_full constr
+R7247:7256 ZornsLemma.FiniteIntersections <> intro_full constr
+R7273:7279 ZornsLemma.FiniteIntersections <> intro_S constr
+R7273:7279 ZornsLemma.FiniteIntersections <> intro_S constr
+R7296:7313 ZornsLemma.FiniteIntersections <> intro_intersection constr
+R7296:7313 ZornsLemma.FiniteIntersections <> intro_intersection constr
+R7449:7462 ZornsLemma.FiniteIntersections <> intro_fi_len_S constr
+R7449:7462 ZornsLemma.FiniteIntersections <> intro_fi_len_S constr
+R7475:7499 ZornsLemma.FiniteIntersections <> intro_fi_len_intersection constr
+R7475:7499 ZornsLemma.FiniteIntersections <> intro_fi_len_intersection constr
+prf 7546:7575 <> finite_intersections_countable
+binder 7580:7580 <> X:80
+R7597:7602 ZornsLemma.Families <> Family def
+R7604:7604 ZornsLemma.FiniteIntersections <> X:80 var
+binder 7593:7593 <> F:81
+R7622:7625 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7611:7619 ZornsLemma.CountableTypes <> Countable def
+R7621:7621 ZornsLemma.FiniteIntersections <> F:81 var
+R7626:7634 ZornsLemma.CountableTypes <> Countable def
+R7637:7656 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R7658:7658 ZornsLemma.FiniteIntersections <> F:81 var
+R7695:7724 ZornsLemma.FiniteIntersections <> finite_intersections_len_union thm
+R7695:7724 ZornsLemma.FiniteIntersections <> finite_intersections_len_union thm
+R7695:7724 ZornsLemma.FiniteIntersections <> finite_intersections_len_union thm
+R7733:7755 ZornsLemma.CountableTypes <> countable_indexed_union thm
+R7733:7755 ZornsLemma.CountableTypes <> countable_indexed_union thm
+R7766:7778 ZornsLemma.CountableTypes <> nat_countable thm
+R7766:7778 ZornsLemma.CountableTypes <> nat_countable thm
+binder 7823:7823 <> x:82
+binder 7823:7823 <> x:83
+R7871:7889 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R7871:7889 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R7920:7954 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R7978:8012 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R7920:7954 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R7920:7954 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R7978:8012 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R7978:8012 ZornsLemma.FiniteIntersections <> finite_intersections_len_0_full_set thm
+R8033:8065 ZornsLemma.FiniteIntersections <> finite_intersections_len_S_choice thm
+R8033:8065 ZornsLemma.FiniteIntersections <> finite_intersections_len_S_choice thm
+R8125:8137 ZornsLemma.CountableTypes <> inj_countable thm
+R8225:8245 ZornsLemma.CountableTypes <> countable_nat_product thm
+binder 8144:8144 <> U:84
+R8155:8155 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8170:8178 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8216:8216 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8160:8162 Coq.Init.Datatypes <> fst def
+R8167:8167 ZornsLemma.FiniteIntersections <> U:84 var
+R8182:8186 Coq.Init.Specif <> exist constr
+R8191:8199 Coq.Init.Specif <> proj1_sig def
+R8202:8204 Coq.Init.Datatypes <> snd def
+R8209:8209 ZornsLemma.FiniteIntersections <> U:84 var
+R8125:8137 ZornsLemma.CountableTypes <> inj_countable thm
+R8225:8245 ZornsLemma.CountableTypes <> countable_nat_product thm
+binder 8144:8144 <> U:85
+R8155:8155 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8170:8178 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8216:8216 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8160:8162 Coq.Init.Datatypes <> fst def
+R8167:8167 ZornsLemma.FiniteIntersections <> U:85 var
+R8182:8186 Coq.Init.Specif <> exist constr
+R8191:8199 Coq.Init.Specif <> proj1_sig def
+R8202:8204 Coq.Init.Datatypes <> snd def
+R8209:8209 ZornsLemma.FiniteIntersections <> U:85 var
+R8320:8331 Coq.Init.Specif <> proj1_sig_eq def
+R8320:8331 Coq.Init.Specif <> proj1_sig_eq def
+R8353:8364 Coq.Init.Specif <> proj1_sig_eq def
+R8353:8364 Coq.Init.Specif <> proj1_sig_eq def
+R8382:8418 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R8382:8418 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R8477:8479 Coq.Init.Datatypes <> snd def
+R8477:8479 Coq.Init.Datatypes <> snd def
+R8501:8529 ZornsLemma.FiniteIntersections <> finite_intersections_len_1_in thm
+R8501:8529 ZornsLemma.FiniteIntersections <> finite_intersections_len_1_in thm
+prf 8717:8753 <> finite_intersections_Im_inverse_image
+binder 8756:8756 <> X:86
+binder 8758:8758 <> Y:87
+R8774:8777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8773:8773 ZornsLemma.FiniteIntersections <> Y:87 var
+R8778:8778 ZornsLemma.FiniteIntersections <> X:86 var
+binder 8769:8769 <> f:88
+R8788:8793 ZornsLemma.Families <> Family def
+R8795:8795 ZornsLemma.FiniteIntersections <> X:86 var
+binder 8784:8784 <> F:89
+R8803:8810 Coq.Sets.Ensembles <> Ensemble def
+R8812:8812 ZornsLemma.FiniteIntersections <> X:86 var
+binder 8799:8799 <> U:90
+R8848:8853 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8819:8820 Coq.Sets.Ensembles <> In def
+R8847:8847 ZornsLemma.FiniteIntersections <> U:90 var
+R8823:8842 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R8844:8844 ZornsLemma.FiniteIntersections <> F:89 var
+R8854:8855 Coq.Sets.Ensembles <> In def
+R8906:8918 ZornsLemma.InverseImage <> inverse_image def
+R8922:8922 ZornsLemma.FiniteIntersections <> U:90 var
+R8920:8920 ZornsLemma.FiniteIntersections <> f:88 var
+R8858:8877 ZornsLemma.FiniteIntersections <> finite_intersections ind
+R8880:8881 Coq.Sets.Image <> Im ind
+R8886:8898 ZornsLemma.InverseImage <> inverse_image def
+R8900:8900 ZornsLemma.FiniteIntersections <> f:88 var
+R8883:8883 ZornsLemma.FiniteIntersections <> F:89 var
+R8972:8989 ZornsLemma.InverseImage <> inverse_image_full thm
+R8972:8989 ZornsLemma.InverseImage <> inverse_image_full thm
+R8972:8989 ZornsLemma.InverseImage <> inverse_image_full thm
+R9019:9045 ZornsLemma.FiniteIntersections <> intro_S constr
+R9019:9045 ZornsLemma.FiniteIntersections <> intro_S constr
+R9058:9063 Coq.Sets.Image <> Im_def thm
+R9058:9063 Coq.Sets.Image <> Im_def thm
+R9090:9115 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R9090:9115 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R9090:9115 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R9128:9165 ZornsLemma.FiniteIntersections <> intro_intersection constr
+R9128:9165 ZornsLemma.FiniteIntersections <> intro_intersection constr
+R9184:9189 ZornsLemma.FiniteIntersections Lemmas <> sec

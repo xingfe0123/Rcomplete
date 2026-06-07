@@ -1,0 +1,87 @@
+DIGEST 0b6c1d6cf133b439e7d734f89cabc161
+FZornsLemma.DependentTypeChoice
+R24:38 Coq.Logic.ClassicalChoice <> <> lib
+prf 74:97 <> choice_on_dependent_type
+binder 100:100 <> A:1
+R116:119 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R115:115 ZornsLemma.DependentTypeChoice <> A:1 var
+binder 111:111 <> B:2
+binder 140:140 <> a:3
+R146:149 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R143:143 ZornsLemma.DependentTypeChoice <> B:2 var
+R145:145 ZornsLemma.DependentTypeChoice <> a:3 var
+binder 129:129 <> R:4
+R160:160 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R186:192 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 168:168 <> a:5
+R171:177 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R179:180 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 178:178 <> b:6
+R181:181 ZornsLemma.DependentTypeChoice <> R:4 var
+R185:185 ZornsLemma.DependentTypeChoice <> b:6 var
+R183:183 ZornsLemma.DependentTypeChoice <> a:5 var
+R193:199 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R216:218 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 210:210 <> a:7
+R213:213 ZornsLemma.DependentTypeChoice <> B:2 var
+R215:215 ZornsLemma.DependentTypeChoice <> a:7 var
+binder 200:200 <> f:8
+binder 226:226 <> a:9
+R229:229 ZornsLemma.DependentTypeChoice <> R:4 var
+R234:234 ZornsLemma.DependentTypeChoice <> f:8 var
+R236:236 ZornsLemma.DependentTypeChoice <> a:9 var
+R231:231 ZornsLemma.DependentTypeChoice <> a:9 var
+R265:270 Coq.Logic.ClassicalChoice <> choice thm
+binder 277:277 <> a:10
+R282:282 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R284:284 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R286:288 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R292:292 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+binder 283:283 <> a:11
+R291:291 ZornsLemma.DependentTypeChoice <> a:11 var
+binder 280:280 <> b:12
+R306:306 ZornsLemma.DependentTypeChoice <> b:12 var
+R313:318 Coq.Init.Specif <> existT constr
+R333:336 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R330:330 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R329:329 ZornsLemma.DependentTypeChoice <> a:10 var
+R265:270 Coq.Logic.ClassicalChoice <> choice thm
+binder 277:277 <> a:14
+R282:282 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R284:284 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R286:288 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+R292:292 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'&'_x_'}' not
+binder 283:283 <> a:15
+R291:291 ZornsLemma.DependentTypeChoice <> a:15 var
+binder 280:280 <> b:16
+R306:306 ZornsLemma.DependentTypeChoice <> b:16 var
+R313:318 Coq.Init.Specif <> existT constr
+R333:336 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R330:330 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R329:329 ZornsLemma.DependentTypeChoice <> a:14 var
+R418:423 Coq.Init.Specif <> existT constr
+R418:423 Coq.Init.Specif <> existT constr
+binder 450:450 <> a:18
+R453:453 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R455:457 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R461:463 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R469:469 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R460:460 ZornsLemma.DependentTypeChoice <> a:18 var
+binder 454:454 <> b:19
+R466:466 ZornsLemma.DependentTypeChoice <> a:18 var
+R468:468 ZornsLemma.DependentTypeChoice <> b:19 var
+binder 450:450 <> a:20
+R453:453 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R455:457 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R461:463 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R469:469 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R460:460 ZornsLemma.DependentTypeChoice <> a:20 var
+binder 454:454 <> b:21
+R466:466 ZornsLemma.DependentTypeChoice <> a:20 var
+R468:468 ZornsLemma.DependentTypeChoice <> b:21 var
+binder 594:594 <> a:22
+R601:609 Coq.Init.Specif <> proj1_sig def
+R615:615 ZornsLemma.DependentTypeChoice <> a:22 var
+binder 594:594 <> a:23
+R601:609 Coq.Init.Specif <> proj1_sig def
+R615:615 ZornsLemma.DependentTypeChoice <> a:23 var

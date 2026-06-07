@@ -1,0 +1,1345 @@
+DIGEST 0b39063a892a6f6b455f911a32e409f5
+Fanalysis
+R15:19 Coq.Reals.Reals <> <> lib
+R37:40 Coq.Lists.List <> <> lib
+R50:62 Coq.Lists.List ListNotations <> mod
+R80:88 Coq.Logic.Classical <> <> lib
+R106:110 Coq.Reals.Reals <> <> lib
+rec 182:191 <> TotalOrder
+proj 223:224 <> le
+proj 258:259 <> lt
+proj 299:305 <> le_refl
+proj 330:337 <> le_antis
+proj 382:389 <> le_trans
+proj 437:444 <> le_total
+binder 193:199 <> carrier:1
+R235:238 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R228:234 analysis <> carrier:1 var
+R246:249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R239:245 analysis <> carrier:1 var
+R268:274 analysis <> carrier:1 var
+binder 262:262 <> x:4
+binder 264:264 <> y:5
+R287:288 Coq.Init.Logic <> ::type_scope:'~'_x not
+R289:290 analysis <> le:3 meth
+R294:294 analysis <> x:4 var
+R292:292 analysis <> y:5 var
+binder 317:317 <> x:7
+R320:321 analysis <> le:3 meth
+R325:325 analysis <> x:7 var
+R323:323 analysis <> x:7 var
+binder 348:348 <> x:9
+binder 350:350 <> y:10
+R359:362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R353:354 analysis <> le:3 meth
+R358:358 analysis <> y:10 var
+R356:356 analysis <> x:9 var
+R369:372 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R363:364 analysis <> le:3 meth
+R368:368 analysis <> x:9 var
+R366:366 analysis <> y:10 var
+R374:376 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R373:373 analysis <> x:9 var
+R377:377 analysis <> y:10 var
+binder 400:400 <> x:12
+binder 402:402 <> y:13
+binder 404:404 <> z:14
+R413:416 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R407:408 analysis <> le:3 meth
+R412:412 analysis <> y:13 var
+R410:410 analysis <> x:12 var
+R423:426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R417:418 analysis <> le:3 meth
+R422:422 analysis <> z:14 var
+R420:420 analysis <> y:13 var
+R427:428 analysis <> le:3 meth
+R432:432 analysis <> z:14 var
+R430:430 analysis <> x:12 var
+binder 455:455 <> x:16
+binder 457:457 <> y:17
+R466:469 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R460:461 analysis <> le:3 meth
+R465:465 analysis <> y:17 var
+R463:463 analysis <> x:16 var
+R470:471 analysis <> lt:6 meth
+R475:475 analysis <> x:16 var
+R473:473 analysis <> y:17 var
+R486:487 analysis <> le meth
+def 502:515 <> is_upper_bound
+binder 518:518 <> A:19
+R530:539 analysis <> TotalOrder class
+R541:541 analysis <> A:19 var
+binder 530:541 <> H:20
+R552:555 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R551:551 analysis <> A:19 var
+binder 547:547 <> S:21
+R567:567 analysis <> A:19 var
+binder 563:563 <> u:22
+binder 589:589 <> x:23
+R595:598 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R592:592 analysis <> S:21 var
+R594:594 analysis <> x:23 var
+R599:600 analysis <> le meth
+R604:604 analysis <> u:22 var
+R602:602 analysis <> x:23 var
+def 618:632 <> has_upper_bound
+binder 635:635 <> A:24
+R647:656 analysis <> TotalOrder class
+R658:658 analysis <> A:24 var
+binder 647:658 <> H:25
+R669:672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R668:668 analysis <> A:24 var
+binder 664:664 <> E:26
+R691:697 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R699:700 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 698:698 <> u:27
+R701:714 analysis <> is_upper_bound def
+R718:718 analysis <> u:27 var
+R716:716 analysis <> E:26 var
+def 733:743 <> is_supremum
+binder 746:746 <> A:28
+R758:767 analysis <> TotalOrder class
+R769:769 analysis <> A:28 var
+binder 758:769 <> H:29
+R780:783 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R779:779 analysis <> A:28 var
+binder 775:775 <> S:30
+R795:795 analysis <> A:28 var
+binder 791:791 <> m:31
+R828:835 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R810:823 analysis <> is_upper_bound def
+R827:827 analysis <> m:31 var
+R825:825 analysis <> S:30 var
+binder 843:843 <> u:32
+R864:867 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R846:859 analysis <> is_upper_bound def
+R863:863 analysis <> u:32 var
+R861:861 analysis <> S:30 var
+R868:869 analysis <> le meth
+R873:873 analysis <> u:32 var
+R871:871 analysis <> m:31 var
+def 888:901 <> is_lower_bound
+binder 904:904 <> A:33
+R916:925 analysis <> TotalOrder class
+R927:927 analysis <> A:33 var
+binder 916:927 <> H:34
+R936:939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R935:935 analysis <> A:33 var
+binder 931:931 <> S:35
+R951:951 analysis <> A:33 var
+binder 947:947 <> l:36
+binder 973:973 <> x:37
+R979:982 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R976:976 analysis <> S:35 var
+R978:978 analysis <> x:37 var
+R983:984 analysis <> le meth
+R988:988 analysis <> x:37 var
+R986:986 analysis <> l:36 var
+def 1045:1054 <> is_infimum
+binder 1057:1057 <> A:38
+R1069:1078 analysis <> TotalOrder class
+R1080:1080 analysis <> A:38 var
+binder 1069:1080 <> H:39
+R1089:1092 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1088:1088 analysis <> A:38 var
+binder 1084:1084 <> S:40
+R1104:1104 analysis <> A:38 var
+binder 1100:1100 <> m:41
+R1137:1140 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1119:1132 analysis <> is_lower_bound def
+R1136:1136 analysis <> m:41 var
+R1134:1134 analysis <> S:40 var
+binder 1148:1148 <> l:42
+R1169:1172 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1151:1164 analysis <> is_lower_bound def
+R1168:1168 analysis <> l:42 var
+R1166:1166 analysis <> S:40 var
+R1173:1174 analysis <> le meth
+R1178:1178 analysis <> m:41 var
+R1176:1176 analysis <> l:42 var
+def 1193:1209 <> supremum_property
+binder 1212:1212 <> A:43
+R1224:1233 analysis <> TotalOrder class
+R1235:1235 analysis <> A:43 var
+binder 1224:1235 <> H:44
+R1262:1265 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1261:1261 analysis <> A:43 var
+binder 1257:1257 <> E:45
+R1276:1276 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1290:1294 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1277:1283 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1285:1286 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1284:1284 <> x:46
+R1287:1287 analysis <> E:45 var
+R1289:1289 analysis <> x:46 var
+R1312:1315 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1295:1309 analysis <> has_upper_bound def
+R1311:1311 analysis <> E:45 var
+R1316:1322 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1324:1325 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1323:1323 <> m:47
+R1326:1336 analysis <> is_supremum def
+R1340:1340 analysis <> m:47 var
+R1338:1338 analysis <> E:45 var
+rec 1351:1355 <> Field
+proj 1406:1409 <> zero
+proj 1418:1420 <> add
+proj 1439:1441 <> neg
+proj 1455:1463 <> add_assoc
+proj 1518:1525 <> add_comm
+proj 1563:1569 <> add_0_l
+proj 1603:1611 <> add_neg_l
+proj 1689:1691 <> one
+proj 1700:1702 <> mul
+proj 1721:1723 <> inv
+proj 1792:1800 <> mul_assoc
+proj 1855:1862 <> mul_comm
+proj 1900:1906 <> mul_1_l
+proj 1939:1947 <> mul_inv_l
+proj 2016:2024 <> distrib_l
+binder 1358:1358 <> F:48
+R1413:1413 analysis <> F:48 var
+R1425:1428 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1424:1424 analysis <> F:48 var
+R1430:1433 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1429:1429 analysis <> F:48 var
+R1434:1434 analysis <> F:48 var
+R1446:1449 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1445:1445 analysis <> F:48 var
+R1450:1450 analysis <> F:48 var
+binder 1474:1474 <> x:53
+binder 1476:1476 <> y:54
+binder 1478:1478 <> z:55
+R1496:1498 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1481:1483 analysis <> add:51 meth
+R1488:1490 analysis <> add:51 meth
+R1494:1494 analysis <> z:55 var
+R1492:1492 analysis <> y:54 var
+R1485:1485 analysis <> x:53 var
+R1499:1501 analysis <> add:51 meth
+R1513:1513 analysis <> z:55 var
+R1504:1506 analysis <> add:51 meth
+R1510:1510 analysis <> y:54 var
+R1508:1508 analysis <> x:53 var
+binder 1537:1537 <> x:57
+binder 1539:1539 <> y:58
+R1549:1551 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1542:1544 analysis <> add:51 meth
+R1548:1548 analysis <> y:58 var
+R1546:1546 analysis <> x:57 var
+R1552:1554 analysis <> add:51 meth
+R1558:1558 analysis <> x:57 var
+R1556:1556 analysis <> y:58 var
+binder 1582:1582 <> x:60
+R1595:1597 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1585:1587 analysis <> add:51 meth
+R1594:1594 analysis <> x:60 var
+R1589:1592 analysis <> zero:50 meth
+R1598:1598 analysis <> x:60 var
+binder 1622:1622 <> x:62
+R1638:1640 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1625:1627 analysis <> add:51 meth
+R1637:1637 analysis <> x:62 var
+R1630:1632 analysis <> neg:52 meth
+R1634:1634 analysis <> x:62 var
+R1641:1644 analysis <> zero:50 meth
+R1695:1695 analysis <> F:48 var
+R1707:1710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1706:1706 analysis <> F:48 var
+R1712:1715 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1711:1711 analysis <> F:48 var
+R1716:1716 analysis <> F:48 var
+R1728:1731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1727:1727 analysis <> F:48 var
+R1732:1732 analysis <> F:48 var
+binder 1811:1811 <> x:67
+binder 1813:1813 <> y:68
+binder 1815:1815 <> z:69
+R1833:1835 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1818:1820 analysis <> mul:65 meth
+R1825:1827 analysis <> mul:65 meth
+R1831:1831 analysis <> z:69 var
+R1829:1829 analysis <> y:68 var
+R1822:1822 analysis <> x:67 var
+R1836:1838 analysis <> mul:65 meth
+R1850:1850 analysis <> z:69 var
+R1841:1843 analysis <> mul:65 meth
+R1847:1847 analysis <> y:68 var
+R1845:1845 analysis <> x:67 var
+binder 1874:1874 <> x:71
+binder 1876:1876 <> y:72
+R1886:1888 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1879:1881 analysis <> mul:65 meth
+R1885:1885 analysis <> y:72 var
+R1883:1883 analysis <> x:71 var
+R1889:1891 analysis <> mul:65 meth
+R1895:1895 analysis <> x:71 var
+R1893:1893 analysis <> y:72 var
+binder 1919:1919 <> x:74
+R1931:1933 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1922:1924 analysis <> mul:65 meth
+R1930:1930 analysis <> x:74 var
+R1926:1928 analysis <> one:64 meth
+R1934:1934 analysis <> x:74 var
+binder 1958:1958 <> x:76
+R1970:1973 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1962:1965 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1961:1961 analysis <> x:76 var
+R1966:1969 analysis <> zero:50 meth
+R1987:1989 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1974:1976 analysis <> mul:65 meth
+R1986:1986 analysis <> x:76 var
+R1979:1981 analysis <> inv:66 meth
+R1983:1983 analysis <> x:76 var
+R1990:1992 analysis <> one:64 meth
+binder 2035:2035 <> x:78
+binder 2037:2037 <> y:79
+binder 2039:2039 <> z:80
+R2057:2059 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2042:2044 analysis <> mul:65 meth
+R2049:2051 analysis <> add:51 meth
+R2055:2055 analysis <> z:80 var
+R2053:2053 analysis <> y:79 var
+R2046:2046 analysis <> x:78 var
+R2060:2062 analysis <> add:51 meth
+R2075:2077 analysis <> mul:65 meth
+R2081:2081 analysis <> z:80 var
+R2079:2079 analysis <> x:78 var
+R2065:2067 analysis <> mul:65 meth
+R2071:2071 analysis <> y:79 var
+R2069:2069 analysis <> x:78 var
+rec 2158:2169 <> OrderedField
+proj 2244:2256 <> add_le_compat
+proj 2340:2356 <> mul_pos_le_compat
+binder 2172:2172 <> F:82
+R2184:2188 analysis <> Field class
+R2190:2190 analysis <> F:82 var
+binder 2184:2190 <> H:83
+R2195:2204 analysis <> TotalOrder class
+R2206:2206 analysis <> F:82 var
+binder 2195:2206 <> H0:84
+binder 2267:2267 <> x:86
+binder 2269:2269 <> y:87
+binder 2271:2271 <> z:88
+R2280:2283 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2274:2275 analysis <> le meth
+R2279:2279 analysis <> y:87 var
+R2277:2277 analysis <> x:86 var
+R2284:2285 analysis <> le meth
+R2298:2300 analysis <> add meth
+R2304:2304 analysis <> z:88 var
+R2302:2302 analysis <> y:87 var
+R2288:2290 analysis <> add meth
+R2294:2294 analysis <> z:88 var
+R2292:2292 analysis <> x:86 var
+binder 2367:2367 <> x:90
+binder 2369:2369 <> y:91
+R2381:2384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2372:2373 analysis <> le meth
+R2380:2380 analysis <> x:90 var
+R2375:2378 analysis <> zero meth
+R2394:2397 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2385:2386 analysis <> le meth
+R2393:2393 analysis <> y:91 var
+R2388:2391 analysis <> zero meth
+R2398:2399 analysis <> le meth
+R2407:2409 analysis <> mul meth
+R2413:2413 analysis <> y:91 var
+R2411:2411 analysis <> x:90 var
+R2401:2404 analysis <> zero meth
+def 2432:2442 <> is_positive
+binder 2445:2445 <> F:93
+R2457:2461 analysis <> Field class
+R2463:2463 analysis <> F:93 var
+binder 2457:2463 <> H:94
+R2468:2477 analysis <> TotalOrder class
+R2479:2479 analysis <> F:93 var
+binder 2468:2479 <> H0:95
+R2487:2487 analysis <> F:93 var
+binder 2483:2483 <> x:96
+R2502:2503 analysis <> lt meth
+R2510:2510 analysis <> x:96 var
+R2505:2508 analysis <> zero meth
+def 2525:2535 <> is_negative
+binder 2538:2538 <> F:97
+R2550:2554 analysis <> Field class
+R2556:2556 analysis <> F:97 var
+binder 2550:2556 <> H:98
+R2561:2570 analysis <> TotalOrder class
+R2572:2572 analysis <> F:97 var
+binder 2561:2572 <> H0:99
+R2580:2580 analysis <> F:97 var
+binder 2576:2576 <> x:100
+R2595:2596 analysis <> lt meth
+R2600:2603 analysis <> zero meth
+R2598:2598 analysis <> x:100 var
+inst 2628:2634 <> R_Field
+R2638:2642 analysis <> Field class
+R2644:2644 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+prf 2729:2737 <> Rle_total
+R2754:2754 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2748:2748 <> x:101
+binder 2750:2750 <> y:102
+R2764:2767 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2757:2759 Coq.Reals.Rdefinitions <> Rle def
+R2761:2761 analysis <> x:101 var
+R2763:2763 analysis <> y:102 var
+R2768:2769 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2770:2772 Coq.Reals.Rdefinitions <> Rle def
+R2774:2774 analysis <> x:101 var
+R2776:2776 analysis <> y:102 var
+R2812:2820 Coq.Reals.RIneq <> Rle_or_lt thm
+R2812:2820 Coq.Reals.RIneq <> Rle_or_lt thm
+R2873:2882 Coq.Reals.RIneq <> Rlt_not_le thm
+R2873:2882 Coq.Reals.RIneq <> Rlt_not_le thm
+inst 2931:2942 <> R_TotalOrder
+R2946:2955 analysis <> TotalOrder class
+R2957:2957 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2964:2979 analysis <> Build_TotalOrder constr
+R2981:2981 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2983:2985 Coq.Reals.Rdefinitions <> Rle def
+R2987:2994 Coq.Reals.RIneq <> Rle_refl thm
+R2996:3006 Coq.Reals.RIneq <> Rle_antisym thm
+R3008:3016 Coq.Reals.RIneq <> Rle_trans thm
+R3018:3026 analysis <> Rle_total thm
+prf 3036:3054 <> R_supremum_property
+R3058:3074 analysis <> supremum_property def
+R3076:3076 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3151:3162 Coq.Reals.Raxioms <> completeness thm
+R3151:3162 Coq.Reals.Raxioms <> completeness thm
+R3265:3275 analysis <> is_supremum def
+R3278:3291 analysis <> is_upper_bound def
+def 3474:3474 <> C
+R3487:3489 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3486:3486 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3490:3490 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+inst 3512:3518 <> C_Field
+R3522:3526 analysis <> Field class
+R3528:3528 analysis <> C def
+def 3560:3568 <> countable
+binder 3571:3571 <> A:103
+R3587:3590 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3586:3586 analysis <> A:103 var
+binder 3582:3582 <> S:104
+R3609:3615 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3628:3629 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3623:3626 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3620:3622 Coq.Init.Datatypes <> nat ind
+R3627:3627 analysis <> A:103 var
+binder 3616:3616 <> f:105
+binder 3637:3637 <> x:106
+R3643:3646 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3640:3640 analysis <> S:104 var
+R3642:3642 analysis <> x:106 var
+R3647:3653 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3655:3656 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3654:3654 <> n:107
+R3660:3662 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3657:3657 analysis <> f:105 var
+R3659:3659 analysis <> n:107 var
+R3663:3663 analysis <> x:106 var
+ax 3672:3687 <> countable_choice
+binder 3699:3699 <> A:108
+R3717:3720 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3714:3716 Coq.Init.Datatypes <> nat ind
+R3722:3725 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3721:3721 analysis <> A:108 var
+binder 3710:3710 <> P:109
+R3735:3735 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3803:3809 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3743:3743 <> i:110
+R3746:3752 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3765:3766 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3760:3763 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3757:3759 Coq.Init.Datatypes <> nat ind
+R3764:3764 analysis <> A:108 var
+binder 3753:3753 <> f:111
+binder 3774:3774 <> x:112
+R3782:3785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3777:3777 analysis <> P:109 var
+R3781:3781 analysis <> x:112 var
+R3779:3779 analysis <> i:110 var
+R3786:3792 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3794:3795 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3793:3793 <> n:113
+R3799:3801 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3796:3796 analysis <> f:111 var
+R3798:3798 analysis <> n:113 var
+R3802:3802 analysis <> x:112 var
+R3810:3816 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3836:3837 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3824:3827 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3821:3823 Coq.Init.Datatypes <> nat ind
+R3831:3834 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3828:3830 Coq.Init.Datatypes <> nat ind
+R3835:3835 analysis <> A:108 var
+binder 3817:3817 <> F:114
+binder 3845:3845 <> i:115
+binder 3847:3847 <> x:116
+R3855:3858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3850:3850 analysis <> P:109 var
+R3854:3854 analysis <> x:116 var
+R3852:3852 analysis <> i:115 var
+R3859:3865 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3867:3868 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3866:3866 <> n:117
+R3874:3876 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3869:3869 analysis <> F:114 var
+R3873:3873 analysis <> n:117 var
+R3871:3871 analysis <> i:115 var
+R3877:3877 analysis <> x:116 var
+def 3890:3897 <> triangle
+binder 3899:3899 <> n:119
+R3913:3913 analysis <> n:119 var
+R3939:3939 Coq.Init.Datatypes <> S constr
+R3953:3955 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R3948:3948 analysis <> n:119 var
+R3956:3963 analysis <> triangle:120 def
+def 4003:4006 <> pair
+R4015:4017 Coq.Init.Datatypes <> nat ind
+binder 4009:4009 <> a:122
+binder 4011:4011 <> b:123
+R4022:4024 Coq.Init.Datatypes <> nat ind
+R4047:4049 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4031:4038 analysis <> triangle def
+R4042:4044 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4041:4041 analysis <> a:122 var
+R4045:4045 analysis <> b:123 var
+R4050:4050 analysis <> a:122 var
+def 4109:4116 <> inv_pair
+R4123:4125 Coq.Init.Datatypes <> nat ind
+binder 4119:4119 <> p:124
+R4133:4135 Coq.Init.Datatypes <> ::type_scope:x_'*'_x not
+R4130:4132 Coq.Init.Datatypes <> nat ind
+R4136:4138 Coq.Init.Datatypes <> nat ind
+ax 4303:4318 <> inv_pair_correct
+binder 4329:4329 <> a:125
+binder 4331:4331 <> b:126
+R4353:4355 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4334:4341 analysis <> inv_pair prfax
+R4344:4347 analysis <> pair def
+R4349:4349 analysis <> a:125 var
+R4351:4351 analysis <> b:126 var
+R4356:4356 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4358:4359 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4361:4361 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4357:4357 analysis <> a:125 var
+R4360:4360 analysis <> b:126 var
+prf 4373:4387 <> countable_union
+binder 4390:4390 <> A:128
+R4412:4415 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4409:4411 Coq.Init.Datatypes <> nat ind
+R4417:4420 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4416:4416 analysis <> A:128 var
+binder 4401:4405 <> A_fam:129
+R4431:4431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4461:4467 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4439:4439 <> i:130
+R4442:4450 analysis <> countable def
+R4453:4457 analysis <> A_fam:129 var
+R4459:4459 analysis <> i:130 var
+R4468:4476 analysis <> countable def
+binder 4483:4483 <> x:131
+R4488:4494 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4496:4497 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 4495:4495 <> i:132
+R4498:4502 analysis <> A_fam:129 var
+R4506:4506 analysis <> x:131 var
+R4504:4504 analysis <> i:132 var
+R4608:4623 analysis <> countable_choice prfax
+R4608:4623 analysis <> countable_choice prfax
+R4703:4705 Coq.Init.Datatypes <> nat ind
+binder 4699:4699 <> k:133
+R4729:4736 analysis <> inv_pair prfax
+R4738:4738 analysis <> k:133 var
+R4719:4719 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4721:4722 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4724:4724 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4703:4705 Coq.Init.Datatypes <> nat ind
+binder 4699:4699 <> k:134
+R4729:4736 analysis <> inv_pair prfax
+R4738:4738 analysis <> k:134 var
+R4719:4719 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4721:4722 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4724:4724 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4864:4867 analysis <> pair def
+R4864:4867 analysis <> pair def
+R4885:4900 analysis <> inv_pair_correct prfax
+R4885:4900 analysis <> inv_pair_correct prfax
+R4885:4900 analysis <> inv_pair_correct prfax
+def 4935:4947 <> open_interval
+R4956:4956 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4950:4950 <> a:135
+binder 4952:4952 <> b:136
+R4962:4965 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4961:4961 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4980:4980 <> x:137
+R4986:4988 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R4990:4992 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x_'<'_x not
+R4985:4985 analysis <> a:135 var
+R4989:4989 analysis <> x:137 var
+R4989:4989 analysis <> x:137 var
+R4993:4993 analysis <> b:136 var
+def 5008:5021 <> close_interval
+R5030:5030 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5024:5024 <> a:138
+binder 5026:5026 <> b:139
+R5036:5039 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5035:5035 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5054:5054 <> x:140
+R5060:5063 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R5065:5068 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R5059:5059 analysis <> a:138 var
+R5064:5064 analysis <> x:140 var
+R5064:5064 analysis <> x:140 var
+R5069:5069 analysis <> b:139 var
+rec 5080:5090 <> MetricSpace
+proj 5117:5120 <> dist
+proj 5139:5149 <> dist_nonneg
+proj 5182:5190 <> dist_eq_0
+proj 5234:5241 <> dist_sym
+proj 5283:5295 <> dist_triangle
+binder 5093:5093 <> X:141
+R5125:5128 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5124:5124 analysis <> X:141 var
+R5130:5133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5129:5129 analysis <> X:141 var
+R5134:5134 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5160:5160 <> x:144
+binder 5162:5162 <> y:145
+R5166:5169 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5170:5173 analysis <> dist:143 meth
+R5177:5177 analysis <> y:145 var
+R5175:5175 analysis <> x:144 var
+binder 5203:5203 <> x:147
+binder 5205:5205 <> y:148
+R5220:5224 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5216:5218 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5208:5211 analysis <> dist:143 meth
+R5215:5215 analysis <> y:148 var
+R5213:5213 analysis <> x:147 var
+R5226:5228 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5225:5225 analysis <> x:147 var
+R5229:5229 analysis <> y:148 var
+binder 5255:5255 <> x:150
+binder 5257:5257 <> y:151
+R5268:5270 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5260:5263 analysis <> dist:143 meth
+R5267:5267 analysis <> y:151 var
+R5265:5265 analysis <> x:150 var
+R5271:5274 analysis <> dist:143 meth
+R5278:5278 analysis <> x:150 var
+R5276:5276 analysis <> y:151 var
+binder 5306:5306 <> x:153
+binder 5308:5308 <> y:154
+binder 5310:5310 <> z:155
+R5321:5324 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5313:5316 analysis <> dist:143 meth
+R5320:5320 analysis <> z:155 var
+R5318:5318 analysis <> x:153 var
+R5333:5335 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R5325:5328 analysis <> dist:143 meth
+R5332:5332 analysis <> y:154 var
+R5330:5330 analysis <> x:153 var
+R5336:5339 analysis <> dist:143 meth
+R5343:5343 analysis <> z:155 var
+R5341:5341 analysis <> y:154 var
+def 5361:5364 <> ball
+binder 5367:5367 <> X:157
+R5379:5389 analysis <> MetricSpace class
+R5391:5391 analysis <> X:157 var
+binder 5379:5391 <> H:158
+R5399:5399 analysis <> X:157 var
+binder 5395:5395 <> c:159
+R5407:5407 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5403:5403 <> r:160
+R5413:5416 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5412:5412 analysis <> X:157 var
+binder 5431:5431 <> p:161
+R5444:5446 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R5436:5439 analysis <> dist meth
+R5443:5443 analysis <> c:159 var
+R5441:5441 analysis <> p:161 var
+R5447:5447 analysis <> r:160 var
+def 5462:5475 <> interior_point
+binder 5478:5478 <> X:162
+R5490:5500 analysis <> MetricSpace class
+R5502:5502 analysis <> X:162 var
+binder 5490:5502 <> H:163
+R5511:5514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5510:5510 analysis <> X:162 var
+binder 5506:5506 <> E:164
+R5526:5526 analysis <> X:162 var
+binder 5522:5522 <> p:165
+R5541:5547 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5551:5552 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5548:5550 <> eps:166
+R5560:5563 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5556:5558 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5553:5555 analysis <> eps:166 var
+binder 5571:5571 <> q:167
+R5588:5591 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5582:5584 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R5574:5577 analysis <> dist meth
+R5581:5581 analysis <> p:165 var
+R5579:5579 analysis <> q:167 var
+R5585:5587 analysis <> eps:166 var
+R5592:5592 analysis <> E:164 var
+R5594:5594 analysis <> q:167 var
+def 5609:5612 <> open
+binder 5615:5615 <> X:168
+R5627:5637 analysis <> MetricSpace class
+R5639:5639 analysis <> X:168 var
+binder 5627:5639 <> H:169
+R5648:5651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5647:5647 analysis <> X:168 var
+binder 5643:5643 <> D:170
+binder 5677:5677 <> p:171
+R5683:5686 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5680:5680 analysis <> D:170 var
+R5682:5682 analysis <> p:171 var
+R5687:5700 analysis <> interior_point def
+R5704:5704 analysis <> p:171 var
+R5702:5702 analysis <> D:170 var
+def 5718:5724 <> is_open
+binder 5727:5727 <> X:172
+R5739:5749 analysis <> MetricSpace class
+R5751:5751 analysis <> X:172 var
+binder 5739:5751 <> H:173
+R5760:5763 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5759:5759 analysis <> X:172 var
+binder 5755:5755 <> U:174
+binder 5789:5789 <> p:175
+R5795:5798 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5792:5792 analysis <> U:174 var
+R5794:5794 analysis <> p:175 var
+R5799:5805 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5811:5812 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5810:5810 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5806:5806 <> r:176
+R5818:5821 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5814:5816 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5813:5813 analysis <> r:176 var
+binder 5829:5829 <> x:177
+R5842:5845 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5832:5835 analysis <> ball def
+R5841:5841 analysis <> x:177 var
+R5839:5839 analysis <> r:176 var
+R5837:5837 analysis <> p:175 var
+R5846:5846 analysis <> U:174 var
+R5848:5848 analysis <> x:177 var
+def 5863:5875 <> continuous_on
+binder 5878:5878 <> X:178
+binder 5880:5880 <> Y:179
+R5892:5902 analysis <> MetricSpace class
+R5904:5904 analysis <> X:178 var
+binder 5892:5904 <> H:180
+R5909:5919 analysis <> MetricSpace class
+R5921:5921 analysis <> Y:179 var
+binder 5909:5921 <> H0:181
+R5932:5935 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5931:5931 analysis <> X:178 var
+R5936:5936 analysis <> Y:179 var
+binder 5927:5927 <> f:182
+R5947:5950 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5946:5946 analysis <> X:178 var
+binder 5940:5942 <> dom:183
+binder 5976:5976 <> x:184
+R5984:5987 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5979:5981 analysis <> dom:183 var
+R5983:5983 analysis <> x:184 var
+binder 5995:5997 <> eps:185
+R6007:6014 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6003:6005 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6000:6002 analysis <> eps:185 var
+R6015:6021 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6027:6028 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6022:6026 <> delta:186
+R6038:6047 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6034:6036 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6029:6033 analysis <> delta:186 var
+binder 6055:6055 <> y:187
+R6063:6066 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6058:6060 analysis <> dom:183 var
+R6062:6062 analysis <> y:187 var
+R6083:6086 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6075:6077 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6067:6070 analysis <> dist meth
+R6074:6074 analysis <> y:187 var
+R6072:6072 analysis <> x:184 var
+R6078:6082 analysis <> delta:186 var
+R6103:6105 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6087:6090 analysis <> dist meth
+R6099:6099 analysis <> f:182 var
+R6101:6101 analysis <> y:187 var
+R6093:6093 analysis <> f:182 var
+R6095:6095 analysis <> x:184 var
+R6106:6108 analysis <> eps:185 var
+def 6123:6132 <> complement
+binder 6135:6135 <> X:188
+R6151:6154 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6150:6150 analysis <> X:188 var
+binder 6146:6146 <> E:189
+R6164:6167 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6163:6163 analysis <> X:188 var
+binder 6182:6182 <> x:190
+R6187:6188 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6189:6189 analysis <> E:189 var
+R6191:6191 analysis <> x:190 var
+def 6206:6218 <> neighbourhood
+binder 6221:6221 <> X:191
+R6233:6243 analysis <> MetricSpace class
+R6245:6245 analysis <> X:191 var
+binder 6233:6245 <> H:192
+R6253:6253 analysis <> X:191 var
+binder 6249:6249 <> p:193
+R6262:6265 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6261:6261 analysis <> X:191 var
+binder 6257:6257 <> N:194
+R6284:6290 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6296:6297 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6295:6295 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6291:6291 <> r:195
+R6303:6306 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6299:6301 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6298:6298 analysis <> r:195 var
+binder 6314:6314 <> x:196
+R6327:6330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6317:6320 analysis <> ball def
+R6326:6326 analysis <> x:196 var
+R6324:6324 analysis <> r:195 var
+R6322:6322 analysis <> p:193 var
+R6331:6331 analysis <> N:194 var
+R6333:6333 analysis <> x:196 var
+def 6349:6359 <> limit_point
+binder 6362:6362 <> X:197
+R6374:6384 analysis <> MetricSpace class
+R6386:6386 analysis <> X:197 var
+binder 6374:6386 <> H:198
+R6395:6398 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6394:6394 analysis <> X:197 var
+binder 6390:6390 <> E:199
+R6410:6410 analysis <> X:197 var
+binder 6406:6406 <> p:200
+binder 6432:6434 <> eps:201
+R6444:6447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6440:6442 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6437:6439 analysis <> eps:201 var
+R6448:6454 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6456:6457 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6455:6455 <> q:202
+R6461:6464 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6458:6458 analysis <> E:199 var
+R6460:6460 analysis <> q:202 var
+R6471:6474 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6466:6469 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6465:6465 analysis <> q:202 var
+R6470:6470 analysis <> p:200 var
+R6483:6485 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6475:6478 analysis <> dist meth
+R6482:6482 analysis <> p:200 var
+R6480:6480 analysis <> q:202 var
+R6486:6488 analysis <> eps:201 var
+def 6503:6510 <> is_close
+binder 6513:6513 <> X:203
+R6525:6535 analysis <> MetricSpace class
+R6537:6537 analysis <> X:203 var
+binder 6525:6537 <> H:204
+R6546:6549 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6545:6545 analysis <> X:203 var
+binder 6541:6541 <> E:205
+binder 6575:6575 <> p:206
+R6594:6597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6579:6589 analysis <> limit_point def
+R6593:6593 analysis <> p:206 var
+R6591:6591 analysis <> E:205 var
+R6598:6598 analysis <> E:205 var
+R6600:6600 analysis <> p:206 var
+def 6615:6620 <> closed
+binder 6623:6623 <> X:207
+R6635:6645 analysis <> MetricSpace class
+R6647:6647 analysis <> X:207 var
+binder 6635:6647 <> H:208
+R6656:6659 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6655:6655 analysis <> X:207 var
+binder 6651:6651 <> E:209
+R6678:6684 analysis <> is_open def
+R6687:6696 analysis <> complement def
+R6698:6698 analysis <> E:209 var
+prf 6766:6784 <> closed_iff_is_close
+binder 6787:6787 <> X:210
+R6792:6802 analysis <> MetricSpace class
+R6804:6804 analysis <> X:210 var
+binder 6792:6804 <> H:211
+R6813:6816 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6812:6812 analysis <> X:210 var
+binder 6808:6808 <> E:212
+R6835:6839 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R6827:6832 analysis <> closed def
+R6834:6834 analysis <> E:212 var
+R6840:6847 analysis <> is_close def
+R6849:6849 analysis <> E:212 var
+R6868:6873 analysis <> closed def
+R6885:6892 analysis <> is_close def
+R6904:6910 analysis <> is_open def
+R6922:6931 analysis <> complement def
+R6943:6953 analysis <> limit_point def
+R7016:7019 Coq.Logic.Classical_Prop <> NNPP thm
+R7016:7019 Coq.Logic.Classical_Prop <> NNPP thm
+R7224:7227 Coq.Logic.Classical_Prop <> NNPP thm
+R7224:7227 Coq.Logic.Classical_Prop <> NNPP thm
+R7257:7260 analysis <> ball def
+binder 7288:7288 <> r:213
+R7296:7299 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7292:7294 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R7291:7291 analysis <> r:213 var
+R7300:7306 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7308:7309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7307:7307 <> x:214
+R7320:7323 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7310:7313 analysis <> ball def
+R7319:7319 analysis <> x:214 var
+R7317:7317 analysis <> r:213 var
+R7326:7326 analysis <> x:214 var
+binder 7288:7288 <> r:215
+R7296:7299 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7292:7294 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R7291:7291 analysis <> r:215 var
+R7300:7306 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7308:7309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7307:7307 <> x:216
+R7320:7323 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7310:7313 analysis <> ball def
+R7319:7319 analysis <> x:216 var
+R7317:7317 analysis <> r:215 var
+R7326:7326 analysis <> x:216 var
+R7374:7377 Coq.Logic.Classical_Prop <> NNPP thm
+R7374:7377 Coq.Logic.Classical_Prop <> NNPP thm
+binder 7414:7414 <> x:217
+R7427:7430 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7417:7420 analysis <> ball def
+R7426:7426 analysis <> x:217 var
+R7431:7432 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7435:7435 analysis <> x:217 var
+binder 7414:7414 <> x:218
+R7427:7430 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7417:7420 analysis <> ball def
+R7426:7426 analysis <> x:218 var
+R7431:7432 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7435:7435 analysis <> x:218 var
+binder 7640:7642 <> eps:219
+R7652:7655 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7648:7650 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R7645:7647 analysis <> eps:219 var
+R7656:7662 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7664:7665 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7663:7663 <> q:220
+R7669:7672 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7668:7668 analysis <> q:220 var
+R7679:7682 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7674:7677 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7673:7673 analysis <> q:220 var
+R7691:7693 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R7683:7686 analysis <> dist meth
+R7688:7688 analysis <> q:220 var
+R7694:7696 analysis <> eps:219 var
+binder 7640:7642 <> eps:221
+R7652:7655 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7648:7650 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R7645:7647 analysis <> eps:221 var
+R7656:7662 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7664:7665 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 7663:7663 <> q:222
+R7669:7672 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7668:7668 analysis <> q:222 var
+R7679:7682 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7674:7677 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7673:7673 analysis <> q:222 var
+R7691:7693 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R7683:7686 analysis <> dist meth
+R7688:7688 analysis <> q:222 var
+R7694:7696 analysis <> eps:221 var
+R7796:7802 Coq.Logic.Classical_Prop <> classic prfax
+R7806:7808 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7796:7802 Coq.Logic.Classical_Prop <> classic prfax
+R7806:7808 Coq.Init.Logic <> ::type_scope:x_'='_x not
+def 7952:7965 <> isolated_point
+binder 7968:7968 <> X:223
+R7980:7990 analysis <> MetricSpace class
+R7992:7992 analysis <> X:223 var
+binder 7980:7992 <> H:224
+R8001:8004 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8000:8000 analysis <> X:223 var
+binder 7996:7996 <> E:225
+R8016:8016 analysis <> X:223 var
+binder 8012:8012 <> p:226
+R8034:8037 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8031:8031 analysis <> E:225 var
+R8033:8033 analysis <> p:226 var
+R8038:8044 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8048:8049 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8045:8047 <> eps:227
+R8057:8060 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8053:8055 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R8050:8052 analysis <> eps:227 var
+binder 8068:8068 <> q:228
+R8074:8077 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8071:8071 analysis <> E:225 var
+R8073:8073 analysis <> q:228 var
+R8092:8095 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8086:8088 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R8078:8081 analysis <> dist meth
+R8085:8085 analysis <> p:226 var
+R8083:8083 analysis <> q:228 var
+R8089:8091 analysis <> eps:227 var
+R8097:8099 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8096:8096 analysis <> q:228 var
+R8100:8100 analysis <> p:226 var
+def 8120:8126 <> perfect
+binder 8129:8129 <> X:229
+R8141:8151 analysis <> MetricSpace class
+R8153:8153 analysis <> X:229 var
+binder 8141:8153 <> H:230
+R8162:8165 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8161:8161 analysis <> X:229 var
+binder 8157:8157 <> E:231
+R8192:8195 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8184:8189 analysis <> closed def
+R8191:8191 analysis <> E:231 var
+binder 8203:8203 <> p:232
+R8209:8212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8206:8206 analysis <> E:231 var
+R8208:8208 analysis <> p:232 var
+R8213:8223 analysis <> limit_point def
+R8227:8227 analysis <> p:232 var
+R8225:8225 analysis <> E:231 var
+def 8242:8248 <> bounded
+binder 8251:8251 <> X:233
+R8263:8273 analysis <> MetricSpace class
+R8275:8275 analysis <> X:233 var
+binder 8263:8275 <> H:234
+R8284:8287 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8283:8283 analysis <> X:233 var
+binder 8279:8279 <> E:235
+R8306:8312 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8318:8319 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8317:8317 analysis <> X:233 var
+binder 8313:8313 <> c:236
+R8320:8326 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8332:8337 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8331:8331 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8327:8327 <> M:237
+R8343:8346 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8339:8341 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R8338:8338 analysis <> M:237 var
+binder 8354:8354 <> x:238
+R8360:8363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8357:8357 analysis <> E:235 var
+R8359:8359 analysis <> x:238 var
+R8372:8375 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R8364:8367 analysis <> dist meth
+R8371:8371 analysis <> c:236 var
+R8369:8369 analysis <> x:238 var
+R8376:8376 analysis <> M:237 var
+R8394:8396 Coq.micromega.Lra <> <> lib
+prf 8442:8453 <> ball_is_open
+binder 8456:8456 <> X:239
+R8468:8478 analysis <> MetricSpace class
+R8480:8480 analysis <> X:239 var
+binder 8468:8480 <> H:240
+R8499:8499 analysis <> X:239 var
+binder 8495:8495 <> c:241
+R8507:8507 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8503:8503 <> r:242
+R8516:8519 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8512:8514 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R8511:8511 analysis <> r:242 var
+R8520:8526 analysis <> is_open def
+R8529:8532 analysis <> ball def
+R8536:8536 analysis <> r:242 var
+R8534:8534 analysis <> c:241 var
+R8582:8584 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8585:8588 analysis <> dist meth
+R8582:8584 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8585:8588 analysis <> dist meth
+R8627:8635 Coq.Reals.RIneq <> Rgt_minus thm
+R8627:8635 Coq.Reals.RIneq <> Rgt_minus thm
+R8680:8683 analysis <> ball def
+R8717:8720 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R8709:8712 analysis <> dist meth
+R8729:8731 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8721:8724 analysis <> dist meth
+R8732:8735 analysis <> dist meth
+R8717:8720 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R8709:8712 analysis <> dist meth
+R8729:8731 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8721:8724 analysis <> dist meth
+R8732:8735 analysis <> dist meth
+R8753:8765 analysis <> dist_triangle meth
+R8753:8765 analysis <> dist_triangle meth
+R8824:8826 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R8813:8815 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8805:8808 analysis <> dist meth
+R8816:8819 analysis <> dist meth
+R8824:8826 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R8813:8815 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8805:8808 analysis <> dist meth
+R8816:8819 analysis <> dist meth
+R8851:8851 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8864:8867 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8853:8855 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8856:8859 analysis <> dist meth
+R8868:8871 analysis <> dist meth
+R8851:8851 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8864:8867 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8853:8855 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R8856:8859 analysis <> dist meth
+R8868:8871 analysis <> dist meth
+R8889:8905 Coq.Reals.RIneq <> Rplus_lt_compat_r thm
+R8889:8905 Coq.Reals.RIneq <> Rplus_lt_compat_r thm
+def 9031:9038 <> list_min
+R9045:9048 Coq.Init.Datatypes <> list ind
+R9050:9050 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9041:9041 <> l:243
+R9055:9055 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R9068:9068 analysis <> l:243 var
+R9079:9081 Coq.Init.Datatypes <> nil constr
+R9093:9096 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9097:9099 Coq.Init.Datatypes <> nil constr
+R9111:9114 Coq.Init.Datatypes <> ::list_scope:x_'::'_x not
+R9121:9124 Coq.Reals.Rbasic_fun <> Rmin def
+R9129:9136 analysis <> list_min:244 def
+prf 9156:9167 <> list_min_pos
+binder 9178:9178 <> l:246
+R9188:9222 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9182:9185 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R9181:9181 analysis <> l:246 var
+R9186:9187 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R9223:9223 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9249:9253 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 9231:9231 <> x:247
+R9240:9243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9234:9235 Coq.Lists.List <> In def
+R9239:9239 analysis <> l:246 var
+R9237:9237 analysis <> x:247 var
+R9245:9247 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R9244:9244 analysis <> x:247 var
+R9264:9266 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R9254:9261 analysis <> list_min def
+R9263:9263 analysis <> l:246 var
+R9367:9369 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R9367:9369 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R9461:9468 Coq.Reals.Rbasic_fun <> Rmin_pos thm
+R9461:9468 Coq.Reals.Rbasic_fun <> Rmin_pos thm
+def 9590:9601 <> infinite_set
+R9609:9612 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9608:9608 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9604:9604 <> S:248
+R9624:9626 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9670:9670 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9627:9633 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9644:9645 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9638:9641 Coq.Init.Datatypes <> list ind
+R9643:9643 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9634:9634 <> l:249
+binder 9653:9653 <> x:250
+R9659:9663 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9656:9656 analysis <> S:248 var
+R9658:9658 analysis <> x:250 var
+R9664:9665 Coq.Lists.List <> In def
+R9669:9669 analysis <> l:249 var
+R9667:9667 analysis <> x:250 var
+def 9685:9705 <> infinite_intersection
+R9715:9718 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9714:9714 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9708:9708 <> N:251
+binder 9710:9710 <> E:252
+binder 9725:9725 <> p:253
+R9732:9743 analysis <> infinite_set def
+binder 9750:9750 <> x:254
+R9758:9761 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9755:9755 analysis <> N:251 var
+R9757:9757 analysis <> x:254 var
+R9765:9767 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9762:9762 analysis <> E:252 var
+R9764:9764 analysis <> x:254 var
+R9769:9772 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R9768:9768 analysis <> x:254 var
+R9773:9773 analysis <> p:253 var
+prf 9785:9818 <> neighbourhood_contains_other_point
+R9822:9832 analysis <> MetricSpace class
+R9834:9834 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9822:9834 <> H:255
+R9853:9856 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9852:9852 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9848:9848 <> E:256
+R9868:9868 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9864:9864 <> p:257
+R9889:9894 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9874:9884 analysis <> limit_point def
+R9888:9888 analysis <> p:257 var
+R9886:9886 analysis <> E:256 var
+R9907:9908 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9906:9906 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9902:9902 <> N:258
+R9934:9939 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9917:9929 analysis <> neighbourhood def
+R9933:9933 analysis <> N:258 var
+R9931:9931 analysis <> p:257 var
+R9940:9946 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9952:9953 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9951:9951 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9947:9947 <> q:259
+R9957:9960 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9954:9954 analysis <> N:258 var
+R9956:9956 analysis <> q:259 var
+R9964:9967 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9961:9961 analysis <> E:256 var
+R9963:9963 analysis <> q:259 var
+R9969:9972 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R9968:9968 analysis <> q:259 var
+R9973:9973 analysis <> p:257 var
+prf 9999:10009 <> list_min_le
+R10025:10028 Coq.Init.Datatypes <> list ind
+R10030:10030 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10021:10021 <> l:260
+R10038:10038 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10034:10034 <> x:261
+R10050:10053 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10044:10045 Coq.Lists.List <> In def
+R10049:10049 analysis <> l:260 var
+R10047:10047 analysis <> x:261 var
+R10064:10067 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R10054:10061 analysis <> list_min def
+R10063:10063 analysis <> l:260 var
+R10068:10068 analysis <> x:261 var
+prf 10096:10107 <> map_nonempty
+binder 10119:10119 <> A:262
+binder 10121:10121 <> B:263
+R10137:10140 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10136:10136 analysis <> A:262 var
+R10141:10141 analysis <> B:263 var
+binder 10132:10132 <> f:264
+R10149:10152 Coq.Init.Datatypes <> list ind
+R10154:10154 analysis <> A:262 var
+binder 10145:10145 <> l:265
+R10167:10170 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10161:10164 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10160:10160 analysis <> l:265 var
+R10165:10166 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+R10178:10181 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10171:10173 Coq.Lists.List <> map def
+R10177:10177 analysis <> l:265 var
+R10175:10175 analysis <> f:264 var
+R10182:10183 Coq.Lists.List ListNotations ::list_scope:'['_']' not
+prf 10308:10319 <> theorem_2_20
+R10323:10333 analysis <> MetricSpace class
+R10335:10335 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10323:10335 <> H:266
+R10352:10355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10351:10351 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10347:10347 <> E:267
+R10367:10367 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10363:10363 <> p:268
+R10390:10397 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10375:10385 analysis <> limit_point def
+R10389:10389 analysis <> p:268 var
+R10387:10387 analysis <> E:267 var
+R10410:10413 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10409:10409 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10405:10405 <> N:269
+R10443:10445 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10426:10438 analysis <> neighbourhood def
+R10442:10442 analysis <> N:269 var
+R10440:10440 analysis <> p:268 var
+R10446:10466 analysis <> infinite_intersection def
+R10468:10468 analysis <> N:269 var
+R10470:10470 analysis <> E:267 var
+R10472:10472 analysis <> p:268 var
+R10520:10540 analysis <> infinite_intersection def
+R10543:10554 analysis <> infinite_set def
+R10591:10593 Coq.Lists.List <> map def
+binder 10600:10600 <> x:270
+R10605:10608 analysis <> dist meth
+R10610:10610 analysis <> x:270 var
+R10591:10593 Coq.Lists.List <> map def
+binder 10600:10600 <> x:271
+R10605:10608 analysis <> dist meth
+R10610:10610 analysis <> x:271 var
+R10632:10639 analysis <> list_min def
+R10632:10639 analysis <> list_min def
+R10660:10662 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10660:10662 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10701:10712 analysis <> list_min_pos thm
+R10701:10712 analysis <> list_min_pos thm
+R10723:10734 analysis <> map_nonempty thm
+R10723:10734 analysis <> map_nonempty thm
+R10747:10753 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10759:10760 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10758:10758 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10754:10754 <> q:272
+R10764:10767 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10763:10763 analysis <> q:272 var
+R10771:10774 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10770:10770 analysis <> q:272 var
+R10776:10779 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10775:10775 analysis <> q:272 var
+R10747:10753 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10759:10760 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10758:10758 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10754:10754 <> q:273
+R10764:10767 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10763:10763 analysis <> q:273 var
+R10771:10774 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10770:10770 analysis <> q:273 var
+R10776:10779 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10775:10775 analysis <> q:273 var
+R10792:10825 analysis <> neighbourhood_contains_other_point prfax
+R10792:10825 analysis <> neighbourhood_contains_other_point prfax
+R10894:10895 Coq.Lists.List <> In def
+R10894:10895 Coq.Lists.List <> In def
+R10997:11006 Coq.Lists.List <> in_map_iff thm
+R10997:11006 Coq.Lists.List <> in_map_iff thm
+R11095:11098 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R11099:11102 analysis <> dist meth
+R11095:11098 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R11099:11102 analysis <> dist meth
+R11118:11128 analysis <> dist_nonneg meth
+R11118:11128 analysis <> dist_nonneg meth
+R11143:11146 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R11147:11150 analysis <> dist meth
+R11143:11146 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R11147:11150 analysis <> dist meth
+R11202:11210 analysis <> dist_eq_0 meth
+R11202:11210 analysis <> dist_eq_0 meth
+R11202:11210 analysis <> dist_eq_0 meth
+R11244:11254 analysis <> limit_point def
+R11326:11329 Coq.Reals.Rbasic_fun <> Rmin def
+R11339:11341 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R11326:11329 Coq.Reals.Rbasic_fun <> Rmin def
+R11339:11341 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R11370:11372 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R11386:11393 Coq.Reals.Rbasic_fun <> Rmin_pos thm
+R11370:11372 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R11386:11393 Coq.Reals.Rbasic_fun <> Rmin_pos thm
+R11535:11546 Coq.Reals.RIneq <> Rlt_le_trans thm
+R11579:11584 Coq.Reals.Rbasic_fun <> Rmin_l thm
+R11535:11546 Coq.Reals.RIneq <> Rlt_le_trans thm
+R11579:11584 Coq.Reals.Rbasic_fun <> Rmin_l thm
+R11600:11601 Coq.Lists.List <> In def
+R11600:11601 Coq.Lists.List <> In def
+R11662:11665 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R11666:11669 analysis <> dist meth
+R11662:11665 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R11666:11669 analysis <> dist meth
+R11718:11728 analysis <> list_min_le prfax
+R11718:11728 analysis <> list_min_le prfax
+binder 11751:11751 <> x:274
+R11756:11759 analysis <> dist meth
+R11761:11761 analysis <> x:274 var
+binder 11751:11751 <> x:275
+R11756:11759 analysis <> dist meth
+R11761:11761 analysis <> x:275 var
+R11775:11780 Coq.Lists.List <> in_map thm
+R11791:11796 Coq.Lists.List <> in_map thm
+R11791:11796 Coq.Lists.List <> in_map thm

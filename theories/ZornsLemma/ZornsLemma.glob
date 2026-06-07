@@ -1,0 +1,1018 @@
+DIGEST ff428661628c7634d5f3625cd7c19b3a
+FZornsLemma.ZornsLemma
+R24:32 Coq.Logic.Classical <> <> lib
+R59:73 Coq.Logic.ClassicalChoice <> <> lib
+R100:119 Coq.Relations.Relation_Definitions <> <> lib
+R153:181 ZornsLemma.Relation_Definitions_Implicit <> <> lib
+R208:216 Coq.Sets.Ensembles <> <> lib
+R250:266 ZornsLemma.EnsemblesImplicit <> <> lib
+R293:308 Coq.Logic.ProofIrrelevance <> <> lib
+R335:357 Coq.Logic.PropExtensionalityFacts <> <> lib
+R391:402 ZornsLemma.InverseImage <> <> lib
+R436:444 ZornsLemma.Quotients <> <> lib
+sec 456:458 <> ZL'
+var 471:471 ZL' T
+var 488:488 ZL' R
+R490:497 Coq.Relations.Relation_Definitions <> relation def
+R499:499 ZornsLemma.ZornsLemma <> ZL'.T var
+var 513:515 ZL' ord
+R517:521 Coq.Relations.Relation_Definitions <> order rec
+R523:523 ZornsLemma.ZornsLemma <> ZL'.R var
+def 537:541 <> chain
+R547:554 Coq.Sets.Ensembles <> Ensemble def
+R556:556 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 544:544 <> S:4
+R582:582 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 578:578 <> x:5
+binder 580:580 <> y:6
+R591:594 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R585:586 Coq.Sets.Ensembles <> In def
+R590:590 ZornsLemma.ZornsLemma <> x:5 var
+R588:588 ZornsLemma.ZornsLemma <> S:4 var
+R601:605 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R620:620 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R595:596 Coq.Sets.Ensembles <> In def
+R600:600 ZornsLemma.ZornsLemma <> y:6 var
+R598:598 ZornsLemma.ZornsLemma <> S:4 var
+R611:614 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R606:606 ZornsLemma.ZornsLemma <> ZL'.R var
+R608:608 ZornsLemma.ZornsLemma <> x:5 var
+R610:610 ZornsLemma.ZornsLemma <> y:6 var
+R615:615 ZornsLemma.ZornsLemma <> ZL'.R var
+R617:617 ZornsLemma.ZornsLemma <> y:6 var
+R619:619 ZornsLemma.ZornsLemma <> x:5 var
+def 634:640 <> maximal
+R645:645 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 643:643 <> x:7
+R669:669 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 667:667 <> y:8
+R677:680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R672:672 ZornsLemma.ZornsLemma <> ZL'.R var
+R674:674 ZornsLemma.ZornsLemma <> x:7 var
+R676:676 ZornsLemma.ZornsLemma <> y:8 var
+R682:684 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R681:681 ZornsLemma.ZornsLemma <> x:7 var
+R685:685 ZornsLemma.ZornsLemma <> y:8 var
+var 697:705 ZL' chain_sup
+R718:725 Coq.Sets.Ensembles <> Ensemble def
+R727:727 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 715:715 <> S:9
+R737:742 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R730:734 ZornsLemma.ZornsLemma <> chain def
+R736:736 ZornsLemma.ZornsLemma <> S:9 var
+R743:744 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R746:746 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R748:750 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R840:841 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R747:747 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 745:745 <> x:10
+R751:751 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R779:788 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R839:839 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R761:761 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 759:759 <> y:11
+R770:773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R764:765 Coq.Sets.Ensembles <> In def
+R769:769 ZornsLemma.ZornsLemma <> y:11 var
+R767:767 ZornsLemma.ZornsLemma <> S:9 var
+R774:774 ZornsLemma.ZornsLemma <> ZL'.R var
+R776:776 ZornsLemma.ZornsLemma <> y:11 var
+R778:778 ZornsLemma.ZornsLemma <> x:10 var
+R798:798 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 796:796 <> z:12
+R801:801 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R829:833 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R811:811 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 809:809 <> y:13
+R820:823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R814:815 Coq.Sets.Ensembles <> In def
+R819:819 ZornsLemma.ZornsLemma <> y:13 var
+R817:817 ZornsLemma.ZornsLemma <> S:9 var
+R824:824 ZornsLemma.ZornsLemma <> ZL'.R var
+R826:826 ZornsLemma.ZornsLemma <> y:13 var
+R828:828 ZornsLemma.ZornsLemma <> z:12 var
+R834:834 ZornsLemma.ZornsLemma <> ZL'.R var
+R836:836 ZornsLemma.ZornsLemma <> x:10 var
+R838:838 ZornsLemma.ZornsLemma <> z:12 var
+var 853:861 ZL' inflation
+R873:873 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 871:871 <> x:15
+R878:879 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R881:881 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R883:885 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R986:987 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R882:882 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 880:880 <> y:16
+R891:894 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R886:886 ZornsLemma.ZornsLemma <> ZL'.R var
+R888:888 ZornsLemma.ZornsLemma <> x:15 var
+R890:890 ZornsLemma.ZornsLemma <> y:16 var
+R901:904 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R896:899 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R895:895 ZornsLemma.ZornsLemma <> x:15 var
+R900:900 ZornsLemma.ZornsLemma <> y:16 var
+R914:914 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 912:912 <> z:17
+R922:925 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R917:917 ZornsLemma.ZornsLemma <> ZL'.R var
+R919:919 ZornsLemma.ZornsLemma <> x:15 var
+R921:921 ZornsLemma.ZornsLemma <> z:17 var
+R931:971 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R926:926 ZornsLemma.ZornsLemma <> ZL'.R var
+R928:928 ZornsLemma.ZornsLemma <> z:17 var
+R930:930 ZornsLemma.ZornsLemma <> y:16 var
+R977:980 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R973:975 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R972:972 ZornsLemma.ZornsLemma <> z:17 var
+R976:976 ZornsLemma.ZornsLemma <> x:15 var
+R982:984 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R981:981 ZornsLemma.ZornsLemma <> z:17 var
+R985:985 ZornsLemma.ZornsLemma <> y:16 var
+ind 1001:1005 <> tower
+constr 1027:1035 <> sup_intro
+constr 1153:1167 <> inflation_intro
+R1009:1016 Coq.Sets.Ensembles <> Ensemble def
+R1018:1018 ZornsLemma.ZornsLemma <> ZL'.T var
+R1049:1056 Coq.Sets.Ensembles <> Ensemble def
+R1058:1058 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1046:1046 <> S:21
+R1078:1087 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1062:1069 Coq.Sets.Ensembles <> Included def
+R1073:1077 ZornsLemma.ZornsLemma <> tower:19 ind
+R1071:1071 ZornsLemma.ZornsLemma <> S:21 var
+R1097:1101 ZornsLemma.ZornsLemma <> chain def
+R1103:1103 ZornsLemma.ZornsLemma <> S:21 var
+binder 1095:1095 <> c:22
+R1112:1113 Coq.Sets.Ensembles <> In def
+R1122:1130 Coq.Init.Specif <> proj1_sig def
+R1133:1141 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1143:1143 ZornsLemma.ZornsLemma <> S:21 var
+R1145:1145 ZornsLemma.ZornsLemma <> c:22 var
+R1115:1119 ZornsLemma.ZornsLemma <> tower:19 ind
+R1179:1179 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1177:1177 <> x:23
+R1192:1201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1182:1183 Coq.Sets.Ensembles <> In def
+R1191:1191 ZornsLemma.ZornsLemma <> x:23 var
+R1185:1189 ZornsLemma.ZornsLemma <> tower:19 ind
+R1202:1203 Coq.Sets.Ensembles <> In def
+R1212:1220 Coq.Init.Specif <> proj1_sig def
+R1223:1231 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R1233:1233 ZornsLemma.ZornsLemma <> x:23 var
+R1205:1209 ZornsLemma.ZornsLemma <> tower:19 ind
+scheme 1001:1005 <> tower_ind
+scheme 1001:1005 <> tower_sind
+prf 1245:1258 <> tower_is_chain
+R1261:1265 ZornsLemma.ZornsLemma <> chain def
+R1267:1271 ZornsLemma.ZornsLemma <> tower ind
+R1288:1292 ZornsLemma.ZornsLemma <> chain def
+R1347:1353 Coq.Logic.Classical_Prop <> classic prfax
+R1365:1365 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1363:1363 <> y:24
+R1374:1377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1368:1369 Coq.Sets.Ensembles <> In def
+R1373:1373 ZornsLemma.ZornsLemma <> y:24 var
+R1378:1378 ZornsLemma.ZornsLemma <> ZL'.R var
+R1380:1380 ZornsLemma.ZornsLemma <> y:24 var
+R1347:1353 Coq.Logic.Classical_Prop <> classic prfax
+R1365:1365 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1363:1363 <> y:25
+R1374:1377 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1368:1369 Coq.Sets.Ensembles <> In def
+R1373:1373 ZornsLemma.ZornsLemma <> y:25 var
+R1378:1378 ZornsLemma.ZornsLemma <> ZL'.R var
+R1380:1380 ZornsLemma.ZornsLemma <> y:25 var
+R1413:1421 Coq.Init.Specif <> proj2_sig def
+R1424:1432 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1413:1421 Coq.Init.Specif <> proj2_sig def
+R1424:1432 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1472:1485 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R1472:1485 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R1521:1532 Coq.Logic.Classical_Prop <> imply_to_and thm
+R1521:1532 Coq.Logic.Classical_Prop <> imply_to_and thm
+R1569:1577 Coq.Relations.Relation_Definitions <> ord_trans proj
+R1579:1581 ZornsLemma.ZornsLemma <> ZL'.ord var
+R1569:1577 Coq.Relations.Relation_Definitions <> ord_trans proj
+R1579:1581 ZornsLemma.ZornsLemma <> ZL'.ord var
+R1657:1665 Coq.Init.Specif <> proj2_sig def
+R1668:1676 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1657:1665 Coq.Init.Specif <> proj2_sig def
+R1668:1676 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1699:1707 Coq.Init.Specif <> proj2_sig def
+R1710:1718 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R1699:1707 Coq.Init.Specif <> proj2_sig def
+R1710:1718 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R1756:1764 Coq.Init.Specif <> proj1_sig def
+R1767:1775 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R1756:1764 Coq.Init.Specif <> proj1_sig def
+R1767:1775 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R1807:1807 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1805:1805 <> y:26
+R1820:1823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1810:1811 Coq.Sets.Ensembles <> In def
+R1819:1819 ZornsLemma.ZornsLemma <> y:26 var
+R1813:1817 ZornsLemma.ZornsLemma <> tower ind
+R1829:1832 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1824:1824 ZornsLemma.ZornsLemma <> ZL'.R var
+R1826:1826 ZornsLemma.ZornsLemma <> y:26 var
+R1833:1833 ZornsLemma.ZornsLemma <> ZL'.R var
+R1838:1838 ZornsLemma.ZornsLemma <> y:26 var
+R1807:1807 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1805:1805 <> y:27
+R1820:1823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1810:1811 Coq.Sets.Ensembles <> In def
+R1819:1819 ZornsLemma.ZornsLemma <> y:27 var
+R1813:1817 ZornsLemma.ZornsLemma <> tower ind
+R1829:1832 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1824:1824 ZornsLemma.ZornsLemma <> ZL'.R var
+R1826:1826 ZornsLemma.ZornsLemma <> y:27 var
+R1833:1833 ZornsLemma.ZornsLemma <> ZL'.R var
+R1838:1838 ZornsLemma.ZornsLemma <> y:27 var
+R1884:1890 Coq.Logic.Classical_Prop <> classic prfax
+R1903:1903 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1900:1901 <> x0:28
+R1913:1916 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1906:1907 Coq.Sets.Ensembles <> In def
+R1911:1912 ZornsLemma.ZornsLemma <> x0:28 var
+R1917:1917 ZornsLemma.ZornsLemma <> ZL'.R var
+R1919:1920 ZornsLemma.ZornsLemma <> x0:28 var
+R1884:1890 Coq.Logic.Classical_Prop <> classic prfax
+R1903:1903 ZornsLemma.ZornsLemma <> ZL'.T var
+binder 1900:1901 <> x0:29
+R1913:1916 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1906:1907 Coq.Sets.Ensembles <> In def
+R1911:1912 ZornsLemma.ZornsLemma <> x0:29 var
+R1917:1917 ZornsLemma.ZornsLemma <> ZL'.R var
+R1919:1920 ZornsLemma.ZornsLemma <> x0:29 var
+R1970:1978 Coq.Init.Specif <> proj2_sig def
+R1981:1989 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R1970:1978 Coq.Init.Specif <> proj2_sig def
+R1981:1989 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R2031:2044 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R2031:2044 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R2084:2095 Coq.Logic.Classical_Prop <> imply_to_and thm
+R2084:2095 Coq.Logic.Classical_Prop <> imply_to_and thm
+R2136:2144 Coq.Relations.Relation_Definitions <> ord_trans proj
+R2146:2148 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2136:2144 Coq.Relations.Relation_Definitions <> ord_trans proj
+R2146:2148 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2225:2233 Coq.Init.Specif <> proj2_sig def
+R2236:2244 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R2225:2233 Coq.Init.Specif <> proj2_sig def
+R2236:2244 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R2267:2268 Coq.Sets.Ensembles <> In def
+R2270:2274 ZornsLemma.ZornsLemma <> tower ind
+R2267:2268 Coq.Sets.Ensembles <> In def
+R2270:2274 ZornsLemma.ZornsLemma <> tower ind
+R2322:2336 ZornsLemma.ZornsLemma <> inflation_intro constr
+R2322:2336 ZornsLemma.ZornsLemma <> inflation_intro constr
+R2389:2390 Coq.Sets.Ensembles <> In def
+R2399:2407 Coq.Init.Specif <> proj1_sig def
+R2410:2418 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2392:2396 ZornsLemma.ZornsLemma <> tower ind
+R2439:2453 ZornsLemma.ZornsLemma <> inflation_intro constr
+R2389:2390 Coq.Sets.Ensembles <> In def
+R2399:2407 Coq.Init.Specif <> proj1_sig def
+R2410:2418 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2392:2396 ZornsLemma.ZornsLemma <> tower ind
+R2439:2453 ZornsLemma.ZornsLemma <> inflation_intro constr
+R2480:2488 Coq.Init.Specif <> proj1_sig def
+R2491:2499 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2480:2488 Coq.Init.Specif <> proj1_sig def
+R2491:2499 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2573:2581 Coq.Init.Specif <> proj2_sig def
+R2584:2592 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2573:2581 Coq.Init.Specif <> proj2_sig def
+R2584:2592 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2645:2648 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2640:2642 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2650:2652 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2653:2661 Coq.Init.Specif <> proj1_sig def
+R2664:2672 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2645:2648 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R2640:2642 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2650:2652 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2653:2661 Coq.Init.Specif <> proj1_sig def
+R2664:2672 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2787:2794 Coq.Relations.Relation_Definitions <> ord_refl proj
+R2796:2798 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2787:2794 Coq.Relations.Relation_Definitions <> ord_refl proj
+R2796:2798 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2867:2874 Coq.Relations.Relation_Definitions <> ord_refl proj
+R2876:2878 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2867:2874 Coq.Relations.Relation_Definitions <> ord_refl proj
+R2876:2878 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2918:2926 Coq.Relations.Relation_Definitions <> ord_trans proj
+R2928:2930 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2943:2951 Coq.Init.Specif <> proj2_sig def
+R2954:2962 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R2918:2926 Coq.Relations.Relation_Definitions <> ord_trans proj
+R2928:2930 ZornsLemma.ZornsLemma <> ZL'.ord var
+R2943:2951 Coq.Init.Specif <> proj2_sig def
+R2954:2962 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R3032:3040 Coq.Relations.Relation_Definitions <> ord_trans proj
+R3042:3044 ZornsLemma.ZornsLemma <> ZL'.ord var
+R3032:3040 Coq.Relations.Relation_Definitions <> ord_trans proj
+R3042:3044 ZornsLemma.ZornsLemma <> ZL'.ord var
+prf 3142:3144 <> ZL'
+R3147:3151 Coq.Init.Logic <> False ind
+R3173:3181 Coq.Init.Specif <> proj2_sig def
+R3184:3192 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R3194:3198 ZornsLemma.ZornsLemma <> tower ind
+R3200:3213 ZornsLemma.ZornsLemma <> tower_is_chain thm
+R3173:3181 Coq.Init.Specif <> proj2_sig def
+R3184:3192 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R3194:3198 ZornsLemma.ZornsLemma <> tower ind
+R3200:3213 ZornsLemma.ZornsLemma <> tower_is_chain thm
+R3240:3248 Coq.Init.Specif <> proj1_sig def
+R3251:3259 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R3261:3265 ZornsLemma.ZornsLemma <> tower ind
+R3267:3280 ZornsLemma.ZornsLemma <> tower_is_chain thm
+R3240:3248 Coq.Init.Specif <> proj1_sig def
+R3251:3259 ZornsLemma.ZornsLemma <> ZL'.chain_sup var
+R3261:3265 ZornsLemma.ZornsLemma <> tower ind
+R3267:3280 ZornsLemma.ZornsLemma <> tower_is_chain thm
+R3299:3300 Coq.Sets.Ensembles <> In def
+R3302:3306 ZornsLemma.ZornsLemma <> tower ind
+R3299:3300 Coq.Sets.Ensembles <> In def
+R3302:3306 ZornsLemma.ZornsLemma <> tower ind
+R3380:3388 Coq.Init.Specif <> proj1_sig def
+R3391:3399 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R3380:3388 Coq.Init.Specif <> proj1_sig def
+R3391:3399 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R3415:3416 Coq.Sets.Ensembles <> In def
+R3418:3422 ZornsLemma.ZornsLemma <> tower ind
+R3415:3416 Coq.Sets.Ensembles <> In def
+R3418:3422 ZornsLemma.ZornsLemma <> tower ind
+R3463:3471 Coq.Init.Specif <> proj2_sig def
+R3474:3482 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R3463:3471 Coq.Init.Specif <> proj2_sig def
+R3474:3482 ZornsLemma.ZornsLemma <> ZL'.inflation var
+R3529:3539 Coq.Relations.Relation_Definitions <> ord_antisym proj
+R3541:3543 ZornsLemma.ZornsLemma <> ZL'.ord var
+R3529:3539 Coq.Relations.Relation_Definitions <> ord_antisym proj
+R3541:3543 ZornsLemma.ZornsLemma <> ZL'.ord var
+R3591:3593 ZornsLemma.ZornsLemma ZL' <> sec
+R3607:3611 ZornsLemma.ZornsLemma <> chain def
+R3607:3611 ZornsLemma.ZornsLemma <> chain def
+R3628:3634 ZornsLemma.ZornsLemma <> maximal def
+R3628:3634 ZornsLemma.ZornsLemma <> maximal def
+R3657:3669 ZornsLemma.EnsemblesSpec <> <> lib
+sec 3681:3682 <> ZL
+var 3766:3766 ZL T
+var 3783:3783 ZL R
+R3785:3792 Coq.Relations.Relation_Definitions <> relation def
+R3794:3794 ZornsLemma.ZornsLemma <> ZL.T var
+var 3808:3810 ZL ord
+R3813:3817 Coq.Relations.Relation_Definitions <> order rec
+R3819:3819 ZornsLemma.ZornsLemma <> ZL.R var
+var 3833:3843 ZL ub_of_chain
+R3855:3862 Coq.Sets.Ensembles <> Ensemble def
+R3864:3864 ZornsLemma.ZornsLemma <> ZL.T var
+binder 3853:3853 <> S:33
+R3876:3881 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3867:3871 ZornsLemma.ZornsLemma <> chain def
+R3875:3875 ZornsLemma.ZornsLemma <> S:33 var
+R3873:3873 ZornsLemma.ZornsLemma <> ZL.R var
+R3882:3888 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3892:3893 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3891:3891 ZornsLemma.ZornsLemma <> ZL.T var
+binder 3889:3889 <> x:34
+R3903:3903 ZornsLemma.ZornsLemma <> ZL.T var
+binder 3901:3901 <> y:35
+R3912:3915 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3906:3907 Coq.Sets.Ensembles <> In def
+R3911:3911 ZornsLemma.ZornsLemma <> y:35 var
+R3909:3909 ZornsLemma.ZornsLemma <> S:33 var
+R3916:3916 ZornsLemma.ZornsLemma <> ZL.R var
+R3918:3918 ZornsLemma.ZornsLemma <> y:35 var
+R3920:3920 ZornsLemma.ZornsLemma <> x:34 var
+def 3935:3940 <> chains
+R3945:3945 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3947:3947 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3958:3960 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3970:3970 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R3948:3955 Coq.Sets.Ensembles <> Ensemble def
+R3957:3957 ZornsLemma.ZornsLemma <> ZL.T var
+binder 3946:3946 <> S:37
+R3961:3965 ZornsLemma.ZornsLemma <> chain def
+R3969:3969 ZornsLemma.ZornsLemma <> S:37 var
+R3967:3967 ZornsLemma.ZornsLemma <> ZL.R var
+def 3984:3993 <> chains_ord
+R4009:4014 ZornsLemma.ZornsLemma <> chains def
+binder 4003:4004 <> S1:38
+binder 4006:4007 <> S2:39
+R4021:4028 Coq.Sets.Ensembles <> Included def
+R4046:4054 Coq.Init.Specif <> proj1_sig def
+R4056:4057 ZornsLemma.ZornsLemma <> S2:39 var
+R4031:4039 Coq.Init.Specif <> proj1_sig def
+R4041:4042 ZornsLemma.ZornsLemma <> S1:38 var
+prf 4069:4080 <> chains_order
+R4083:4087 Coq.Relations.Relation_Definitions <> order rec
+R4089:4098 ZornsLemma.ZornsLemma <> chains_ord def
+R4130:4138 Coq.Relations.Relation_Definitions <> reflexive def
+R4141:4150 ZornsLemma.ZornsLemma <> chains_ord def
+R4180:4189 Coq.Relations.Relation_Definitions <> transitive def
+R4192:4201 ZornsLemma.ZornsLemma <> chains_ord def
+R4252:4267 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R4252:4267 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+def 4305:4318 <> chains_sup_def
+R4332:4339 Coq.Sets.Ensembles <> Ensemble def
+R4341:4346 ZornsLemma.ZornsLemma <> chains def
+binder 4329:4329 <> F:40
+R4369:4372 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4351:4355 ZornsLemma.ZornsLemma <> chain def
+R4368:4368 ZornsLemma.ZornsLemma <> F:40 var
+R4357:4366 ZornsLemma.ZornsLemma <> chains_ord def
+R4373:4378 ZornsLemma.ZornsLemma <> chains def
+binder 4393:4393 <> F:41
+binder 4395:4395 <> H:42
+R4400:4404 Coq.Init.Specif <> exist constr
+R4408:4409 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4411:4411 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4413:4415 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4490:4491 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4412:4412 ZornsLemma.ZornsLemma <> ZL.T var
+binder 4410:4410 <> x:43
+R4416:4422 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4431:4432 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4425:4430 ZornsLemma.ZornsLemma <> chains def
+binder 4423:4423 <> S:44
+R4439:4471 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4433:4434 Coq.Sets.Ensembles <> In def
+R4438:4438 ZornsLemma.ZornsLemma <> S:44 var
+R4436:4436 ZornsLemma.ZornsLemma <> F:41 var
+R4472:4473 Coq.Sets.Ensembles <> In def
+R4489:4489 ZornsLemma.ZornsLemma <> x:43 var
+R4476:4484 Coq.Init.Specif <> proj1_sig def
+R4486:4486 ZornsLemma.ZornsLemma <> S:44 var
+binder 4393:4393 <> F:45
+binder 4395:4395 <> H:46
+R4400:4404 Coq.Init.Specif <> exist constr
+R4408:4409 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4411:4411 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4413:4415 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4490:4491 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R4412:4412 ZornsLemma.ZornsLemma <> ZL.T var
+binder 4410:4410 <> x:47
+R4416:4422 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4431:4432 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4425:4430 ZornsLemma.ZornsLemma <> chains def
+binder 4423:4423 <> S:48
+R4439:4471 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4433:4434 Coq.Sets.Ensembles <> In def
+R4438:4438 ZornsLemma.ZornsLemma <> S:48 var
+R4436:4436 ZornsLemma.ZornsLemma <> F:45 var
+R4472:4473 Coq.Sets.Ensembles <> In def
+R4489:4489 ZornsLemma.ZornsLemma <> x:47 var
+R4476:4484 Coq.Init.Specif <> proj1_sig def
+R4486:4486 ZornsLemma.ZornsLemma <> S:48 var
+prf 4685:4702 <> chains_sup_correct
+R4709:4716 Coq.Sets.Ensembles <> Ensemble def
+R4718:4723 ZornsLemma.ZornsLemma <> chains def
+binder 4705:4705 <> F:49
+R4731:4735 ZornsLemma.ZornsLemma <> chain def
+R4748:4748 ZornsLemma.ZornsLemma <> F:49 var
+R4737:4746 ZornsLemma.ZornsLemma <> chains_ord def
+binder 4727:4727 <> P:50
+R4764:4777 ZornsLemma.ZornsLemma <> chains_sup_def def
+R4779:4779 ZornsLemma.ZornsLemma <> F:49 var
+R4781:4781 ZornsLemma.ZornsLemma <> P:50 var
+binder 4759:4759 <> U:51
+R4790:4790 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4832:4841 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4926:4926 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4800:4805 ZornsLemma.ZornsLemma <> chains def
+binder 4798:4798 <> S:52
+R4814:4817 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4808:4809 Coq.Sets.Ensembles <> In def
+R4813:4813 ZornsLemma.ZornsLemma <> S:52 var
+R4811:4811 ZornsLemma.ZornsLemma <> F:49 var
+R4818:4827 ZornsLemma.ZornsLemma <> chains_ord def
+R4829:4829 ZornsLemma.ZornsLemma <> S:52 var
+R4831:4831 ZornsLemma.ZornsLemma <> U:51 var
+R4851:4856 ZornsLemma.ZornsLemma <> chains def
+binder 4849:4849 <> T:53
+R4859:4859 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4901:4911 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4869:4874 ZornsLemma.ZornsLemma <> chains def
+binder 4867:4867 <> S:54
+R4883:4886 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4877:4878 Coq.Sets.Ensembles <> In def
+R4882:4882 ZornsLemma.ZornsLemma <> S:54 var
+R4880:4880 ZornsLemma.ZornsLemma <> F:49 var
+R4887:4896 ZornsLemma.ZornsLemma <> chains_ord def
+R4898:4898 ZornsLemma.ZornsLemma <> S:54 var
+R4900:4900 ZornsLemma.ZornsLemma <> T:53 var
+R4912:4921 ZornsLemma.ZornsLemma <> chains_ord def
+R4923:4923 ZornsLemma.ZornsLemma <> U:51 var
+R4925:4925 ZornsLemma.ZornsLemma <> T:53 var
+R4951:4960 ZornsLemma.ZornsLemma <> chains_ord def
+R4963:4970 Coq.Sets.Ensembles <> Included def
+def 5094:5103 <> chains_sup
+R5108:5115 Coq.Sets.Ensembles <> Ensemble def
+R5117:5122 ZornsLemma.ZornsLemma <> chains def
+binder 5106:5106 <> F:55
+R5128:5132 ZornsLemma.ZornsLemma <> chain def
+R5145:5145 ZornsLemma.ZornsLemma <> F:55 var
+R5134:5143 ZornsLemma.ZornsLemma <> chains_ord def
+binder 5126:5126 <> P:56
+R5162:5175 ZornsLemma.ZornsLemma <> chains_sup_def def
+R5177:5177 ZornsLemma.ZornsLemma <> F:55 var
+R5179:5179 ZornsLemma.ZornsLemma <> P:56 var
+binder 5157:5157 <> U:57
+R5186:5190 Coq.Init.Specif <> exist constr
+R5376:5393 ZornsLemma.ZornsLemma <> chains_sup_correct thm
+R5395:5395 ZornsLemma.ZornsLemma <> F:55 var
+R5397:5397 ZornsLemma.ZornsLemma <> P:56 var
+R5355:5368 ZornsLemma.ZornsLemma <> chains_sup_def def
+R5370:5370 ZornsLemma.ZornsLemma <> F:55 var
+R5372:5372 ZornsLemma.ZornsLemma <> P:56 var
+R5199:5204 ZornsLemma.ZornsLemma <> chains def
+binder 5197:5197 <> U:58
+R5213:5213 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5255:5264 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5349:5349 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5223:5228 ZornsLemma.ZornsLemma <> chains def
+binder 5221:5221 <> S:59
+R5237:5240 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5231:5232 Coq.Sets.Ensembles <> In def
+R5236:5236 ZornsLemma.ZornsLemma <> S:59 var
+R5234:5234 ZornsLemma.ZornsLemma <> F:55 var
+R5241:5250 ZornsLemma.ZornsLemma <> chains_ord def
+R5252:5252 ZornsLemma.ZornsLemma <> S:59 var
+R5254:5254 ZornsLemma.ZornsLemma <> U:58 var
+R5274:5279 ZornsLemma.ZornsLemma <> chains def
+binder 5272:5272 <> T:60
+R5282:5282 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5324:5334 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5292:5297 ZornsLemma.ZornsLemma <> chains def
+binder 5290:5290 <> S:61
+R5306:5309 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5300:5301 Coq.Sets.Ensembles <> In def
+R5305:5305 ZornsLemma.ZornsLemma <> S:61 var
+R5303:5303 ZornsLemma.ZornsLemma <> F:55 var
+R5310:5319 ZornsLemma.ZornsLemma <> chains_ord def
+R5321:5321 ZornsLemma.ZornsLemma <> S:61 var
+R5323:5323 ZornsLemma.ZornsLemma <> T:60 var
+R5335:5344 ZornsLemma.ZornsLemma <> chains_ord def
+R5346:5346 ZornsLemma.ZornsLemma <> U:58 var
+R5348:5348 ZornsLemma.ZornsLemma <> T:60 var
+prf 5408:5424 <> chains_ord_exists
+R5431:5436 ZornsLemma.ZornsLemma <> chains def
+binder 5427:5427 <> x:62
+R5443:5443 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5483:5489 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5453:5453 ZornsLemma.ZornsLemma <> ZL.T var
+binder 5451:5451 <> x:63
+R5456:5462 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5466:5467 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5465:5465 ZornsLemma.ZornsLemma <> ZL.T var
+binder 5463:5463 <> y:64
+R5473:5476 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5468:5468 ZornsLemma.ZornsLemma <> ZL.R var
+R5470:5470 ZornsLemma.ZornsLemma <> x:63 var
+R5472:5472 ZornsLemma.ZornsLemma <> y:64 var
+R5478:5481 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5477:5477 ZornsLemma.ZornsLemma <> x:63 var
+R5482:5482 ZornsLemma.ZornsLemma <> y:64 var
+R5490:5496 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5507:5508 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5501:5506 ZornsLemma.ZornsLemma <> chains def
+binder 5497:5497 <> y:65
+R5523:5526 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5509:5518 ZornsLemma.ZornsLemma <> chains_ord def
+R5520:5520 ZornsLemma.ZornsLemma <> x:62 var
+R5522:5522 ZornsLemma.ZornsLemma <> y:65 var
+R5533:5537 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5607:5607 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5528:5531 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5527:5527 ZornsLemma.ZornsLemma <> x:62 var
+R5532:5532 ZornsLemma.ZornsLemma <> y:65 var
+R5549:5554 ZornsLemma.ZornsLemma <> chains def
+binder 5545:5545 <> z:66
+R5571:5574 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5557:5566 ZornsLemma.ZornsLemma <> chains_ord def
+R5568:5568 ZornsLemma.ZornsLemma <> x:62 var
+R5570:5570 ZornsLemma.ZornsLemma <> z:66 var
+R5589:5592 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5575:5584 ZornsLemma.ZornsLemma <> chains_ord def
+R5586:5586 ZornsLemma.ZornsLemma <> z:66 var
+R5588:5588 ZornsLemma.ZornsLemma <> y:65 var
+R5598:5601 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5594:5596 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5593:5593 ZornsLemma.ZornsLemma <> z:66 var
+R5597:5597 ZornsLemma.ZornsLemma <> x:62 var
+R5603:5605 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5602:5602 ZornsLemma.ZornsLemma <> z:66 var
+R5606:5606 ZornsLemma.ZornsLemma <> y:65 var
+R5642:5652 ZornsLemma.ZornsLemma <> ZL.ub_of_chain var
+R5642:5652 ZornsLemma.ZornsLemma <> ZL.ub_of_chain var
+R5683:5685 Coq.Sets.Ensembles <> Add def
+R5683:5685 Coq.Sets.Ensembles <> Add def
+R5702:5706 ZornsLemma.ZornsLemma <> chain def
+R5708:5708 ZornsLemma.ZornsLemma <> ZL.R var
+R5702:5706 ZornsLemma.ZornsLemma <> chain def
+R5708:5708 ZornsLemma.ZornsLemma <> ZL.R var
+R5832:5840 Coq.Relations.Relation_Definitions <> ord_trans proj
+R5832:5840 Coq.Relations.Relation_Definitions <> ord_trans proj
+R5960:5968 Coq.Relations.Relation_Definitions <> ord_trans proj
+R5960:5968 Coq.Relations.Relation_Definitions <> ord_trans proj
+R6042:6049 Coq.Relations.Relation_Definitions <> ord_refl proj
+R6042:6049 Coq.Relations.Relation_Definitions <> ord_refl proj
+R6062:6066 Coq.Init.Specif <> exist constr
+R6062:6066 Coq.Init.Specif <> exist constr
+R6087:6096 ZornsLemma.ZornsLemma <> chains_ord def
+R6204:6205 Coq.Sets.Ensembles <> In def
+R6204:6205 Coq.Sets.Ensembles <> In def
+R6289:6299 Coq.Relations.Relation_Definitions <> ord_antisym proj
+R6301:6303 ZornsLemma.ZornsLemma <> ZL.ord var
+R6289:6299 Coq.Relations.Relation_Definitions <> ord_antisym proj
+R6301:6303 ZornsLemma.ZornsLemma <> ZL.ord var
+R6327:6333 Coq.Logic.Classical_Prop <> classic prfax
+R6336:6337 Coq.Sets.Ensembles <> In def
+R6382:6397 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R6400:6423 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6327:6333 Coq.Logic.Classical_Prop <> classic prfax
+R6336:6337 Coq.Sets.Ensembles <> In def
+R6382:6397 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R6400:6423 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6382:6397 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R6400:6423 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6528:6529 Coq.Sets.Ensembles <> In def
+R6528:6529 Coq.Sets.Ensembles <> In def
+prf 6621:6630 <> ZornsLemma
+R6633:6639 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6643:6644 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6642:6642 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6640:6640 <> x:67
+R6645:6651 ZornsLemma.ZornsLemma <> maximal def
+R6655:6655 ZornsLemma.ZornsLemma <> x:67 var
+R6653:6653 ZornsLemma.ZornsLemma <> ZL.R var
+R6677:6679 ZornsLemma.ZornsLemma <> ZL' thm
+R6712:6721 ZornsLemma.ZornsLemma <> chains_sup def
+R6699:6710 ZornsLemma.ZornsLemma <> chains_order thm
+R6688:6697 ZornsLemma.ZornsLemma <> chains_ord def
+R6681:6686 ZornsLemma.ZornsLemma <> chains def
+R6677:6679 ZornsLemma.ZornsLemma <> ZL' thm
+R6712:6721 ZornsLemma.ZornsLemma <> chains_sup def
+R6699:6710 ZornsLemma.ZornsLemma <> chains_order thm
+R6688:6697 ZornsLemma.ZornsLemma <> chains_ord def
+R6681:6686 ZornsLemma.ZornsLemma <> chains def
+R6732:6735 Coq.Logic.Classical_Prop <> NNPP thm
+R6732:6735 Coq.Logic.Classical_Prop <> NNPP thm
+R6745:6751 ZornsLemma.ZornsLemma <> maximal def
+R6765:6781 ZornsLemma.ZornsLemma <> chains_ord_exists thm
+R6765:6781 ZornsLemma.ZornsLemma <> chains_ord_exists thm
+R6813:6813 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6811:6811 <> x:68
+R6816:6822 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6826:6827 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6825:6825 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6823:6823 <> y:69
+R6833:6836 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6828:6828 ZornsLemma.ZornsLemma <> ZL.R var
+R6830:6830 ZornsLemma.ZornsLemma <> x:68 var
+R6832:6832 ZornsLemma.ZornsLemma <> y:69 var
+R6838:6841 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6837:6837 ZornsLemma.ZornsLemma <> x:68 var
+R6842:6842 ZornsLemma.ZornsLemma <> y:69 var
+R6813:6813 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6811:6811 <> x:70
+R6816:6822 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6826:6827 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6825:6825 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6823:6823 <> y:71
+R6833:6836 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6828:6828 ZornsLemma.ZornsLemma <> ZL.R var
+R6830:6830 ZornsLemma.ZornsLemma <> x:70 var
+R6832:6832 ZornsLemma.ZornsLemma <> y:71 var
+R6838:6841 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6837:6837 ZornsLemma.ZornsLemma <> x:70 var
+R6842:6842 ZornsLemma.ZornsLemma <> y:71 var
+R6865:6865 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6863:6863 <> x:72
+R6868:6869 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6879:6879 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6877:6877 <> y:73
+R6887:6890 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6882:6882 ZornsLemma.ZornsLemma <> ZL.R var
+R6884:6884 ZornsLemma.ZornsLemma <> x:72 var
+R6886:6886 ZornsLemma.ZornsLemma <> y:73 var
+R6892:6894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6891:6891 ZornsLemma.ZornsLemma <> x:72 var
+R6895:6895 ZornsLemma.ZornsLemma <> y:73 var
+R6915:6928 Coq.Logic.Classical_Pred_Type <> not_ex_all_not thm
+R6865:6865 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6863:6863 <> x:74
+R6868:6869 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6879:6879 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6877:6877 <> y:75
+R6887:6890 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6882:6882 ZornsLemma.ZornsLemma <> ZL.R var
+R6884:6884 ZornsLemma.ZornsLemma <> x:74 var
+R6886:6886 ZornsLemma.ZornsLemma <> y:75 var
+R6892:6894 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6891:6891 ZornsLemma.ZornsLemma <> x:74 var
+R6895:6895 ZornsLemma.ZornsLemma <> y:75 var
+R6915:6928 Coq.Logic.Classical_Pred_Type <> not_ex_all_not thm
+R6950:6950 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6948:6948 <> x:76
+R6953:6959 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6963:6964 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6962:6962 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6960:6960 <> y:77
+R6965:6967 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6982:6982 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6973:6976 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6968:6968 ZornsLemma.ZornsLemma <> ZL.R var
+R6970:6970 ZornsLemma.ZornsLemma <> x:76 var
+R6972:6972 ZornsLemma.ZornsLemma <> y:77 var
+R6978:6980 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6977:6977 ZornsLemma.ZornsLemma <> x:76 var
+R6981:6981 ZornsLemma.ZornsLemma <> y:77 var
+R7016:7029 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R6950:6950 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6948:6948 <> x:78
+R6953:6959 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6963:6964 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6962:6962 ZornsLemma.ZornsLemma <> ZL.T var
+binder 6960:6960 <> y:79
+R6965:6967 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6982:6982 Coq.Init.Logic <> ::type_scope:'~'_x not
+R6973:6976 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6968:6968 ZornsLemma.ZornsLemma <> ZL.R var
+R6970:6970 ZornsLemma.ZornsLemma <> x:78 var
+R6972:6972 ZornsLemma.ZornsLemma <> y:79 var
+R6978:6980 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6977:6977 ZornsLemma.ZornsLemma <> x:78 var
+R6981:6981 ZornsLemma.ZornsLemma <> y:79 var
+R7016:7029 Coq.Logic.Classical_Pred_Type <> not_all_ex_not thm
+R7097:7108 Coq.Logic.Classical_Prop <> imply_to_and thm
+R7097:7108 Coq.Logic.Classical_Prop <> imply_to_and thm
+R7130:7135 ZornsLemma.ZornsLemma <> chains def
+binder 7128:7128 <> x:80
+R7138:7144 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7153:7158 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7147:7152 ZornsLemma.ZornsLemma <> chains def
+binder 7145:7145 <> y:81
+R7173:7176 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7159:7168 ZornsLemma.ZornsLemma <> chains_ord def
+R7170:7170 ZornsLemma.ZornsLemma <> x:80 var
+R7172:7172 ZornsLemma.ZornsLemma <> y:81 var
+R7183:7186 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7178:7181 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7177:7177 ZornsLemma.ZornsLemma <> x:80 var
+R7182:7182 ZornsLemma.ZornsLemma <> y:81 var
+R7196:7201 ZornsLemma.ZornsLemma <> chains def
+binder 7194:7194 <> z:82
+R7218:7225 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7204:7213 ZornsLemma.ZornsLemma <> chains_ord def
+R7215:7215 ZornsLemma.ZornsLemma <> x:80 var
+R7217:7217 ZornsLemma.ZornsLemma <> z:82 var
+R7240:7243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7226:7235 ZornsLemma.ZornsLemma <> chains_ord def
+R7237:7237 ZornsLemma.ZornsLemma <> z:82 var
+R7239:7239 ZornsLemma.ZornsLemma <> y:81 var
+R7249:7252 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R7245:7247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7244:7244 ZornsLemma.ZornsLemma <> z:82 var
+R7248:7248 ZornsLemma.ZornsLemma <> x:80 var
+R7254:7256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7253:7253 ZornsLemma.ZornsLemma <> z:82 var
+R7257:7257 ZornsLemma.ZornsLemma <> y:81 var
+R7130:7135 ZornsLemma.ZornsLemma <> chains def
+binder 7128:7128 <> x:83
+R7138:7144 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7153:7158 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7147:7152 ZornsLemma.ZornsLemma <> chains def
+binder 7145:7145 <> y:84
+R7173:7176 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7159:7168 ZornsLemma.ZornsLemma <> chains_ord def
+R7170:7170 ZornsLemma.ZornsLemma <> x:83 var
+R7172:7172 ZornsLemma.ZornsLemma <> y:84 var
+R7183:7186 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7178:7181 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R7177:7177 ZornsLemma.ZornsLemma <> x:83 var
+R7182:7182 ZornsLemma.ZornsLemma <> y:84 var
+R7196:7201 ZornsLemma.ZornsLemma <> chains def
+binder 7194:7194 <> z:85
+R7218:7225 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7204:7213 ZornsLemma.ZornsLemma <> chains_ord def
+R7215:7215 ZornsLemma.ZornsLemma <> x:83 var
+R7217:7217 ZornsLemma.ZornsLemma <> z:85 var
+R7240:7243 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7226:7235 ZornsLemma.ZornsLemma <> chains_ord def
+R7237:7237 ZornsLemma.ZornsLemma <> z:85 var
+R7239:7239 ZornsLemma.ZornsLemma <> y:84 var
+R7249:7252 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R7245:7247 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7244:7244 ZornsLemma.ZornsLemma <> z:85 var
+R7248:7248 ZornsLemma.ZornsLemma <> x:83 var
+R7254:7256 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7253:7253 ZornsLemma.ZornsLemma <> z:85 var
+R7257:7257 ZornsLemma.ZornsLemma <> y:84 var
+R7282:7287 Coq.Logic.ClassicalChoice <> choice thm
+R7282:7287 Coq.Logic.ClassicalChoice <> choice thm
+R7376:7377 ZornsLemma.ZornsLemma ZL <> sec
+R7391:7400 ZornsLemma.ZornsLemma <> ZornsLemma thm
+R7391:7400 ZornsLemma.ZornsLemma <> ZornsLemma thm
+sec 7416:7426 <> ZL_preorder
+var 7439:7439 ZL_preorder T
+var 7456:7456 ZL_preorder R
+R7458:7465 Coq.Relations.Relation_Definitions <> relation def
+R7467:7467 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+var 7481:7487 ZL_preorder Rpreord
+R7490:7497 Coq.Relations.Relation_Definitions <> preorder rec
+R7499:7499 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+var 7513:7523 ZL_preorder ub_of_chain
+R7535:7542 Coq.Sets.Ensembles <> Ensemble def
+R7544:7544 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7533:7533 <> S:89
+R7556:7561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7547:7551 ZornsLemma.ZornsLemma <> chain def
+R7555:7555 ZornsLemma.ZornsLemma <> S:89 var
+R7553:7553 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7562:7568 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7572:7573 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7571:7571 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7569:7569 <> x:90
+R7583:7583 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7581:7581 <> y:91
+R7592:7595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7586:7587 Coq.Sets.Ensembles <> In def
+R7591:7591 ZornsLemma.ZornsLemma <> y:91 var
+R7589:7589 ZornsLemma.ZornsLemma <> S:89 var
+R7596:7596 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7598:7598 ZornsLemma.ZornsLemma <> y:91 var
+R7600:7600 ZornsLemma.ZornsLemma <> x:90 var
+def 7615:7624 <> premaximal
+R7629:7629 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7627:7627 <> x:93
+R7653:7653 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7651:7651 <> y:94
+R7661:7664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7656:7656 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7658:7658 ZornsLemma.ZornsLemma <> x:93 var
+R7660:7660 ZornsLemma.ZornsLemma <> y:94 var
+R7665:7665 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7667:7667 ZornsLemma.ZornsLemma <> y:94 var
+R7669:7669 ZornsLemma.ZornsLemma <> x:93 var
+def 7690:7695 <> Requiv
+R7702:7702 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 7698:7698 <> x:95
+binder 7700:7700 <> y:96
+R7713:7716 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7708:7708 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7710:7710 ZornsLemma.ZornsLemma <> x:95 var
+R7712:7712 ZornsLemma.ZornsLemma <> y:96 var
+R7717:7717 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R7719:7719 ZornsLemma.ZornsLemma <> y:96 var
+R7721:7721 ZornsLemma.ZornsLemma <> x:95 var
+prf 7737:7754 <> equivalence_Requiv
+R7758:7768 Coq.Relations.Relation_Definitions <> equivalence rec
+R7770:7775 ZornsLemma.ZornsLemma <> Requiv def
+R7826:7836 Coq.Relations.Relation_Definitions <> preord_refl proj
+R7826:7836 Coq.Relations.Relation_Definitions <> preord_refl proj
+R7826:7836 Coq.Relations.Relation_Definitions <> preord_refl proj
+R7890:7901 Coq.Relations.Relation_Definitions <> preord_trans proj
+R7890:7901 Coq.Relations.Relation_Definitions <> preord_trans proj
+R7890:7901 Coq.Relations.Relation_Definitions <> preord_trans proj
+prf 7964:7991 <> propositional_extensionality
+binder 7996:7996 <> P:97
+binder 7998:7998 <> Q:98
+R8014:8018 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8013:8013 ZornsLemma.ZornsLemma <> P:97 var
+R8019:8019 ZornsLemma.ZornsLemma <> Q:98 var
+binder 8009:8009 <> H:99
+R8025:8027 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8024:8024 ZornsLemma.ZornsLemma <> P:97 var
+R8028:8028 ZornsLemma.ZornsLemma <> Q:98 var
+R8046:8064 Coq.Logic.PropExtensionalityFacts <> PredExt_imp_PropExt thm
+R8046:8064 Coq.Logic.PropExtensionalityFacts <> PredExt_imp_PropExt thm
+R8091:8114 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8091:8114 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 8143:8164 <> ZornsLemmaForPreorders
+R8167:8173 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8177:8178 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8176:8176 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 8174:8174 <> x:100
+R8179:8188 ZornsLemma.ZornsLemma <> premaximal def
+R8190:8190 ZornsLemma.ZornsLemma <> x:100 var
+R8218:8218 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 8214:8214 <> x:101
+binder 8216:8216 <> y:102
+R8229:8232 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8224:8224 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R8226:8226 ZornsLemma.ZornsLemma <> x:101 var
+R8228:8228 ZornsLemma.ZornsLemma <> y:102 var
+R8233:8233 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R8235:8235 ZornsLemma.ZornsLemma <> y:102 var
+R8237:8237 ZornsLemma.ZornsLemma <> x:101 var
+R8218:8218 ZornsLemma.ZornsLemma <> ZL_preorder.T var
+binder 8214:8214 <> x:103
+binder 8216:8216 <> y:104
+R8229:8232 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8224:8224 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R8226:8226 ZornsLemma.ZornsLemma <> x:103 var
+R8228:8228 ZornsLemma.ZornsLemma <> y:104 var
+R8233:8233 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+R8235:8235 ZornsLemma.ZornsLemma <> y:104 var
+R8237:8237 ZornsLemma.ZornsLemma <> x:103 var
+R8246:8263 ZornsLemma.ZornsLemma <> equivalence_Requiv thm
+R8246:8263 ZornsLemma.ZornsLemma <> equivalence_Requiv thm
+R8285:8292 ZornsLemma.Quotients <> quotient def
+R8285:8292 ZornsLemma.Quotients <> quotient def
+binder 8349:8352 <> Hnew:105
+R8381:8400 ZornsLemma.Quotients <> induced_function2arg def
+R8408:8411 ZornsLemma.ZornsLemma <> Hnew:105 var
+R8402:8402 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+binder 8369:8376 <> inducedR:106
+R8442:8469 ZornsLemma.Quotients <> induced_function2arg_correct thm
+R8477:8480 ZornsLemma.ZornsLemma <> Hnew:105 var
+R8471:8471 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+binder 8425:8437 <> inducedR_prop:107
+binder 8349:8352 <> Hnew:108
+R8381:8400 ZornsLemma.Quotients <> induced_function2arg def
+R8408:8411 ZornsLemma.ZornsLemma <> Hnew:108 var
+R8402:8402 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+binder 8369:8376 <> inducedR:109
+R8442:8469 ZornsLemma.Quotients <> induced_function2arg_correct thm
+R8477:8480 ZornsLemma.ZornsLemma <> Hnew:108 var
+R8471:8471 ZornsLemma.ZornsLemma <> ZL_preorder.R var
+binder 8425:8437 <> inducedR_prop:110
+R8507:8534 ZornsLemma.ZornsLemma <> propositional_extensionality thm
+R8507:8534 ZornsLemma.ZornsLemma <> propositional_extensionality thm
+R8567:8578 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8567:8578 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8623:8634 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8623:8634 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8677:8688 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8677:8688 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8733:8744 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8733:8744 Coq.Relations.Relation_Definitions <> preord_trans proj
+R8848:8854 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8861:8862 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8855:8855 <> x:111
+R8863:8869 ZornsLemma.ZornsLemma <> maximal def
+R8880:8880 ZornsLemma.ZornsLemma <> x:111 var
+R8848:8854 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8861:8862 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 8855:8855 <> x:112
+R8863:8869 ZornsLemma.ZornsLemma <> maximal def
+R8880:8880 ZornsLemma.ZornsLemma <> x:112 var
+R8894:8903 ZornsLemma.ZornsLemma <> ZornsLemma thm
+R8894:8903 ZornsLemma.ZornsLemma <> ZornsLemma thm
+R8971:9000 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R8971:9000 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9070:9080 Coq.Relations.Relation_Definitions <> preord_refl proj
+R9070:9080 Coq.Relations.Relation_Definitions <> preord_refl proj
+R9138:9167 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9138:9167 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9202:9231 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9202:9231 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9266:9295 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9266:9295 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9383:9394 Coq.Relations.Relation_Definitions <> preord_trans proj
+R9383:9394 Coq.Relations.Relation_Definitions <> preord_trans proj
+R9454:9483 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9454:9483 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9518:9547 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9518:9547 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R9637:9655 ZornsLemma.Quotients <> quotient_projection def
+R9673:9688 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R9691:9720 ZornsLemma.Quotients <> R_impl_equality_of_equiv_class thm
+R9673:9688 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R9691:9720 ZornsLemma.Quotients <> R_impl_equality_of_equiv_class thm
+R9790:9802 ZornsLemma.InverseImage <> inverse_image def
+R9805:9823 ZornsLemma.Quotients <> quotient_projection def
+R9790:9802 ZornsLemma.InverseImage <> inverse_image def
+R9805:9823 ZornsLemma.Quotients <> quotient_projection def
+R9866:9876 ZornsLemma.ZornsLemma <> ZL_preorder.ub_of_chain var
+binder 9862:9863 <> H1:113
+R9866:9876 ZornsLemma.ZornsLemma <> ZL_preorder.ub_of_chain var
+binder 9862:9863 <> H1:114
+R9936:9954 ZornsLemma.Quotients <> quotient_projection def
+R9962:9980 ZornsLemma.Quotients <> quotient_projection def
+R9936:9954 ZornsLemma.Quotients <> quotient_projection def
+R9962:9980 ZornsLemma.Quotients <> quotient_projection def
+R10117:10135 ZornsLemma.Quotients <> quotient_projection def
+R10117:10135 ZornsLemma.Quotients <> quotient_projection def
+R10186:10215 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R10186:10215 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R10375:10404 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R10375:10404 ZornsLemma.Quotients <> quotient_projection_surjective thm
+R10511:10529 ZornsLemma.Quotients <> quotient_projection def
+binder 10503:10504 <> H2:115
+R10511:10529 ZornsLemma.Quotients <> quotient_projection def
+binder 10503:10504 <> H2:116
+R10600:10618 ZornsLemma.Quotients <> quotient_projection def
+R10673:10674 Coq.Sets.Ensembles <> In def
+R10677:10687 ZornsLemma.Quotients <> equiv_class def
+R10673:10674 Coq.Sets.Ensembles <> In def
+R10677:10687 ZornsLemma.Quotients <> equiv_class def
+R10771:10780 Coq.Relations.Relation_Definitions <> equiv_refl proj
+R10771:10780 Coq.Relations.Relation_Definitions <> equiv_refl proj
+R10832:10842 ZornsLemma.ZornsLemma ZL_preorder <> sec
+R10856:10865 ZornsLemma.ZornsLemma <> premaximal def
+R10856:10865 ZornsLemma.ZornsLemma <> premaximal def

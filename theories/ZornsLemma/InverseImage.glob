@@ -1,0 +1,656 @@
+DIGEST 85e99402ce5f212d3f71b9dc089d3228
+FZornsLemma.InverseImage
+R33:50 ZornsLemma.FunctionProperties <> <> lib
+R86:98 ZornsLemma.EnsemblesSpec <> <> lib
+R102:116 ZornsLemma.IndexedFamilies <> <> lib
+R120:133 ZornsLemma.Powerset_facts <> <> lib
+def 148:160 <> inverse_image
+binder 163:163 <> X:1
+binder 165:165 <> Y:2
+R177:178 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R176:176 ZornsLemma.InverseImage <> X:1 var
+R179:179 ZornsLemma.InverseImage <> Y:2 var
+binder 174:174 <> f:3
+R185:192 Coq.Sets.Ensembles <> Ensemble def
+R194:194 ZornsLemma.InverseImage <> Y:2 var
+binder 183:183 <> T:4
+R199:206 Coq.Sets.Ensembles <> Ensemble def
+R208:208 ZornsLemma.InverseImage <> X:1 var
+R215:216 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R218:218 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R220:222 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R233:234 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R219:219 ZornsLemma.InverseImage <> X:1 var
+binder 217:217 <> x:5
+R223:224 Coq.Sets.Ensembles <> In def
+R229:229 ZornsLemma.InverseImage <> f:3 var
+R231:231 ZornsLemma.InverseImage <> x:5 var
+R226:226 ZornsLemma.InverseImage <> T:4 var
+R259:271 ZornsLemma.InverseImage <> inverse_image def
+prf 288:311 <> inverse_image_increasing
+binder 322:322 <> X:6
+binder 324:324 <> Y:7
+R336:337 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R335:335 ZornsLemma.InverseImage <> X:6 var
+R338:338 ZornsLemma.InverseImage <> Y:7 var
+binder 333:333 <> f:8
+R350:357 Coq.Sets.Ensembles <> Ensemble def
+R359:359 ZornsLemma.InverseImage <> Y:7 var
+binder 344:345 <> T1:9
+binder 347:348 <> T2:10
+R377:382 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R363:370 Coq.Sets.Ensembles <> Included def
+R375:376 ZornsLemma.InverseImage <> T2:10 var
+R372:373 ZornsLemma.InverseImage <> T1:9 var
+R383:390 Coq.Sets.Ensembles <> Included def
+R414:426 ZornsLemma.InverseImage <> inverse_image def
+R430:431 ZornsLemma.InverseImage <> T2:10 var
+R428:428 ZornsLemma.InverseImage <> f:8 var
+R393:405 ZornsLemma.InverseImage <> inverse_image def
+R409:410 ZornsLemma.InverseImage <> T1:9 var
+R407:407 ZornsLemma.InverseImage <> f:8 var
+prf 507:525 <> inverse_image_empty
+binder 536:536 <> X:11
+binder 538:538 <> Y:12
+R550:551 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R549:549 ZornsLemma.InverseImage <> X:11 var
+R552:552 ZornsLemma.InverseImage <> Y:12 var
+binder 547:547 <> f:13
+R583:585 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R558:570 ZornsLemma.InverseImage <> inverse_image def
+R574:582 Coq.Sets.Ensembles <> Empty_set ind
+R572:572 ZornsLemma.InverseImage <> f:13 var
+R586:594 Coq.Sets.Ensembles <> Empty_set ind
+R618:641 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R618:641 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 712:729 <> inverse_image_full
+binder 740:740 <> X:14
+binder 742:742 <> Y:15
+R754:755 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R753:753 ZornsLemma.InverseImage <> X:14 var
+R756:756 ZornsLemma.InverseImage <> Y:15 var
+binder 751:751 <> f:16
+R786:788 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R762:774 ZornsLemma.InverseImage <> inverse_image def
+R778:785 Coq.Sets.Ensembles <> Full_set ind
+R776:776 ZornsLemma.InverseImage <> f:16 var
+R789:796 Coq.Sets.Ensembles <> Full_set ind
+R820:843 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R820:843 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 906:931 <> inverse_image_intersection
+binder 942:942 <> X:17
+binder 944:944 <> Y:18
+R956:957 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R955:955 ZornsLemma.InverseImage <> X:17 var
+R958:958 ZornsLemma.InverseImage <> Y:18 var
+binder 953:953 <> f:19
+R970:977 Coq.Sets.Ensembles <> Ensemble def
+R979:979 ZornsLemma.InverseImage <> Y:18 var
+binder 964:965 <> T1:20
+binder 967:968 <> T2:21
+R1019:1023 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R983:995 ZornsLemma.InverseImage <> inverse_image def
+R1000:1011 Coq.Sets.Ensembles <> Intersection ind
+R1016:1017 ZornsLemma.InverseImage <> T2:21 var
+R1013:1014 ZornsLemma.InverseImage <> T1:20 var
+R997:997 ZornsLemma.InverseImage <> f:19 var
+R1024:1035 Coq.Sets.Ensembles <> Intersection ind
+R1059:1071 ZornsLemma.InverseImage <> inverse_image def
+R1075:1076 ZornsLemma.InverseImage <> T2:21 var
+R1073:1073 ZornsLemma.InverseImage <> f:19 var
+R1038:1050 ZornsLemma.InverseImage <> inverse_image def
+R1054:1055 ZornsLemma.InverseImage <> T1:20 var
+R1052:1052 ZornsLemma.InverseImage <> f:19 var
+R1101:1124 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1101:1124 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1289:1307 <> inverse_image_union
+binder 1318:1318 <> X:22
+binder 1320:1320 <> Y:23
+R1332:1333 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1331:1331 ZornsLemma.InverseImage <> X:22 var
+R1334:1334 ZornsLemma.InverseImage <> Y:23 var
+binder 1329:1329 <> f:24
+R1346:1353 Coq.Sets.Ensembles <> Ensemble def
+R1355:1355 ZornsLemma.InverseImage <> Y:23 var
+binder 1340:1341 <> T1:25
+binder 1343:1344 <> T2:26
+R1388:1392 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1359:1371 ZornsLemma.InverseImage <> inverse_image def
+R1376:1380 Coq.Sets.Ensembles <> Union ind
+R1385:1386 ZornsLemma.InverseImage <> T2:26 var
+R1382:1383 ZornsLemma.InverseImage <> T1:25 var
+R1373:1373 ZornsLemma.InverseImage <> f:24 var
+R1393:1397 Coq.Sets.Ensembles <> Union ind
+R1421:1433 ZornsLemma.InverseImage <> inverse_image def
+R1437:1438 ZornsLemma.InverseImage <> T2:26 var
+R1435:1435 ZornsLemma.InverseImage <> f:24 var
+R1400:1412 ZornsLemma.InverseImage <> inverse_image def
+R1416:1417 ZornsLemma.InverseImage <> T1:25 var
+R1414:1414 ZornsLemma.InverseImage <> f:24 var
+R1463:1486 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1463:1486 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1698:1721 <> inverse_image_complement
+binder 1732:1732 <> X:27
+binder 1734:1734 <> Y:28
+R1746:1747 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1745:1745 ZornsLemma.InverseImage <> X:27 var
+R1748:1748 ZornsLemma.InverseImage <> Y:28 var
+binder 1743:1743 <> f:29
+R1756:1763 Coq.Sets.Ensembles <> Ensemble def
+R1765:1765 ZornsLemma.InverseImage <> Y:28 var
+binder 1754:1754 <> T:30
+R1799:1803 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1769:1781 ZornsLemma.InverseImage <> inverse_image def
+R1786:1795 Coq.Sets.Ensembles <> Complement def
+R1797:1797 ZornsLemma.InverseImage <> T:30 var
+R1783:1783 ZornsLemma.InverseImage <> f:29 var
+R1804:1813 Coq.Sets.Ensembles <> Complement def
+R1816:1828 ZornsLemma.InverseImage <> inverse_image def
+R1832:1832 ZornsLemma.InverseImage <> T:30 var
+R1830:1830 ZornsLemma.InverseImage <> f:29 var
+R1857:1880 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1857:1880 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 2044:2068 <> inverse_image_composition
+binder 2079:2079 <> X:31
+binder 2081:2081 <> Y:32
+binder 2083:2083 <> Z:33
+R2095:2096 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2094:2094 ZornsLemma.InverseImage <> Y:32 var
+R2097:2097 ZornsLemma.InverseImage <> Z:33 var
+binder 2092:2092 <> f:34
+R2104:2105 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2103:2103 ZornsLemma.InverseImage <> X:31 var
+R2106:2106 ZornsLemma.InverseImage <> Y:32 var
+binder 2101:2101 <> g:35
+R2114:2121 Coq.Sets.Ensembles <> Ensemble def
+R2123:2123 ZornsLemma.InverseImage <> Z:33 var
+binder 2112:2112 <> U:36
+R2163:2167 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2127:2139 ZornsLemma.InverseImage <> inverse_image def
+R2162:2162 ZornsLemma.InverseImage <> U:36 var
+R2148:2148 ZornsLemma.InverseImage <> X:31 var
+binder 2146:2146 <> x:37
+R2153:2153 ZornsLemma.InverseImage <> f:34 var
+R2156:2156 ZornsLemma.InverseImage <> g:35 var
+R2158:2158 ZornsLemma.InverseImage <> x:37 var
+R2168:2180 ZornsLemma.InverseImage <> inverse_image def
+R2185:2197 ZornsLemma.InverseImage <> inverse_image def
+R2201:2201 ZornsLemma.InverseImage <> U:36 var
+R2199:2199 ZornsLemma.InverseImage <> f:34 var
+R2182:2182 ZornsLemma.InverseImage <> g:35 var
+R2226:2249 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2226:2249 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2465:2483 ZornsLemma.InverseImage <> inverse_image_empty thm
+R2486:2503 ZornsLemma.InverseImage <> inverse_image_full thm
+R2508:2533 ZornsLemma.InverseImage <> inverse_image_intersection thm
+R2536:2554 ZornsLemma.InverseImage <> inverse_image_union thm
+R2559:2582 ZornsLemma.InverseImage <> inverse_image_complement thm
+R2585:2609 ZornsLemma.InverseImage <> inverse_image_composition thm
+prf 2626:2659 <> inverse_image_indexed_intersection
+binder 2673:2673 <> A:38
+binder 2675:2675 <> X:39
+binder 2677:2677 <> Y:40
+R2689:2690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2688:2688 ZornsLemma.InverseImage <> X:39 var
+R2691:2691 ZornsLemma.InverseImage <> Y:40 var
+binder 2686:2686 <> f:41
+R2697:2709 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R2713:2713 ZornsLemma.InverseImage <> Y:40 var
+R2711:2711 ZornsLemma.InverseImage <> A:38 var
+binder 2695:2695 <> F:42
+R2760:2766 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2721:2733 ZornsLemma.InverseImage <> inverse_image def
+R2738:2756 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R2758:2758 ZornsLemma.InverseImage <> F:42 var
+R2735:2735 ZornsLemma.InverseImage <> f:41 var
+R2767:2785 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R2794:2794 ZornsLemma.InverseImage <> A:38 var
+binder 2792:2792 <> a:43
+R2799:2811 ZornsLemma.InverseImage <> inverse_image def
+R2816:2816 ZornsLemma.InverseImage <> F:42 var
+R2818:2818 ZornsLemma.InverseImage <> a:43 var
+R2813:2813 ZornsLemma.InverseImage <> f:41 var
+R2844:2867 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2844:2867 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 3069:3095 <> inverse_image_indexed_union
+binder 3109:3109 <> A:44
+binder 3111:3111 <> X:45
+binder 3113:3113 <> Y:46
+R3125:3126 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3124:3124 ZornsLemma.InverseImage <> X:45 var
+R3127:3127 ZornsLemma.InverseImage <> Y:46 var
+binder 3122:3122 <> f:47
+R3133:3145 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R3149:3149 ZornsLemma.InverseImage <> Y:46 var
+R3147:3147 ZornsLemma.InverseImage <> A:44 var
+binder 3131:3131 <> F:48
+R3189:3195 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3157:3169 ZornsLemma.InverseImage <> inverse_image def
+R3174:3185 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R3187:3187 ZornsLemma.InverseImage <> F:48 var
+R3171:3171 ZornsLemma.InverseImage <> f:47 var
+R3196:3207 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R3216:3216 ZornsLemma.InverseImage <> A:44 var
+binder 3214:3214 <> a:49
+R3221:3233 ZornsLemma.InverseImage <> inverse_image def
+R3238:3238 ZornsLemma.InverseImage <> F:48 var
+R3240:3240 ZornsLemma.InverseImage <> a:49 var
+R3235:3235 ZornsLemma.InverseImage <> f:47 var
+R3266:3289 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3266:3289 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 3472:3488 <> inverse_image_fun
+binder 3493:3493 <> X:50
+binder 3495:3495 <> Y:51
+R3513:3516 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3512:3512 ZornsLemma.InverseImage <> X:50 var
+R3517:3517 ZornsLemma.InverseImage <> Y:51 var
+binder 3508:3508 <> f:52
+R3527:3534 Coq.Sets.Ensembles <> Ensemble def
+R3536:3536 ZornsLemma.InverseImage <> Y:51 var
+binder 3523:3523 <> T:53
+R3560:3562 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3543:3555 ZornsLemma.InverseImage <> inverse_image def
+R3559:3559 ZornsLemma.InverseImage <> T:53 var
+R3557:3557 ZornsLemma.InverseImage <> f:52 var
+binder 3567:3567 <> x:54
+R3572:3572 ZornsLemma.InverseImage <> T:53 var
+R3575:3575 ZornsLemma.InverseImage <> f:52 var
+R3577:3577 ZornsLemma.InverseImage <> x:54 var
+R3596:3619 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3596:3619 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 3710:3725 <> in_inverse_image
+binder 3730:3730 <> X:55
+binder 3732:3732 <> Y:56
+R3750:3753 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3749:3749 ZornsLemma.InverseImage <> X:55 var
+R3754:3754 ZornsLemma.InverseImage <> Y:56 var
+binder 3745:3745 <> f:57
+R3764:3771 Coq.Sets.Ensembles <> Ensemble def
+R3773:3773 ZornsLemma.InverseImage <> Y:56 var
+binder 3760:3760 <> T:58
+R3783:3783 ZornsLemma.InverseImage <> X:55 var
+binder 3779:3779 <> x:59
+R3800:3804 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3790:3791 Coq.Sets.Ensembles <> In def
+R3796:3796 ZornsLemma.InverseImage <> f:57 var
+R3798:3798 ZornsLemma.InverseImage <> x:59 var
+R3793:3793 ZornsLemma.InverseImage <> T:58 var
+R3805:3806 Coq.Sets.Ensembles <> In def
+R3828:3828 ZornsLemma.InverseImage <> x:59 var
+R3809:3821 ZornsLemma.InverseImage <> inverse_image def
+R3825:3825 ZornsLemma.InverseImage <> T:58 var
+R3823:3823 ZornsLemma.InverseImage <> f:57 var
+R3848:3864 ZornsLemma.InverseImage <> inverse_image_fun thm
+R3848:3864 ZornsLemma.InverseImage <> inverse_image_fun thm
+R3848:3864 ZornsLemma.InverseImage <> inverse_image_fun thm
+prf 3894:3909 <> inverse_image_id
+binder 3912:3912 <> X:60
+R3927:3934 Coq.Sets.Ensembles <> Ensemble def
+R3936:3936 ZornsLemma.InverseImage <> X:60 var
+binder 3923:3923 <> U:61
+R3966:3968 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3943:3955 ZornsLemma.InverseImage <> inverse_image def
+R3965:3965 ZornsLemma.InverseImage <> U:61 var
+R3959:3960 Coq.Init.Datatypes <> id def
+R3962:3962 ZornsLemma.InverseImage <> X:60 var
+R3969:3969 ZornsLemma.InverseImage <> U:61 var
+R3985:4008 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3985:4008 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 4078:4098 <> inverse_image_id_comp
+binder 4103:4103 <> X:62
+binder 4105:4105 <> Y:63
+R4123:4126 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4122:4122 ZornsLemma.InverseImage <> X:62 var
+R4127:4127 ZornsLemma.InverseImage <> Y:63 var
+binder 4118:4118 <> f:64
+R4138:4141 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4137:4137 ZornsLemma.InverseImage <> Y:63 var
+R4142:4142 ZornsLemma.InverseImage <> X:62 var
+binder 4133:4133 <> g:65
+R4149:4149 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4171:4177 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4157:4157 <> y:66
+R4167:4169 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4160:4160 ZornsLemma.InverseImage <> f:64 var
+R4163:4163 ZornsLemma.InverseImage <> g:65 var
+R4165:4165 ZornsLemma.InverseImage <> y:66 var
+R4170:4170 ZornsLemma.InverseImage <> y:66 var
+binder 4185:4185 <> S:67
+R4227:4229 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4192:4204 ZornsLemma.InverseImage <> inverse_image def
+R4209:4221 ZornsLemma.InverseImage <> inverse_image def
+R4225:4225 ZornsLemma.InverseImage <> S:67 var
+R4223:4223 ZornsLemma.InverseImage <> f:64 var
+R4206:4206 ZornsLemma.InverseImage <> g:65 var
+R4230:4230 ZornsLemma.InverseImage <> S:67 var
+R4269:4293 ZornsLemma.InverseImage <> inverse_image_composition thm
+R4269:4293 ZornsLemma.InverseImage <> inverse_image_composition thm
+R4269:4293 ZornsLemma.InverseImage <> inverse_image_composition thm
+R4304:4327 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4304:4327 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 4466:4485 <> inverse_image_union2
+binder 4488:4488 <> X:68
+binder 4490:4490 <> Y:69
+R4506:4509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4505:4505 ZornsLemma.InverseImage <> X:68 var
+R4510:4510 ZornsLemma.InverseImage <> Y:69 var
+binder 4501:4501 <> f:70
+R4520:4527 Coq.Sets.Ensembles <> Ensemble def
+R4529:4529 ZornsLemma.InverseImage <> Y:69 var
+binder 4514:4514 <> U:71
+binder 4516:4516 <> V:72
+R4563:4565 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4536:4548 ZornsLemma.InverseImage <> inverse_image def
+R4553:4557 Coq.Sets.Ensembles <> Union ind
+R4561:4561 ZornsLemma.InverseImage <> V:72 var
+R4559:4559 ZornsLemma.InverseImage <> U:71 var
+R4550:4550 ZornsLemma.InverseImage <> f:70 var
+R4566:4570 Coq.Sets.Ensembles <> Union ind
+R4593:4605 ZornsLemma.InverseImage <> inverse_image def
+R4609:4609 ZornsLemma.InverseImage <> V:72 var
+R4607:4607 ZornsLemma.InverseImage <> f:70 var
+R4573:4585 ZornsLemma.InverseImage <> inverse_image def
+R4589:4589 ZornsLemma.InverseImage <> U:71 var
+R4587:4587 ZornsLemma.InverseImage <> f:70 var
+R4626:4649 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4626:4649 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 4849:4874 <> inverse_image_family_union
+binder 4879:4879 <> X:73
+binder 4881:4881 <> Y:74
+R4899:4902 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4898:4898 ZornsLemma.InverseImage <> X:73 var
+R4903:4903 ZornsLemma.InverseImage <> Y:74 var
+binder 4894:4894 <> f:75
+R4914:4917 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4913:4913 ZornsLemma.InverseImage <> Y:74 var
+R4918:4918 ZornsLemma.InverseImage <> X:73 var
+binder 4909:4909 <> g:76
+R4928:4933 ZornsLemma.Families <> Family def
+R4935:4935 ZornsLemma.InverseImage <> Y:74 var
+binder 4924:4924 <> F:77
+R4942:4942 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4964:4970 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4950:4950 <> x:78
+R4960:4962 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4953:4953 ZornsLemma.InverseImage <> g:76 var
+R4956:4956 ZornsLemma.InverseImage <> f:75 var
+R4958:4958 ZornsLemma.InverseImage <> x:78 var
+R4963:4963 ZornsLemma.InverseImage <> x:78 var
+R4971:4971 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4993:4999 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 4979:4979 <> y:79
+R4989:4991 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4982:4982 ZornsLemma.InverseImage <> f:75 var
+R4985:4985 ZornsLemma.InverseImage <> g:76 var
+R4987:4987 ZornsLemma.InverseImage <> y:79 var
+R4992:4992 ZornsLemma.InverseImage <> y:79 var
+R5031:5033 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5000:5012 ZornsLemma.InverseImage <> inverse_image def
+R5017:5027 ZornsLemma.Families <> FamilyUnion ind
+R5029:5029 ZornsLemma.InverseImage <> F:77 var
+R5014:5014 ZornsLemma.InverseImage <> f:75 var
+R5034:5044 ZornsLemma.Families <> FamilyUnion ind
+R5047:5059 ZornsLemma.InverseImage <> inverse_image def
+R5079:5079 ZornsLemma.InverseImage <> F:77 var
+R5062:5074 ZornsLemma.InverseImage <> inverse_image def
+R5076:5076 ZornsLemma.InverseImage <> g:76 var
+R5116:5139 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R5116:5139 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R5174:5189 ZornsLemma.InverseImage <> in_inverse_image thm
+R5174:5189 ZornsLemma.InverseImage <> in_inverse_image thm
+R5257:5269 ZornsLemma.InverseImage <> inverse_image def
+R5257:5269 ZornsLemma.InverseImage <> inverse_image def
+R5310:5330 ZornsLemma.InverseImage <> inverse_image_id_comp thm
+R5310:5330 ZornsLemma.InverseImage <> inverse_image_id_comp thm
+R5310:5330 ZornsLemma.InverseImage <> inverse_image_id_comp thm
+R5310:5330 ZornsLemma.InverseImage <> inverse_image_id_comp thm
+R5452:5467 ZornsLemma.InverseImage <> in_inverse_image thm
+R5452:5467 ZornsLemma.InverseImage <> in_inverse_image thm
+R5504:5516 ZornsLemma.InverseImage <> inverse_image def
+R5504:5516 ZornsLemma.InverseImage <> inverse_image def
+prf 5607:5638 <> inverse_image_family_union_image
+binder 5643:5643 <> X:80
+binder 5645:5645 <> Y:81
+R5663:5666 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5662:5662 ZornsLemma.InverseImage <> X:80 var
+R5667:5667 ZornsLemma.InverseImage <> Y:81 var
+binder 5658:5658 <> f:82
+R5677:5682 ZornsLemma.Families <> Family def
+R5684:5684 ZornsLemma.InverseImage <> Y:81 var
+binder 5673:5673 <> F:83
+R5722:5724 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5691:5703 ZornsLemma.InverseImage <> inverse_image def
+R5708:5718 ZornsLemma.Families <> FamilyUnion ind
+R5720:5720 ZornsLemma.InverseImage <> F:83 var
+R5705:5705 ZornsLemma.InverseImage <> f:82 var
+R5725:5735 ZornsLemma.Families <> FamilyUnion ind
+R5738:5739 Coq.Sets.Image <> Im ind
+R5744:5756 ZornsLemma.InverseImage <> inverse_image def
+R5758:5758 ZornsLemma.InverseImage <> f:82 var
+R5741:5741 ZornsLemma.InverseImage <> F:83 var
+R5776:5799 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R5776:5799 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 5930:5962 <> injective_inverse_image_Singleton
+binder 5965:5965 <> X:84
+binder 5967:5967 <> Y:85
+R5985:5988 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5984:5984 ZornsLemma.InverseImage <> X:84 var
+R5989:5989 ZornsLemma.InverseImage <> Y:85 var
+binder 5980:5980 <> f:86
+R6007:6013 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5996:6004 Coq.Sets.Image <> injective def
+R6006:6006 ZornsLemma.InverseImage <> f:86 var
+binder 6021:6021 <> x:87
+R6057:6059 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6024:6036 ZornsLemma.InverseImage <> inverse_image def
+R6041:6049 Coq.Sets.Ensembles <> Singleton ind
+R6052:6052 ZornsLemma.InverseImage <> f:86 var
+R6054:6054 ZornsLemma.InverseImage <> x:87 var
+R6038:6038 ZornsLemma.InverseImage <> f:86 var
+R6060:6068 Coq.Sets.Ensembles <> Singleton ind
+R6070:6070 ZornsLemma.InverseImage <> x:87 var
+R6116:6139 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6116:6139 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6202:6214 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R6202:6214 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R6376:6388 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R6376:6388 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R6433:6447 Coq.Sets.Constructive_sets <> Singleton_intro thm
+R6433:6447 Coq.Sets.Constructive_sets <> Singleton_intro thm
+prf 6478:6508 <> inverse_map_image_inverse_image
+binder 6511:6511 <> X:88
+binder 6513:6513 <> Y:89
+R6531:6534 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6530:6530 ZornsLemma.InverseImage <> X:88 var
+R6535:6535 ZornsLemma.InverseImage <> Y:89 var
+binder 6526:6526 <> f:90
+R6544:6547 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6543:6543 ZornsLemma.InverseImage <> Y:89 var
+R6548:6548 ZornsLemma.InverseImage <> X:88 var
+binder 6539:6539 <> g:91
+R6570:6575 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6555:6565 ZornsLemma.FunctionProperties <> inverse_map def
+R6569:6569 ZornsLemma.InverseImage <> g:91 var
+R6567:6567 ZornsLemma.InverseImage <> f:90 var
+R6588:6595 Coq.Sets.Ensembles <> Ensemble def
+R6597:6597 ZornsLemma.InverseImage <> X:88 var
+binder 6584:6584 <> U:92
+R6611:6613 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6605:6606 Coq.Sets.Image <> Im ind
+R6610:6610 ZornsLemma.InverseImage <> f:90 var
+R6608:6608 ZornsLemma.InverseImage <> U:92 var
+R6614:6626 ZornsLemma.InverseImage <> inverse_image def
+R6630:6630 ZornsLemma.InverseImage <> U:92 var
+R6628:6628 ZornsLemma.InverseImage <> g:91 var
+R6672:6695 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6672:6695 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6849:6854 Coq.Sets.Image <> Im_def thm
+R6849:6854 Coq.Sets.Image <> Im_def thm
+prf 6881:6918 <> inverse_image_image_surjective_locally
+binder 6921:6921 <> X:93
+binder 6923:6923 <> Y:94
+R6932:6935 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6931:6931 ZornsLemma.InverseImage <> X:93 var
+R6936:6936 ZornsLemma.InverseImage <> Y:94 var
+binder 6927:6927 <> f:95
+R6944:6951 Coq.Sets.Ensembles <> Ensemble def
+R6953:6953 ZornsLemma.InverseImage <> Y:94 var
+binder 6940:6940 <> T:96
+R6960:6960 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6998:7004 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 6968:6968 <> y:97
+R6977:6980 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6971:6972 Coq.Sets.Ensembles <> In def
+R6976:6976 ZornsLemma.InverseImage <> y:97 var
+R6974:6974 ZornsLemma.InverseImage <> T:96 var
+R6981:6987 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6989:6990 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6988:6988 <> x:98
+R6994:6996 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6991:6991 ZornsLemma.InverseImage <> f:95 var
+R6993:6993 ZornsLemma.InverseImage <> x:98 var
+R6997:6997 ZornsLemma.InverseImage <> y:97 var
+R7029:7031 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7005:7006 Coq.Sets.Image <> Im ind
+R7028:7028 ZornsLemma.InverseImage <> f:95 var
+R7009:7021 ZornsLemma.InverseImage <> inverse_image def
+R7025:7025 ZornsLemma.InverseImage <> T:96 var
+R7023:7023 ZornsLemma.InverseImage <> f:95 var
+R7032:7032 ZornsLemma.InverseImage <> T:96 var
+R7149:7154 Coq.Sets.Image <> Im_def thm
+R7149:7154 Coq.Sets.Image <> Im_def thm
+prf 7196:7225 <> inverse_image_image_surjective
+binder 7230:7230 <> X:99
+binder 7232:7232 <> Y:100
+R7250:7253 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7249:7249 ZornsLemma.InverseImage <> X:99 var
+R7254:7254 ZornsLemma.InverseImage <> Y:100 var
+binder 7245:7245 <> f:101
+R7264:7271 Coq.Sets.Ensembles <> Ensemble def
+R7273:7273 ZornsLemma.InverseImage <> Y:100 var
+binder 7260:7260 <> T:102
+R7292:7297 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7280:7289 ZornsLemma.FunctionProperties <> surjective def
+R7291:7291 ZornsLemma.InverseImage <> f:101 var
+R7322:7324 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7298:7299 Coq.Sets.Image <> Im ind
+R7321:7321 ZornsLemma.InverseImage <> f:101 var
+R7302:7314 ZornsLemma.InverseImage <> inverse_image def
+R7318:7318 ZornsLemma.InverseImage <> T:102 var
+R7316:7316 ZornsLemma.InverseImage <> f:101 var
+R7325:7325 ZornsLemma.InverseImage <> T:102 var
+R7353:7390 ZornsLemma.InverseImage <> inverse_image_image_surjective_locally thm
+R7353:7390 ZornsLemma.InverseImage <> inverse_image_image_surjective_locally thm
+prf 7424:7457 <> inverse_image_surjective_singleton
+binder 7462:7462 <> X:103
+binder 7464:7464 <> Y:104
+R7482:7485 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7481:7481 ZornsLemma.InverseImage <> X:103 var
+R7486:7486 ZornsLemma.InverseImage <> Y:104 var
+binder 7477:7477 <> f:105
+R7496:7503 Coq.Sets.Ensembles <> Ensemble def
+R7505:7505 ZornsLemma.InverseImage <> X:103 var
+binder 7492:7492 <> T:106
+R7524:7529 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7512:7521 ZornsLemma.FunctionProperties <> surjective def
+R7523:7523 ZornsLemma.InverseImage <> f:105 var
+R7530:7537 Coq.Sets.Ensembles <> Included def
+R7588:7596 Coq.Sets.Ensembles <> Singleton ind
+R7599:7600 Coq.Sets.Image <> Im ind
+R7604:7604 ZornsLemma.InverseImage <> f:105 var
+R7602:7602 ZornsLemma.InverseImage <> T:106 var
+R7540:7552 ZornsLemma.InverseImage <> inverse_image def
+R7573:7581 Coq.Sets.Ensembles <> Singleton ind
+R7583:7583 ZornsLemma.InverseImage <> T:106 var
+R7555:7567 ZornsLemma.InverseImage <> inverse_image def
+R7569:7569 ZornsLemma.InverseImage <> f:105 var
+R7677:7706 ZornsLemma.InverseImage <> inverse_image_image_surjective thm
+R7677:7706 ZornsLemma.InverseImage <> inverse_image_image_surjective thm
+R7677:7706 ZornsLemma.InverseImage <> inverse_image_image_surjective thm
+R7677:7706 ZornsLemma.InverseImage <> inverse_image_image_surjective thm
+prf 7721:7754 <> inverse_image_surjective_injective
+binder 7759:7759 <> X:107
+binder 7761:7761 <> Y:108
+R7779:7782 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7778:7778 ZornsLemma.InverseImage <> X:107 var
+R7783:7783 ZornsLemma.InverseImage <> Y:108 var
+binder 7774:7774 <> f:109
+R7802:7807 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7790:7799 ZornsLemma.FunctionProperties <> surjective def
+R7801:7801 ZornsLemma.InverseImage <> f:109 var
+R7808:7816 Coq.Sets.Image <> injective def
+R7819:7831 ZornsLemma.InverseImage <> inverse_image def
+R7833:7833 ZornsLemma.InverseImage <> f:109 var
+R7867:7890 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7867:7890 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7949:7964 ZornsLemma.InverseImage <> in_inverse_image thm
+R7949:7964 ZornsLemma.InverseImage <> in_inverse_image thm
+R7949:7964 ZornsLemma.InverseImage <> in_inverse_image thm
+prf 8124:8147 <> inverse_image_Im_adjoint
+binder 8150:8150 <> A:110
+binder 8152:8152 <> B:111
+R8170:8173 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8169:8169 ZornsLemma.InverseImage <> A:110 var
+R8174:8174 ZornsLemma.InverseImage <> B:111 var
+binder 8165:8165 <> f:112
+R8182:8189 Coq.Sets.Ensembles <> Ensemble def
+R8191:8191 ZornsLemma.InverseImage <> A:110 var
+binder 8178:8178 <> U:113
+R8199:8206 Coq.Sets.Ensembles <> Ensemble def
+R8208:8208 ZornsLemma.InverseImage <> B:111 var
+binder 8195:8195 <> V:114
+R8234:8238 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8215:8222 Coq.Sets.Ensembles <> Included def
+R8233:8233 ZornsLemma.InverseImage <> V:114 var
+R8225:8226 Coq.Sets.Image <> Im ind
+R8230:8230 ZornsLemma.InverseImage <> f:112 var
+R8228:8228 ZornsLemma.InverseImage <> U:113 var
+R8239:8246 Coq.Sets.Ensembles <> Included def
+R8251:8263 ZornsLemma.InverseImage <> inverse_image def
+R8267:8267 ZornsLemma.InverseImage <> V:114 var
+R8265:8265 ZornsLemma.InverseImage <> f:112 var
+R8248:8248 ZornsLemma.InverseImage <> U:113 var
+R8287:8294 Coq.Sets.Ensembles <> Included def
+R8297:8309 ZornsLemma.InverseImage <> inverse_image def
+R8339:8344 Coq.Sets.Image <> Im_def thm
+R8339:8344 Coq.Sets.Image <> Im_def thm
+prf 8456:8483 <> image_inverse_image_included
+binder 8486:8486 <> X:115
+binder 8488:8488 <> Y:116
+R8497:8500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8496:8496 ZornsLemma.InverseImage <> X:115 var
+R8501:8501 ZornsLemma.InverseImage <> Y:116 var
+binder 8492:8492 <> f:117
+R8509:8516 Coq.Sets.Ensembles <> Ensemble def
+R8518:8518 ZornsLemma.InverseImage <> Y:116 var
+binder 8505:8505 <> U:118
+R8525:8532 Coq.Sets.Ensembles <> Included def
+R8561:8561 ZornsLemma.InverseImage <> U:118 var
+R8535:8536 Coq.Sets.Image <> Im ind
+R8558:8558 ZornsLemma.InverseImage <> f:117 var
+R8539:8551 ZornsLemma.InverseImage <> inverse_image def
+R8555:8555 ZornsLemma.InverseImage <> U:118 var
+R8553:8553 ZornsLemma.InverseImage <> f:117 var
+R8581:8604 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+R8581:8604 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+R8581:8604 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+prf 8634:8661 <> inverse_image_image_included
+binder 8664:8664 <> X:119
+binder 8666:8666 <> Y:120
+R8675:8678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8674:8674 ZornsLemma.InverseImage <> X:119 var
+R8679:8679 ZornsLemma.InverseImage <> Y:120 var
+binder 8670:8670 <> f:121
+R8687:8694 Coq.Sets.Ensembles <> Ensemble def
+R8696:8696 ZornsLemma.InverseImage <> X:119 var
+binder 8683:8683 <> U:122
+R8703:8710 Coq.Sets.Ensembles <> Included def
+R8715:8727 ZornsLemma.InverseImage <> inverse_image def
+R8732:8733 Coq.Sets.Image <> Im ind
+R8737:8737 ZornsLemma.InverseImage <> f:121 var
+R8735:8735 ZornsLemma.InverseImage <> U:122 var
+R8729:8729 ZornsLemma.InverseImage <> f:121 var
+R8712:8712 ZornsLemma.InverseImage <> U:122 var
+R8762:8785 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+R8762:8785 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+R8762:8785 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm

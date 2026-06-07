@@ -1,0 +1,52 @@
+DIGEST c1a2426e63061c729b3a3310d7b2e7ed
+FZornsLemma.EnsemblesSpec
+R24:32 Coq.Sets.Ensembles <> <> lib
+R66:82 ZornsLemma.EnsemblesImplicit <> <> lib
+ind 96:130 <> characteristic_function_abstraction
+constr 173:196 <> intro_characteristic_sat
+binder 133:133 <> X:1
+R145:146 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R144:144 ZornsLemma.EnsemblesSpec <> X:1 var
+binder 142:142 <> P:2
+R156:156 ZornsLemma.EnsemblesSpec <> X:1 var
+binder 154:154 <> x:3
+R202:209 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R199:199 ZornsLemma.EnsemblesSpec <> P:2 var
+R201:201 ZornsLemma.EnsemblesSpec <> x:3 var
+R210:211 Coq.Sets.Ensembles <> In def
+R253:253 ZornsLemma.EnsemblesSpec <> x:3 var
+R214:248 ZornsLemma.EnsemblesSpec <> characteristic_function_abstraction:4 ind
+R250:250 ZornsLemma.EnsemblesSpec <> P:2 var
+scheme 96:130 <> characteristic_function_abstraction_rect
+scheme 96:130 <> characteristic_function_abstraction_ind
+scheme 96:130 <> characteristic_function_abstraction_rec
+scheme 96:130 <> characteristic_function_abstraction_sind
+def 268:302 <> characteristic_function_to_ensemble
+binder 305:305 <> X:6
+R317:318 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R316:316 ZornsLemma.EnsemblesSpec <> X:6 var
+binder 314:314 <> P:7
+R327:334 Coq.Sets.Ensembles <> Ensemble def
+R336:336 ZornsLemma.EnsemblesSpec <> X:6 var
+R343:377 ZornsLemma.EnsemblesSpec <> characteristic_function_abstraction ind
+R379:379 ZornsLemma.EnsemblesSpec <> P:7 var
+R414:448 ZornsLemma.EnsemblesSpec <> characteristic_function_to_ensemble def
+binder 455:455 <> x:8
+not 392:392 <> :::'['_x_':'_x_'|'_x_']'
+prf 486:532 <> characteristic_function_to_ensemble_is_identity
+binder 545:545 <> X:9
+R557:558 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R556:556 ZornsLemma.EnsemblesSpec <> X:9 var
+binder 554:554 <> P:10
+R583:585 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R570:571 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R573:573 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R575:577 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R581:582 ZornsLemma.EnsemblesSpec <> :::'['_x_':'_x_'|'_x_']' not
+R574:574 ZornsLemma.EnsemblesSpec <> X:9 var
+binder 572:572 <> x:11
+R578:578 ZornsLemma.EnsemblesSpec <> P:10 var
+R580:580 ZornsLemma.EnsemblesSpec <> x:11 var
+R586:586 ZornsLemma.EnsemblesSpec <> P:10 var
+R610:633 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R610:633 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax

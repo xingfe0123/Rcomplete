@@ -1,0 +1,289 @@
+DIGEST 029ad2deb4650e85b9bb52f5551935e6
+FZornsLemma.Cardinals.LeastCardinalsEns
+R82:103 ZornsLemma.Cardinals.CardinalsEns <> <> lib
+R107:129 ZornsLemma.Cardinals.Comparability <> <> lib
+R133:145 ZornsLemma.Cardinals.CSB <> <> lib
+R149:156 ZornsLemma.Families <> <> lib
+R160:164 ZornsLemma.Image <> <> lib
+def 262:282 <> least_cardinal_subset
+binder 287:287 <> X:1
+R302:307 ZornsLemma.Families <> Family def
+R309:309 ZornsLemma.Cardinals.LeastCardinalsEns <> X:1 var
+binder 298:298 <> P:2
+R317:324 Coq.Sets.Ensembles <> Ensemble def
+R326:326 ZornsLemma.Cardinals.LeastCardinalsEns <> X:1 var
+binder 313:313 <> U:3
+R347:354 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R341:342 Coq.Sets.Ensembles <> In def
+R346:346 ZornsLemma.Cardinals.LeastCardinalsEns <> U:3 var
+R344:344 ZornsLemma.Cardinals.LeastCardinalsEns <> P:2 var
+R366:373 Coq.Sets.Ensembles <> Ensemble def
+R375:375 ZornsLemma.Cardinals.LeastCardinalsEns <> X:1 var
+binder 362:362 <> V:4
+R390:393 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R384:385 Coq.Sets.Ensembles <> In def
+R389:389 ZornsLemma.Cardinals.LeastCardinalsEns <> V:4 var
+R387:387 ZornsLemma.Cardinals.LeastCardinalsEns <> P:2 var
+R394:408 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R412:412 ZornsLemma.Cardinals.LeastCardinalsEns <> V:4 var
+R410:410 ZornsLemma.Cardinals.LeastCardinalsEns <> U:3 var
+def 539:552 <> least_cardinal
+binder 569:569 <> X:5
+R584:591 Coq.Sets.Ensembles <> Ensemble def
+R593:593 ZornsLemma.Cardinals.LeastCardinalsEns <> X:5 var
+binder 580:580 <> U:6
+binder 557:557 <> P:7
+binder 606:606 <> X:8
+R621:628 Coq.Sets.Ensembles <> Ensemble def
+R630:630 ZornsLemma.Cardinals.LeastCardinalsEns <> X:8 var
+binder 617:617 <> U:9
+R648:656 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R727:727 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R645:645 ZornsLemma.Cardinals.LeastCardinalsEns <> P:7 var
+R647:647 ZornsLemma.Cardinals.LeastCardinalsEns <> U:9 var
+binder 665:665 <> Y:10
+R680:687 Coq.Sets.Ensembles <> Ensemble def
+R689:689 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:10 var
+binder 676:676 <> V:11
+R704:707 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R701:701 ZornsLemma.Cardinals.LeastCardinalsEns <> P:7 var
+R703:703 ZornsLemma.Cardinals.LeastCardinalsEns <> V:11 var
+R708:722 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R726:726 ZornsLemma.Cardinals.LeastCardinalsEns <> V:11 var
+R724:724 ZornsLemma.Cardinals.LeastCardinalsEns <> U:9 var
+def 742:759 <> least_cardinal_ext
+binder 764:764 <> X:12
+R779:784 ZornsLemma.Families <> Family def
+R786:786 ZornsLemma.Cardinals.LeastCardinalsEns <> X:12 var
+binder 775:775 <> P:13
+binder 790:790 <> Y:14
+R805:812 Coq.Sets.Ensembles <> Ensemble def
+R814:814 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:14 var
+binder 801:801 <> V:15
+R822:835 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal def
+R923:923 ZornsLemma.Cardinals.LeastCardinalsEns <> V:15 var
+binder 846:846 <> Z:16
+binder 848:848 <> W:17
+R860:866 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R881:891 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R871:878 Coq.Sets.Ensembles <> Ensemble def
+R880:880 ZornsLemma.Cardinals.LeastCardinalsEns <> X:12 var
+binder 867:867 <> U:18
+R898:901 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R892:893 Coq.Sets.Ensembles <> In def
+R897:897 ZornsLemma.Cardinals.LeastCardinalsEns <> U:18 var
+R895:895 ZornsLemma.Cardinals.LeastCardinalsEns <> P:13 var
+R902:916 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R920:920 ZornsLemma.Cardinals.LeastCardinalsEns <> W:17 var
+R918:918 ZornsLemma.Cardinals.LeastCardinalsEns <> U:18 var
+prf 933:957 <> least_cardinal_ext_subset
+binder 962:962 <> X:19
+R977:982 ZornsLemma.Families <> Family def
+R984:984 ZornsLemma.Cardinals.LeastCardinalsEns <> X:19 var
+binder 973:973 <> P:20
+R992:999 Coq.Sets.Ensembles <> Ensemble def
+R1001:1001 ZornsLemma.Cardinals.LeastCardinalsEns <> X:19 var
+binder 988:988 <> U:21
+R1033:1038 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1008:1028 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_subset def
+R1032:1032 ZornsLemma.Cardinals.LeastCardinalsEns <> U:21 var
+R1030:1030 ZornsLemma.Cardinals.LeastCardinalsEns <> P:20 var
+R1039:1056 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_ext def
+R1060:1060 ZornsLemma.Cardinals.LeastCardinalsEns <> U:21 var
+R1058:1058 ZornsLemma.Cardinals.LeastCardinalsEns <> P:20 var
+R1213:1236 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_r thm
+R1213:1236 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_r thm
+prf 1258:1285 <> least_cardinal_ext_to_subset
+binder 1290:1290 <> X:22
+R1305:1310 ZornsLemma.Families <> Family def
+R1312:1312 ZornsLemma.Cardinals.LeastCardinalsEns <> X:22 var
+binder 1301:1301 <> P:23
+binder 1316:1316 <> Y:24
+R1331:1338 Coq.Sets.Ensembles <> Ensemble def
+R1340:1340 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:24 var
+binder 1327:1327 <> V:25
+R1369:1374 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1347:1364 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_ext def
+R1368:1368 ZornsLemma.Cardinals.LeastCardinalsEns <> V:25 var
+R1366:1366 ZornsLemma.Cardinals.LeastCardinalsEns <> P:23 var
+R1375:1381 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1396:1401 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1386:1393 Coq.Sets.Ensembles <> Ensemble def
+R1395:1395 ZornsLemma.Cardinals.LeastCardinalsEns <> X:22 var
+binder 1382:1382 <> U:26
+R1427:1430 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1402:1422 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_subset def
+R1426:1426 ZornsLemma.Cardinals.LeastCardinalsEns <> U:26 var
+R1424:1424 ZornsLemma.Cardinals.LeastCardinalsEns <> P:23 var
+R1431:1445 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R1449:1449 ZornsLemma.Cardinals.LeastCardinalsEns <> V:25 var
+R1447:1447 ZornsLemma.Cardinals.LeastCardinalsEns <> U:26 var
+R1552:1570 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R1552:1570 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R1589:1612 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
+R1589:1612 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
+prf 1685:1705 <> least_cardinal_unique
+binder 1707:1707 <> P:27
+binder 1710:1710 <> X:28
+R1725:1732 Coq.Sets.Ensembles <> Ensemble def
+R1734:1734 ZornsLemma.Cardinals.LeastCardinalsEns <> X:28 var
+binder 1721:1721 <> U:29
+binder 1740:1740 <> Y:30
+R1755:1762 Coq.Sets.Ensembles <> Ensemble def
+R1764:1764 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:30 var
+binder 1751:1751 <> V:31
+R1789:1794 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1771:1784 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal def
+R1788:1788 ZornsLemma.Cardinals.LeastCardinalsEns <> U:29 var
+R1786:1786 ZornsLemma.Cardinals.LeastCardinalsEns <> P:27 var
+R1813:1818 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1795:1808 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal def
+R1812:1812 ZornsLemma.Cardinals.LeastCardinalsEns <> V:31 var
+R1810:1810 ZornsLemma.Cardinals.LeastCardinalsEns <> P:27 var
+R1819:1833 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R1837:1837 ZornsLemma.Cardinals.LeastCardinalsEns <> V:31 var
+R1835:1835 ZornsLemma.Cardinals.LeastCardinalsEns <> U:29 var
+R1941:1968 ZornsLemma.Cardinals.CSB <> le_cardinal_ens_antisymmetry thm
+R1941:1968 ZornsLemma.Cardinals.CSB <> le_cardinal_ens_antisymmetry thm
+prf 1999:2016 <> le_cardinal_ens_wf
+binder 2019:2019 <> X:32
+R2034:2039 ZornsLemma.Families <> Family def
+R2041:2041 ZornsLemma.Cardinals.LeastCardinalsEns <> X:32 var
+binder 2030:2030 <> F:33
+R2059:2064 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2048:2056 Coq.Sets.Ensembles <> Inhabited ind
+R2058:2058 ZornsLemma.Cardinals.LeastCardinalsEns <> F:33 var
+R2065:2071 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2073:2074 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2072:2072 <> U:34
+R2075:2095 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_subset def
+R2099:2099 ZornsLemma.Cardinals.LeastCardinalsEns <> U:34 var
+R2097:2097 ZornsLemma.Cardinals.LeastCardinalsEns <> F:33 var
+prf 2130:2154 <> least_cardinal_ext_exists
+binder 2157:2157 <> X:35
+R2172:2177 ZornsLemma.Families <> Family def
+R2179:2179 ZornsLemma.Cardinals.LeastCardinalsEns <> X:35 var
+binder 2168:2168 <> F:36
+R2197:2202 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2186:2194 Coq.Sets.Ensembles <> Inhabited ind
+R2196:2196 ZornsLemma.Cardinals.LeastCardinalsEns <> F:36 var
+R2203:2209 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2224:2225 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2214:2221 Coq.Sets.Ensembles <> Ensemble def
+R2223:2223 ZornsLemma.Cardinals.LeastCardinalsEns <> X:35 var
+binder 2210:2210 <> U:37
+R2226:2243 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_ext def
+R2247:2247 ZornsLemma.Cardinals.LeastCardinalsEns <> U:37 var
+R2245:2245 ZornsLemma.Cardinals.LeastCardinalsEns <> F:36 var
+R2282:2299 ZornsLemma.Cardinals.LeastCardinalsEns <> le_cardinal_ens_wf prfax
+R2282:2299 ZornsLemma.Cardinals.LeastCardinalsEns <> le_cardinal_ens_wf prfax
+R2338:2362 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_ext_subset thm
+R2338:2362 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal_ext_subset thm
+prf 2391:2411 <> least_cardinal_exists
+binder 2428:2428 <> X:38
+R2443:2450 Coq.Sets.Ensembles <> Ensemble def
+R2452:2452 ZornsLemma.Cardinals.LeastCardinalsEns <> X:38 var
+binder 2439:2439 <> U:39
+binder 2416:2416 <> P:40
+binder 2463:2463 <> X:41
+R2478:2485 Coq.Sets.Ensembles <> Ensemble def
+R2487:2487 ZornsLemma.Cardinals.LeastCardinalsEns <> X:41 var
+binder 2474:2474 <> U:42
+R2497:2500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2494:2494 ZornsLemma.Cardinals.LeastCardinalsEns <> P:40 var
+R2496:2496 ZornsLemma.Cardinals.LeastCardinalsEns <> U:42 var
+R2501:2508 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2534:2536 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2509:2509 <> Y:43
+R2524:2531 Coq.Sets.Ensembles <> Ensemble def
+R2533:2533 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:43 var
+binder 2520:2520 <> V:44
+R2537:2550 ZornsLemma.Cardinals.LeastCardinalsEns <> least_cardinal def
+R2557:2557 ZornsLemma.Cardinals.LeastCardinalsEns <> V:44 var
+R2554:2554 ZornsLemma.Cardinals.LeastCardinalsEns <> P:40 var
+R2601:2608 Coq.Sets.Ensembles <> Ensemble def
+binder 2597:2597 <> V:45
+R2630:2637 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2663:2682 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2638:2638 <> Y:46
+R2653:2660 Coq.Sets.Ensembles <> Ensemble def
+R2662:2662 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:46 var
+binder 2649:2649 <> W:47
+R2688:2691 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2685:2685 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:46 var
+R2687:2687 ZornsLemma.Cardinals.LeastCardinalsEns <> W:47 var
+R2692:2706 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R2710:2710 ZornsLemma.Cardinals.LeastCardinalsEns <> W:47 var
+R2708:2708 ZornsLemma.Cardinals.LeastCardinalsEns <> V:45 var
+R2601:2608 Coq.Sets.Ensembles <> Ensemble def
+binder 2597:2597 <> V:48
+R2630:2637 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2663:2682 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2638:2638 <> Y:49
+R2653:2660 Coq.Sets.Ensembles <> Ensemble def
+R2662:2662 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:49 var
+binder 2649:2649 <> W:50
+R2688:2691 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2685:2685 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:49 var
+R2687:2687 ZornsLemma.Cardinals.LeastCardinalsEns <> W:50 var
+R2692:2706 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R2710:2710 ZornsLemma.Cardinals.LeastCardinalsEns <> W:50 var
+R2708:2708 ZornsLemma.Cardinals.LeastCardinalsEns <> V:48 var
+binder 2912:2912 <> Y:51
+R2927:2934 Coq.Sets.Ensembles <> Ensemble def
+R2936:2936 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:51 var
+binder 2923:2923 <> W:52
+R2958:2961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2955:2955 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:51 var
+R2957:2957 ZornsLemma.Cardinals.LeastCardinalsEns <> W:52 var
+R2962:2969 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2984:3001 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2974:2981 Coq.Sets.Ensembles <> Ensemble def
+binder 2970:2970 <> V:53
+R3005:3008 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3004:3004 ZornsLemma.Cardinals.LeastCardinalsEns <> V:53 var
+R3009:3023 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R3027:3027 ZornsLemma.Cardinals.LeastCardinalsEns <> W:52 var
+R3025:3025 ZornsLemma.Cardinals.LeastCardinalsEns <> V:53 var
+binder 2912:2912 <> Y:54
+R2927:2934 Coq.Sets.Ensembles <> Ensemble def
+R2936:2936 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:54 var
+binder 2923:2923 <> W:55
+R2958:2961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2955:2955 ZornsLemma.Cardinals.LeastCardinalsEns <> Y:54 var
+R2957:2957 ZornsLemma.Cardinals.LeastCardinalsEns <> W:55 var
+R2962:2969 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2984:3001 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2974:2981 Coq.Sets.Ensembles <> Ensemble def
+binder 2970:2970 <> V:56
+R3005:3008 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3004:3004 ZornsLemma.Cardinals.LeastCardinalsEns <> V:56 var
+R3009:3023 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R3027:3027 ZornsLemma.Cardinals.LeastCardinalsEns <> W:55 var
+R3025:3025 ZornsLemma.Cardinals.LeastCardinalsEns <> V:56 var
+R3073:3093 ZornsLemma.Cardinals.Comparability <> le_cardinal_ens_total thm
+R3073:3093 ZornsLemma.Cardinals.Comparability <> le_cardinal_ens_total thm
+R3163:3171 Coq.Sets.Ensembles <> Empty_set ind
+R3163:3171 Coq.Sets.Ensembles <> Empty_set ind
+R3229:3249 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_empty thm
+R3229:3249 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_empty thm
+R3284:3308 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Empty_set thm
+R3284:3308 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Empty_set thm
+R3362:3363 Coq.Sets.Image <> Im ind
+R3362:3363 Coq.Sets.Image <> Im ind
+R3422:3440 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R3422:3440 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R3455:3482 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_Im_injective thm
+R3455:3482 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_Im_injective thm
+R3515:3532 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_le thm
+R3515:3532 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_le thm
+R3547:3565 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R3547:3565 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R3580:3607 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_Im_injective thm
+R3580:3607 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_Im_injective thm
+R3644:3661 ZornsLemma.Cardinals.LeastCardinalsEns <> le_cardinal_ens_wf prfax
+R3644:3661 ZornsLemma.Cardinals.LeastCardinalsEns <> le_cardinal_ens_wf prfax
+R3780:3803 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
+R3780:3803 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
+R3894:3919 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_transitive thm
+R3894:3919 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_transitive thm

@@ -1,0 +1,285 @@
+DIGEST fb8f8b993854b7e7063069b7e6ac4dea
+FZornsLemma.IndexedFamilies
+R31:38 ZornsLemma.Families <> <> lib
+R74:90 ZornsLemma.EnsemblesImplicit <> <> lib
+R94:111 ZornsLemma.FunctionProperties <> <> lib
+R115:127 ZornsLemma.ImageImplicit <> <> lib
+sec 164:178 <> IndexedFamilies
+var 191:191 IndexedFamilies A
+var 193:193 IndexedFamilies T
+def 212:224 <> IndexedFamily
+R230:233 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R229:229 ZornsLemma.IndexedFamilies <> IndexedFamilies.A var
+R234:241 Coq.Sets.Ensembles <> Ensemble def
+R243:243 ZornsLemma.IndexedFamilies <> IndexedFamilies.T var
+var 255:255 IndexedFamilies F
+R257:269 ZornsLemma.IndexedFamilies <> IndexedFamily def
+ind 283:294 <> IndexedUnion
+constr 316:334 <> indexed_union_intro
+R298:305 Coq.Sets.Ensembles <> Ensemble def
+R307:307 ZornsLemma.IndexedFamilies <> IndexedFamilies.T var
+R347:347 ZornsLemma.IndexedFamilies <> IndexedFamilies.A var
+binder 345:345 <> a:6
+R353:353 ZornsLemma.IndexedFamilies <> IndexedFamilies.T var
+binder 351:351 <> x:7
+R371:374 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R361:362 Coq.Sets.Ensembles <> In def
+R370:370 ZornsLemma.IndexedFamilies <> x:7 var
+R365:365 ZornsLemma.IndexedFamilies <> IndexedFamilies.F var
+R367:367 ZornsLemma.IndexedFamilies <> a:6 var
+R375:376 Coq.Sets.Ensembles <> In def
+R391:391 ZornsLemma.IndexedFamilies <> x:7 var
+R378:389 ZornsLemma.IndexedFamilies <> IndexedUnion:4 ind
+scheme 283:294 <> IndexedUnion_ind
+scheme 283:294 <> IndexedUnion_sind
+ind 405:423 <> IndexedIntersection
+constr 445:470 <> indexed_intersection_intro
+R427:434 Coq.Sets.Ensembles <> Ensemble def
+R436:436 ZornsLemma.IndexedFamilies <> IndexedFamilies.T var
+R483:483 ZornsLemma.IndexedFamilies <> IndexedFamilies.T var
+binder 481:481 <> x:10
+R491:491 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R514:518 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R501:501 ZornsLemma.IndexedFamilies <> IndexedFamilies.A var
+binder 499:499 <> a:11
+R504:505 Coq.Sets.Ensembles <> In def
+R513:513 ZornsLemma.IndexedFamilies <> x:10 var
+R508:508 ZornsLemma.IndexedFamilies <> IndexedFamilies.F var
+R510:510 ZornsLemma.IndexedFamilies <> a:11 var
+R519:520 Coq.Sets.Ensembles <> In def
+R542:542 ZornsLemma.IndexedFamilies <> x:10 var
+R522:540 ZornsLemma.IndexedFamilies <> IndexedIntersection:8 ind
+scheme 405:423 <> IndexedIntersection_ind
+scheme 405:423 <> IndexedIntersection_sind
+R550:564 ZornsLemma.IndexedFamilies IndexedFamilies <> sec
+prf 635:651 <> sub_indexed_union
+binder 662:662 <> A:12
+binder 664:664 <> B:13
+binder 666:666 <> T:14
+R678:679 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R677:677 ZornsLemma.IndexedFamilies <> A:12 var
+R680:680 ZornsLemma.IndexedFamilies <> B:13 var
+binder 675:675 <> f:15
+R688:700 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R704:704 ZornsLemma.IndexedFamilies <> T:14 var
+R702:702 ZornsLemma.IndexedFamilies <> B:13 var
+binder 686:686 <> F:16
+R729:729 ZornsLemma.IndexedFamilies <> A:12 var
+binder 727:727 <> a:17
+R734:734 ZornsLemma.IndexedFamilies <> F:16 var
+R737:737 ZornsLemma.IndexedFamilies <> f:15 var
+R739:739 ZornsLemma.IndexedFamilies <> a:17 var
+binder 714:717 <> subF:18
+R750:757 Coq.Sets.Ensembles <> Included def
+R780:791 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R793:793 ZornsLemma.IndexedFamilies <> F:16 var
+R760:771 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R773:776 ZornsLemma.IndexedFamilies <> subF:18 var
+R811:818 Coq.Sets.Ensembles <> Included def
+R847:865 ZornsLemma.IndexedFamilies <> indexed_union_intro constr
+R847:865 ZornsLemma.IndexedFamilies <> indexed_union_intro constr
+prf 903:926 <> sub_indexed_intersection
+binder 937:937 <> A:19
+binder 939:939 <> B:20
+binder 941:941 <> T:21
+R953:954 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R952:952 ZornsLemma.IndexedFamilies <> A:19 var
+R955:955 ZornsLemma.IndexedFamilies <> B:20 var
+binder 950:950 <> f:22
+R963:975 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R979:979 ZornsLemma.IndexedFamilies <> T:21 var
+R977:977 ZornsLemma.IndexedFamilies <> B:20 var
+binder 961:961 <> F:23
+R1004:1004 ZornsLemma.IndexedFamilies <> A:19 var
+binder 1002:1002 <> a:24
+R1009:1009 ZornsLemma.IndexedFamilies <> F:23 var
+R1012:1012 ZornsLemma.IndexedFamilies <> f:22 var
+R1014:1014 ZornsLemma.IndexedFamilies <> a:24 var
+binder 989:992 <> subF:25
+R1025:1032 Coq.Sets.Ensembles <> Included def
+R1059:1077 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R1079:1082 ZornsLemma.IndexedFamilies <> subF:25 var
+R1035:1053 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R1055:1055 ZornsLemma.IndexedFamilies <> F:23 var
+R1100:1107 Coq.Sets.Ensembles <> Included def
+prf 1171:1196 <> empty_indexed_intersection
+binder 1207:1207 <> T:26
+R1220:1232 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R1240:1240 ZornsLemma.IndexedFamilies <> T:26 var
+R1234:1238 Coq.Init.Logic <> False ind
+binder 1218:1218 <> F:27
+R1267:1269 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1246:1264 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R1266:1266 ZornsLemma.IndexedFamilies <> F:27 var
+R1270:1277 Coq.Sets.Ensembles <> Full_set ind
+R1301:1324 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1301:1324 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1407:1425 <> empty_indexed_union
+binder 1436:1436 <> T:28
+R1449:1461 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R1469:1469 ZornsLemma.IndexedFamilies <> T:28 var
+R1463:1467 Coq.Init.Logic <> False ind
+binder 1447:1447 <> F:29
+R1489:1491 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1475:1486 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R1488:1488 ZornsLemma.IndexedFamilies <> F:29 var
+R1492:1500 Coq.Sets.Ensembles <> Empty_set ind
+R1524:1547 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1524:1547 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 1629:1651 <> Complement_IndexedUnion
+binder 1654:1654 <> A:30
+binder 1656:1656 <> T:31
+R1671:1683 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R1687:1687 ZornsLemma.IndexedFamilies <> T:31 var
+R1685:1685 ZornsLemma.IndexedFamilies <> A:30 var
+binder 1667:1667 <> F:32
+R1731:1735 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1694:1713 Coq.Sets.Ensembles <> Complement def
+R1716:1727 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R1729:1729 ZornsLemma.IndexedFamilies <> F:32 var
+R1736:1754 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R1763:1763 ZornsLemma.IndexedFamilies <> A:30 var
+binder 1761:1761 <> a:33
+R1768:1787 Coq.Sets.Ensembles <> Complement def
+R1790:1790 ZornsLemma.IndexedFamilies <> F:32 var
+R1792:1792 ZornsLemma.IndexedFamilies <> a:33 var
+R1810:1833 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1810:1833 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 2024:2053 <> Complement_IndexedIntersection
+binder 2056:2056 <> A:34
+binder 2058:2058 <> T:35
+R2073:2085 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R2089:2089 ZornsLemma.IndexedFamilies <> T:35 var
+R2087:2087 ZornsLemma.IndexedFamilies <> A:34 var
+binder 2069:2069 <> F:36
+R2140:2144 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2096:2115 Coq.Sets.Ensembles <> Complement def
+R2118:2136 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R2138:2138 ZornsLemma.IndexedFamilies <> F:36 var
+R2145:2156 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R2165:2165 ZornsLemma.IndexedFamilies <> A:34 var
+binder 2163:2163 <> a:37
+R2170:2189 Coq.Sets.Ensembles <> Complement def
+R2192:2192 ZornsLemma.IndexedFamilies <> F:36 var
+R2194:2194 ZornsLemma.IndexedFamilies <> a:37 var
+R2212:2235 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2212:2235 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2288:2291 Coq.Logic.Classical_Prop <> NNPP thm
+R2288:2291 Coq.Logic.Classical_Prop <> NNPP thm
+R2348:2351 Coq.Logic.Classical_Prop <> NNPP thm
+R2348:2351 Coq.Logic.Classical_Prop <> NNPP thm
+prf 2487:2525 <> IndexedIntersection_option_Intersection
+binder 2534:2534 <> X:38
+binder 2536:2536 <> A:39
+R2551:2563 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R2576:2576 ZornsLemma.IndexedFamilies <> A:39 var
+R2566:2571 Coq.Init.Datatypes <> option ind
+R2573:2573 ZornsLemma.IndexedFamilies <> X:38 var
+binder 2547:2547 <> V:40
+R2604:2608 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2583:2601 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R2603:2603 ZornsLemma.IndexedFamilies <> V:40 var
+R2609:2620 Coq.Sets.Ensembles <> Intersection ind
+R2667:2667 ZornsLemma.IndexedFamilies <> V:40 var
+R2669:2672 Coq.Init.Datatypes <> None constr
+R2623:2641 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+binder 2648:2648 <> a:41
+R2653:2653 ZornsLemma.IndexedFamilies <> V:40 var
+R2656:2659 Coq.Init.Datatypes <> Some constr
+R2661:2661 ZornsLemma.IndexedFamilies <> a:41 var
+R2689:2712 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2689:2712 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 2892:2918 <> IndexedIntersection_surj_fn
+binder 2927:2927 <> X:42
+binder 2929:2929 <> A:43
+binder 2931:2931 <> B:44
+R2946:2958 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R2962:2962 ZornsLemma.IndexedFamilies <> X:42 var
+R2960:2960 ZornsLemma.IndexedFamilies <> A:43 var
+binder 2942:2942 <> V:45
+R2971:2974 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2970:2970 ZornsLemma.IndexedFamilies <> B:44 var
+R2975:2975 ZornsLemma.IndexedFamilies <> A:43 var
+binder 2966:2966 <> f:46
+R2994:2999 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2982:2991 ZornsLemma.FunctionProperties <> surjective def
+R2993:2993 ZornsLemma.IndexedFamilies <> f:46 var
+R3021:3023 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3000:3018 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R3020:3020 ZornsLemma.IndexedFamilies <> V:45 var
+R3024:3042 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+binder 3049:3049 <> x:47
+R3054:3054 ZornsLemma.IndexedFamilies <> V:45 var
+R3057:3057 ZornsLemma.IndexedFamilies <> f:46 var
+R3059:3059 ZornsLemma.IndexedFamilies <> x:47 var
+R3088:3111 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3088:3111 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 3317:3335 <> image_indexed_union
+binder 3338:3338 <> X:48
+binder 3340:3340 <> Y:49
+binder 3342:3342 <> I:50
+R3357:3369 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R3373:3373 ZornsLemma.IndexedFamilies <> X:48 var
+R3371:3371 ZornsLemma.IndexedFamilies <> I:50 var
+binder 3353:3353 <> F:51
+R3382:3385 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3381:3381 ZornsLemma.IndexedFamilies <> X:48 var
+R3386:3386 ZornsLemma.IndexedFamilies <> Y:49 var
+binder 3377:3377 <> f:52
+R3414:3416 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3393:3394 Coq.Sets.Image <> Im ind
+R3413:3413 ZornsLemma.IndexedFamilies <> f:52 var
+R3397:3408 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R3410:3410 ZornsLemma.IndexedFamilies <> F:51 var
+R3417:3428 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+binder 3435:3435 <> i:53
+R3440:3441 Coq.Sets.Image <> Im ind
+R3449:3449 ZornsLemma.IndexedFamilies <> f:52 var
+R3444:3444 ZornsLemma.IndexedFamilies <> F:51 var
+R3446:3446 ZornsLemma.IndexedFamilies <> i:53 var
+R3466:3489 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R3466:3489 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+sec 3745:3765 <> IndexedFamilyToFamily
+var 3821:3821 IndexedFamilyToFamily T
+var 3838:3838 IndexedFamilyToFamily A
+var 3855:3855 IndexedFamilyToFamily F
+R3857:3869 ZornsLemma.IndexedFamilies <> IndexedFamily def
+R3873:3873 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.T var
+R3871:3871 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.A var
+def 3888:3898 <> ImageFamily
+R3902:3907 ZornsLemma.Families <> Family def
+R3909:3909 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.T var
+R3916:3917 Coq.Sets.Image <> Im ind
+R3928:3928 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.F var
+R3919:3926 Coq.Sets.Ensembles <> Full_set ind
+prf 3938:3960 <> indexed_to_family_union
+R3977:3979 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3963:3974 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+R3976:3976 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.F var
+R3980:3990 ZornsLemma.Families <> FamilyUnion ind
+R3992:4002 ZornsLemma.IndexedFamilies <> ImageFamily def
+R4018:4041 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4018:4041 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4051:4058 Coq.Sets.Ensembles <> Same_set def
+R4068:4075 Coq.Sets.Ensembles <> Included def
+R4136:4136 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.F var
+R4111:4128 ZornsLemma.Families <> family_union_intro constr
+R4136:4136 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.F var
+R4111:4128 ZornsLemma.Families <> family_union_intro constr
+R4152:4159 Coq.Sets.Image <> Im_intro constr
+R4152:4159 Coq.Sets.Image <> Im_intro constr
+R4237:4255 ZornsLemma.IndexedFamilies <> indexed_union_intro constr
+R4237:4255 ZornsLemma.IndexedFamilies <> indexed_union_intro constr
+prf 4309:4338 <> indexed_to_family_intersection
+R4364:4366 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4343:4361 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+R4363:4363 ZornsLemma.IndexedFamilies <> IndexedFamilyToFamily.F var
+R4367:4384 ZornsLemma.Families <> FamilyIntersection ind
+R4386:4396 ZornsLemma.IndexedFamilies <> ImageFamily def
+R4412:4435 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4412:4435 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R4445:4452 Coq.Sets.Ensembles <> Same_set def
+R4462:4469 Coq.Sets.Ensembles <> Included def
+R4619:4626 Coq.Sets.Image <> Im_intro constr
+R4619:4626 Coq.Sets.Image <> Im_intro constr
+R4666:4686 ZornsLemma.IndexedFamilies IndexedFamilyToFamily <> sec

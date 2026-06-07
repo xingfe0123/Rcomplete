@@ -1,0 +1,52 @@
+DIGEST b9836b927066dca33ab5d37ecf17b9db
+FZornsLemma.EnsemblesUtf8
+R31:47 ZornsLemma.EnsemblesImplicit <> <> lib
+R74:77 Coq.Unicode.Utf8 <> <> lib
+R111:118 ZornsLemma.Families <> <> lib
+R152:166 ZornsLemma.IndexedFamilies <> <> lib
+R193:194 Coq.Sets.Ensembles <> In def
+not 179:179 <> :::x_'∈'_x
+R239:250 Coq.Sets.Ensembles <> Intersection ind
+not 225:225 <> :::x_'∩'_x
+R319:330 Coq.Sets.Ensembles <> Intersection ind
+not 304:304 <> :::x_'//\\'_x
+R412:416 Coq.Sets.Ensembles <> Union ind
+not 398:398 <> :::x_'∪'_x
+R485:489 Coq.Sets.Ensembles <> Union ind
+not 470:470 <> :::x_'\\//'_x
+R571:578 Coq.Sets.Ensembles <> Setminus def
+not 557:557 <> :::x_'∖'_x
+R641:648 Coq.Sets.Ensembles <> Setminus def
+not 629:629 <> :::x_'\'_x
+R727:734 Coq.Sets.Ensembles <> Included def
+not 713:713 <> :::x_'⊆'_x
+R778:785 Coq.Sets.Ensembles <> Included def
+not 765:765 <> :::x_'<='_x
+R846:860 Coq.Sets.Ensembles <> Strict_Included def
+not 832:832 <> :::x_'⊊'_x
+R903:917 Coq.Sets.Ensembles <> Strict_Included def
+not 891:891 <> :::x_'<'_x
+R978:986 Coq.Sets.Ensembles <> Singleton ind
+not 964:964 <> :::'[['_x_']]'
+R1032:1037 Coq.Sets.Ensembles <> Couple ind
+not 1014:1014 <> :::'[['_x_','_x_']]'
+R1089:1094 Coq.Sets.Ensembles <> Triple ind
+not 1067:1067 <> :::'[['_x_','_x_','_x_']]'
+R1135:1143 Coq.Sets.Ensembles <> Empty_set ind
+not 1126:1126 <> :::'∅'
+R1181:1191 ZornsLemma.Families <> FamilyUnion ind
+not 1169:1169 <> :::'⋃'_x
+R1243:1254 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+binder 1261:1261 <> x:1
+not 1219:1219 <> :::'⋃'_'['_x_':'_x_']'_x
+R1329:1340 ZornsLemma.IndexedFamilies <> IndexedUnion ind
+binder 1347:1347 <> x:2
+not 1304:1304 <> :::'\\//'_'['_x_':'_x_']'_x
+R1416:1433 ZornsLemma.Families <> FamilyIntersection ind
+not 1404:1404 <> :::'⋂'_x
+R1485:1503 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+binder 1510:1510 <> x:3
+not 1461:1461 <> :::'⋂'_'['_x_':'_x_']'_x
+R1578:1596 ZornsLemma.IndexedFamilies <> IndexedIntersection ind
+binder 1603:1603 <> x:4
+not 1553:1553 <> :::'//\\'_'['_x_':'_x_']'_x

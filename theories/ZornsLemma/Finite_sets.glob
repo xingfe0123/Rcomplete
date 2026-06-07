@@ -1,0 +1,668 @@
+DIGEST 5c8c5667c12c7e849f804476d7462ae8
+FZornsLemma.Finite_sets
+R26:34 Coq.Logic.Classical <> <> lib
+R38:40 Coq.micromega.Lia <> <> lib
+R69:79 Coq.Sets.Finite_sets <> <> lib
+R83:99 Coq.Sets.Finite_sets_facts <> <> lib
+R135:146 ZornsLemma.DecidableDec <> <> lib
+R150:166 ZornsLemma.EnsemblesImplicit <> <> lib
+R170:177 ZornsLemma.Families <> <> lib
+R181:194 ZornsLemma.FiniteImplicit <> <> lib
+R198:218 ZornsLemma.FunctionPropertiesEns <> <> lib
+R222:235 ZornsLemma.Powerset_facts <> <> lib
+R239:243 ZornsLemma.Image <> <> lib
+R247:258 ZornsLemma.InverseImage <> <> lib
+R262:284 ZornsLemma.ReverseMath.AddSubtract <> <> lib
+prf 335:346 <> Finite_eqdec
+binder 349:349 <> X:1
+R364:371 Coq.Sets.Ensembles <> Ensemble def
+R373:373 ZornsLemma.Finite_sets <> X:1 var
+binder 360:360 <> U:2
+R388:393 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R380:385 Coq.Sets.Finite_sets <> Finite ind
+R387:387 ZornsLemma.Finite_sets <> U:2 var
+R407:407 ZornsLemma.Finite_sets <> X:1 var
+binder 401:401 <> x:3
+binder 403:403 <> y:4
+R416:419 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R410:411 Coq.Sets.Ensembles <> In def
+R415:415 ZornsLemma.Finite_sets <> x:3 var
+R413:413 ZornsLemma.Finite_sets <> U:2 var
+R426:429 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R420:421 Coq.Sets.Ensembles <> In def
+R425:425 ZornsLemma.Finite_sets <> y:4 var
+R423:423 ZornsLemma.Finite_sets <> U:2 var
+R435:438 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R431:433 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R430:430 ZornsLemma.Finite_sets <> x:3 var
+R434:434 ZornsLemma.Finite_sets <> y:4 var
+R440:443 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R439:439 ZornsLemma.Finite_sets <> x:3 var
+R444:444 ZornsLemma.Finite_sets <> y:4 var
+R584:585 Coq.Sets.Ensembles <> In def
+R588:596 Coq.Sets.Ensembles <> Singleton ind
+R584:585 Coq.Sets.Ensembles <> In def
+R588:596 Coq.Sets.Ensembles <> Singleton ind
+R630:642 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R630:642 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R630:642 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R630:642 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R630:642 Coq.Sets.Constructive_sets <> Singleton_inv thm
+prf 766:787 <> Finite_Included_In_dec
+binder 790:790 <> X:5
+R807:814 Coq.Sets.Ensembles <> Ensemble def
+R816:816 ZornsLemma.Finite_sets <> X:5 var
+binder 801:801 <> U:6
+binder 803:803 <> V:7
+R835:838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R823:830 Coq.Sets.Ensembles <> Included def
+R834:834 ZornsLemma.Finite_sets <> V:7 var
+R832:832 ZornsLemma.Finite_sets <> U:6 var
+R847:850 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R839:844 Coq.Sets.Finite_sets <> Finite ind
+R846:846 ZornsLemma.Finite_sets <> U:6 var
+R859:864 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R851:856 Coq.Sets.Finite_sets <> Finite ind
+R858:858 ZornsLemma.Finite_sets <> V:7 var
+R876:876 ZornsLemma.Finite_sets <> X:5 var
+binder 872:872 <> x:8
+R885:888 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R879:880 Coq.Sets.Ensembles <> In def
+R884:884 ZornsLemma.Finite_sets <> x:8 var
+R882:882 ZornsLemma.Finite_sets <> V:7 var
+R895:898 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R889:890 Coq.Sets.Ensembles <> In def
+R894:894 ZornsLemma.Finite_sets <> x:8 var
+R892:892 ZornsLemma.Finite_sets <> U:6 var
+R899:900 Coq.Init.Logic <> ::type_scope:'~'_x not
+R901:902 Coq.Sets.Ensembles <> In def
+R906:906 ZornsLemma.Finite_sets <> x:8 var
+R904:904 ZornsLemma.Finite_sets <> U:6 var
+R950:961 ZornsLemma.Finite_sets <> Finite_eqdec thm
+R950:961 ZornsLemma.Finite_sets <> Finite_eqdec thm
+R1166:1180 Coq.Sets.Constructive_sets <> Singleton_intro thm
+R1166:1180 Coq.Sets.Constructive_sets <> Singleton_intro thm
+prf 1458:1483 <> Finite_downward_closed_dec
+binder 1486:1486 <> X:9
+R1503:1510 Coq.Sets.Ensembles <> Ensemble def
+R1512:1512 ZornsLemma.Finite_sets <> X:9 var
+binder 1499:1499 <> V:10
+R1523:1528 Coq.Sets.Finite_sets <> Finite ind
+R1530:1530 ZornsLemma.Finite_sets <> V:10 var
+binder 1518:1519 <> HV:11
+R1540:1547 Coq.Sets.Ensembles <> Ensemble def
+R1549:1549 ZornsLemma.Finite_sets <> X:9 var
+binder 1536:1536 <> U:12
+R1574:1574 ZornsLemma.Finite_sets <> X:9 var
+binder 1570:1570 <> x:13
+R1583:1586 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1577:1578 Coq.Sets.Ensembles <> In def
+R1582:1582 ZornsLemma.Finite_sets <> x:13 var
+R1580:1580 ZornsLemma.Finite_sets <> V:10 var
+R1593:1596 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1587:1588 Coq.Sets.Ensembles <> In def
+R1592:1592 ZornsLemma.Finite_sets <> x:13 var
+R1590:1590 ZornsLemma.Finite_sets <> U:12 var
+R1597:1598 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1599:1600 Coq.Sets.Ensembles <> In def
+R1604:1604 ZornsLemma.Finite_sets <> x:13 var
+R1602:1602 ZornsLemma.Finite_sets <> U:12 var
+binder 1555:1559 <> HUdec:14
+R1630:1630 ZornsLemma.Finite_sets <> X:9 var
+binder 1624:1624 <> x:15
+binder 1626:1626 <> y:16
+R1639:1642 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1633:1634 Coq.Sets.Ensembles <> In def
+R1638:1638 ZornsLemma.Finite_sets <> x:15 var
+R1636:1636 ZornsLemma.Finite_sets <> U:12 var
+R1649:1652 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1643:1644 Coq.Sets.Ensembles <> In def
+R1648:1648 ZornsLemma.Finite_sets <> y:16 var
+R1646:1646 ZornsLemma.Finite_sets <> U:12 var
+R1658:1661 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R1654:1656 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1653:1653 ZornsLemma.Finite_sets <> x:15 var
+R1657:1657 ZornsLemma.Finite_sets <> y:16 var
+R1663:1666 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R1662:1662 ZornsLemma.Finite_sets <> x:15 var
+R1667:1667 ZornsLemma.Finite_sets <> y:16 var
+binder 1610:1613 <> HUeq:17
+R1678:1685 Coq.Sets.Ensembles <> Included def
+R1689:1689 ZornsLemma.Finite_sets <> V:10 var
+R1687:1687 ZornsLemma.Finite_sets <> U:12 var
+binder 1673:1675 <> HUV:18
+R1694:1699 Coq.Sets.Finite_sets <> Finite ind
+R1701:1701 ZornsLemma.Finite_sets <> U:12 var
+R1800:1808 Coq.Sets.Ensembles <> Empty_set ind
+R1800:1808 Coq.Sets.Ensembles <> Empty_set ind
+R1845:1868 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R1845:1868 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2193:2195 Coq.Sets.Ensembles <> Add def
+R2198:2205 Coq.Sets.Ensembles <> Subtract def
+R2193:2195 Coq.Sets.Ensembles <> Add def
+R2198:2205 Coq.Sets.Ensembles <> Subtract def
+R2247:2270 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2247:2270 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R2312:2336 ZornsLemma.ReverseMath.AddSubtract <> Add_Subtract_discouraging thm
+R2312:2336 ZornsLemma.ReverseMath.AddSubtract <> Add_Subtract_discouraging thm
+R2386:2400 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R2386:2400 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R2626:2640 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R2626:2640 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R2693:2705 Coq.Sets.Constructive_sets <> Singleton_inv thm
+R2693:2705 Coq.Sets.Constructive_sets <> Singleton_inv thm
+prf 3040:3074 <> Finite_downward_closed_discouraging
+binder 3079:3079 <> X:19
+R3096:3103 Coq.Sets.Ensembles <> Ensemble def
+R3105:3105 ZornsLemma.Finite_sets <> X:19 var
+binder 3090:3090 <> U:20
+binder 3092:3092 <> V:21
+R3120:3123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3112:3117 Coq.Sets.Finite_sets <> Finite ind
+R3119:3119 ZornsLemma.Finite_sets <> V:21 var
+R3136:3141 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3124:3131 Coq.Sets.Ensembles <> Included def
+R3135:3135 ZornsLemma.Finite_sets <> V:21 var
+R3133:3133 ZornsLemma.Finite_sets <> U:20 var
+R3150:3158 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R3142:3147 Coq.Sets.Finite_sets <> Finite ind
+R3149:3149 ZornsLemma.Finite_sets <> U:20 var
+R3159:3159 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3202:3213 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3265:3265 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3171:3171 ZornsLemma.Finite_sets <> X:19 var
+binder 3167:3167 <> x:22
+R3180:3183 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3174:3175 Coq.Sets.Ensembles <> In def
+R3179:3179 ZornsLemma.Finite_sets <> x:22 var
+R3177:3177 ZornsLemma.Finite_sets <> V:21 var
+R3190:3193 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3184:3185 Coq.Sets.Ensembles <> In def
+R3189:3189 ZornsLemma.Finite_sets <> x:22 var
+R3187:3187 ZornsLemma.Finite_sets <> U:20 var
+R3194:3195 Coq.Init.Logic <> ::type_scope:'~'_x not
+R3196:3197 Coq.Sets.Ensembles <> In def
+R3201:3201 ZornsLemma.Finite_sets <> x:22 var
+R3199:3199 ZornsLemma.Finite_sets <> U:20 var
+R3227:3227 ZornsLemma.Finite_sets <> X:19 var
+binder 3221:3221 <> x:23
+binder 3223:3223 <> y:24
+R3236:3239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3230:3231 Coq.Sets.Ensembles <> In def
+R3235:3235 ZornsLemma.Finite_sets <> x:23 var
+R3233:3233 ZornsLemma.Finite_sets <> U:20 var
+R3246:3249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3240:3241 Coq.Sets.Ensembles <> In def
+R3245:3245 ZornsLemma.Finite_sets <> y:24 var
+R3243:3243 ZornsLemma.Finite_sets <> U:20 var
+R3255:3258 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R3251:3253 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3250:3250 ZornsLemma.Finite_sets <> x:23 var
+R3254:3254 ZornsLemma.Finite_sets <> y:24 var
+R3260:3263 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R3259:3259 ZornsLemma.Finite_sets <> x:23 var
+R3264:3264 ZornsLemma.Finite_sets <> y:24 var
+R3333:3354 ZornsLemma.Finite_sets <> Finite_Included_In_dec thm
+R3333:3354 ZornsLemma.Finite_sets <> Finite_Included_In_dec thm
+R3381:3392 ZornsLemma.Finite_sets <> Finite_eqdec thm
+R3381:3392 ZornsLemma.Finite_sets <> Finite_eqdec thm
+R3439:3464 ZornsLemma.Finite_sets <> Finite_downward_closed_dec thm
+R3439:3464 ZornsLemma.Finite_sets <> Finite_downward_closed_dec thm
+prf 3663:3684 <> finite_ens_pair_choice
+binder 3687:3687 <> X:25
+binder 3689:3689 <> Y:26
+R3704:3711 Coq.Sets.Ensembles <> Ensemble def
+R3713:3713 ZornsLemma.Finite_sets <> X:25 var
+binder 3700:3700 <> U:27
+R3728:3731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3727:3727 ZornsLemma.Finite_sets <> X:25 var
+R3733:3736 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3732:3732 ZornsLemma.Finite_sets <> Y:26 var
+binder 3723:3723 <> P:28
+R3755:3760 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3747:3752 Coq.Sets.Finite_sets <> Finite ind
+R3754:3754 ZornsLemma.Finite_sets <> U:27 var
+R3761:3761 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3797:3803 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 3769:3769 <> x:29
+R3778:3781 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3772:3773 Coq.Sets.Ensembles <> In def
+R3777:3777 ZornsLemma.Finite_sets <> x:29 var
+R3775:3775 ZornsLemma.Finite_sets <> U:27 var
+R3782:3788 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3790:3791 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3789:3789 <> y:30
+R3792:3792 ZornsLemma.Finite_sets <> P:28 var
+R3796:3796 ZornsLemma.Finite_sets <> y:30 var
+R3794:3794 ZornsLemma.Finite_sets <> x:29 var
+R3804:3810 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3825:3830 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3815:3822 Coq.Sets.Ensembles <> Ensemble def
+R3824:3824 ZornsLemma.Finite_sets <> Y:26 var
+binder 3811:3811 <> V:31
+R3839:3848 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3831:3836 Coq.Sets.Finite_sets <> Finite ind
+R3838:3838 ZornsLemma.Finite_sets <> V:31 var
+R3849:3849 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3895:3906 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3952:3952 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 3857:3857 <> x:32
+R3866:3869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3860:3861 Coq.Sets.Ensembles <> In def
+R3865:3865 ZornsLemma.Finite_sets <> x:32 var
+R3863:3863 ZornsLemma.Finite_sets <> U:27 var
+R3870:3876 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3878:3879 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3877:3877 <> y:33
+R3886:3889 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3880:3881 Coq.Sets.Ensembles <> In def
+R3885:3885 ZornsLemma.Finite_sets <> y:33 var
+R3883:3883 ZornsLemma.Finite_sets <> V:31 var
+R3890:3890 ZornsLemma.Finite_sets <> P:28 var
+R3894:3894 ZornsLemma.Finite_sets <> y:33 var
+R3892:3892 ZornsLemma.Finite_sets <> x:32 var
+binder 3914:3914 <> y:34
+R3923:3926 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3917:3918 Coq.Sets.Ensembles <> In def
+R3922:3922 ZornsLemma.Finite_sets <> y:34 var
+R3920:3920 ZornsLemma.Finite_sets <> V:31 var
+R3927:3933 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3935:3936 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3934:3934 <> x:35
+R3943:3946 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3937:3938 Coq.Sets.Ensembles <> In def
+R3942:3942 ZornsLemma.Finite_sets <> x:35 var
+R3940:3940 ZornsLemma.Finite_sets <> U:27 var
+R3947:3947 ZornsLemma.Finite_sets <> P:28 var
+R3951:3951 ZornsLemma.Finite_sets <> y:34 var
+R3949:3949 ZornsLemma.Finite_sets <> x:35 var
+R4051:4059 Coq.Sets.Ensembles <> Empty_set ind
+R4051:4059 Coq.Sets.Ensembles <> Empty_set ind
+R4305:4311 Coq.Logic.Classical_Prop <> classic prfax
+R4314:4315 Coq.Sets.Ensembles <> In def
+R4305:4311 Coq.Logic.Classical_Prop <> classic prfax
+R4314:4315 Coq.Sets.Ensembles <> In def
+R4602:4604 Coq.Sets.Ensembles <> Add def
+R4602:4604 Coq.Sets.Ensembles <> Add def
+prf 5088:5100 <> finite_couple
+binder 5103:5103 <> X:36
+R5113:5113 ZornsLemma.Finite_sets <> X:36 var
+binder 5107:5107 <> x:37
+binder 5109:5109 <> y:38
+R5120:5125 Coq.Sets.Finite_sets <> Finite ind
+R5128:5133 Coq.Sets.Ensembles <> Couple ind
+R5137:5137 ZornsLemma.Finite_sets <> y:38 var
+R5135:5135 ZornsLemma.Finite_sets <> x:37 var
+R5161:5175 Coq.Sets.Powerset_facts <> Couple_as_union thm
+R5161:5175 Coq.Sets.Powerset_facts <> Couple_as_union thm
+R5161:5175 Coq.Sets.Powerset_facts <> Couple_as_union thm
+R5186:5207 Coq.Sets.Finite_sets_facts <> Union_preserves_Finite thm
+R5186:5207 Coq.Sets.Finite_sets_facts <> Union_preserves_Finite thm
+R5223:5241 Coq.Sets.Finite_sets_facts <> Singleton_is_finite thm
+R5223:5241 Coq.Sets.Finite_sets_facts <> Singleton_is_finite thm
+R5223:5241 Coq.Sets.Finite_sets_facts <> Singleton_is_finite thm
+prf 5521:5545 <> FamilyIntersection_Finite
+binder 5548:5548 <> X:39
+R5563:5568 ZornsLemma.Families <> Family def
+R5570:5570 ZornsLemma.Finite_sets <> X:39 var
+binder 5559:5559 <> F:40
+R5577:5577 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5606:5612 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5578:5584 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5586:5587 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 5585:5585 <> U:41
+R5594:5597 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5588:5589 Coq.Sets.Ensembles <> In def
+R5593:5593 ZornsLemma.Finite_sets <> U:41 var
+R5591:5591 ZornsLemma.Finite_sets <> F:40 var
+R5598:5603 Coq.Sets.Finite_sets <> Finite ind
+R5605:5605 ZornsLemma.Finite_sets <> U:41 var
+R5613:5618 Coq.Sets.Finite_sets <> Finite ind
+R5621:5638 ZornsLemma.Families <> FamilyIntersection ind
+R5640:5640 ZornsLemma.Finite_sets <> F:40 var
+R5696:5717 Coq.Sets.Finite_sets_facts <> Finite_downward_closed thm
+R5696:5717 Coq.Sets.Finite_sets_facts <> Finite_downward_closed thm
+prf 5828:5853 <> Finite_injective_image_dec
+binder 5856:5856 <> X:42
+binder 5858:5858 <> Y:43
+R5874:5877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5873:5873 ZornsLemma.Finite_sets <> X:42 var
+R5878:5878 ZornsLemma.Finite_sets <> Y:43 var
+binder 5869:5869 <> f:44
+R5888:5895 Coq.Sets.Ensembles <> Ensemble def
+R5897:5897 ZornsLemma.Finite_sets <> X:42 var
+binder 5884:5884 <> U:45
+R5924:5924 ZornsLemma.Finite_sets <> X:42 var
+binder 5918:5918 <> x:46
+binder 5920:5920 <> y:47
+R5933:5936 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5927:5928 Coq.Sets.Ensembles <> In def
+R5932:5932 ZornsLemma.Finite_sets <> x:46 var
+R5930:5930 ZornsLemma.Finite_sets <> U:45 var
+R5943:5946 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5937:5938 Coq.Sets.Ensembles <> In def
+R5942:5942 ZornsLemma.Finite_sets <> y:47 var
+R5940:5940 ZornsLemma.Finite_sets <> U:45 var
+R5952:5955 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5948:5950 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5947:5947 ZornsLemma.Finite_sets <> x:46 var
+R5951:5951 ZornsLemma.Finite_sets <> y:47 var
+R5957:5960 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5956:5956 ZornsLemma.Finite_sets <> x:46 var
+R5961:5961 ZornsLemma.Finite_sets <> y:47 var
+binder 5903:5907 <> HUdec:48
+R5985:5988 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5968:5980 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R5984:5984 ZornsLemma.Finite_sets <> U:45 var
+R5982:5982 ZornsLemma.Finite_sets <> f:44 var
+R6004:6007 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5989:5994 Coq.Sets.Finite_sets <> Finite ind
+R5997:5998 Coq.Sets.Image <> Im ind
+R6002:6002 ZornsLemma.Finite_sets <> f:44 var
+R6000:6000 ZornsLemma.Finite_sets <> U:45 var
+R6008:6013 Coq.Sets.Finite_sets <> Finite ind
+R6015:6015 ZornsLemma.Finite_sets <> U:45 var
+R6055:6056 Coq.Sets.Image <> Im ind
+R6055:6056 Coq.Sets.Image <> Im ind
+R6180:6188 Coq.Sets.Ensembles <> Empty_set ind
+R6180:6188 Coq.Sets.Ensembles <> Empty_set ind
+R6225:6248 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6225:6248 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6320:6325 Coq.Sets.Image <> Im_def thm
+R6320:6325 Coq.Sets.Image <> Im_def thm
+R6425:6431 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6433:6434 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6432:6432 <> x:49
+R6441:6444 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6435:6436 Coq.Sets.Ensembles <> In def
+R6440:6440 ZornsLemma.Finite_sets <> x:49 var
+R6448:6450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6447:6447 ZornsLemma.Finite_sets <> x:49 var
+R6425:6431 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6433:6434 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6432:6432 <> x:50
+R6441:6444 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6435:6436 Coq.Sets.Ensembles <> In def
+R6440:6440 ZornsLemma.Finite_sets <> x:50 var
+R6448:6450 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6447:6447 ZornsLemma.Finite_sets <> x:50 var
+R6481:6486 Coq.Sets.Image <> Im_inv thm
+R6481:6486 Coq.Sets.Image <> Im_inv thm
+R6555:6557 Coq.Sets.Ensembles <> Add def
+R6560:6567 Coq.Sets.Ensembles <> Subtract def
+R6555:6557 Coq.Sets.Ensembles <> Add def
+R6560:6567 Coq.Sets.Ensembles <> Subtract def
+R6609:6632 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6609:6632 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6675:6699 ZornsLemma.ReverseMath.AddSubtract <> Add_Subtract_discouraging thm
+R6675:6699 ZornsLemma.ReverseMath.AddSubtract <> Add_Subtract_discouraging thm
+R6749:6763 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R6749:6763 ZornsLemma.Powerset_facts <> Subtract_not_in thm
+R6955:6978 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R6955:6978 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7021:7030 Coq.Sets.Constructive_sets <> Add_intro1 thm
+R7021:7030 Coq.Sets.Constructive_sets <> Add_intro1 thm
+R7134:7139 Coq.Sets.Image <> Im_def thm
+R7134:7139 Coq.Sets.Image <> Im_def thm
+R7283:7288 Coq.Sets.Image <> Im_def thm
+R7283:7288 Coq.Sets.Image <> Im_def thm
+prf 7522:7543 <> Finite_injective_image
+binder 7546:7546 <> X:51
+binder 7548:7548 <> Y:52
+R7564:7567 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7563:7563 ZornsLemma.Finite_sets <> X:51 var
+R7568:7568 ZornsLemma.Finite_sets <> Y:52 var
+binder 7559:7559 <> f:53
+R7578:7585 Coq.Sets.Ensembles <> Ensemble def
+R7587:7587 ZornsLemma.Finite_sets <> X:51 var
+binder 7574:7574 <> U:54
+R7611:7614 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7594:7606 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R7610:7610 ZornsLemma.Finite_sets <> U:54 var
+R7608:7608 ZornsLemma.Finite_sets <> f:53 var
+R7630:7633 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7615:7620 Coq.Sets.Finite_sets <> Finite ind
+R7623:7624 Coq.Sets.Image <> Im ind
+R7628:7628 ZornsLemma.Finite_sets <> f:53 var
+R7626:7626 ZornsLemma.Finite_sets <> U:54 var
+R7634:7639 Coq.Sets.Finite_sets <> Finite ind
+R7641:7641 ZornsLemma.Finite_sets <> U:54 var
+R7677:7702 ZornsLemma.Finite_sets <> Finite_injective_image_dec thm
+R7677:7702 ZornsLemma.Finite_sets <> Finite_injective_image_dec thm
+R7744:7750 Coq.Logic.Classical_Prop <> classic prfax
+R7744:7750 Coq.Logic.Classical_Prop <> classic prfax
+prf 7799:7828 <> finite_nat_initial_segment_ens
+R7835:7837 Coq.Init.Datatypes <> nat ind
+binder 7831:7831 <> n:55
+R7844:7849 Coq.Sets.Finite_sets <> Finite ind
+binder 7856:7856 <> m:56
+R7862:7864 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R7861:7861 ZornsLemma.Finite_sets <> m:56 var
+R7865:7865 ZornsLemma.Finite_sets <> n:55 var
+R7923:7931 Coq.Sets.Ensembles <> Empty_set ind
+R7933:7935 Coq.Init.Datatypes <> nat ind
+R7923:7931 Coq.Sets.Ensembles <> Empty_set ind
+R7933:7935 Coq.Init.Datatypes <> nat ind
+R7970:7993 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R7970:7993 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8094:8096 Coq.Sets.Ensembles <> Add def
+binder 8103:8103 <> m:57
+R8109:8111 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8108:8108 ZornsLemma.Finite_sets <> m:57 var
+R8094:8096 Coq.Sets.Ensembles <> Add def
+binder 8103:8103 <> m:58
+R8109:8111 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8108:8108 ZornsLemma.Finite_sets <> m:58 var
+R8196:8219 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8196:8219 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R8376:8381 Coq.Init.Peano <> le_S_n thm
+R8376:8381 Coq.Init.Peano <> le_S_n thm
+R8462:8467 Coq.Init.Peano <> le_n_S thm
+R8462:8467 Coq.Init.Peano <> le_n_S thm
+prf 8500:8522 <> nat_Finite_impl_bounded
+R8529:8536 Coq.Sets.Ensembles <> Ensemble def
+R8538:8540 Coq.Init.Datatypes <> nat ind
+binder 8525:8525 <> U:59
+R8555:8561 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8603:8603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8547:8552 Coq.Sets.Finite_sets <> Finite ind
+R8554:8554 ZornsLemma.Finite_sets <> U:59 var
+R8562:8568 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8576:8577 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8573:8575 Coq.Init.Datatypes <> nat ind
+binder 8569:8569 <> n:60
+binder 8585:8585 <> m:61
+R8594:8597 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8588:8589 Coq.Sets.Ensembles <> In def
+R8593:8593 ZornsLemma.Finite_sets <> m:61 var
+R8591:8591 ZornsLemma.Finite_sets <> U:59 var
+R8599:8601 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8598:8598 ZornsLemma.Finite_sets <> m:61 var
+R8602:8602 ZornsLemma.Finite_sets <> n:60 var
+R8724:8726 Coq.Init.Peano <> max abbrev
+R8732:8732 Coq.Init.Datatypes <> S constr
+R8724:8726 Coq.Init.Peano <> max abbrev
+R8732:8732 Coq.Init.Datatypes <> S constr
+prf 8844:8865 <> Finite_nat_bounded_dec
+R8872:8879 Coq.Sets.Ensembles <> Ensemble def
+R8881:8883 Coq.Init.Datatypes <> nat ind
+binder 8868:8868 <> U:62
+R8908:8910 Coq.Init.Datatypes <> nat ind
+binder 8904:8904 <> n:63
+R8919:8922 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R8913:8914 Coq.Sets.Ensembles <> In def
+R8918:8918 ZornsLemma.Finite_sets <> n:63 var
+R8916:8916 ZornsLemma.Finite_sets <> U:62 var
+R8923:8924 Coq.Init.Logic <> ::type_scope:'~'_x not
+R8925:8926 Coq.Sets.Ensembles <> In def
+R8930:8930 ZornsLemma.Finite_sets <> n:63 var
+R8928:8928 ZornsLemma.Finite_sets <> U:62 var
+binder 8889:8893 <> HUdec:64
+R8937:8937 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8979:8985 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8938:8944 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8952:8953 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8949:8951 Coq.Init.Datatypes <> nat ind
+binder 8945:8945 <> n:65
+binder 8961:8961 <> m:66
+R8970:8973 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8964:8965 Coq.Sets.Ensembles <> In def
+R8969:8969 ZornsLemma.Finite_sets <> m:66 var
+R8967:8967 ZornsLemma.Finite_sets <> U:62 var
+R8975:8977 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8974:8974 ZornsLemma.Finite_sets <> m:66 var
+R8978:8978 ZornsLemma.Finite_sets <> n:65 var
+R8986:8991 Coq.Sets.Finite_sets <> Finite ind
+R8993:8993 ZornsLemma.Finite_sets <> U:62 var
+R9029:9054 ZornsLemma.Finite_sets <> Finite_downward_closed_dec thm
+R9029:9054 ZornsLemma.Finite_sets <> Finite_downward_closed_dec thm
+R9068:9097 ZornsLemma.Finite_sets <> finite_nat_initial_segment_ens thm
+R9068:9097 ZornsLemma.Finite_sets <> finite_nat_initial_segment_ens thm
+R9147:9165 Coq.Arith.PeanoNat Nat eq_dec thm
+R9147:9165 Coq.Arith.PeanoNat Nat eq_dec thm
+prf 9241:9263 <> nat_Finite_bounded_char
+R9270:9277 Coq.Sets.Ensembles <> Ensemble def
+R9279:9281 Coq.Init.Datatypes <> nat ind
+binder 9266:9266 <> U:67
+R9296:9300 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9288:9293 Coq.Sets.Finite_sets <> Finite ind
+R9295:9295 ZornsLemma.Finite_sets <> U:67 var
+R9301:9307 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9315:9316 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9312:9314 Coq.Init.Datatypes <> nat ind
+binder 9308:9308 <> n:68
+binder 9324:9324 <> m:69
+R9333:9336 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9327:9328 Coq.Sets.Ensembles <> In def
+R9332:9332 ZornsLemma.Finite_sets <> m:69 var
+R9330:9330 ZornsLemma.Finite_sets <> U:67 var
+R9338:9340 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R9337:9337 ZornsLemma.Finite_sets <> m:69 var
+R9341:9341 ZornsLemma.Finite_sets <> n:68 var
+R9371:9393 ZornsLemma.Finite_sets <> nat_Finite_impl_bounded thm
+R9371:9393 ZornsLemma.Finite_sets <> nat_Finite_impl_bounded thm
+R9404:9425 ZornsLemma.Finite_sets <> Finite_nat_bounded_dec thm
+R9404:9425 ZornsLemma.Finite_sets <> Finite_nat_bounded_dec thm
+R9446:9452 Coq.Logic.Classical_Prop <> classic prfax
+R9446:9452 Coq.Logic.Classical_Prop <> classic prfax
+prf 9467:9506 <> injective_finite_inverse_image_Singleton
+binder 9511:9511 <> X:70
+binder 9513:9513 <> Y:71
+R9529:9532 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9528:9528 ZornsLemma.Finite_sets <> X:70 var
+R9533:9533 ZornsLemma.Finite_sets <> Y:71 var
+binder 9524:9524 <> f:72
+R9541:9541 ZornsLemma.Finite_sets <> Y:71 var
+binder 9537:9537 <> y:73
+R9559:9564 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9548:9556 Coq.Sets.Image <> injective def
+R9558:9558 ZornsLemma.Finite_sets <> f:72 var
+R9565:9570 Coq.Sets.Finite_sets <> Finite ind
+R9573:9585 ZornsLemma.InverseImage <> inverse_image def
+R9590:9598 Coq.Sets.Ensembles <> Singleton ind
+R9600:9600 ZornsLemma.Finite_sets <> y:73 var
+R9587:9587 ZornsLemma.Finite_sets <> f:72 var
+R9637:9643 Coq.Logic.Classical_Prop <> classic prfax
+R9646:9652 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9658:9659 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9653:9653 <> x:74
+R9663:9665 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9662:9662 ZornsLemma.Finite_sets <> x:74 var
+R9637:9643 Coq.Logic.Classical_Prop <> classic prfax
+R9646:9652 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9658:9659 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 9653:9653 <> x:75
+R9663:9665 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9662:9662 ZornsLemma.Finite_sets <> x:75 var
+R9730:9734 Coq.Init.Logic <> proj1 thm
+R9737:9769 ZornsLemma.InverseImage <> injective_inverse_image_Singleton thm
+R9730:9734 Coq.Init.Logic <> proj1 thm
+R9737:9769 ZornsLemma.InverseImage <> injective_inverse_image_Singleton thm
+R9730:9734 Coq.Init.Logic <> proj1 thm
+R9737:9769 ZornsLemma.InverseImage <> injective_inverse_image_Singleton thm
+R9791:9809 Coq.Sets.Finite_sets_facts <> Singleton_is_finite thm
+R9791:9809 Coq.Sets.Finite_sets_facts <> Singleton_is_finite thm
+R9825:9837 ZornsLemma.InverseImage <> inverse_image def
+R9851:9859 Coq.Sets.Ensembles <> Empty_set ind
+R9825:9837 ZornsLemma.InverseImage <> inverse_image def
+R9851:9859 Coq.Sets.Ensembles <> Empty_set ind
+R9896:9919 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R9896:9919 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+prf 10072:10101 <> injective_finite_inverse_image
+binder 10106:10106 <> X:76
+binder 10108:10108 <> Y:77
+R10124:10127 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10123:10123 ZornsLemma.Finite_sets <> X:76 var
+R10128:10128 ZornsLemma.Finite_sets <> Y:77 var
+binder 10119:10119 <> f:78
+R10136:10143 Coq.Sets.Ensembles <> Ensemble def
+R10145:10145 ZornsLemma.Finite_sets <> Y:77 var
+binder 10132:10132 <> U:79
+R10163:10168 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10152:10160 Coq.Sets.Image <> injective def
+R10162:10162 ZornsLemma.Finite_sets <> f:78 var
+R10177:10182 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10169:10174 Coq.Sets.Finite_sets <> Finite ind
+R10176:10176 ZornsLemma.Finite_sets <> U:79 var
+R10183:10188 Coq.Sets.Finite_sets <> Finite ind
+R10191:10203 ZornsLemma.InverseImage <> inverse_image def
+R10207:10207 ZornsLemma.Finite_sets <> U:79 var
+R10205:10205 ZornsLemma.Finite_sets <> f:78 var
+R10262:10280 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10262:10280 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10262:10280 ZornsLemma.InverseImage <> inverse_image_empty thm
+R10307:10309 Coq.Sets.Ensembles <> Add def
+R10322:10340 ZornsLemma.InverseImage <> inverse_image_union thm
+R10322:10340 ZornsLemma.InverseImage <> inverse_image_union thm
+R10322:10340 ZornsLemma.InverseImage <> inverse_image_union thm
+R10351:10372 Coq.Sets.Finite_sets_facts <> Union_preserves_Finite thm
+R10351:10372 Coq.Sets.Finite_sets_facts <> Union_preserves_Finite thm
+R10403:10442 ZornsLemma.Finite_sets <> injective_finite_inverse_image_Singleton thm
+R10403:10442 ZornsLemma.Finite_sets <> injective_finite_inverse_image_Singleton thm
+prf 10711:10725 <> finite_in_image
+binder 10728:10728 <> X:80
+binder 10730:10730 <> Y:81
+R10746:10749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10745:10745 ZornsLemma.Finite_sets <> X:80 var
+R10750:10750 ZornsLemma.Finite_sets <> Y:81 var
+binder 10741:10741 <> f:82
+R10760:10767 Coq.Sets.Ensembles <> Ensemble def
+R10769:10769 ZornsLemma.Finite_sets <> X:80 var
+binder 10756:10756 <> A:83
+R10777:10784 Coq.Sets.Ensembles <> Ensemble def
+R10786:10786 ZornsLemma.Finite_sets <> Y:81 var
+binder 10773:10773 <> B:84
+R10801:10804 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10793:10798 Coq.Sets.Finite_sets <> Finite ind
+R10800:10800 ZornsLemma.Finite_sets <> B:84 var
+R10824:10829 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10805:10812 Coq.Sets.Ensembles <> Included def
+R10817:10818 Coq.Sets.Image <> Im ind
+R10822:10822 ZornsLemma.Finite_sets <> f:82 var
+R10820:10820 ZornsLemma.Finite_sets <> A:83 var
+R10814:10814 ZornsLemma.Finite_sets <> B:84 var
+R10830:10836 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10851:10856 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10841:10848 Coq.Sets.Ensembles <> Ensemble def
+R10850:10850 ZornsLemma.Finite_sets <> X:80 var
+binder 10837:10837 <> C:85
+R10865:10868 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10857:10862 Coq.Sets.Finite_sets <> Finite ind
+R10864:10864 ZornsLemma.Finite_sets <> C:85 var
+R10879:10882 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10870:10872 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10869:10869 ZornsLemma.Finite_sets <> B:84 var
+R10873:10874 Coq.Sets.Image <> Im ind
+R10878:10878 ZornsLemma.Finite_sets <> f:82 var
+R10876:10876 ZornsLemma.Finite_sets <> C:85 var
+R10883:10890 Coq.Sets.Ensembles <> Included def
+R10894:10894 ZornsLemma.Finite_sets <> A:83 var
+R10892:10892 ZornsLemma.Finite_sets <> C:85 var
+R10969:10977 Coq.Sets.Ensembles <> Empty_set ind
+R10969:10977 Coq.Sets.Ensembles <> Empty_set ind
+R11161:11163 Coq.Sets.Ensembles <> Add def
+R11161:11163 Coq.Sets.Ensembles <> Add def
+R11199:11218 Coq.Sets.Finite_sets_facts <> Add_preserves_Finite thm
+R11199:11218 Coq.Sets.Finite_sets_facts <> Add_preserves_Finite thm
+R11246:11251 Coq.Sets.Image <> Im_add thm
+R11246:11251 Coq.Sets.Image <> Im_add thm

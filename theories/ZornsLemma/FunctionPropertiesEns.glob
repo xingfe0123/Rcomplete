@@ -1,0 +1,1096 @@
+DIGEST 65dbed04b2b8eb77ae59a3667c9c86ac
+FZornsLemma.FunctionPropertiesEns
+R132:146 Coq.Logic.ClassicalChoice <> <> lib
+R150:160 Coq.Logic.Description <> <> lib
+R164:177 Coq.Program.Subset <> <> lib
+R213:224 ZornsLemma.DecidableDec <> <> lib
+R228:244 ZornsLemma.EnsemblesImplicit <> <> lib
+R248:255 ZornsLemma.Families <> <> lib
+R259:276 ZornsLemma.FunctionProperties <> <> lib
+R280:284 ZornsLemma.Image <> <> lib
+R288:299 ZornsLemma.InverseImage <> <> lib
+R303:316 ZornsLemma.Powerset_facts <> <> lib
+R320:336 ZornsLemma.Proj1SigInjective <> <> lib
+R365:379 Coq.Classes.RelationClasses <> <> lib
+sec 391:411 <> FunctionPropertiesEns
+binder 425:425 <> A:1
+binder 427:427 <> B:2
+R447:450 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R446:446 ZornsLemma.FunctionPropertiesEns <> A:1 var
+R451:451 ZornsLemma.FunctionPropertiesEns <> B:2 var
+binder 442:442 <> f:3
+R459:466 Coq.Sets.Ensembles <> Ensemble def
+R468:468 ZornsLemma.FunctionPropertiesEns <> A:1 var
+binder 455:455 <> U:4
+R476:483 Coq.Sets.Ensembles <> Ensemble def
+R485:485 ZornsLemma.FunctionPropertiesEns <> B:2 var
+binder 472:472 <> V:5
+def 503:507 <> range
+R527:527 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.A var
+binder 523:523 <> x:6
+R536:539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R530:531 Coq.Sets.Ensembles <> In def
+R535:535 ZornsLemma.FunctionPropertiesEns <> x:6 var
+R533:533 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R540:541 Coq.Sets.Ensembles <> In def
+R546:546 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R548:548 ZornsLemma.FunctionPropertiesEns <> x:6 var
+R543:543 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+prf 561:584 <> range_char_inverse_image
+R597:601 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R592:596 ZornsLemma.FunctionPropertiesEns <> range def
+R602:609 Coq.Sets.Ensembles <> Included def
+R614:626 ZornsLemma.InverseImage <> inverse_image def
+R630:630 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+R628:628 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R611:611 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+prf 675:687 <> range_char_Im
+R700:704 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R695:699 ZornsLemma.FunctionPropertiesEns <> range def
+R705:712 Coq.Sets.Ensembles <> Included def
+R723:723 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+R715:716 Coq.Sets.Image <> Im ind
+R720:720 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R718:718 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R747:770 ZornsLemma.FunctionPropertiesEns <> range_char_inverse_image thm
+R747:770 ZornsLemma.FunctionPropertiesEns <> range_char_inverse_image thm
+R747:770 ZornsLemma.FunctionPropertiesEns <> range_char_inverse_image thm
+R797:820 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+R797:820 ZornsLemma.InverseImage <> inverse_image_Im_adjoint thm
+def 844:854 <> range_restr
+R861:865 ZornsLemma.FunctionPropertiesEns <> range def
+binder 857:857 <> H:7
+R892:895 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R874:875 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R877:879 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R881:883 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R890:891 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R880:880 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.A var
+binder 876:876 <> x:8
+R884:885 Coq.Sets.Ensembles <> In def
+R889:889 ZornsLemma.FunctionPropertiesEns <> x:8 var
+R887:887 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R896:897 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R899:901 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R903:905 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R912:913 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R902:902 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.B var
+binder 898:898 <> y:9
+R906:907 Coq.Sets.Ensembles <> In def
+R911:911 ZornsLemma.FunctionPropertiesEns <> y:9 var
+R909:909 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+R930:931 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R933:935 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R937:939 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R946:947 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R936:936 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.A var
+binder 932:932 <> x:10
+R940:941 Coq.Sets.Ensembles <> In def
+R945:945 ZornsLemma.FunctionPropertiesEns <> x:10 var
+R943:943 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+binder 926:926 <> p:11
+R958:962 Coq.Init.Specif <> exist constr
+R1021:1021 ZornsLemma.FunctionPropertiesEns <> H:7 var
+R1024:1032 Coq.Init.Specif <> proj1_sig def
+R1034:1034 ZornsLemma.FunctionPropertiesEns <> p:11 var
+R1038:1046 Coq.Init.Specif <> proj2_sig def
+R1048:1048 ZornsLemma.FunctionPropertiesEns <> p:11 var
+R995:995 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R998:1006 Coq.Init.Specif <> proj1_sig def
+R1008:1008 ZornsLemma.FunctionPropertiesEns <> p:11 var
+R973:973 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.B var
+binder 969:969 <> y:12
+R978:979 Coq.Sets.Ensembles <> In def
+R983:983 ZornsLemma.FunctionPropertiesEns <> y:12 var
+R981:981 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+def 1067:1079 <> injective_ens
+R1110:1110 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.A var
+binder 1102:1103 <> x0:13
+binder 1105:1106 <> x1:14
+R1126:1129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1119:1120 Coq.Sets.Ensembles <> In def
+R1124:1125 ZornsLemma.FunctionPropertiesEns <> x0:13 var
+R1122:1122 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R1137:1146 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1130:1131 Coq.Sets.Ensembles <> In def
+R1135:1136 ZornsLemma.FunctionPropertiesEns <> x1:14 var
+R1133:1133 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R1158:1167 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1151:1153 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1147:1147 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R1149:1150 ZornsLemma.FunctionPropertiesEns <> x0:13 var
+R1154:1154 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R1156:1157 ZornsLemma.FunctionPropertiesEns <> x1:14 var
+R1170:1172 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1168:1169 ZornsLemma.FunctionPropertiesEns <> x0:13 var
+R1173:1174 ZornsLemma.FunctionPropertiesEns <> x1:14 var
+def 1191:1204 <> surjective_ens
+R1231:1231 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.B var
+binder 1227:1227 <> y:15
+R1246:1255 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1240:1241 Coq.Sets.Ensembles <> In def
+R1245:1245 ZornsLemma.FunctionPropertiesEns <> y:15 var
+R1243:1243 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.V var
+R1256:1262 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1268:1277 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1267:1267 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.A var
+binder 1263:1263 <> x:16
+R1284:1287 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1278:1279 Coq.Sets.Ensembles <> In def
+R1283:1283 ZornsLemma.FunctionPropertiesEns <> x:16 var
+R1281:1281 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.U var
+R1289:1291 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1288:1288 ZornsLemma.FunctionPropertiesEns <> y:15 var
+R1292:1292 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R1294:1294 ZornsLemma.FunctionPropertiesEns <> x:16 var
+def 1311:1323 <> bijective_ens
+R1352:1355 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1339:1351 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R1356:1369 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+prf 1381:1398 <> injective_ens_char
+R1409:1413 ZornsLemma.FunctionPropertiesEns <> range def
+binder 1405:1405 <> H:17
+R1435:1445 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1422:1434 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R1446:1454 Coq.Sets.Image <> injective def
+R1457:1467 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R1469:1469 ZornsLemma.FunctionPropertiesEns <> H:17 var
+R1635:1650 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R1635:1650 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R1722:1726 Coq.Init.Specif <> exist constr
+R1760:1764 Coq.Init.Specif <> exist constr
+R1722:1726 Coq.Init.Specif <> exist constr
+R1760:1764 Coq.Init.Specif <> exist constr
+R1860:1875 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R1860:1875 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+prf 1978:2000 <> injective_injective_ens
+R2019:2022 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2008:2016 Coq.Sets.Image <> injective def
+R2018:2018 ZornsLemma.FunctionPropertiesEns <> FunctionPropertiesEns.f var
+R2023:2035 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+prf 2104:2122 <> surjective_ens_char
+R2133:2137 ZornsLemma.FunctionPropertiesEns <> range def
+binder 2129:2129 <> H:18
+R2160:2170 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2146:2159 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R2171:2180 ZornsLemma.FunctionProperties <> surjective def
+R2183:2193 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R2195:2195 ZornsLemma.FunctionPropertiesEns <> H:18 var
+R2314:2318 Coq.Init.Specif <> exist constr
+R2314:2318 Coq.Init.Specif <> exist constr
+R2341:2356 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R2341:2356 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R2422:2426 Coq.Init.Specif <> exist constr
+R2422:2426 Coq.Init.Specif <> exist constr
+R2513:2522 Coq.Logic.EqdepFacts <> eq_sig_fst thm
+R2513:2522 Coq.Logic.EqdepFacts <> eq_sig_fst thm
+R2555:2575 ZornsLemma.FunctionPropertiesEns FunctionPropertiesEns <> sec
+prf 2585:2592 <> range_id
+binder 2595:2595 <> A:19
+R2612:2619 Coq.Sets.Ensembles <> Ensemble def
+R2621:2621 ZornsLemma.FunctionPropertiesEns <> A:19 var
+binder 2606:2606 <> U:20
+binder 2608:2608 <> V:21
+R2640:2644 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2628:2632 ZornsLemma.FunctionPropertiesEns <> range def
+R2639:2639 ZornsLemma.FunctionPropertiesEns <> V:21 var
+R2637:2637 ZornsLemma.FunctionPropertiesEns <> U:20 var
+R2634:2635 Coq.Init.Datatypes <> id def
+R2645:2652 Coq.Sets.Ensembles <> Included def
+R2656:2656 ZornsLemma.FunctionPropertiesEns <> V:21 var
+R2654:2654 ZornsLemma.FunctionPropertiesEns <> U:20 var
+R2676:2688 ZornsLemma.FunctionPropertiesEns <> range_char_Im thm
+R2676:2688 ZornsLemma.FunctionPropertiesEns <> range_char_Im thm
+R2676:2688 ZornsLemma.FunctionPropertiesEns <> range_char_Im thm
+R2701:2705 ZornsLemma.Image <> Im_id thm
+R2701:2705 ZornsLemma.Image <> Im_id thm
+R2701:2705 ZornsLemma.Image <> Im_id thm
+inst 2748:2760 <> range_id_refl
+binder 2763:2763 <> A:22
+R2777:2785 Coq.Classes.RelationClasses <> Reflexive class
+R2789:2793 ZornsLemma.FunctionPropertiesEns <> range def
+R2795:2795 ZornsLemma.FunctionPropertiesEns <> A:22 var
+R2797:2797 ZornsLemma.FunctionPropertiesEns <> A:22 var
+R2799:2800 Coq.Init.Datatypes <> id def
+R2829:2836 ZornsLemma.FunctionPropertiesEns <> range_id thm
+R2829:2836 ZornsLemma.FunctionPropertiesEns <> range_id thm
+prf 2864:2873 <> range_full
+binder 2876:2876 <> A:23
+binder 2878:2878 <> B:24
+R2894:2897 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2893:2893 ZornsLemma.FunctionPropertiesEns <> A:23 var
+R2898:2898 ZornsLemma.FunctionPropertiesEns <> B:24 var
+binder 2889:2889 <> f:25
+R2906:2913 Coq.Sets.Ensembles <> Ensemble def
+R2915:2915 ZornsLemma.FunctionPropertiesEns <> A:23 var
+binder 2902:2902 <> U:26
+R2922:2926 ZornsLemma.FunctionPropertiesEns <> range def
+R2932:2939 Coq.Sets.Ensembles <> Full_set ind
+R2930:2930 ZornsLemma.FunctionPropertiesEns <> U:26 var
+R2928:2928 ZornsLemma.FunctionPropertiesEns <> f:25 var
+prf 2986:3004 <> injective_ens_empty
+binder 3009:3009 <> X:27
+binder 3011:3011 <> Y:28
+R3027:3030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3026:3026 ZornsLemma.FunctionPropertiesEns <> X:27 var
+R3031:3031 ZornsLemma.FunctionPropertiesEns <> Y:28 var
+binder 3022:3022 <> f:29
+R3038:3050 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R3054:3062 Coq.Sets.Ensembles <> Empty_set ind
+R3052:3052 ZornsLemma.FunctionPropertiesEns <> f:29 var
+prf 3115:3130 <> bijective_ens_id
+binder 3133:3133 <> A:30
+R3148:3155 Coq.Sets.Ensembles <> Ensemble def
+R3157:3157 ZornsLemma.FunctionPropertiesEns <> A:30 var
+binder 3144:3144 <> U:31
+R3164:3176 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R3183:3183 ZornsLemma.FunctionPropertiesEns <> U:31 var
+R3181:3181 ZornsLemma.FunctionPropertiesEns <> U:31 var
+R3178:3179 Coq.Init.Datatypes <> id def
+prf 3270:3286 <> surjective_ens_Im
+binder 3289:3289 <> X:32
+binder 3291:3291 <> Y:33
+R3307:3310 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3306:3306 ZornsLemma.FunctionPropertiesEns <> X:32 var
+R3311:3311 ZornsLemma.FunctionPropertiesEns <> Y:33 var
+binder 3302:3302 <> f:34
+R3321:3328 Coq.Sets.Ensembles <> Ensemble def
+R3330:3330 ZornsLemma.FunctionPropertiesEns <> X:32 var
+binder 3317:3317 <> U:35
+R3337:3350 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R3357:3358 Coq.Sets.Image <> Im ind
+R3362:3362 ZornsLemma.FunctionPropertiesEns <> f:34 var
+R3360:3360 ZornsLemma.FunctionPropertiesEns <> U:35 var
+R3354:3354 ZornsLemma.FunctionPropertiesEns <> U:35 var
+R3352:3352 ZornsLemma.FunctionPropertiesEns <> f:34 var
+def 3499:3513 <> inverse_map_ens
+binder 3516:3516 <> A:36
+binder 3518:3518 <> B:37
+R3536:3539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3535:3535 ZornsLemma.FunctionPropertiesEns <> A:36 var
+R3540:3540 ZornsLemma.FunctionPropertiesEns <> B:37 var
+binder 3531:3531 <> f:38
+R3549:3552 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3548:3548 ZornsLemma.FunctionPropertiesEns <> B:37 var
+R3553:3553 ZornsLemma.FunctionPropertiesEns <> A:36 var
+binder 3544:3544 <> g:39
+R3563:3570 Coq.Sets.Ensembles <> Ensemble def
+R3572:3572 ZornsLemma.FunctionPropertiesEns <> A:36 var
+binder 3559:3559 <> U:40
+R3580:3587 Coq.Sets.Ensembles <> Ensemble def
+R3589:3589 ZornsLemma.FunctionPropertiesEns <> B:37 var
+binder 3576:3576 <> V:41
+R3604:3604 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3640:3649 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3685:3685 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3616:3616 ZornsLemma.FunctionPropertiesEns <> A:36 var
+binder 3612:3612 <> a:42
+R3625:3628 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3619:3620 Coq.Sets.Ensembles <> In def
+R3624:3624 ZornsLemma.FunctionPropertiesEns <> a:42 var
+R3622:3622 ZornsLemma.FunctionPropertiesEns <> U:40 var
+R3636:3638 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3629:3629 ZornsLemma.FunctionPropertiesEns <> g:39 var
+R3632:3632 ZornsLemma.FunctionPropertiesEns <> f:38 var
+R3634:3634 ZornsLemma.FunctionPropertiesEns <> a:42 var
+R3639:3639 ZornsLemma.FunctionPropertiesEns <> a:42 var
+R3661:3661 ZornsLemma.FunctionPropertiesEns <> B:37 var
+binder 3657:3657 <> b:43
+R3670:3673 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3664:3665 Coq.Sets.Ensembles <> In def
+R3669:3669 ZornsLemma.FunctionPropertiesEns <> b:43 var
+R3667:3667 ZornsLemma.FunctionPropertiesEns <> V:41 var
+R3681:3683 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3674:3674 ZornsLemma.FunctionPropertiesEns <> f:38 var
+R3677:3677 ZornsLemma.FunctionPropertiesEns <> g:39 var
+R3679:3679 ZornsLemma.FunctionPropertiesEns <> b:43 var
+R3684:3684 ZornsLemma.FunctionPropertiesEns <> b:43 var
+prf 3695:3713 <> inverse_map_ens_sym
+binder 3718:3718 <> A:44
+binder 3720:3720 <> B:45
+R3736:3739 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3735:3735 ZornsLemma.FunctionPropertiesEns <> A:44 var
+R3740:3740 ZornsLemma.FunctionPropertiesEns <> B:45 var
+binder 3731:3731 <> f:46
+R3749:3752 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3748:3748 ZornsLemma.FunctionPropertiesEns <> B:45 var
+R3753:3753 ZornsLemma.FunctionPropertiesEns <> A:44 var
+binder 3744:3744 <> g:47
+binder 3756:3756 <> U:48
+binder 3758:3758 <> V:49
+R3787:3792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3764:3778 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R3786:3786 ZornsLemma.FunctionPropertiesEns <> V:49 var
+R3784:3784 ZornsLemma.FunctionPropertiesEns <> U:48 var
+R3782:3782 ZornsLemma.FunctionPropertiesEns <> g:47 var
+R3780:3780 ZornsLemma.FunctionPropertiesEns <> f:46 var
+R3793:3807 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R3815:3815 ZornsLemma.FunctionPropertiesEns <> U:48 var
+R3813:3813 ZornsLemma.FunctionPropertiesEns <> V:49 var
+R3811:3811 ZornsLemma.FunctionPropertiesEns <> f:46 var
+R3809:3809 ZornsLemma.FunctionPropertiesEns <> g:47 var
+prf 3851:3886 <> inverse_map_ens_surjective_ens_range
+binder 3889:3889 <> A:50
+binder 3891:3891 <> B:51
+R3909:3912 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3908:3908 ZornsLemma.FunctionPropertiesEns <> A:50 var
+R3913:3913 ZornsLemma.FunctionPropertiesEns <> B:51 var
+binder 3904:3904 <> f:52
+R3922:3925 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3921:3921 ZornsLemma.FunctionPropertiesEns <> B:51 var
+R3926:3926 ZornsLemma.FunctionPropertiesEns <> A:50 var
+binder 3917:3917 <> g:53
+binder 3929:3929 <> U:54
+binder 3931:3931 <> V:55
+R3957:3962 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3937:3950 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R3956:3956 ZornsLemma.FunctionPropertiesEns <> V:55 var
+R3954:3954 ZornsLemma.FunctionPropertiesEns <> U:54 var
+R3952:3952 ZornsLemma.FunctionPropertiesEns <> f:52 var
+R3986:3991 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3963:3977 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R3985:3985 ZornsLemma.FunctionPropertiesEns <> V:55 var
+R3983:3983 ZornsLemma.FunctionPropertiesEns <> U:54 var
+R3981:3981 ZornsLemma.FunctionPropertiesEns <> g:53 var
+R3979:3979 ZornsLemma.FunctionPropertiesEns <> f:52 var
+R3992:3996 ZornsLemma.FunctionPropertiesEns <> range def
+R4002:4002 ZornsLemma.FunctionPropertiesEns <> U:54 var
+R4000:4000 ZornsLemma.FunctionPropertiesEns <> V:55 var
+R3998:3998 ZornsLemma.FunctionPropertiesEns <> g:53 var
+prf 4130:4162 <> bijective_impl_invertible_ens_dec
+binder 4167:4167 <> A:56
+binder 4169:4169 <> B:57
+R4185:4188 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4184:4184 ZornsLemma.FunctionPropertiesEns <> A:56 var
+R4189:4189 ZornsLemma.FunctionPropertiesEns <> B:57 var
+binder 4180:4180 <> f:58
+R4197:4204 Coq.Sets.Ensembles <> Ensemble def
+R4206:4206 ZornsLemma.FunctionPropertiesEns <> A:56 var
+binder 4193:4193 <> U:59
+R4214:4221 Coq.Sets.Ensembles <> Ensemble def
+R4223:4223 ZornsLemma.FunctionPropertiesEns <> B:57 var
+binder 4210:4210 <> V:60
+R4234:4234 ZornsLemma.FunctionPropertiesEns <> A:56 var
+binder 4229:4230 <> a0:61
+R4254:4254 ZornsLemma.FunctionPropertiesEns <> B:57 var
+binder 4250:4250 <> b:62
+R4263:4266 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R4257:4258 Coq.Sets.Ensembles <> In def
+R4262:4262 ZornsLemma.FunctionPropertiesEns <> b:62 var
+R4260:4260 ZornsLemma.FunctionPropertiesEns <> V:60 var
+R4267:4268 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4269:4270 Coq.Sets.Ensembles <> In def
+R4274:4274 ZornsLemma.FunctionPropertiesEns <> b:62 var
+R4272:4272 ZornsLemma.FunctionPropertiesEns <> V:60 var
+binder 4238:4239 <> HV:63
+R4292:4297 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4281:4285 ZornsLemma.FunctionPropertiesEns <> range def
+R4291:4291 ZornsLemma.FunctionPropertiesEns <> V:60 var
+R4289:4289 ZornsLemma.FunctionPropertiesEns <> U:59 var
+R4287:4287 ZornsLemma.FunctionPropertiesEns <> f:58 var
+R4317:4322 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4298:4310 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R4316:4316 ZornsLemma.FunctionPropertiesEns <> V:60 var
+R4314:4314 ZornsLemma.FunctionPropertiesEns <> U:59 var
+R4312:4312 ZornsLemma.FunctionPropertiesEns <> f:58 var
+R4323:4329 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4340:4341 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4335:4338 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4334:4334 ZornsLemma.FunctionPropertiesEns <> B:57 var
+R4339:4339 ZornsLemma.FunctionPropertiesEns <> A:56 var
+binder 4330:4330 <> g:64
+R4342:4356 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R4364:4364 ZornsLemma.FunctionPropertiesEns <> V:60 var
+R4362:4362 ZornsLemma.FunctionPropertiesEns <> U:59 var
+R4360:4360 ZornsLemma.FunctionPropertiesEns <> g:64 var
+R4358:4358 ZornsLemma.FunctionPropertiesEns <> f:58 var
+binder 4414:4414 <> b:65
+R4434:4435 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4437:4439 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4441:4443 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4522:4523 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 4436:4436 <> a:66
+R4444:4444 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4472:4502 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4521:4521 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4451:4454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4445:4446 Coq.Sets.Ensembles <> In def
+R4450:4450 ZornsLemma.FunctionPropertiesEns <> b:65 var
+R4461:4464 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4455:4456 Coq.Sets.Ensembles <> In def
+R4460:4460 ZornsLemma.FunctionPropertiesEns <> a:66 var
+R4468:4470 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4467:4467 ZornsLemma.FunctionPropertiesEns <> a:66 var
+R4471:4471 ZornsLemma.FunctionPropertiesEns <> b:65 var
+R4511:4514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4503:4504 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4505:4506 Coq.Sets.Ensembles <> In def
+R4510:4510 ZornsLemma.FunctionPropertiesEns <> b:65 var
+R4516:4518 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4515:4515 ZornsLemma.FunctionPropertiesEns <> a:66 var
+binder 4414:4414 <> b:67
+R4434:4435 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4437:4439 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4441:4443 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R4522:4523 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 4436:4436 <> a:68
+R4444:4444 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4472:4502 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4521:4521 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4451:4454 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4445:4446 Coq.Sets.Ensembles <> In def
+R4450:4450 ZornsLemma.FunctionPropertiesEns <> b:67 var
+R4461:4464 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4455:4456 Coq.Sets.Ensembles <> In def
+R4460:4460 ZornsLemma.FunctionPropertiesEns <> a:68 var
+R4468:4470 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4467:4467 ZornsLemma.FunctionPropertiesEns <> a:68 var
+R4471:4471 ZornsLemma.FunctionPropertiesEns <> b:67 var
+R4511:4514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4503:4504 Coq.Init.Logic <> ::type_scope:'~'_x not
+R4505:4506 Coq.Sets.Ensembles <> In def
+R4510:4510 ZornsLemma.FunctionPropertiesEns <> b:67 var
+R4516:4518 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4515:4515 ZornsLemma.FunctionPropertiesEns <> a:68 var
+R4551:4583 Coq.Logic.Description <> constructive_definite_description prfax
+R4551:4583 Coq.Logic.Description <> constructive_definite_description prfax
+binder 4762:4762 <> b:69
+R4767:4775 Coq.Init.Specif <> proj1_sig def
+R4780:4780 ZornsLemma.FunctionPropertiesEns <> b:69 var
+binder 4762:4762 <> b:70
+R4767:4775 Coq.Init.Specif <> proj1_sig def
+R4780:4780 ZornsLemma.FunctionPropertiesEns <> b:70 var
+R4827:4835 Coq.Init.Specif <> proj2_sig def
+R4827:4835 Coq.Init.Specif <> proj2_sig def
+R4966:4974 Coq.Init.Specif <> proj2_sig def
+R4966:4974 Coq.Init.Specif <> proj2_sig def
+prf 5059:5091 <> bijective_ens_impl_invertible_ens
+binder 5096:5096 <> A:71
+binder 5098:5098 <> B:72
+R5114:5117 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5113:5113 ZornsLemma.FunctionPropertiesEns <> A:71 var
+R5118:5118 ZornsLemma.FunctionPropertiesEns <> B:72 var
+binder 5109:5109 <> f:73
+R5126:5133 Coq.Sets.Ensembles <> Ensemble def
+R5135:5135 ZornsLemma.FunctionPropertiesEns <> A:71 var
+binder 5122:5122 <> U:74
+R5143:5150 Coq.Sets.Ensembles <> Ensemble def
+R5152:5152 ZornsLemma.FunctionPropertiesEns <> B:72 var
+binder 5139:5139 <> V:75
+R5163:5163 ZornsLemma.FunctionPropertiesEns <> A:71 var
+binder 5158:5159 <> a0:76
+R5181:5186 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5170:5174 ZornsLemma.FunctionPropertiesEns <> range def
+R5180:5180 ZornsLemma.FunctionPropertiesEns <> V:75 var
+R5178:5178 ZornsLemma.FunctionPropertiesEns <> U:74 var
+R5176:5176 ZornsLemma.FunctionPropertiesEns <> f:73 var
+R5206:5211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5187:5199 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R5205:5205 ZornsLemma.FunctionPropertiesEns <> V:75 var
+R5203:5203 ZornsLemma.FunctionPropertiesEns <> U:74 var
+R5201:5201 ZornsLemma.FunctionPropertiesEns <> f:73 var
+R5212:5218 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5229:5230 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5224:5227 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5223:5223 ZornsLemma.FunctionPropertiesEns <> B:72 var
+R5228:5228 ZornsLemma.FunctionPropertiesEns <> A:71 var
+binder 5219:5219 <> g:77
+R5231:5245 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R5253:5253 ZornsLemma.FunctionPropertiesEns <> V:75 var
+R5251:5251 ZornsLemma.FunctionPropertiesEns <> U:74 var
+R5249:5249 ZornsLemma.FunctionPropertiesEns <> g:77 var
+R5247:5247 ZornsLemma.FunctionPropertiesEns <> f:73 var
+R5271:5303 ZornsLemma.FunctionPropertiesEns <> bijective_impl_invertible_ens_dec thm
+R5271:5303 ZornsLemma.FunctionPropertiesEns <> bijective_impl_invertible_ens_dec thm
+R5330:5336 Coq.Logic.Classical_Prop <> classic prfax
+R5330:5336 Coq.Logic.Classical_Prop <> classic prfax
+prf 5351:5385 <> inverse_map_ens_range_bijective_ens
+binder 5390:5390 <> A:78
+binder 5392:5392 <> B:79
+R5408:5411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5407:5407 ZornsLemma.FunctionPropertiesEns <> A:78 var
+R5412:5412 ZornsLemma.FunctionPropertiesEns <> B:79 var
+binder 5403:5403 <> f:80
+R5421:5424 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5420:5420 ZornsLemma.FunctionPropertiesEns <> B:79 var
+R5425:5425 ZornsLemma.FunctionPropertiesEns <> A:78 var
+binder 5416:5416 <> g:81
+R5433:5440 Coq.Sets.Ensembles <> Ensemble def
+R5442:5442 ZornsLemma.FunctionPropertiesEns <> A:78 var
+binder 5429:5429 <> U:82
+R5450:5457 Coq.Sets.Ensembles <> Ensemble def
+R5459:5459 ZornsLemma.FunctionPropertiesEns <> B:79 var
+binder 5446:5446 <> V:83
+R5477:5482 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5466:5470 ZornsLemma.FunctionPropertiesEns <> range def
+R5476:5476 ZornsLemma.FunctionPropertiesEns <> V:83 var
+R5474:5474 ZornsLemma.FunctionPropertiesEns <> U:82 var
+R5472:5472 ZornsLemma.FunctionPropertiesEns <> f:80 var
+R5506:5511 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5483:5497 ZornsLemma.FunctionPropertiesEns <> inverse_map_ens def
+R5505:5505 ZornsLemma.FunctionPropertiesEns <> V:83 var
+R5503:5503 ZornsLemma.FunctionPropertiesEns <> U:82 var
+R5501:5501 ZornsLemma.FunctionPropertiesEns <> g:81 var
+R5499:5499 ZornsLemma.FunctionPropertiesEns <> f:80 var
+R5512:5524 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R5530:5530 ZornsLemma.FunctionPropertiesEns <> U:82 var
+R5528:5528 ZornsLemma.FunctionPropertiesEns <> V:83 var
+R5526:5526 ZornsLemma.FunctionPropertiesEns <> g:81 var
+sec 5805:5811 <> compose
+binder 5825:5825 <> A:84
+binder 5827:5827 <> B:85
+binder 5829:5829 <> C:86
+R5848:5855 Coq.Sets.Ensembles <> Ensemble def
+R5857:5857 ZornsLemma.FunctionPropertiesEns <> A:84 var
+binder 5844:5844 <> U:87
+R5865:5872 Coq.Sets.Ensembles <> Ensemble def
+R5874:5874 ZornsLemma.FunctionPropertiesEns <> B:85 var
+binder 5861:5861 <> V:88
+R5882:5889 Coq.Sets.Ensembles <> Ensemble def
+R5891:5891 ZornsLemma.FunctionPropertiesEns <> C:86 var
+binder 5878:5878 <> W:89
+prf 5904:5916 <> range_compose
+R5924:5927 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5923:5923 ZornsLemma.FunctionPropertiesEns <> compose.A var
+R5928:5928 ZornsLemma.FunctionPropertiesEns <> compose.B var
+binder 5919:5919 <> f:90
+R5937:5940 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5936:5936 ZornsLemma.FunctionPropertiesEns <> compose.B var
+R5941:5941 ZornsLemma.FunctionPropertiesEns <> compose.C var
+binder 5932:5932 <> g:91
+R5961:5964 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5950:5954 ZornsLemma.FunctionPropertiesEns <> range def
+R5960:5960 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R5958:5958 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R5956:5956 ZornsLemma.FunctionPropertiesEns <> f:90 var
+R5976:5983 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5965:5969 ZornsLemma.FunctionPropertiesEns <> range def
+R5975:5975 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R5973:5973 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R5971:5971 ZornsLemma.FunctionPropertiesEns <> g:91 var
+R5984:5988 ZornsLemma.FunctionPropertiesEns <> range def
+R6006:6006 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R6004:6004 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R5991:5997 Coq.Program.Basics <> compose def
+R6001:6001 ZornsLemma.FunctionPropertiesEns <> f:90 var
+R5999:5999 ZornsLemma.FunctionPropertiesEns <> g:91 var
+prf 6079:6099 <> injective_ens_compose
+R6107:6110 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6106:6106 ZornsLemma.FunctionPropertiesEns <> compose.A var
+R6111:6111 ZornsLemma.FunctionPropertiesEns <> compose.B var
+binder 6102:6102 <> f:92
+R6120:6123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6119:6119 ZornsLemma.FunctionPropertiesEns <> compose.B var
+R6124:6124 ZornsLemma.FunctionPropertiesEns <> compose.C var
+binder 6115:6115 <> g:93
+R6144:6151 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6133:6137 ZornsLemma.FunctionPropertiesEns <> range def
+R6143:6143 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6141:6141 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6139:6139 ZornsLemma.FunctionPropertiesEns <> f:92 var
+R6169:6176 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6152:6164 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R6168:6168 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6166:6166 ZornsLemma.FunctionPropertiesEns <> f:92 var
+R6194:6201 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6177:6189 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R6193:6193 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6191:6191 ZornsLemma.FunctionPropertiesEns <> g:93 var
+R6202:6214 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R6230:6230 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6217:6223 Coq.Program.Basics <> compose def
+R6227:6227 ZornsLemma.FunctionPropertiesEns <> f:92 var
+R6225:6225 ZornsLemma.FunctionPropertiesEns <> g:93 var
+prf 6274:6295 <> surjective_ens_compose
+R6303:6306 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6302:6302 ZornsLemma.FunctionPropertiesEns <> compose.A var
+R6307:6307 ZornsLemma.FunctionPropertiesEns <> compose.B var
+binder 6298:6298 <> f:94
+R6316:6319 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6315:6315 ZornsLemma.FunctionPropertiesEns <> compose.B var
+R6320:6320 ZornsLemma.FunctionPropertiesEns <> compose.C var
+binder 6311:6311 <> g:95
+R6349:6356 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6329:6342 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R6348:6348 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6346:6346 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6344:6344 ZornsLemma.FunctionPropertiesEns <> f:94 var
+R6377:6384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6357:6370 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R6376:6376 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R6374:6374 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6372:6372 ZornsLemma.FunctionPropertiesEns <> g:95 var
+R6385:6398 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R6416:6416 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R6414:6414 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6401:6407 Coq.Program.Basics <> compose def
+R6411:6411 ZornsLemma.FunctionPropertiesEns <> f:94 var
+R6409:6409 ZornsLemma.FunctionPropertiesEns <> g:95 var
+prf 6600:6620 <> bijective_ens_compose
+R6628:6631 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6627:6627 ZornsLemma.FunctionPropertiesEns <> compose.A var
+R6632:6632 ZornsLemma.FunctionPropertiesEns <> compose.B var
+binder 6623:6623 <> f:96
+R6641:6644 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6640:6640 ZornsLemma.FunctionPropertiesEns <> compose.B var
+R6645:6645 ZornsLemma.FunctionPropertiesEns <> compose.C var
+binder 6636:6636 <> g:97
+R6665:6672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6654:6658 ZornsLemma.FunctionPropertiesEns <> range def
+R6664:6664 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6662:6662 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6660:6660 ZornsLemma.FunctionPropertiesEns <> f:96 var
+R6692:6695 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6673:6685 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R6691:6691 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6689:6689 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6687:6687 ZornsLemma.FunctionPropertiesEns <> f:96 var
+R6715:6722 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6696:6708 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R6714:6714 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R6712:6712 ZornsLemma.FunctionPropertiesEns <> compose.V var
+R6710:6710 ZornsLemma.FunctionPropertiesEns <> g:97 var
+R6723:6735 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R6753:6753 ZornsLemma.FunctionPropertiesEns <> compose.W var
+R6751:6751 ZornsLemma.FunctionPropertiesEns <> compose.U var
+R6738:6744 Coq.Program.Basics <> compose def
+R6748:6748 ZornsLemma.FunctionPropertiesEns <> f:96 var
+R6746:6746 ZornsLemma.FunctionPropertiesEns <> g:97 var
+R6824:6844 ZornsLemma.FunctionPropertiesEns <> injective_ens_compose thm
+R6824:6844 ZornsLemma.FunctionPropertiesEns <> injective_ens_compose thm
+R6867:6888 ZornsLemma.FunctionPropertiesEns <> surjective_ens_compose thm
+R6867:6888 ZornsLemma.FunctionPropertiesEns <> surjective_ens_compose thm
+R6909:6915 ZornsLemma.FunctionPropertiesEns compose <> sec
+def 6979:6995 <> sig_fn_extend_dec
+binder 6998:6998 <> X:98
+binder 7000:7000 <> Y:99
+R7016:7019 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7015:7015 ZornsLemma.FunctionPropertiesEns <> X:98 var
+binder 7011:7011 <> P:100
+R7045:7045 ZornsLemma.FunctionPropertiesEns <> X:98 var
+binder 7041:7041 <> x:101
+R7048:7048 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7052:7056 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7062:7062 Coq.Init.Specif <> ::type_scope:'{'_x_'}'_'+'_'{'_x_'}' not
+R7049:7049 ZornsLemma.FunctionPropertiesEns <> P:100 var
+R7051:7051 ZornsLemma.FunctionPropertiesEns <> x:101 var
+R7057:7058 Coq.Init.Logic <> ::type_scope:'~'_x not
+R7059:7059 ZornsLemma.FunctionPropertiesEns <> P:100 var
+R7061:7061 ZornsLemma.FunctionPropertiesEns <> x:101 var
+binder 7029:7030 <> HP:102
+R7077:7080 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7072:7074 Coq.Init.Specif <> sig ind
+R7076:7076 ZornsLemma.FunctionPropertiesEns <> P:100 var
+R7081:7081 ZornsLemma.FunctionPropertiesEns <> Y:99 var
+binder 7068:7068 <> f:103
+R7089:7089 ZornsLemma.FunctionPropertiesEns <> Y:99 var
+binder 7085:7085 <> y:104
+R7095:7098 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7094:7094 ZornsLemma.FunctionPropertiesEns <> X:98 var
+R7099:7099 ZornsLemma.FunctionPropertiesEns <> Y:99 var
+R7114:7114 ZornsLemma.FunctionPropertiesEns <> X:98 var
+binder 7110:7110 <> x:105
+R7129:7130 ZornsLemma.FunctionPropertiesEns <> HP:102 var
+R7132:7132 ZornsLemma.FunctionPropertiesEns <> x:105 var
+R7145:7148 Coq.Init.Specif <> left constr
+R7156:7156 ZornsLemma.FunctionPropertiesEns <> f:103 var
+R7159:7163 Coq.Init.Specif <> exist constr
+R7167:7167 ZornsLemma.FunctionPropertiesEns <> x:105 var
+R7165:7165 ZornsLemma.FunctionPropertiesEns <> P:100 var
+R7179:7183 Coq.Init.Specif <> right constr
+R7190:7190 ZornsLemma.FunctionPropertiesEns <> y:104 var
+def 7213:7225 <> sig_fn_extend
+binder 7228:7228 <> X:106
+binder 7230:7230 <> Y:107
+R7246:7249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7245:7245 ZornsLemma.FunctionPropertiesEns <> X:106 var
+binder 7241:7241 <> P:108
+R7268:7271 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7263:7265 Coq.Init.Specif <> sig ind
+R7267:7267 ZornsLemma.FunctionPropertiesEns <> P:108 var
+R7272:7272 ZornsLemma.FunctionPropertiesEns <> Y:107 var
+binder 7259:7259 <> f:109
+R7280:7280 ZornsLemma.FunctionPropertiesEns <> Y:107 var
+binder 7276:7276 <> y:110
+R7286:7289 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7285:7285 ZornsLemma.FunctionPropertiesEns <> X:106 var
+R7290:7290 ZornsLemma.FunctionPropertiesEns <> Y:107 var
+R7297:7313 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_dec def
+R7350:7350 ZornsLemma.FunctionPropertiesEns <> y:110 var
+R7348:7348 ZornsLemma.FunctionPropertiesEns <> f:109 var
+binder 7324:7324 <> x:111
+R7329:7339 ZornsLemma.DecidableDec <> classic_dec thm
+R7342:7342 ZornsLemma.FunctionPropertiesEns <> P:108 var
+R7344:7344 ZornsLemma.FunctionPropertiesEns <> x:111 var
+prf 7360:7378 <> sig_fn_extend_range
+binder 7381:7381 <> X:112
+binder 7383:7383 <> Y:113
+R7399:7402 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7398:7398 ZornsLemma.FunctionPropertiesEns <> X:112 var
+binder 7394:7394 <> P:114
+R7421:7424 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7416:7418 Coq.Init.Specif <> sig ind
+R7420:7420 ZornsLemma.FunctionPropertiesEns <> P:114 var
+R7425:7425 ZornsLemma.FunctionPropertiesEns <> Y:113 var
+binder 7412:7412 <> f:115
+R7433:7433 ZornsLemma.FunctionPropertiesEns <> Y:113 var
+binder 7429:7429 <> y:116
+R7441:7448 Coq.Sets.Ensembles <> Ensemble def
+R7450:7450 ZornsLemma.FunctionPropertiesEns <> Y:113 var
+binder 7437:7437 <> V:117
+R7475:7480 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7457:7461 ZornsLemma.FunctionPropertiesEns <> range def
+R7474:7474 ZornsLemma.FunctionPropertiesEns <> V:117 var
+R7465:7472 Coq.Sets.Ensembles <> Full_set ind
+R7463:7463 ZornsLemma.FunctionPropertiesEns <> f:115 var
+R7481:7485 ZornsLemma.FunctionPropertiesEns <> range def
+R7509:7509 ZornsLemma.FunctionPropertiesEns <> V:117 var
+R7507:7507 ZornsLemma.FunctionPropertiesEns <> P:114 var
+R7488:7500 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend def
+R7504:7504 ZornsLemma.FunctionPropertiesEns <> y:116 var
+R7502:7502 ZornsLemma.FunctionPropertiesEns <> f:115 var
+R7554:7564 ZornsLemma.DecidableDec <> classic_dec thm
+R7554:7564 ZornsLemma.DecidableDec <> classic_dec thm
+prf 7630:7656 <> sig_fn_extend_injective_ens
+binder 7659:7659 <> X:118
+binder 7661:7661 <> Y:119
+R7677:7680 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7676:7676 ZornsLemma.FunctionPropertiesEns <> X:118 var
+binder 7672:7672 <> P:120
+R7699:7702 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7694:7696 Coq.Init.Specif <> sig ind
+R7698:7698 ZornsLemma.FunctionPropertiesEns <> P:120 var
+R7703:7703 ZornsLemma.FunctionPropertiesEns <> Y:119 var
+binder 7690:7690 <> f:121
+R7711:7711 ZornsLemma.FunctionPropertiesEns <> Y:119 var
+binder 7707:7707 <> y:122
+R7753:7761 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R7718:7730 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R7752:7752 ZornsLemma.FunctionPropertiesEns <> P:120 var
+R7733:7745 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend def
+R7749:7749 ZornsLemma.FunctionPropertiesEns <> y:122 var
+R7747:7747 ZornsLemma.FunctionPropertiesEns <> f:121 var
+R7762:7770 Coq.Sets.Image <> injective def
+R7772:7772 ZornsLemma.FunctionPropertiesEns <> f:121 var
+R7872:7887 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R7872:7887 Coq.Logic.ProofIrrelevance ProofIrrelevanceTheory subset_eq_compat thm
+R7933:7943 ZornsLemma.DecidableDec <> classic_dec thm
+R7950:7960 ZornsLemma.DecidableDec <> classic_dec thm
+R7933:7943 ZornsLemma.DecidableDec <> classic_dec thm
+R7950:7960 ZornsLemma.DecidableDec <> classic_dec thm
+R7950:7960 ZornsLemma.DecidableDec <> classic_dec thm
+R8005:8021 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8005:8021 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8047:8063 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8047:8063 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8144:8148 Coq.Init.Specif <> exist constr
+R8161:8165 Coq.Init.Specif <> exist constr
+R8144:8148 Coq.Init.Specif <> exist constr
+R8161:8165 Coq.Init.Specif <> exist constr
+R8208:8218 ZornsLemma.DecidableDec <> classic_dec thm
+R8225:8235 ZornsLemma.DecidableDec <> classic_dec thm
+R8208:8218 ZornsLemma.DecidableDec <> classic_dec thm
+R8225:8235 ZornsLemma.DecidableDec <> classic_dec thm
+R8225:8235 ZornsLemma.DecidableDec <> classic_dec thm
+R8280:8296 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8280:8296 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8322:8338 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8322:8338 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+prf 8439:8466 <> sig_fn_extend_surjective_ens
+binder 8469:8469 <> X:123
+binder 8471:8471 <> Y:124
+R8487:8490 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8486:8486 ZornsLemma.FunctionPropertiesEns <> X:123 var
+binder 8482:8482 <> P:125
+R8509:8512 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8504:8506 Coq.Init.Specif <> sig ind
+R8508:8508 ZornsLemma.FunctionPropertiesEns <> P:125 var
+R8513:8513 ZornsLemma.FunctionPropertiesEns <> Y:124 var
+binder 8500:8500 <> f:126
+R8522:8522 ZornsLemma.FunctionPropertiesEns <> Y:124 var
+binder 8517:8518 <> y0:127
+R8530:8537 Coq.Sets.Ensembles <> Ensemble def
+R8539:8539 ZornsLemma.FunctionPropertiesEns <> Y:124 var
+binder 8526:8526 <> V:128
+R8585:8593 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8546:8559 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R8584:8584 ZornsLemma.FunctionPropertiesEns <> V:128 var
+R8582:8582 ZornsLemma.FunctionPropertiesEns <> P:125 var
+R8562:8574 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend def
+R8578:8579 ZornsLemma.FunctionPropertiesEns <> y0:127 var
+R8576:8576 ZornsLemma.FunctionPropertiesEns <> f:126 var
+R8594:8607 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R8620:8620 ZornsLemma.FunctionPropertiesEns <> V:128 var
+R8611:8618 Coq.Sets.Ensembles <> Full_set ind
+R8609:8609 ZornsLemma.FunctionPropertiesEns <> f:126 var
+R8724:8728 Coq.Init.Specif <> exist constr
+R8724:8728 Coq.Init.Specif <> exist constr
+R8785:8795 ZornsLemma.DecidableDec <> classic_dec thm
+R8785:8795 ZornsLemma.DecidableDec <> classic_dec thm
+R8834:8850 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8834:8850 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R8997:9007 ZornsLemma.DecidableDec <> classic_dec thm
+R8997:9007 ZornsLemma.DecidableDec <> classic_dec thm
+R9046:9062 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+R9046:9062 Coq.Logic.Classical_Prop <> proof_irrelevance thm
+prf 9132:9157 <> injective_ens_left_inverse
+binder 9160:9160 <> X:129
+binder 9162:9162 <> Y:130
+R9179:9186 Coq.Sets.Ensembles <> Ensemble def
+R9188:9188 ZornsLemma.FunctionPropertiesEns <> X:129 var
+binder 9175:9175 <> U:131
+R9196:9203 Coq.Sets.Ensembles <> Ensemble def
+R9205:9205 ZornsLemma.FunctionPropertiesEns <> Y:130 var
+binder 9192:9192 <> V:132
+R9214:9217 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9213:9213 ZornsLemma.FunctionPropertiesEns <> X:129 var
+R9218:9218 ZornsLemma.FunctionPropertiesEns <> Y:130 var
+binder 9209:9209 <> f:133
+R9227:9227 ZornsLemma.FunctionPropertiesEns <> X:129 var
+binder 9222:9223 <> x0:134
+R9241:9246 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9234:9235 Coq.Sets.Ensembles <> In def
+R9239:9240 ZornsLemma.FunctionPropertiesEns <> x0:134 var
+R9237:9237 ZornsLemma.FunctionPropertiesEns <> U:131 var
+R9258:9263 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9247:9251 ZornsLemma.FunctionPropertiesEns <> range def
+R9257:9257 ZornsLemma.FunctionPropertiesEns <> V:132 var
+R9255:9255 ZornsLemma.FunctionPropertiesEns <> U:131 var
+R9253:9253 ZornsLemma.FunctionPropertiesEns <> f:133 var
+R9281:9286 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9264:9276 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R9280:9280 ZornsLemma.FunctionPropertiesEns <> U:131 var
+R9278:9278 ZornsLemma.FunctionPropertiesEns <> f:133 var
+R9287:9293 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9304:9309 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9299:9302 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9298:9298 ZornsLemma.FunctionPropertiesEns <> Y:130 var
+R9303:9303 ZornsLemma.FunctionPropertiesEns <> X:129 var
+binder 9294:9294 <> g:135
+R9321:9330 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9310:9314 ZornsLemma.FunctionPropertiesEns <> range def
+R9320:9320 ZornsLemma.FunctionPropertiesEns <> U:131 var
+R9318:9318 ZornsLemma.FunctionPropertiesEns <> V:132 var
+R9316:9316 ZornsLemma.FunctionPropertiesEns <> g:135 var
+R9342:9342 ZornsLemma.FunctionPropertiesEns <> X:129 var
+binder 9338:9338 <> x:136
+R9351:9354 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9345:9346 Coq.Sets.Ensembles <> In def
+R9350:9350 ZornsLemma.FunctionPropertiesEns <> x:136 var
+R9348:9348 ZornsLemma.FunctionPropertiesEns <> U:131 var
+R9362:9364 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9355:9355 ZornsLemma.FunctionPropertiesEns <> g:135 var
+R9358:9358 ZornsLemma.FunctionPropertiesEns <> f:133 var
+R9360:9360 ZornsLemma.FunctionPropertiesEns <> x:136 var
+R9365:9365 ZornsLemma.FunctionPropertiesEns <> x:136 var
+binder 9413:9413 <> y:137
+R9428:9429 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9431:9433 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9435:9437 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9525:9526 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 9430:9430 <> x:138
+R9438:9438 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9473:9498 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9524:9524 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9452:9455 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9439:9440 Coq.Sets.Ensembles <> In def
+R9451:9451 ZornsLemma.FunctionPropertiesEns <> y:137 var
+R9443:9444 Coq.Sets.Image <> Im ind
+R9463:9466 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9459:9461 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9458:9458 ZornsLemma.FunctionPropertiesEns <> x:138 var
+R9462:9462 ZornsLemma.FunctionPropertiesEns <> y:137 var
+R9467:9468 Coq.Sets.Ensembles <> In def
+R9472:9472 ZornsLemma.FunctionPropertiesEns <> x:138 var
+R9514:9517 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9499:9500 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9501:9502 Coq.Sets.Ensembles <> In def
+R9513:9513 ZornsLemma.FunctionPropertiesEns <> y:137 var
+R9505:9506 Coq.Sets.Image <> Im ind
+R9519:9521 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9518:9518 ZornsLemma.FunctionPropertiesEns <> x:138 var
+binder 9413:9413 <> y:139
+R9428:9429 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9431:9433 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9435:9437 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R9525:9526 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+binder 9430:9430 <> x:140
+R9438:9438 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9473:9498 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9524:9524 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9452:9455 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9439:9440 Coq.Sets.Ensembles <> In def
+R9451:9451 ZornsLemma.FunctionPropertiesEns <> y:139 var
+R9443:9444 Coq.Sets.Image <> Im ind
+R9463:9466 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R9459:9461 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9458:9458 ZornsLemma.FunctionPropertiesEns <> x:140 var
+R9462:9462 ZornsLemma.FunctionPropertiesEns <> y:139 var
+R9467:9468 Coq.Sets.Ensembles <> In def
+R9472:9472 ZornsLemma.FunctionPropertiesEns <> x:140 var
+R9514:9517 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9499:9500 Coq.Init.Logic <> ::type_scope:'~'_x not
+R9501:9502 Coq.Sets.Ensembles <> In def
+R9513:9513 ZornsLemma.FunctionPropertiesEns <> y:139 var
+R9505:9506 Coq.Sets.Image <> Im ind
+R9519:9521 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9518:9518 ZornsLemma.FunctionPropertiesEns <> x:140 var
+R9560:9592 Coq.Logic.Description <> constructive_definite_description prfax
+R9560:9592 Coq.Logic.Description <> constructive_definite_description prfax
+R9609:9615 Coq.Logic.Classical_Prop <> classic prfax
+R9618:9619 Coq.Sets.Ensembles <> In def
+R9622:9623 Coq.Sets.Image <> Im ind
+R9609:9615 Coq.Logic.Classical_Prop <> classic prfax
+R9618:9619 Coq.Sets.Ensembles <> In def
+R9622:9623 Coq.Sets.Image <> Im ind
+R9647:9652 Coq.Sets.Image <> Im_inv thm
+R9647:9652 Coq.Sets.Image <> Im_inv thm
+R9850:9855 Coq.Sets.Image <> Im_def thm
+R9850:9855 Coq.Sets.Image <> Im_def thm
+binder 10029:10029 <> y:141
+R10034:10042 Coq.Init.Specif <> proj1_sig def
+R10048:10048 ZornsLemma.FunctionPropertiesEns <> y:141 var
+binder 10029:10029 <> y:142
+R10034:10042 Coq.Init.Specif <> proj1_sig def
+R10048:10048 ZornsLemma.FunctionPropertiesEns <> y:142 var
+R10095:10103 Coq.Init.Specif <> proj2_sig def
+R10095:10103 Coq.Init.Specif <> proj2_sig def
+R10137:10143 Coq.Logic.Classical_Prop <> classic prfax
+R10146:10147 Coq.Sets.Ensembles <> In def
+R10150:10151 Coq.Sets.Image <> Im ind
+R10137:10143 Coq.Logic.Classical_Prop <> classic prfax
+R10146:10147 Coq.Sets.Ensembles <> In def
+R10150:10151 Coq.Sets.Image <> Im ind
+R10236:10244 Coq.Init.Specif <> proj2_sig def
+R10236:10244 Coq.Init.Specif <> proj2_sig def
+R10288:10293 Coq.Sets.Image <> Im_def thm
+R10288:10293 Coq.Sets.Image <> Im_def thm
+prf 10351:10378 <> surjective_ens_right_inverse
+binder 10381:10381 <> X:143
+binder 10383:10383 <> Y:144
+R10400:10407 Coq.Sets.Ensembles <> Ensemble def
+R10409:10409 ZornsLemma.FunctionPropertiesEns <> X:143 var
+binder 10396:10396 <> U:145
+R10417:10424 Coq.Sets.Ensembles <> Ensemble def
+R10426:10426 ZornsLemma.FunctionPropertiesEns <> Y:144 var
+binder 10413:10413 <> V:146
+R10435:10438 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10434:10434 ZornsLemma.FunctionPropertiesEns <> X:143 var
+R10439:10439 ZornsLemma.FunctionPropertiesEns <> Y:144 var
+binder 10430:10430 <> f:147
+R10448:10448 ZornsLemma.FunctionPropertiesEns <> X:143 var
+binder 10443:10444 <> x0:148
+R10462:10467 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10455:10456 Coq.Sets.Ensembles <> In def
+R10460:10461 ZornsLemma.FunctionPropertiesEns <> x0:148 var
+R10458:10458 ZornsLemma.FunctionPropertiesEns <> U:145 var
+R10479:10484 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10468:10472 ZornsLemma.FunctionPropertiesEns <> range def
+R10478:10478 ZornsLemma.FunctionPropertiesEns <> V:146 var
+R10476:10476 ZornsLemma.FunctionPropertiesEns <> U:145 var
+R10474:10474 ZornsLemma.FunctionPropertiesEns <> f:147 var
+R10505:10510 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10485:10498 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R10504:10504 ZornsLemma.FunctionPropertiesEns <> V:146 var
+R10502:10502 ZornsLemma.FunctionPropertiesEns <> U:145 var
+R10500:10500 ZornsLemma.FunctionPropertiesEns <> f:147 var
+R10511:10517 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10528:10533 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10523:10526 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10522:10522 ZornsLemma.FunctionPropertiesEns <> Y:144 var
+R10527:10527 ZornsLemma.FunctionPropertiesEns <> X:143 var
+binder 10518:10518 <> g:149
+R10545:10554 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10534:10538 ZornsLemma.FunctionPropertiesEns <> range def
+R10544:10544 ZornsLemma.FunctionPropertiesEns <> U:145 var
+R10542:10542 ZornsLemma.FunctionPropertiesEns <> V:146 var
+R10540:10540 ZornsLemma.FunctionPropertiesEns <> g:149 var
+R10566:10566 ZornsLemma.FunctionPropertiesEns <> Y:144 var
+binder 10562:10562 <> y:150
+R10575:10578 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10569:10570 Coq.Sets.Ensembles <> In def
+R10574:10574 ZornsLemma.FunctionPropertiesEns <> y:150 var
+R10572:10572 ZornsLemma.FunctionPropertiesEns <> V:146 var
+R10586:10588 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10579:10579 ZornsLemma.FunctionPropertiesEns <> f:147 var
+R10582:10582 ZornsLemma.FunctionPropertiesEns <> g:149 var
+R10584:10584 ZornsLemma.FunctionPropertiesEns <> y:150 var
+R10589:10589 ZornsLemma.FunctionPropertiesEns <> y:150 var
+R10637:10642 Coq.Logic.ClassicalChoice <> choice thm
+binder 10650:10650 <> y:151
+binder 10658:10658 <> x:152
+R10683:10683 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10711:10733 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10752:10752 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10690:10693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10684:10685 Coq.Sets.Ensembles <> In def
+R10689:10689 ZornsLemma.FunctionPropertiesEns <> y:151 var
+R10701:10704 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10695:10697 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10694:10694 ZornsLemma.FunctionPropertiesEns <> y:151 var
+R10700:10700 ZornsLemma.FunctionPropertiesEns <> x:152 var
+R10705:10706 Coq.Sets.Ensembles <> In def
+R10710:10710 ZornsLemma.FunctionPropertiesEns <> x:152 var
+R10742:10745 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10734:10735 Coq.Init.Logic <> ::type_scope:'~'_x not
+R10736:10737 Coq.Sets.Ensembles <> In def
+R10741:10741 ZornsLemma.FunctionPropertiesEns <> y:151 var
+R10747:10749 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10746:10746 ZornsLemma.FunctionPropertiesEns <> x:152 var
+R10637:10642 Coq.Logic.ClassicalChoice <> choice thm
+binder 10650:10650 <> y:153
+binder 10658:10658 <> x:154
+R10683:10683 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10711:10733 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10752:10752 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10690:10693 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10684:10685 Coq.Sets.Ensembles <> In def
+R10689:10689 ZornsLemma.FunctionPropertiesEns <> y:153 var
+R10701:10704 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10695:10697 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10694:10694 ZornsLemma.FunctionPropertiesEns <> y:153 var
+R10700:10700 ZornsLemma.FunctionPropertiesEns <> x:154 var
+R10705:10706 Coq.Sets.Ensembles <> In def
+R10710:10710 ZornsLemma.FunctionPropertiesEns <> x:154 var
+R10742:10745 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10734:10735 Coq.Init.Logic <> ::type_scope:'~'_x not
+R10736:10737 Coq.Sets.Ensembles <> In def
+R10741:10741 ZornsLemma.FunctionPropertiesEns <> y:153 var
+R10747:10749 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R10746:10746 ZornsLemma.FunctionPropertiesEns <> x:154 var
+R10799:10805 Coq.Logic.Classical_Prop <> classic prfax
+R10808:10809 Coq.Sets.Ensembles <> In def
+R10799:10805 Coq.Logic.Classical_Prop <> classic prfax
+R10808:10809 Coq.Sets.Ensembles <> In def
+prf 11279:11304 <> image_surjective_ens_range
+binder 11307:11307 <> X:155
+binder 11309:11309 <> Y:156
+R11327:11330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11326:11326 ZornsLemma.FunctionPropertiesEns <> X:155 var
+R11331:11331 ZornsLemma.FunctionPropertiesEns <> Y:156 var
+binder 11322:11322 <> f:157
+R11339:11346 Coq.Sets.Ensembles <> Ensemble def
+R11348:11348 ZornsLemma.FunctionPropertiesEns <> X:155 var
+binder 11335:11335 <> U:158
+R11356:11363 Coq.Sets.Ensembles <> Ensemble def
+R11365:11365 ZornsLemma.FunctionPropertiesEns <> Y:156 var
+binder 11352:11352 <> V:159
+R11383:11388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11372:11376 ZornsLemma.FunctionPropertiesEns <> range def
+R11382:11382 ZornsLemma.FunctionPropertiesEns <> V:159 var
+R11380:11380 ZornsLemma.FunctionPropertiesEns <> U:158 var
+R11378:11378 ZornsLemma.FunctionPropertiesEns <> f:157 var
+R11409:11414 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11389:11402 ZornsLemma.FunctionPropertiesEns <> surjective_ens def
+R11408:11408 ZornsLemma.FunctionPropertiesEns <> V:159 var
+R11406:11406 ZornsLemma.FunctionPropertiesEns <> U:158 var
+R11404:11404 ZornsLemma.FunctionPropertiesEns <> f:157 var
+R11416:11418 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R11415:11415 ZornsLemma.FunctionPropertiesEns <> V:159 var
+R11419:11420 Coq.Sets.Image <> Im ind
+R11424:11424 ZornsLemma.FunctionPropertiesEns <> f:157 var
+R11422:11422 ZornsLemma.FunctionPropertiesEns <> U:158 var
+R11460:11483 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R11460:11483 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
+R11570:11575 Coq.Sets.Image <> Im_def thm
+R11570:11575 Coq.Sets.Image <> Im_def thm

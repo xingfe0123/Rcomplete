@@ -1,0 +1,618 @@
+DIGEST c2a945caa8d7d415d8bf4f85b5f4ba55
+FZornsLemma.Cardinals.CSB
+R26:34 Coq.Logic.Classical <> <> lib
+R38:48 Coq.Logic.Description <> <> lib
+R52:66 Coq.Classes.RelationClasses <> <> lib
+R102:120 ZornsLemma.Cardinals.Cardinals <> <> lib
+R124:145 ZornsLemma.Cardinals.CardinalsEns <> <> lib
+R149:160 ZornsLemma.DecidableDec <> <> lib
+R164:181 ZornsLemma.FunctionProperties <> <> lib
+R185:205 ZornsLemma.FunctionPropertiesEns <> <> lib
+R209:225 ZornsLemma.Proj1SigInjective <> <> lib
+sec 285:287 <> CSB
+var 299:299 CSB X
+var 301:301 CSB Y
+var 318:318 CSB f
+R321:322 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R320:320 ZornsLemma.Cardinals.CSB <> CSB.X var
+R323:323 ZornsLemma.Cardinals.CSB <> CSB.Y var
+var 335:335 CSB g
+R338:339 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R337:337 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R340:340 ZornsLemma.Cardinals.CSB <> CSB.X var
+var 354:358 CSB f_inj
+R361:369 Coq.Sets.Image <> injective def
+R371:371 ZornsLemma.Cardinals.CSB <> CSB.f var
+var 385:389 CSB g_inj
+R392:400 Coq.Sets.Image <> injective def
+R402:402 ZornsLemma.Cardinals.CSB <> CSB.g var
+ind 416:421 <> X_even
+constr 439:447 <> not_g_img
+constr 501:507 <> g_Y_odd
+ind 551:555 <> Y_odd
+constr 573:580 <> f_X_even
+R425:426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R424:424 ZornsLemma.Cardinals.CSB <> CSB.X var
+R559:560 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R558:558 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R459:459 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 457:457 <> x:11
+R462:462 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R483:487 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R472:472 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 470:470 <> y:12
+R478:481 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R475:475 ZornsLemma.Cardinals.CSB <> CSB.g var
+R477:477 ZornsLemma.Cardinals.CSB <> y:12 var
+R482:482 ZornsLemma.Cardinals.CSB <> x:11 var
+R488:493 ZornsLemma.Cardinals.CSB <> X_even:7 ind
+R495:495 ZornsLemma.Cardinals.CSB <> x:11 var
+R519:519 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 517:517 <> y:13
+R529:532 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R522:526 ZornsLemma.Cardinals.CSB <> Y_odd:8 ind
+R528:528 ZornsLemma.Cardinals.CSB <> y:13 var
+R533:538 ZornsLemma.Cardinals.CSB <> X_even:7 ind
+R541:541 ZornsLemma.Cardinals.CSB <> CSB.g var
+R543:543 ZornsLemma.Cardinals.CSB <> y:13 var
+R592:592 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 590:590 <> x:14
+R603:606 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R595:600 ZornsLemma.Cardinals.CSB <> X_even:7 ind
+R602:602 ZornsLemma.Cardinals.CSB <> x:14 var
+R607:611 ZornsLemma.Cardinals.CSB <> Y_odd:8 ind
+R614:614 ZornsLemma.Cardinals.CSB <> CSB.f var
+R616:616 ZornsLemma.Cardinals.CSB <> x:14 var
+scheme 416:421 <> X_even_ind
+scheme 416:421 <> X_even_sind
+scheme 551:555 <> Y_odd_ind
+scheme 551:555 <> Y_odd_sind
+ind 630:634 <> X_odd
+constr 652:659 <> g_Y_even
+ind 703:708 <> Y_even
+constr 726:734 <> not_f_img
+constr 788:794 <> f_X_odd
+R638:639 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R637:637 ZornsLemma.Cardinals.CSB <> CSB.X var
+R712:713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R711:711 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R671:671 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 669:669 <> y:19
+R682:685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R674:679 ZornsLemma.Cardinals.CSB <> Y_even:16 ind
+R681:681 ZornsLemma.Cardinals.CSB <> y:19 var
+R686:690 ZornsLemma.Cardinals.CSB <> X_odd:15 ind
+R693:693 ZornsLemma.Cardinals.CSB <> CSB.g var
+R695:695 ZornsLemma.Cardinals.CSB <> y:19 var
+R746:746 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 744:744 <> y:20
+R749:749 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R770:774 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R759:759 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 757:757 <> x:21
+R765:768 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R762:762 ZornsLemma.Cardinals.CSB <> CSB.f var
+R764:764 ZornsLemma.Cardinals.CSB <> x:21 var
+R769:769 ZornsLemma.Cardinals.CSB <> y:20 var
+R775:780 ZornsLemma.Cardinals.CSB <> Y_even:16 ind
+R782:782 ZornsLemma.Cardinals.CSB <> y:20 var
+R806:806 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 804:804 <> x:22
+R816:819 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R809:813 ZornsLemma.Cardinals.CSB <> X_odd:15 ind
+R815:815 ZornsLemma.Cardinals.CSB <> x:22 var
+R820:825 ZornsLemma.Cardinals.CSB <> Y_even:16 ind
+R828:828 ZornsLemma.Cardinals.CSB <> CSB.f var
+R830:830 ZornsLemma.Cardinals.CSB <> x:22 var
+scheme 630:634 <> X_odd_ind
+scheme 630:634 <> X_odd_sind
+scheme 703:708 <> Y_even_ind
+scheme 703:708 <> Y_even_sind
+def 842:853 <> X_even_coind
+def 897:907 <> Y_odd_coind
+R927:931 ZornsLemma.Cardinals.CSB <> Y_odd ind
+R873:878 ZornsLemma.Cardinals.CSB <> X_even ind
+def 951:961 <> X_odd_coind
+def 1004:1015 <> Y_even_coind
+R1035:1040 ZornsLemma.Cardinals.CSB <> Y_even ind
+R981:985 ZornsLemma.Cardinals.CSB <> X_odd ind
+prf 1060:1072 <> even_odd_excl
+R1084:1084 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 1082:1082 <> x:23
+R1087:1088 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1108:1108 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1097:1100 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1089:1094 ZornsLemma.Cardinals.CSB <> X_even ind
+R1096:1096 ZornsLemma.Cardinals.CSB <> x:23 var
+R1101:1105 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1107:1107 ZornsLemma.Cardinals.CSB <> x:23 var
+R1141:1144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1133:1138 ZornsLemma.Cardinals.CSB <> X_even ind
+R1145:1146 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1147:1151 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1141:1144 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1133:1138 ZornsLemma.Cardinals.CSB <> X_even ind
+R1145:1146 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1147:1151 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1178:1189 ZornsLemma.Cardinals.CSB <> X_even_coind scheme
+R1198:1198 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 1196:1196 <> x:24
+R1203:1204 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1205:1209 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1211:1211 ZornsLemma.Cardinals.CSB <> x:24 var
+R1221:1221 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 1219:1219 <> y:25
+R1226:1227 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1228:1233 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1235:1235 ZornsLemma.Cardinals.CSB <> y:25 var
+R1178:1189 ZornsLemma.Cardinals.CSB <> X_even_coind scheme
+R1198:1198 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 1196:1196 <> x:26
+R1203:1204 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1205:1209 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1211:1211 ZornsLemma.Cardinals.CSB <> x:26 var
+R1221:1221 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 1219:1219 <> y:27
+R1226:1227 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1228:1233 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1235:1235 ZornsLemma.Cardinals.CSB <> y:27 var
+R1348:1352 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R1348:1352 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R1482:1486 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R1482:1486 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+prf 1556:1569 <> even_odd_excl2
+R1581:1581 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 1579:1579 <> y:28
+R1584:1585 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1605:1605 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1594:1597 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1586:1591 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1593:1593 ZornsLemma.Cardinals.CSB <> y:28 var
+R1598:1602 ZornsLemma.Cardinals.CSB <> Y_odd ind
+R1604:1604 ZornsLemma.Cardinals.CSB <> y:28 var
+R1637:1640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1630:1634 ZornsLemma.Cardinals.CSB <> Y_odd ind
+R1641:1642 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1643:1648 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1637:1640 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1630:1634 ZornsLemma.Cardinals.CSB <> Y_odd ind
+R1641:1642 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1643:1648 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1675:1685 ZornsLemma.Cardinals.CSB <> Y_odd_coind scheme
+R1694:1694 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 1692:1692 <> x:29
+R1699:1700 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1701:1705 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1707:1707 ZornsLemma.Cardinals.CSB <> x:29 var
+R1717:1717 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 1715:1715 <> y:30
+R1722:1723 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1724:1729 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1731:1731 ZornsLemma.Cardinals.CSB <> y:30 var
+R1675:1685 ZornsLemma.Cardinals.CSB <> Y_odd_coind scheme
+R1694:1694 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 1692:1692 <> x:31
+R1699:1700 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1701:1705 ZornsLemma.Cardinals.CSB <> X_odd ind
+R1707:1707 ZornsLemma.Cardinals.CSB <> x:31 var
+R1717:1717 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 1715:1715 <> y:32
+R1722:1723 Coq.Init.Logic <> ::type_scope:'~'_x not
+R1724:1729 ZornsLemma.Cardinals.CSB <> Y_even ind
+R1731:1731 ZornsLemma.Cardinals.CSB <> y:32 var
+R1830:1834 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R1830:1834 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R1950:1954 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R1950:1954 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+def 2029:2032 <> finv
+R2044:2044 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 2042:2042 <> y:33
+R2047:2047 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2067:2073 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2048:2054 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2058:2059 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2057:2057 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2055:2055 <> x:34
+R2063:2065 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2060:2060 ZornsLemma.Cardinals.CSB <> CSB.f var
+R2062:2062 ZornsLemma.Cardinals.CSB <> x:34 var
+R2066:2066 ZornsLemma.Cardinals.CSB <> y:33 var
+R2074:2075 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2077:2077 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2079:2081 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2089:2090 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2078:2078 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2076:2076 <> x:35
+R2085:2087 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2082:2082 ZornsLemma.Cardinals.CSB <> CSB.f var
+R2084:2084 ZornsLemma.Cardinals.CSB <> x:35 var
+R2088:2088 ZornsLemma.Cardinals.CSB <> y:33 var
+R2107:2139 Coq.Logic.Description <> constructive_definite_description prfax
+R2107:2139 Coq.Logic.Description <> constructive_definite_description prfax
+R2206:2210 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R2206:2210 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+def 2278:2281 <> ginv
+R2293:2293 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2291:2291 <> x:36
+R2296:2296 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2316:2322 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2297:2303 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2307:2308 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2306:2306 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 2304:2304 <> y:37
+R2312:2314 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2309:2309 ZornsLemma.Cardinals.CSB <> CSB.g var
+R2311:2311 ZornsLemma.Cardinals.CSB <> y:37 var
+R2315:2315 ZornsLemma.Cardinals.CSB <> x:36 var
+R2323:2324 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2326:2326 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2328:2330 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2338:2339 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2327:2327 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 2325:2325 <> y:38
+R2334:2336 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2331:2331 ZornsLemma.Cardinals.CSB <> CSB.g var
+R2333:2333 ZornsLemma.Cardinals.CSB <> y:38 var
+R2337:2337 ZornsLemma.Cardinals.CSB <> x:36 var
+R2356:2388 Coq.Logic.Description <> constructive_definite_description prfax
+R2356:2388 Coq.Logic.Description <> constructive_definite_description prfax
+R2456:2460 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R2456:2460 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+def 2528:2535 <> ginv_odd
+R2547:2547 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2545:2545 <> x:39
+R2557:2562 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2550:2554 ZornsLemma.Cardinals.CSB <> X_odd ind
+R2556:2556 ZornsLemma.Cardinals.CSB <> x:39 var
+R2563:2564 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2566:2566 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2568:2570 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2578:2579 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2567:2567 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 2565:2565 <> y:40
+R2574:2576 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2571:2571 ZornsLemma.Cardinals.CSB <> CSB.g var
+R2573:2573 ZornsLemma.Cardinals.CSB <> y:40 var
+R2577:2577 ZornsLemma.Cardinals.CSB <> x:39 var
+R2596:2599 ZornsLemma.Cardinals.CSB <> ginv def
+R2596:2599 ZornsLemma.Cardinals.CSB <> ginv def
+def 2658:2669 <> finv_noteven
+R2681:2681 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 2679:2679 <> y:41
+R2694:2699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2684:2685 Coq.Init.Logic <> ::type_scope:'~'_x not
+R2686:2691 ZornsLemma.Cardinals.CSB <> Y_even ind
+R2693:2693 ZornsLemma.Cardinals.CSB <> y:41 var
+R2700:2701 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2703:2703 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2705:2707 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2715:2716 Coq.Init.Specif <> ::type_scope:'{'_x_':'_x_'|'_x_'}' not
+R2704:2704 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2702:2702 <> x:42
+R2711:2713 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2708:2708 ZornsLemma.Cardinals.CSB <> CSB.f var
+R2710:2710 ZornsLemma.Cardinals.CSB <> x:42 var
+R2714:2714 ZornsLemma.Cardinals.CSB <> y:41 var
+R2733:2736 ZornsLemma.Cardinals.CSB <> finv def
+R2733:2736 ZornsLemma.Cardinals.CSB <> finv def
+R2745:2748 Coq.Logic.Classical_Prop <> NNPP thm
+R2745:2748 Coq.Logic.Classical_Prop <> NNPP thm
+def 2864:2876 <> CSB_bijection
+R2881:2881 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 2879:2879 <> x:43
+R2886:2886 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R2900:2910 ZornsLemma.DecidableDec <> classic_dec thm
+R2913:2917 ZornsLemma.Cardinals.CSB <> X_odd ind
+R2919:2919 ZornsLemma.Cardinals.CSB <> x:43 var
+R2932:2935 Coq.Init.Specif <> left constr
+R2942:2950 Coq.Init.Specif <> proj1_sig def
+R2953:2960 ZornsLemma.Cardinals.CSB <> ginv_odd def
+R2962:2962 ZornsLemma.Cardinals.CSB <> x:43 var
+R2971:2975 Coq.Init.Specif <> right constr
+R2982:2982 ZornsLemma.Cardinals.CSB <> CSB.f var
+R2984:2984 ZornsLemma.Cardinals.CSB <> x:43 var
+def 3004:3017 <> CSB_bijection2
+R3022:3022 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 3020:3020 <> y:44
+R3027:3027 ZornsLemma.Cardinals.CSB <> CSB.X var
+R3041:3051 ZornsLemma.DecidableDec <> classic_dec thm
+R3054:3059 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3061:3061 ZornsLemma.Cardinals.CSB <> y:44 var
+R3074:3077 Coq.Init.Specif <> left constr
+R3084:3084 ZornsLemma.Cardinals.CSB <> CSB.g var
+R3086:3086 ZornsLemma.Cardinals.CSB <> y:44 var
+R3092:3096 Coq.Init.Specif <> right constr
+R3104:3112 Coq.Init.Specif <> proj1_sig def
+R3115:3126 ZornsLemma.Cardinals.CSB <> finv_noteven def
+R3128:3128 ZornsLemma.Cardinals.CSB <> y:44 var
+prf 3148:3156 <> CSB_comp1
+R3168:3168 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 3166:3166 <> x:45
+R3203:3205 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3171:3184 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R3187:3199 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R3201:3201 ZornsLemma.Cardinals.CSB <> x:45 var
+R3206:3206 ZornsLemma.Cardinals.CSB <> x:45 var
+R3230:3242 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R3251:3261 ZornsLemma.DecidableDec <> classic_dec thm
+R3264:3268 ZornsLemma.Cardinals.CSB <> X_odd ind
+R3251:3261 ZornsLemma.DecidableDec <> classic_dec thm
+R3264:3268 ZornsLemma.Cardinals.CSB <> X_odd ind
+R3295:3302 ZornsLemma.Cardinals.CSB <> ginv_odd def
+R3323:3336 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R3349:3359 ZornsLemma.DecidableDec <> classic_dec thm
+R3362:3367 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3349:3359 ZornsLemma.DecidableDec <> classic_dec thm
+R3362:3367 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3433:3437 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R3433:3437 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R3490:3503 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R3512:3522 ZornsLemma.DecidableDec <> classic_dec thm
+R3525:3530 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3533:3533 ZornsLemma.Cardinals.CSB <> CSB.f var
+R3512:3522 ZornsLemma.DecidableDec <> classic_dec thm
+R3525:3530 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3533:3533 ZornsLemma.Cardinals.CSB <> CSB.f var
+R3657:3661 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R3657:3661 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R3731:3742 ZornsLemma.Cardinals.CSB <> finv_noteven def
+R3766:3770 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+R3766:3770 ZornsLemma.Cardinals.CSB <> CSB.f_inj var
+prf 3801:3809 <> CSB_comp2
+R3821:3821 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 3819:3819 <> y:46
+R3856:3858 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3824:3836 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R3839:3852 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R3854:3854 ZornsLemma.Cardinals.CSB <> y:46 var
+R3859:3859 ZornsLemma.Cardinals.CSB <> y:46 var
+R3883:3896 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R3905:3915 ZornsLemma.DecidableDec <> classic_dec thm
+R3918:3923 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3905:3915 ZornsLemma.DecidableDec <> classic_dec thm
+R3918:3923 ZornsLemma.Cardinals.CSB <> Y_even ind
+R3948:3960 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R3969:3979 ZornsLemma.DecidableDec <> classic_dec thm
+R3982:3986 ZornsLemma.Cardinals.CSB <> X_odd ind
+R3989:3989 ZornsLemma.Cardinals.CSB <> CSB.g var
+R3969:3979 ZornsLemma.DecidableDec <> classic_dec thm
+R3982:3986 ZornsLemma.Cardinals.CSB <> X_odd ind
+R3989:3989 ZornsLemma.Cardinals.CSB <> CSB.g var
+R4021:4028 ZornsLemma.Cardinals.CSB <> ginv_odd def
+R4052:4056 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R4052:4056 ZornsLemma.Cardinals.CSB <> CSB.g_inj var
+R4157:4168 ZornsLemma.Cardinals.CSB <> finv_noteven def
+R4189:4201 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R4210:4220 ZornsLemma.DecidableDec <> classic_dec thm
+R4223:4227 ZornsLemma.Cardinals.CSB <> X_odd ind
+R4210:4220 ZornsLemma.DecidableDec <> classic_dec thm
+R4223:4227 ZornsLemma.Cardinals.CSB <> X_odd ind
+prf 4343:4357 <> CSB_inverse_map
+R4363:4370 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4396:4402 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4377:4380 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4376:4376 ZornsLemma.Cardinals.CSB <> CSB.X var
+R4381:4381 ZornsLemma.Cardinals.CSB <> CSB.Y var
+binder 4371:4372 <> h0:47
+R4391:4394 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4390:4390 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R4395:4395 ZornsLemma.Cardinals.CSB <> CSB.X var
+binder 4385:4386 <> h1:48
+R4403:4413 ZornsLemma.FunctionProperties <> inverse_map def
+R4418:4419 ZornsLemma.Cardinals.CSB <> h1:48 var
+R4415:4416 ZornsLemma.Cardinals.CSB <> h0:47 var
+R4438:4450 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R4453:4466 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R4438:4450 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R4453:4466 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R4488:4496 ZornsLemma.Cardinals.CSB <> CSB_comp1 thm
+R4488:4496 ZornsLemma.Cardinals.CSB <> CSB_comp1 thm
+R4509:4517 ZornsLemma.Cardinals.CSB <> CSB_comp2 thm
+R4509:4517 ZornsLemma.Cardinals.CSB <> CSB_comp2 thm
+prf 4534:4536 <> CSB
+R4539:4549 ZornsLemma.Cardinals.Cardinals <> eq_cardinal def
+R4551:4551 ZornsLemma.Cardinals.CSB <> CSB.X var
+R4553:4553 ZornsLemma.Cardinals.CSB <> CSB.Y var
+R4570:4582 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R4570:4582 ZornsLemma.Cardinals.CSB <> CSB_bijection def
+R4592:4605 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R4592:4605 ZornsLemma.Cardinals.CSB <> CSB_bijection2 def
+R4623:4631 ZornsLemma.Cardinals.CSB <> CSB_comp1 thm
+R4623:4631 ZornsLemma.Cardinals.CSB <> CSB_comp1 thm
+R4642:4650 ZornsLemma.Cardinals.CSB <> CSB_comp2 thm
+R4642:4650 ZornsLemma.Cardinals.CSB <> CSB_comp2 thm
+R4663:4665 ZornsLemma.Cardinals.CSB CSB <> sec
+inst 4688:4711 <> le_cardinal_PartialOrder
+R4717:4728 Coq.Classes.RelationClasses <> PartialOrder class
+R4742:4752 ZornsLemma.Cardinals.Cardinals <> le_cardinal def
+R4730:4740 ZornsLemma.Cardinals.Cardinals <> eq_cardinal def
+R4813:4837 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R4813:4837 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R4900:4924 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R4900:4924 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R4947:4961 ZornsLemma.FunctionProperties <> inverse_map_sym thm
+R4947:4961 ZornsLemma.FunctionProperties <> inverse_map_sym thm
+R5014:5028 ZornsLemma.Cardinals.CSB <> CSB_inverse_map thm
+R5014:5028 ZornsLemma.Cardinals.CSB <> CSB_inverse_map thm
+prf 5074:5080 <> CSB_ens
+binder 5083:5083 <> X:49
+binder 5085:5085 <> Y:50
+R5102:5109 Coq.Sets.Ensembles <> Ensemble def
+R5111:5111 ZornsLemma.Cardinals.CSB <> X:49 var
+binder 5098:5098 <> U:51
+R5119:5126 Coq.Sets.Ensembles <> Ensemble def
+R5128:5128 ZornsLemma.Cardinals.CSB <> Y:50 var
+binder 5115:5115 <> V:52
+R5139:5142 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5138:5138 ZornsLemma.Cardinals.CSB <> X:49 var
+R5143:5143 ZornsLemma.Cardinals.CSB <> Y:50 var
+binder 5134:5134 <> f:53
+R5152:5155 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5151:5151 ZornsLemma.Cardinals.CSB <> Y:50 var
+R5156:5156 ZornsLemma.Cardinals.CSB <> X:49 var
+binder 5147:5147 <> g:54
+R5174:5179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5163:5167 ZornsLemma.FunctionPropertiesEns <> range def
+R5173:5173 ZornsLemma.Cardinals.CSB <> V:52 var
+R5171:5171 ZornsLemma.Cardinals.CSB <> U:51 var
+R5169:5169 ZornsLemma.Cardinals.CSB <> f:53 var
+R5191:5196 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5180:5184 ZornsLemma.FunctionPropertiesEns <> range def
+R5190:5190 ZornsLemma.Cardinals.CSB <> U:51 var
+R5188:5188 ZornsLemma.Cardinals.CSB <> V:52 var
+R5186:5186 ZornsLemma.Cardinals.CSB <> g:54 var
+R5214:5219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5197:5209 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R5213:5213 ZornsLemma.Cardinals.CSB <> U:51 var
+R5211:5211 ZornsLemma.Cardinals.CSB <> f:53 var
+R5237:5242 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5220:5232 ZornsLemma.FunctionPropertiesEns <> injective_ens def
+R5236:5236 ZornsLemma.Cardinals.CSB <> V:52 var
+R5234:5234 ZornsLemma.Cardinals.CSB <> g:54 var
+R5243:5249 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5260:5265 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5255:5258 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5254:5254 ZornsLemma.Cardinals.CSB <> X:49 var
+R5259:5259 ZornsLemma.Cardinals.CSB <> Y:50 var
+binder 5250:5250 <> h:55
+R5277:5286 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5266:5270 ZornsLemma.FunctionPropertiesEns <> range def
+R5276:5276 ZornsLemma.Cardinals.CSB <> V:52 var
+R5274:5274 ZornsLemma.Cardinals.CSB <> U:51 var
+R5272:5272 ZornsLemma.Cardinals.CSB <> h:55 var
+R5287:5299 ZornsLemma.FunctionPropertiesEns <> bijective_ens def
+R5305:5305 ZornsLemma.Cardinals.CSB <> V:52 var
+R5303:5303 ZornsLemma.Cardinals.CSB <> U:51 var
+R5301:5301 ZornsLemma.Cardinals.CSB <> h:55 var
+R5335:5341 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5361:5362 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5352:5355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5347:5349 Coq.Init.Specif <> sig ind
+R5356:5358 Coq.Init.Specif <> sig ind
+binder 5342:5343 <> h0:56
+R5363:5372 ZornsLemma.FunctionProperties <> invertible def
+R5374:5375 ZornsLemma.Cardinals.CSB <> h0:56 var
+R5335:5341 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5361:5362 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5352:5355 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5347:5349 Coq.Init.Specif <> sig ind
+R5356:5358 Coq.Init.Specif <> sig ind
+binder 5342:5343 <> h0:57
+R5363:5372 ZornsLemma.FunctionProperties <> invertible def
+R5374:5375 ZornsLemma.Cardinals.CSB <> h0:57 var
+R5419:5429 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R5465:5475 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R5404:5406 ZornsLemma.Cardinals.CSB <> CSB thm
+R5500:5517 ZornsLemma.FunctionPropertiesEns <> injective_ens_char thm
+R5419:5429 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R5465:5475 ZornsLemma.FunctionPropertiesEns <> range_restr def
+R5404:5406 ZornsLemma.Cardinals.CSB <> CSB thm
+R5500:5517 ZornsLemma.FunctionPropertiesEns <> injective_ens_char thm
+R5500:5517 ZornsLemma.FunctionPropertiesEns <> injective_ens_char thm
+R5548:5554 Coq.Logic.Classical_Prop <> classic prfax
+R5557:5565 Coq.Init.Logic <> inhabited ind
+R5548:5554 Coq.Logic.Classical_Prop <> classic prfax
+R5557:5565 Coq.Init.Logic <> inhabited ind
+R5592:5595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5596:5600 Coq.Init.Logic <> False ind
+R5592:5595 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5596:5600 Coq.Init.Logic <> False ind
+binder 5696:5696 <> x:58
+R5701:5710 Coq.Init.Logic <> False_rect scheme
+R5718:5718 ZornsLemma.Cardinals.CSB <> x:58 var
+binder 5696:5696 <> x:59
+R5701:5710 Coq.Init.Logic <> False_rect scheme
+R5718:5718 ZornsLemma.Cardinals.CSB <> x:59 var
+R5871:5883 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend def
+R5886:5892 Coq.Program.Basics <> compose def
+R5896:5904 Coq.Init.Specif <> proj1_sig def
+R5871:5883 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend def
+R5886:5892 Coq.Program.Basics <> compose def
+R5896:5904 Coq.Init.Specif <> proj1_sig def
+R5930:5934 ZornsLemma.FunctionPropertiesEns <> range def
+R5984:5991 Coq.Sets.Ensembles <> Full_set ind
+R5937:5943 Coq.Program.Basics <> compose def
+R5946:5954 Coq.Init.Specif <> proj1_sig def
+R5930:5934 ZornsLemma.FunctionPropertiesEns <> range def
+R5984:5991 Coq.Sets.Ensembles <> Full_set ind
+R5937:5943 Coq.Program.Basics <> compose def
+R5946:5954 Coq.Init.Specif <> proj1_sig def
+R6008:6020 ZornsLemma.FunctionPropertiesEns <> range_compose thm
+R6024:6031 Coq.Sets.Ensembles <> Full_set ind
+R6008:6020 ZornsLemma.FunctionPropertiesEns <> range_compose thm
+R6024:6031 Coq.Sets.Ensembles <> Full_set ind
+R6047:6056 ZornsLemma.FunctionPropertiesEns <> range_full thm
+R6047:6056 ZornsLemma.FunctionPropertiesEns <> range_full thm
+R6083:6091 Coq.Init.Specif <> proj2_sig def
+R6083:6091 Coq.Init.Specif <> proj2_sig def
+R6127:6145 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_range thm
+R6127:6145 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_range thm
+R6170:6196 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_injective_ens thm
+R6170:6196 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_injective_ens thm
+R6209:6225 ZornsLemma.FunctionProperties <> injective_compose thm
+R6209:6225 ZornsLemma.FunctionProperties <> injective_compose thm
+R6240:6264 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R6240:6264 ZornsLemma.FunctionProperties <> invertible_impl_bijective thm
+R6295:6313 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R6295:6313 ZornsLemma.Proj1SigInjective <> proj1_sig_injective thm
+R6326:6353 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_surjective_ens thm
+R6326:6353 ZornsLemma.FunctionPropertiesEns <> sig_fn_extend_surjective_ens thm
+R6424:6428 Coq.Init.Specif <> exist constr
+R6424:6428 Coq.Init.Specif <> exist constr
+R6478:6484 Coq.Program.Basics <> compose def
+prf 6537:6564 <> le_cardinal_ens_antisymmetry
+binder 6569:6569 <> X:60
+binder 6571:6571 <> Y:61
+R6586:6593 Coq.Sets.Ensembles <> Ensemble def
+R6595:6595 ZornsLemma.Cardinals.CSB <> X:60 var
+binder 6582:6582 <> U:62
+R6603:6610 Coq.Sets.Ensembles <> Ensemble def
+R6612:6612 ZornsLemma.Cardinals.CSB <> Y:61 var
+binder 6599:6599 <> V:63
+R6638:6643 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6619:6633 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R6637:6637 ZornsLemma.Cardinals.CSB <> V:63 var
+R6635:6635 ZornsLemma.Cardinals.CSB <> U:62 var
+R6663:6668 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6644:6658 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R6662:6662 ZornsLemma.Cardinals.CSB <> U:62 var
+R6660:6660 ZornsLemma.Cardinals.CSB <> V:63 var
+R6669:6683 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens def
+R6687:6687 ZornsLemma.Cardinals.CSB <> V:63 var
+R6685:6685 ZornsLemma.Cardinals.CSB <> U:62 var
+R6787:6805 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R6787:6805 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R6852:6858 ZornsLemma.Cardinals.CSB <> CSB_ens thm
+R6852:6858 ZornsLemma.Cardinals.CSB <> CSB_ens thm
+prf 6894:6922 <> le_lt_cardinal_ens_transitive
+binder 6925:6925 <> X:64
+binder 6927:6927 <> Y:65
+binder 6929:6929 <> Z:66
+R6946:6953 Coq.Sets.Ensembles <> Ensemble def
+R6955:6955 ZornsLemma.Cardinals.CSB <> X:64 var
+binder 6942:6942 <> U:67
+R6963:6970 Coq.Sets.Ensembles <> Ensemble def
+R6972:6972 ZornsLemma.Cardinals.CSB <> Y:65 var
+binder 6959:6959 <> V:68
+R6980:6987 Coq.Sets.Ensembles <> Ensemble def
+R6989:6989 ZornsLemma.Cardinals.CSB <> Z:66 var
+binder 6976:6976 <> W:69
+R7015:7020 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6996:7010 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens def
+R7014:7014 ZornsLemma.Cardinals.CSB <> V:68 var
+R7012:7012 ZornsLemma.Cardinals.CSB <> U:67 var
+R7040:7045 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7021:7035 ZornsLemma.Cardinals.CardinalsEns <> lt_cardinal_ens def
+R7039:7039 ZornsLemma.Cardinals.CSB <> W:69 var
+R7037:7037 ZornsLemma.Cardinals.CSB <> V:68 var
+R7046:7060 ZornsLemma.Cardinals.CardinalsEns <> lt_cardinal_ens def
+R7064:7064 ZornsLemma.Cardinals.CSB <> W:69 var
+R7062:7062 ZornsLemma.Cardinals.CSB <> U:67 var
+R7119:7144 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_transitive thm
+R7119:7144 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_transitive thm
+R7197:7215 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R7197:7215 ZornsLemma.Cardinals.CardinalsEns <> eq_cardinal_ens_sym thm
+R7233:7260 ZornsLemma.Cardinals.CSB <> le_cardinal_ens_antisymmetry thm
+R7233:7260 ZornsLemma.Cardinals.CSB <> le_cardinal_ens_antisymmetry thm
+R7278:7301 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
+R7278:7301 ZornsLemma.Cardinals.CardinalsEns <> le_cardinal_ens_Proper_l thm
