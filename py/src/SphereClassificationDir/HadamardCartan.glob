@@ -1,4 +1,4 @@
-DIGEST 377bb10226bcfe13ce32cbfd51723835
+DIGEST 794c5cadb9133379eede6b6f53c7c6fa
 FSphereClassification.HadamardCartan
 R108:112 Coq.Reals.Reals <> <> lib
 R130:143 Coq.Logic.Classical_Prop <> <> lib
@@ -91,17 +91,9 @@ R2836:2843 SphereClassification.Manifold <> sm_space proj
 R2845:2846 SphereClassification.HadamardCartan <> M1:17 var
 R2850:2857 SphereClassification.Manifold <> sm_space proj
 R2859:2860 SphereClassification.HadamardCartan <> M2:18 var
-R2924:2939 SphereClassification.Topology <> mkIsHomeomorphic constr
-R2942:2949 SphereClassification.Manifold <> sm_space proj
-R2956:2963 SphereClassification.Manifold <> sm_space proj
-R2969:2978 SphereClassification.HadamardCartan <> diffeo_map proj
-R2980:2989 SphereClassification.HadamardCartan <> diffeo_inv proj
-R2991:3001 SphereClassification.HadamardCartan <> diffeo_cont proj
-R3003:3017 SphereClassification.HadamardCartan <> diffeo_inv_cont proj
-R2924:2939 SphereClassification.Topology <> mkIsHomeomorphic constr
-R2942:2949 SphereClassification.Manifold <> sm_space proj
-R2956:2963 SphereClassification.Manifold <> sm_space proj
-R2969:2978 SphereClassification.HadamardCartan <> diffeo_map proj
-R2980:2989 SphereClassification.HadamardCartan <> diffeo_inv proj
-R2991:3001 SphereClassification.HadamardCartan <> diffeo_cont proj
-R3003:3017 SphereClassification.HadamardCartan <> diffeo_inv_cont proj
+R3017:3032 SphereClassification.Topology <> mkIsHomeomorphic constr
+R3035:3042 SphereClassification.Manifold <> sm_space proj
+R3049:3056 SphereClassification.Manifold <> sm_space proj
+R3017:3032 SphereClassification.Topology <> mkIsHomeomorphic constr
+R3035:3042 SphereClassification.Manifold <> sm_space proj
+R3049:3056 SphereClassification.Manifold <> sm_space proj

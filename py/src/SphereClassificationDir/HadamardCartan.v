@@ -62,8 +62,8 @@ Lemma diffeomorphic_implies_homeomorphic :
     IsHomeomorphic (sm_space M1) (sm_space M2).
 Proof.
   intros M1 M2 Hdiffeo.
-  destruct Hdiffeo.
-  apply (mkIsHomeomorphic (sm_space M1) (sm_space M2) diffeo_map diffeo_inv diffeo_cont diffeo_inv_cont).
+  destruct Hdiffeo as [diffeo_map0 diffeo_inv0 diffeo_cont0 diffeo_inv_cont0 diffeo_smooth0 diffeo_inv_smooth0].
+  apply (mkIsHomeomorphic (sm_space M1) (sm_space M2) diffeo_map0 diffeo_inv0 diffeo_cont0 diffeo_inv_cont0).
 Qed.
 
 (* ===================================================================== *)

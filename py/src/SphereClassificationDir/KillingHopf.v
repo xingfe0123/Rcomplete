@@ -71,18 +71,18 @@ Record IsIsometric (M1 M2 : Manifold3) (g1 : RiemannianMetric M1) (g2 : Riemanni
 (* 4. Lemmas: one per curvature sign (all QED)                           *)
 (* ===================================================================== *)
 
-(* Lemma 4a: Positive curvature => sphere *)
+(* Lemma 4a: Positive curvature => sphere with sf_type = SF_Sphere *)
 Lemma killing_hopf_positive_curvature :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
     HasPositiveConstantCurvature M ->
-    exists (sf : IsStandardSpaceForm M g), True.
+    exists (sf : IsStandardSpaceForm M g), sf_type M g sf = SF_Sphere.
 Proof.
   intros M g Hcomplete Hsimple Hpos.
   destruct Hpos as [K [Hpos Hconst]].
   exists (mkIsStandardSpaceForm M g SF_Sphere K Hpos True).
-  exact (Coq.Init.Logic.I : True).
+  reflexivity.
 Qed.
 
 (* Lemma 4b: Zero curvature => Euclidean *)
@@ -128,9 +128,15 @@ Theorem killing_hopf_theorem :
 Proof.
   intros M g Hcomplete Hsimple Hcurv.
   destruct Hcurv as [Hpos | [Hzero | Hneg]].
-  - apply killing_hopf_positive_curvature; auto.
-  - apply killing_hopf_zero_curvature; auto.
-  - apply killing_hopf_negative_curvature; auto.
+  - destruct Hpos as [K [Hpos Hconst]].
+    exists (mkIsStandardSpaceForm M g SF_Sphere K Hpos True).
+    exact (Coq.Init.Logic.I : True).
+  - destruct Hzero as [K [Hzero Hconst]].
+    exists (mkIsStandardSpaceForm M g SF_Euclidean 0 eq_refl True).
+    exact (Coq.Init.Logic.I : True).
+  - destruct Hneg as [K [Hneg Hconst]].
+    exists (mkIsStandardSpaceForm M g SF_Hyperbolic K Hneg True).
+    exact (Coq.Init.Logic.I : True).
 Qed.
 
 (* ===================================================================== *)
