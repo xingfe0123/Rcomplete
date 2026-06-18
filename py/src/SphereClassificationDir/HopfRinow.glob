@@ -1,0 +1,11 @@
+DIGEST 5a27fb7b225689f06213e54d448c527f
+FSphereClassification.HopfRinow
+R79:83 Coq.Reals.Reals <> <> lib
+R101:114 Coq.Logic.Classical_Prop <> <> lib
+R132:136 Coq.Reals.Reals <> <> lib
+R138:140 Coq.micromega.Lra <> <> lib
+R158:181 Coq.Logic.FunctionalExtensionality <> <> lib
+R199:207 Coq.Logic.Classical <> <> lib
+R247:275 SphereClassification.Manifold <> <> lib
+R293:321 SphereClassification.Topology <> <> lib
+R339:372 SphereClassification.RiemannMetric <> <> lib

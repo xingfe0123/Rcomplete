@@ -1,0 +1,206 @@
+DIGEST 4260c1426b2d93a0f493a49cecfbbd9d
+FSphereClassification.Topology
+R171:175 Coq.Reals.Reals <> <> lib
+R193:206 Coq.Logic.Classical_Prop <> <> lib
+R224:228 Coq.Reals.Reals <> <> lib
+R230:232 Coq.micromega.Lra <> <> lib
+R250:273 Coq.Logic.FunctionalExtensionality <> <> lib
+R291:299 Coq.Logic.Classical <> <> lib
+rec 560:575 <> TopologicalSpace
+proj 627:636 <> space_type
+proj 667:672 <> isOpen
+proj 732:745 <> topology_empty
+proj 776:788 <> topology_full
+proj 818:831 <> topology_inter
+proj 903:916 <> topology_union
+R676:676 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R695:699 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R687:690 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R677:686 SphereClassification.Topology <> space_type:2 meth
+R749:754 SphereClassification.Topology <> isOpen:3 meth
+R766:770 Coq.Init.Logic <> False ind
+R792:797 SphereClassification.Topology <> isOpen:3 meth
+R809:812 Coq.Init.Logic <> True ind
+binder 842:842 <> U:6
+binder 844:844 <> V:7
+R855:858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R847:852 SphereClassification.Topology <> isOpen:3 meth
+R854:854 SphereClassification.Topology <> U:6 var
+R867:870 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R859:864 SphereClassification.Topology <> isOpen:3 meth
+R866:866 SphereClassification.Topology <> V:7 var
+R871:876 SphereClassification.Topology <> isOpen:3 meth
+binder 883:883 <> x:8
+R891:894 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R888:888 SphereClassification.Topology <> U:6 var
+R890:890 SphereClassification.Topology <> x:8 var
+R895:895 SphereClassification.Topology <> V:7 var
+R897:897 SphereClassification.Topology <> x:8 var
+binder 928:928 <> I:10
+R944:948 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R967:967 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R943:943 SphereClassification.Topology <> I:10 var
+R959:962 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R949:958 SphereClassification.Topology <> space_type:2 meth
+binder 939:939 <> U:11
+R975:975 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R998:1002 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 983:983 <> i:12
+R986:991 SphereClassification.Topology <> isOpen:3 meth
+R994:994 SphereClassification.Topology <> U:11 var
+R996:996 SphereClassification.Topology <> i:12 var
+R1003:1008 SphereClassification.Topology <> isOpen:3 meth
+binder 1015:1015 <> x:13
+R1020:1026 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1028:1029 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1027:1027 <> i:14
+R1030:1030 SphereClassification.Topology <> U:11 var
+R1034:1034 SphereClassification.Topology <> x:13 var
+R1032:1032 SphereClassification.Topology <> i:14 var
+def 1109:1118 <> Continuous
+R1127:1142 SphereClassification.Topology <> TopologicalSpace rec
+binder 1121:1121 <> X:16
+binder 1123:1123 <> Y:17
+R1162:1165 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1150:1159 SphereClassification.Topology <> space_type proj
+R1161:1161 SphereClassification.Topology <> X:16 var
+R1166:1175 SphereClassification.Topology <> space_type proj
+R1177:1177 SphereClassification.Topology <> Y:17 var
+binder 1146:1146 <> f:18
+binder 1199:1199 <> V:19
+R1212:1215 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1202:1207 SphereClassification.Topology <> isOpen proj
+R1209:1209 SphereClassification.Topology <> Y:17 var
+R1211:1211 SphereClassification.Topology <> V:19 var
+R1216:1221 SphereClassification.Topology <> isOpen proj
+R1223:1223 SphereClassification.Topology <> X:16 var
+binder 1230:1230 <> x:20
+R1235:1235 SphereClassification.Topology <> V:19 var
+R1238:1238 SphereClassification.Topology <> f:18 var
+R1240:1240 SphereClassification.Topology <> x:20 var
+ax 1518:1518 <> I
+ax 1538:1540 <> I_0
+R1544:1544 SphereClassification.Topology <> I defax
+ax 1557:1559 <> I_1
+R1563:1563 SphereClassification.Topology <> I defax
+rec 1693:1696 <> Path
+proj 1735:1743 <> path_func
+proj 1768:1776 <> path_cont
+proj 1815:1824 <> path_start
+proj 1844:1851 <> path_end
+proj 1871:1883 <> path_start_eq
+proj 1917:1927 <> path_end_eq
+R1703:1718 SphereClassification.Topology <> TopologicalSpace rec
+binder 1699:1699 <> X:24
+R1748:1751 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1747:1747 SphereClassification.Topology <> I defax
+R1752:1761 SphereClassification.Topology <> space_type proj
+R1763:1763 SphereClassification.Topology <> X:24 var
+R1828:1837 SphereClassification.Topology <> space_type proj
+R1839:1839 SphereClassification.Topology <> X:24 var
+R1855:1864 SphereClassification.Topology <> space_type proj
+R1866:1866 SphereClassification.Topology <> X:24 var
+R1900:1902 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1887:1895 SphereClassification.Topology <> path_func:26 meth
+R1897:1899 SphereClassification.Topology <> I_0 defax
+R1903:1912 SphereClassification.Topology <> path_start:28 meth
+R1944:1946 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1931:1939 SphereClassification.Topology <> path_func:26 meth
+R1941:1943 SphereClassification.Topology <> I_1 defax
+R1947:1954 SphereClassification.Topology <> path_end:29 meth
+ax 1999:2010 <> PathHomotopy
+R2026:2041 SphereClassification.Topology <> TopologicalSpace rec
+binder 2022:2022 <> X:32
+R2051:2054 SphereClassification.Topology <> Path rec
+R2056:2056 SphereClassification.Topology <> X:32 var
+binder 2045:2045 <> p:33
+binder 2047:2047 <> q:34
+rec 2303:2311 <> PathClass
+proj 2355:2360 <> pc_rep
+R2318:2333 SphereClassification.Topology <> TopologicalSpace rec
+binder 2314:2314 <> X:36
+R2364:2367 SphereClassification.Topology <> Path rec
+R2369:2369 SphereClassification.Topology <> X:36 var
+ax 2420:2424 <> pc_eq
+R2440:2455 SphereClassification.Topology <> TopologicalSpace rec
+binder 2436:2436 <> X:39
+R2470:2473 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2459:2467 SphereClassification.Topology <> PathClass rec
+R2469:2469 SphereClassification.Topology <> X:39 var
+R2485:2488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2474:2482 SphereClassification.Topology <> PathClass rec
+R2484:2484 SphereClassification.Topology <> X:39 var
+ax 2548:2557 <> pc_eq_refl
+R2573:2588 SphereClassification.Topology <> TopologicalSpace rec
+binder 2569:2569 <> X:41
+R2596:2604 SphereClassification.Topology <> PathClass rec
+R2606:2606 SphereClassification.Topology <> X:41 var
+binder 2592:2592 <> c:42
+R2610:2614 SphereClassification.Topology <> pc_eq prfax
+R2616:2616 SphereClassification.Topology <> X:41 var
+R2618:2618 SphereClassification.Topology <> c:42 var
+R2620:2620 SphereClassification.Topology <> c:42 var
+ax 2629:2637 <> pc_eq_sym
+R2653:2668 SphereClassification.Topology <> TopologicalSpace rec
+binder 2649:2649 <> X:44
+R2680:2688 SphereClassification.Topology <> PathClass rec
+R2690:2690 SphereClassification.Topology <> X:44 var
+binder 2672:2673 <> c1:45
+binder 2675:2676 <> c2:46
+R2707:2710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2694:2698 SphereClassification.Topology <> pc_eq prfax
+R2700:2700 SphereClassification.Topology <> X:44 var
+R2702:2703 SphereClassification.Topology <> c1:45 var
+R2705:2706 SphereClassification.Topology <> c2:46 var
+R2711:2715 SphereClassification.Topology <> pc_eq prfax
+R2717:2717 SphereClassification.Topology <> X:44 var
+R2719:2720 SphereClassification.Topology <> c2:46 var
+R2722:2723 SphereClassification.Topology <> c1:45 var
+ax 2732:2742 <> pc_eq_trans
+R2758:2773 SphereClassification.Topology <> TopologicalSpace rec
+binder 2754:2754 <> X:48
+R2788:2796 SphereClassification.Topology <> PathClass rec
+R2798:2798 SphereClassification.Topology <> X:48 var
+binder 2777:2778 <> c1:49
+binder 2780:2781 <> c2:50
+binder 2783:2784 <> c3:51
+R2815:2818 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2802:2806 SphereClassification.Topology <> pc_eq prfax
+R2808:2808 SphereClassification.Topology <> X:48 var
+R2810:2811 SphereClassification.Topology <> c1:49 var
+R2813:2814 SphereClassification.Topology <> c2:50 var
+R2832:2835 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2819:2823 SphereClassification.Topology <> pc_eq prfax
+R2825:2825 SphereClassification.Topology <> X:48 var
+R2827:2828 SphereClassification.Topology <> c2:50 var
+R2830:2831 SphereClassification.Topology <> c3:51 var
+R2836:2840 SphereClassification.Topology <> pc_eq prfax
+R2842:2842 SphereClassification.Topology <> X:48 var
+R2844:2845 SphereClassification.Topology <> c1:49 var
+R2847:2848 SphereClassification.Topology <> c3:51 var
+rec 3088:3101 <> IsHomeomorphic
+proj 3152:3156 <> homeo
+proj 3192:3200 <> homeo_inv
+proj 3236:3245 <> homeo_cont
+proj 3273:3286 <> homeo_inv_cont
+R3110:3125 SphereClassification.Topology <> TopologicalSpace rec
+binder 3104:3104 <> X:53
+binder 3106:3106 <> Y:54
+R3172:3175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3160:3169 SphereClassification.Topology <> space_type proj
+R3171:3171 SphereClassification.Topology <> X:53 var
+R3176:3185 SphereClassification.Topology <> space_type proj
+R3187:3187 SphereClassification.Topology <> Y:54 var
+R3216:3219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3204:3213 SphereClassification.Topology <> space_type proj
+R3215:3215 SphereClassification.Topology <> Y:54 var
+R3220:3229 SphereClassification.Topology <> space_type proj
+R3231:3231 SphereClassification.Topology <> X:53 var
+R3249:3258 SphereClassification.Topology <> Continuous def
+R3260:3260 SphereClassification.Topology <> X:53 var
+R3262:3262 SphereClassification.Topology <> Y:54 var
+R3264:3268 SphereClassification.Topology <> homeo:56 meth
+R3290:3299 SphereClassification.Topology <> Continuous def
+R3301:3301 SphereClassification.Topology <> Y:54 var
+R3303:3303 SphereClassification.Topology <> X:53 var
+R3305:3313 SphereClassification.Topology <> homeo_inv:57 meth

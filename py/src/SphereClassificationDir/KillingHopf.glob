@@ -1,0 +1,14 @@
+DIGEST fe25c1f5b2b38039b8f28bd8d64718ed
+FSphereClassification.KillingHopf
+R467:471 Coq.Reals.Reals <> <> lib
+R489:502 Coq.Logic.Classical_Prop <> <> lib
+R520:524 Coq.Reals.Reals <> <> lib
+R526:528 Coq.micromega.Lra <> <> lib
+R546:569 Coq.Logic.FunctionalExtensionality <> <> lib
+R587:595 Coq.Logic.Classical <> <> lib
+R635:663 SphereClassification.Topology <> <> lib
+R681:717 SphereClassification.FundamentalGroup <> <> lib
+R735:763 SphereClassification.Manifold <> <> lib
+R781:814 SphereClassification.RiemannMetric <> <> lib
+R832:865 SphereClassification.RiemannTensor <> <> lib
+R883:911 SphereClassification.Geodesic <> <> lib

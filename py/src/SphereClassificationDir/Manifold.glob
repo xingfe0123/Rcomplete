@@ -1,0 +1,80 @@
+DIGEST 05b3a785c4a195adaca624545f4f907d
+FSphereClassification.Manifold
+R78:82 Coq.Reals.Reals <> <> lib
+R100:113 Coq.Logic.Classical_Prop <> <> lib
+R131:135 Coq.Reals.Reals <> <> lib
+R137:139 Coq.micromega.Lra <> <> lib
+R157:180 Coq.Logic.FunctionalExtensionality <> <> lib
+R198:206 Coq.Logic.Classical <> <> lib
+R224:227 Coq.Lists.List <> <> lib
+R267:295 SphereClassification.Topology <> <> lib
+rec 535:539 <> Chart
+proj 612:617 <> domain
+proj 645:655 <> domain_open
+proj 708:712 <> coord
+proj 781:791 <> coord_homeo
+R546:561 SphereClassification.Topology <> TopologicalSpace rec
+binder 542:542 <> X:1
+R633:636 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R621:630 SphereClassification.Topology <> space_type proj
+R632:632 SphereClassification.Manifold <> X:1 var
+R659:664 SphereClassification.Topology <> isOpen proj
+R666:666 SphereClassification.Manifold <> X:1 var
+R668:673 SphereClassification.Manifold <> domain:3 meth
+R728:731 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R716:725 SphereClassification.Topology <> space_type proj
+R727:727 SphereClassification.Manifold <> X:1 var
+R732:732 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+rec 1040:1044 <> Atlas
+proj 1084:1089 <> charts
+proj 1145:1155 <> atlas_cover
+R1051:1066 SphereClassification.Topology <> TopologicalSpace rec
+binder 1047:1047 <> X:7
+R1093:1096 Coq.Init.Datatypes <> list ind
+R1099:1103 SphereClassification.Manifold <> Chart rec
+R1105:1105 SphereClassification.Manifold <> X:7 var
+binder 1166:1166 <> x:10
+R1169:1175 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1177:1178 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 1176:1176 <> c:11
+R1190:1193 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1179:1180 Coq.Lists.List <> In def
+R1184:1189 SphereClassification.Manifold <> charts:9 meth
+R1182:1182 SphereClassification.Manifold <> c:11 var
+R1194:1199 SphereClassification.Manifold <> domain proj
+R1201:1201 SphereClassification.Manifold <> X:7 var
+R1203:1203 SphereClassification.Manifold <> c:11 var
+R1205:1205 SphereClassification.Manifold <> x:10 var
+rec 1447:1461 <> SmoothStructure
+proj 1546:1562 <> transition_smooth
+proj 1636:1647 <> smooth_atlas
+R1468:1483 SphereClassification.Topology <> TopologicalSpace rec
+binder 1464:1464 <> X:13
+R1582:1586 SphereClassification.Manifold <> Chart rec
+R1588:1588 SphereClassification.Manifold <> X:13 var
+binder 1574:1575 <> c1:15
+binder 1577:1578 <> c2:16
+R1596:1599 Coq.Init.Logic <> True ind
+R1651:1658 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1670:1672 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1663:1667 SphereClassification.Manifold <> Atlas rec
+R1669:1669 SphereClassification.Manifold <> X:13 var
+binder 1659:1659 <> A:18
+R1673:1676 Coq.Init.Logic <> True ind
+rec 1918:1931 <> SmoothManifold
+proj 1994:2001 <> sm_space
+proj 2044:2049 <> sm_dim
+proj 2085:2093 <> sm_smooth
+R2006:2021 SphereClassification.Topology <> TopologicalSpace rec
+R2053:2055 Coq.Init.Datatypes <> nat ind
+R2097:2111 SphereClassification.Manifold <> SmoothStructure rec
+R2114:2121 SphereClassification.Manifold <> sm_space:21 meth
+rec 2364:2372 <> Manifold3
+proj 2393:2400 <> m3_space
+proj 2423:2431 <> m3_dim_eq
+R2405:2418 SphereClassification.Manifold <> SmoothManifold rec
+R2450:2452 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2435:2440 SphereClassification.Manifold <> sm_dim proj
+R2442:2449 SphereClassification.Manifold <> m3_space:25 meth
+ax 2488:2489 <> S3
+R2493:2501 SphereClassification.Manifold <> Manifold3 rec

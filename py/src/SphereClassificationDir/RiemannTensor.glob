@@ -1,0 +1,39 @@
+DIGEST 9747e656d3c8f467400659b05c108151
+FSphereClassification.RiemannTensor
+R113:117 Coq.Reals.Reals <> <> lib
+R135:148 Coq.Logic.Classical_Prop <> <> lib
+R166:170 Coq.Reals.Reals <> <> lib
+R172:174 Coq.micromega.Lra <> <> lib
+R192:215 Coq.Logic.FunctionalExtensionality <> <> lib
+R233:241 Coq.Logic.Classical <> <> lib
+R281:309 SphereClassification.Manifold <> <> lib
+R327:355 SphereClassification.Topology <> <> lib
+R373:406 SphereClassification.RiemannMetric <> <> lib
+ax 679:692 <> riemann_tensor
+R710:718 SphereClassification.Manifold <> Manifold3 rec
+binder 706:706 <> M:1
+R743:748 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R722:740 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R742:742 SphereClassification.RiemannTensor <> M:1 var
+R770:773 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R749:767 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R769:769 SphereClassification.RiemannTensor <> M:1 var
+R795:798 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R774:792 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R794:794 SphereClassification.RiemannTensor <> M:1 var
+R799:817 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R819:819 SphereClassification.RiemannTensor <> M:1 var
+ax 868:886 <> sectional_curvature
+R904:912 SphereClassification.Manifold <> Manifold3 rec
+binder 900:900 <> M:3
+R937:940 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R916:934 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R936:936 SphereClassification.RiemannTensor <> M:3 var
+R962:965 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R941:959 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R961:961 SphereClassification.RiemannTensor <> M:3 var
+R966:966 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 1210:1231 <> has_positive_curvature
+R1238:1246 SphereClassification.Manifold <> Manifold3 rec
+binder 1234:1234 <> M:5
+R1261:1264 Coq.Init.Logic <> True ind

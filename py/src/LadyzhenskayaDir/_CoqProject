@@ -1,0 +1,9 @@
+-Q src Ladyzhenskaya
+-Q src/LadyzhenskayaDir LadyzhenskayaDir
+
+src/LadyzhenskayaDir/HolderSpace.v
+src/LadyzhenskayaDir/ParabolicCoefficients.v
+src/LadyzhenskayaDir/Galerkin.v
+src/LadyzhenskayaDir/Schauder.v
+src/LadyzhenskayaDir/Uniqueness.v
+src/LadyzhenskayaDir/LadyzhenskayaMain.v

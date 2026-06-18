@@ -1,0 +1,95 @@
+DIGEST 163760e4b7a24294af8ba5bc76bfc8c8
+FSphereClassification.RiemannMetric
+R145:149 Coq.Reals.Reals <> <> lib
+R167:180 Coq.Logic.Classical_Prop <> <> lib
+R198:202 Coq.Reals.Reals <> <> lib
+R204:206 Coq.micromega.Lra <> <> lib
+R224:247 Coq.Logic.FunctionalExtensionality <> <> lib
+R265:273 Coq.Logic.Classical <> <> lib
+R313:341 SphereClassification.Manifold <> <> lib
+R359:387 SphereClassification.Topology <> <> lib
+ax 630:648 <> TangentSpaceType_of
+R661:664 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R652:660 SphereClassification.Manifold <> Manifold3 rec
+ax 681:690 <> ts_zero_of
+R706:714 SphereClassification.Manifold <> Manifold3 rec
+binder 702:702 <> M:2
+R718:736 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R738:738 SphereClassification.RiemannMetric <> M:2 var
+ax 751:759 <> ts_add_of
+R775:783 SphereClassification.Manifold <> Manifold3 rec
+binder 771:771 <> M:4
+R810:813 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R789:807 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R809:809 SphereClassification.RiemannMetric <> M:4 var
+R835:838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R814:832 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R834:834 SphereClassification.RiemannMetric <> M:4 var
+R839:857 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R859:859 SphereClassification.RiemannMetric <> M:4 var
+ax 872:882 <> ts_smult_of
+R898:906 SphereClassification.Manifold <> Manifold3 rec
+binder 894:894 <> M:6
+R913:916 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R912:912 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R938:941 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R917:935 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R937:937 SphereClassification.RiemannMetric <> M:6 var
+R942:960 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R962:962 SphereClassification.RiemannMetric <> M:6 var
+rec 1202:1217 <> RiemannianMetric
+proj 1261:1273 <> metric_tensor
+proj 1354:1368 <> metric_symmetry
+proj 1489:1501 <> metric_posdef
+R1224:1232 SphereClassification.Manifold <> Manifold3 rec
+binder 1220:1220 <> M:8
+R1289:1298 SphereClassification.Topology <> space_type proj
+R1301:1308 SphereClassification.Manifold <> sm_space proj
+R1310:1310 SphereClassification.RiemannMetric <> M:8 var
+binder 1285:1285 <> p:10
+R1321:1339 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R1341:1341 SphereClassification.RiemannMetric <> M:8 var
+binder 1315:1315 <> u:11
+binder 1317:1317 <> v:12
+R1349:1349 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1384:1393 SphereClassification.Topology <> space_type proj
+R1396:1403 SphereClassification.Manifold <> sm_space proj
+R1405:1405 SphereClassification.RiemannMetric <> M:8 var
+binder 1380:1380 <> p:14
+R1416:1434 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R1436:1436 SphereClassification.RiemannMetric <> M:8 var
+binder 1410:1410 <> u:15
+binder 1412:1412 <> v:16
+R1463:1465 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1444:1456 SphereClassification.RiemannMetric <> metric_tensor:13 meth
+R1462:1462 SphereClassification.RiemannMetric <> v:16 var
+R1460:1460 SphereClassification.RiemannMetric <> u:15 var
+R1458:1458 SphereClassification.RiemannMetric <> p:14 var
+R1466:1478 SphereClassification.RiemannMetric <> metric_tensor:13 meth
+R1484:1484 SphereClassification.RiemannMetric <> u:15 var
+R1482:1482 SphereClassification.RiemannMetric <> v:16 var
+R1480:1480 SphereClassification.RiemannMetric <> p:14 var
+R1517:1526 SphereClassification.Topology <> space_type proj
+R1529:1536 SphereClassification.Manifold <> sm_space proj
+R1538:1538 SphereClassification.RiemannMetric <> M:8 var
+binder 1513:1513 <> p:18
+R1547:1565 SphereClassification.RiemannMetric <> TangentSpaceType_of defax
+R1567:1567 SphereClassification.RiemannMetric <> M:8 var
+binder 1543:1543 <> u:19
+R1599:1603 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1647:1647 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1594:1597 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1575:1587 SphereClassification.RiemannMetric <> metric_tensor:13 meth
+R1593:1593 SphereClassification.RiemannMetric <> u:19 var
+R1591:1591 SphereClassification.RiemannMetric <> u:19 var
+R1589:1589 SphereClassification.RiemannMetric <> p:18 var
+R1627:1630 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1623:1625 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1604:1616 SphereClassification.RiemannMetric <> metric_tensor:13 meth
+R1622:1622 SphereClassification.RiemannMetric <> u:19 var
+R1620:1620 SphereClassification.RiemannMetric <> u:19 var
+R1618:1618 SphereClassification.RiemannMetric <> p:18 var
+R1632:1634 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1631:1631 SphereClassification.RiemannMetric <> u:19 var
+R1635:1644 SphereClassification.RiemannMetric <> ts_zero_of defax
+R1646:1646 SphereClassification.RiemannMetric <> M:8 var
