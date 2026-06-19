@@ -47,17 +47,18 @@ Record IsStandardSpaceForm (M : Manifold3) (g : RiemannianMetric M) := mkIsStand
 (* 2. Constant Curvature (Prop-based)                                    *)
 (* ===================================================================== *)
 
-Definition HasConstantCurvature (M : Manifold3) (K : R) : Prop :=
-  forall (u v : TangentSpaceType_of M), sectional_curvature M u v = K.
+Definition HasConstantCurvature (M : Manifold3) (g : RiemannianMetric M) (K : R) : Prop :=
+  forall (p : space_type (sm_space M)) (u v : TangentSpaceType_of M),
+    sectional_curvature M g p u v = K.
 
-Definition HasPositiveConstantCurvature (M : Manifold3) : Prop :=
-  exists K : R, K > 0 /\ HasConstantCurvature M K.
+Definition HasPositiveConstantCurvature (M : Manifold3) (g : RiemannianMetric M) : Prop :=
+  exists K : R, K > 0 /\ HasConstantCurvature M g K.
 
-Definition HasZeroConstantCurvature (M : Manifold3) : Prop :=
-  exists K : R, K = 0 /\ HasConstantCurvature M K.
+Definition HasZeroConstantCurvature (M : Manifold3) (g : RiemannianMetric M) : Prop :=
+  exists K : R, K = 0 /\ HasConstantCurvature M g K.
 
-Definition HasNegativeConstantCurvature (M : Manifold3) : Prop :=
-  exists K : R, K < 0 /\ HasConstantCurvature M K.
+Definition HasNegativeConstantCurvature (M : Manifold3) (g : RiemannianMetric M) : Prop :=
+  exists K : R, K < 0 /\ HasConstantCurvature M g K.
 
 (* ===================================================================== *)
 (* 3. Isometric (Prop-based wrapper)                                     *)
@@ -76,7 +77,7 @@ Lemma killing_hopf_positive_curvature :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
-    HasPositiveConstantCurvature M ->
+    HasPositiveConstantCurvature M g ->
     exists (sf : IsStandardSpaceForm M g), sf_type M g sf = SF_Sphere.
 Proof.
   intros M g Hcomplete Hsimple Hpos.
@@ -90,7 +91,7 @@ Lemma killing_hopf_zero_curvature :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
-    HasZeroConstantCurvature M ->
+    HasZeroConstantCurvature M g ->
     exists (sf : IsStandardSpaceForm M g), True.
 Proof.
   intros M g Hcomplete Hsimple Hzero.
@@ -104,7 +105,7 @@ Lemma killing_hopf_negative_curvature :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
-    HasNegativeConstantCurvature M ->
+    HasNegativeConstantCurvature M g ->
     exists (sf : IsStandardSpaceForm M g), True.
 Proof.
   intros M g Hcomplete Hsimple Hneg.
@@ -121,9 +122,9 @@ Theorem killing_hopf_theorem :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
-    (HasPositiveConstantCurvature M \/
-     HasZeroConstantCurvature M \/
-     HasNegativeConstantCurvature M) ->
+    (HasPositiveConstantCurvature M g \/
+     HasZeroConstantCurvature M g \/
+     HasNegativeConstantCurvature M g) ->
     exists (sf : IsStandardSpaceForm M g), True.
 Proof.
   intros M g Hcomplete Hsimple Hcurv.
@@ -148,7 +149,7 @@ Theorem killing_hopf_positive_curvature_sphere :
   forall (M : Manifold3) (g : RiemannianMetric M),
     is_metric_complete M g ->
     IsSimplyConnected (sm_space M) ->
-    HasPositiveConstantCurvature M ->
+    HasPositiveConstantCurvature M g ->
     exists (sf : IsStandardSpaceForm M g), True.
 Proof.
   intros M g Hcomplete Hsimple Hpos.

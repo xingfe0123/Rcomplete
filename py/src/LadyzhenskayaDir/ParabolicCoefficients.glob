@@ -1,0 +1,221 @@
+DIGEST 8ce765f1152575d0aee81cdad7f388cf
+FLadyzhenskayaDir.ParabolicCoefficients
+R319:329 LadyzhenskayaDir.HolderSpace <> <> lib
+rec 824:844 <> ParabolicCoefficients
+proj 853:856 <> pc_a
+proj 945:948 <> pc_b
+proj 1033:1036 <> pc_c
+proj 1096:1099 <> pc_f
+R877:880 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R860:876 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R882:885 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R881:881 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R886:886 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R969:972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R952:968 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R974:977 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R973:973 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R978:978 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1057:1060 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1040:1056 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R1061:1061 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1120:1123 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1103:1119 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R1124:1124 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 1617:1637 <> coeffs_Holder_regular
+R1650:1663 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 1642:1646 <> alpha:6
+R1677:1697 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicCoefficients rec
+binder 1669:1673 <> coefs:7
+R1712:1718 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1724:1725 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1723:1723 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1719:1719 <> M:8
+R1735:1761 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1728:1730 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1731:1731 LadyzhenskayaDir.ParabolicCoefficients <> M:8 var
+R1762:1762 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R1879:1907 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2024:2024 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1770:1770 <> p:9
+binder 1772:1772 <> q:10
+R1817:1820 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1783:1786 Coq.Reals.Rbasic_fun <> Rabs def
+R1801:1803 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1789:1792 LadyzhenskayaDir.ParabolicCoefficients <> pc_c proj
+R1800:1800 LadyzhenskayaDir.ParabolicCoefficients <> p:9 var
+R1794:1798 LadyzhenskayaDir.ParabolicCoefficients <> coefs:7 var
+R1804:1807 LadyzhenskayaDir.ParabolicCoefficients <> pc_c proj
+R1815:1815 LadyzhenskayaDir.ParabolicCoefficients <> q:10 var
+R1809:1813 LadyzhenskayaDir.ParabolicCoefficients <> coefs:7 var
+R1822:1825 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1875:1875 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1821:1821 LadyzhenskayaDir.ParabolicCoefficients <> M:8 var
+R1828:1830 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1826:1827 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R1831:1852 LadyzhenskayaDir.HolderSpace <> parabolic_distance_pow defax
+R1874:1874 LadyzhenskayaDir.ParabolicCoefficients <> q:10 var
+R1872:1872 LadyzhenskayaDir.ParabolicCoefficients <> p:9 var
+R1855:1863 LadyzhenskayaDir.HolderSpace <> alpha_val proj
+R1865:1869 LadyzhenskayaDir.ParabolicCoefficients <> alpha:6 var
+binder 1915:1915 <> p:11
+binder 1917:1917 <> q:12
+R1962:1965 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1928:1931 Coq.Reals.Rbasic_fun <> Rabs def
+R1946:1948 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1934:1937 LadyzhenskayaDir.ParabolicCoefficients <> pc_f proj
+R1945:1945 LadyzhenskayaDir.ParabolicCoefficients <> p:11 var
+R1939:1943 LadyzhenskayaDir.ParabolicCoefficients <> coefs:7 var
+R1949:1952 LadyzhenskayaDir.ParabolicCoefficients <> pc_f proj
+R1960:1960 LadyzhenskayaDir.ParabolicCoefficients <> q:12 var
+R1954:1958 LadyzhenskayaDir.ParabolicCoefficients <> coefs:7 var
+R1967:1970 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2020:2020 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1966:1966 LadyzhenskayaDir.ParabolicCoefficients <> M:8 var
+R1973:1975 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1971:1972 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R1976:1997 LadyzhenskayaDir.HolderSpace <> parabolic_distance_pow defax
+R2019:2019 LadyzhenskayaDir.ParabolicCoefficients <> q:12 var
+R2017:2017 LadyzhenskayaDir.ParabolicCoefficients <> p:11 var
+R2000:2008 LadyzhenskayaDir.HolderSpace <> alpha_val proj
+R2010:2014 LadyzhenskayaDir.ParabolicCoefficients <> alpha:6 var
+ax 2264:2286 <> coeff_Holder_regularity
+R2308:2321 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 2300:2304 <> alpha:13
+R2333:2353 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicCoefficients rec
+binder 2325:2329 <> coefs:14
+R2361:2381 LadyzhenskayaDir.ParabolicCoefficients <> coeffs_Holder_regular def
+R2389:2393 LadyzhenskayaDir.ParabolicCoefficients <> coefs:14 var
+R2383:2387 LadyzhenskayaDir.ParabolicCoefficients <> alpha:13 var
+def 2819:2836 <> strictly_parabolic
+R2847:2867 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicCoefficients rec
+binder 2839:2843 <> coefs:16
+R2876:2876 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2871:2872 <> mu:17
+R2901:2906 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2893:2895 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2896:2897 LadyzhenskayaDir.ParabolicCoefficients <> mu:17 var
+R2919:2935 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 2915:2915 <> p:18
+R2944:2944 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2939:2940 <> xi:19
+R3037:3040 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R3015:3018 LadyzhenskayaDir.ParabolicCoefficients <> pc_a proj
+R3031:3033 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3029:3030 LadyzhenskayaDir.ParabolicCoefficients <> xi:19 var
+R3034:3035 LadyzhenskayaDir.ParabolicCoefficients <> xi:19 var
+R3026:3026 LadyzhenskayaDir.ParabolicCoefficients <> p:18 var
+R3020:3024 LadyzhenskayaDir.ParabolicCoefficients <> coefs:16 var
+R3043:3046 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3054:3054 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3041:3042 LadyzhenskayaDir.ParabolicCoefficients <> mu:17 var
+R3049:3051 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3047:3048 LadyzhenskayaDir.ParabolicCoefficients <> xi:19 var
+R3052:3053 LadyzhenskayaDir.ParabolicCoefficients <> xi:19 var
+ax 3155:3172 <> parabolic_constant
+R3176:3176 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 3185:3206 <> parabolic_constant_pos
+R3212:3214 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3215:3232 LadyzhenskayaDir.ParabolicCoefficients <> parabolic_constant defax
+def 3250:3263 <> parabolic_data
+R3274:3294 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicCoefficients rec
+binder 3266:3270 <> coefs:22
+R3352:3389 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3441:3441 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3309:3326 LadyzhenskayaDir.ParabolicCoefficients <> strictly_parabolic def
+R3334:3351 LadyzhenskayaDir.ParabolicCoefficients <> parabolic_constant defax
+R3328:3332 LadyzhenskayaDir.ParabolicCoefficients <> coefs:22 var
+R3401:3417 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 3397:3397 <> p:23
+R3422:3425 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3426:3429 LadyzhenskayaDir.ParabolicCoefficients <> pc_c proj
+R3437:3437 LadyzhenskayaDir.ParabolicCoefficients <> p:23 var
+R3431:3435 LadyzhenskayaDir.ParabolicCoefficients <> coefs:22 var
+rec 3747:3757 <> InitialData
+proj 3766:3773 <> init_phi
+proj 3804:3814 <> init_holder
+R3794:3797 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3777:3793 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R3798:3798 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3818:3818 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 3865:3875 <> init_smooth
+R3885:3895 LadyzhenskayaDir.ParabolicCoefficients <> InitialData rec
+binder 3878:3881 <> data:27
+R3934:3939 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R3912:3914 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3915:3925 LadyzhenskayaDir.ParabolicCoefficients <> init_holder proj
+R3927:3930 LadyzhenskayaDir.ParabolicCoefficients <> data:27 var
+R3953:3969 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 3947:3947 <> p:28
+binder 3949:3949 <> q:29
+R4017:4020 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3977:3980 Coq.Reals.Rbasic_fun <> Rabs def
+R3998:4000 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3983:3990 LadyzhenskayaDir.ParabolicCoefficients <> init_phi proj
+R3997:3997 LadyzhenskayaDir.ParabolicCoefficients <> p:28 var
+R3992:3995 LadyzhenskayaDir.ParabolicCoefficients <> data:27 var
+R4001:4008 LadyzhenskayaDir.ParabolicCoefficients <> init_phi proj
+R4015:4015 LadyzhenskayaDir.ParabolicCoefficients <> q:29 var
+R4010:4013 LadyzhenskayaDir.ParabolicCoefficients <> data:27 var
+R4037:4039 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4021:4031 LadyzhenskayaDir.ParabolicCoefficients <> init_holder proj
+R4033:4036 LadyzhenskayaDir.ParabolicCoefficients <> data:27 var
+R4040:4061 LadyzhenskayaDir.HolderSpace <> parabolic_distance_pow defax
+R4068:4068 LadyzhenskayaDir.ParabolicCoefficients <> q:29 var
+R4066:4066 LadyzhenskayaDir.ParabolicCoefficients <> p:28 var
+R4063:4064 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+rec 4321:4336 <> ParabolicProblem
+proj 4345:4352 <> pp_alpha
+proj 4379:4386 <> pp_coefs
+proj 4420:4426 <> pp_init
+proj 4451:4462 <> pp_coef_data
+proj 4539:4546 <> pp_parab
+proj 4582:4591 <> pp_init_ok
+R4360:4373 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+R4394:4414 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicCoefficients rec
+R4435:4445 LadyzhenskayaDir.ParabolicCoefficients <> InitialData rec
+R4466:4486 LadyzhenskayaDir.ParabolicCoefficients <> coeffs_Holder_regular def
+R4497:4504 LadyzhenskayaDir.ParabolicCoefficients <> pp_coefs:32 meth
+R4488:4495 LadyzhenskayaDir.ParabolicCoefficients <> pp_alpha:31 meth
+R4554:4567 LadyzhenskayaDir.ParabolicCoefficients <> parabolic_data def
+R4569:4576 LadyzhenskayaDir.ParabolicCoefficients <> pp_coefs:32 meth
+R4597:4607 LadyzhenskayaDir.ParabolicCoefficients <> init_smooth def
+R4609:4615 LadyzhenskayaDir.ParabolicCoefficients <> pp_init:33 meth
+def 5021:5036 <> classical_smooth
+R5049:5062 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 5041:5045 <> alpha:37
+R5089:5092 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5072:5088 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5093:5093 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5068:5068 <> u:38
+R5103:5103 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5099:5099 <> M:39
+R5127:5132 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5120:5122 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R5123:5123 LadyzhenskayaDir.ParabolicCoefficients <> M:39 var
+R5133:5139 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5166:5171 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5146:5165 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 5140:5142 <> phs:40
+R5192:5199 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5188:5190 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5172:5183 LadyzhenskayaDir.HolderSpace <> phs_function proj
+R5185:5187 LadyzhenskayaDir.ParabolicCoefficients <> phs:40 var
+R5191:5191 LadyzhenskayaDir.ParabolicCoefficients <> u:38 var
+R5232:5235 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5201:5221 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R5229:5231 LadyzhenskayaDir.ParabolicCoefficients <> phs:40 var
+R5223:5227 LadyzhenskayaDir.ParabolicCoefficients <> alpha:37 var
+R5236:5236 LadyzhenskayaDir.ParabolicCoefficients <> M:39 var
+def 5319:5343 <> parabolic_constants_bound
+R5350:5365 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicProblem rec
+binder 5346:5346 <> P:41
+R5370:5370 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5395:5397 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5377:5394 LadyzhenskayaDir.ParabolicCoefficients <> parabolic_constant defax
+R5398:5415 LadyzhenskayaDir.ParabolicCoefficients <> parabolic_constant defax
+ax 5864:5895 <> coefficient_holder_semivariation
+R5913:5928 LadyzhenskayaDir.ParabolicCoefficients <> ParabolicProblem rec
+binder 5909:5909 <> P:42
+R5932:5950 LadyzhenskayaDir.HolderSpace <> HolderSemivariation rec
+R5952:5968 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax

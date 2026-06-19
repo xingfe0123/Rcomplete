@@ -1,4 +1,4 @@
-DIGEST 0d62b8e18739ce8cc88f6098d0aafd82
+DIGEST 623d65d3b886e34c1516eb95a132d8f0
 FCoq.src.LinearAlgebraDir.SymmetricMatrix
 R160:164 Coq.Reals.Reals <> <> lib
 R182:186 Coq.Reals.Reals <> <> lib
@@ -332,634 +332,713 @@ R3593:3593 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:66 var
 R3595:3600 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:67 var
 R3611:3613 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
 R3605:3610 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:67 var
-ax 3983:4008 <> spectral_theorem_symmetric
-R4025:4027 Coq.Init.Datatypes <> nat ind
-binder 4021:4021 <> n:68
-R4035:4040 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R4042:4042 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-binder 4031:4031 <> A:69
-R4061:4068 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4052:4054 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
-R4051:4051 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4085:4092 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4069:4080 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
-R4082:4082 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4084:4084 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:69 var
-R4093:4100 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R4128:4177 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R4105:4110 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R4112:4112 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-binder 4101:4101 <> Q:70
-R4120:4125 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R4127:4127 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-binder 4116:4116 <> D:71
-R4178:4178 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4305:4345 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4193:4195 Coq.Init.Datatypes <> nat ind
-binder 4187:4187 <> i:72
-binder 4189:4189 <> j:73
-R4210:4213 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4201:4203 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4200:4200 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:72 var
-R4204:4204 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4225:4236 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4216:4218 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4215:4215 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:73 var
-R4219:4219 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4272:4275 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4304:4304 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4237:4247 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
-R4249:4249 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4252:4260 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
-R4262:4262 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4264:4264 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
-R4267:4267 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
-R4269:4269 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:72 var
-R4271:4271 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:73 var
-R4279:4285 Coq.Arith.PeanoNat Nat eqb def
-R4287:4287 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:72 var
-R4289:4289 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:73 var
-R4346:4346 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4416:4475 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4361:4363 Coq.Init.Datatypes <> nat ind
-binder 4355:4355 <> i:74
-binder 4357:4357 <> j:75
-R4378:4381 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4369:4371 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4368:4368 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:74 var
-R4372:4372 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4393:4396 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4384:4386 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4383:4383 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:75 var
-R4387:4387 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4403:4406 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4398:4401 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
-R4397:4397 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:74 var
-R4402:4402 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:75 var
-R4412:4414 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4407:4407 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:71 var
-R4409:4409 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:74 var
-R4411:4411 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:75 var
-R4476:4476 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4596:4652 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4703:4703 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R4491:4493 Coq.Init.Datatypes <> nat ind
-binder 4485:4485 <> i:76
-binder 4487:4487 <> j:77
-R4508:4511 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4499:4501 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4498:4498 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:76 var
-R4502:4502 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4523:4534 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4514:4516 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4513:4513 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:77 var
-R4517:4517 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4540:4542 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R4535:4535 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:69 var
-R4537:4537 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:76 var
-R4539:4539 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:77 var
-R4543:4553 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
-R4555:4555 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4558:4568 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
-R4570:4570 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4572:4572 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
-R4574:4574 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:71 var
-R4578:4586 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
-R4588:4588 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4590:4590 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
-R4593:4593 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:76 var
-R4595:4595 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:77 var
-binder 4660:4660 <> i:78
-R4674:4677 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4665:4667 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R4664:4664 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:78 var
-R4668:4668 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4678:4690 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_eigenvalue def
-R4692:4692 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
-R4694:4694 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:69 var
-R4697:4697 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:71 var
-R4699:4699 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:78 var
-R4701:4701 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:78 var
-ax 4824:4866 <> positive_definite_from_positive_eigenvalues
-R4883:4885 Coq.Init.Datatypes <> nat ind
-binder 4879:4879 <> n:80
-R4893:4898 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R4900:4900 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
-binder 4889:4889 <> A:81
-R4919:4926 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4910:4912 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
-R4909:4909 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
-R4943:4950 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4927:4938 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
-R4940:4940 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
-R4942:4942 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:81 var
-R4979:4986 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4951:4974 Coq.src.LinearAlgebraDir.SymmetricMatrix <> all_eigenvalues_positive def
-R4976:4976 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
-R4978:4978 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:81 var
-R4987:5006 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_positive_definite def
-R5008:5008 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
-R5010:5010 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:81 var
-def 5317:5320 <> Rsum
-R5327:5329 Coq.Init.Datatypes <> nat ind
-binder 5323:5323 <> n:83
-R5340:5343 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5337:5339 Coq.Init.Datatypes <> nat ind
-R5344:5344 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 5333:5333 <> f:84
-R5349:5349 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R5362:5362 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:83 var
-R5384:5384 Coq.Init.Datatypes <> S constr
-R5396:5398 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R5392:5392 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:84 var
-R5399:5402 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum:85 def
-R5407:5407 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:84 var
-prf 5460:5470 <> Rsum_eq_ext
-R5487:5489 Coq.Init.Datatypes <> nat ind
-binder 5483:5483 <> n:87
-R5502:5505 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5499:5501 Coq.Init.Datatypes <> nat ind
-R5506:5506 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 5493:5493 <> f:88
-binder 5495:5495 <> g:89
-R5514:5514 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5549:5557 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-binder 5522:5522 <> k:90
-R5536:5539 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5527:5529 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R5526:5526 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:90 var
-R5530:5530 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:87 var
-R5543:5545 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5540:5540 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:88 var
-R5542:5542 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:90 var
-R5546:5546 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:89 var
-R5548:5548 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:90 var
-R5566:5568 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5558:5561 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R5563:5563 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:87 var
-R5565:5565 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:88 var
-R5569:5572 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R5574:5574 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:87 var
-R5576:5576 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:89 var
-prf 5776:5786 <> Rsum_linear
-R5803:5805 Coq.Init.Datatypes <> nat ind
-binder 5799:5799 <> n:91
-R5813:5813 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 5809:5809 <> a:92
-R5826:5829 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5823:5825 Coq.Init.Datatypes <> nat ind
-R5830:5830 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 5817:5817 <> f:93
-binder 5819:5819 <> g:94
-R5869:5871 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5838:5841 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+ax 4237:4270 <> spectral_theorem_orthogonal_exists
+R4287:4289 Coq.Init.Datatypes <> nat ind
+binder 4283:4283 <> n:68
+R4297:4302 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4304:4304 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+binder 4293:4293 <> A:69
+R4323:4330 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4314:4316 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R4313:4313 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4347:4354 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4331:4342 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R4344:4344 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4346:4346 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:69 var
+R4355:4362 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4375:4384 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4511:4511 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4367:4372 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4374:4374 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+binder 4363:4363 <> Q:70
+R4399:4401 Coq.Init.Datatypes <> nat ind
+binder 4393:4393 <> i:71
+binder 4395:4395 <> j:72
+R4416:4419 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4407:4409 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4406:4406 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:71 var
+R4410:4410 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4431:4442 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4422:4424 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4421:4421 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:72 var
+R4425:4425 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4478:4481 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4510:4510 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4443:4453 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R4455:4455 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4458:4466 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
+R4468:4468 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:68 var
+R4470:4470 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
+R4473:4473 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:70 var
+R4475:4475 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:71 var
+R4477:4477 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:72 var
+R4485:4491 Coq.Arith.PeanoNat Nat eqb def
+R4493:4493 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:71 var
+R4495:4495 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:72 var
+ax 4560:4591 <> spectral_theorem_diagonal_exists
+R4608:4610 Coq.Init.Datatypes <> nat ind
+binder 4604:4604 <> n:74
+R4618:4623 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4625:4625 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+binder 4614:4614 <> A:75
+R4644:4651 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4635:4637 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R4634:4634 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+R4668:4675 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4652:4663 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R4665:4665 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+R4667:4667 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:75 var
+R4676:4683 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4696:4705 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4775:4775 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4688:4693 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4695:4695 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+binder 4684:4684 <> D:76
+R4720:4722 Coq.Init.Datatypes <> nat ind
+binder 4714:4714 <> i:77
+binder 4716:4716 <> j:78
+R4737:4740 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4728:4730 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4727:4727 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:77 var
+R4731:4731 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+R4752:4755 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4743:4745 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R4742:4742 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:78 var
+R4746:4746 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:74 var
+R4762:4765 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4757:4760 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R4756:4756 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:77 var
+R4761:4761 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:78 var
+R4771:4773 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R4766:4766 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:76 var
+R4768:4768 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:77 var
+R4770:4770 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:78 var
+ax 4834:4863 <> spectral_theorem_decomposition
+R4880:4882 Coq.Init.Datatypes <> nat ind
+binder 4876:4876 <> n:80
+R4890:4895 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4897:4897 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+binder 4886:4886 <> A:81
+R4916:4923 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4907:4909 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R4906:4906 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R4940:4947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4924:4935 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R4937:4937 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R4939:4939 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:81 var
+R4948:4955 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4983:4991 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4960:4965 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4967:4967 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+binder 4956:4956 <> Q:82
+R4975:4980 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R4982:4982 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+binder 4971:4971 <> D:83
+R4992:4992 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5119:5129 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5007:5009 Coq.Init.Datatypes <> nat ind
+binder 5001:5001 <> i:84
+binder 5003:5003 <> j:85
+R5024:5027 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5015:5017 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5014:5014 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:84 var
+R5018:5018 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5039:5050 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5030:5032 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5029:5029 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:85 var
+R5033:5033 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5086:5089 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5118:5118 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5051:5061 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5063:5063 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5066:5074 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
+R5076:5076 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5078:5078 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:82 var
+R5081:5081 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:82 var
+R5083:5083 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:84 var
+R5085:5085 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:85 var
+R5093:5099 Coq.Arith.PeanoNat Nat eqb def
+R5101:5101 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:84 var
+R5103:5103 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:85 var
+R5130:5130 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5200:5211 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5331:5331 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R5145:5147 Coq.Init.Datatypes <> nat ind
+binder 5139:5139 <> i:86
+binder 5141:5141 <> j:87
+R5162:5165 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5153:5155 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5152:5152 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:86 var
+R5156:5156 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5177:5180 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5168:5170 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5167:5167 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:87 var
+R5171:5171 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5187:5190 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5182:5185 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5181:5181 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:86 var
+R5186:5186 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:87 var
+R5196:5198 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5191:5191 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:83 var
+R5193:5193 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:86 var
+R5195:5195 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:87 var
+R5226:5228 Coq.Init.Datatypes <> nat ind
+binder 5220:5220 <> i:88
+binder 5222:5222 <> j:89
+R5243:5246 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5234:5236 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5233:5233 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:88 var
+R5237:5237 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5258:5269 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5249:5251 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5248:5248 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:89 var
+R5252:5252 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5275:5277 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5270:5270 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:81 var
+R5272:5272 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:88 var
+R5274:5274 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:89 var
+R5278:5288 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5290:5290 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5293:5303 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5305:5305 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5307:5307 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:82 var
+R5309:5309 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:83 var
+R5313:5321 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
+R5323:5323 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:80 var
+R5325:5325 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:82 var
+R5328:5328 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:88 var
+R5330:5330 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:89 var
+ax 5377:5418 <> spectral_theorem_eigenvalue_correspondence
+R5435:5437 Coq.Init.Datatypes <> nat ind
+binder 5431:5431 <> n:91
+R5445:5450 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R5452:5452 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+binder 5441:5441 <> A:92
+R5462:5467 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R5469:5469 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+binder 5456:5456 <> Q:93
+binder 5458:5458 <> D:94
+R5488:5495 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5479:5481 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R5478:5478 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5512:5519 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5496:5507 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R5509:5509 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5511:5511 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:92 var
+R5520:5520 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5645:5653 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5535:5537 Coq.Init.Datatypes <> nat ind
+binder 5529:5529 <> i:95
+binder 5531:5531 <> j:96
+R5552:5555 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5543:5545 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5542:5542 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:95 var
+R5546:5546 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5567:5576 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5558:5560 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5557:5557 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:96 var
+R5561:5561 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5612:5615 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5644:5644 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5577:5587 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5589:5589 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5592:5600 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
+R5602:5602 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5604:5604 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:93 var
+R5607:5607 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:93 var
+R5609:5609 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:95 var
+R5611:5611 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:96 var
+R5619:5625 Coq.Arith.PeanoNat Nat eqb def
+R5627:5627 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:95 var
+R5629:5629 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:96 var
+R5654:5654 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5724:5732 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5669:5671 Coq.Init.Datatypes <> nat ind
+binder 5663:5663 <> i:97
+binder 5665:5665 <> j:98
+R5686:5689 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5677:5679 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5676:5676 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:97 var
+R5680:5680 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5701:5704 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5692:5694 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5691:5691 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:98 var
+R5695:5695 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5711:5714 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5706:5709 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R5705:5705 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:97 var
+R5710:5710 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:98 var
+R5720:5722 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5715:5715 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:94 var
+R5717:5717 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:97 var
+R5719:5719 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:98 var
+R5733:5733 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5851:5859 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5748:5750 Coq.Init.Datatypes <> nat ind
+binder 5742:5742 <> i:99
+binder 5744:5744 <> j:100
+R5765:5768 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5756:5758 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5755:5755 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:99 var
+R5759:5759 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5780:5789 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5771:5773 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5770:5770 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:100 var
+R5774:5774 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5795:5797 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5790:5790 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:92 var
+R5792:5792 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:99 var
+R5794:5794 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:100 var
+R5798:5808 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5810:5810 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5813:5823 Coq.src.LinearAlgebraDir.SymmetricMatrix <> matrix_mult def
+R5825:5825 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5827:5827 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:93 var
+R5829:5829 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:94 var
+R5833:5841 Coq.src.LinearAlgebraDir.SymmetricMatrix <> transpose def
 R5843:5843 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
-binder 5850:5850 <> k:95
-R5862:5864 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R5856:5858 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R5855:5855 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:92 var
-R5859:5859 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:93 var
-R5861:5861 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:95 var
-R5865:5865 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:94 var
-R5867:5867 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:95 var
-R5884:5886 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R5873:5875 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R5872:5872 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:92 var
-R5876:5879 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R5881:5881 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
-R5883:5883 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:93 var
-R5887:5890 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R5892:5892 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
-R5894:5894 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:94 var
-prf 5993:6001 <> Rplus_ge0
-R6018:6018 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 6012:6012 <> a:96
-binder 6014:6014 <> b:97
-R6027:6030 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6022:6025 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R6021:6021 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:96 var
-R6037:6040 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6032:6035 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R6031:6031 Coq.src.LinearAlgebraDir.SymmetricMatrix <> b:97 var
-R6046:6049 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R6042:6044 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6041:6041 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:96 var
-R6045:6045 Coq.src.LinearAlgebraDir.SymmetricMatrix <> b:97 var
-prf 6160:6170 <> Rsum_nonneg
-R6187:6189 Coq.Init.Datatypes <> nat ind
-binder 6183:6183 <> n:98
-R6200:6203 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6197:6199 Coq.Init.Datatypes <> nat ind
-R6204:6204 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 6193:6193 <> f:99
-R6212:6212 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6246:6254 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-binder 6220:6220 <> k:100
-R6234:6237 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6225:6227 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R6224:6224 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:100 var
-R6228:6228 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:98 var
-R6241:6244 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R6238:6238 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:99 var
-R6240:6240 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:100 var
-R6263:6266 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R6255:6258 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6260:6260 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:98 var
-R6262:6262 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:99 var
-R6337:6345 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rplus_ge0 thm
-R6337:6345 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rplus_ge0 thm
-prf 6539:6551 <> Rsum_remove_0
-R6568:6570 Coq.Init.Datatypes <> nat ind
-binder 6564:6564 <> n:101
-R6581:6584 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6578:6580 Coq.Init.Datatypes <> nat ind
-R6585:6585 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 6574:6574 <> f:102
-R6601:6607 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6593:6596 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6598:6598 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:101 var
-R6600:6600 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:102 var
-R6614:6614 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:101 var
-R6640:6640 Coq.Init.Datatypes <> S constr
-R6657:6659 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6649:6649 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:102 var
-R6660:6663 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-binder 6673:6673 <> k:104
-R6678:6678 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:102 var
-R6681:6681 Coq.Init.Datatypes <> S constr
-R6683:6683 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:104 var
-R6896:6924 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6846:6849 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6895:6895 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6859:6861 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6853:6853 Coq.Init.Datatypes <> S constr
-R6862:6865 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6880:6882 Coq.Init.Datatypes <> nat ind
-binder 6876:6876 <> k:105
-R6890:6890 Coq.Init.Datatypes <> S constr
-R6892:6892 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:105 var
-R6925:6925 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6969:6971 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6933:6935 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6936:6939 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6954:6956 Coq.Init.Datatypes <> nat ind
-binder 6950:6950 <> k:106
-R6964:6964 Coq.Init.Datatypes <> S constr
-R6966:6966 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:106 var
-R6975:6975 Coq.Init.Datatypes <> S constr
-R6896:6924 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6846:6849 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6895:6895 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6859:6861 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6853:6853 Coq.Init.Datatypes <> S constr
-R6862:6865 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6880:6882 Coq.Init.Datatypes <> nat ind
-binder 6876:6876 <> k:107
-R6890:6890 Coq.Init.Datatypes <> S constr
-R6892:6892 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:107 var
-R6925:6925 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6969:6971 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6933:6935 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R6936:6939 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R6954:6956 Coq.Init.Datatypes <> nat ind
-binder 6950:6950 <> k:108
-R6964:6964 Coq.Init.Datatypes <> S constr
-R6966:6966 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:108 var
-R6975:6975 Coq.Init.Datatypes <> S constr
-R7062:7065 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7084:7084 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7048:7051 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7054:7054 Coq.Init.Datatypes <> S constr
-R7071:7073 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R7074:7077 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7062:7065 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7084:7084 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7048:7051 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7054:7054 Coq.Init.Datatypes <> S constr
-R7071:7073 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R7074:7077 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-prf 7278:7290 <> Rsum_split_at
-R7309:7311 Coq.Init.Datatypes <> nat ind
-binder 7303:7303 <> n:109
-binder 7305:7305 <> i:110
-R7322:7325 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R7319:7321 Coq.Init.Datatypes <> nat ind
-R7326:7326 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 7315:7315 <> f:111
-R7345:7352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R7336:7338 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R7335:7335 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:110 var
-R7339:7339 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:109 var
-R7361:7363 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R7353:7356 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7358:7358 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:109 var
-R7360:7360 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:111 var
-R7378:7380 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R7372:7374 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R7364:7367 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7369:7369 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:110 var
-R7371:7371 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:111 var
-R7375:7375 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:111 var
-R7377:7377 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:110 var
-R7381:7384 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R7388:7390 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
-R7387:7387 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:109 var
-R7391:7391 Coq.Init.Datatypes <> S constr
-R7393:7393 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:110 var
-binder 7401:7401 <> k:112
-R7406:7406 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:111 var
-R7412:7414 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
-R7409:7409 Coq.Init.Datatypes <> S constr
-R7411:7411 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:110 var
-R7415:7415 Coq.Init.Datatypes <> S constr
-R7417:7417 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:112 var
-prf 7817:7836 <> R_sq_pos_iff_nonzero
-R7852:7852 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 7848:7848 <> x:113
-R7864:7868 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R7860:7862 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R7856:7858 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R7855:7855 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:113 var
-R7859:7859 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:113 var
-R7870:7873 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
-R7869:7869 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:113 var
-prf 7915:7925 <> R_sq_nonneg
-R7939:7939 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 7935:7935 <> x:114
-R7947:7950 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R7943:7945 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R7942:7942 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:114 var
-R7946:7946 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:114 var
-def 8030:8036 <> norm_sq
-R8043:8045 Coq.Init.Datatypes <> nat ind
-binder 8039:8039 <> n:115
-R8056:8059 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8053:8055 Coq.Init.Datatypes <> nat ind
-R8060:8060 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 8049:8049 <> v:116
-R8065:8065 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R8072:8075 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R8077:8077 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:115 var
-binder 8084:8084 <> k:117
-R8092:8094 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R8089:8089 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:116 var
-R8091:8091 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:117 var
-R8095:8095 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:116 var
-R8097:8097 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:117 var
-prf 8133:8146 <> norm_sq_nonneg
-R8163:8165 Coq.Init.Datatypes <> nat ind
-binder 8159:8159 <> n:118
-R8176:8179 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8173:8175 Coq.Init.Datatypes <> nat ind
-R8180:8180 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 8169:8169 <> v:119
-R8199:8202 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R8188:8194 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R8196:8196 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:118 var
-R8198:8198 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:119 var
-R8234:8240 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R8249:8259 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_nonneg thm
-R8249:8259 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_nonneg thm
-R8280:8290 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_nonneg prfax
-R8280:8290 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_nonneg prfax
-prf 8345:8367 <> norm_sq_pos_iff_nonzero
-R8384:8386 Coq.Init.Datatypes <> nat ind
-binder 8380:8380 <> n:120
-R8397:8400 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8394:8396 Coq.Init.Datatypes <> nat ind
-R8401:8401 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 8390:8390 <> v:121
-R8409:8409 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R8445:8450 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
-R8410:8416 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R8418:8419 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-binder 8417:8417 <> i:122
-R8431:8435 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R8444:8444 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R8422:8424 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R8421:8421 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:122 var
-R8425:8425 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:120 var
-R8439:8442 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
-R8436:8436 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:121 var
-R8438:8438 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:122 var
-R8462:8464 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R8451:8457 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R8459:8459 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:120 var
-R8461:8461 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:121 var
-R8668:8677 Coq.Arith.PeanoNat Nat eq_dec thm
-R8668:8677 Coq.Arith.PeanoNat Nat eq_dec thm
-R8736:8742 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-def 8815:8819 <> inner
-R8826:8828 Coq.Init.Datatypes <> nat ind
-binder 8822:8822 <> n:123
-R8841:8844 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8838:8840 Coq.Init.Datatypes <> nat ind
-R8845:8845 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 8832:8832 <> u:124
-binder 8834:8834 <> v:125
-R8850:8850 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R8857:8860 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
-R8862:8862 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:123 var
-binder 8869:8869 <> k:126
-R8877:8879 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R8874:8874 Coq.src.LinearAlgebraDir.SymmetricMatrix <> u:124 var
-R8876:8876 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:126 var
-R8880:8880 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:125 var
-R8882:8882 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:126 var
-prf 8893:8902 <> inner_symm
-R8919:8921 Coq.Init.Datatypes <> nat ind
-binder 8915:8915 <> n:127
-R8934:8937 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R8931:8933 Coq.Init.Datatypes <> nat ind
-R8938:8938 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 8925:8925 <> u:128
-binder 8927:8927 <> v:129
-R8953:8955 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R8942:8946 Coq.src.LinearAlgebraDir.SymmetricMatrix <> inner def
-R8948:8948 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:127 var
-R8950:8950 Coq.src.LinearAlgebraDir.SymmetricMatrix <> u:128 var
-R8952:8952 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:129 var
-R8956:8960 Coq.src.LinearAlgebraDir.SymmetricMatrix <> inner def
-R8962:8962 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:127 var
-R8964:8964 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:129 var
-R8966:8966 Coq.src.LinearAlgebraDir.SymmetricMatrix <> u:128 var
-R8999:9003 Coq.src.LinearAlgebraDir.SymmetricMatrix <> inner def
-R9012:9022 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_eq_ext thm
-R9012:9022 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_eq_ext thm
-R9045:9054 Coq.Reals.Raxioms <> Rmult_comm thm
-R9045:9054 Coq.Reals.Raxioms <> Rmult_comm thm
-R9045:9054 Coq.Reals.Raxioms <> Rmult_comm thm
-def 9153:9166 <> quadratic_form
-R9173:9175 Coq.Init.Datatypes <> nat ind
-binder 9169:9169 <> n:130
-R9183:9188 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R9190:9190 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:130 var
-binder 9179:9179 <> A:131
-R9201:9204 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9198:9200 Coq.Init.Datatypes <> nat ind
-R9205:9205 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 9194:9194 <> x:132
-R9210:9210 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R9217:9221 Coq.src.LinearAlgebraDir.SymmetricMatrix <> inner def
-R9223:9223 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:130 var
-R9225:9225 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:132 var
-R9229:9233 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R9228:9228 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:131 var
-R9234:9234 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:132 var
-prf 9305:9330 <> qf_outer_eq_quadratic_form
-R9347:9349 Coq.Init.Datatypes <> nat ind
-binder 9343:9343 <> n:133
-R9357:9359 Coq.Init.Datatypes <> nat ind
-binder 9353:9353 <> m:134
-R9367:9372 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R9374:9374 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:133 var
-binder 9363:9363 <> A:135
-R9385:9388 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9382:9384 Coq.Init.Datatypes <> nat ind
-R9389:9389 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 9378:9378 <> x:136
-R9404:9411 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9398:9400 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R9397:9397 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:133 var
-R9401:9401 Coq.Init.Datatypes <> S constr
-R9403:9403 Coq.src.LinearAlgebraDir.SymmetricMatrix <> m:134 var
-R9428:9430 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R9412:9419 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer def
-R9421:9421 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:133 var
-R9423:9423 Coq.src.LinearAlgebraDir.SymmetricMatrix <> m:134 var
-R9425:9425 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:135 var
-R9427:9427 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:136 var
-R9431:9444 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R9446:9446 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:133 var
-R9448:9448 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:135 var
-R9450:9450 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:136 var
-prf 9755:9768 <> eigenvector_qf
-R9785:9787 Coq.Init.Datatypes <> nat ind
-binder 9781:9781 <> n:137
-R9795:9800 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R9802:9802 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:137 var
-binder 9791:9791 <> A:138
-R9813:9816 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9810:9812 Coq.Init.Datatypes <> nat ind
-R9817:9817 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 9806:9806 <> v:139
-R9830:9830 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 9821:9826 <> lambda:140
-R9838:9838 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9890:9898 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-binder 9846:9846 <> i:141
-R9860:9863 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R9851:9853 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R9850:9850 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:141 var
-R9854:9854 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:137 var
-R9875:9877 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R9864:9864 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R9866:9870 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R9872:9874 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R9865:9865 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:138 var
-R9871:9871 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:139 var
-R9874:9874 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:141 var
-R9884:9886 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R9878:9883 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:140 var
-R9887:9887 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:139 var
-R9889:9889 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:141 var
-R9919:9921 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R9899:9912 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R9914:9914 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:137 var
-R9916:9916 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:138 var
-R9918:9918 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:139 var
-R9928:9930 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R9922:9927 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:140 var
-R9931:9937 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R9939:9939 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:137 var
-R9941:9941 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:139 var
-R9983:9996 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R9999:10003 Coq.src.LinearAlgebraDir.SymmetricMatrix <> inner def
-R10006:10012 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-prf 10438:10467 <> pd_implies_eigenvalue_positive
-R10484:10486 Coq.Init.Datatypes <> nat ind
-binder 10480:10480 <> n:142
-R10494:10499 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
-R10501:10501 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
-binder 10490:10490 <> A:143
-R10514:10514 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 10505:10510 <> lambda:144
-R10525:10528 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10522:10524 Coq.Init.Datatypes <> nat ind
-R10529:10529 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-binder 10518:10518 <> v:145
-R10548:10555 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10539:10541 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
-R10538:10538 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
-R10580:10587 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10556:10575 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_positive_definite def
-R10577:10577 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
-R10579:10579 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:143 var
-R10588:10588 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10622:10630 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10589:10595 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10597:10598 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-binder 10596:10596 <> i:146
-R10610:10613 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R10601:10603 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R10600:10600 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:146 var
-R10604:10604 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
-R10617:10620 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
-R10614:10614 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:145 var
-R10616:10616 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:146 var
-R10631:10631 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10683:10691 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-binder 10639:10639 <> i:147
-R10653:10656 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R10644:10646 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
-R10643:10643 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:147 var
-R10647:10647 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
-R10668:10670 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R10657:10657 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R10659:10663 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R10665:10667 Coq.src.LinearAlgebraDir.SymmetricMatrix <> :::x_'⟪'_x not
-R10658:10658 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:143 var
-R10664:10664 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:145 var
-R10667:10667 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:147 var
-R10677:10679 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R10671:10676 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:144 var
-R10680:10680 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:145 var
-R10682:10682 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:147 var
-R10698:10700 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R10692:10697 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:144 var
-R11154:11156 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11134:11141 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer def
-R11144:11144 Coq.Init.Datatypes <> S constr
-R11157:11170 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R11173:11173 Coq.Init.Datatypes <> S constr
-R11154:11156 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11134:11141 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer def
-R11144:11144 Coq.Init.Datatypes <> S constr
-R11157:11170 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R11173:11173 Coq.Init.Datatypes <> S constr
-R11202:11227 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer_eq_quadratic_form prfax
-R11202:11227 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer_eq_quadratic_form prfax
-R11398:11400 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11374:11387 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R11390:11390 Coq.Init.Datatypes <> S constr
-R11407:11409 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R11410:11416 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R11419:11419 Coq.Init.Datatypes <> S constr
-R11398:11400 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R11374:11387 Coq.src.LinearAlgebraDir.SymmetricMatrix <> quadratic_form def
-R11390:11390 Coq.Init.Datatypes <> S constr
-R11407:11409 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
-R11410:11416 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R11419:11419 Coq.Init.Datatypes <> S constr
-R11446:11459 Coq.src.LinearAlgebraDir.SymmetricMatrix <> eigenvector_qf prfax
-R11446:11459 Coq.src.LinearAlgebraDir.SymmetricMatrix <> eigenvector_qf prfax
-R11615:11617 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R11600:11606 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R11609:11609 Coq.Init.Datatypes <> S constr
-R11615:11617 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R11600:11606 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
-R11609:11609 Coq.Init.Datatypes <> S constr
-R11640:11662 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq_pos_iff_nonzero prfax
-R11640:11662 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq_pos_iff_nonzero prfax
-R11898:11902 Coq.Init.Logic <> proj2 thm
-R11898:11902 Coq.Init.Logic <> proj2 thm
+R5845:5845 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Q:93 var
+R5848:5848 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:99 var
+R5850:5850 Coq.src.LinearAlgebraDir.SymmetricMatrix <> j:100 var
+binder 5867:5867 <> i:101
+R5881:5884 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5872:5874 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5871:5871 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:101 var
+R5875:5875 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5885:5897 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_eigenvalue def
+R5899:5899 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:91 var
+R5901:5901 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:92 var
+R5904:5904 Coq.src.LinearAlgebraDir.SymmetricMatrix <> D:94 var
+R5906:5906 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:101 var
+R5908:5908 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:101 var
+ax 6139:6163 <> positive_eigenvalues_span
+R6180:6182 Coq.Init.Datatypes <> nat ind
+binder 6176:6176 <> n:103
+R6190:6195 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R6197:6197 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+binder 6186:6186 <> A:104
+R6216:6223 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6207:6209 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R6206:6206 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6240:6247 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6224:6235 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R6237:6237 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6239:6239 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:104 var
+R6276:6283 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6248:6271 Coq.src.LinearAlgebraDir.SymmetricMatrix <> all_eigenvalues_positive def
+R6273:6273 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6275:6275 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:104 var
+R6284:6291 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6316:6325 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6436:6436 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6304:6307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6301:6303 Coq.Init.Datatypes <> nat ind
+R6311:6314 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6308:6310 Coq.Init.Datatypes <> nat ind
+R6315:6315 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6292:6297 <> v_list:105
+binder 6333:6333 <> k:106
+R6347:6350 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6338:6340 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6337:6337 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:106 var
+R6341:6341 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6351:6357 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6364:6365 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6358:6363 <> lambda:107
+R6390:6394 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6435:6435 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6366:6378 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_eigenvalue def
+R6380:6380 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6382:6382 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:104 var
+R6384:6389 Coq.src.LinearAlgebraDir.SymmetricMatrix <> lambda:107 var
+R6395:6401 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6403:6404 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6402:6402 <> i:108
+R6416:6419 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6407:6409 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6406:6406 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:108 var
+R6410:6410 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:103 var
+R6430:6433 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6420:6425 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v_list:105 var
+R6429:6429 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:108 var
+R6427:6427 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:106 var
+ax 6526:6563 <> positive_definite_from_eigen_expansion
+R6580:6582 Coq.Init.Datatypes <> nat ind
+binder 6576:6576 <> n:110
+R6590:6595 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Matrix def
+R6597:6597 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+binder 6586:6586 <> A:111
+R6616:6623 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6607:6609 Coq.Init.Peano <> ::nat_scope:x_'>'_x not
+R6606:6606 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6640:6647 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6624:6635 Coq.src.LinearAlgebraDir.SymmetricMatrix <> is_symmetric def
+R6637:6637 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6639:6639 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:111 var
+R6676:6683 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6648:6671 Coq.src.LinearAlgebraDir.SymmetricMatrix <> all_eigenvalues_positive def
+R6673:6673 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6675:6675 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:111 var
+R6699:6702 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6696:6698 Coq.Init.Datatypes <> nat ind
+R6703:6703 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6692:6692 <> x:112
+R6713:6713 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6747:6757 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6714:6720 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6722:6723 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6721:6721 <> i:113
+R6735:6738 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6726:6728 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R6725:6725 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:113 var
+R6729:6729 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6742:6745 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R6739:6739 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:112 var
+R6741:6741 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:113 var
+R6764:6764 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6788:6792 Coq.Init.Logic <> False ind
+R6802:6802 Coq.Init.Datatypes <> S constr
+R6825:6827 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6809:6816 Coq.src.LinearAlgebraDir.SymmetricMatrix <> qf_outer def
+R6818:6818 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:110 var
+R6822:6822 Coq.src.LinearAlgebraDir.SymmetricMatrix <> A:111 var
+R6824:6824 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:112 var
+def 7145:7148 <> Rsum
+R7155:7157 Coq.Init.Datatypes <> nat ind
+binder 7151:7151 <> n:116
+R7168:7171 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7165:7167 Coq.Init.Datatypes <> nat ind
+R7172:7172 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7161:7161 <> f:117
+R7177:7177 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7190:7190 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:116 var
+R7212:7212 Coq.Init.Datatypes <> S constr
+R7224:7226 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R7220:7220 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:117 var
+R7227:7230 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum:118 def
+R7235:7235 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:117 var
+prf 7288:7298 <> Rsum_eq_ext
+R7315:7317 Coq.Init.Datatypes <> nat ind
+binder 7311:7311 <> n:120
+R7330:7333 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7327:7329 Coq.Init.Datatypes <> nat ind
+R7334:7334 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7321:7321 <> f:121
+binder 7323:7323 <> g:122
+R7342:7342 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7377:7385 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7350:7350 <> k:123
+R7364:7367 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7355:7357 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R7354:7354 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:123 var
+R7358:7358 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:120 var
+R7371:7373 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7368:7368 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:121 var
+R7370:7370 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:123 var
+R7374:7374 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:122 var
+R7376:7376 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:123 var
+R7394:7396 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7386:7389 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7391:7391 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:120 var
+R7393:7393 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:121 var
+R7397:7400 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7402:7402 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:120 var
+R7404:7404 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:122 var
+prf 7620:7626 <> Rsum_rm
+R7643:7645 Coq.Init.Datatypes <> nat ind
+binder 7639:7639 <> n:124
+R7653:7653 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7649:7649 <> a:125
+R7664:7667 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7661:7663 Coq.Init.Datatypes <> nat ind
+R7668:7668 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7657:7657 <> f:126
+R7701:7703 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7676:7679 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7681:7681 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:124 var
+binder 7688:7688 <> k:127
+R7694:7696 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7693:7693 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:125 var
+R7697:7697 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:126 var
+R7699:7699 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:127 var
+R7705:7707 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7704:7704 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:125 var
+R7708:7711 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7713:7713 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:124 var
+R7715:7715 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:126 var
+prf 7887:7895 <> Rsum_rm_l
+R7912:7914 Coq.Init.Datatypes <> nat ind
+binder 7908:7908 <> n:128
+R7922:7922 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7918:7918 <> a:129
+R7933:7936 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7930:7932 Coq.Init.Datatypes <> nat ind
+R7937:7937 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7926:7926 <> f:130
+R7970:7972 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7945:7948 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7950:7950 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:128 var
+binder 7957:7957 <> k:131
+R7965:7967 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7962:7962 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:130 var
+R7964:7964 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:131 var
+R7968:7968 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:129 var
+R7974:7976 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7973:7973 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:129 var
+R7977:7980 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R7982:7982 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:128 var
+R7984:7984 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:130 var
+prf 8095:8108 <> Rsum_distrib_l
+R8125:8127 Coq.Init.Datatypes <> nat ind
+binder 8121:8121 <> n:132
+R8135:8135 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8131:8131 <> a:133
+R8148:8151 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8145:8147 Coq.Init.Datatypes <> nat ind
+R8152:8152 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8139:8139 <> f:134
+binder 8141:8141 <> g:135
+R8191:8193 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8160:8163 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R8165:8165 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:132 var
+binder 8172:8172 <> k:136
+R8184:8186 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8178:8180 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8177:8177 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:133 var
+R8181:8181 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:134 var
+R8183:8183 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:136 var
+R8187:8187 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:135 var
+R8189:8189 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:136 var
+R8206:8208 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8195:8197 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8194:8194 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:133 var
+R8198:8201 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R8203:8203 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:132 var
+R8205:8205 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:134 var
+R8209:8212 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R8214:8214 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:132 var
+R8216:8216 Coq.src.LinearAlgebraDir.SymmetricMatrix <> g:135 var
+prf 8315:8323 <> Rplus_ge0
+R8340:8340 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8334:8334 <> a:137
+binder 8336:8336 <> b:138
+R8349:8352 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8344:8347 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8343:8343 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:137 var
+R8359:8362 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8354:8357 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8353:8353 Coq.src.LinearAlgebraDir.SymmetricMatrix <> b:138 var
+R8368:8371 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8364:8366 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8363:8363 Coq.src.LinearAlgebraDir.SymmetricMatrix <> a:137 var
+R8367:8367 Coq.src.LinearAlgebraDir.SymmetricMatrix <> b:138 var
+prf 8482:8492 <> Rsum_nonneg
+R8509:8511 Coq.Init.Datatypes <> nat ind
+binder 8505:8505 <> n:139
+R8522:8525 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8519:8521 Coq.Init.Datatypes <> nat ind
+R8526:8526 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8515:8515 <> f:140
+R8534:8534 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8568:8576 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8542:8542 <> k:141
+R8556:8559 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8547:8549 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R8546:8546 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:141 var
+R8550:8550 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:139 var
+R8563:8566 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8560:8560 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:140 var
+R8562:8562 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:141 var
+R8585:8588 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8577:8580 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R8582:8582 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:139 var
+R8584:8584 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:140 var
+R8659:8667 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rplus_ge0 thm
+R8659:8667 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rplus_ge0 thm
+prf 8861:8873 <> Rsum_remove_0
+R8890:8892 Coq.Init.Datatypes <> nat ind
+binder 8886:8886 <> n:142
+R8903:8906 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8900:8902 Coq.Init.Datatypes <> nat ind
+R8907:8907 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8896:8896 <> f:143
+R8923:8929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8915:8918 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R8920:8920 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
+R8922:8922 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:143 var
+R8936:8936 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:142 var
+R8962:8962 Coq.Init.Datatypes <> S constr
+R8979:8981 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8971:8971 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:143 var
+R8982:8985 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+binder 8995:8995 <> k:145
+R9000:9000 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:143 var
+R9003:9003 Coq.Init.Datatypes <> S constr
+R9005:9005 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:145 var
+R9218:9246 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9168:9171 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9217:9217 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9181:9183 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9175:9175 Coq.Init.Datatypes <> S constr
+R9184:9187 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9202:9204 Coq.Init.Datatypes <> nat ind
+binder 9198:9198 <> k:146
+R9212:9212 Coq.Init.Datatypes <> S constr
+R9214:9214 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:146 var
+R9247:9247 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9291:9293 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9255:9257 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9258:9261 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9276:9278 Coq.Init.Datatypes <> nat ind
+binder 9272:9272 <> k:147
+R9286:9286 Coq.Init.Datatypes <> S constr
+R9288:9288 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:147 var
+R9297:9297 Coq.Init.Datatypes <> S constr
+R9218:9246 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9168:9171 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9217:9217 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9181:9183 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9175:9175 Coq.Init.Datatypes <> S constr
+R9184:9187 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9202:9204 Coq.Init.Datatypes <> nat ind
+binder 9198:9198 <> k:148
+R9212:9212 Coq.Init.Datatypes <> S constr
+R9214:9214 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:148 var
+R9247:9247 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9291:9293 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9255:9257 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9258:9261 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9276:9278 Coq.Init.Datatypes <> nat ind
+binder 9272:9272 <> k:149
+R9286:9286 Coq.Init.Datatypes <> S constr
+R9288:9288 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:149 var
+R9297:9297 Coq.Init.Datatypes <> S constr
+R9384:9387 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9406:9406 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9370:9373 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9376:9376 Coq.Init.Datatypes <> S constr
+R9393:9395 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9396:9399 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9384:9387 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9406:9406 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9370:9373 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9376:9376 Coq.Init.Datatypes <> S constr
+R9393:9395 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9396:9399 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+prf 9600:9612 <> Rsum_split_at
+R9631:9633 Coq.Init.Datatypes <> nat ind
+binder 9625:9625 <> n:150
+binder 9627:9627 <> i:151
+R9644:9647 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9641:9643 Coq.Init.Datatypes <> nat ind
+R9648:9648 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9637:9637 <> f:152
+R9667:9674 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9658:9660 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R9657:9657 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:151 var
+R9661:9661 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:150 var
+R9683:9685 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9675:9678 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9680:9680 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:150 var
+R9682:9682 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:152 var
+R9700:9702 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9694:9696 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9686:9689 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9691:9691 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:151 var
+R9693:9693 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:152 var
+R9697:9697 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:152 var
+R9699:9699 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:151 var
+R9703:9706 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R9710:9712 Coq.Init.Peano <> ::nat_scope:x_'-'_x not
+R9709:9709 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:150 var
+R9713:9713 Coq.Init.Datatypes <> S constr
+R9715:9715 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:151 var
+binder 9723:9723 <> k:153
+R9728:9728 Coq.src.LinearAlgebraDir.SymmetricMatrix <> f:152 var
+R9734:9736 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R9731:9731 Coq.Init.Datatypes <> S constr
+R9733:9733 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:151 var
+R9737:9737 Coq.Init.Datatypes <> S constr
+R9739:9739 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:153 var
+prf 10139:10158 <> R_sq_pos_iff_nonzero
+R10174:10174 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10170:10170 <> x:154
+R10186:10190 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10182:10184 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10178:10180 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10177:10177 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:154 var
+R10181:10181 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:154 var
+R10192:10195 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10191:10191 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:154 var
+prf 10237:10247 <> R_sq_nonneg
+R10261:10261 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10257:10257 <> x:155
+R10269:10272 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R10265:10267 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10264:10264 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:155 var
+R10268:10268 Coq.src.LinearAlgebraDir.SymmetricMatrix <> x:155 var
+def 10352:10358 <> norm_sq
+R10365:10367 Coq.Init.Datatypes <> nat ind
+binder 10361:10361 <> n:156
+R10378:10381 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10375:10377 Coq.Init.Datatypes <> nat ind
+R10382:10382 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10371:10371 <> v:157
+R10387:10387 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10394:10397 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum def
+R10399:10399 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:156 var
+binder 10406:10406 <> k:158
+R10414:10416 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10411:10411 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:157 var
+R10413:10413 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:158 var
+R10417:10417 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:157 var
+R10419:10419 Coq.src.LinearAlgebraDir.SymmetricMatrix <> k:158 var
+prf 10455:10468 <> norm_sq_nonneg
+R10485:10487 Coq.Init.Datatypes <> nat ind
+binder 10481:10481 <> n:159
+R10498:10501 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10495:10497 Coq.Init.Datatypes <> nat ind
+R10502:10502 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10491:10491 <> v:160
+R10521:10524 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R10510:10516 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
+R10518:10518 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:159 var
+R10520:10520 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:160 var
+R10556:10562 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
+R10571:10581 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_nonneg thm
+R10571:10581 Coq.src.LinearAlgebraDir.SymmetricMatrix <> Rsum_nonneg thm
+R10602:10612 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_nonneg prfax
+R10602:10612 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_nonneg prfax
+prf 10667:10689 <> norm_sq_pos_iff_nonzero
+R10706:10708 Coq.Init.Datatypes <> nat ind
+binder 10702:10702 <> n:161
+R10719:10722 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10716:10718 Coq.Init.Datatypes <> nat ind
+R10723:10723 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10712:10712 <> v:162
+R10731:10731 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10767:10772 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R10732:10738 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10740:10741 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10739:10739 <> i:163
+R10753:10757 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10766:10766 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R10744:10746 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R10743:10743 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:163 var
+R10747:10747 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:161 var
+R10761:10764 Coq.Init.Logic <> ::type_scope:x_'<>'_x not
+R10758:10758 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:162 var
+R10760:10760 Coq.src.LinearAlgebraDir.SymmetricMatrix <> i:163 var
+R10784:10786 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10773:10779 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
+R10781:10781 Coq.src.LinearAlgebraDir.SymmetricMatrix <> n:161 var
+R10783:10783 Coq.src.LinearAlgebraDir.SymmetricMatrix <> v:162 var
+R10908:10917 Coq.Arith.PeanoNat Nat eq_dec thm
+R10908:10917 Coq.Arith.PeanoNat Nat eq_dec thm
+R10972:10978 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq def
+R11002:11014 Coq.Reals.RIneq <> Rplus_pos_pos thm
+R11002:11014 Coq.Reals.RIneq <> Rplus_pos_pos thm
+R11031:11050 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_pos_iff_nonzero prfax
+R11031:11050 Coq.src.LinearAlgebraDir.SymmetricMatrix <> R_sq_pos_iff_nonzero prfax
+R11086:11099 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq_nonneg thm
+R11086:11099 Coq.src.LinearAlgebraDir.SymmetricMatrix <> norm_sq_nonneg thm

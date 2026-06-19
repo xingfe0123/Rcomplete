@@ -1,0 +1,296 @@
+DIGEST 12a0a5f33a12050f067da9011a4a7fe9
+FLadyzhenskayaDir.CaccioppoliDeGiorgiSobolev
+R406:419 Coq.Init.Logic <> <> lib
+R437:441 Coq.Reals.Reals <> <> lib
+R459:472 Coq.Logic.Classical_Prop <> <> lib
+R490:513 Coq.Logic.FunctionalExtensionality <> <> lib
+R531:539 Coq.Logic.Classical <> <> lib
+R579:606 LadyzhenskayaDir.HolderSpace <> <> lib
+R624:651 LadyzhenskayaDir.Derivatives <> <> lib
+R669:706 LadyzhenskayaDir.ParabolicCoefficients <> <> lib
+ax 1695:1716 <> caccioppoli_inequality
+R1734:1750 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 1730:1730 <> Q:1
+R1759:1775 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 1754:1755 <> Q':2
+R1809:1812 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1792:1808 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R1813:1813 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1788:1788 <> u:3
+R1821:1821 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1817:1817 <> C:4
+R1951:1954 Coq.Init.Logic <> True ind
+ax 2116:2146 <> caccioppoli_inequality_explicit
+R2164:2166 Coq.Init.Datatypes <> nat ind
+binder 2160:2160 <> n:6
+R2179:2179 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2170:2175 <> Lambda:7
+R2188:2188 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2183:2184 <> nu:8
+R2201:2201 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2192:2197 <> radius:9
+R2211:2211 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2205:2207 <> tau:10
+R2245:2248 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2228:2244 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R2249:2249 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2224:2224 <> u:11
+R2260:2276 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 2253:2253 <> Q:12
+binder 2255:2256 <> Q':13
+R2489:2492 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2477:2479 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2480:2485 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> radius:9 var
+R2504:2619 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2495:2497 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2498:2500 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> tau:10 var
+R2620:2623 Coq.Init.Logic <> True ind
+rec 3570:3585 <> DeGiorgiSequence
+proj 3594:3597 <> dg_Y
+proj 3665:3668 <> dg_C
+proj 3719:3722 <> dg_b
+proj 3774:3781 <> dg_alpha
+R3604:3607 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3601:3603 Coq.Init.Datatypes <> nat ind
+R3608:3608 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3672:3672 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3726:3726 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3785:3785 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 3914:3943 <> de_giorgi_iteration_inequality
+R3962:3977 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 3957:3958 <> dg:20
+R3985:3987 Coq.Init.Datatypes <> nat ind
+binder 3981:3981 <> k:21
+R4009:4012 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3994:3997 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R3999:4000 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:20 var
+R4004:4006 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R4003:4003 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:21 var
+R4047:4049 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4020:4022 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4013:4016 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4018:4019 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:20 var
+R4023:4028 Coq.Reals.Rpower <> Rpower def
+R4031:4034 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4036:4037 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:20 var
+R4041:4043 Coq.Reals.Raxioms <> INR def
+R4045:4045 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:21 var
+R4050:4055 Coq.Reals.Rpower <> Rpower def
+R4058:4061 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4063:4064 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:20 var
+R4066:4066 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:21 var
+R4071:4073 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4074:4081 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4083:4084 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:20 var
+ax 4184:4198 <> de_giorgi_lemma
+R4217:4232 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 4212:4213 <> dg:23
+R4257:4260 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4240:4242 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4243:4250 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4252:4253 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4276:4279 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4263:4265 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4266:4269 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4271:4272 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4295:4358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4282:4284 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4285:4288 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4290:4291 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4469:4500 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4369:4372 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R4360:4363 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4365:4366 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4412:4414 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4373:4378 Coq.Reals.Rpower <> Rpower def
+R4382:4384 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4385:4388 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4390:4391 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4397:4399 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4400:4407 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4409:4410 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4415:4420 Coq.Reals.Rpower <> Rpower def
+R4423:4426 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4428:4429 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4435:4438 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4464:4464 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4450:4452 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4439:4446 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4448:4449 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4453:4460 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4462:4463 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4514:4514 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4508:4510 <> eps:24
+R4524:4527 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4520:4522 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4517:4519 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> eps:24 var
+R4528:4534 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4542:4543 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4539:4541 Coq.Init.Datatypes <> nat ind
+binder 4535:4535 <> K:25
+R4555:4557 Coq.Init.Datatypes <> nat ind
+binder 4551:4551 <> k:26
+R4572:4575 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4562:4565 Coq.Init.Peano <> ::nat_scope:x_'>='_x not
+R4561:4561 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:26 var
+R4566:4566 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> K:25 var
+R4585:4587 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4576:4579 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4581:4582 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:23 var
+R4584:4584 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:26 var
+R4588:4590 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> eps:24 var
+ax 4670:4688 <> de_giorgi_level_set
+R4723:4726 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4706:4722 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R4727:4727 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4702:4702 <> u:28
+R4741:4741 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4731:4731 <> M:29
+binder 4733:4737 <> omega:30
+R4749:4751 Coq.Init.Datatypes <> nat ind
+binder 4745:4745 <> k:31
+R4774:4777 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4757:4773 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+ax 4829:4855 <> de_giorgi_level_set_measure
+R4890:4893 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4873:4889 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R4894:4894 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4869:4869 <> u:33
+R4908:4908 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4898:4898 <> M:34
+binder 4900:4904 <> omega:35
+R4916:4918 Coq.Init.Datatypes <> nat ind
+binder 4912:4912 <> k:36
+R4924:4924 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 4979:5008 <> de_giorgi_level_set_decreasing
+R5043:5046 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5026:5042 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5047:5047 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5022:5022 <> u:38
+R5061:5061 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5051:5051 <> M:39
+binder 5053:5057 <> omega:40
+R5069:5071 Coq.Init.Datatypes <> nat ind
+binder 5065:5065 <> k:41
+binder 5084:5084 <> x:42
+R5126:5129 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5087:5105 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set defax
+R5107:5107 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> u:38 var
+R5109:5109 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> M:39 var
+R5111:5115 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> omega:40 var
+R5119:5121 Coq.Init.Peano <> ::nat_scope:x_'+'_x not
+R5118:5118 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:41 var
+R5125:5125 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> x:42 var
+R5130:5148 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set defax
+R5150:5150 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> u:38 var
+R5152:5152 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> M:39 var
+R5154:5158 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> omega:40 var
+R5160:5160 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:41 var
+R5162:5162 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> x:42 var
+ax 5226:5254 <> de_giorgi_level_set_iteration
+R5289:5292 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5272:5288 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5293:5293 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5268:5268 <> u:44
+R5307:5307 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5297:5297 <> M:45
+binder 5299:5303 <> omega:46
+R5313:5320 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5342:5348 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5326:5341 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 5321:5322 <> dg:47
+binder 5356:5356 <> k:48
+R5368:5370 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5359:5362 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R5364:5365 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> dg:47 var
+R5367:5367 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:48 var
+R5371:5397 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set_measure defax
+R5399:5399 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> u:44 var
+R5401:5401 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> M:45 var
+R5403:5407 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> omega:46 var
+R5409:5409 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> k:48 var
+rec 6192:6203 <> SobolevSpace
+proj 6220:6226 <> sw_type
+proj 6238:6248 <> sw_function
+proj 6268:6280 <> sw_weak_deriv
+proj 6300:6309 <> sw_Lp_norm
+proj 6318:6333 <> sw_deriv_Lp_norm
+R6210:6210 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6206:6206 <> p:50
+R6259:6262 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6252:6258 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> sw_type:52 meth
+R6263:6263 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6291:6294 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6284:6290 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> sw_type:52 meth
+R6295:6295 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6313:6313 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6337:6337 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 6380:6405 <> sobolev_embedding_constant
+R6423:6425 Coq.Init.Datatypes <> nat ind
+binder 6419:6419 <> n:57
+R6433:6433 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6429:6429 <> p:58
+R6437:6437 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 6517:6544 <> sobolev_embedding_inequality
+R6562:6564 Coq.Init.Datatypes <> nat ind
+binder 6558:6558 <> n:60
+R6572:6572 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6568:6568 <> p:61
+binder 6576:6580 <> Omega:62
+R6600:6603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6595:6599 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> Omega:62 var
+R6604:6604 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6591:6591 <> u:63
+R6753:6756 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6745:6748 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R6749:6749 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> p:61 var
+R6770:6835 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6759:6761 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6758:6758 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> p:61 var
+R6762:6764 Coq.Reals.Raxioms <> INR def
+R6766:6766 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> n:60 var
+R6836:6839 Coq.Init.Logic <> True ind
+def 6881:6897 <> sobolev_conjugate
+R6904:6906 Coq.Init.Datatypes <> nat ind
+binder 6900:6900 <> n:65
+R6914:6914 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6910:6910 <> p:66
+R6919:6919 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6926:6926 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6936:6940 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6950:6950 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6932:6934 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6927:6929 Coq.Reals.Raxioms <> INR def
+R6931:6931 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> n:65 var
+R6935:6935 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> p:66 var
+R6946:6948 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R6941:6943 Coq.Reals.Raxioms <> INR def
+R6945:6945 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> n:65 var
+R6949:6949 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> p:66 var
+ax 7080:7106 <> parabolic_sobolev_embedding
+R7124:7126 Coq.Init.Datatypes <> nat ind
+binder 7120:7120 <> n:67
+R7134:7134 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7130:7130 <> T:68
+binder 7138:7142 <> Omega:69
+R7174:7177 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7157:7173 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R7178:7178 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7153:7153 <> u:70
+R7259:7358 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7252:7254 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R7255:7255 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> T:68 var
+R7359:7362 Coq.Init.Logic <> True ind
+def 7405:7430 <> parabolic_sobolev_exponent
+R7437:7439 Coq.Init.Datatypes <> nat ind
+binder 7433:7433 <> n:72
+R7444:7444 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7451:7451 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7467:7470 Coq.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7453:7456 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7466:7466 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7462:7464 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R7457:7459 Coq.Reals.Raxioms <> INR def
+R7461:7461 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> n:72 var
+R7471:7473 Coq.Reals.Raxioms <> INR def
+R7475:7475 LadyzhenskayaDir.CaccioppoliDeGiorgiSobolev <> n:72 var

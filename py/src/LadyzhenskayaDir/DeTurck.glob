@@ -1,0 +1,171 @@
+DIGEST 0ebd05c6b3d4bf56f687120c5706e276
+FLadyzhenskayaDir.DeTurck
+R253:263 LadyzhenskayaDir.HolderSpace <> <> lib
+R303:323 LadyzhenskayaDir.ParabolicCoefficients <> <> lib
+R427:434 SphereClassification.Manifold <> <> lib
+R436:448 SphereClassification.RiemannMetric <> <> lib
+R450:462 SphereClassification.RiemannTensor <> <> lib
+rec 1005:1022 <> DeTurckVectorField
+proj 1031:1045 <> dtvf_components
+proj 1089:1099 <> dtvf_smooth
+R1058:1061 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1049:1057 SphereClassification.Manifold <> Manifold3 rec
+R1063:1066 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1062:1062 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1067:1067 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1115:1123 SphereClassification.Manifold <> Manifold3 rec
+binder 1111:1111 <> x:3
+R1131:1131 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1127:1127 <> t:4
+R1135:1138 Coq.Init.Logic <> True ind
+rec 1534:1547 <> DeformedMetric
+proj 1556:1568 <> dm_components
+R1581:1584 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1572:1580 SphereClassification.Manifold <> Manifold3 rec
+R1586:1589 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1585:1585 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1590:1590 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 1709:1732 <> dm_symmetric_placeholder
+R1756:1769 LadyzhenskayaDir.DeTurck <> DeformedMetric rec
+binder 1746:1752 <> g_tilde:8
+R1773:1776 Coq.Init.Logic <> True ind
+rec 2175:2201 <> DeTurckEquationCoefficients
+proj 2210:2218 <> dec_ricci
+proj 2274:2286 <> dec_lie_deriv
+proj 2339:2350 <> dec_residual
+R2231:2234 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2222:2230 SphereClassification.Manifold <> Manifold3 rec
+R2236:2239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2235:2235 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2240:2240 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2299:2302 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2290:2298 SphereClassification.Manifold <> Manifold3 rec
+R2304:2307 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2303:2303 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2308:2308 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2363:2366 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2354:2362 SphereClassification.Manifold <> Manifold3 rec
+R2368:2371 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2367:2367 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2372:2372 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 2441:2460 <> DeTurckEquationHolds
+R2475:2488 LadyzhenskayaDir.DeTurck <> DeformedMetric rec
+binder 2465:2471 <> g_tilde:14
+R2496:2513 LadyzhenskayaDir.DeTurck <> DeTurckVectorField rec
+binder 2492:2492 <> X:15
+R2528:2554 LadyzhenskayaDir.DeTurck <> DeTurckEquationCoefficients rec
+binder 2519:2524 <> coeffs:16
+binder 2608:2608 <> x:17
+binder 2610:2610 <> t:18
+R2636:2638 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2613:2624 LadyzhenskayaDir.DeTurck <> dec_residual proj
+R2635:2635 LadyzhenskayaDir.DeTurck <> t:18 var
+R2633:2633 LadyzhenskayaDir.DeTurck <> x:17 var
+R2626:2631 LadyzhenskayaDir.DeTurck <> coeffs:16 var
+R2639:2640 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+ax 3139:3165 <> deturck_parabolic_condition
+R3189:3202 LadyzhenskayaDir.DeTurck <> DeformedMetric rec
+binder 3179:3185 <> g_tilde:19
+R3210:3227 LadyzhenskayaDir.DeTurck <> DeTurckVectorField rec
+binder 3206:3206 <> X:20
+R3403:3493 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3235:3254 LadyzhenskayaDir.DeTurck <> DeTurckEquationHolds def
+R3267:3299 LadyzhenskayaDir.DeTurck <> Build_DeTurckEquationCoefficients constr
+R3399:3400 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R3358:3359 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R3319:3320 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R3264:3264 LadyzhenskayaDir.DeTurck <> X:20 var
+R3256:3262 LadyzhenskayaDir.DeTurck <> g_tilde:19 var
+R3494:3497 Coq.Init.Logic <> True ind
+rec 3886:3903 <> MoserIterationData
+proj 3912:3921 <> mid_energy
+proj 3983:3996 <> mid_derivative
+proj 4034:4048 <> mid_holder_norm
+R3925:3925 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4000:4000 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4052:4052 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 4108:4126 <> MoserEnergyEstimate
+R4138:4155 LadyzhenskayaDir.DeTurck <> MoserIterationData rec
+binder 4131:4134 <> data:26
+R4221:4227 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4233:4234 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4232:4232 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4228:4228 <> C:27
+R4244:4251 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R4237:4239 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4240:4240 LadyzhenskayaDir.DeTurck <> C:27 var
+R4279:4289 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R4253:4256 Coq.Reals.Rbasic_fun <> Rabs def
+R4259:4272 LadyzhenskayaDir.DeTurck <> mid_derivative proj
+R4274:4277 LadyzhenskayaDir.DeTurck <> data:26 var
+R4314:4316 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4291:4293 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4290:4290 LadyzhenskayaDir.DeTurck <> C:27 var
+R4294:4308 LadyzhenskayaDir.DeTurck <> mid_holder_norm proj
+R4310:4313 LadyzhenskayaDir.DeTurck <> data:26 var
+R4317:4331 LadyzhenskayaDir.DeTurck <> mid_holder_norm proj
+R4333:4336 LadyzhenskayaDir.DeTurck <> data:26 var
+ax 4403:4426 <> moser_iteration_estimate
+R4447:4464 LadyzhenskayaDir.DeTurck <> MoserIterationData rec
+binder 4440:4443 <> data:28
+R4472:4490 LadyzhenskayaDir.DeTurck <> MoserEnergyEstimate def
+R4492:4495 LadyzhenskayaDir.DeTurck <> data:28 var
+rec 4932:4951 <> HamiltonEstimateData
+proj 4960:4977 <> hed_curvature_norm
+proj 5011:5029 <> hed_time_derivative
+proj 5067:5078 <> hed_constant
+R4981:4981 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5033:5033 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5082:5082 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 5132:5156 <> HamiltonCurvatureEstimate
+R5168:5187 LadyzhenskayaDir.DeTurck <> HamiltonEstimateData rec
+binder 5161:5164 <> data:34
+R5261:5268 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5237:5255 LadyzhenskayaDir.DeTurck <> hed_time_derivative proj
+R5257:5260 LadyzhenskayaDir.DeTurck <> data:34 var
+R5312:5314 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5286:5288 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R5269:5280 LadyzhenskayaDir.DeTurck <> hed_constant proj
+R5282:5285 LadyzhenskayaDir.DeTurck <> data:34 var
+R5289:5306 LadyzhenskayaDir.DeTurck <> hed_curvature_norm proj
+R5308:5311 LadyzhenskayaDir.DeTurck <> data:34 var
+R5315:5332 LadyzhenskayaDir.DeTurck <> hed_curvature_norm proj
+R5334:5337 LadyzhenskayaDir.DeTurck <> data:34 var
+ax 5422:5448 <> hamilton_curvature_estimate
+R5469:5488 LadyzhenskayaDir.DeTurck <> HamiltonEstimateData rec
+binder 5462:5465 <> data:35
+R5496:5520 LadyzhenskayaDir.DeTurck <> HamiltonCurvatureEstimate def
+R5522:5525 LadyzhenskayaDir.DeTurck <> data:35 var
+rec 5774:5789 <> RicciFlowProblem
+proj 5798:5815 <> rfp_initial_metric
+proj 5850:5865 <> rfp_time_horizon
+proj 5898:5906 <> rfp_alpha
+R5828:5831 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5819:5827 SphereClassification.Manifold <> Manifold3 rec
+R5832:5832 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5869:5869 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5910:5923 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+def 6555:6576 <> RicciShortTimeSolution
+R6585:6600 LadyzhenskayaDir.DeTurck <> RicciFlowProblem rec
+binder 6581:6581 <> P:41
+R6617:6620 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6608:6616 SphereClassification.Manifold <> Manifold3 rec
+R6622:6625 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6621:6621 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6626:6626 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6604:6604 <> g:42
+R6682:6685 Coq.Init.Logic <> True ind
+prf 6767:6789 <> deturck_ricci_existence
+R6807:6822 LadyzhenskayaDir.DeTurck <> RicciFlowProblem rec
+binder 6803:6803 <> P:43
+R6830:6836 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6860:6867 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6850:6853 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6841:6849 SphereClassification.Manifold <> Manifold3 rec
+R6855:6858 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6854:6854 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6859:6859 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6837:6837 <> g:44
+R6868:6889 LadyzhenskayaDir.DeTurck <> RicciShortTimeSolution def
+R6893:6893 LadyzhenskayaDir.DeTurck <> g:44 var
+R6891:6891 LadyzhenskayaDir.DeTurck <> P:43 var

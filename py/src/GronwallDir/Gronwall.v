@@ -14,17 +14,9 @@
    it is the simpler compressible ODE variant.
 
    Decomposition strategy (2026-06-19):
-   (1) gronwall_integrating_factor — the main ODE comparison Lemma,
-       proved QED via one structural Axiom:
-       * nonpos_deriv_noninc  (非正导数推论): if F'(s) <= 0 on [0,t], then
-         F(t) <= F(0). This is a special case of the mean value theorem.
-       Sub-lemmas now all QED with zero custom Axioms:
-       - F_derivable (可微性)
-       - F_deriv_nonpos (导数非正)
-       - exp_strictly_positive
-       - divide_inequality_by_positive
-       - gronwall_div_is_exp_neg
-   (2) All wrapping Lemmas end with Defined; only 1 structural Axiom remains. *)
+   All lemmas are QED with zero custom Axioms.
+   The proof uses the MVT (mean value theorem) from the Reals library.
+   Dependencies: ClassicalDedekindReals, FunctionalExtensionality (from Reals). *)
 
 Require Import Reals.
 Require Import Ranalysis.
@@ -169,12 +161,53 @@ Qed.
    If f'(s) <= 0 for all s in [a,b], then f(b) <= f(a).
    This is a direct consequence of the mean value theorem. *)
 
-Axiom nonpos_deriv_noninc :
+Lemma nonpos_deriv_noninc :
   forall (f : R -> R) (a b : R),
     a <= b ->
     (forall s : R, a <= s -> s <= b -> derivable_pt f s) ->
     (forall (s : R) (pr : derivable_pt f s), a <= s -> s <= b -> derive_pt f s pr <= 0) ->
     f b <= f a.
+Proof.
+  intros f a b Hle Hder Hder_nonpos.
+  destruct (Rlt_le_dec a b) as [Hlt | Hnotlt].
+  - (* a < b case: use the Mean Value Theorem *)
+    assert (pr1 : forall c : R, a < c < b -> derivable_pt f c).
+    { intros c [Hac Hcb]; apply Hder; [left; exact Hac | left; exact Hcb]. }
+    assert (pr2 : forall c : R, a < c < b -> derivable_pt id c).
+    { intros; apply derivable_pt_id. }
+    assert (cont_f : forall c : R, a <= c <= b -> continuity_pt f c).
+    { intros c [Hac Hcb]; apply derivable_continuous_pt, Hder; [exact Hac | exact Hcb]. }
+    assert (cont_id : forall c : R, a <= c <= b -> continuity_pt id c).
+    { intros c [Hac Hcb]; apply derivable_continuous_pt, derivable_pt_id. }
+    destruct (MVT f id a b pr1 pr2 Hlt cont_f cont_id) as [c [P H_eq]].
+    destruct P as [Hac Hcb].
+    assert (H_id_deriv : derive_pt id c (pr2 c (conj Hac Hcb)) = 1).
+    {
+      apply (derive_pt_eq_0 id c 1 (pr2 c (conj Hac Hcb))).
+      apply derivable_pt_lim_id.
+    }
+    rewrite H_id_deriv in H_eq.
+    rewrite Rmult_1_r in H_eq.
+    unfold id in H_eq.
+    (* H_eq: (b - a) * derive_pt f c (pr1 c (conj Hac Hcb)) = f b - f a *)
+    assert (Hba_pos : 0 < b - a) by (apply Rlt_0_minus; exact Hlt).
+    assert (Hba_nonneg : 0 <= b - a) by (left; exact Hba_pos).
+    assert (Hgoal : f b - f a <= 0).
+    {
+      rewrite <- H_eq.
+      replace (0) with ((b - a) * 0) by ring.
+      apply Rmult_le_compat_l.
+      - exact Hba_nonneg.
+      - apply Hder_nonpos with (s := c) (pr := pr1 c (conj Hac Hcb)).
+        + left; exact Hac.
+        + left; exact Hcb.
+    }
+    lra.
+  - (* a >= b case, but we have a <= b, so a = b *)
+    assert (Heq : a = b) by lra.
+    subst b.
+    apply Rle_refl.
+Qed.
 
 (* Lemma 3 — exp is strictly positive for every real argument.
    Proved via the Reals library's exp_pos. *)
@@ -304,11 +337,13 @@ Defined.
 (* After compilation, run:
      Print Assumptions gronwall_decay_via_substitution.
    Expected dependencies:
-     - F_derivable                  (Axiom 1a: 可微性 — differentiability)
-     - F_deriv_nonpos               (Axiom 1b: 可微性 — derivative nonpos)
-     - nonpos_deriv_noninc          (Axiom 2: 非正导数推论)
-     - Reals (R_scope), Ranalysis, Classical_Prop
-   The three ODE-free lemmas are QED with zero Axioms:
+     - ClassicalDedekindReals (from Reals)
+     - FunctionalExtensionality (from Reals)
+     - Classical_Prop
+   All lemmas are QED with zero user-defined Axioms.
+     - F_derivable
+     - F_deriv_nonpos
+     - nonpos_deriv_noninc
      - exp_strictly_positive
      - divide_inequality_by_positive
      - gronwall_div_is_exp_neg *)

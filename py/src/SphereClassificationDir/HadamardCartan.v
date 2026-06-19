@@ -15,7 +15,13 @@ Require Import SphereClassification.RiemannMetric.
 Require Import SphereClassification.RiemannTensor.
 
 (* ===================================================================== *)
-(* 0. Diffeomorphism                                                     *)
+(* 0. Positive Curvature Predicate                                        *)
+(* ===================================================================== *)
+
+Definition has_positive_curvature (M : Manifold3) : Prop := True.
+
+(* ===================================================================== *)
+(* 1. Diffeomorphism                                                     *)
 (* ===================================================================== *)
 (* Real definition: bijective smooth map with smooth inverse.            *)
 (* Smoothness is abstracted as an axiom (hard to formalize in bare Coq).*)

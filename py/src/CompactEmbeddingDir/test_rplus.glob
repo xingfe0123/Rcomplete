@@ -1,0 +1,5 @@
+DIGEST e8c734948db4f450c80639491fe6a265
+Ftest_rplus
+R15:19 Coq.Reals.Reals <> <> lib
+R21:23 Coq.micromega.Lra <> <> lib
+R52:63 Coq.Reals.RIneq <> Rplus_eq_0_l thm

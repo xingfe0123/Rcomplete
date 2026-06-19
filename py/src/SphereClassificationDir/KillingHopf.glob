@@ -1,0 +1,338 @@
+DIGEST 73f78e0dea0643c5a7325021ea30e903
+FSphereClassification.KillingHopf
+R467:471 Coq.Reals.Reals <> <> lib
+R489:502 Coq.Logic.Classical_Prop <> <> lib
+R520:524 Coq.Reals.Reals <> <> lib
+R526:528 Coq.micromega.Lra <> <> lib
+R546:569 Coq.Logic.FunctionalExtensionality <> <> lib
+R587:595 Coq.Logic.Classical <> <> lib
+R635:663 SphereClassification.Topology <> <> lib
+R681:717 SphereClassification.FundamentalGroup <> <> lib
+R735:763 SphereClassification.Manifold <> <> lib
+R781:814 SphereClassification.RiemannMetric <> <> lib
+R832:865 SphereClassification.RiemannTensor <> <> lib
+R883:911 SphereClassification.Geodesic <> <> lib
+R929:958 SphereClassification.HopfRinow <> <> lib
+ind 1201:1213 <> SpaceFormType
+constr 1227:1235 <> SF_Sphere
+constr 1260:1271 <> SF_Euclidean
+constr 1293:1305 <> SF_Hyperbolic
+scheme 1201:1213 <> SpaceFormType_rect
+scheme 1201:1213 <> SpaceFormType_ind
+scheme 1201:1213 <> SpaceFormType_rec
+scheme 1201:1213 <> SpaceFormType_sind
+rec 1334:1352 <> IsStandardSpaceForm
+proj 1424:1430 <> sf_type
+proj 1451:1462 <> sf_curvature
+proj 1471:1488 <> sf_curvature_range
+proj 1640:1651 <> sf_isometric
+R1359:1367 SphereClassification.Manifold <> Manifold3 rec
+binder 1355:1355 <> M:3
+R1375:1390 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1392:1392 SphereClassification.KillingHopf <> M:3 var
+binder 1371:1371 <> g:4
+R1434:1446 SphereClassification.KillingHopf <> SpaceFormType ind
+R1466:1466 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1498:1504 SphereClassification.KillingHopf <> sf_type:6 meth
+R1517:1525 SphereClassification.KillingHopf <> SF_Sphere constr
+R1546:1548 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1534:1545 SphereClassification.KillingHopf <> sf_curvature:7 meth
+R1557:1568 SphereClassification.KillingHopf <> SF_Euclidean constr
+R1586:1588 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1574:1585 SphereClassification.KillingHopf <> sf_curvature:7 meth
+R1597:1609 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R1626:1628 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1614:1625 SphereClassification.KillingHopf <> sf_curvature:7 meth
+def 1904:1923 <> HasConstantCurvature
+R1930:1938 SphereClassification.Manifold <> Manifold3 rec
+binder 1926:1926 <> M:11
+R1946:1961 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1963:1963 SphereClassification.KillingHopf <> M:11 var
+binder 1942:1942 <> g:12
+R1971:1971 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1967:1967 <> K:13
+R1998:2007 SphereClassification.Topology <> space_type proj
+R2010:2017 SphereClassification.Manifold <> sm_space proj
+R2019:2019 SphereClassification.KillingHopf <> M:11 var
+binder 1994:1994 <> p:14
+R2030:2048 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R2050:2050 SphereClassification.KillingHopf <> M:11 var
+binder 2024:2024 <> u:15
+binder 2026:2026 <> v:16
+R2087:2089 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2058:2076 SphereClassification.RiemannTensor <> sectional_curvature defax
+R2078:2078 SphereClassification.KillingHopf <> M:11 var
+R2080:2080 SphereClassification.KillingHopf <> g:12 var
+R2082:2082 SphereClassification.KillingHopf <> p:14 var
+R2084:2084 SphereClassification.KillingHopf <> u:15 var
+R2086:2086 SphereClassification.KillingHopf <> v:16 var
+R2090:2090 SphereClassification.KillingHopf <> K:13 var
+def 2105:2132 <> HasPositiveConstantCurvature
+R2139:2147 SphereClassification.Manifold <> Manifold3 rec
+binder 2135:2135 <> M:17
+R2155:2170 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2172:2172 SphereClassification.KillingHopf <> M:17 var
+binder 2151:2151 <> g:18
+R2187:2193 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2199:2200 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2198:2198 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2194:2194 <> K:19
+R2206:2209 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2202:2204 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2201:2201 SphereClassification.KillingHopf <> K:19 var
+R2210:2229 SphereClassification.KillingHopf <> HasConstantCurvature def
+R2231:2231 SphereClassification.KillingHopf <> M:17 var
+R2233:2233 SphereClassification.KillingHopf <> g:18 var
+R2235:2235 SphereClassification.KillingHopf <> K:19 var
+def 2250:2273 <> HasZeroConstantCurvature
+R2280:2288 SphereClassification.Manifold <> Manifold3 rec
+binder 2276:2276 <> M:20
+R2296:2311 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2313:2313 SphereClassification.KillingHopf <> M:20 var
+binder 2292:2292 <> g:21
+R2328:2334 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2340:2341 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2339:2339 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2335:2335 <> K:22
+R2347:2350 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2343:2345 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2342:2342 SphereClassification.KillingHopf <> K:22 var
+R2351:2370 SphereClassification.KillingHopf <> HasConstantCurvature def
+R2372:2372 SphereClassification.KillingHopf <> M:20 var
+R2374:2374 SphereClassification.KillingHopf <> g:21 var
+R2376:2376 SphereClassification.KillingHopf <> K:22 var
+def 2391:2418 <> HasNegativeConstantCurvature
+R2425:2433 SphereClassification.Manifold <> Manifold3 rec
+binder 2421:2421 <> M:23
+R2441:2456 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2458:2458 SphereClassification.KillingHopf <> M:23 var
+binder 2437:2437 <> g:24
+R2473:2479 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2485:2486 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2484:2484 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2480:2480 <> K:25
+R2492:2495 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2488:2490 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2487:2487 SphereClassification.KillingHopf <> K:25 var
+R2496:2515 SphereClassification.KillingHopf <> HasConstantCurvature def
+R2517:2517 SphereClassification.KillingHopf <> M:23 var
+R2519:2519 SphereClassification.KillingHopf <> g:24 var
+R2521:2521 SphereClassification.KillingHopf <> K:25 var
+rec 2761:2771 <> IsIsometric
+proj 2868:2876 <> isometric
+R2782:2790 SphereClassification.Manifold <> Manifold3 rec
+binder 2774:2775 <> M1:26
+binder 2777:2778 <> M2:27
+R2799:2814 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2816:2817 SphereClassification.KillingHopf <> M1:26 var
+binder 2794:2795 <> g1:28
+R2826:2841 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2843:2844 SphereClassification.KillingHopf <> M2:27 var
+binder 2821:2822 <> g2:29
+prf 3194:3224 <> killing_hopf_positive_curvature
+R3242:3250 SphereClassification.Manifold <> Manifold3 rec
+binder 3238:3238 <> M:32
+R3258:3273 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3275:3275 SphereClassification.KillingHopf <> M:32 var
+binder 3254:3254 <> g:33
+R3305:3312 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3283:3300 SphereClassification.HopfRinow <> is_metric_complete def
+R3302:3302 SphereClassification.KillingHopf <> M:32 var
+R3304:3304 SphereClassification.KillingHopf <> g:33 var
+R3343:3350 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3313:3329 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R3332:3339 SphereClassification.Manifold <> sm_space proj
+R3341:3341 SphereClassification.KillingHopf <> M:32 var
+R3383:3390 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3351:3378 SphereClassification.KillingHopf <> HasPositiveConstantCurvature def
+R3380:3380 SphereClassification.KillingHopf <> M:32 var
+R3382:3382 SphereClassification.KillingHopf <> g:33 var
+R3391:3398 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3427:3429 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3404:3422 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R3424:3424 SphereClassification.KillingHopf <> M:32 var
+R3426:3426 SphereClassification.KillingHopf <> g:33 var
+binder 3399:3400 <> sf:34
+R3444:3446 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3430:3436 SphereClassification.KillingHopf <> sf_type proj
+R3438:3438 SphereClassification.KillingHopf <> M:32 var
+R3440:3440 SphereClassification.KillingHopf <> g:33 var
+R3442:3443 SphereClassification.KillingHopf <> sf:34 var
+R3447:3455 SphereClassification.KillingHopf <> SF_Sphere constr
+R3550:3570 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R3576:3584 SphereClassification.KillingHopf <> SF_Sphere constr
+R3593:3596 Coq.Init.Logic <> True ind
+R3550:3570 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R3576:3584 SphereClassification.KillingHopf <> SF_Sphere constr
+R3593:3596 Coq.Init.Logic <> True ind
+prf 3671:3697 <> killing_hopf_zero_curvature
+R3715:3723 SphereClassification.Manifold <> Manifold3 rec
+binder 3711:3711 <> M:35
+R3731:3746 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3748:3748 SphereClassification.KillingHopf <> M:35 var
+binder 3727:3727 <> g:36
+R3778:3785 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3756:3773 SphereClassification.HopfRinow <> is_metric_complete def
+R3775:3775 SphereClassification.KillingHopf <> M:35 var
+R3777:3777 SphereClassification.KillingHopf <> g:36 var
+R3816:3823 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3786:3802 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R3805:3812 SphereClassification.Manifold <> sm_space proj
+R3814:3814 SphereClassification.KillingHopf <> M:35 var
+R3852:3859 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3824:3847 SphereClassification.KillingHopf <> HasZeroConstantCurvature def
+R3849:3849 SphereClassification.KillingHopf <> M:35 var
+R3851:3851 SphereClassification.KillingHopf <> g:36 var
+R3860:3867 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3896:3898 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3873:3891 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R3893:3893 SphereClassification.KillingHopf <> M:35 var
+R3895:3895 SphereClassification.KillingHopf <> g:36 var
+binder 3868:3869 <> sf:37
+R3899:3902 Coq.Init.Logic <> True ind
+R4000:4020 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R4026:4037 SphereClassification.KillingHopf <> SF_Euclidean constr
+R4041:4047 Coq.Init.Logic <> eq_refl constr
+R4049:4052 Coq.Init.Logic <> True ind
+R4000:4020 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R4026:4037 SphereClassification.KillingHopf <> SF_Euclidean constr
+R4041:4047 Coq.Init.Logic <> eq_refl constr
+R4049:4052 Coq.Init.Logic <> True ind
+R4084:4087 Coq.Init.Logic <> True ind
+R4065:4080 Coq.Init.Logic <> I constr
+R4084:4087 Coq.Init.Logic <> True ind
+R4065:4080 Coq.Init.Logic <> I constr
+prf 4152:4182 <> killing_hopf_negative_curvature
+R4200:4208 SphereClassification.Manifold <> Manifold3 rec
+binder 4196:4196 <> M:38
+R4216:4231 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R4233:4233 SphereClassification.KillingHopf <> M:38 var
+binder 4212:4212 <> g:39
+R4263:4270 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4241:4258 SphereClassification.HopfRinow <> is_metric_complete def
+R4260:4260 SphereClassification.KillingHopf <> M:38 var
+R4262:4262 SphereClassification.KillingHopf <> g:39 var
+R4301:4308 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4271:4287 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R4290:4297 SphereClassification.Manifold <> sm_space proj
+R4299:4299 SphereClassification.KillingHopf <> M:38 var
+R4341:4348 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4309:4336 SphereClassification.KillingHopf <> HasNegativeConstantCurvature def
+R4338:4338 SphereClassification.KillingHopf <> M:38 var
+R4340:4340 SphereClassification.KillingHopf <> g:39 var
+R4349:4356 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4385:4387 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4362:4380 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R4382:4382 SphereClassification.KillingHopf <> M:38 var
+R4384:4384 SphereClassification.KillingHopf <> g:39 var
+binder 4357:4358 <> sf:40
+R4388:4391 Coq.Init.Logic <> True ind
+R4486:4506 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R4512:4524 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R4533:4536 Coq.Init.Logic <> True ind
+R4486:4506 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R4512:4524 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R4533:4536 Coq.Init.Logic <> True ind
+R4568:4571 Coq.Init.Logic <> True ind
+R4549:4564 Coq.Init.Logic <> I constr
+R4568:4571 Coq.Init.Logic <> True ind
+R4549:4564 Coq.Init.Logic <> I constr
+prf 4818:4837 <> killing_hopf_theorem
+R4855:4863 SphereClassification.Manifold <> Manifold3 rec
+binder 4851:4851 <> M:41
+R4871:4886 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R4888:4888 SphereClassification.KillingHopf <> M:41 var
+binder 4867:4867 <> g:42
+R4918:4925 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4896:4913 SphereClassification.HopfRinow <> is_metric_complete def
+R4915:4915 SphereClassification.KillingHopf <> M:41 var
+R4917:4917 SphereClassification.KillingHopf <> g:42 var
+R4956:4963 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4926:4942 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R4945:4952 SphereClassification.Manifold <> sm_space proj
+R4954:4954 SphereClassification.KillingHopf <> M:41 var
+R4964:4964 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5075:5083 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4997:5005 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R4965:4992 SphereClassification.KillingHopf <> HasPositiveConstantCurvature def
+R4994:4994 SphereClassification.KillingHopf <> M:41 var
+R4996:4996 SphereClassification.KillingHopf <> g:42 var
+R5034:5042 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R5006:5029 SphereClassification.KillingHopf <> HasZeroConstantCurvature def
+R5031:5031 SphereClassification.KillingHopf <> M:41 var
+R5033:5033 SphereClassification.KillingHopf <> g:42 var
+R5043:5070 SphereClassification.KillingHopf <> HasNegativeConstantCurvature def
+R5072:5072 SphereClassification.KillingHopf <> M:41 var
+R5074:5074 SphereClassification.KillingHopf <> g:42 var
+R5084:5091 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5120:5122 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5097:5115 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R5117:5117 SphereClassification.KillingHopf <> M:41 var
+R5119:5119 SphereClassification.KillingHopf <> g:42 var
+binder 5092:5093 <> sf:43
+R5123:5126 Coq.Init.Logic <> True ind
+R5271:5291 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5297:5305 SphereClassification.KillingHopf <> SF_Sphere constr
+R5314:5317 Coq.Init.Logic <> True ind
+R5271:5291 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5297:5305 SphereClassification.KillingHopf <> SF_Sphere constr
+R5314:5317 Coq.Init.Logic <> True ind
+R5351:5354 Coq.Init.Logic <> True ind
+R5332:5347 Coq.Init.Logic <> I constr
+R5351:5354 Coq.Init.Logic <> True ind
+R5332:5347 Coq.Init.Logic <> I constr
+R5412:5432 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5438:5449 SphereClassification.KillingHopf <> SF_Euclidean constr
+R5453:5459 Coq.Init.Logic <> eq_refl constr
+R5461:5464 Coq.Init.Logic <> True ind
+R5412:5432 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5438:5449 SphereClassification.KillingHopf <> SF_Euclidean constr
+R5453:5459 Coq.Init.Logic <> eq_refl constr
+R5461:5464 Coq.Init.Logic <> True ind
+R5498:5501 Coq.Init.Logic <> True ind
+R5479:5494 Coq.Init.Logic <> I constr
+R5498:5501 Coq.Init.Logic <> True ind
+R5479:5494 Coq.Init.Logic <> I constr
+R5557:5577 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5583:5595 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5604:5607 Coq.Init.Logic <> True ind
+R5557:5577 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5583:5595 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5604:5607 Coq.Init.Logic <> True ind
+R5641:5644 Coq.Init.Logic <> True ind
+R5622:5637 Coq.Init.Logic <> I constr
+R5641:5644 Coq.Init.Logic <> True ind
+R5622:5637 Coq.Init.Logic <> I constr
+prf 5931:5968 <> killing_hopf_positive_curvature_sphere
+R5986:5994 SphereClassification.Manifold <> Manifold3 rec
+binder 5982:5982 <> M:44
+R6002:6017 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R6019:6019 SphereClassification.KillingHopf <> M:44 var
+binder 5998:5998 <> g:45
+R6049:6056 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6027:6044 SphereClassification.HopfRinow <> is_metric_complete def
+R6046:6046 SphereClassification.KillingHopf <> M:44 var
+R6048:6048 SphereClassification.KillingHopf <> g:45 var
+R6087:6094 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6057:6073 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R6076:6083 SphereClassification.Manifold <> sm_space proj
+R6085:6085 SphereClassification.KillingHopf <> M:44 var
+R6127:6134 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6095:6122 SphereClassification.KillingHopf <> HasPositiveConstantCurvature def
+R6124:6124 SphereClassification.KillingHopf <> M:44 var
+R6126:6126 SphereClassification.KillingHopf <> g:45 var
+R6135:6142 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6171:6173 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6148:6166 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R6168:6168 SphereClassification.KillingHopf <> M:44 var
+R6170:6170 SphereClassification.KillingHopf <> g:45 var
+binder 6143:6144 <> sf:46
+R6174:6177 Coq.Init.Logic <> True ind
+R6236:6255 SphereClassification.KillingHopf <> killing_hopf_theorem thm
+R6280:6288 Coq.Init.Logic <> or_introl constr
+R6236:6255 SphereClassification.KillingHopf <> killing_hopf_theorem thm
+R6280:6288 Coq.Init.Logic <> or_introl constr
+R6349:6352 Coq.Init.Logic <> True ind
+R6330:6345 Coq.Init.Logic <> I constr
+R6349:6352 Coq.Init.Logic <> True ind
+R6330:6345 Coq.Init.Logic <> I constr

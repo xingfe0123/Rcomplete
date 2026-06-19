@@ -1,5 +1,5 @@
 DIGEST 548a9582e2a41b479e53cc68b53c521b
-FHopf.Hopf
+FHopfDir.Hopf
 R291:295 Coq.Reals.Reals <> <> lib
 R313:326 Coq.Logic.Classical_Prop <> <> lib
 R344:348 Coq.Reals.Reals <> <> lib
@@ -11,127 +11,127 @@ ax 774:782 <> T_horizon
 R786:786 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 ax 795:807 <> T_horizon_pos
 R820:822 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R811:819 Hopf.Hopf <> T_horizon defax
+R811:819 HopfDir.Hopf <> T_horizon defax
 def 883:897 <> ParabolicDomain
 R902:905 Coq.Init.Datatypes <> prod ind
 R918:918 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R907:916 Hopf.Hopf <> Omega_Type defax
+R907:916 HopfDir.Hopf <> Omega_Type defax
 ax 990:1009 <> ParabolicHolderSpace
 ax 1096:1111 <> ParabolicProblem
 ax 1182:1193 <> phs_function
 R1217:1220 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1197:1216 Hopf.Hopf <> ParabolicHolderSpace defax
+R1197:1216 HopfDir.Hopf <> ParabolicHolderSpace defax
 R1236:1239 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1221:1235 Hopf.Hopf <> ParabolicDomain def
+R1221:1235 HopfDir.Hopf <> ParabolicDomain def
 R1240:1240 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 ax 1275:1287 <> satisfies_pde
 R1307:1310 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1291:1306 Hopf.Hopf <> ParabolicProblem defax
+R1291:1306 HopfDir.Hopf <> ParabolicProblem defax
 R1331:1334 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1311:1330 Hopf.Hopf <> ParabolicHolderSpace defax
+R1311:1330 HopfDir.Hopf <> ParabolicHolderSpace defax
 ax 1387:1403 <> satisfies_initial
 R1423:1426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1407:1422 Hopf.Hopf <> ParabolicProblem defax
+R1407:1422 HopfDir.Hopf <> ParabolicProblem defax
 R1447:1450 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1427:1446 Hopf.Hopf <> ParabolicHolderSpace defax
+R1427:1446 HopfDir.Hopf <> ParabolicHolderSpace defax
 def 1538:1556 <> short_time_solution
-R1563:1578 Hopf.Hopf <> ParabolicProblem defax
+R1563:1578 HopfDir.Hopf <> ParabolicProblem defax
 binder 1559:1559 <> P:9
-R1588:1607 Hopf.Hopf <> ParabolicHolderSpace defax
+R1588:1607 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 1582:1584 <> sol:10
 R1641:1644 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R1622:1634 Hopf.Hopf <> satisfies_pde defax
-R1636:1636 Hopf.Hopf <> P:9 var
-R1638:1640 Hopf.Hopf <> sol:10 var
-R1645:1661 Hopf.Hopf <> satisfies_initial defax
-R1663:1663 Hopf.Hopf <> P:9 var
-R1665:1667 Hopf.Hopf <> sol:10 var
+R1622:1634 HopfDir.Hopf <> satisfies_pde defax
+R1636:1636 HopfDir.Hopf <> P:9 var
+R1638:1640 HopfDir.Hopf <> sol:10 var
+R1645:1661 HopfDir.Hopf <> satisfies_initial defax
+R1663:1663 HopfDir.Hopf <> P:9 var
+R1665:1667 HopfDir.Hopf <> sol:10 var
 ax 1931:1954 <> parabolic_operator_value
 R1976:1979 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1960:1975 Hopf.Hopf <> ParabolicProblem defax
+R1960:1975 HopfDir.Hopf <> ParabolicProblem defax
 R2000:2003 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R1980:1999 Hopf.Hopf <> ParabolicHolderSpace defax
+R1980:1999 HopfDir.Hopf <> ParabolicHolderSpace defax
 R2019:2022 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2004:2018 Hopf.Hopf <> ParabolicDomain def
+R2004:2018 HopfDir.Hopf <> ParabolicDomain def
 R2023:2023 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 def 2060:2066 <> Lu_ge_0
-R2073:2088 Hopf.Hopf <> ParabolicProblem defax
+R2073:2088 HopfDir.Hopf <> ParabolicProblem defax
 binder 2069:2069 <> P:12
-R2096:2115 Hopf.Hopf <> ParabolicHolderSpace defax
+R2096:2115 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 2092:2092 <> u:13
-R2141:2155 Hopf.Hopf <> ParabolicDomain def
+R2141:2155 HopfDir.Hopf <> ParabolicDomain def
 binder 2137:2137 <> p:14
 R2188:2191 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R2158:2181 Hopf.Hopf <> parabolic_operator_value defax
-R2183:2183 Hopf.Hopf <> P:12 var
-R2185:2185 Hopf.Hopf <> u:13 var
-R2187:2187 Hopf.Hopf <> p:14 var
+R2158:2181 HopfDir.Hopf <> parabolic_operator_value defax
+R2183:2183 HopfDir.Hopf <> P:12 var
+R2185:2185 HopfDir.Hopf <> u:13 var
+R2187:2187 HopfDir.Hopf <> p:14 var
 ax 2237:2243 <> coeff_c
 R2263:2266 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2247:2262 Hopf.Hopf <> ParabolicProblem defax
+R2247:2262 HopfDir.Hopf <> ParabolicProblem defax
 R2282:2285 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2267:2281 Hopf.Hopf <> ParabolicDomain def
+R2267:2281 HopfDir.Hopf <> ParabolicDomain def
 R2286:2286 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 def 2301:2314 <> coeff_c_nonpos
-R2321:2336 Hopf.Hopf <> ParabolicProblem defax
+R2321:2336 HopfDir.Hopf <> ParabolicProblem defax
 binder 2317:2317 <> P:16
-R2362:2376 Hopf.Hopf <> ParabolicDomain def
+R2362:2376 HopfDir.Hopf <> ParabolicDomain def
 binder 2358:2358 <> p:17
 R2390:2393 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
-R2379:2385 Hopf.Hopf <> coeff_c defax
-R2387:2387 Hopf.Hopf <> P:16 var
-R2389:2389 Hopf.Hopf <> p:17 var
+R2379:2385 HopfDir.Hopf <> coeff_c defax
+R2387:2387 HopfDir.Hopf <> P:16 var
+R2389:2389 HopfDir.Hopf <> p:17 var
 ax 2686:2699 <> Omega_distance
 R2713:2716 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2703:2712 Hopf.Hopf <> Omega_Type defax
+R2703:2712 HopfDir.Hopf <> Omega_Type defax
 R2727:2730 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2717:2726 Hopf.Hopf <> Omega_Type defax
+R2717:2726 HopfDir.Hopf <> Omega_Type defax
 R2731:2731 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 ax 2741:2761 <> Omega_distance_nonneg
 binder 2772:2772 <> x:19
 binder 2774:2774 <> y:20
 R2795:2798 Coq.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
-R2777:2790 Hopf.Hopf <> Omega_distance defax
-R2792:2792 Hopf.Hopf <> x:19 var
-R2794:2794 Hopf.Hopf <> y:20 var
+R2777:2790 HopfDir.Hopf <> Omega_distance defax
+R2792:2792 HopfDir.Hopf <> x:19 var
+R2794:2794 HopfDir.Hopf <> y:20 var
 ax 2808:2826 <> Omega_distance_symm
 binder 2837:2837 <> x:22
 binder 2839:2839 <> y:23
 R2860:2862 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R2842:2855 Hopf.Hopf <> Omega_distance defax
-R2857:2857 Hopf.Hopf <> x:22 var
-R2859:2859 Hopf.Hopf <> y:23 var
-R2863:2876 Hopf.Hopf <> Omega_distance defax
-R2878:2878 Hopf.Hopf <> y:23 var
-R2880:2880 Hopf.Hopf <> x:22 var
+R2842:2855 HopfDir.Hopf <> Omega_distance defax
+R2857:2857 HopfDir.Hopf <> x:22 var
+R2859:2859 HopfDir.Hopf <> y:23 var
+R2863:2876 HopfDir.Hopf <> Omega_distance defax
+R2878:2878 HopfDir.Hopf <> y:23 var
+R2880:2880 HopfDir.Hopf <> x:22 var
 ax 2889:2906 <> Omega_distance_tri
 binder 2917:2917 <> x:25
 binder 2919:2919 <> y:26
 binder 2921:2921 <> z:27
 R2942:2945 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
-R2924:2937 Hopf.Hopf <> Omega_distance defax
-R2939:2939 Hopf.Hopf <> x:25 var
-R2941:2941 Hopf.Hopf <> z:27 var
+R2924:2937 HopfDir.Hopf <> Omega_distance defax
+R2939:2939 HopfDir.Hopf <> x:25 var
+R2941:2941 HopfDir.Hopf <> z:27 var
 R2964:2966 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
-R2946:2959 Hopf.Hopf <> Omega_distance defax
-R2961:2961 Hopf.Hopf <> x:25 var
-R2963:2963 Hopf.Hopf <> y:26 var
-R2967:2980 Hopf.Hopf <> Omega_distance defax
-R2982:2982 Hopf.Hopf <> y:26 var
-R2984:2984 Hopf.Hopf <> z:27 var
+R2946:2959 HopfDir.Hopf <> Omega_distance defax
+R2961:2961 HopfDir.Hopf <> x:25 var
+R2963:2963 HopfDir.Hopf <> y:26 var
+R2967:2980 HopfDir.Hopf <> Omega_distance defax
+R2982:2982 HopfDir.Hopf <> y:26 var
+R2984:2984 HopfDir.Hopf <> z:27 var
 ax 2993:3011 <> Omega_distance_iden
 binder 3022:3022 <> x:29
 binder 3024:3024 <> y:30
 R3049:3052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R3045:3047 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3027:3040 Hopf.Hopf <> Omega_distance defax
-R3042:3042 Hopf.Hopf <> x:29 var
-R3044:3044 Hopf.Hopf <> y:30 var
+R3027:3040 HopfDir.Hopf <> Omega_distance defax
+R3042:3042 HopfDir.Hopf <> x:29 var
+R3044:3044 HopfDir.Hopf <> y:30 var
 R3054:3056 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3053:3053 Hopf.Hopf <> x:29 var
-R3057:3057 Hopf.Hopf <> y:30 var
+R3053:3053 HopfDir.Hopf <> x:29 var
+R3057:3057 HopfDir.Hopf <> y:30 var
 def 3126:3150 <> interior_sphere_condition
-R3158:3167 Hopf.Hopf <> Omega_Type defax
+R3158:3167 HopfDir.Hopf <> Omega_Type defax
 binder 3153:3154 <> x0:32
 R3182:3188 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R3194:3195 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
@@ -139,194 +139,194 @@ R3193:3193 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 binder 3189:3189 <> r:33
 R3201:3208 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
 R3197:3199 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R3196:3196 Hopf.Hopf <> r:33 var
+R3196:3196 HopfDir.Hopf <> r:33 var
 R3209:3215 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R3235:3279 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R3225:3234 Hopf.Hopf <> Omega_Type defax
+R3225:3234 HopfDir.Hopf <> Omega_Type defax
 binder 3216:3221 <> x_star:34
 R3280:3280 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
 R3339:3376 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R3292:3301 Hopf.Hopf <> Omega_Type defax
+R3292:3301 HopfDir.Hopf <> Omega_Type defax
 binder 3288:3288 <> x:35
 R3331:3334 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R3327:3329 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
-R3304:3317 Hopf.Hopf <> Omega_distance defax
-R3319:3319 Hopf.Hopf <> x:35 var
-R3321:3326 Hopf.Hopf <> x_star:34 var
-R3330:3330 Hopf.Hopf <> r:33 var
+R3304:3317 HopfDir.Hopf <> Omega_distance defax
+R3319:3319 HopfDir.Hopf <> x:35 var
+R3321:3326 HopfDir.Hopf <> x_star:34 var
+R3330:3330 HopfDir.Hopf <> r:33 var
 R3335:3338 Coq.Init.Logic <> True ind
 R3381:3423 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
 R3377:3380 Coq.Init.Logic <> True ind
 R3448:3450 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R3424:3437 Hopf.Hopf <> Omega_distance defax
-R3439:3440 Hopf.Hopf <> x0:32 var
-R3442:3447 Hopf.Hopf <> x_star:34 var
-R3451:3451 Hopf.Hopf <> r:33 var
+R3424:3437 HopfDir.Hopf <> Omega_distance defax
+R3439:3440 HopfDir.Hopf <> x0:32 var
+R3442:3447 HopfDir.Hopf <> x_star:34 var
+R3451:3451 HopfDir.Hopf <> r:33 var
 def 3740:3755 <> lateral_boundary
-R3762:3771 Hopf.Hopf <> Omega_Type defax
+R3762:3771 HopfDir.Hopf <> Omega_Type defax
 binder 3758:3758 <> x:36
 R3779:3779 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 binder 3775:3775 <> t:37
 R3799:3802 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
 R3795:3797 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R3794:3794 Hopf.Hopf <> t:37 var
+R3794:3794 HopfDir.Hopf <> t:37 var
 R3804:3807 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
-R3803:3803 Hopf.Hopf <> t:37 var
-R3808:3816 Hopf.Hopf <> T_horizon defax
+R3803:3803 HopfDir.Hopf <> t:37 var
+R3808:3816 HopfDir.Hopf <> T_horizon defax
 ax 4132:4163 <> directional_derivative_in_normal
 R4189:4192 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4169:4188 Hopf.Hopf <> ParabolicHolderSpace defax
+R4169:4188 HopfDir.Hopf <> ParabolicHolderSpace defax
 R4203:4206 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4193:4202 Hopf.Hopf <> Omega_Type defax
+R4193:4202 HopfDir.Hopf <> Omega_Type defax
 R4208:4211 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4207:4207 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 R4212:4212 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 ax 4372:4387 <> normal_direction
 R4409:4412 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4393:4408 Hopf.Hopf <> ParabolicProblem defax
+R4393:4408 HopfDir.Hopf <> ParabolicProblem defax
 R4423:4426 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4413:4422 Hopf.Hopf <> Omega_Type defax
+R4413:4422 HopfDir.Hopf <> Omega_Type defax
 R4428:4431 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R4427:4427 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
-R4432:4441 Hopf.Hopf <> Omega_Type defax
+R4432:4441 HopfDir.Hopf <> Omega_Type defax
 ax 4821:4834 <> hopf_parabolic
-R4852:4867 Hopf.Hopf <> ParabolicProblem defax
+R4852:4867 HopfDir.Hopf <> ParabolicProblem defax
 binder 4848:4848 <> P:40
-R4875:4894 Hopf.Hopf <> ParabolicHolderSpace defax
+R4875:4894 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 4871:4871 <> u:41
-R4903:4912 Hopf.Hopf <> Omega_Type defax
+R4903:4912 HopfDir.Hopf <> Omega_Type defax
 binder 4898:4899 <> x0:42
 R4921:4921 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 binder 4916:4917 <> t0:43
 R4940:4947 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4929:4935 Hopf.Hopf <> Lu_ge_0 def
-R4937:4937 Hopf.Hopf <> P:40 var
-R4939:4939 Hopf.Hopf <> u:41 var
+R4929:4935 HopfDir.Hopf <> Lu_ge_0 def
+R4937:4937 HopfDir.Hopf <> P:40 var
+R4939:4939 HopfDir.Hopf <> u:41 var
 R4964:4971 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4948:4961 Hopf.Hopf <> coeff_c_nonpos def
-R4963:4963 Hopf.Hopf <> P:40 var
+R4948:4961 HopfDir.Hopf <> coeff_c_nonpos def
+R4963:4963 HopfDir.Hopf <> P:40 var
 R4972:4972 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R5044:5052 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R4984:4998 Hopf.Hopf <> ParabolicDomain def
+R4984:4998 HopfDir.Hopf <> ParabolicDomain def
 binder 4980:4980 <> p:44
 R5017:5020 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
-R5001:5012 Hopf.Hopf <> phs_function defax
-R5014:5014 Hopf.Hopf <> u:41 var
-R5016:5016 Hopf.Hopf <> p:44 var
-R5021:5032 Hopf.Hopf <> phs_function defax
-R5034:5034 Hopf.Hopf <> u:41 var
+R5001:5012 HopfDir.Hopf <> phs_function defax
+R5014:5014 HopfDir.Hopf <> u:41 var
+R5016:5016 HopfDir.Hopf <> p:44 var
+R5021:5032 HopfDir.Hopf <> phs_function defax
+R5034:5034 HopfDir.Hopf <> u:41 var
 R5036:5036 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R5039:5040 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R5043:5043 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5037:5038 Hopf.Hopf <> x0:42 var
-R5041:5042 Hopf.Hopf <> t0:43 var
+R5037:5038 HopfDir.Hopf <> x0:42 var
+R5041:5042 HopfDir.Hopf <> t0:43 var
 R5075:5082 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5053:5068 Hopf.Hopf <> lateral_boundary def
-R5070:5071 Hopf.Hopf <> x0:42 var
-R5073:5074 Hopf.Hopf <> t0:43 var
+R5053:5068 HopfDir.Hopf <> lateral_boundary def
+R5070:5071 HopfDir.Hopf <> x0:42 var
+R5073:5074 HopfDir.Hopf <> t0:43 var
 R5111:5118 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5083:5107 Hopf.Hopf <> interior_sphere_condition def
-R5109:5110 Hopf.Hopf <> x0:42 var
+R5083:5107 HopfDir.Hopf <> interior_sphere_condition def
+R5109:5110 HopfDir.Hopf <> x0:42 var
 R5159:5161 Coq.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
-R5119:5150 Hopf.Hopf <> directional_derivative_in_normal defax
-R5152:5152 Hopf.Hopf <> u:41 var
-R5154:5155 Hopf.Hopf <> x0:42 var
-R5157:5158 Hopf.Hopf <> t0:43 var
+R5119:5150 HopfDir.Hopf <> directional_derivative_in_normal defax
+R5152:5152 HopfDir.Hopf <> u:41 var
+R5154:5155 HopfDir.Hopf <> x0:42 var
+R5157:5158 HopfDir.Hopf <> t0:43 var
 def 5492:5509 <> parabolic_boundary
-R5516:5525 Hopf.Hopf <> Omega_Type defax
+R5516:5525 HopfDir.Hopf <> Omega_Type defax
 binder 5512:5512 <> x:46
 R5533:5533 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 binder 5529:5529 <> t:47
 R5553:5556 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
 R5549:5551 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R5548:5548 Hopf.Hopf <> t:47 var
-R5557:5572 Hopf.Hopf <> lateral_boundary def
-R5574:5574 Hopf.Hopf <> x:46 var
-R5576:5576 Hopf.Hopf <> t:47 var
+R5548:5548 HopfDir.Hopf <> t:47 var
+R5557:5572 HopfDir.Hopf <> lateral_boundary def
+R5574:5574 HopfDir.Hopf <> x:46 var
+R5576:5576 HopfDir.Hopf <> t:47 var
 ax 5695:5716 <> weak_maximum_principle
-R5734:5749 Hopf.Hopf <> ParabolicProblem defax
+R5734:5749 HopfDir.Hopf <> ParabolicProblem defax
 binder 5730:5730 <> P:48
-R5757:5776 Hopf.Hopf <> ParabolicHolderSpace defax
+R5757:5776 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 5753:5753 <> u:49
 R5795:5802 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5784:5790 Hopf.Hopf <> Lu_ge_0 def
-R5792:5792 Hopf.Hopf <> P:48 var
-R5794:5794 Hopf.Hopf <> u:49 var
+R5784:5790 HopfDir.Hopf <> Lu_ge_0 def
+R5792:5792 HopfDir.Hopf <> P:48 var
+R5794:5794 HopfDir.Hopf <> u:49 var
 R5819:5826 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R5803:5816 Hopf.Hopf <> coeff_c_nonpos def
-R5818:5818 Hopf.Hopf <> P:48 var
+R5803:5816 HopfDir.Hopf <> coeff_c_nonpos def
+R5818:5818 HopfDir.Hopf <> P:48 var
 R5827:5833 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R5852:5853 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R5842:5851 Hopf.Hopf <> Omega_Type defax
+R5842:5851 HopfDir.Hopf <> Omega_Type defax
 binder 5834:5838 <> p_max:50
 R5854:5860 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R5870:5877 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
 R5869:5869 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
 binder 5861:5865 <> t_max:51
 R5908:5917 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
-R5878:5895 Hopf.Hopf <> parabolic_boundary def
-R5897:5901 Hopf.Hopf <> p_max:50 var
-R5903:5907 Hopf.Hopf <> t_max:51 var
-R5929:5943 Hopf.Hopf <> ParabolicDomain def
+R5878:5895 HopfDir.Hopf <> parabolic_boundary def
+R5897:5901 HopfDir.Hopf <> p_max:50 var
+R5903:5907 HopfDir.Hopf <> t_max:51 var
+R5929:5943 HopfDir.Hopf <> ParabolicDomain def
 binder 5925:5925 <> p:52
 R5962:5965 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
-R5946:5957 Hopf.Hopf <> phs_function defax
-R5959:5959 Hopf.Hopf <> u:49 var
-R5961:5961 Hopf.Hopf <> p:52 var
-R5966:5977 Hopf.Hopf <> phs_function defax
-R5979:5979 Hopf.Hopf <> u:49 var
+R5946:5957 HopfDir.Hopf <> phs_function defax
+R5959:5959 HopfDir.Hopf <> u:49 var
+R5961:5961 HopfDir.Hopf <> p:52 var
+R5966:5977 HopfDir.Hopf <> phs_function defax
+R5979:5979 HopfDir.Hopf <> u:49 var
 R5981:5981 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R5987:5988 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
 R5994:5994 Coq.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
-R5982:5986 Hopf.Hopf <> p_max:50 var
-R5989:5993 Hopf.Hopf <> t_max:51 var
+R5982:5986 HopfDir.Hopf <> p_max:50 var
+R5989:5993 HopfDir.Hopf <> t_max:51 var
 ax 6430:6449 <> parabolic_uniqueness
-R6467:6482 Hopf.Hopf <> ParabolicProblem defax
+R6467:6482 HopfDir.Hopf <> ParabolicProblem defax
 binder 6463:6463 <> P:54
-R6494:6513 Hopf.Hopf <> ParabolicHolderSpace defax
+R6494:6513 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 6486:6487 <> u1:55
 binder 6489:6490 <> u2:56
 R6545:6548 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6521:6539 Hopf.Hopf <> short_time_solution def
-R6541:6541 Hopf.Hopf <> P:54 var
-R6543:6544 Hopf.Hopf <> u1:55 var
+R6521:6539 HopfDir.Hopf <> short_time_solution def
+R6541:6541 HopfDir.Hopf <> P:54 var
+R6543:6544 HopfDir.Hopf <> u1:55 var
 R6573:6581 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R6647:6647 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6549:6567 Hopf.Hopf <> short_time_solution def
-R6569:6569 Hopf.Hopf <> P:54 var
-R6571:6572 Hopf.Hopf <> u2:56 var
-R6593:6607 Hopf.Hopf <> ParabolicDomain def
+R6549:6567 HopfDir.Hopf <> short_time_solution def
+R6569:6569 HopfDir.Hopf <> P:54 var
+R6571:6572 HopfDir.Hopf <> u2:56 var
+R6593:6607 HopfDir.Hopf <> ParabolicDomain def
 binder 6589:6589 <> p:57
 R6627:6629 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6610:6621 Hopf.Hopf <> phs_function defax
-R6623:6624 Hopf.Hopf <> u1:55 var
-R6626:6626 Hopf.Hopf <> p:57 var
-R6630:6641 Hopf.Hopf <> phs_function defax
-R6643:6644 Hopf.Hopf <> u2:56 var
-R6646:6646 Hopf.Hopf <> p:57 var
+R6610:6621 HopfDir.Hopf <> phs_function defax
+R6623:6624 HopfDir.Hopf <> u1:55 var
+R6626:6626 HopfDir.Hopf <> p:57 var
+R6630:6641 HopfDir.Hopf <> phs_function defax
+R6643:6644 HopfDir.Hopf <> u2:56 var
+R6646:6646 HopfDir.Hopf <> p:57 var
 prf 6702:6737 <> schauder_global_uniqueness_from_hopf
-R6755:6770 Hopf.Hopf <> ParabolicProblem defax
+R6755:6770 HopfDir.Hopf <> ParabolicProblem defax
 binder 6751:6751 <> P:59
-R6782:6801 Hopf.Hopf <> ParabolicHolderSpace defax
+R6782:6801 HopfDir.Hopf <> ParabolicHolderSpace defax
 binder 6774:6775 <> u1:60
 binder 6777:6778 <> u2:61
 R6833:6836 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6809:6827 Hopf.Hopf <> short_time_solution def
-R6829:6829 Hopf.Hopf <> P:59 var
-R6831:6832 Hopf.Hopf <> u1:60 var
+R6809:6827 HopfDir.Hopf <> short_time_solution def
+R6829:6829 HopfDir.Hopf <> P:59 var
+R6831:6832 HopfDir.Hopf <> u1:60 var
 R6861:6869 Coq.Init.Logic <> ::type_scope:x_'->'_x not
 R6935:6935 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R6837:6855 Hopf.Hopf <> short_time_solution def
-R6857:6857 Hopf.Hopf <> P:59 var
-R6859:6860 Hopf.Hopf <> u2:61 var
-R6881:6895 Hopf.Hopf <> ParabolicDomain def
+R6837:6855 HopfDir.Hopf <> short_time_solution def
+R6857:6857 HopfDir.Hopf <> P:59 var
+R6859:6860 HopfDir.Hopf <> u2:61 var
+R6881:6895 HopfDir.Hopf <> ParabolicDomain def
 binder 6877:6877 <> p:62
 R6915:6917 Coq.Init.Logic <> ::type_scope:x_'='_x not
-R6898:6909 Hopf.Hopf <> phs_function defax
-R6911:6912 Hopf.Hopf <> u1:60 var
-R6914:6914 Hopf.Hopf <> p:62 var
-R6918:6929 Hopf.Hopf <> phs_function defax
-R6931:6932 Hopf.Hopf <> u2:61 var
-R6934:6934 Hopf.Hopf <> p:62 var
-R6978:6997 Hopf.Hopf <> parabolic_uniqueness prfax
-R6978:6997 Hopf.Hopf <> parabolic_uniqueness prfax
+R6898:6909 HopfDir.Hopf <> phs_function defax
+R6911:6912 HopfDir.Hopf <> u1:60 var
+R6914:6914 HopfDir.Hopf <> p:62 var
+R6918:6929 HopfDir.Hopf <> phs_function defax
+R6931:6932 HopfDir.Hopf <> u2:61 var
+R6934:6934 HopfDir.Hopf <> p:62 var
+R6978:6997 HopfDir.Hopf <> parabolic_uniqueness prfax
+R6978:6997 HopfDir.Hopf <> parabolic_uniqueness prfax

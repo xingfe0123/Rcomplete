@@ -1,0 +1,561 @@
+DIGEST 8ff186aa57f0b905b8fa0755628c47cc
+FLadyzhenskayaDir.SobolevSpace
+R228:240 Coq.Reals.Raxioms <> <> lib
+R242:246 Coq.Reals.RIneq <> <> lib
+R248:257 Coq.Reals.Rbasic_fun <> <> lib
+R259:268 Coq.Reals.Rfunctions <> <> lib
+R308:318 LadyzhenskayaDir.HolderSpace <> <> lib
+rec 796:801 <> Domain
+proj 819:831 <> domain_metric
+proj 851:861 <> domain_open
+proj 903:916 <> domain_bounded
+R835:845 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+R865:868 Coq.Init.Logic <> True ind
+R920:923 Coq.Init.Logic <> True ind
+ax 1410:1420 <> L2_integral
+R1439:1449 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 1434:1435 <> Ω:5
+R1467:1470 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1457:1463 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R1465:1466 LadyzhenskayaDir.SobolevSpace <> Ω:5 var
+R1471:1471 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1453:1453 <> f:6
+R1475:1475 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 1485:1502 <> L2_integral_nonneg
+R1521:1531 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 1516:1517 <> Ω:8
+R1549:1552 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1539:1545 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R1547:1548 LadyzhenskayaDir.SobolevSpace <> Ω:8 var
+R1553:1553 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1535:1535 <> f:9
+R1596:1603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1573:1579 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R1581:1582 LadyzhenskayaDir.SobolevSpace <> Ω:8 var
+binder 1569:1569 <> x:10
+R1586:1589 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1590:1590 LadyzhenskayaDir.SobolevSpace <> f:9 var
+R1592:1592 LadyzhenskayaDir.SobolevSpace <> x:10 var
+R1606:1609 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1611:1621 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R1623:1624 LadyzhenskayaDir.SobolevSpace <> Ω:8 var
+R1626:1626 LadyzhenskayaDir.SobolevSpace <> f:9 var
+ax 1639:1659 <> L2_integral_linearity
+R1678:1688 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 1673:1674 <> Ω:12
+R1708:1711 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1698:1704 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R1706:1707 LadyzhenskayaDir.SobolevSpace <> Ω:12 var
+R1712:1712 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1692:1692 <> f:13
+binder 1694:1694 <> g:14
+R1722:1722 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1716:1716 <> a:15
+binder 1718:1718 <> b:16
+R1778:1780 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1731:1741 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R1743:1744 LadyzhenskayaDir.SobolevSpace <> Ω:12 var
+binder 1751:1751 <> x:17
+R1764:1766 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1758:1760 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1757:1757 LadyzhenskayaDir.SobolevSpace <> a:15 var
+R1761:1761 LadyzhenskayaDir.SobolevSpace <> f:13 var
+R1763:1763 LadyzhenskayaDir.SobolevSpace <> x:17 var
+R1768:1770 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1767:1767 LadyzhenskayaDir.SobolevSpace <> b:16 var
+R1771:1771 LadyzhenskayaDir.SobolevSpace <> g:14 var
+R1773:1773 LadyzhenskayaDir.SobolevSpace <> x:17 var
+R1803:1805 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1783:1785 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1782:1782 LadyzhenskayaDir.SobolevSpace <> a:15 var
+R1787:1797 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R1799:1800 LadyzhenskayaDir.SobolevSpace <> Ω:12 var
+R1802:1802 LadyzhenskayaDir.SobolevSpace <> f:13 var
+R1807:1809 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1806:1806 LadyzhenskayaDir.SobolevSpace <> b:16 var
+R1811:1821 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R1823:1824 LadyzhenskayaDir.SobolevSpace <> Ω:12 var
+R1826:1826 LadyzhenskayaDir.SobolevSpace <> g:14 var
+ax 1839:1856 <> L2_integral_square
+R1875:1885 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 1870:1871 <> Ω:19
+R1903:1906 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1893:1899 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R1901:1902 LadyzhenskayaDir.SobolevSpace <> Ω:19 var
+R1907:1907 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1889:1889 <> f:20
+R1917:1920 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1922:1932 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R1934:1935 LadyzhenskayaDir.SobolevSpace <> Ω:19 var
+binder 1942:1942 <> x:21
+R1951:1953 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1948:1948 LadyzhenskayaDir.SobolevSpace <> f:20 var
+R1950:1950 LadyzhenskayaDir.SobolevSpace <> x:21 var
+R1954:1954 LadyzhenskayaDir.SobolevSpace <> f:20 var
+R1956:1956 LadyzhenskayaDir.SobolevSpace <> x:21 var
+def 2044:2054 <> L2_norm_sqr
+R2062:2072 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 2057:2058 <> Ω:23
+R2090:2093 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2080:2086 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R2088:2089 LadyzhenskayaDir.SobolevSpace <> Ω:23 var
+R2094:2094 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2076:2076 <> f:24
+R2099:2099 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2107:2117 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R2119:2120 LadyzhenskayaDir.SobolevSpace <> Ω:23 var
+binder 2127:2127 <> x:25
+R2136:2138 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2133:2133 LadyzhenskayaDir.SobolevSpace <> f:24 var
+R2135:2135 LadyzhenskayaDir.SobolevSpace <> x:25 var
+R2139:2139 LadyzhenskayaDir.SobolevSpace <> f:24 var
+R2141:2141 LadyzhenskayaDir.SobolevSpace <> x:25 var
+rec 2179:2185 <> L2Space
+proj 2223:2233 <> l2_function
+proj 2257:2264 <> l2_in_L2
+proj 2318:2324 <> l2_norm
+proj 2334:2347 <> l2_norm_nonneg
+R2193:2203 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 2188:2189 <> Ω:26
+R2247:2250 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2237:2243 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R2245:2246 LadyzhenskayaDir.SobolevSpace <> Ω:26 var
+R2251:2251 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2268:2271 Coq.Init.Logic <> True ind
+R2328:2328 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2355:2358 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R2359:2365 LadyzhenskayaDir.SobolevSpace <> l2_norm:30 meth
+def 2385:2397 <> L2_norm_space
+binder 2400:2401 <> Ω:32
+R2410:2416 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R2418:2419 LadyzhenskayaDir.SobolevSpace <> Ω:32 var
+binder 2405:2405 <> f:33
+R2424:2424 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2429:2435 LadyzhenskayaDir.SobolevSpace <> l2_norm proj
+R2437:2437 LadyzhenskayaDir.SobolevSpace <> f:33 var
+ax 2470:2485 <> L2_norm_zero_iff
+R2504:2514 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 2499:2500 <> Ω:34
+R2523:2529 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R2531:2532 LadyzhenskayaDir.SobolevSpace <> Ω:34 var
+binder 2518:2518 <> f:35
+R2561:2565 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2555:2557 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2540:2552 LadyzhenskayaDir.SobolevSpace <> L2_norm_space def
+R2554:2554 LadyzhenskayaDir.SobolevSpace <> f:35 var
+R2577:2583 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R2585:2586 LadyzhenskayaDir.SobolevSpace <> Ω:34 var
+binder 2573:2573 <> x:36
+R2604:2606 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2589:2599 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R2603:2603 LadyzhenskayaDir.SobolevSpace <> x:36 var
+R2601:2601 LadyzhenskayaDir.SobolevSpace <> f:35 var
+ax 2619:2647 <> L2_triangle_inequality_metric
+R2666:2676 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 2661:2662 <> Ω:38
+R2698:2701 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2688:2694 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R2696:2697 LadyzhenskayaDir.SobolevSpace <> Ω:38 var
+R2702:2702 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2680:2680 <> f:39
+binder 2682:2682 <> g:40
+binder 2684:2684 <> h:41
+R2747:2750 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R2712:2722 LadyzhenskayaDir.SobolevSpace <> L2_norm_sqr def
+R2724:2725 LadyzhenskayaDir.SobolevSpace <> Ω:38 var
+binder 2732:2732 <> x:42
+R2740:2742 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2737:2737 LadyzhenskayaDir.SobolevSpace <> f:39 var
+R2739:2739 LadyzhenskayaDir.SobolevSpace <> x:42 var
+R2743:2743 LadyzhenskayaDir.SobolevSpace <> g:40 var
+R2745:2745 LadyzhenskayaDir.SobolevSpace <> x:42 var
+R2787:2789 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2752:2762 LadyzhenskayaDir.SobolevSpace <> L2_norm_sqr def
+R2764:2765 LadyzhenskayaDir.SobolevSpace <> Ω:38 var
+binder 2772:2772 <> x:43
+R2780:2782 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2777:2777 LadyzhenskayaDir.SobolevSpace <> f:39 var
+R2779:2779 LadyzhenskayaDir.SobolevSpace <> x:43 var
+R2783:2783 LadyzhenskayaDir.SobolevSpace <> h:41 var
+R2785:2785 LadyzhenskayaDir.SobolevSpace <> x:43 var
+R2791:2801 LadyzhenskayaDir.SobolevSpace <> L2_norm_sqr def
+R2803:2804 LadyzhenskayaDir.SobolevSpace <> Ω:38 var
+binder 2811:2811 <> x:44
+R2819:2821 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2816:2816 LadyzhenskayaDir.SobolevSpace <> h:41 var
+R2818:2818 LadyzhenskayaDir.SobolevSpace <> x:44 var
+R2822:2822 LadyzhenskayaDir.SobolevSpace <> g:40 var
+R2824:2824 LadyzhenskayaDir.SobolevSpace <> x:44 var
+ax 3315:3343 <> test_function_compact_support
+R3362:3372 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 3357:3358 <> Ω:46
+R3392:3395 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3382:3388 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R3390:3391 LadyzhenskayaDir.SobolevSpace <> Ω:46 var
+R3396:3396 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3376:3378 <> phi:47
+R3404:3407 Coq.Init.Logic <> True ind
+ax 3417:3436 <> test_function_smooth
+R3455:3465 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 3450:3451 <> Ω:49
+R3485:3488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3475:3481 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R3483:3484 LadyzhenskayaDir.SobolevSpace <> Ω:49 var
+R3489:3489 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3469:3471 <> phi:50
+R3497:3500 Coq.Init.Logic <> True ind
+def 3537:3550 <> WeakDerivative
+R3558:3568 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 3553:3554 <> Ω:52
+R3577:3583 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R3585:3586 LadyzhenskayaDir.SobolevSpace <> Ω:52 var
+binder 3572:3572 <> u:53
+R3601:3604 Coq.Init.Logic <> True ind
+ax 3642:3658 <> weak_deriv_unique
+R3677:3687 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 3672:3673 <> Ω:54
+R3696:3702 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R3704:3705 LadyzhenskayaDir.SobolevSpace <> Ω:54 var
+binder 3691:3691 <> u:55
+R3718:3724 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R3726:3727 LadyzhenskayaDir.SobolevSpace <> Ω:54 var
+binder 3709:3710 <> g1:56
+binder 3712:3713 <> g2:57
+R3755:3758 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3736:3749 LadyzhenskayaDir.SobolevSpace <> WeakDerivative def
+R3751:3752 LadyzhenskayaDir.SobolevSpace <> Ω:54 var
+R3754:3754 LadyzhenskayaDir.SobolevSpace <> u:55 var
+R3779:3786 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3760:3773 LadyzhenskayaDir.SobolevSpace <> WeakDerivative def
+R3775:3776 LadyzhenskayaDir.SobolevSpace <> Ω:54 var
+R3778:3778 LadyzhenskayaDir.SobolevSpace <> u:55 var
+R3798:3804 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R3806:3807 LadyzhenskayaDir.SobolevSpace <> Ω:54 var
+binder 3794:3794 <> x:58
+R3826:3828 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R3810:3820 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R3825:3825 LadyzhenskayaDir.SobolevSpace <> x:58 var
+R3822:3823 LadyzhenskayaDir.SobolevSpace <> g1:56 var
+R3829:3839 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R3844:3844 LadyzhenskayaDir.SobolevSpace <> x:58 var
+R3841:3842 LadyzhenskayaDir.SobolevSpace <> g2:57 var
+rec 4255:4263 <> SobolevH1
+proj 4303:4310 <> h1_as_L2
+proj 4330:4345 <> h1_weak_deriv_ex
+proj 4381:4396 <> h1_weak_deriv_fn
+proj 4439:4457 <> h1_weak_deriv_proof
+proj 4522:4535 <> h1_deriv_in_L2
+proj 4578:4588 <> h1_norm_sqr
+proj 4598:4615 <> h1_norm_sqr_nonneg
+R4271:4281 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 4266:4267 <> Ω:60
+R4315:4321 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R4323:4324 LadyzhenskayaDir.SobolevSpace <> Ω:60 var
+R4349:4352 Coq.Init.Logic <> True ind
+R4401:4407 LadyzhenskayaDir.SobolevSpace <> L2Space rec
+R4409:4410 LadyzhenskayaDir.SobolevSpace <> Ω:60 var
+R4461:4464 Coq.Init.Logic <> True ind
+R4539:4542 Coq.Init.Logic <> True ind
+R4592:4592 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4623:4626 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R4627:4637 LadyzhenskayaDir.SobolevSpace <> h1_norm_sqr:67 meth
+def 4723:4736 <> h1_norm_sqr_fn
+R4744:4754 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 4739:4740 <> Ω:69
+R4762:4770 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R4772:4773 LadyzhenskayaDir.SobolevSpace <> Ω:69 var
+binder 4758:4758 <> u:70
+R4778:4778 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4872:4877 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4787:4797 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R4799:4800 LadyzhenskayaDir.SobolevSpace <> Ω:69 var
+binder 4807:4807 <> x:71
+R4839:4841 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4813:4823 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R4838:4838 LadyzhenskayaDir.SobolevSpace <> x:71 var
+R4826:4833 LadyzhenskayaDir.SobolevSpace <> h1_as_L2 proj
+R4835:4835 LadyzhenskayaDir.SobolevSpace <> u:70 var
+R4842:4852 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R4867:4867 LadyzhenskayaDir.SobolevSpace <> x:71 var
+R4855:4862 LadyzhenskayaDir.SobolevSpace <> h1_as_L2 proj
+R4864:4864 LadyzhenskayaDir.SobolevSpace <> u:70 var
+R4879:4889 LadyzhenskayaDir.SobolevSpace <> L2_integral prfax
+R4891:4892 LadyzhenskayaDir.SobolevSpace <> Ω:69 var
+binder 4899:4899 <> x:72
+R4939:4941 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4905:4915 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R4938:4938 LadyzhenskayaDir.SobolevSpace <> x:72 var
+R4918:4933 LadyzhenskayaDir.SobolevSpace <> h1_weak_deriv_fn proj
+R4935:4935 LadyzhenskayaDir.SobolevSpace <> u:70 var
+R4942:4952 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R4975:4975 LadyzhenskayaDir.SobolevSpace <> x:72 var
+R4955:4970 LadyzhenskayaDir.SobolevSpace <> h1_weak_deriv_fn proj
+R4972:4972 LadyzhenskayaDir.SobolevSpace <> u:70 var
+def 4997:5009 <> h1_norm_value
+binder 5012:5013 <> Ω:73
+R5021:5029 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R5031:5032 LadyzhenskayaDir.SobolevSpace <> Ω:73 var
+binder 5017:5017 <> u:74
+R5037:5037 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5042:5055 LadyzhenskayaDir.SobolevSpace <> h1_norm_sqr_fn def
+R5057:5057 LadyzhenskayaDir.SobolevSpace <> u:74 var
+ax 5090:5112 <> h1_norm_sqr_fn_zero_iff
+R5131:5141 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 5126:5127 <> Ω:75
+R5149:5157 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R5159:5160 LadyzhenskayaDir.SobolevSpace <> Ω:75 var
+binder 5145:5145 <> u:76
+R5190:5194 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R5184:5186 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5168:5181 LadyzhenskayaDir.SobolevSpace <> h1_norm_sqr_fn def
+R5183:5183 LadyzhenskayaDir.SobolevSpace <> u:76 var
+R5206:5212 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R5214:5215 LadyzhenskayaDir.SobolevSpace <> Ω:75 var
+binder 5202:5202 <> x:77
+R5244:5246 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5218:5228 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R5243:5243 LadyzhenskayaDir.SobolevSpace <> x:77 var
+R5231:5238 LadyzhenskayaDir.SobolevSpace <> h1_as_L2 proj
+R5240:5240 LadyzhenskayaDir.SobolevSpace <> u:76 var
+ax 5259:5287 <> h1_triangle_inequality_sqr_fn
+R5306:5316 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 5301:5302 <> Ω:79
+R5326:5334 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R5336:5337 LadyzhenskayaDir.SobolevSpace <> Ω:79 var
+binder 5320:5320 <> u:80
+binder 5322:5322 <> v:81
+R5345:5348 Coq.Init.Logic <> True ind
+ax 5425:5439 <> h1_linear_space
+R5458:5468 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 5453:5454 <> Ω:83
+R5478:5486 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R5488:5489 LadyzhenskayaDir.SobolevSpace <> Ω:83 var
+binder 5472:5472 <> u:84
+binder 5474:5474 <> v:85
+R5499:5499 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5493:5493 <> a:86
+binder 5495:5495 <> b:87
+R5507:5510 Coq.Init.Logic <> True ind
+def 5907:5925 <> Strictly_Increasing
+R5935:5938 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5932:5934 Coq.Init.Datatypes <> nat ind
+R5939:5941 Coq.Init.Datatypes <> nat ind
+binder 5928:5928 <> f:89
+R5967:5969 Coq.Init.Datatypes <> nat ind
+binder 5963:5963 <> n:90
+R5975:5977 Coq.Init.Peano <> ::nat_scope:x_'<'_x not
+R5972:5972 LadyzhenskayaDir.SobolevSpace <> f:89 var
+R5974:5974 LadyzhenskayaDir.SobolevSpace <> n:90 var
+R5978:5978 LadyzhenskayaDir.SobolevSpace <> f:89 var
+R5981:5981 Coq.Init.Datatypes <> S constr
+R5983:5983 LadyzhenskayaDir.SobolevSpace <> n:90 var
+ax 5994:6018 <> sobolev_embedding_compact
+R6037:6047 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 6032:6033 <> Ω:91
+R6055:6057 Coq.Init.Datatypes <> nat ind
+binder 6051:6051 <> n:92
+R6075:6078 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6072:6074 Coq.Init.Datatypes <> nat ind
+R6079:6087 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R6089:6090 LadyzhenskayaDir.SobolevSpace <> Ω:91 var
+binder 6061:6068 <> sequence:93
+R6132:6132 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6215:6266 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6133:6139 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6145:6146 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6144:6144 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6140:6140 <> M:94
+R6156:6159 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6149:6151 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6152:6152 LadyzhenskayaDir.SobolevSpace <> M:94 var
+R6171:6173 Coq.Init.Datatypes <> nat ind
+binder 6167:6167 <> k:95
+R6203:6206 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R6177:6189 LadyzhenskayaDir.SobolevSpace <> h1_norm_value def
+R6192:6199 LadyzhenskayaDir.SobolevSpace <> sequence:93 var
+R6201:6201 LadyzhenskayaDir.SobolevSpace <> k:95 var
+R6208:6210 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6207:6207 LadyzhenskayaDir.SobolevSpace <> M:94 var
+R6211:6211 LadyzhenskayaDir.SobolevSpace <> M:94 var
+R6267:6273 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6293:6300 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6286:6289 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6283:6285 Coq.Init.Datatypes <> nat ind
+R6290:6292 Coq.Init.Datatypes <> nat ind
+binder 6274:6279 <> subseq:96
+R6327:6336 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6301:6319 LadyzhenskayaDir.SobolevSpace <> Strictly_Increasing def
+R6321:6326 LadyzhenskayaDir.SobolevSpace <> subseq:96 var
+R6337:6343 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6363:6372 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6358:6361 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6348:6354 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R6356:6357 LadyzhenskayaDir.SobolevSpace <> Ω:91 var
+R6362:6362 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6344:6344 <> u:97
+R6373:6379 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6391:6451 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6390:6390 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6380:6386 <> Lp_norm:98
+R6452:6455 Coq.Init.Logic <> True ind
+def 6849:6862 <> trace_operator
+R6870:6880 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 6865:6866 <> Ω:100
+R6888:6896 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R6898:6899 LadyzhenskayaDir.SobolevSpace <> Ω:100 var
+binder 6884:6884 <> u:101
+R6914:6917 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6904:6910 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R6912:6913 LadyzhenskayaDir.SobolevSpace <> Ω:100 var
+R6918:6918 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6925:6935 LadyzhenskayaDir.SobolevSpace <> l2_function proj
+R6938:6953 LadyzhenskayaDir.SobolevSpace <> h1_weak_deriv_fn proj
+R6955:6955 LadyzhenskayaDir.SobolevSpace <> u:101 var
+ax 7012:7032 <> trace_operator_exists
+R7051:7061 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 7046:7047 <> Ω:102
+R7069:7077 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R7079:7080 LadyzhenskayaDir.SobolevSpace <> Ω:102 var
+binder 7065:7065 <> u:103
+R7088:7094 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7117:7167 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7112:7115 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7102:7108 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R7110:7111 LadyzhenskayaDir.SobolevSpace <> Ω:102 var
+R7116:7116 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7095:7098 <> tr_u:104
+R7168:7171 Coq.Init.Logic <> True ind
+ax 7181:7198 <> trace_well_defined
+R7217:7227 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 7212:7213 <> Ω:106
+R7237:7245 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R7247:7248 LadyzhenskayaDir.SobolevSpace <> Ω:106 var
+binder 7231:7231 <> u:107
+binder 7233:7233 <> v:108
+R7279:7286 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R7266:7268 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7256:7263 LadyzhenskayaDir.SobolevSpace <> h1_as_L2 proj
+R7265:7265 LadyzhenskayaDir.SobolevSpace <> u:107 var
+R7269:7276 LadyzhenskayaDir.SobolevSpace <> h1_as_L2 proj
+R7278:7278 LadyzhenskayaDir.SobolevSpace <> v:108 var
+R7307:7309 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R7288:7301 LadyzhenskayaDir.SobolevSpace <> trace_operator def
+R7303:7304 LadyzhenskayaDir.SobolevSpace <> Ω:106 var
+R7306:7306 LadyzhenskayaDir.SobolevSpace <> u:107 var
+R7311:7324 LadyzhenskayaDir.SobolevSpace <> trace_operator def
+R7326:7327 LadyzhenskayaDir.SobolevSpace <> Ω:106 var
+R7329:7329 LadyzhenskayaDir.SobolevSpace <> v:108 var
+ax 7376:7385 <> trace_norm
+R7404:7414 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 7399:7400 <> Ω:110
+R7422:7430 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R7432:7433 LadyzhenskayaDir.SobolevSpace <> Ω:110 var
+binder 7418:7418 <> u:111
+R7437:7437 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 7447:7462 <> trace_continuity
+R7481:7491 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 7476:7477 <> Ω:113
+R7499:7505 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7511:7512 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7510:7510 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7506:7506 <> C:114
+R7524:7532 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7602:7602 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R7517:7519 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R7520:7520 LadyzhenskayaDir.SobolevSpace <> C:114 var
+R7544:7552 LadyzhenskayaDir.SobolevSpace <> SobolevH1 rec
+R7554:7555 LadyzhenskayaDir.SobolevSpace <> Ω:113 var
+binder 7540:7540 <> u:115
+R7575:7578 Coq.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R7560:7569 LadyzhenskayaDir.SobolevSpace <> trace_norm prfax
+R7571:7572 LadyzhenskayaDir.SobolevSpace <> Ω:113 var
+R7574:7574 LadyzhenskayaDir.SobolevSpace <> u:115 var
+R7580:7582 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7579:7579 LadyzhenskayaDir.SobolevSpace <> C:114 var
+R7583:7596 LadyzhenskayaDir.SobolevSpace <> h1_norm_sqr_fn def
+R7598:7598 LadyzhenskayaDir.SobolevSpace <> u:115 var
+def 8020:8042 <> interior_ball_condition
+R8050:8060 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 8045:8046 <> Ω:117
+R8069:8075 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8077:8078 LadyzhenskayaDir.SobolevSpace <> Ω:117 var
+binder 8064:8065 <> x0:118
+R8086:8086 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8082:8082 <> r:119
+R8110:8115 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8103:8105 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R8106:8106 LadyzhenskayaDir.SobolevSpace <> r:119 var
+R8116:8122 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8137:8187 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8127:8133 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8135:8136 LadyzhenskayaDir.SobolevSpace <> Ω:117 var
+binder 8123:8123 <> y:120
+R8188:8188 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8253:8261 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R8200:8206 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8208:8209 LadyzhenskayaDir.SobolevSpace <> Ω:117 var
+binder 8196:8196 <> z:121
+R8235:8238 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8228:8230 Coq.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R8214:8220 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R8222:8223 LadyzhenskayaDir.SobolevSpace <> Ω:117 var
+R8225:8225 LadyzhenskayaDir.SobolevSpace <> y:120 var
+R8227:8227 LadyzhenskayaDir.SobolevSpace <> z:121 var
+R8231:8231 LadyzhenskayaDir.SobolevSpace <> r:119 var
+R8245:8248 Coq.Init.Logic <> ::type_scope:x_'\/'_x not
+R8240:8242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8239:8239 LadyzhenskayaDir.SobolevSpace <> z:121 var
+R8243:8244 LadyzhenskayaDir.SobolevSpace <> x0:118 var
+R8249:8252 Coq.Init.Logic <> True ind
+R8279:8281 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8264:8270 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R8272:8273 LadyzhenskayaDir.SobolevSpace <> Ω:117 var
+R8275:8276 LadyzhenskayaDir.SobolevSpace <> x0:118 var
+R8278:8278 LadyzhenskayaDir.SobolevSpace <> y:120 var
+R8282:8282 LadyzhenskayaDir.SobolevSpace <> r:119 var
+ax 8783:8805 <> barrier_function_exists
+R8824:8834 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 8819:8820 <> Ω:122
+R8842:8842 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8858:8863 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8879:8879 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8853:8856 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8843:8849 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8851:8852 LadyzhenskayaDir.SobolevSpace <> Ω:122 var
+R8857:8857 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8874:8877 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8864:8870 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8872:8873 LadyzhenskayaDir.SobolevSpace <> Ω:122 var
+R8878:8878 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8838:8838 <> L:123
+R8897:8903 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8905:8906 LadyzhenskayaDir.SobolevSpace <> Ω:122 var
+binder 8892:8893 <> x0:124
+R8914:8914 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8910:8910 <> r:125
+R8954:8961 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8923:8945 LadyzhenskayaDir.SobolevSpace <> interior_ball_condition def
+R8947:8948 LadyzhenskayaDir.SobolevSpace <> Ω:122 var
+R8950:8951 LadyzhenskayaDir.SobolevSpace <> x0:124 var
+R8953:8953 LadyzhenskayaDir.SobolevSpace <> r:125 var
+R8962:8968 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8988:9067 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8983:8986 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8973:8979 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R8981:8982 LadyzhenskayaDir.SobolevSpace <> Ω:122 var
+R8987:8987 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8969:8969 <> v:126
+R9068:9071 Coq.Init.Logic <> True ind
+ax 9127:9166 <> barrier_method_implies_normal_derivative
+R9185:9195 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 9180:9181 <> Ω:128
+R9215:9218 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9205:9211 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9213:9214 LadyzhenskayaDir.SobolevSpace <> Ω:128 var
+R9219:9219 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9199:9199 <> u:129
+binder 9201:9201 <> v:130
+R9228:9234 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9236:9237 LadyzhenskayaDir.SobolevSpace <> Ω:128 var
+binder 9223:9224 <> x0:131
+R9343:9346 Coq.Init.Logic <> True ind

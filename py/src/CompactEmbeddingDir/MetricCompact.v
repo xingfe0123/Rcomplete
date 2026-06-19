@@ -87,6 +87,11 @@ Proof.
   intros. apply vr_distance_nonneg.
 Qed.
 
+Lemma Rn_distance_nonneg' : forall x y, Rn_distance x y >= 0.
+Proof.
+  intros; apply Rle_ge, Rn_distance_nonneg.
+Qed.
+
 Lemma vr_distance_symm : forall n (x y : t R n), vr_distance x y = vr_distance y x.
 Proof.
   induction n; intros; simpl.
@@ -114,18 +119,20 @@ Proof.
         simpl in hpos'; lra.
       - rewrite (Rabs_right _ hnonneg) in H.
         apply (Rplus_eq_0_l (Vector.hd x - Vector.hd y) (vr_distance (Vector.tl x) (Vector.tl y))) in H;
-          [| exact hnonneg | apply vr_distance_nonneg].
+          [| apply Rge_le; exact hnonneg | apply vr_distance_nonneg].
         lra. }
     assert (h_eq_tl : Vector.tl x = Vector.tl y).
     { apply IHn.
       destruct (Rcase_abs (Vector.hd x - Vector.hd y)) as [hneg | hnonneg].
       - rewrite (Rabs_left _ hneg) in H.
+        rewrite Rplus_comm in H.
         apply (Rplus_eq_0_l (vr_distance (Vector.tl x) (Vector.tl y)) (-(Vector.hd x - Vector.hd y))) in H;
           [| apply vr_distance_nonneg | lra].
         exact H.
       - rewrite (Rabs_right _ hnonneg) in H.
+        rewrite Rplus_comm in H.
         apply (Rplus_eq_0_l (vr_distance (Vector.tl x) (Vector.tl y)) (Vector.hd x - Vector.hd y)) in H;
-          [| apply vr_distance_nonneg | exact hnonneg].
+          [| apply vr_distance_nonneg | apply Rge_le; exact hnonneg].
         exact H. }
     rewrite (VectorSpec.eta x), (VectorSpec.eta y).
     rewrite h_eq_hd, h_eq_tl; reflexivity.
@@ -133,7 +140,7 @@ Qed.
 
 Lemma Rn_distance_iden : forall x y, Rn_distance x y = 0 -> x = y.
 Proof.
-  intros. apply vr_distance_iden.
+  intros. apply vr_distance_iden with (n := n_dim); assumption.
 Qed.
 
 Lemma vr_distance_tri : forall n (x y z : t R n),
@@ -141,8 +148,9 @@ Lemma vr_distance_tri : forall n (x y z : t R n),
 Proof.
   induction n; intros; simpl.
   - lra.
-  - pose proof (Rabs_triang (Vector.hd x - Vector.hd z) (Vector.hd x - Vector.hd y) (Vector.hd y - Vector.hd z)).
-    assert (H1: Rabs (Vector.hd x - Vector.hd z) <= Rabs (Vector.hd x - Vector.hd y) + Rabs (Vector.hd y - Vector.hd z)) by apply H0.
+  - pose proof (Rabs_triang (Vector.hd x - Vector.hd y) (Vector.hd y - Vector.hd z)).
+    replace (Vector.hd x - Vector.hd y + (Vector.hd y - Vector.hd z)) with (Vector.hd x - Vector.hd z) in H by ring.
+    assert (H1: Rabs (Vector.hd x - Vector.hd z) <= Rabs (Vector.hd x - Vector.hd y) + Rabs (Vector.hd y - Vector.hd z)) by exact H.
     pose (IHn (Vector.tl x) (Vector.tl y) (Vector.tl z)).
     lra.
 Qed.
@@ -155,7 +163,7 @@ Qed.
 
 (* 抽象地, R^n 是一个度量空间 *)
 Definition Rn_metric : MetricSpace := mkMetricSpace Rn Rn_distance
-  Rn_distance_nonneg Rn_distance_symm Rn_distance_tri Rn_distance_iden.
+  Rn_distance_nonneg' Rn_distance_symm Rn_distance_tri Rn_distance_iden.
 
 (* ===================================================================== *)
 (* 3. 紧集 (公理化)                                                     *)

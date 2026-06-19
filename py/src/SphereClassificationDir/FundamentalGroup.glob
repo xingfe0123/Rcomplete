@@ -1,0 +1,134 @@
+DIGEST 225906ef69d2e867ab53e6bf1b59c322
+FSphereClassification.FundamentalGroup
+R109:113 Coq.Reals.Reals <> <> lib
+R131:144 Coq.Logic.Classical_Prop <> <> lib
+R162:166 Coq.Reals.Reals <> <> lib
+R168:170 Coq.micromega.Lra <> <> lib
+R188:211 Coq.Logic.FunctionalExtensionality <> <> lib
+R229:237 Coq.Logic.Classical <> <> lib
+R277:305 SphereClassification.Topology <> <> lib
+rec 578:581 <> Loop
+proj 640:648 <> loop_path
+proj 662:674 <> loop_start_eq
+proj 709:719 <> loop_end_eq
+R588:603 SphereClassification.Topology <> TopologicalSpace rec
+binder 584:584 <> X:1
+R612:621 SphereClassification.Topology <> space_type proj
+R623:623 SphereClassification.FundamentalGroup <> X:1 var
+binder 607:608 <> x0:2
+R652:655 SphereClassification.Topology <> Path rec
+R657:657 SphereClassification.FundamentalGroup <> X:1 var
+R700:702 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R678:687 SphereClassification.Topology <> path_start proj
+R689:689 SphereClassification.FundamentalGroup <> X:1 var
+R691:699 SphereClassification.FundamentalGroup <> loop_path:4 meth
+R703:704 SphereClassification.FundamentalGroup <> x0:2 var
+R743:745 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R723:730 SphereClassification.Topology <> path_end proj
+R732:732 SphereClassification.FundamentalGroup <> X:1 var
+R734:742 SphereClassification.FundamentalGroup <> loop_path:4 meth
+R746:747 SphereClassification.FundamentalGroup <> x0:2 var
+rec 989:1004 <> FundamentalGroup
+proj 1075:1081 <> fg_type
+proj 1118:1123 <> fg_mul
+proj 1177:1181 <> fg_id
+proj 1212:1217 <> fg_inv
+proj 1264:1271 <> fg_assoc
+proj 1338:1347 <> fg_id_left
+proj 1383:1393 <> fg_id_right
+proj 1429:1439 <> fg_inv_left
+proj 1484:1495 <> fg_inv_right
+R1011:1026 SphereClassification.Topology <> TopologicalSpace rec
+binder 1007:1007 <> X:7
+R1035:1044 SphereClassification.Topology <> space_type proj
+R1046:1046 SphereClassification.FundamentalGroup <> X:7 var
+binder 1030:1031 <> x0:8
+R1134:1137 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1127:1133 SphereClassification.FundamentalGroup <> fg_type:10 meth
+R1145:1148 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1138:1144 SphereClassification.FundamentalGroup <> fg_type:10 meth
+R1149:1155 SphereClassification.FundamentalGroup <> fg_type:10 meth
+R1185:1191 SphereClassification.FundamentalGroup <> fg_type:10 meth
+R1228:1231 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1221:1227 SphereClassification.FundamentalGroup <> fg_type:10 meth
+R1232:1238 SphereClassification.FundamentalGroup <> fg_type:10 meth
+binder 1282:1282 <> a:14
+binder 1284:1284 <> b:15
+binder 1286:1286 <> c:16
+R1310:1312 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1289:1294 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1309:1309 SphereClassification.FundamentalGroup <> c:16 var
+R1297:1302 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1306:1306 SphereClassification.FundamentalGroup <> b:15 var
+R1304:1304 SphereClassification.FundamentalGroup <> a:14 var
+R1313:1318 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1323:1328 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1332:1332 SphereClassification.FundamentalGroup <> c:16 var
+R1330:1330 SphereClassification.FundamentalGroup <> b:15 var
+R1320:1320 SphereClassification.FundamentalGroup <> a:14 var
+binder 1358:1358 <> a:18
+R1375:1377 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1361:1366 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1374:1374 SphereClassification.FundamentalGroup <> a:18 var
+R1368:1372 SphereClassification.FundamentalGroup <> fg_id:12 meth
+R1378:1378 SphereClassification.FundamentalGroup <> a:18 var
+binder 1404:1404 <> a:20
+R1421:1423 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1407:1412 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1416:1420 SphereClassification.FundamentalGroup <> fg_id:12 meth
+R1414:1414 SphereClassification.FundamentalGroup <> a:20 var
+R1424:1424 SphereClassification.FundamentalGroup <> a:20 var
+binder 1450:1450 <> a:22
+R1472:1474 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1453:1458 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1471:1471 SphereClassification.FundamentalGroup <> a:22 var
+R1461:1466 SphereClassification.FundamentalGroup <> fg_inv:13 meth
+R1468:1468 SphereClassification.FundamentalGroup <> a:22 var
+R1475:1479 SphereClassification.FundamentalGroup <> fg_id:12 meth
+binder 1506:1506 <> a:24
+R1528:1530 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1509:1514 SphereClassification.FundamentalGroup <> fg_mul:11 meth
+R1519:1524 SphereClassification.FundamentalGroup <> fg_inv:13 meth
+R1526:1526 SphereClassification.FundamentalGroup <> a:24 var
+R1516:1516 SphereClassification.FundamentalGroup <> a:24 var
+R1531:1535 SphereClassification.FundamentalGroup <> fg_id:12 meth
+rec 1831:1847 <> IsSimplyConnected
+proj 1897:1912 <> simply_connected
+proj 1924:1943 <> simply_connected_def
+R1854:1869 SphereClassification.Topology <> TopologicalSpace rec
+binder 1850:1850 <> X:26
+R1963:1971 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R1947:1962 SphereClassification.FundamentalGroup <> simply_connected:28 meth
+R1985:1994 SphereClassification.Topology <> space_type proj
+R1996:1996 SphereClassification.FundamentalGroup <> X:26 var
+binder 1980:1981 <> x0:29
+R2004:2007 SphereClassification.FundamentalGroup <> Loop rec
+R2009:2009 SphereClassification.FundamentalGroup <> X:26 var
+R2011:2012 SphereClassification.FundamentalGroup <> x0:29 var
+binder 2000:2000 <> l:30
+R2090:2093 Coq.Init.Logic <> True ind
+rec 2335:2349 <> IsPathConnected
+proj 2397:2410 <> path_connected
+proj 2422:2439 <> path_connected_def
+R2356:2371 SphereClassification.Topology <> TopologicalSpace rec
+binder 2352:2352 <> X:32
+R2457:2465 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R2443:2456 SphereClassification.FundamentalGroup <> path_connected:34 meth
+R2480:2489 SphereClassification.Topology <> space_type proj
+R2491:2491 SphereClassification.FundamentalGroup <> X:32 var
+binder 2474:2474 <> x:35
+binder 2476:2476 <> y:36
+R2495:2502 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2513:2515 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2507:2510 SphereClassification.Topology <> Path rec
+R2512:2512 SphereClassification.FundamentalGroup <> X:32 var
+binder 2503:2503 <> p:37
+R2516:2519 Coq.Init.Logic <> True ind
+ax 2584:2622 <> simply_connected_implies_path_connected
+R2640:2655 SphereClassification.Topology <> TopologicalSpace rec
+binder 2636:2636 <> X:39
+R2682:2685 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2663:2679 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R2681:2681 SphereClassification.FundamentalGroup <> X:39 var
+R2686:2700 SphereClassification.FundamentalGroup <> IsPathConnected rec
+R2702:2702 SphereClassification.FundamentalGroup <> X:39 var

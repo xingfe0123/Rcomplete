@@ -1,0 +1,54 @@
+DIGEST 72f739f363fc6821f05f3328d358b6d2
+FLinearAlgebraDir.LinearAlgebraFoundations
+R188:192 Coq.Reals.Reals <> <> lib
+R210:214 Coq.Reals.Reals <> <> lib
+R216:218 Coq.micromega.Lra <> <> lib
+R236:259 Coq.Logic.FunctionalExtensionality <> <> lib
+R277:285 Coq.Logic.Classical <> <> lib
+R303:306 Coq.Lists.List <> <> lib
+R324:328 Coq.Arith.Arith <> <> lib
+R346:348 Coq.micromega.Lia <> <> lib
+def 652:655 <> Rsum
+R662:664 Coq.Init.Datatypes <> nat ind
+binder 658:658 <> n:1
+R675:678 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R672:674 Coq.Init.Datatypes <> nat ind
+R679:679 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 668:668 <> f:2
+R684:684 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R697:697 LinearAlgebraDir.LinearAlgebraFoundations <> n:1 var
+R719:719 Coq.Init.Datatypes <> S constr
+R731:733 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R727:727 LinearAlgebraDir.LinearAlgebraFoundations <> f:2 var
+R734:737 LinearAlgebraDir.LinearAlgebraFoundations <> Rsum:3 def
+R742:742 LinearAlgebraDir.LinearAlgebraFoundations <> f:2 var
+prf 818:828 <> Rsum_linear
+R846:848 Coq.Init.Datatypes <> nat ind
+binder 842:842 <> n:5
+R861:864 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R858:860 Coq.Init.Datatypes <> nat ind
+R865:865 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 852:852 <> f:6
+binder 854:854 <> g:7
+R873:873 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 869:869 <> a:8
+R912:914 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R881:884 LinearAlgebraDir.LinearAlgebraFoundations <> Rsum def
+R886:886 LinearAlgebraDir.LinearAlgebraFoundations <> n:5 var
+binder 893:893 <> k:9
+R905:907 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R899:901 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R898:898 LinearAlgebraDir.LinearAlgebraFoundations <> a:8 var
+R902:902 LinearAlgebraDir.LinearAlgebraFoundations <> f:6 var
+R904:904 LinearAlgebraDir.LinearAlgebraFoundations <> k:9 var
+R908:908 LinearAlgebraDir.LinearAlgebraFoundations <> g:7 var
+R910:910 LinearAlgebraDir.LinearAlgebraFoundations <> k:9 var
+R927:929 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R916:918 Coq.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R915:915 LinearAlgebraDir.LinearAlgebraFoundations <> a:8 var
+R919:922 LinearAlgebraDir.LinearAlgebraFoundations <> Rsum def
+R924:924 LinearAlgebraDir.LinearAlgebraFoundations <> n:5 var
+R926:926 LinearAlgebraDir.LinearAlgebraFoundations <> f:6 var
+R930:933 LinearAlgebraDir.LinearAlgebraFoundations <> Rsum def
+R935:935 LinearAlgebraDir.LinearAlgebraFoundations <> n:5 var
+R937:937 LinearAlgebraDir.LinearAlgebraFoundations <> g:7 var

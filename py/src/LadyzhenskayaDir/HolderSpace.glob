@@ -1,0 +1,566 @@
+DIGEST fb530a8a5a7d23321363e5d7b9db9072
+FLadyzhenskayaDir.HolderSpace
+R433:437 Coq.Reals.Reals <> <> lib
+R439:445 Coq.Reals.Raxioms <> <> lib
+R447:451 Coq.Reals.RIneq <> <> lib
+R453:462 Coq.Reals.Rbasic_fun <> <> lib
+R494:506 mathcomp.ssreflect.all_ssreflect <> <> lib
+R508:513 mathcomp.algebra.ssralg <> <> lib
+R515:518 mathcomp.algebra.poly <> <> lib
+R520:525 mathcomp.algebra.mxpoly <> <> lib
+R527:532 mathcomp.algebra.ssrnum <> <> lib
+R534:544 mathcomp.algebra.archimedean <> <> lib
+R585:591 mathcomp.analysis.Rstruct <> <> lib
+R633:637 mathcomp.classical.boolp <> <> lib
+rec 1262:1275 <> HolderExponent
+proj 1284:1292 <> alpha_val
+proj 1302:1310 <> alpha_pos
+proj 1336:1344 <> alpha_le1
+R1296:1296 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1316:1318 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R1319:1327 LadyzhenskayaDir.HolderSpace <> alpha_val:2 meth
+R1358:1361 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R1349:1357 LadyzhenskayaDir.HolderSpace <> alpha_val:2 meth
+rec 1708:1726 <> HolderSemivariation
+proj 1746:1757 <> holder_bring
+proj 1819:1829 <> holder_semi
+proj 1880:1890 <> holder_symm
+binder 1729:1729 <> V:5
+R1762:1765 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1761:1761 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1767:1770 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1766:1766 LadyzhenskayaDir.HolderSpace <> V:5 var
+R1772:1775 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R1771:1771 LadyzhenskayaDir.HolderSpace <> V:5 var
+R1776:1776 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1841:1841 <> a:8
+binder 1843:1843 <> u:9
+binder 1845:1845 <> v:10
+R1850:1853 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R1854:1865 LadyzhenskayaDir.HolderSpace <> holder_bring:7 meth
+R1871:1871 LadyzhenskayaDir.HolderSpace <> v:10 var
+R1869:1869 LadyzhenskayaDir.HolderSpace <> u:9 var
+R1867:1867 LadyzhenskayaDir.HolderSpace <> a:8 var
+binder 1902:1902 <> a:12
+binder 1904:1904 <> u:13
+binder 1906:1906 <> v:14
+R1927:1929 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R1909:1920 LadyzhenskayaDir.HolderSpace <> holder_bring:7 meth
+R1926:1926 LadyzhenskayaDir.HolderSpace <> v:14 var
+R1924:1924 LadyzhenskayaDir.HolderSpace <> u:13 var
+R1922:1922 LadyzhenskayaDir.HolderSpace <> a:12 var
+R1930:1941 LadyzhenskayaDir.HolderSpace <> holder_bring:7 meth
+R1947:1947 LadyzhenskayaDir.HolderSpace <> u:13 var
+R1945:1945 LadyzhenskayaDir.HolderSpace <> v:14 var
+R1943:1943 LadyzhenskayaDir.HolderSpace <> a:12 var
+R1963:1974 LadyzhenskayaDir.HolderSpace <> holder_bring proj
+R1963:1974 LadyzhenskayaDir.HolderSpace <> holder_bring proj
+R1999:2009 LadyzhenskayaDir.HolderSpace <> holder_semi proj
+R1999:2009 LadyzhenskayaDir.HolderSpace <> holder_semi proj
+R2035:2045 LadyzhenskayaDir.HolderSpace <> holder_symm proj
+R2035:2045 LadyzhenskayaDir.HolderSpace <> holder_symm proj
+ax 2425:2441 <> ParabolicCylinder
+def 2506:2521 <> parabolic_Holder
+R2532:2545 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 2524:2528 <> alpha:17
+R2570:2573 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2553:2569 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R2574:2574 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2549:2549 <> f:18
+R2589:2595 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2601:2602 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2600:2600 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2596:2596 <> M:19
+R2612:2619 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R2605:2607 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R2608:2608 LadyzhenskayaDir.HolderSpace <> M:19 var
+R2633:2649 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+binder 2627:2627 <> p:20
+binder 2629:2629 <> q:21
+R2675:2678 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R2659:2662 Coq.Reals.Rbasic_fun <> Rabs def
+R2668:2670 Coq.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2665:2665 LadyzhenskayaDir.HolderSpace <> f:18 var
+R2667:2667 LadyzhenskayaDir.HolderSpace <> p:20 var
+R2671:2671 LadyzhenskayaDir.HolderSpace <> f:18 var
+R2673:2673 LadyzhenskayaDir.HolderSpace <> q:21 var
+R2680:2682 mathcomp.algebra.ssralg <> ::ring_scope:x_'*'_x not
+R2679:2679 LadyzhenskayaDir.HolderSpace <> M:19 var
+R2683:2684 Coq.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+rec 3427:3446 <> ParabolicHolderSpace
+proj 3455:3466 <> phs_function
+proj 3523:3535 <> phs_value_bdd
+proj 3592:3601 <> phs_dt_bdd
+proj 3667:3676 <> phs_dx_bdd
+proj 3739:3749 <> phs_dxx_bdd
+proj 3812:3822 <> phs_dtx_bdd
+proj 3892:3906 <> phs_holder_coef
+R3490:3493 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3473:3489 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R3494:3494 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3541:3541 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3610:3610 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3685:3685 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3757:3757 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3830:3830 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3910:3910 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 4034:4054 <> parabolic_Holder_norm
+R4065:4078 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 4057:4061 <> alpha:30
+R4086:4105 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 4082:4082 <> u:31
+R4110:4110 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4126:4140 LadyzhenskayaDir.HolderSpace <> phs_holder_coef proj
+R4142:4142 LadyzhenskayaDir.HolderSpace <> u:31 var
+binder 4121:4121 <> H:32
+R4226:4228 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4210:4212 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4194:4196 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4179:4181 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4164:4166 Coq.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4149:4161 LadyzhenskayaDir.HolderSpace <> phs_value_bdd proj
+R4163:4163 LadyzhenskayaDir.HolderSpace <> u:31 var
+R4167:4176 LadyzhenskayaDir.HolderSpace <> phs_dt_bdd proj
+R4178:4178 LadyzhenskayaDir.HolderSpace <> u:31 var
+R4182:4191 LadyzhenskayaDir.HolderSpace <> phs_dx_bdd proj
+R4193:4193 LadyzhenskayaDir.HolderSpace <> u:31 var
+R4197:4207 LadyzhenskayaDir.HolderSpace <> phs_dxx_bdd proj
+R4209:4209 LadyzhenskayaDir.HolderSpace <> u:31 var
+R4213:4223 LadyzhenskayaDir.HolderSpace <> phs_dtx_bdd proj
+R4225:4225 LadyzhenskayaDir.HolderSpace <> u:31 var
+R4229:4229 LadyzhenskayaDir.HolderSpace <> H:32 var
+ax 4859:4876 <> parabolic_distance
+R4897:4900 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4880:4896 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R4918:4921 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R4901:4917 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R4922:4922 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 5000:5024 <> parabolic_distance_nonneg
+binder 5037:5037 <> p:34
+binder 5039:5039 <> q:35
+R5044:5047 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R5048:5065 LadyzhenskayaDir.HolderSpace <> parabolic_distance defax
+R5069:5069 LadyzhenskayaDir.HolderSpace <> q:35 var
+R5067:5067 LadyzhenskayaDir.HolderSpace <> p:34 var
+ax 5082:5104 <> parabolic_distance_symm
+binder 5117:5117 <> p:37
+binder 5119:5119 <> q:38
+R5144:5146 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5122:5139 LadyzhenskayaDir.HolderSpace <> parabolic_distance defax
+R5143:5143 LadyzhenskayaDir.HolderSpace <> q:38 var
+R5141:5141 LadyzhenskayaDir.HolderSpace <> p:37 var
+R5147:5164 LadyzhenskayaDir.HolderSpace <> parabolic_distance defax
+R5168:5168 LadyzhenskayaDir.HolderSpace <> p:37 var
+R5166:5166 LadyzhenskayaDir.HolderSpace <> q:38 var
+ax 5178:5200 <> parabolic_distance_zero
+binder 5213:5213 <> p:40
+binder 5215:5215 <> q:41
+R5246:5249 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5240:5242 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5218:5235 LadyzhenskayaDir.HolderSpace <> parabolic_distance defax
+R5239:5239 LadyzhenskayaDir.HolderSpace <> q:41 var
+R5237:5237 LadyzhenskayaDir.HolderSpace <> p:40 var
+R5251:5253 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R5250:5250 LadyzhenskayaDir.HolderSpace <> p:40 var
+R5254:5254 LadyzhenskayaDir.HolderSpace <> q:41 var
+ax 5334:5355 <> parabolic_distance_pow
+R5360:5363 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5359:5359 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5381:5384 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5364:5380 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5402:5405 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5385:5401 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5406:5406 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 5416:5444 <> parabolic_distance_pow_nonneg
+binder 5457:5461 <> alpha:44
+binder 5463:5463 <> p:45
+binder 5465:5465 <> q:46
+R5470:5473 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R5474:5495 LadyzhenskayaDir.HolderSpace <> parabolic_distance_pow defax
+R5505:5505 LadyzhenskayaDir.HolderSpace <> q:46 var
+R5503:5503 LadyzhenskayaDir.HolderSpace <> p:45 var
+R5497:5501 LadyzhenskayaDir.HolderSpace <> alpha:44 var
+def 5904:5919 <> classical_smooth
+R5932:5945 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 5924:5928 <> alpha:48
+R5972:5975 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R5955:5971 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R5976:5976 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5951:5951 <> u:49
+R5986:5986 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5982:5982 <> M:50
+R6010:6015 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6003:6005 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R6006:6006 LadyzhenskayaDir.HolderSpace <> M:50 var
+R6016:6022 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6049:6054 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6029:6048 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 6023:6025 <> phs:51
+R6075:6082 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6071:6073 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6055:6066 LadyzhenskayaDir.HolderSpace <> phs_function proj
+R6068:6070 LadyzhenskayaDir.HolderSpace <> phs:51 var
+R6074:6074 LadyzhenskayaDir.HolderSpace <> u:49 var
+R6115:6118 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R6084:6104 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R6112:6114 LadyzhenskayaDir.HolderSpace <> phs:51 var
+R6106:6110 LadyzhenskayaDir.HolderSpace <> alpha:48 var
+R6119:6119 LadyzhenskayaDir.HolderSpace <> M:50 var
+rec 6385:6401 <> ClassicalSolution
+proj 6410:6420 <> cs_function
+proj 6454:6462 <> cs_holder
+proj 6496:6507 <> cs_phs_match
+proj 6554:6561 <> cs_alpha
+R6444:6447 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R6427:6443 LadyzhenskayaDir.HolderSpace <> ParabolicCylinder defax
+R6448:6448 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6471:6490 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+R6535:6537 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R6513:6524 LadyzhenskayaDir.HolderSpace <> phs_function proj
+R6526:6534 LadyzhenskayaDir.HolderSpace <> cs_holder:54 meth
+R6538:6548 LadyzhenskayaDir.HolderSpace <> cs_function:53 meth
+R6571:6584 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+def 6601:6609 <> cs_smooth
+R6617:6633 LadyzhenskayaDir.HolderSpace <> ClassicalSolution rec
+binder 6612:6613 <> cs:57
+R6641:6641 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6637:6637 <> M:58
+R6665:6670 Coq.Init.Logic <> ::type_scope:x_'/\'_x not
+R6658:6660 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R6661:6661 LadyzhenskayaDir.HolderSpace <> M:58 var
+R6722:6725 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R6672:6692 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R6709:6717 LadyzhenskayaDir.HolderSpace <> cs_holder proj
+R6719:6720 LadyzhenskayaDir.HolderSpace <> cs:57 var
+R6695:6702 LadyzhenskayaDir.HolderSpace <> cs_alpha proj
+R6704:6705 LadyzhenskayaDir.HolderSpace <> cs:57 var
+R6726:6726 LadyzhenskayaDir.HolderSpace <> M:58 var
+rec 7964:7974 <> NormedSpace
+proj 8004:8010 <> ns_type
+proj 8023:8029 <> ns_zero
+proj 8102:8107 <> ns_add
+proj 8172:8178 <> ns_smul
+proj 8242:8248 <> ns_norm
+proj 8335:8348 <> ns_norm_nonneg
+proj 8386:8397 <> ns_norm_zero
+proj 8449:8460 <> ns_norm_smul
+proj 8530:8540 <> ns_norm_tri
+R8033:8039 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8119:8122 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8112:8118 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8130:8133 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8123:8129 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8134:8140 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8183:8186 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8182:8182 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R8194:8197 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8187:8193 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8198:8204 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8259:8262 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R8252:8258 LadyzhenskayaDir.HolderSpace <> ns_type:60 meth
+R8263:8263 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8360:8360 <> x:65
+R8365:8368 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R8369:8375 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8377:8377 LadyzhenskayaDir.HolderSpace <> x:65 var
+binder 8411:8411 <> x:67
+R8428:8432 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R8423:8425 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8414:8420 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8422:8422 LadyzhenskayaDir.HolderSpace <> x:67 var
+R8426:8427 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8434:8436 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8433:8433 LadyzhenskayaDir.HolderSpace <> x:67 var
+R8437:8443 LadyzhenskayaDir.HolderSpace <> ns_zero:61 meth
+binder 8474:8474 <> c:69
+binder 8476:8476 <> x:70
+R8500:8502 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R8479:8485 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8488:8494 LadyzhenskayaDir.HolderSpace <> ns_smul:63 meth
+R8498:8498 LadyzhenskayaDir.HolderSpace <> x:70 var
+R8496:8496 LadyzhenskayaDir.HolderSpace <> c:69 var
+R8510:8512 mathcomp.algebra.ssralg <> ::ring_scope:x_'*'_x not
+R8504:8507 Coq.Reals.Rbasic_fun <> Rabs def
+R8509:8509 LadyzhenskayaDir.HolderSpace <> c:69 var
+R8513:8519 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8521:8521 LadyzhenskayaDir.HolderSpace <> x:70 var
+binder 8555:8555 <> x:72
+binder 8557:8557 <> y:73
+R8581:8584 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R8561:8567 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8570:8575 LadyzhenskayaDir.HolderSpace <> ns_add:62 meth
+R8579:8579 LadyzhenskayaDir.HolderSpace <> y:73 var
+R8577:8577 LadyzhenskayaDir.HolderSpace <> x:72 var
+R8594:8596 mathcomp.algebra.ssralg <> ::ring_scope:x_'+'_x not
+R8585:8591 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8593:8593 LadyzhenskayaDir.HolderSpace <> x:72 var
+R8597:8603 LadyzhenskayaDir.HolderSpace <> ns_norm:64 meth
+R8605:8605 LadyzhenskayaDir.HolderSpace <> y:73 var
+rec 9290:9300 <> MetricSpace
+proj 9330:9336 <> ms_type
+proj 9349:9355 <> ms_dist
+R9366:9369 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9359:9365 LadyzhenskayaDir.HolderSpace <> ms_type:76 meth
+R9377:9380 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R9370:9376 LadyzhenskayaDir.HolderSpace <> ms_type:76 meth
+R9381:9381 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 9488:9500 <> metric_nonneg
+R9518:9528 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 9514:9514 <> M:78
+R9538:9544 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9546:9546 LadyzhenskayaDir.HolderSpace <> M:78 var
+binder 9532:9532 <> x:79
+binder 9534:9534 <> y:80
+R9552:9555 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R9557:9563 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9565:9565 LadyzhenskayaDir.HolderSpace <> M:78 var
+R9567:9567 LadyzhenskayaDir.HolderSpace <> x:79 var
+R9569:9569 LadyzhenskayaDir.HolderSpace <> y:80 var
+ax 9581:9591 <> metric_symm
+R9611:9621 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 9607:9607 <> M:82
+R9631:9637 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9639:9639 LadyzhenskayaDir.HolderSpace <> M:82 var
+binder 9625:9625 <> x:83
+binder 9627:9627 <> y:84
+R9657:9659 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9644:9650 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9652:9652 LadyzhenskayaDir.HolderSpace <> M:82 var
+R9654:9654 LadyzhenskayaDir.HolderSpace <> x:83 var
+R9656:9656 LadyzhenskayaDir.HolderSpace <> y:84 var
+R9661:9667 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9669:9669 LadyzhenskayaDir.HolderSpace <> M:82 var
+R9671:9671 LadyzhenskayaDir.HolderSpace <> y:84 var
+R9673:9673 LadyzhenskayaDir.HolderSpace <> x:83 var
+ax 9682:9696 <> metric_zero_iff
+R9714:9724 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 9710:9710 <> M:86
+R9734:9740 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9742:9742 LadyzhenskayaDir.HolderSpace <> M:86 var
+binder 9728:9728 <> x:87
+binder 9730:9730 <> y:88
+R9765:9769 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R9760:9762 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9747:9753 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9755:9755 LadyzhenskayaDir.HolderSpace <> M:86 var
+R9757:9757 LadyzhenskayaDir.HolderSpace <> x:87 var
+R9759:9759 LadyzhenskayaDir.HolderSpace <> y:88 var
+R9763:9764 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R9771:9773 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R9770:9770 LadyzhenskayaDir.HolderSpace <> x:87 var
+R9774:9774 LadyzhenskayaDir.HolderSpace <> y:88 var
+ax 9783:9792 <> metric_tri
+R9813:9823 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 9809:9809 <> M:90
+R9835:9841 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R9843:9843 LadyzhenskayaDir.HolderSpace <> M:90 var
+binder 9827:9827 <> x:91
+binder 9829:9829 <> y:92
+binder 9831:9831 <> z:93
+R9866:9869 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R9853:9859 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9861:9861 LadyzhenskayaDir.HolderSpace <> M:90 var
+R9863:9863 LadyzhenskayaDir.HolderSpace <> x:91 var
+R9865:9865 LadyzhenskayaDir.HolderSpace <> z:93 var
+R9884:9886 mathcomp.algebra.ssralg <> ::ring_scope:x_'+'_x not
+R9871:9877 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9879:9879 LadyzhenskayaDir.HolderSpace <> M:90 var
+R9881:9881 LadyzhenskayaDir.HolderSpace <> x:91 var
+R9883:9883 LadyzhenskayaDir.HolderSpace <> y:92 var
+R9888:9894 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R9896:9896 LadyzhenskayaDir.HolderSpace <> M:90 var
+R9898:9898 LadyzhenskayaDir.HolderSpace <> y:92 var
+R9900:9900 LadyzhenskayaDir.HolderSpace <> z:93 var
+ax 9976:9991 <> normed_to_metric
+R10007:10017 LadyzhenskayaDir.HolderSpace <> NormedSpace rec
+binder 10003:10003 <> N:95
+R10021:10031 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+rec 10531:10544 <> CauchySequence
+proj 10588:10593 <> cs_seq
+proj 10618:10626 <> cs_cauchy
+R10551:10561 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 10547:10547 <> M:97
+R10600:10603 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10597:10599 Coq.Init.Datatypes <> nat ind
+R10604:10610 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R10612:10612 LadyzhenskayaDir.HolderSpace <> M:97 var
+R10647:10647 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10637:10643 <> epsilon:100
+R10665:10672 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10652:10654 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R10655:10661 LadyzhenskayaDir.HolderSpace <> epsilon:100 var
+R10673:10679 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10687:10688 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10684:10686 Coq.Init.Datatypes <> nat ind
+binder 10680:10680 <> N:101
+R10702:10704 Coq.Init.Datatypes <> nat ind
+binder 10696:10696 <> m:102
+binder 10698:10698 <> n:103
+R10725:10728 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10715:10718 mathcomp.ssreflect.ssrnat <> ::nat_scope:x_'<='_x not
+R10714:10714 LadyzhenskayaDir.HolderSpace <> N:101 var
+R10719:10719 LadyzhenskayaDir.HolderSpace <> m:102 var
+R10741:10750 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R10731:10734 mathcomp.ssreflect.ssrnat <> ::nat_scope:x_'<='_x not
+R10730:10730 LadyzhenskayaDir.HolderSpace <> N:101 var
+R10735:10735 LadyzhenskayaDir.HolderSpace <> n:103 var
+R10784:10786 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R10753:10759 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R10761:10761 LadyzhenskayaDir.HolderSpace <> M:97 var
+R10764:10769 LadyzhenskayaDir.HolderSpace <> cs_seq:99 meth
+R10771:10771 LadyzhenskayaDir.HolderSpace <> m:102 var
+R10775:10780 LadyzhenskayaDir.HolderSpace <> cs_seq:99 meth
+R10782:10782 LadyzhenskayaDir.HolderSpace <> n:103 var
+R10787:10793 LadyzhenskayaDir.HolderSpace <> epsilon:100 var
+rec 11317:11321 <> Limit
+proj 11395:11403 <> limit_lim
+R11328:11338 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 11324:11324 <> M:105
+R11346:11359 LadyzhenskayaDir.HolderSpace <> CauchySequence rec
+R11361:11361 LadyzhenskayaDir.HolderSpace <> M:105 var
+binder 11342:11342 <> s:106
+R11369:11375 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R11377:11377 LadyzhenskayaDir.HolderSpace <> M:105 var
+binder 11365:11365 <> L:107
+R11424:11424 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11414:11420 <> epsilon:109
+R11442:11449 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11429:11431 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R11432:11438 LadyzhenskayaDir.HolderSpace <> epsilon:109 var
+R11450:11456 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11464:11465 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11461:11463 Coq.Init.Datatypes <> nat ind
+binder 11457:11457 <> N:110
+R11477:11479 Coq.Init.Datatypes <> nat ind
+binder 11473:11473 <> n:111
+R11500:11509 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R11490:11493 mathcomp.ssreflect.ssrnat <> ::nat_scope:x_'<='_x not
+R11489:11489 LadyzhenskayaDir.HolderSpace <> N:110 var
+R11494:11494 LadyzhenskayaDir.HolderSpace <> n:111 var
+R11536:11538 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<'_x not
+R11512:11518 LadyzhenskayaDir.HolderSpace <> ms_dist proj
+R11520:11520 LadyzhenskayaDir.HolderSpace <> M:105 var
+R11523:11528 LadyzhenskayaDir.HolderSpace <> cs_seq proj
+R11532:11532 LadyzhenskayaDir.HolderSpace <> n:111 var
+R11530:11530 LadyzhenskayaDir.HolderSpace <> s:106 var
+R11535:11535 LadyzhenskayaDir.HolderSpace <> L:107 var
+R11539:11545 LadyzhenskayaDir.HolderSpace <> epsilon:109 var
+rec 11986:11995 <> IsComplete
+proj 12035:12059 <> complete_cauchy_has_limit
+R12002:12012 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+binder 11998:11998 <> M:113
+R12075:12088 LadyzhenskayaDir.HolderSpace <> CauchySequence rec
+R12090:12090 LadyzhenskayaDir.HolderSpace <> M:113 var
+binder 12071:12071 <> s:115
+R12098:12104 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12118:12119 Coq.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12109:12115 LadyzhenskayaDir.HolderSpace <> ms_type proj
+R12117:12117 LadyzhenskayaDir.HolderSpace <> M:113 var
+binder 12105:12105 <> L:116
+R12121:12125 LadyzhenskayaDir.HolderSpace <> Limit rec
+R12127:12127 LadyzhenskayaDir.HolderSpace <> M:113 var
+R12129:12129 LadyzhenskayaDir.HolderSpace <> s:115 var
+R12131:12131 LadyzhenskayaDir.HolderSpace <> L:116 var
+rec 12184:12194 <> BanachSpace
+proj 12217:12225 <> bs_normed
+proj 12246:12254 <> bs_metric
+proj 12333:12353 <> bs_metric_from_normed
+proj 12400:12410 <> bs_complete
+R12230:12240 LadyzhenskayaDir.HolderSpace <> NormedSpace rec
+R12258:12268 LadyzhenskayaDir.HolderSpace <> MetricSpace rec
+R12366:12368 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R12357:12365 LadyzhenskayaDir.HolderSpace <> bs_metric:120 meth
+R12369:12384 LadyzhenskayaDir.HolderSpace <> normed_to_metric prfax
+R12386:12394 LadyzhenskayaDir.HolderSpace <> bs_normed:119 meth
+R12414:12423 LadyzhenskayaDir.HolderSpace <> IsComplete rec
+R12425:12433 LadyzhenskayaDir.HolderSpace <> bs_metric:120 meth
+ax 13090:13097 <> phs_zero
+R13101:13120 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+ax 13129:13135 <> phs_add
+R13160:13163 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13140:13159 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+R13184:13187 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13164:13183 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+R13188:13207 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+ax 13216:13223 <> phs_smul
+R13228:13231 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13227:13227 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R13252:13255 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R13232:13251 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+R13256:13275 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+ax 13348:13362 <> phs_norm_nonneg
+R13384:13397 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 13376:13380 <> alpha:126
+R13405:13424 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 13401:13401 <> u:127
+R13434:13437 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R13438:13458 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13466:13466 LadyzhenskayaDir.HolderSpace <> u:127 var
+R13460:13464 LadyzhenskayaDir.HolderSpace <> alpha:126 var
+ax 13479:13491 <> phs_norm_zero
+R13513:13526 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 13505:13509 <> alpha:129
+R13534:13553 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 13530:13530 <> u:130
+R13595:13599 Coq.Init.Logic <> ::type_scope:x_'<->'_x not
+R13590:13592 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13561:13581 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13589:13589 LadyzhenskayaDir.HolderSpace <> u:130 var
+R13583:13587 LadyzhenskayaDir.HolderSpace <> alpha:129 var
+R13593:13594 Coq.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R13601:13603 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13600:13600 LadyzhenskayaDir.HolderSpace <> u:130 var
+R13604:13611 LadyzhenskayaDir.HolderSpace <> phs_zero prfax
+ax 13621:13633 <> phs_norm_smul
+R13655:13668 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 13647:13651 <> alpha:132
+R13676:13676 Coq.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13672:13672 <> c:133
+R13684:13703 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 13680:13680 <> u:134
+R13753:13755 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R13711:13731 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13740:13747 LadyzhenskayaDir.HolderSpace <> phs_smul prfax
+R13751:13751 LadyzhenskayaDir.HolderSpace <> u:134 var
+R13749:13749 LadyzhenskayaDir.HolderSpace <> c:133 var
+R13733:13737 LadyzhenskayaDir.HolderSpace <> alpha:132 var
+R13763:13765 mathcomp.algebra.ssralg <> ::ring_scope:x_'*'_x not
+R13757:13760 Coq.Reals.Rbasic_fun <> Rabs def
+R13762:13762 LadyzhenskayaDir.HolderSpace <> c:133 var
+R13766:13786 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13794:13794 LadyzhenskayaDir.HolderSpace <> u:134 var
+R13788:13792 LadyzhenskayaDir.HolderSpace <> alpha:132 var
+ax 13807:13818 <> phs_norm_tri
+R13840:13853 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 13832:13836 <> alpha:136
+R13863:13882 LadyzhenskayaDir.HolderSpace <> ParabolicHolderSpace rec
+binder 13857:13857 <> u:137
+binder 13859:13859 <> v:138
+R13932:13942 mathcomp.algebra.ssrnum Num.Syntax ::ring_scope:x_'<='_x not
+R13891:13911 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13920:13926 LadyzhenskayaDir.HolderSpace <> phs_add prfax
+R13930:13930 LadyzhenskayaDir.HolderSpace <> v:138 var
+R13928:13928 LadyzhenskayaDir.HolderSpace <> u:137 var
+R13913:13917 LadyzhenskayaDir.HolderSpace <> alpha:136 var
+R13972:13974 mathcomp.algebra.ssralg <> ::ring_scope:x_'+'_x not
+R13943:13963 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R13971:13971 LadyzhenskayaDir.HolderSpace <> u:137 var
+R13965:13969 LadyzhenskayaDir.HolderSpace <> alpha:136 var
+R13975:13995 LadyzhenskayaDir.HolderSpace <> parabolic_Holder_norm def
+R14003:14003 LadyzhenskayaDir.HolderSpace <> v:138 var
+R13997:14001 LadyzhenskayaDir.HolderSpace <> alpha:136 var
+ax 14061:14076 <> phs_normed_space
+R14098:14111 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 14090:14094 <> alpha:140
+R14115:14125 LadyzhenskayaDir.HolderSpace <> NormedSpace rec
+ax 14199:14223 <> phs_holder_space_complete
+R14245:14258 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 14237:14241 <> alpha:142
+R14266:14275 LadyzhenskayaDir.HolderSpace <> IsComplete rec
+R14278:14293 LadyzhenskayaDir.HolderSpace <> normed_to_metric prfax
+R14296:14311 LadyzhenskayaDir.HolderSpace <> phs_normed_space prfax
+R14313:14317 LadyzhenskayaDir.HolderSpace <> alpha:142 var
+ax 14406:14415 <> phs_banach
+R14437:14450 LadyzhenskayaDir.HolderSpace <> HolderExponent rec
+binder 14429:14433 <> alpha:144
+R14454:14464 LadyzhenskayaDir.HolderSpace <> BanachSpace rec
