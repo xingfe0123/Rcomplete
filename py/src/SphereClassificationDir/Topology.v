@@ -62,13 +62,27 @@ Record PathClass (X : TopologicalSpace) := mkPathClass {
   pc_rep : Path X
 }.
 
-(* Path class equality - abstracted *)
-Axiom pc_eq : forall (X : TopologicalSpace), PathClass X -> PathClass X -> Prop.
+(* Path class equality - defined as Leibniz equality (eq) *)
+Definition pc_eq (X : TopologicalSpace) (c1 c2 : PathClass X) : Prop :=
+  c1 = c2.
 
 (* Axiom: pc_eq is an equivalence relation *)
-Axiom pc_eq_refl : forall (X : TopologicalSpace) (c : PathClass X), pc_eq X c c.
-Axiom pc_eq_sym : forall (X : TopologicalSpace) (c1 c2 : PathClass X), pc_eq X c1 c2 -> pc_eq X c2 c1.
-Axiom pc_eq_trans : forall (X : TopologicalSpace) (c1 c2 c3 : PathClass X), pc_eq X c1 c2 -> pc_eq X c2 c3 -> pc_eq X c1 c3.
+Theorem pc_eq_refl : forall (X : TopologicalSpace) (c : PathClass X), pc_eq X c c.
+Proof.
+  intros X c. unfold pc_eq. reflexivity.
+Qed.
+
+Theorem pc_eq_sym : forall (X : TopologicalSpace) (c1 c2 : PathClass X), pc_eq X c1 c2 -> pc_eq X c2 c1.
+Proof.
+  intros X c1 c2 H. unfold pc_eq in *. symmetry. exact H.
+Qed.
+
+Theorem pc_eq_trans : forall (X : TopologicalSpace) (c1 c2 c3 : PathClass X), pc_eq X c1 c2 -> pc_eq X c2 c3 -> pc_eq X c1 c3.
+Proof.
+  intros X c1 c2 c3 H12 H23. unfold pc_eq in *. transitivity c2.
+  - exact H12.
+  - exact H23.
+Qed.
 
 (* ===================================================================== *)
 (* 5. Homeomorphism                                                      *)

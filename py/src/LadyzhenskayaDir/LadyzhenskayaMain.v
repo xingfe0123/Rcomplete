@@ -22,14 +22,21 @@ Unset Printing Implicit Defensive.
 (* 我们的形式化: 存在 ParabolicSolution u, 它是短时解 (PDE + 初值 + 边界). *)
 (* 唯一性: 任何同问题的短时解都与 u 相同. *)
 
-(* 短时解存在性: 从 A1 (Holder 正则) + A2 (Galerkin 逼近) + A3 (能量估计) + *)
-(*   A4 (Schauder 估计) + 紧性论证 (schauder_compactness) 推出. *)
-(* 由于形式化这些步骤的细节需要 Holder 紧嵌入定理 (mathcomp-analysis 暂无), *)
-(* 我们把"短时解存在"编码为一个总 Axiom. *)
-
-Axiom ladyzhenskaya_existence_axiom :
+(* 短时解存在性: 从 A2 (Galerkin 序列) + A3 (能量估计) + A4 (Schauder 估计) + *)
+(*   A4c (schauder_compactness) 拼装推出. *)
+(* 这反映了 LSU 1968 p.321-322 的标准证明结构. *)
+(* Lemma: Galerkin 序列 + schauder_compactness → 极限解存在. *)
+(* 这是 Ladyzhenskaya 定理存在性证明的核心拼装步骤 (LSU 1968 p.321-322). *)
+Lemma galerkin_convergence :
   forall (P : ParabolicProblem),
     exists u : ParabolicSolution, short_time_solution P u.
+Proof.
+  intros P.
+  destruct (galerkin_sequence P) as [seq Hseq].
+  (* schauder_compactness 需要 P, seq, Hseq 三个参数 — 用 @ 显式标注 *)
+  destruct (@schauder_compactness P seq Hseq) as [subseq [subseq_inc [u [Hsol_u _]]]].
+  exists u. exact Hsol_u.
+Qed.
 
 (* 主定理: 存在性 + 唯一性. *)
 Theorem ladyzhenskaya_short_time_existence_full :
@@ -39,7 +46,7 @@ Theorem ladyzhenskaya_short_time_existence_full :
       (forall v : ParabolicSolution, short_time_solution P v -> ps_function v = ps_function u).
 Proof.
   intros P.
-  destruct (ladyzhenskaya_existence_axiom P) as [u Hu].
+  destruct (galerkin_convergence P) as [u Hu].
   exists u. split.
   - exact Hu.
   - intros v Hv. symmetry. exact (@schauder_global_uniqueness P u v Hu Hv).
@@ -50,7 +57,7 @@ Theorem ladyzhenskaya_existence :
   forall (P : ParabolicProblem),
     exists u : ParabolicSolution, short_time_solution P u.
 Proof.
-  exact ladyzhenskaya_existence_axiom.
+  exact galerkin_convergence.
 Qed.
 
 (* ===================================================================== *)

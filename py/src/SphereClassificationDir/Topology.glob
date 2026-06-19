@@ -1,4 +1,4 @@
-DIGEST 4260c1426b2d93a0f493a49cecfbbd9d
+DIGEST adcbbc9f29952dfa5fd824cee4511e59
 FSphereClassification.Topology
 R171:175 Coq.Reals.Reals <> <> lib
 R193:206 Coq.Logic.Classical_Prop <> <> lib
@@ -121,86 +121,90 @@ R2318:2333 SphereClassification.Topology <> TopologicalSpace rec
 binder 2314:2314 <> X:36
 R2364:2367 SphereClassification.Topology <> Path rec
 R2369:2369 SphereClassification.Topology <> X:36 var
-ax 2420:2424 <> pc_eq
-R2440:2455 SphereClassification.Topology <> TopologicalSpace rec
-binder 2436:2436 <> X:39
-R2470:2473 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2459:2467 SphereClassification.Topology <> PathClass rec
-R2469:2469 SphereClassification.Topology <> X:39 var
-R2485:2488 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2474:2482 SphereClassification.Topology <> PathClass rec
-R2484:2484 SphereClassification.Topology <> X:39 var
-ax 2548:2557 <> pc_eq_refl
-R2573:2588 SphereClassification.Topology <> TopologicalSpace rec
-binder 2569:2569 <> X:41
-R2596:2604 SphereClassification.Topology <> PathClass rec
-R2606:2606 SphereClassification.Topology <> X:41 var
-binder 2592:2592 <> c:42
-R2610:2614 SphereClassification.Topology <> pc_eq prfax
-R2616:2616 SphereClassification.Topology <> X:41 var
-R2618:2618 SphereClassification.Topology <> c:42 var
-R2620:2620 SphereClassification.Topology <> c:42 var
-ax 2629:2637 <> pc_eq_sym
-R2653:2668 SphereClassification.Topology <> TopologicalSpace rec
-binder 2649:2649 <> X:44
-R2680:2688 SphereClassification.Topology <> PathClass rec
-R2690:2690 SphereClassification.Topology <> X:44 var
-binder 2672:2673 <> c1:45
-binder 2675:2676 <> c2:46
-R2707:2710 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2694:2698 SphereClassification.Topology <> pc_eq prfax
-R2700:2700 SphereClassification.Topology <> X:44 var
-R2702:2703 SphereClassification.Topology <> c1:45 var
-R2705:2706 SphereClassification.Topology <> c2:46 var
-R2711:2715 SphereClassification.Topology <> pc_eq prfax
-R2717:2717 SphereClassification.Topology <> X:44 var
-R2719:2720 SphereClassification.Topology <> c2:46 var
-R2722:2723 SphereClassification.Topology <> c1:45 var
-ax 2732:2742 <> pc_eq_trans
-R2758:2773 SphereClassification.Topology <> TopologicalSpace rec
-binder 2754:2754 <> X:48
-R2788:2796 SphereClassification.Topology <> PathClass rec
-R2798:2798 SphereClassification.Topology <> X:48 var
-binder 2777:2778 <> c1:49
-binder 2780:2781 <> c2:50
-binder 2783:2784 <> c3:51
-R2815:2818 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2802:2806 SphereClassification.Topology <> pc_eq prfax
-R2808:2808 SphereClassification.Topology <> X:48 var
-R2810:2811 SphereClassification.Topology <> c1:49 var
-R2813:2814 SphereClassification.Topology <> c2:50 var
-R2832:2835 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R2819:2823 SphereClassification.Topology <> pc_eq prfax
-R2825:2825 SphereClassification.Topology <> X:48 var
-R2827:2828 SphereClassification.Topology <> c2:50 var
-R2830:2831 SphereClassification.Topology <> c3:51 var
-R2836:2840 SphereClassification.Topology <> pc_eq prfax
-R2842:2842 SphereClassification.Topology <> X:48 var
-R2844:2845 SphereClassification.Topology <> c1:49 var
-R2847:2848 SphereClassification.Topology <> c3:51 var
-rec 3088:3101 <> IsHomeomorphic
-proj 3152:3156 <> homeo
-proj 3192:3200 <> homeo_inv
-proj 3236:3245 <> homeo_cont
-proj 3273:3286 <> homeo_inv_cont
-R3110:3125 SphereClassification.Topology <> TopologicalSpace rec
-binder 3104:3104 <> X:53
-binder 3106:3106 <> Y:54
-R3172:3175 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3160:3169 SphereClassification.Topology <> space_type proj
-R3171:3171 SphereClassification.Topology <> X:53 var
-R3176:3185 SphereClassification.Topology <> space_type proj
-R3187:3187 SphereClassification.Topology <> Y:54 var
-R3216:3219 Coq.Init.Logic <> ::type_scope:x_'->'_x not
-R3204:3213 SphereClassification.Topology <> space_type proj
-R3215:3215 SphereClassification.Topology <> Y:54 var
-R3220:3229 SphereClassification.Topology <> space_type proj
-R3231:3231 SphereClassification.Topology <> X:53 var
-R3249:3258 SphereClassification.Topology <> Continuous def
-R3260:3260 SphereClassification.Topology <> X:53 var
-R3262:3262 SphereClassification.Topology <> Y:54 var
-R3264:3268 SphereClassification.Topology <> homeo:56 meth
-R3290:3299 SphereClassification.Topology <> Continuous def
-R3301:3301 SphereClassification.Topology <> Y:54 var
-R3303:3303 SphereClassification.Topology <> X:53 var
-R3305:3313 SphereClassification.Topology <> homeo_inv:57 meth
+def 2447:2451 <> pc_eq
+R2458:2473 SphereClassification.Topology <> TopologicalSpace rec
+binder 2454:2454 <> X:39
+R2485:2493 SphereClassification.Topology <> PathClass rec
+R2495:2495 SphereClassification.Topology <> X:39 var
+binder 2477:2478 <> c1:40
+binder 2480:2481 <> c2:41
+R2512:2514 Coq.Init.Logic <> ::type_scope:x_'='_x not
+R2510:2511 SphereClassification.Topology <> c1:40 var
+R2515:2516 SphereClassification.Topology <> c2:41 var
+prf 2574:2583 <> pc_eq_refl
+R2599:2614 SphereClassification.Topology <> TopologicalSpace rec
+binder 2595:2595 <> X:42
+R2622:2630 SphereClassification.Topology <> PathClass rec
+R2632:2632 SphereClassification.Topology <> X:42 var
+binder 2618:2618 <> c:43
+R2636:2640 SphereClassification.Topology <> pc_eq def
+R2642:2642 SphereClassification.Topology <> X:42 var
+R2644:2644 SphereClassification.Topology <> c:43 var
+R2646:2646 SphereClassification.Topology <> c:43 var
+R2677:2681 SphereClassification.Topology <> pc_eq def
+prf 2711:2719 <> pc_eq_sym
+R2735:2750 SphereClassification.Topology <> TopologicalSpace rec
+binder 2731:2731 <> X:44
+R2762:2770 SphereClassification.Topology <> PathClass rec
+R2772:2772 SphereClassification.Topology <> X:44 var
+binder 2754:2755 <> c1:45
+binder 2757:2758 <> c2:46
+R2789:2792 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2776:2780 SphereClassification.Topology <> pc_eq def
+R2782:2782 SphereClassification.Topology <> X:44 var
+R2784:2785 SphereClassification.Topology <> c1:45 var
+R2787:2788 SphereClassification.Topology <> c2:46 var
+R2793:2797 SphereClassification.Topology <> pc_eq def
+R2799:2799 SphereClassification.Topology <> X:44 var
+R2801:2802 SphereClassification.Topology <> c2:46 var
+R2804:2805 SphereClassification.Topology <> c1:45 var
+R2842:2846 SphereClassification.Topology <> pc_eq def
+prf 2887:2897 <> pc_eq_trans
+R2913:2928 SphereClassification.Topology <> TopologicalSpace rec
+binder 2909:2909 <> X:47
+R2943:2951 SphereClassification.Topology <> PathClass rec
+R2953:2953 SphereClassification.Topology <> X:47 var
+binder 2932:2933 <> c1:48
+binder 2935:2936 <> c2:49
+binder 2938:2939 <> c3:50
+R2970:2973 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2957:2961 SphereClassification.Topology <> pc_eq def
+R2963:2963 SphereClassification.Topology <> X:47 var
+R2965:2966 SphereClassification.Topology <> c1:48 var
+R2968:2969 SphereClassification.Topology <> c2:49 var
+R2987:2990 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R2974:2978 SphereClassification.Topology <> pc_eq def
+R2980:2980 SphereClassification.Topology <> X:47 var
+R2982:2983 SphereClassification.Topology <> c2:49 var
+R2985:2986 SphereClassification.Topology <> c3:50 var
+R2991:2995 SphereClassification.Topology <> pc_eq def
+R2997:2997 SphereClassification.Topology <> X:47 var
+R2999:3000 SphereClassification.Topology <> c1:48 var
+R3002:3003 SphereClassification.Topology <> c3:50 var
+R3049:3053 SphereClassification.Topology <> pc_eq def
+rec 3350:3363 <> IsHomeomorphic
+proj 3414:3418 <> homeo
+proj 3454:3462 <> homeo_inv
+proj 3498:3507 <> homeo_cont
+proj 3535:3548 <> homeo_inv_cont
+R3372:3387 SphereClassification.Topology <> TopologicalSpace rec
+binder 3366:3366 <> X:51
+binder 3368:3368 <> Y:52
+R3434:3437 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3422:3431 SphereClassification.Topology <> space_type proj
+R3433:3433 SphereClassification.Topology <> X:51 var
+R3438:3447 SphereClassification.Topology <> space_type proj
+R3449:3449 SphereClassification.Topology <> Y:52 var
+R3478:3481 Coq.Init.Logic <> ::type_scope:x_'->'_x not
+R3466:3475 SphereClassification.Topology <> space_type proj
+R3477:3477 SphereClassification.Topology <> Y:52 var
+R3482:3491 SphereClassification.Topology <> space_type proj
+R3493:3493 SphereClassification.Topology <> X:51 var
+R3511:3520 SphereClassification.Topology <> Continuous def
+R3522:3522 SphereClassification.Topology <> X:51 var
+R3524:3524 SphereClassification.Topology <> Y:52 var
+R3526:3530 SphereClassification.Topology <> homeo:54 meth
+R3552:3561 SphereClassification.Topology <> Continuous def
+R3563:3563 SphereClassification.Topology <> Y:52 var
+R3565:3565 SphereClassification.Topology <> X:51 var
+R3567:3575 SphereClassification.Topology <> homeo_inv:55 meth

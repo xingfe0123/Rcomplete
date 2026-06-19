@@ -1,0 +1,18 @@
+(* _CoqProject - Sphere Classification formalization (Record style) *)
+-Q src/CompactEmbeddingDir CompactEmbedding
+src/CompactEmbeddingDir/MetricCompact.v
+src/CompactEmbeddingDir/ArzelaAscoli.v
+-Q src/SphereClassificationDir SphereClassification
+src/SphereClassificationDir/Topology.v
+src/SphereClassificationDir/FundamentalGroup.v
+src/SphereClassificationDir/Manifold.v
+src/SphereClassificationDir/RiemannMetric.v
+src/SphereClassificationDir/RiemannTensor.v
+src/SphereClassificationDir/Geodesic.v
+src/SphereClassificationDir/HopfRinow.v
+src/SphereClassificationDir/HadamardCartan.v
+src/SphereClassificationDir/KillingHopf.v
+src/SphereClassificationDir/SphereTheorem.v
+src/SphereClassificationDir/BonnetMyers.v
+-Q src/GronwallDir GronwallDir
+src/GronwallDir/Gronwall.v

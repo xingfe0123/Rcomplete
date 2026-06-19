@@ -1,9 +1,24 @@
--Q src Ladyzhenskaya
--Q src/LadyzhenskayaDir LadyzhenskayaDir
+# Coq Project Configuration
+# 
+# Note: The logic-path bindings (-Q/-R) must be passed on the coqc
+# command line, not listed in this file. Only source files and
+# non-path options go here.
+#
+# Source files are compiled in the order given.
 
-src/LadyzhenskayaDir/HolderSpace.v
-src/LadyzhenskayaDir/ParabolicCoefficients.v
-src/LadyzhenskayaDir/Galerkin.v
-src/LadyzhenskayaDir/Schauder.v
-src/LadyzhenskayaDir/Uniqueness.v
-src/LadyzhenskayaDir/LadyzhenskayaMain.v
+-R src/SphereClassificationDir SphereClassification
+-R src/CompactEmbeddingDir CompactEmbedding
+
+src/CompactEmbeddingDir/MetricCompact.v
+src/CompactEmbeddingDir/ArzelaAscoli.v
+src/SphereClassificationDir/Topology.v
+src/SphereClassificationDir/FundamentalGroup.v
+src/SphereClassificationDir/Manifold.v
+src/SphereClassificationDir/RiemannMetric.v
+src/SphereClassificationDir/RiemannTensor.v
+src/SphereClassificationDir/Geodesic.v
+src/SphereClassificationDir/HopfRinow.v
+src/SphereClassificationDir/HadamardCartan.v
+src/SphereClassificationDir/KillingHopf.v
+src/SphereClassificationDir/SphereTheorem.v
+src/SphereClassificationDir/BonnetMyers.v

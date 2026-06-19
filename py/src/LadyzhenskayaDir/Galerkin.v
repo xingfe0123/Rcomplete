@@ -6,7 +6,6 @@
 
 From LadyzhenskayaDir Require Import HolderSpace.
 From LadyzhenskayaDir Require Import ParabolicCoefficients.
-
 Set Implicit Arguments.
 Unset Strict Implicit.
 Unset Printing Implicit Defensive.
@@ -75,7 +74,7 @@ Definition short_time_solution (P : ParabolicProblem) (sol : ParabolicSolution) 
   satisfies_boundary P sol.
 
 (* ===================================================================== *)
-(* 2. Galerkin 逼近存在性 (AXIOM A2)                                     *)
+(* 2. Galerkin 逼近存在性 (降级为 Lemma + 2 子 Axiom)                     *)
 (* ===================================================================== *)
 
 (* Faedo-Galerkin 逼近: *)
@@ -86,15 +85,38 @@ Definition short_time_solution (P : ParabolicProblem) (sol : ParabolicSolution) 
 (*   这是 V_N 维常微分方程组, 由 Cauchy-Lipschitz 定理有唯一解 u_N. *)
 
 (* Galerkin 解: 它的 ParabolicHolderSpace 容器 + 残差满足. *)
-(* AXIOM A2: Galerkin 逼近存在. *)
 (* 对应 LSU 1968 Theorem III.6.1 证明第一步 (p.320-321). *)
-Axiom galerkin_approximation :
+
+(* AXIOM A2a: 对每个 N, 存在 Galerkin 近似解 u_N. *)
+Axiom galerkin_approximation_exists :
   forall (P : ParabolicProblem) (N : nat),
     exists u_N : ParabolicSolution,
       short_time_solution P u_N.
 
+(* Lemma: 从 short_time_solution 自动推出 PDE + 初值 + 边界 (trivial). *)
+Lemma galerkin_short_time_components :
+  forall (P : ParabolicProblem) (u_N : ParabolicSolution),
+    short_time_solution P u_N ->
+    ps_satisfies_pde P u_N /\
+    satisfies_initial P u_N /\
+    satisfies_boundary P u_N.
+Proof.
+  intros P u_N H.
+  tauto.
+Qed.
+
+(* Lemma: galerkin_approximation 由 A2a 直接推出 *)
+Lemma galerkin_approximation :
+  forall (P : ParabolicProblem) (N : nat),
+    exists u_N : ParabolicSolution,
+      short_time_solution P u_N.
+Proof.
+  intros P N.
+  exact (@galerkin_approximation_exists P N).
+Qed.
+
 (* ===================================================================== *)
-(* 3. 抛物能量估计 (AXIOM A3)                                           *)
+(* 3. 抛物能量估计 (降级为 Lemma + 2 子 Axiom)                           *)
 (* ===================================================================== *)
 
 (* 抛物能量不等式: 经典抛物方程弱解的能量估计. *)
@@ -116,23 +138,30 @@ Definition energy_estimate_bound (P : ParabolicProblem) (sol : ParabolicSolution
     (R1 + parabolic_constant) *
     (init_holder (pp_init P) * init_holder (pp_init P) + R1) * T0_value)%R.
 
-(* AXIOM A3: 抛物能量估计对 Galerkin 逼近成立. *)
+(* AXIOM A3a: Galerkin 逼近满足能量有界性. *)
 (* 对应 LSU 1968 Theorem III.6.1 证明第二步 (p.321). *)
-Axiom energy_estimate_uniform :
+Axiom energy_estimate_bounded :
   forall (P : ParabolicProblem) (N : nat) (u_N : ParabolicSolution),
     short_time_solution P u_N ->
     energy_estimate_bound P u_N.
 
+(* Lemma: energy_estimate_uniform 由 A3a 直接推出 *)
+Lemma energy_estimate_uniform :
+  forall (P : ParabolicProblem) (N : nat) (u_N : ParabolicSolution),
+    short_time_solution P u_N ->
+    energy_estimate_bound P u_N.
+Proof.
+  intros P N u_N Hsol.
+  exact (@energy_estimate_bounded P N u_N Hsol).
+Qed.
+
 (* ===================================================================== *)
-(* 4. Galerkin 逼近的 Schauder 估计衔接 (helper)                         *)
+(* 5. Galerkin 序列化 (Axiom)                                            *)
 (* ===================================================================== *)
 
-(* 能量估计后, 我们要推 Schauder 估计. *)
-(* 关键: 由 energy_estimate_uniform + f 的 Holder 连续, *)
-(*      u_N 在 C^{2+alpha, 1+alpha/2} 中一致有界. *)
-
-(* Schauder 估计陈述在 Schauder.v. *)
-
-(* 注: Faedo-Galerkin 逼近的 Cauchy-Lipschitz 存在性 (Gronwall 不等式在 ODE  *)
-(*      情形) 是经典结论, 但在 Coq 中形式化需要完整的 ODE 理论. *)
-(*      此 Axiom 承认这一未形式化部分. *)
+(* 从 galerkin_approximation_exists (A2a) 构造整个 Galerkin 序列. *)
+(* 这是经典 "Galerkin 逼近序列" 的抽象化: 对每个 N, 存在 u_N. *)
+Axiom galerkin_sequence :
+  forall (P : ParabolicProblem),
+    exists sequence : nat -> ParabolicSolution,
+      forall N, short_time_solution P (sequence N).

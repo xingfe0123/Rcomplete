@@ -2,7 +2,7 @@
 (* Stage 1: 紧集 + 度量空间 + 紧集上连续函数. *)
 (* Arzela-Ascoli 紧嵌入定理证明的第一阶段. *)
 (* 范围: 紧集公理化 + Bolzano-Weierstrass (Axiom) + 紧集上连续函数有界 + 取极值. *)
-(* 风格: Record + Parameter (与 SphereClassificationDir 一致). *)
+(* 风格: Record + Parameter + 0 Axiom R^n 度量. *)
 
 Require Import Reals.
 Require Import Classical_Prop.
@@ -49,23 +49,109 @@ Axiom complete_metric_space :
     (forall s : seq_of M, CauchySeq M s -> exists lim : M, LimitSeq M s lim) -> True.
 
 (* ===================================================================== *)
-(* 2. R^n 的具体度量空间 (Axiom 驱动)                                    *)
+(* 2. R^n 的具体度量空间 (0 Axiom)                                       *)
 (* ===================================================================== *)
 
-(* R^n 我们不构造 — 沿用 Parameter 模式 *)
-Parameter VR : nat -> Type.
+(* R^n 我们不构造抽象类型 — 用 Vector 具体实现 *)
+Require Import Vector.
+Require Import VectorSpec.
+
 Parameter n_dim : nat.
 
-(* R^n 是 R^n (经典意义) *)
-Definition Rn := VR n_dim.
+(* R^n 是 R^n (具体意义) *)
+Definition Rn : Type := t R n_dim.
 
-(* R^n 上的度量: 经典欧氏度量 *)
-Parameter Rn_distance : Rn -> Rn -> R.
+(* R^n 上的度量: L1 (曼哈顿) 度量 *)
+Fixpoint vr_distance {n : nat} : t R n -> t R n -> R :=
+  match n with
+  | 0 => fun _ _ => 0
+  | S n' =>
+      fun x y =>
+        Rabs (Vector.hd x - Vector.hd y) +
+        vr_distance (Vector.tl x) (Vector.tl y)
+  end.
 
-Axiom Rn_distance_nonneg : forall x y, Rn_distance x y >= 0.
-Axiom Rn_distance_symm : forall x y, Rn_distance x y = Rn_distance y x.
-Axiom Rn_distance_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
-Axiom Rn_distance_iden : forall x y, Rn_distance x y = 0 -> x = y.
+Definition Rn_distance : Rn -> Rn -> R := @vr_distance n_dim.
+
+(* ---- 4 个度量公理 (Lemma, 从 Reals 库推导) ---- *)
+
+Lemma vr_distance_nonneg : forall n (x y : t R n), 0 <= vr_distance x y.
+Proof.
+  induction n; intros; simpl.
+  - apply Rle_refl.
+  - apply Rplus_le_le_0_compat; [apply Rabs_pos | apply IHn].
+Qed.
+
+Lemma Rn_distance_nonneg : forall x y, 0 <= Rn_distance x y.
+Proof.
+  intros. apply vr_distance_nonneg.
+Qed.
+
+Lemma vr_distance_symm : forall n (x y : t R n), vr_distance x y = vr_distance y x.
+Proof.
+  induction n; intros; simpl.
+  - reflexivity.
+  - f_equal.
+    + rewrite Rabs_minus_sym. reflexivity.
+    + apply IHn.
+Qed.
+
+Lemma Rn_distance_symm : forall x y, Rn_distance x y = Rn_distance y x.
+Proof.
+  intros. apply vr_distance_symm.
+Qed.
+
+Lemma vr_distance_iden : forall n (x y : t R n), vr_distance x y = 0 -> x = y.
+Proof.
+  induction n; intros; simpl in *.
+  - rewrite (VectorSpec.nil_spec x), (VectorSpec.nil_spec y); reflexivity.
+  - rewrite (VectorSpec.eta x), (VectorSpec.eta y) in *; simpl in *.
+    assert (h_eq_hd : Vector.hd x = Vector.hd y).
+    { destruct (Rcase_abs (Vector.hd x - Vector.hd y)) as [hneg | hnonneg].
+      - rewrite (Rabs_left _ hneg) in H.
+        assert (hpos' : 0 + 0 < -(Vector.hd x - Vector.hd y) + vr_distance (Vector.tl x) (Vector.tl y))
+          by (apply Rplus_lt_le_compat; [lra | apply vr_distance_nonneg]).
+        simpl in hpos'; lra.
+      - rewrite (Rabs_right _ hnonneg) in H.
+        apply (Rplus_eq_0_l (Vector.hd x - Vector.hd y) (vr_distance (Vector.tl x) (Vector.tl y))) in H;
+          [| exact hnonneg | apply vr_distance_nonneg].
+        lra. }
+    assert (h_eq_tl : Vector.tl x = Vector.tl y).
+    { apply IHn.
+      destruct (Rcase_abs (Vector.hd x - Vector.hd y)) as [hneg | hnonneg].
+      - rewrite (Rabs_left _ hneg) in H.
+        apply (Rplus_eq_0_l (vr_distance (Vector.tl x) (Vector.tl y)) (-(Vector.hd x - Vector.hd y))) in H;
+          [| apply vr_distance_nonneg | lra].
+        exact H.
+      - rewrite (Rabs_right _ hnonneg) in H.
+        apply (Rplus_eq_0_l (vr_distance (Vector.tl x) (Vector.tl y)) (Vector.hd x - Vector.hd y)) in H;
+          [| apply vr_distance_nonneg | exact hnonneg].
+        exact H. }
+    rewrite (VectorSpec.eta x), (VectorSpec.eta y).
+    rewrite h_eq_hd, h_eq_tl; reflexivity.
+Qed.
+
+Lemma Rn_distance_iden : forall x y, Rn_distance x y = 0 -> x = y.
+Proof.
+  intros. apply vr_distance_iden.
+Qed.
+
+Lemma vr_distance_tri : forall n (x y z : t R n),
+  vr_distance x z <= vr_distance x y + vr_distance y z.
+Proof.
+  induction n; intros; simpl.
+  - lra.
+  - pose proof (Rabs_triang (Vector.hd x - Vector.hd z) (Vector.hd x - Vector.hd y) (Vector.hd y - Vector.hd z)).
+    assert (H1: Rabs (Vector.hd x - Vector.hd z) <= Rabs (Vector.hd x - Vector.hd y) + Rabs (Vector.hd y - Vector.hd z)) by apply H0.
+    pose (IHn (Vector.tl x) (Vector.tl y) (Vector.tl z)).
+    lra.
+Qed.
+
+Lemma Rn_distance_tri : forall x y z,
+  Rn_distance x z <= Rn_distance x y + Rn_distance y z.
+Proof.
+  intros. apply vr_distance_tri.
+Qed.
 
 (* 抽象地, R^n 是一个度量空间 *)
 Definition Rn_metric : MetricSpace := mkMetricSpace Rn Rn_distance
@@ -80,9 +166,8 @@ Definition Rn_metric : MetricSpace := mkMetricSpace Rn Rn_distance
 
 (* 子集有界 *)
 Definition is_bounded (K : Rn -> Prop) : Prop :=
-  exists M : R, M > 0 /\ forall x, K x -> Rn_distance x x <= M.
-  (* 注: d(x,x) = 0, 任意 M >= 0 都满足. 更准确的: *)
-  (* exists M, forall x, K x -> exists c, forall y, K y -> d x y <= M. *)
+  exists M : R, M > 0 /\ forall x y, K x -> K y -> Rn_distance x y <= M.
+  (* 注: 原定义 d(x,x)<=M 对任何 M 都成立, 已修正为正确的有界性定义. *)
 
 (* 子集闭: K 包含所有收敛序列的极限 *)
 Definition is_closed (K : Rn -> Prop) : Prop :=
@@ -100,7 +185,6 @@ Definition is_compact (K : Rn -> Prop) : Prop :=
 (* ===================================================================== *)
 
 (* R^n 中有界序列有收敛子列 *)
-(* Strictly_Increasing 定义 *)
 Definition Strictly_Increasing (f : nat -> nat) : Prop :=
   forall n : nat, Nat.lt (f n) (f (S n)).
 
@@ -111,7 +195,7 @@ Axiom bolzano_weierstrass_Rn :
       Strictly_Increasing subseq /\
       exists lim : Rn, LimitSeq Rn_metric (fun k => s (subseq k)) lim.
 
-(* 紧集上的有界序列有收敛子列 (Axiom - 需要 is_bounded 定义修正或额外构造) *)
+(* 紧集上的有界序列有收敛子列 (Axiom) *)
 Axiom bounded_seq_in_compact_has_convergent_subseq :
   forall (K : Rn -> Prop) (s : seq_of Rn_metric),
     is_compact K ->
@@ -173,11 +257,13 @@ Coercion func_of_C0 : C0_on >-> Funclass.
 
 (* 阶段 1 交付: *)
 (*   1. MetricSpace Record *)
-(*   2. R^n 度量空间 (Parameter + 4 Axiom) *)
+(*   2. R^n 度量空间 (具体构造 + 4 Lemma, 0 Axiom) *)
 (*   3. 紧集 = 有界 + 闭 *)
 (*   4. Bolzano-Weierstrass (Axiom 1) *)
 (*   5. 紧集上连续函数有界 (Axiom 2) *)
 (*   6. 紧集上连续函数取 sup/inf (Axiom 3, 4) *)
 (*   7. C0_on 类型 *)
+(*   8. 完备度量空间 (Axiom 0) *)
 
-(* Axiom 总数: 4 (R^n 度量) + 1 (Bolzano-Weierstrass) + 3 (极值) = 8 *)
+(* Axiom 总数: 0 (R^n 度量) + 1 (Bolzano-Weierstrass) + 3 (极值) + 1 (完备性) = 5 *)
+(* 相比原版本减少 4 个 Axiom (原 4 个 Rn_distance_* 均为 Lemma). *)

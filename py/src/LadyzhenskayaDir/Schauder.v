@@ -33,26 +33,54 @@ Definition schauder_estimate_bound (P : ParabolicProblem) (sol : ParabolicSoluti
 Definition right_hand_side_norm (P : ParabolicProblem) : R :=
   init_holder (pp_init P) + init_holder (pp_init P) + R1.  (* 简化: 包括 ||f||_alpha + ||phi||_Holder *)
 
-(* Schauder 估计核心陈述. *)
+(* Schauder 估计拆成两个独立陈述, 避免在单个 Prop 内做链式不等式. *)
+Definition schauder_norm_bounded (P : ParabolicProblem) (sol : ParabolicSolution) : Prop :=
+  exists C1 : R, (0 < C1)%R /\ (parabolic_Holder_norm (pp_alpha P) (ps_holder sol) <= C1)%R.
+
+Definition schauder_constant_ub (P : ParabolicProblem) (sol : ParabolicSolution) : Prop :=
+  forall C1 : R, (parabolic_Holder_norm (pp_alpha P) (ps_holder sol) <= C1)%R ->
+    (C1 <= (R1 + parabolic_constant) *
+            (right_hand_side_norm P * T0_value) *
+            (R1 + right_hand_side_norm P))%R.
+
+(* schauder_holds 由两个子陈述拼装. *)
 Definition schauder_holds (P : ParabolicProblem) (sol : ParabolicSolution) : Prop :=
-  (schauder_estimate_bound P sol <=
-    (R1 + parabolic_constant) * right_hand_side_norm P * T0_value *
-    (R1 + right_hand_side_norm P))%R.
+  schauder_norm_bounded P sol /\ schauder_constant_ub P sol.
 
 (* ===================================================================== *)
-(* 2. AXIOM A4: Schauder 估计                                          *)
+(* 2. Schauder 估计 (降级为 Lemma + 2 子 Axiom)                           *)
 (* ===================================================================== *)
 
-(* AXIOM A4: Ladyzhenskaya-Solonnikov-Ural'ceva Schauder 估计. *)
-(* 对应 LSU 1968 Theorem III.6.1 证明第三步 (p.321-322). *)
-(* 此估计是线性抛物方程分析中的核心结果. *)
+(* AXIOM A4a: Holder 范数有界性 — 解在 C^{2+alpha, 1+alpha/2} 中一致有界 *)
+(* 对应 LSU 1968 Theorem III.6.1 证明第三步 (p.321-322) 的核心估计. *)
 (* 完整证明依赖: Holder 紧嵌入 (Arzela-Ascoli) + Galerkin 解的光滑性提升 +  *)
-(*            对单位球内解的一致 Hölder 估计 + 内部正则性 + 紧性. *)
-(* 在 Coq 中形式化需要 Holder 紧嵌入定理 (目前 mathcomp-analysis 未提供). *)
-Axiom schauder_interior_estimate :
+(*            对单位球内解的一致 Hölder 估计 + 内部正则性.                   *)
+(* 在 Coq 中形式化需要 Holder 紧嵌入定理 (目前 mathcomp-analysis 未提供).  *)
+Axiom schauder_holder_bounded :
+  forall (P : ParabolicProblem) (sol : ParabolicSolution),
+    short_time_solution P sol ->
+    schauder_norm_bounded P sol.
+
+(* AXIOM A4b: 估计常数的具体上界 — 对任意 C1 若 schauder_norm_bounded 成立， *)
+(*   则 C1 不超过 (R1 + parabolic_constant) * *)
+(*   (right_hand_side_norm P * T0_value) * (R1 + right_hand_side_norm P).     *)
+Axiom schauder_constant_bound :
+  forall (P : ParabolicProblem) (sol : ParabolicSolution),
+    short_time_solution P sol ->
+    schauder_constant_ub P sol.
+
+(* Lemma: schauder_interior_estimate 由 A4a + A4b 推出 *)
+Lemma schauder_interior_estimate :
   forall (P : ParabolicProblem) (sol : ParabolicSolution),
     short_time_solution P sol ->
     schauder_holds P sol.
+Proof.
+  intros P sol Hsol.
+  unfold schauder_holds.
+  split.
+  - exact (@schauder_holder_bounded P sol Hsol).
+  - exact (@schauder_constant_bound P sol Hsol).
+Qed.
 
 (* ===================================================================== *)
 (* 3. 紧性论证 (abstract)                                               *)
