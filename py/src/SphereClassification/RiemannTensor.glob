@@ -1,0 +1,553 @@
+DIGEST 33b9e281192d722f0d0c2e3148095bdd
+FSphereClassification.RiemannTensor
+R191:195 Stdlib.Reals.Reals <> <> lib
+R213:226 Stdlib.Logic.Classical_Prop <> <> lib
+R244:248 Stdlib.Reals.Reals <> <> lib
+R250:252 Stdlib.micromega.Lra <> <> lib
+R270:293 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R311:319 Stdlib.Logic.Classical <> <> lib
+R359:387 SphereClassification.Manifold <> <> lib
+R405:433 SphereClassification.Topology <> <> lib
+R451:484 SphereClassification.RiemannMetric <> <> lib
+R494:506 SphereClassification.RiemannMetric <> <> mod
+ax 950:963 <> riemann_tensor
+R981:989 SphereClassification.Manifold <> Manifold3 rec
+binder 977:977 <> M:1
+R1014:1019 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R993:1011 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1013:1013 SphereClassification.RiemannTensor <> M:1 var
+R1041:1044 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1020:1038 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1040:1040 SphereClassification.RiemannTensor <> M:1 var
+R1066:1069 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1045:1063 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1065:1065 SphereClassification.RiemannTensor <> M:1 var
+R1070:1088 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1090:1090 SphereClassification.RiemannTensor <> M:1 var
+def 1398:1407 <> riemann_04
+R1425:1433 SphereClassification.Manifold <> Manifold3 rec
+binder 1421:1421 <> M:4
+R1441:1456 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1458:1458 SphereClassification.RiemannTensor <> M:4 var
+binder 1437:1437 <> g:5
+R1466:1472 SphereClassification.Manifold <> sm_type proj
+R1474:1474 SphereClassification.RiemannTensor <> M:4 var
+binder 1462:1462 <> p:6
+R1503:1506 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1482:1500 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1502:1502 SphereClassification.RiemannTensor <> M:4 var
+R1528:1531 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1507:1525 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1527:1527 SphereClassification.RiemannTensor <> M:4 var
+R1553:1556 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1532:1550 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1552:1552 SphereClassification.RiemannTensor <> M:4 var
+R1578:1581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1557:1575 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1577:1577 SphereClassification.RiemannTensor <> M:4 var
+R1582:1582 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1593:1593 <> M:7
+binder 1595:1595 <> g:8
+binder 1597:1597 <> p:9
+binder 1599:1599 <> X:10
+binder 1601:1601 <> Y:11
+binder 1603:1603 <> Z:12
+binder 1605:1605 <> W:13
+R1610:1622 SphereClassification.RiemannMetric <> metric_tensor proj
+R1624:1624 SphereClassification.RiemannTensor <> M:7 var
+R1626:1626 SphereClassification.RiemannTensor <> g:8 var
+R1628:1628 SphereClassification.RiemannTensor <> p:9 var
+R1631:1644 SphereClassification.RiemannTensor <> riemann_tensor defax
+R1646:1646 SphereClassification.RiemannTensor <> M:7 var
+R1648:1648 SphereClassification.RiemannTensor <> X:10 var
+R1650:1650 SphereClassification.RiemannTensor <> Y:11 var
+R1652:1652 SphereClassification.RiemannTensor <> Z:12 var
+R1655:1655 SphereClassification.RiemannTensor <> W:13 var
+ax 2108:2124 <> riemann_skew_symm
+R2142:2150 SphereClassification.Manifold <> Manifold3 rec
+binder 2138:2138 <> M:14
+R2158:2164 SphereClassification.Manifold <> sm_type proj
+R2166:2166 SphereClassification.RiemannTensor <> M:14 var
+binder 2154:2154 <> p:15
+R2187:2205 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R2207:2207 SphereClassification.RiemannTensor <> M:14 var
+binder 2179:2179 <> X:16
+binder 2181:2181 <> Y:17
+binder 2183:2183 <> Z:18
+R2237:2239 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2215:2228 SphereClassification.RiemannTensor <> riemann_tensor defax
+R2230:2230 SphereClassification.RiemannTensor <> M:14 var
+R2232:2232 SphereClassification.RiemannTensor <> X:16 var
+R2234:2234 SphereClassification.RiemannTensor <> Y:17 var
+R2236:2236 SphereClassification.RiemannTensor <> Z:18 var
+R2240:2248 SphereClassification.RiemannMetric <> ts_neg_of def
+R2250:2250 SphereClassification.RiemannTensor <> M:14 var
+R2253:2266 SphereClassification.RiemannTensor <> riemann_tensor defax
+R2268:2268 SphereClassification.RiemannTensor <> M:14 var
+R2270:2270 SphereClassification.RiemannTensor <> Y:17 var
+R2272:2272 SphereClassification.RiemannTensor <> X:16 var
+R2274:2274 SphereClassification.RiemannTensor <> Z:18 var
+ax 2529:2548 <> riemann_04_skew_symm
+R2566:2574 SphereClassification.Manifold <> Manifold3 rec
+binder 2562:2562 <> M:21
+R2582:2597 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2599:2599 SphereClassification.RiemannTensor <> M:21 var
+binder 2578:2578 <> g:22
+R2607:2613 SphereClassification.Manifold <> sm_type proj
+R2615:2615 SphereClassification.RiemannTensor <> M:21 var
+binder 2603:2603 <> p:23
+R2638:2656 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R2658:2658 SphereClassification.RiemannTensor <> M:21 var
+binder 2628:2628 <> X:24
+binder 2630:2630 <> Y:25
+binder 2632:2632 <> Z:26
+binder 2634:2634 <> W:27
+R2690:2692 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2666:2675 SphereClassification.RiemannTensor <> riemann_04 def
+R2677:2677 SphereClassification.RiemannTensor <> M:21 var
+R2679:2679 SphereClassification.RiemannTensor <> g:22 var
+R2681:2681 SphereClassification.RiemannTensor <> p:23 var
+R2683:2683 SphereClassification.RiemannTensor <> X:24 var
+R2685:2685 SphereClassification.RiemannTensor <> Y:25 var
+R2687:2687 SphereClassification.RiemannTensor <> Z:26 var
+R2689:2689 SphereClassification.RiemannTensor <> W:27 var
+R2693:2694 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R2695:2704 SphereClassification.RiemannTensor <> riemann_04 def
+R2706:2706 SphereClassification.RiemannTensor <> M:21 var
+R2708:2708 SphereClassification.RiemannTensor <> g:22 var
+R2710:2710 SphereClassification.RiemannTensor <> p:23 var
+R2712:2712 SphereClassification.RiemannTensor <> Y:25 var
+R2714:2714 SphereClassification.RiemannTensor <> X:24 var
+R2716:2716 SphereClassification.RiemannTensor <> Z:26 var
+R2718:2718 SphereClassification.RiemannTensor <> W:27 var
+ax 2782:2803 <> riemann_04_skew_symm_2
+R2821:2829 SphereClassification.Manifold <> Manifold3 rec
+binder 2817:2817 <> M:30
+R2837:2852 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2854:2854 SphereClassification.RiemannTensor <> M:30 var
+binder 2833:2833 <> g:31
+R2862:2868 SphereClassification.Manifold <> sm_type proj
+R2870:2870 SphereClassification.RiemannTensor <> M:30 var
+binder 2858:2858 <> p:32
+R2893:2911 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R2913:2913 SphereClassification.RiemannTensor <> M:30 var
+binder 2883:2883 <> X:33
+binder 2885:2885 <> Y:34
+binder 2887:2887 <> Z:35
+binder 2889:2889 <> W:36
+R2945:2947 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2921:2930 SphereClassification.RiemannTensor <> riemann_04 def
+R2932:2932 SphereClassification.RiemannTensor <> M:30 var
+R2934:2934 SphereClassification.RiemannTensor <> g:31 var
+R2936:2936 SphereClassification.RiemannTensor <> p:32 var
+R2938:2938 SphereClassification.RiemannTensor <> X:33 var
+R2940:2940 SphereClassification.RiemannTensor <> Y:34 var
+R2942:2942 SphereClassification.RiemannTensor <> Z:35 var
+R2944:2944 SphereClassification.RiemannTensor <> W:36 var
+R2948:2949 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R2950:2959 SphereClassification.RiemannTensor <> riemann_04 def
+R2961:2961 SphereClassification.RiemannTensor <> M:30 var
+R2963:2963 SphereClassification.RiemannTensor <> g:31 var
+R2965:2965 SphereClassification.RiemannTensor <> p:32 var
+R2967:2967 SphereClassification.RiemannTensor <> X:33 var
+R2969:2969 SphereClassification.RiemannTensor <> Y:34 var
+R2971:2971 SphereClassification.RiemannTensor <> W:36 var
+R2973:2973 SphereClassification.RiemannTensor <> Z:35 var
+ax 3032:3052 <> riemann_exchange_symm
+R3070:3078 SphereClassification.Manifold <> Manifold3 rec
+binder 3066:3066 <> M:39
+R3086:3101 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3103:3103 SphereClassification.RiemannTensor <> M:39 var
+binder 3082:3082 <> g:40
+R3111:3117 SphereClassification.Manifold <> sm_type proj
+R3119:3119 SphereClassification.RiemannTensor <> M:39 var
+binder 3107:3107 <> p:41
+R3142:3160 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R3162:3162 SphereClassification.RiemannTensor <> M:39 var
+binder 3132:3132 <> X:42
+binder 3134:3134 <> Y:43
+binder 3136:3136 <> Z:44
+binder 3138:3138 <> W:45
+R3194:3196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3170:3179 SphereClassification.RiemannTensor <> riemann_04 def
+R3181:3181 SphereClassification.RiemannTensor <> M:39 var
+R3183:3183 SphereClassification.RiemannTensor <> g:40 var
+R3185:3185 SphereClassification.RiemannTensor <> p:41 var
+R3187:3187 SphereClassification.RiemannTensor <> X:42 var
+R3189:3189 SphereClassification.RiemannTensor <> Y:43 var
+R3191:3191 SphereClassification.RiemannTensor <> Z:44 var
+R3193:3193 SphereClassification.RiemannTensor <> W:45 var
+R3197:3206 SphereClassification.RiemannTensor <> riemann_04 def
+R3208:3208 SphereClassification.RiemannTensor <> M:39 var
+R3210:3210 SphereClassification.RiemannTensor <> g:40 var
+R3212:3212 SphereClassification.RiemannTensor <> p:41 var
+R3214:3214 SphereClassification.RiemannTensor <> Z:44 var
+R3216:3216 SphereClassification.RiemannTensor <> W:45 var
+R3218:3218 SphereClassification.RiemannTensor <> X:42 var
+R3220:3220 SphereClassification.RiemannTensor <> Y:43 var
+ax 3305:3325 <> riemann_first_bianchi
+R3343:3351 SphereClassification.Manifold <> Manifold3 rec
+binder 3339:3339 <> M:48
+R3359:3374 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3376:3376 SphereClassification.RiemannTensor <> M:48 var
+binder 3355:3355 <> g:49
+R3384:3390 SphereClassification.Manifold <> sm_type proj
+R3392:3392 SphereClassification.RiemannTensor <> M:48 var
+binder 3380:3380 <> p:50
+R3415:3433 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R3435:3435 SphereClassification.RiemannTensor <> M:48 var
+binder 3405:3405 <> X:51
+binder 3407:3407 <> Y:52
+binder 3409:3409 <> Z:53
+binder 3411:3411 <> W:54
+R3521:3523 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3494:3496 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3467:3469 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3443:3452 SphereClassification.RiemannTensor <> riemann_04 def
+R3454:3454 SphereClassification.RiemannTensor <> M:48 var
+R3456:3456 SphereClassification.RiemannTensor <> g:49 var
+R3458:3458 SphereClassification.RiemannTensor <> p:50 var
+R3460:3460 SphereClassification.RiemannTensor <> X:51 var
+R3462:3462 SphereClassification.RiemannTensor <> Y:52 var
+R3464:3464 SphereClassification.RiemannTensor <> Z:53 var
+R3466:3466 SphereClassification.RiemannTensor <> W:54 var
+R3470:3479 SphereClassification.RiemannTensor <> riemann_04 def
+R3481:3481 SphereClassification.RiemannTensor <> M:48 var
+R3483:3483 SphereClassification.RiemannTensor <> g:49 var
+R3485:3485 SphereClassification.RiemannTensor <> p:50 var
+R3487:3487 SphereClassification.RiemannTensor <> Y:52 var
+R3489:3489 SphereClassification.RiemannTensor <> Z:53 var
+R3491:3491 SphereClassification.RiemannTensor <> X:51 var
+R3493:3493 SphereClassification.RiemannTensor <> W:54 var
+R3497:3506 SphereClassification.RiemannTensor <> riemann_04 def
+R3508:3508 SphereClassification.RiemannTensor <> M:48 var
+R3510:3510 SphereClassification.RiemannTensor <> g:49 var
+R3512:3512 SphereClassification.RiemannTensor <> p:50 var
+R3514:3514 SphereClassification.RiemannTensor <> Z:53 var
+R3516:3516 SphereClassification.RiemannTensor <> X:51 var
+R3518:3518 SphereClassification.RiemannTensor <> Y:52 var
+R3520:3520 SphereClassification.RiemannTensor <> W:54 var
+ax 3819:3853 <> tangent_space_has_orthonormal_basis
+R3871:3879 SphereClassification.Manifold <> Manifold3 rec
+binder 3867:3867 <> M:57
+R3887:3902 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3904:3904 SphereClassification.RiemannTensor <> M:57 var
+binder 3883:3883 <> g:58
+R3912:3918 SphereClassification.Manifold <> sm_type proj
+R3920:3920 SphereClassification.RiemannTensor <> M:57 var
+binder 3908:3908 <> p:59
+R3928:3935 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3978:4025 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3940:3942 Corelib.Init.Datatypes <> nat ind
+binder 3936:3936 <> n:60
+R3953:3956 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3950:3952 Corelib.Init.Datatypes <> nat ind
+R3957:3975 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R3977:3977 SphereClassification.RiemannTensor <> M:57 var
+binder 3946:3946 <> e:61
+R4026:4029 Corelib.Init.Logic <> True ind
+ax 4536:4547 <> ricci_tensor
+R4565:4573 SphereClassification.Manifold <> Manifold3 rec
+binder 4561:4561 <> M:64
+R4581:4596 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R4598:4598 SphereClassification.RiemannTensor <> M:64 var
+binder 4577:4577 <> g:65
+R4606:4612 SphereClassification.Manifold <> sm_type proj
+R4614:4614 SphereClassification.RiemannTensor <> M:64 var
+binder 4602:4602 <> p:66
+R4643:4646 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4622:4640 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R4642:4642 SphereClassification.RiemannTensor <> M:64 var
+R4668:4671 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4647:4665 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R4667:4667 SphereClassification.RiemannTensor <> M:64 var
+R4672:4672 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+prf 5119:5138 <> riemann_04_diag_swap
+R5156:5164 SphereClassification.Manifold <> Manifold3 rec
+binder 5152:5152 <> M:69
+R5172:5187 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R5189:5189 SphereClassification.RiemannTensor <> M:69 var
+binder 5168:5168 <> g:70
+R5197:5203 SphereClassification.Manifold <> sm_type proj
+R5205:5205 SphereClassification.RiemannTensor <> M:69 var
+binder 5193:5193 <> p:71
+R5228:5246 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R5248:5248 SphereClassification.RiemannTensor <> M:69 var
+binder 5218:5220 <> e_i:72
+binder 5222:5222 <> u:73
+binder 5224:5224 <> v:74
+R5284:5286 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5256:5265 SphereClassification.RiemannTensor <> riemann_04 def
+R5267:5267 SphereClassification.RiemannTensor <> M:69 var
+R5269:5269 SphereClassification.RiemannTensor <> g:70 var
+R5271:5271 SphereClassification.RiemannTensor <> p:71 var
+R5273:5275 SphereClassification.RiemannTensor <> e_i:72 var
+R5277:5277 SphereClassification.RiemannTensor <> u:73 var
+R5279:5279 SphereClassification.RiemannTensor <> v:74 var
+R5281:5283 SphereClassification.RiemannTensor <> e_i:72 var
+R5287:5296 SphereClassification.RiemannTensor <> riemann_04 def
+R5298:5298 SphereClassification.RiemannTensor <> M:69 var
+R5300:5300 SphereClassification.RiemannTensor <> g:70 var
+R5302:5302 SphereClassification.RiemannTensor <> p:71 var
+R5304:5306 SphereClassification.RiemannTensor <> e_i:72 var
+R5308:5308 SphereClassification.RiemannTensor <> v:74 var
+R5310:5310 SphereClassification.RiemannTensor <> u:73 var
+R5312:5314 SphereClassification.RiemannTensor <> e_i:72 var
+R5809:5830 SphereClassification.RiemannTensor <> riemann_04_skew_symm_2 prfax
+R5809:5830 SphereClassification.RiemannTensor <> riemann_04_skew_symm_2 prfax
+R5809:5830 SphereClassification.RiemannTensor <> riemann_04_skew_symm_2 prfax
+R6423:6442 SphereClassification.RiemannTensor <> riemann_04_skew_symm prfax
+R6423:6442 SphereClassification.RiemannTensor <> riemann_04_skew_symm prfax
+R6423:6442 SphereClassification.RiemannTensor <> riemann_04_skew_symm prfax
+R6617:6637 SphereClassification.RiemannTensor <> riemann_exchange_symm prfax
+R6617:6637 SphereClassification.RiemannTensor <> riemann_exchange_symm prfax
+R6617:6637 SphereClassification.RiemannTensor <> riemann_exchange_symm prfax
+ax 6994:7026 <> ricci_finite_sum_index_invariance
+R7044:7052 SphereClassification.Manifold <> Manifold3 rec
+binder 7040:7040 <> M:75
+R7060:7075 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R7077:7077 SphereClassification.RiemannTensor <> M:75 var
+binder 7056:7056 <> g:76
+R7085:7091 SphereClassification.Manifold <> sm_type proj
+R7093:7093 SphereClassification.RiemannTensor <> M:75 var
+binder 7081:7081 <> p:77
+R7110:7112 Corelib.Init.Datatypes <> nat ind
+binder 7106:7106 <> n:78
+R7123:7126 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7120:7122 Corelib.Init.Datatypes <> nat ind
+R7127:7145 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R7147:7147 SphereClassification.RiemannTensor <> M:75 var
+binder 7116:7116 <> e:79
+R7166:7184 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R7186:7186 SphereClassification.RiemannTensor <> M:75 var
+binder 7160:7160 <> u:80
+binder 7162:7162 <> v:81
+R7303:7305 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7281:7292 SphereClassification.RiemannTensor <> ricci_tensor defax
+R7294:7294 SphereClassification.RiemannTensor <> M:75 var
+R7296:7296 SphereClassification.RiemannTensor <> g:76 var
+R7298:7298 SphereClassification.RiemannTensor <> p:77 var
+R7300:7300 SphereClassification.RiemannTensor <> u:80 var
+R7302:7302 SphereClassification.RiemannTensor <> v:81 var
+R7306:7317 SphereClassification.RiemannTensor <> ricci_tensor defax
+R7319:7319 SphereClassification.RiemannTensor <> M:75 var
+R7321:7321 SphereClassification.RiemannTensor <> g:76 var
+R7323:7323 SphereClassification.RiemannTensor <> p:77 var
+R7325:7325 SphereClassification.RiemannTensor <> v:81 var
+R7327:7327 SphereClassification.RiemannTensor <> u:80 var
+prf 7664:7681 <> ricci_from_riemann
+R7699:7707 SphereClassification.Manifold <> Manifold3 rec
+binder 7695:7695 <> M:84
+R7715:7730 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R7732:7732 SphereClassification.RiemannTensor <> M:84 var
+binder 7711:7711 <> g:85
+R7740:7746 SphereClassification.Manifold <> sm_type proj
+R7748:7748 SphereClassification.RiemannTensor <> M:84 var
+binder 7736:7736 <> p:86
+R7767:7785 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R7787:7787 SphereClassification.RiemannTensor <> M:84 var
+binder 7761:7761 <> u:87
+binder 7763:7763 <> v:88
+R7817:7819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7795:7806 SphereClassification.RiemannTensor <> ricci_tensor defax
+R7808:7808 SphereClassification.RiemannTensor <> M:84 var
+R7810:7810 SphereClassification.RiemannTensor <> g:85 var
+R7812:7812 SphereClassification.RiemannTensor <> p:86 var
+R7814:7814 SphereClassification.RiemannTensor <> u:87 var
+R7816:7816 SphereClassification.RiemannTensor <> v:88 var
+R7820:7831 SphereClassification.RiemannTensor <> ricci_tensor defax
+R7833:7833 SphereClassification.RiemannTensor <> M:84 var
+R7835:7835 SphereClassification.RiemannTensor <> g:85 var
+R7837:7837 SphereClassification.RiemannTensor <> p:86 var
+R7839:7839 SphereClassification.RiemannTensor <> v:88 var
+R7841:7841 SphereClassification.RiemannTensor <> u:87 var
+R8224:8256 SphereClassification.RiemannTensor <> ricci_finite_sum_index_invariance prfax
+R8275:8277 Corelib.Init.Datatypes <> nat ind
+R8224:8256 SphereClassification.RiemannTensor <> ricci_finite_sum_index_invariance prfax
+R8275:8277 Corelib.Init.Datatypes <> nat ind
+prf 9589:9602 <> ricci_symmetry
+R9620:9628 SphereClassification.Manifold <> Manifold3 rec
+binder 9616:9616 <> M:89
+R9636:9651 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R9653:9653 SphereClassification.RiemannTensor <> M:89 var
+binder 9632:9632 <> g:90
+R9661:9667 SphereClassification.Manifold <> sm_type proj
+R9669:9669 SphereClassification.RiemannTensor <> M:89 var
+binder 9657:9657 <> p:91
+R9688:9706 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R9708:9708 SphereClassification.RiemannTensor <> M:89 var
+binder 9682:9682 <> u:92
+binder 9684:9684 <> v:93
+R9738:9740 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9716:9727 SphereClassification.RiemannTensor <> ricci_tensor defax
+R9729:9729 SphereClassification.RiemannTensor <> M:89 var
+R9731:9731 SphereClassification.RiemannTensor <> g:90 var
+R9733:9733 SphereClassification.RiemannTensor <> p:91 var
+R9735:9735 SphereClassification.RiemannTensor <> u:92 var
+R9737:9737 SphereClassification.RiemannTensor <> v:93 var
+R9741:9752 SphereClassification.RiemannTensor <> ricci_tensor defax
+R9754:9754 SphereClassification.RiemannTensor <> M:89 var
+R9756:9756 SphereClassification.RiemannTensor <> g:90 var
+R9758:9758 SphereClassification.RiemannTensor <> p:91 var
+R9760:9760 SphereClassification.RiemannTensor <> v:93 var
+R9762:9762 SphereClassification.RiemannTensor <> u:92 var
+R9915:9932 SphereClassification.RiemannTensor <> ricci_from_riemann thm
+R9915:9932 SphereClassification.RiemannTensor <> ricci_from_riemann thm
+prf 10331:10357 <> ricci_symmetry_from_riemann
+R10375:10383 SphereClassification.Manifold <> Manifold3 rec
+binder 10371:10371 <> M:94
+R10391:10406 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R10408:10408 SphereClassification.RiemannTensor <> M:94 var
+binder 10387:10387 <> g:95
+R10416:10422 SphereClassification.Manifold <> sm_type proj
+R10424:10424 SphereClassification.RiemannTensor <> M:94 var
+binder 10412:10412 <> p:96
+R10443:10461 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R10463:10463 SphereClassification.RiemannTensor <> M:94 var
+binder 10437:10437 <> u:97
+binder 10439:10439 <> v:98
+R10493:10495 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10471:10482 SphereClassification.RiemannTensor <> ricci_tensor defax
+R10484:10484 SphereClassification.RiemannTensor <> M:94 var
+R10486:10486 SphereClassification.RiemannTensor <> g:95 var
+R10488:10488 SphereClassification.RiemannTensor <> p:96 var
+R10490:10490 SphereClassification.RiemannTensor <> u:97 var
+R10492:10492 SphereClassification.RiemannTensor <> v:98 var
+R10496:10507 SphereClassification.RiemannTensor <> ricci_tensor defax
+R10509:10509 SphereClassification.RiemannTensor <> M:94 var
+R10511:10511 SphereClassification.RiemannTensor <> g:95 var
+R10513:10513 SphereClassification.RiemannTensor <> p:96 var
+R10515:10515 SphereClassification.RiemannTensor <> v:98 var
+R10517:10517 SphereClassification.RiemannTensor <> u:97 var
+R11239:11256 SphereClassification.RiemannTensor <> ricci_from_riemann thm
+R11239:11256 SphereClassification.RiemannTensor <> ricci_from_riemann thm
+def 11753:11775 <> sectional_curvature_def
+R11793:11801 SphereClassification.Manifold <> Manifold3 rec
+binder 11789:11789 <> M:99
+R11809:11824 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R11826:11826 SphereClassification.RiemannTensor <> M:99 var
+binder 11805:11805 <> g:100
+R11834:11840 SphereClassification.Manifold <> sm_type proj
+R11842:11842 SphereClassification.RiemannTensor <> M:99 var
+binder 11830:11830 <> p:101
+R11871:11874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11850:11868 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R11870:11870 SphereClassification.RiemannTensor <> M:99 var
+R11896:11899 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11875:11893 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R11895:11895 SphereClassification.RiemannTensor <> M:99 var
+R11900:11900 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11911:11911 <> M:102
+binder 11913:11913 <> g:103
+binder 11915:11915 <> p:104
+binder 11917:11917 <> u:105
+binder 11919:11919 <> v:106
+R11952:11961 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R12072:12072 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R11928:11937 SphereClassification.RiemannTensor <> riemann_04 def
+R11939:11939 SphereClassification.RiemannTensor <> M:102 var
+R11941:11941 SphereClassification.RiemannTensor <> g:103 var
+R11943:11943 SphereClassification.RiemannTensor <> p:104 var
+R11945:11945 SphereClassification.RiemannTensor <> u:105 var
+R11947:11947 SphereClassification.RiemannTensor <> v:106 var
+R11949:11949 SphereClassification.RiemannTensor <> u:105 var
+R11951:11951 SphereClassification.RiemannTensor <> v:106 var
+R12011:12022 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R11985:11987 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R11962:11974 SphereClassification.RiemannMetric <> metric_tensor proj
+R11976:11976 SphereClassification.RiemannTensor <> M:102 var
+R11978:11978 SphereClassification.RiemannTensor <> g:103 var
+R11980:11980 SphereClassification.RiemannTensor <> p:104 var
+R11982:11982 SphereClassification.RiemannTensor <> u:105 var
+R11984:11984 SphereClassification.RiemannTensor <> u:105 var
+R11988:12000 SphereClassification.RiemannMetric <> metric_tensor proj
+R12002:12002 SphereClassification.RiemannTensor <> M:102 var
+R12004:12004 SphereClassification.RiemannTensor <> g:103 var
+R12006:12006 SphereClassification.RiemannTensor <> p:104 var
+R12008:12008 SphereClassification.RiemannTensor <> v:106 var
+R12010:12010 SphereClassification.RiemannTensor <> v:106 var
+R12046:12048 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12023:12035 SphereClassification.RiemannMetric <> metric_tensor proj
+R12037:12037 SphereClassification.RiemannTensor <> M:102 var
+R12039:12039 SphereClassification.RiemannTensor <> g:103 var
+R12041:12041 SphereClassification.RiemannTensor <> p:104 var
+R12043:12043 SphereClassification.RiemannTensor <> u:105 var
+R12045:12045 SphereClassification.RiemannTensor <> v:106 var
+R12049:12061 SphereClassification.RiemannMetric <> metric_tensor proj
+R12063:12063 SphereClassification.RiemannTensor <> M:102 var
+R12065:12065 SphereClassification.RiemannTensor <> g:103 var
+R12067:12067 SphereClassification.RiemannTensor <> p:104 var
+R12069:12069 SphereClassification.RiemannTensor <> u:105 var
+R12071:12071 SphereClassification.RiemannTensor <> v:106 var
+def 12197:12218 <> SectionalCurvature_def
+R12229:12237 SphereClassification.Manifold <> Manifold3 rec
+binder 12225:12225 <> M:107
+R12245:12260 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R12262:12262 SphereClassification.RiemannTensor <> M:107 var
+binder 12241:12241 <> g:108
+R12270:12276 SphereClassification.Manifold <> sm_type proj
+R12278:12278 SphereClassification.RiemannTensor <> M:107 var
+binder 12266:12266 <> p:109
+R12290:12290 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 12286:12286 <> C:110
+R12319:12337 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R12339:12339 SphereClassification.RiemannTensor <> M:107 var
+binder 12313:12313 <> u:111
+binder 12315:12315 <> v:112
+R12501:12555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12494:12496 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R12437:12444 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R12411:12413 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12388:12400 SphereClassification.RiemannMetric <> metric_tensor proj
+R12402:12402 SphereClassification.RiemannTensor <> M:107 var
+R12404:12404 SphereClassification.RiemannTensor <> g:108 var
+R12406:12406 SphereClassification.RiemannTensor <> p:109 var
+R12408:12408 SphereClassification.RiemannTensor <> u:111 var
+R12410:12410 SphereClassification.RiemannTensor <> u:111 var
+R12414:12426 SphereClassification.RiemannMetric <> metric_tensor proj
+R12428:12428 SphereClassification.RiemannTensor <> M:107 var
+R12430:12430 SphereClassification.RiemannTensor <> g:108 var
+R12432:12432 SphereClassification.RiemannTensor <> p:109 var
+R12434:12434 SphereClassification.RiemannTensor <> v:112 var
+R12436:12436 SphereClassification.RiemannTensor <> v:112 var
+R12468:12470 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12445:12457 SphereClassification.RiemannMetric <> metric_tensor proj
+R12459:12459 SphereClassification.RiemannTensor <> M:107 var
+R12461:12461 SphereClassification.RiemannTensor <> g:108 var
+R12463:12463 SphereClassification.RiemannTensor <> p:109 var
+R12465:12465 SphereClassification.RiemannTensor <> u:111 var
+R12467:12467 SphereClassification.RiemannTensor <> v:112 var
+R12471:12483 SphereClassification.RiemannMetric <> metric_tensor proj
+R12485:12485 SphereClassification.RiemannTensor <> M:107 var
+R12487:12487 SphereClassification.RiemannTensor <> g:108 var
+R12489:12489 SphereClassification.RiemannTensor <> p:109 var
+R12491:12491 SphereClassification.RiemannTensor <> u:111 var
+R12493:12493 SphereClassification.RiemannTensor <> v:112 var
+R12590:12593 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R12557:12579 SphereClassification.RiemannTensor <> sectional_curvature_def def
+R12581:12581 SphereClassification.RiemannTensor <> M:107 var
+R12583:12583 SphereClassification.RiemannTensor <> g:108 var
+R12585:12585 SphereClassification.RiemannTensor <> p:109 var
+R12587:12587 SphereClassification.RiemannTensor <> u:111 var
+R12589:12589 SphereClassification.RiemannTensor <> v:112 var
+R12594:12594 SphereClassification.RiemannTensor <> C:110 var
+def 12994:13018 <> sectional_curvature_alias
+R13029:13037 SphereClassification.Manifold <> Manifold3 rec
+binder 13025:13025 <> M:113
+R13045:13060 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R13062:13062 SphereClassification.RiemannTensor <> M:113 var
+binder 13041:13041 <> g:114
+R13070:13076 SphereClassification.Manifold <> sm_type proj
+R13078:13078 SphereClassification.RiemannTensor <> M:113 var
+binder 13066:13066 <> p:115
+R13092:13110 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R13112:13112 SphereClassification.RiemannTensor <> M:113 var
+binder 13086:13086 <> u:116
+binder 13088:13088 <> v:117
+R13117:13117 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R13124:13146 SphereClassification.RiemannTensor <> sectional_curvature_def def
+R13148:13148 SphereClassification.RiemannTensor <> M:113 var
+R13150:13150 SphereClassification.RiemannTensor <> g:114 var
+R13152:13152 SphereClassification.RiemannTensor <> p:115 var
+R13154:13154 SphereClassification.RiemannTensor <> u:116 var
+R13156:13156 SphereClassification.RiemannTensor <> v:117 var

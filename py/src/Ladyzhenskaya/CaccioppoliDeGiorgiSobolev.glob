@@ -1,0 +1,296 @@
+DIGEST f96b0f28d9c0bd46c94a01a412628416
+FLadyzhenskaya.CaccioppoliDeGiorgiSobolev
+R406:419 Corelib.Init.Logic <> <> lib
+R437:441 Stdlib.Reals.Reals <> <> lib
+R459:472 Stdlib.Logic.Classical_Prop <> <> lib
+R490:513 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R531:539 Stdlib.Logic.Classical <> <> lib
+R579:603 Ladyzhenskaya.HolderSpace <> <> lib
+R621:645 Ladyzhenskaya.Derivatives <> <> lib
+R663:697 Ladyzhenskaya.ParabolicCoefficients <> <> lib
+ax 1686:1707 <> caccioppoli_inequality
+R1725:1741 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 1721:1721 <> Q:1
+R1750:1766 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 1745:1746 <> Q':2
+R1800:1803 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1783:1799 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R1804:1804 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1779:1779 <> u:3
+R1812:1812 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1808:1808 <> C:4
+R1942:1945 Corelib.Init.Logic <> True ind
+ax 2107:2137 <> caccioppoli_inequality_explicit
+R2155:2157 Corelib.Init.Datatypes <> nat ind
+binder 2151:2151 <> n:7
+R2170:2170 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2161:2166 <> Lambda:8
+R2179:2179 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2174:2175 <> nu:9
+R2192:2192 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2183:2188 <> radius:10
+R2202:2202 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2196:2198 <> tau:11
+R2236:2239 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2219:2235 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2240:2240 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2215:2215 <> u:12
+R2251:2267 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 2244:2244 <> Q:13
+binder 2246:2247 <> Q':14
+R2480:2483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2468:2470 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2471:2476 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> radius:10 var
+R2495:2610 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2486:2488 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2489:2491 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> tau:11 var
+R2611:2614 Corelib.Init.Logic <> True ind
+rec 3561:3576 <> DeGiorgiSequence
+proj 3585:3588 <> dg_Y
+proj 3656:3659 <> dg_C
+proj 3710:3713 <> dg_b
+proj 3765:3772 <> dg_alpha
+R3595:3598 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3592:3594 Corelib.Init.Datatypes <> nat ind
+R3599:3599 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3663:3663 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3717:3717 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3776:3776 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 3905:3934 <> de_giorgi_iteration_inequality
+R3953:3968 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 3948:3949 <> dg:22
+R3976:3978 Corelib.Init.Datatypes <> nat ind
+binder 3972:3972 <> k:23
+R4000:4003 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3985:3988 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R3990:3991 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:22 var
+R3995:3997 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R3994:3994 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:23 var
+R4038:4040 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4011:4013 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4004:4007 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4009:4010 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:22 var
+R4014:4019 Stdlib.Reals.Rpower <> Rpower def
+R4022:4025 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4027:4028 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:22 var
+R4032:4034 Stdlib.Reals.Raxioms <> INR def
+R4036:4036 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:23 var
+R4041:4046 Stdlib.Reals.Rpower <> Rpower def
+R4049:4052 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4054:4055 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:22 var
+R4057:4057 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:23 var
+R4062:4064 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R4065:4072 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4074:4075 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:22 var
+ax 4175:4189 <> de_giorgi_lemma
+R4208:4223 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 4203:4204 <> dg:26
+R4248:4251 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4231:4233 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4234:4241 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4243:4244 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4267:4270 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4254:4256 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4257:4260 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4262:4263 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4286:4349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4273:4275 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4276:4279 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4281:4282 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4460:4491 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4360:4363 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R4351:4354 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4356:4357 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4403:4405 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4364:4369 Stdlib.Reals.Rpower <> Rpower def
+R4373:4375 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4376:4379 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_C proj
+R4381:4382 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4388:4390 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4391:4398 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4400:4401 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4406:4411 Stdlib.Reals.Rpower <> Rpower def
+R4414:4417 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_b proj
+R4419:4420 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4426:4429 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4455:4455 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4441:4443 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4430:4437 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4439:4440 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4444:4451 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_alpha proj
+R4453:4454 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4505:4505 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4499:4501 <> eps:27
+R4515:4518 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4511:4513 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4508:4510 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> eps:27 var
+R4519:4525 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4533:4534 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4530:4532 Corelib.Init.Datatypes <> nat ind
+binder 4526:4526 <> K:28
+R4546:4548 Corelib.Init.Datatypes <> nat ind
+binder 4542:4542 <> k:29
+R4563:4566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4553:4556 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R4552:4552 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:29 var
+R4557:4557 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> K:28 var
+R4576:4578 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4567:4570 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R4572:4573 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:26 var
+R4575:4575 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:29 var
+R4579:4581 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> eps:27 var
+ax 4661:4679 <> de_giorgi_level_set
+R4714:4717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4697:4713 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4718:4718 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4693:4693 <> u:32
+R4732:4732 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4722:4722 <> M:33
+binder 4724:4728 <> omega:34
+R4740:4742 Corelib.Init.Datatypes <> nat ind
+binder 4736:4736 <> k:35
+R4765:4768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4748:4764 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+ax 4820:4846 <> de_giorgi_level_set_measure
+R4881:4884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4864:4880 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4885:4885 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4860:4860 <> u:38
+R4899:4899 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4889:4889 <> M:39
+binder 4891:4895 <> omega:40
+R4907:4909 Corelib.Init.Datatypes <> nat ind
+binder 4903:4903 <> k:41
+R4915:4915 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 4970:4999 <> de_giorgi_level_set_decreasing
+R5034:5037 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5017:5033 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5038:5038 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5013:5013 <> u:44
+R5052:5052 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5042:5042 <> M:45
+binder 5044:5048 <> omega:46
+R5060:5062 Corelib.Init.Datatypes <> nat ind
+binder 5056:5056 <> k:47
+binder 5075:5075 <> x:48
+R5117:5120 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5078:5096 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set defax
+R5098:5098 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> u:44 var
+R5100:5100 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> M:45 var
+R5102:5106 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> omega:46 var
+R5110:5112 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R5109:5109 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:47 var
+R5116:5116 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> x:48 var
+R5121:5139 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set defax
+R5141:5141 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> u:44 var
+R5143:5143 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> M:45 var
+R5145:5149 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> omega:46 var
+R5151:5151 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:47 var
+R5153:5153 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> x:48 var
+ax 5217:5245 <> de_giorgi_level_set_iteration
+R5280:5283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5263:5279 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5284:5284 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5259:5259 <> u:51
+R5298:5298 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5288:5288 <> M:52
+binder 5290:5294 <> omega:53
+R5304:5311 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5333:5339 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5317:5332 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> DeGiorgiSequence rec
+binder 5312:5313 <> dg:54
+binder 5347:5347 <> k:55
+R5359:5361 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5350:5353 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg_Y proj
+R5355:5356 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> dg:54 var
+R5358:5358 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:55 var
+R5362:5388 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> de_giorgi_level_set_measure defax
+R5390:5390 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> u:51 var
+R5392:5392 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> M:52 var
+R5394:5398 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> omega:53 var
+R5400:5400 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> k:55 var
+rec 6183:6194 <> SobolevSpace
+proj 6211:6217 <> sw_type
+proj 6229:6239 <> sw_function
+proj 6259:6271 <> sw_weak_deriv
+proj 6291:6300 <> sw_Lp_norm
+proj 6309:6324 <> sw_deriv_Lp_norm
+R6201:6201 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6197:6197 <> p:58
+R6250:6253 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6243:6249 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> sw_type:60 meth
+R6254:6254 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6282:6285 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6275:6281 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> sw_type:60 meth
+R6286:6286 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6304:6304 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6328:6328 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 6371:6396 <> sobolev_embedding_constant
+R6414:6416 Corelib.Init.Datatypes <> nat ind
+binder 6410:6410 <> n:65
+R6424:6424 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6420:6420 <> p:66
+R6428:6428 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 6508:6535 <> sobolev_embedding_inequality
+R6553:6555 Corelib.Init.Datatypes <> nat ind
+binder 6549:6549 <> n:69
+R6563:6563 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6559:6559 <> p:70
+binder 6567:6571 <> Omega:71
+R6591:6594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6586:6590 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> Omega:71 var
+R6595:6595 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6582:6582 <> u:72
+R6744:6747 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6736:6739 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R6740:6740 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> p:70 var
+R6761:6826 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6750:6752 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6749:6749 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> p:70 var
+R6753:6755 Stdlib.Reals.Raxioms <> INR def
+R6757:6757 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> n:69 var
+R6827:6830 Corelib.Init.Logic <> True ind
+def 6872:6888 <> sobolev_conjugate
+R6895:6897 Corelib.Init.Datatypes <> nat ind
+binder 6891:6891 <> n:75
+R6905:6905 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6901:6901 <> p:76
+R6910:6910 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R6917:6917 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6927:6931 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6941:6941 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R6923:6925 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R6918:6920 Stdlib.Reals.Raxioms <> INR def
+R6922:6922 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> n:75 var
+R6926:6926 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> p:76 var
+R6937:6939 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R6932:6934 Stdlib.Reals.Raxioms <> INR def
+R6936:6936 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> n:75 var
+R6940:6940 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> p:76 var
+ax 7071:7097 <> parabolic_sobolev_embedding
+R7115:7117 Corelib.Init.Datatypes <> nat ind
+binder 7111:7111 <> n:77
+R7125:7125 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7121:7121 <> T:78
+binder 7129:7133 <> Omega:79
+R7165:7168 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7148:7164 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7169:7169 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7144:7144 <> u:80
+R7250:7349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7243:7245 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R7246:7246 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> T:78 var
+R7350:7353 Corelib.Init.Logic <> True ind
+def 7396:7421 <> parabolic_sobolev_exponent
+R7428:7430 Corelib.Init.Datatypes <> nat ind
+binder 7424:7424 <> n:83
+R7435:7435 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7442:7442 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7458:7461 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7444:7447 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7457:7457 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7453:7455 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R7448:7450 Stdlib.Reals.Raxioms <> INR def
+R7452:7452 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> n:83 var
+R7462:7464 Stdlib.Reals.Raxioms <> INR def
+R7466:7466 Ladyzhenskaya.CaccioppoliDeGiorgiSobolev <> n:83 var

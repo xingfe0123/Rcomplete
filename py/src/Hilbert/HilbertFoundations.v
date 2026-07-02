@@ -1,0 +1,65 @@
+(* ============================================================================ *)
+(*  HilbertFoundations.v                                                       *)
+(*  Tier-5 汇合模块: 汇合引用所有公理文件 + QED Lemma, 零 Axiom                    *)
+(*                                                                            *)
+(*  导出:                                                                     *)
+(*    Common              基本对象/关系 (Point, Line, Plane, Incid, Bet, ...)    *)
+(*    Types               Ray, Angle, OnRay 类型                                *)
+(*    IncidenceAxioms     8 条 I 组 Axiom + 10 个 QED + LineInPlane 定义        *)
+(*    OrderAxioms         5 条 II 组 Axiom + 6 个 QED (含 Theorem 3)            *)
+(*    CongruenceAxioms    5 条 III 组 Axiom + 2 个 Parameters                   *)
+(*                         + theorem_11 (等腰底角相等, admit 占位)            *)
+(*                         + theorem_12 (ASA 全等, admit 占位)                *)
+(*                         + theorem_14 (邻补角合同, admit 占位)              *)
+(*                         + theorem_15 (角加/减法, admit 占位)                *)
+(*                         + theorem_19 (过直线上一点垂线, admit 占位)        *)
+(*                         + theorem_20 (过直线外一点垂线, admit 占位)        *)
+(*                         + theorem_21 (直角三角形斜边大于直角边, admit)     *)
+(*                         + theorem_22 (外角定理, admit)                     *)
+(*                         + theorem_23 (垂线段最短, admit)                   *)
+(*                         + theorem_24 (中垂线定理, admit)                   *)
+(*                         + theorem_25 (中垂线逆定理, admit)                 *)
+(*                         + theorem_26 (外心定理, admit)                     *)
+(*                         + theorem_27 (内心定理, admit)                     *)
+(*                         + theorem_28 (平行判定定理, admit)                 *)
+(*                         + theorem_29 (三角形内角和定理, admit)             *)
+(*                         + theorem_30 (平行四边形对边相等, admit)           *)
+(*                         + theorem_31 (平行四边形对角线互相平分, admit)    *)
+(*                         + theorem_32 (SSS 全等定理, admit)                *)
+(*                         + theorem_33 (线段中点存在唯一性, admit)           *)
+(*                         + theorem_34 (等角对等边, admit)                   *)
+(*                         + theorem_35 (SAS 全等定理, admit)                 *)
+(*                         + theorem_36 (等腰三角形中线垂直底边, admit)        *)
+(*                         + theorem_37 (角合同传递性, admit)                  *)
+(*                         + theorem_38 (外角定理, admit)                      *)
+(*                         + theorem_39 (直角三角形斜边中线定理, admit)         *)
+(*    ParallelAxioms      3 条 IV 组 Axiom + Parallel_sym Lemma                 *)
+(*    ContinuityAxioms    2 条 V 组 Axiom + Segment/DedekindCut Records        *)
+(*                         + theorem_9 (平面分空间, admit 占位)               *)
+(*    DesarguesTheorem    德沙格定理 + 逆定理 (admit 占位)                       *)
+(*    PascalTheorem       巴斯噶定理 + 退化形式 (admit 占位)                     *)
+(*    IV_Independence     平行公理独立性证明 (球面模型, admit 占位)               *)
+(* ============================================================================ *)
+
+From Hilbert Require Export Common.
+From Hilbert Require Export Types.
+From Hilbert Require Export IncidenceAxioms.
+From Hilbert Require Export OrderAxioms.
+From Hilbert Require Export CongruenceAxioms.
+From Hilbert Require Export ParallelAxioms.
+From Hilbert Require Export ContinuityAxioms.
+From Hilbert Require Export DesarguesTheorem.
+From Hilbert Require Export PascalTheorem.
+From Hilbert Require Export IV_Independence.
+
+(* ============================================================================ *)
+(*  Tier-5 统计:                                                                *)
+(*    文件数:    11 (Common + Types + 5 公理文件 + HilbertFoundations + Desargues + Pascal + IV_Indep) *)
+(*    Axioms:    23 (I:8 + II:5 + III:5 + IV:3 + V:2)                            *)
+(*               + 2 (line_through_prop_ax × 2)                                  *)
+(*    Parameters: 3 (Common: Point/Line/Plane) + 6 (Incid/IncidPlane/...)         *)
+(*               + 2 (line_through × 2)                                          *)
+(*    QED Theorem: 25 (I:10 + II:9 + III:0 + IV:1 + V:0 + Desargues:1 + Pascal:1 + IV_Indep:3) *)
+(*    Theorem (admit): 37 (Order:3 + Congruence:25 + Continuity:1 + Desargues:2 + Pascal:2 + IV_Indep:4) *)
+(*    QED (完整):    IV_1_fails_on_sphere, IV_2_fails_on_sphere, IV_3_fails_on_sphere *)
+(* ============================================================================ *)

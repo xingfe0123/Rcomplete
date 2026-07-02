@@ -1,0 +1,79 @@
+DIGEST c5a44b3a5ba340b0d1733d6c97aebca9
+FHilbert.Common
+R1611:1619 Stdlib.Logic.Classical <> <> lib
+ax 1886:1890 <> Point
+ax 1910:1913 <> Line
+ax 1934:1938 <> Plane
+ax 2224:2228 <> Incid
+R2244:2247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2239:2243 Hilbert.Common <> Point defax
+R2252:2256 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2248:2251 Hilbert.Common <> Line defax
+ax 2309:2318 <> IncidPlane
+R2329:2332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2324:2328 Hilbert.Common <> Point defax
+R2338:2341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2333:2337 Hilbert.Common <> Plane defax
+ax 2654:2656 <> Bet
+R2665:2668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2660:2664 Hilbert.Common <> Point defax
+R2674:2677 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2669:2673 Hilbert.Common <> Point defax
+R2683:2686 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2678:2682 Hilbert.Common <> Point defax
+ax 2964:2971 <> Parallel
+R2979:2982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2975:2978 Hilbert.Common <> Line defax
+R2987:2990 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2983:2986 Hilbert.Common <> Line defax
+ax 3729:3736 <> SameSide
+R3749:3753 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3745:3748 Hilbert.Common <> Line defax
+R3759:3762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3754:3758 Hilbert.Common <> Point defax
+R3768:3771 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3763:3767 Hilbert.Common <> Point defax
+ax 3788:3800 <> SameSideAngle
+R3808:3812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3804:3807 Hilbert.Common <> Line defax
+R3817:3821 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3813:3816 Hilbert.Common <> Line defax
+R3827:3830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3822:3826 Hilbert.Common <> Point defax
+def 4112:4119 <> distinct
+R4128:4132 Hilbert.Common <> Point defax
+binder 4122:4122 <> A:19
+binder 4124:4124 <> B:20
+R4146:4149 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4145:4145 Hilbert.Common <> A:19 var
+R4150:4150 Hilbert.Common <> B:20 var
+def 4164:4170 <> on_line
+R4177:4181 Hilbert.Common <> Point defax
+binder 4173:4173 <> P:21
+R4189:4192 Hilbert.Common <> Line defax
+binder 4185:4185 <> l:22
+R4205:4209 Hilbert.Common <> Incid defax
+R4211:4211 Hilbert.Common <> P:21 var
+R4213:4213 Hilbert.Common <> l:22 var
+def 4227:4234 <> on_plane
+R4241:4245 Hilbert.Common <> Point defax
+binder 4237:4237 <> P:23
+R4257:4261 Hilbert.Common <> Plane defax
+binder 4249:4253 <> alpha:24
+R4274:4283 Hilbert.Common <> IncidPlane defax
+R4285:4285 Hilbert.Common <> P:23 var
+R4287:4291 Hilbert.Common <> alpha:24 var
+def 4503:4517 <> ParallelThrough
+R4524:4528 Hilbert.Common <> Point defax
+binder 4520:4520 <> P:25
+R4536:4539 Hilbert.Common <> Line defax
+binder 4532:4532 <> a:26
+R4547:4550 Hilbert.Common <> Line defax
+binder 4543:4543 <> b:27
+R4574:4577 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4565:4569 Hilbert.Common <> Incid defax
+R4571:4571 Hilbert.Common <> P:25 var
+R4573:4573 Hilbert.Common <> b:27 var
+R4578:4585 Hilbert.Common <> Parallel defax
+R4587:4587 Hilbert.Common <> a:26 var
+R4589:4589 Hilbert.Common <> b:27 var

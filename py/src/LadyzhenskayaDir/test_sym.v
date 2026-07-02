@@ -1,1 +1,0 @@
-Check eq_sym.

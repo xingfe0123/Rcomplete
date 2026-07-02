@@ -1,4 +1,0 @@
-
-
-Theorem Xh : forall x1 d, 
-    (x1 / d)^2 = x1^2 / d^2.

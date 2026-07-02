@@ -1,0 +1,506 @@
+DIGEST bc1d398f3bb04ed98acbcb773cf03f5b
+FHilbert.IncidenceAxioms
+R2270:2278 Stdlib.Logic.Classical <> <> lib
+R2309:2314 Hilbert.Common <> <> lib
+R2316:2331 Hilbert.HilbertStructure <> <> lib
+def 2612:2622 <> LineInPlane
+R2629:2646 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 2625:2625 <> I:1
+R2654:2660 Hilbert.HilbertStructure <> IncLine proj
+R2662:2662 Hilbert.IncidenceAxioms <> I:1 var
+binder 2650:2650 <> l:2
+R2674:2681 Hilbert.HilbertStructure <> IncPlane proj
+R2683:2683 Hilbert.IncidenceAxioms <> I:1 var
+binder 2666:2670 <> alpha:3
+R2709:2716 Hilbert.HilbertStructure <> IncPoint proj
+R2718:2718 Hilbert.IncidenceAxioms <> I:1 var
+binder 2705:2705 <> X:4
+R2732:2735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2721:2725 Hilbert.HilbertStructure <> Incid proj
+R2727:2727 Hilbert.IncidenceAxioms <> I:1 var
+R2729:2729 Hilbert.IncidenceAxioms <> X:4 var
+R2731:2731 Hilbert.IncidenceAxioms <> l:2 var
+R2736:2745 Hilbert.HilbertStructure <> IncidPlane proj
+R2747:2747 Hilbert.IncidenceAxioms <> I:1 var
+R2749:2749 Hilbert.IncidenceAxioms <> X:4 var
+R2751:2755 Hilbert.IncidenceAxioms <> alpha:3 var
+prf 3425:3434 <> theorem_1a
+R3450:3467 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 3446:3446 <> I:5
+R3477:3483 Hilbert.HilbertStructure <> IncLine proj
+R3485:3485 Hilbert.IncidenceAxioms <> I:5 var
+binder 3471:3471 <> a:6
+binder 3473:3473 <> b:7
+R3497:3504 Hilbert.HilbertStructure <> IncPlane proj
+R3506:3506 Hilbert.IncidenceAxioms <> I:5 var
+binder 3489:3493 <> alpha:8
+R3533:3536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3512:3522 Hilbert.IncidenceAxioms <> LineInPlane def
+R3524:3524 Hilbert.IncidenceAxioms <> I:5 var
+R3526:3526 Hilbert.IncidenceAxioms <> a:6 var
+R3528:3532 Hilbert.IncidenceAxioms <> alpha:8 var
+R3558:3561 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3537:3547 Hilbert.IncidenceAxioms <> LineInPlane def
+R3549:3549 Hilbert.IncidenceAxioms <> I:5 var
+R3551:3551 Hilbert.IncidenceAxioms <> b:7 var
+R3553:3557 Hilbert.IncidenceAxioms <> alpha:8 var
+R3568:3573 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3563:3566 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3562:3562 Hilbert.IncidenceAxioms <> a:6 var
+R3567:3567 Hilbert.IncidenceAxioms <> b:7 var
+R3574:3574 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3625:3632 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3684:3684 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R3575:3582 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R3597:3598 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R3587:3594 Hilbert.HilbertStructure <> IncPoint proj
+R3596:3596 Hilbert.IncidenceAxioms <> I:5 var
+binder 3583:3583 <> P:9
+R3610:3613 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3599:3603 Hilbert.HilbertStructure <> Incid proj
+R3605:3605 Hilbert.IncidenceAxioms <> I:5 var
+R3607:3607 Hilbert.IncidenceAxioms <> P:9 var
+R3609:3609 Hilbert.IncidenceAxioms <> a:6 var
+R3614:3618 Hilbert.HilbertStructure <> Incid proj
+R3620:3620 Hilbert.IncidenceAxioms <> I:5 var
+R3622:3622 Hilbert.IncidenceAxioms <> P:9 var
+R3624:3624 Hilbert.IncidenceAxioms <> b:7 var
+R3633:3634 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3635:3641 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3656:3657 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3646:3653 Hilbert.HilbertStructure <> IncPoint proj
+R3655:3655 Hilbert.IncidenceAxioms <> I:5 var
+binder 3642:3642 <> P:10
+R3669:3672 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3658:3662 Hilbert.HilbertStructure <> Incid proj
+R3664:3664 Hilbert.IncidenceAxioms <> I:5 var
+R3666:3666 Hilbert.IncidenceAxioms <> P:10 var
+R3668:3668 Hilbert.IncidenceAxioms <> a:6 var
+R3673:3677 Hilbert.HilbertStructure <> Incid proj
+R3679:3679 Hilbert.IncidenceAxioms <> I:5 var
+R3681:3681 Hilbert.IncidenceAxioms <> P:10 var
+R3683:3683 Hilbert.IncidenceAxioms <> b:7 var
+R3739:3745 Stdlib.Logic.Classical_Prop <> classic prfax
+R3748:3754 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3769:3770 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3759:3766 Hilbert.HilbertStructure <> IncPoint proj
+binder 3755:3755 <> P:11
+R3782:3785 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3771:3775 Hilbert.HilbertStructure <> Incid proj
+R3779:3779 Hilbert.IncidenceAxioms <> P:11 var
+R3786:3790 Hilbert.HilbertStructure <> Incid proj
+R3794:3794 Hilbert.IncidenceAxioms <> P:11 var
+R3739:3745 Stdlib.Logic.Classical_Prop <> classic prfax
+R3748:3754 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3769:3770 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3759:3766 Hilbert.HilbertStructure <> IncPoint proj
+binder 3755:3755 <> P:12
+R3782:3785 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3771:3775 Hilbert.HilbertStructure <> Incid proj
+R3779:3779 Hilbert.IncidenceAxioms <> P:12 var
+R3786:3790 Hilbert.HilbertStructure <> Incid proj
+R3794:3794 Hilbert.IncidenceAxioms <> P:12 var
+R3897:3900 Corelib.Init.Logic <> conj constr
+R3897:3900 Corelib.Init.Logic <> conj constr
+R3954:3960 Stdlib.Logic.Classical_Prop <> classic prfax
+R3964:3966 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3954:3960 Stdlib.Logic.Classical_Prop <> classic prfax
+R3964:3966 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4042:4043 Hilbert.HilbertStructure <> I2 proj
+R4056:4059 Corelib.Init.Logic <> conj constr
+R4066:4069 Corelib.Init.Logic <> conj constr
+R4076:4079 Corelib.Init.Logic <> conj constr
+R4042:4043 Hilbert.HilbertStructure <> I2 proj
+R4056:4059 Corelib.Init.Logic <> conj constr
+R4066:4069 Corelib.Init.Logic <> conj constr
+R4076:4079 Corelib.Init.Logic <> conj constr
+prf 4613:4622 <> theorem_1b
+R4638:4655 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 4634:4634 <> I:13
+R4672:4679 Hilbert.HilbertStructure <> IncPlane proj
+R4681:4681 Hilbert.IncidenceAxioms <> I:13 var
+binder 4659:4663 <> alpha:14
+binder 4665:4668 <> beta:15
+R4687:4687 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4754:4760 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4688:4694 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4709:4710 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4699:4706 Hilbert.HilbertStructure <> IncPoint proj
+R4708:4708 Hilbert.IncidenceAxioms <> I:13 var
+binder 4695:4695 <> P:16
+R4731:4734 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4711:4720 Hilbert.HilbertStructure <> IncidPlane proj
+R4722:4722 Hilbert.IncidenceAxioms <> I:13 var
+R4724:4724 Hilbert.IncidenceAxioms <> P:16 var
+R4726:4730 Hilbert.IncidenceAxioms <> alpha:14 var
+R4735:4744 Hilbert.HilbertStructure <> IncidPlane proj
+R4746:4746 Hilbert.IncidenceAxioms <> I:13 var
+R4748:4748 Hilbert.IncidenceAxioms <> P:16 var
+R4750:4753 Hilbert.IncidenceAxioms <> beta:15 var
+R4761:4767 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4781:4782 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4772:4778 Hilbert.HilbertStructure <> IncLine proj
+R4780:4780 Hilbert.IncidenceAxioms <> I:13 var
+binder 4768:4768 <> l:17
+R4804:4807 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4783:4793 Hilbert.IncidenceAxioms <> LineInPlane def
+R4795:4795 Hilbert.IncidenceAxioms <> I:13 var
+R4797:4797 Hilbert.IncidenceAxioms <> l:17 var
+R4799:4803 Hilbert.IncidenceAxioms <> alpha:14 var
+R4808:4818 Hilbert.IncidenceAxioms <> LineInPlane def
+R4820:4820 Hilbert.IncidenceAxioms <> I:13 var
+R4822:4822 Hilbert.IncidenceAxioms <> l:17 var
+R4824:4827 Hilbert.IncidenceAxioms <> beta:15 var
+R4893:4894 Hilbert.HilbertStructure <> I7 proj
+R4912:4915 Corelib.Init.Logic <> conj constr
+R4893:4894 Hilbert.HilbertStructure <> I7 proj
+R4912:4915 Corelib.Init.Logic <> conj constr
+R4978:4979 Hilbert.HilbertStructure <> I1 proj
+R4978:4979 Hilbert.HilbertStructure <> I1 proj
+R5028:5038 Hilbert.IncidenceAxioms <> LineInPlane def
+R5028:5038 Hilbert.IncidenceAxioms <> LineInPlane def
+R5063:5073 Hilbert.IncidenceAxioms <> LineInPlane def
+R5100:5101 Hilbert.HilbertStructure <> I5 proj
+R5100:5101 Hilbert.HilbertStructure <> I5 proj
+R5171:5181 Hilbert.IncidenceAxioms <> LineInPlane def
+R5171:5181 Hilbert.IncidenceAxioms <> LineInPlane def
+R5205:5215 Hilbert.IncidenceAxioms <> LineInPlane def
+R5242:5243 Hilbert.HilbertStructure <> I5 proj
+R5242:5243 Hilbert.HilbertStructure <> I5 proj
+R5298:5305 Corelib.Init.Logic <> ex_intro constr
+R5312:5315 Corelib.Init.Logic <> conj constr
+R5298:5305 Corelib.Init.Logic <> ex_intro constr
+R5312:5315 Corelib.Init.Logic <> conj constr
+prf 5757:5766 <> theorem_1c
+R5782:5799 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 5778:5778 <> I:18
+R5807:5813 Hilbert.HilbertStructure <> IncLine proj
+R5815:5815 Hilbert.IncidenceAxioms <> I:18 var
+binder 5803:5803 <> a:19
+R5827:5834 Hilbert.HilbertStructure <> IncPlane proj
+R5836:5836 Hilbert.IncidenceAxioms <> I:18 var
+binder 5819:5823 <> alpha:20
+R5865:5870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5842:5843 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5844:5854 Hilbert.IncidenceAxioms <> LineInPlane def
+R5856:5856 Hilbert.IncidenceAxioms <> I:18 var
+R5858:5858 Hilbert.IncidenceAxioms <> a:19 var
+R5860:5864 Hilbert.IncidenceAxioms <> alpha:20 var
+R5871:5871 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R5931:5938 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R5999:5999 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R5872:5879 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R5894:5895 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R5884:5891 Hilbert.HilbertStructure <> IncPoint proj
+R5893:5893 Hilbert.IncidenceAxioms <> I:18 var
+binder 5880:5880 <> P:21
+R5907:5910 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5896:5900 Hilbert.HilbertStructure <> Incid proj
+R5902:5902 Hilbert.IncidenceAxioms <> I:18 var
+R5904:5904 Hilbert.IncidenceAxioms <> P:21 var
+R5906:5906 Hilbert.IncidenceAxioms <> a:19 var
+R5911:5920 Hilbert.HilbertStructure <> IncidPlane proj
+R5922:5922 Hilbert.IncidenceAxioms <> I:18 var
+R5924:5924 Hilbert.IncidenceAxioms <> P:21 var
+R5926:5930 Hilbert.IncidenceAxioms <> alpha:20 var
+R5939:5940 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5941:5947 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5962:5963 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5952:5959 Hilbert.HilbertStructure <> IncPoint proj
+R5961:5961 Hilbert.IncidenceAxioms <> I:18 var
+binder 5948:5948 <> P:22
+R5975:5978 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5964:5968 Hilbert.HilbertStructure <> Incid proj
+R5970:5970 Hilbert.IncidenceAxioms <> I:18 var
+R5972:5972 Hilbert.IncidenceAxioms <> P:22 var
+R5974:5974 Hilbert.IncidenceAxioms <> a:19 var
+R5979:5988 Hilbert.HilbertStructure <> IncidPlane proj
+R5990:5990 Hilbert.IncidenceAxioms <> I:18 var
+R5992:5992 Hilbert.IncidenceAxioms <> P:22 var
+R5994:5998 Hilbert.IncidenceAxioms <> alpha:20 var
+R6048:6054 Stdlib.Logic.Classical_Prop <> classic prfax
+R6057:6063 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6078:6079 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6068:6075 Hilbert.HilbertStructure <> IncPoint proj
+binder 6064:6064 <> P:23
+R6091:6094 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6080:6084 Hilbert.HilbertStructure <> Incid proj
+R6088:6088 Hilbert.IncidenceAxioms <> P:23 var
+R6095:6104 Hilbert.HilbertStructure <> IncidPlane proj
+R6108:6108 Hilbert.IncidenceAxioms <> P:23 var
+R6048:6054 Stdlib.Logic.Classical_Prop <> classic prfax
+R6057:6063 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6078:6079 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6068:6075 Hilbert.HilbertStructure <> IncPoint proj
+binder 6064:6064 <> P:24
+R6091:6094 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6080:6084 Hilbert.HilbertStructure <> Incid proj
+R6088:6088 Hilbert.IncidenceAxioms <> P:24 var
+R6095:6104 Hilbert.HilbertStructure <> IncidPlane proj
+R6108:6108 Hilbert.IncidenceAxioms <> P:24 var
+R6219:6222 Corelib.Init.Logic <> conj constr
+R6219:6222 Corelib.Init.Logic <> conj constr
+R6284:6290 Stdlib.Logic.Classical_Prop <> classic prfax
+R6294:6296 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6284:6290 Stdlib.Logic.Classical_Prop <> classic prfax
+R6294:6296 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6374:6384 Hilbert.IncidenceAxioms <> LineInPlane def
+R6417:6418 Hilbert.HilbertStructure <> I5 proj
+R6417:6418 Hilbert.HilbertStructure <> I5 proj
+prf 7070:7079 <> theorem_2a
+R7095:7112 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 7091:7091 <> I:25
+R7120:7126 Hilbert.HilbertStructure <> IncLine proj
+R7128:7128 Hilbert.IncidenceAxioms <> I:25 var
+binder 7116:7116 <> l:26
+R7136:7143 Hilbert.HilbertStructure <> IncPoint proj
+R7145:7145 Hilbert.IncidenceAxioms <> I:25 var
+binder 7132:7132 <> P:27
+R7164:7169 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7151:7152 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7153:7157 Hilbert.HilbertStructure <> Incid proj
+R7159:7159 Hilbert.IncidenceAxioms <> I:25 var
+R7161:7161 Hilbert.IncidenceAxioms <> P:27 var
+R7163:7163 Hilbert.IncidenceAxioms <> l:26 var
+R7170:7177 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R7196:7197 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R7186:7193 Hilbert.HilbertStructure <> IncPlane proj
+R7195:7195 Hilbert.IncidenceAxioms <> I:25 var
+binder 7178:7182 <> alpha:28
+R7219:7222 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7198:7208 Hilbert.IncidenceAxioms <> LineInPlane def
+R7210:7210 Hilbert.IncidenceAxioms <> I:25 var
+R7212:7212 Hilbert.IncidenceAxioms <> l:26 var
+R7214:7218 Hilbert.IncidenceAxioms <> alpha:28 var
+R7223:7232 Hilbert.HilbertStructure <> IncidPlane proj
+R7234:7234 Hilbert.IncidenceAxioms <> I:25 var
+R7236:7236 Hilbert.IncidenceAxioms <> P:27 var
+R7238:7242 Hilbert.IncidenceAxioms <> alpha:28 var
+R7337:7338 Hilbert.HilbertStructure <> I3 proj
+R7337:7338 Hilbert.HilbertStructure <> I3 proj
+R7513:7514 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7515:7521 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7535:7536 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7526:7532 Hilbert.HilbertStructure <> IncLine proj
+binder 7522:7522 <> m:29
+R7548:7551 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7537:7541 Hilbert.HilbertStructure <> Incid proj
+R7547:7547 Hilbert.IncidenceAxioms <> m:29 var
+R7563:7566 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7552:7556 Hilbert.HilbertStructure <> Incid proj
+R7562:7562 Hilbert.IncidenceAxioms <> m:29 var
+R7567:7571 Hilbert.HilbertStructure <> Incid proj
+R7577:7577 Hilbert.IncidenceAxioms <> m:29 var
+R7513:7514 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7515:7521 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7535:7536 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7526:7532 Hilbert.HilbertStructure <> IncLine proj
+binder 7522:7522 <> m:30
+R7548:7551 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7537:7541 Hilbert.HilbertStructure <> Incid proj
+R7547:7547 Hilbert.IncidenceAxioms <> m:30 var
+R7563:7566 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7552:7556 Hilbert.HilbertStructure <> Incid proj
+R7562:7562 Hilbert.IncidenceAxioms <> m:30 var
+R7567:7571 Hilbert.HilbertStructure <> Incid proj
+R7577:7577 Hilbert.IncidenceAxioms <> m:30 var
+R7632:7634 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7632:7634 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7652:7653 Hilbert.HilbertStructure <> I2 proj
+R7666:7669 Corelib.Init.Logic <> conj constr
+R7675:7678 Corelib.Init.Logic <> conj constr
+R7684:7687 Corelib.Init.Logic <> conj constr
+R7652:7653 Hilbert.HilbertStructure <> I2 proj
+R7666:7669 Corelib.Init.Logic <> conj constr
+R7675:7678 Corelib.Init.Logic <> conj constr
+R7684:7687 Corelib.Init.Logic <> conj constr
+R7756:7757 Hilbert.HilbertStructure <> I4 proj
+R7756:7757 Hilbert.HilbertStructure <> I4 proj
+R7943:7953 Hilbert.IncidenceAxioms <> LineInPlane def
+R7943:7953 Hilbert.IncidenceAxioms <> LineInPlane def
+R7978:7988 Hilbert.IncidenceAxioms <> LineInPlane def
+R8015:8016 Hilbert.HilbertStructure <> I5 proj
+R8015:8016 Hilbert.HilbertStructure <> I5 proj
+R8097:8100 Corelib.Init.Logic <> conj constr
+R8097:8100 Corelib.Init.Logic <> conj constr
+R8247:8256 Hilbert.HilbertStructure <> IncidPlane proj
+R8247:8256 Hilbert.HilbertStructure <> IncidPlane proj
+R8320:8329 Hilbert.HilbertStructure <> IncidPlane proj
+R8320:8329 Hilbert.HilbertStructure <> IncidPlane proj
+R8393:8396 Corelib.Init.Logic <> conj constr
+R8408:8411 Corelib.Init.Logic <> conj constr
+R8393:8396 Corelib.Init.Logic <> conj constr
+R8408:8411 Corelib.Init.Logic <> conj constr
+prf 9096:9105 <> theorem_2b
+R9121:9138 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 9117:9117 <> I:31
+R9148:9154 Hilbert.HilbertStructure <> IncLine proj
+R9156:9156 Hilbert.IncidenceAxioms <> I:31 var
+binder 9142:9142 <> a:32
+binder 9144:9144 <> b:33
+R9162:9162 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9212:9216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9163:9169 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9184:9185 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9174:9181 Hilbert.HilbertStructure <> IncPoint proj
+R9183:9183 Hilbert.IncidenceAxioms <> I:31 var
+binder 9170:9170 <> P:34
+R9197:9200 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9186:9190 Hilbert.HilbertStructure <> Incid proj
+R9192:9192 Hilbert.IncidenceAxioms <> I:31 var
+R9194:9194 Hilbert.IncidenceAxioms <> P:34 var
+R9196:9196 Hilbert.IncidenceAxioms <> a:32 var
+R9201:9205 Hilbert.HilbertStructure <> Incid proj
+R9207:9207 Hilbert.IncidenceAxioms <> I:31 var
+R9209:9209 Hilbert.IncidenceAxioms <> P:34 var
+R9211:9211 Hilbert.IncidenceAxioms <> b:33 var
+R9223:9228 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9218:9221 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9217:9217 Hilbert.IncidenceAxioms <> a:32 var
+R9222:9222 Hilbert.IncidenceAxioms <> b:33 var
+R9229:9236 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9255:9256 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9245:9252 Hilbert.HilbertStructure <> IncPlane proj
+R9254:9254 Hilbert.IncidenceAxioms <> I:31 var
+binder 9237:9241 <> alpha:35
+R9278:9281 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9257:9267 Hilbert.IncidenceAxioms <> LineInPlane def
+R9269:9269 Hilbert.IncidenceAxioms <> I:31 var
+R9271:9271 Hilbert.IncidenceAxioms <> a:32 var
+R9273:9277 Hilbert.IncidenceAxioms <> alpha:35 var
+R9282:9292 Hilbert.IncidenceAxioms <> LineInPlane def
+R9294:9294 Hilbert.IncidenceAxioms <> I:31 var
+R9296:9296 Hilbert.IncidenceAxioms <> b:33 var
+R9298:9302 Hilbert.IncidenceAxioms <> alpha:35 var
+R9404:9405 Hilbert.HilbertStructure <> I3 proj
+R9404:9405 Hilbert.HilbertStructure <> I3 proj
+R9538:9544 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9559:9560 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9549:9556 Hilbert.HilbertStructure <> IncPoint proj
+binder 9545:9545 <> Q:36
+R9572:9575 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9561:9565 Hilbert.HilbertStructure <> Incid proj
+R9569:9569 Hilbert.IncidenceAxioms <> Q:36 var
+R9577:9580 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9576:9576 Hilbert.IncidenceAxioms <> Q:36 var
+R9538:9544 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9559:9560 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9549:9556 Hilbert.HilbertStructure <> IncPoint proj
+binder 9545:9545 <> Q:37
+R9572:9575 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9561:9565 Hilbert.HilbertStructure <> Incid proj
+R9569:9569 Hilbert.IncidenceAxioms <> Q:37 var
+R9577:9580 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9576:9576 Hilbert.IncidenceAxioms <> Q:37 var
+R9657:9663 Stdlib.Logic.Classical_Prop <> classic prfax
+R9668:9670 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9657:9663 Stdlib.Logic.Classical_Prop <> classic prfax
+R9668:9670 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9709:9715 Stdlib.Logic.Classical_Prop <> classic prfax
+R9720:9722 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9709:9715 Stdlib.Logic.Classical_Prop <> classic prfax
+R9720:9722 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9889:9892 Corelib.Init.Logic <> conj constr
+R9889:9892 Corelib.Init.Logic <> conj constr
+R9929:9932 Corelib.Init.Logic <> conj constr
+R9929:9932 Corelib.Init.Logic <> conj constr
+R10046:10052 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10067:10068 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10057:10064 Hilbert.HilbertStructure <> IncPoint proj
+binder 10053:10053 <> R:38
+R10080:10083 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10069:10073 Hilbert.HilbertStructure <> Incid proj
+R10077:10077 Hilbert.IncidenceAxioms <> R:38 var
+R10085:10088 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10084:10084 Hilbert.IncidenceAxioms <> R:38 var
+R10046:10052 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10067:10068 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10057:10064 Hilbert.HilbertStructure <> IncPoint proj
+binder 10053:10053 <> R:39
+R10080:10083 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10069:10073 Hilbert.HilbertStructure <> Incid proj
+R10077:10077 Hilbert.IncidenceAxioms <> R:39 var
+R10085:10088 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10084:10084 Hilbert.IncidenceAxioms <> R:39 var
+R10165:10171 Stdlib.Logic.Classical_Prop <> classic prfax
+R10176:10178 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10165:10171 Stdlib.Logic.Classical_Prop <> classic prfax
+R10176:10178 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10217:10223 Stdlib.Logic.Classical_Prop <> classic prfax
+R10228:10230 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10217:10223 Stdlib.Logic.Classical_Prop <> classic prfax
+R10228:10230 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10328:10331 Corelib.Init.Logic <> conj constr
+R10328:10331 Corelib.Init.Logic <> conj constr
+R10368:10371 Corelib.Init.Logic <> conj constr
+R10368:10371 Corelib.Init.Logic <> conj constr
+R10522:10523 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R10524:10530 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10544:10545 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10535:10541 Hilbert.HilbertStructure <> IncLine proj
+binder 10531:10531 <> m:40
+R10557:10560 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10546:10550 Hilbert.HilbertStructure <> Incid proj
+R10556:10556 Hilbert.IncidenceAxioms <> m:40 var
+R10572:10575 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10561:10565 Hilbert.HilbertStructure <> Incid proj
+R10571:10571 Hilbert.IncidenceAxioms <> m:40 var
+R10576:10580 Hilbert.HilbertStructure <> Incid proj
+R10586:10586 Hilbert.IncidenceAxioms <> m:40 var
+R10522:10523 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R10524:10530 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10544:10545 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10535:10541 Hilbert.HilbertStructure <> IncLine proj
+binder 10531:10531 <> m:41
+R10557:10560 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10546:10550 Hilbert.HilbertStructure <> Incid proj
+R10556:10556 Hilbert.IncidenceAxioms <> m:41 var
+R10572:10575 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10561:10565 Hilbert.HilbertStructure <> Incid proj
+R10571:10571 Hilbert.IncidenceAxioms <> m:41 var
+R10576:10580 Hilbert.HilbertStructure <> Incid proj
+R10586:10586 Hilbert.IncidenceAxioms <> m:41 var
+R10640:10642 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10640:10642 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10660:10661 Hilbert.HilbertStructure <> I2 proj
+R10674:10677 Corelib.Init.Logic <> conj constr
+R10684:10687 Corelib.Init.Logic <> conj constr
+R10694:10697 Corelib.Init.Logic <> conj constr
+R10660:10661 Hilbert.HilbertStructure <> I2 proj
+R10674:10677 Corelib.Init.Logic <> conj constr
+R10684:10687 Corelib.Init.Logic <> conj constr
+R10694:10697 Corelib.Init.Logic <> conj constr
+R10732:10734 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10732:10734 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10752:10753 Hilbert.HilbertStructure <> I2 proj
+R10766:10769 Corelib.Init.Logic <> conj constr
+R10776:10779 Corelib.Init.Logic <> conj constr
+R10786:10789 Corelib.Init.Logic <> conj constr
+R10752:10753 Hilbert.HilbertStructure <> I2 proj
+R10766:10769 Corelib.Init.Logic <> conj constr
+R10776:10779 Corelib.Init.Logic <> conj constr
+R10786:10789 Corelib.Init.Logic <> conj constr
+R10876:10877 Hilbert.HilbertStructure <> I4 proj
+R10876:10877 Hilbert.HilbertStructure <> I4 proj
+R11065:11075 Hilbert.IncidenceAxioms <> LineInPlane def
+R11065:11075 Hilbert.IncidenceAxioms <> LineInPlane def
+R11100:11110 Hilbert.IncidenceAxioms <> LineInPlane def
+R11137:11138 Hilbert.HilbertStructure <> I5 proj
+R11137:11138 Hilbert.HilbertStructure <> I5 proj
+R11209:11219 Hilbert.IncidenceAxioms <> LineInPlane def
+R11209:11219 Hilbert.IncidenceAxioms <> LineInPlane def
+R11244:11254 Hilbert.IncidenceAxioms <> LineInPlane def
+R11281:11282 Hilbert.HilbertStructure <> I5 proj
+R11281:11282 Hilbert.HilbertStructure <> I5 proj
+R11365:11368 Corelib.Init.Logic <> conj constr
+R11365:11368 Corelib.Init.Logic <> conj constr
+R11456:11465 Hilbert.HilbertStructure <> IncidPlane proj
+R11456:11465 Hilbert.HilbertStructure <> IncidPlane proj
+R11530:11539 Hilbert.HilbertStructure <> IncidPlane proj
+R11530:11539 Hilbert.HilbertStructure <> IncidPlane proj
+R11604:11613 Hilbert.HilbertStructure <> IncidPlane proj
+R11604:11613 Hilbert.HilbertStructure <> IncidPlane proj
+R11680:11683 Corelib.Init.Logic <> conj constr
+R11693:11696 Corelib.Init.Logic <> conj constr
+R11680:11683 Corelib.Init.Logic <> conj constr
+R11693:11696 Corelib.Init.Logic <> conj constr

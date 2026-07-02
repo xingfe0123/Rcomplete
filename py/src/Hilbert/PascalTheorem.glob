@@ -1,0 +1,444 @@
+DIGEST 976c91ff25ae02861ba910f43ff4c7a7
+FHilbert.PascalTheorem
+R1538:1546 Stdlib.Logic.Classical <> <> lib
+R1577:1582 Hilbert.Common <> <> lib
+R1613:1627 Hilbert.IncidenceAxioms <> <> lib
+R1658:1673 Hilbert.CongruenceAxioms <> <> lib
+R1704:1717 Hilbert.ParallelAxioms <> <> lib
+def 2022:2035 <> LinesIntersect
+R2044:2047 Hilbert.Common <> Line defax
+binder 2038:2038 <> a:1
+binder 2040:2040 <> b:2
+R2062:2069 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R2079:2080 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R2074:2078 Hilbert.Common <> Point defax
+binder 2070:2070 <> P:3
+R2090:2093 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2081:2085 Hilbert.Common <> Incid defax
+R2087:2087 Hilbert.PascalTheorem <> P:3 var
+R2089:2089 Hilbert.PascalTheorem <> a:1 var
+R2094:2098 Hilbert.Common <> Incid defax
+R2100:2100 Hilbert.PascalTheorem <> P:3 var
+R2102:2102 Hilbert.PascalTheorem <> b:2 var
+def 2174:2182 <> Collinear
+R2193:2197 Hilbert.Common <> Point defax
+binder 2185:2185 <> A:4
+binder 2187:2187 <> B:5
+binder 2189:2189 <> C:6
+R2212:2218 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2227:2228 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2223:2226 Hilbert.Common <> Line defax
+binder 2219:2219 <> l:7
+R2238:2241 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2229:2233 Hilbert.Common <> Incid defax
+R2235:2235 Hilbert.PascalTheorem <> A:4 var
+R2237:2237 Hilbert.PascalTheorem <> l:7 var
+R2251:2254 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2242:2246 Hilbert.Common <> Incid defax
+R2248:2248 Hilbert.PascalTheorem <> B:5 var
+R2250:2250 Hilbert.PascalTheorem <> l:7 var
+R2255:2259 Hilbert.Common <> Incid defax
+R2261:2261 Hilbert.PascalTheorem <> C:6 var
+R2263:2263 Hilbert.PascalTheorem <> l:7 var
+def 2306:2322 <> IntersectionPoint
+R2331:2334 Hilbert.Common <> Line defax
+binder 2325:2325 <> a:8
+binder 2327:2327 <> b:9
+R2342:2346 Hilbert.Common <> Point defax
+binder 2338:2338 <> P:10
+R2370:2373 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2361:2365 Hilbert.Common <> Incid defax
+R2367:2367 Hilbert.PascalTheorem <> P:10 var
+R2369:2369 Hilbert.PascalTheorem <> a:8 var
+R2374:2378 Hilbert.Common <> Incid defax
+R2380:2380 Hilbert.PascalTheorem <> P:10 var
+R2382:2382 Hilbert.PascalTheorem <> b:9 var
+ax 2644:2655 <> line_through
+R2664:2667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2659:2663 Hilbert.Common <> Point defax
+R2673:2676 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2668:2672 Hilbert.Common <> Point defax
+R2677:2680 Hilbert.Common <> Line defax
+ax 2690:2709 <> line_through_prop_ax
+R2727:2731 Hilbert.Common <> Point defax
+binder 2721:2721 <> A:13
+binder 2723:2723 <> B:14
+R2763:2766 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2737:2741 Hilbert.Common <> Incid defax
+R2743:2743 Hilbert.PascalTheorem <> A:13 var
+R2746:2757 Hilbert.PascalTheorem <> line_through defax
+R2759:2759 Hilbert.PascalTheorem <> A:13 var
+R2761:2761 Hilbert.PascalTheorem <> B:14 var
+R2767:2771 Hilbert.Common <> Incid defax
+R2773:2773 Hilbert.PascalTheorem <> B:14 var
+R2776:2787 Hilbert.PascalTheorem <> line_through defax
+R2789:2789 Hilbert.PascalTheorem <> A:13 var
+R2791:2791 Hilbert.PascalTheorem <> B:14 var
+prf 2802:2818 <> line_through_prop
+R2836:2840 Hilbert.Common <> Point defax
+binder 2830:2830 <> A:17
+binder 2832:2832 <> B:18
+R2872:2875 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2846:2850 Hilbert.Common <> Incid defax
+R2852:2852 Hilbert.PascalTheorem <> A:17 var
+R2855:2866 Hilbert.PascalTheorem <> line_through defax
+R2868:2868 Hilbert.PascalTheorem <> A:17 var
+R2870:2870 Hilbert.PascalTheorem <> B:18 var
+R2876:2880 Hilbert.Common <> Incid defax
+R2882:2882 Hilbert.PascalTheorem <> B:18 var
+R2885:2896 Hilbert.PascalTheorem <> line_through defax
+R2898:2898 Hilbert.PascalTheorem <> A:17 var
+R2900:2900 Hilbert.PascalTheorem <> B:18 var
+R2917:2936 Hilbert.PascalTheorem <> line_through_prop_ax prfax
+R2917:2936 Hilbert.PascalTheorem <> line_through_prop_ax prfax
+prf 2951:2969 <> line_through_unique
+R2987:2991 Hilbert.Common <> Point defax
+binder 2981:2981 <> A:19
+binder 2983:2983 <> B:20
+R2999:3002 Hilbert.Common <> Line defax
+binder 2995:2995 <> l:21
+R3017:3020 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3008:3012 Hilbert.Common <> Incid defax
+R3014:3014 Hilbert.PascalTheorem <> A:19 var
+R3016:3016 Hilbert.PascalTheorem <> l:21 var
+R3030:3033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3021:3025 Hilbert.Common <> Incid defax
+R3027:3027 Hilbert.PascalTheorem <> B:20 var
+R3029:3029 Hilbert.PascalTheorem <> l:21 var
+R3035:3037 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3034:3034 Hilbert.PascalTheorem <> l:21 var
+R3038:3049 Hilbert.PascalTheorem <> line_through defax
+R3051:3051 Hilbert.PascalTheorem <> A:19 var
+R3053:3053 Hilbert.PascalTheorem <> B:20 var
+R3099:3115 Hilbert.PascalTheorem <> line_through_prop thm
+R3099:3115 Hilbert.PascalTheorem <> line_through_prop thm
+R3145:3166 Hilbert.IncidenceAxioms <> two_points_unique_line thm
+R3175:3186 Hilbert.PascalTheorem <> line_through defax
+R3145:3166 Hilbert.IncidenceAxioms <> two_points_unique_line thm
+R3175:3186 Hilbert.PascalTheorem <> line_through defax
+rec 3515:3520 <> Circle
+proj 3545:3557 <> circle_center
+proj 3570:3579 <> circle_ref
+R3561:3565 Hilbert.Common <> Point defax
+R3586:3590 Hilbert.Common <> Point defax
+def 3710:3717 <> OnCircle
+R3724:3728 Hilbert.Common <> Point defax
+binder 3720:3720 <> X:25
+R3736:3741 Hilbert.PascalTheorem <> Circle rec
+binder 3732:3732 <> c:26
+R3756:3762 Hilbert.CongruenceAxioms <> CongSeg defax
+R3765:3777 Hilbert.PascalTheorem <> circle_center proj
+R3779:3779 Hilbert.PascalTheorem <> c:26 var
+R3782:3782 Hilbert.PascalTheorem <> X:25 var
+R3785:3797 Hilbert.PascalTheorem <> circle_center proj
+R3799:3799 Hilbert.PascalTheorem <> c:26 var
+R3803:3812 Hilbert.PascalTheorem <> circle_ref proj
+R3814:3814 Hilbert.PascalTheorem <> c:26 var
+def 3869:3873 <> Chord
+R3882:3886 Hilbert.Common <> Point defax
+binder 3876:3876 <> A:27
+binder 3878:3878 <> B:28
+R3894:3899 Hilbert.PascalTheorem <> Circle rec
+binder 3890:3890 <> c:29
+R3926:3929 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3914:3921 Hilbert.PascalTheorem <> OnCircle def
+R3923:3923 Hilbert.PascalTheorem <> A:27 var
+R3925:3925 Hilbert.PascalTheorem <> c:29 var
+R3942:3945 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3930:3937 Hilbert.PascalTheorem <> OnCircle def
+R3939:3939 Hilbert.PascalTheorem <> B:28 var
+R3941:3941 Hilbert.PascalTheorem <> c:29 var
+R3947:3950 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3946:3946 Hilbert.PascalTheorem <> A:27 var
+R3951:3951 Hilbert.PascalTheorem <> B:28 var
+prf 5020:5033 <> Pascal_theorem
+R5059:5063 Hilbert.Common <> Point defax
+binder 5045:5045 <> A:30
+binder 5047:5047 <> B:31
+binder 5049:5049 <> C:32
+binder 5051:5051 <> D:33
+binder 5053:5053 <> E:34
+binder 5055:5055 <> F:35
+R5071:5076 Hilbert.PascalTheorem <> Circle rec
+binder 5067:5067 <> c:36
+R5084:5087 Hilbert.Common <> Line defax
+binder 5080:5080 <> l:37
+R5154:5157 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5142:5149 Hilbert.PascalTheorem <> OnCircle def
+R5151:5151 Hilbert.PascalTheorem <> A:30 var
+R5153:5153 Hilbert.PascalTheorem <> c:36 var
+R5170:5173 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5158:5165 Hilbert.PascalTheorem <> OnCircle def
+R5167:5167 Hilbert.PascalTheorem <> B:31 var
+R5169:5169 Hilbert.PascalTheorem <> c:36 var
+R5186:5191 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5174:5181 Hilbert.PascalTheorem <> OnCircle def
+R5183:5183 Hilbert.PascalTheorem <> C:32 var
+R5185:5185 Hilbert.PascalTheorem <> c:36 var
+R5204:5207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5192:5199 Hilbert.PascalTheorem <> OnCircle def
+R5201:5201 Hilbert.PascalTheorem <> D:33 var
+R5203:5203 Hilbert.PascalTheorem <> c:36 var
+R5220:5223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5208:5215 Hilbert.PascalTheorem <> OnCircle def
+R5217:5217 Hilbert.PascalTheorem <> E:34 var
+R5219:5219 Hilbert.PascalTheorem <> c:36 var
+R5236:5277 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5224:5231 Hilbert.PascalTheorem <> OnCircle def
+R5233:5233 Hilbert.PascalTheorem <> F:35 var
+R5235:5235 Hilbert.PascalTheorem <> c:36 var
+R5284:5287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5279:5282 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5278:5278 Hilbert.PascalTheorem <> A:30 var
+R5283:5283 Hilbert.PascalTheorem <> B:31 var
+R5294:5297 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5289:5292 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5288:5288 Hilbert.PascalTheorem <> B:31 var
+R5293:5293 Hilbert.PascalTheorem <> C:32 var
+R5304:5307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5299:5302 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5298:5298 Hilbert.PascalTheorem <> C:32 var
+R5303:5303 Hilbert.PascalTheorem <> D:33 var
+R5314:5317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5309:5312 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5308:5308 Hilbert.PascalTheorem <> D:33 var
+R5313:5313 Hilbert.PascalTheorem <> E:34 var
+R5324:5327 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5319:5322 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5318:5318 Hilbert.PascalTheorem <> E:34 var
+R5323:5323 Hilbert.PascalTheorem <> F:35 var
+R5334:5366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5329:5332 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5328:5328 Hilbert.PascalTheorem <> F:35 var
+R5333:5333 Hilbert.PascalTheorem <> A:30 var
+R5419:5424 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5367:5380 Hilbert.PascalTheorem <> LinesIntersect def
+R5383:5394 Hilbert.PascalTheorem <> line_through defax
+R5396:5396 Hilbert.PascalTheorem <> A:30 var
+R5398:5398 Hilbert.PascalTheorem <> B:31 var
+R5402:5413 Hilbert.PascalTheorem <> line_through defax
+R5415:5415 Hilbert.PascalTheorem <> D:33 var
+R5417:5417 Hilbert.PascalTheorem <> E:34 var
+R5477:5482 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5425:5438 Hilbert.PascalTheorem <> LinesIntersect def
+R5441:5452 Hilbert.PascalTheorem <> line_through defax
+R5454:5454 Hilbert.PascalTheorem <> B:31 var
+R5456:5456 Hilbert.PascalTheorem <> C:32 var
+R5460:5471 Hilbert.PascalTheorem <> line_through defax
+R5473:5473 Hilbert.PascalTheorem <> E:34 var
+R5475:5475 Hilbert.PascalTheorem <> F:35 var
+R5535:5575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5483:5496 Hilbert.PascalTheorem <> LinesIntersect def
+R5499:5510 Hilbert.PascalTheorem <> line_through defax
+R5512:5512 Hilbert.PascalTheorem <> C:32 var
+R5514:5514 Hilbert.PascalTheorem <> D:33 var
+R5518:5529 Hilbert.PascalTheorem <> line_through defax
+R5531:5531 Hilbert.PascalTheorem <> F:35 var
+R5533:5533 Hilbert.PascalTheorem <> A:30 var
+R5576:5583 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5593:5599 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5589:5592 Hilbert.Common <> Line defax
+binder 5584:5585 <> l':38
+R5600:5600 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5698:5706 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5613:5617 Hilbert.Common <> Point defax
+binder 5609:5609 <> P:39
+R5684:5687 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5627:5643 Hilbert.PascalTheorem <> IntersectionPoint def
+R5646:5657 Hilbert.PascalTheorem <> line_through defax
+R5659:5659 Hilbert.PascalTheorem <> A:30 var
+R5661:5661 Hilbert.PascalTheorem <> B:31 var
+R5665:5676 Hilbert.PascalTheorem <> line_through defax
+R5678:5678 Hilbert.PascalTheorem <> D:33 var
+R5680:5680 Hilbert.PascalTheorem <> E:34 var
+R5683:5683 Hilbert.PascalTheorem <> P:39 var
+R5688:5692 Hilbert.Common <> Incid defax
+R5694:5694 Hilbert.PascalTheorem <> P:39 var
+R5696:5697 Hilbert.PascalTheorem <> l':38 var
+R5707:5707 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5805:5814 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5912:5912 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5720:5724 Hilbert.Common <> Point defax
+binder 5716:5716 <> Q:40
+R5791:5794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5734:5750 Hilbert.PascalTheorem <> IntersectionPoint def
+R5753:5764 Hilbert.PascalTheorem <> line_through defax
+R5766:5766 Hilbert.PascalTheorem <> B:31 var
+R5768:5768 Hilbert.PascalTheorem <> C:32 var
+R5772:5783 Hilbert.PascalTheorem <> line_through defax
+R5785:5785 Hilbert.PascalTheorem <> E:34 var
+R5787:5787 Hilbert.PascalTheorem <> F:35 var
+R5790:5790 Hilbert.PascalTheorem <> Q:40 var
+R5795:5799 Hilbert.Common <> Incid defax
+R5801:5801 Hilbert.PascalTheorem <> Q:40 var
+R5803:5804 Hilbert.PascalTheorem <> l':38 var
+R5827:5831 Hilbert.Common <> Point defax
+binder 5823:5823 <> R:41
+R5898:5901 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5841:5857 Hilbert.PascalTheorem <> IntersectionPoint def
+R5860:5871 Hilbert.PascalTheorem <> line_through defax
+R5873:5873 Hilbert.PascalTheorem <> C:32 var
+R5875:5875 Hilbert.PascalTheorem <> D:33 var
+R5879:5890 Hilbert.PascalTheorem <> line_through defax
+R5892:5892 Hilbert.PascalTheorem <> F:35 var
+R5894:5894 Hilbert.PascalTheorem <> A:30 var
+R5897:5897 Hilbert.PascalTheorem <> R:41 var
+R5902:5906 Hilbert.Common <> Incid defax
+R5908:5908 Hilbert.PascalTheorem <> R:41 var
+R5910:5911 Hilbert.PascalTheorem <> l':38 var
+def 6872:6878 <> Tangent
+R6885:6890 Hilbert.PascalTheorem <> Circle rec
+binder 6881:6881 <> c:42
+R6900:6903 Hilbert.Common <> Line defax
+binder 6894:6894 <> P:43
+binder 6896:6896 <> l:44
+R6918:6925 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6935:6937 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6930:6934 Hilbert.Common <> Point defax
+binder 6926:6926 <> X:45
+R6947:6950 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6938:6942 Hilbert.Common <> Incid defax
+R6944:6944 Hilbert.PascalTheorem <> X:45 var
+R6946:6946 Hilbert.PascalTheorem <> l:44 var
+R6963:6970 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6951:6958 Hilbert.PascalTheorem <> OnCircle def
+R6960:6960 Hilbert.PascalTheorem <> X:45 var
+R6962:6962 Hilbert.PascalTheorem <> c:42 var
+R6983:6987 Hilbert.Common <> Point defax
+binder 6979:6979 <> Y:46
+R7010:7013 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7000:7003 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6991:6995 Hilbert.Common <> Incid defax
+R6997:6997 Hilbert.PascalTheorem <> Y:46 var
+R6999:6999 Hilbert.PascalTheorem <> l:44 var
+R7005:7008 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7004:7004 Hilbert.PascalTheorem <> Y:46 var
+R7009:7009 Hilbert.PascalTheorem <> X:45 var
+R7014:7015 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7016:7023 Hilbert.PascalTheorem <> OnCircle def
+R7025:7025 Hilbert.PascalTheorem <> Y:46 var
+R7027:7027 Hilbert.PascalTheorem <> c:42 var
+prf 7243:7259 <> Pascal_degenerate
+R7283:7287 Hilbert.Common <> Point defax
+binder 7271:7271 <> A:47
+binder 7273:7273 <> B:48
+binder 7275:7275 <> C:49
+binder 7277:7277 <> D:50
+binder 7279:7279 <> E:51
+R7295:7300 Hilbert.PascalTheorem <> Circle rec
+binder 7291:7291 <> c:52
+R7318:7321 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7306:7313 Hilbert.PascalTheorem <> OnCircle def
+R7315:7315 Hilbert.PascalTheorem <> A:47 var
+R7317:7317 Hilbert.PascalTheorem <> c:52 var
+R7334:7337 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7322:7329 Hilbert.PascalTheorem <> OnCircle def
+R7331:7331 Hilbert.PascalTheorem <> B:48 var
+R7333:7333 Hilbert.PascalTheorem <> c:52 var
+R7350:7355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7338:7345 Hilbert.PascalTheorem <> OnCircle def
+R7347:7347 Hilbert.PascalTheorem <> C:49 var
+R7349:7349 Hilbert.PascalTheorem <> c:52 var
+R7368:7371 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7356:7363 Hilbert.PascalTheorem <> OnCircle def
+R7365:7365 Hilbert.PascalTheorem <> D:50 var
+R7367:7367 Hilbert.PascalTheorem <> c:52 var
+R7384:7389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7372:7379 Hilbert.PascalTheorem <> OnCircle def
+R7381:7381 Hilbert.PascalTheorem <> E:51 var
+R7383:7383 Hilbert.PascalTheorem <> c:52 var
+R7396:7399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7391:7394 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7390:7390 Hilbert.PascalTheorem <> A:47 var
+R7395:7395 Hilbert.PascalTheorem <> B:48 var
+R7406:7409 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7401:7404 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7400:7400 Hilbert.PascalTheorem <> B:48 var
+R7405:7405 Hilbert.PascalTheorem <> C:49 var
+R7416:7419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7411:7414 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7410:7410 Hilbert.PascalTheorem <> C:49 var
+R7415:7415 Hilbert.PascalTheorem <> D:50 var
+R7426:7429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7421:7424 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7420:7420 Hilbert.PascalTheorem <> D:50 var
+R7425:7425 Hilbert.PascalTheorem <> E:51 var
+R7436:7441 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7431:7434 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7430:7430 Hilbert.PascalTheorem <> E:51 var
+R7435:7435 Hilbert.PascalTheorem <> A:47 var
+R7494:7499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7442:7455 Hilbert.PascalTheorem <> LinesIntersect def
+R7458:7469 Hilbert.PascalTheorem <> line_through defax
+R7471:7471 Hilbert.PascalTheorem <> A:47 var
+R7473:7473 Hilbert.PascalTheorem <> B:48 var
+R7477:7488 Hilbert.PascalTheorem <> line_through defax
+R7490:7490 Hilbert.PascalTheorem <> D:50 var
+R7492:7492 Hilbert.PascalTheorem <> E:51 var
+R7552:7557 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7500:7513 Hilbert.PascalTheorem <> LinesIntersect def
+R7516:7527 Hilbert.PascalTheorem <> line_through defax
+R7529:7529 Hilbert.PascalTheorem <> B:48 var
+R7531:7531 Hilbert.PascalTheorem <> C:49 var
+R7535:7546 Hilbert.PascalTheorem <> line_through defax
+R7548:7548 Hilbert.PascalTheorem <> E:51 var
+R7550:7550 Hilbert.PascalTheorem <> A:47 var
+R7610:7615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7558:7571 Hilbert.PascalTheorem <> LinesIntersect def
+R7574:7585 Hilbert.PascalTheorem <> line_through defax
+R7587:7587 Hilbert.PascalTheorem <> C:49 var
+R7589:7589 Hilbert.PascalTheorem <> D:50 var
+R7593:7604 Hilbert.PascalTheorem <> line_through defax
+R7606:7606 Hilbert.PascalTheorem <> A:47 var
+R7608:7608 Hilbert.PascalTheorem <> A:47 var
+R7616:7623 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7633:7639 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7629:7632 Hilbert.Common <> Line defax
+binder 7624:7625 <> l':53
+R7640:7640 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7738:7746 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7653:7657 Hilbert.Common <> Point defax
+binder 7649:7649 <> P:54
+R7724:7727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7667:7683 Hilbert.PascalTheorem <> IntersectionPoint def
+R7686:7697 Hilbert.PascalTheorem <> line_through defax
+R7699:7699 Hilbert.PascalTheorem <> A:47 var
+R7701:7701 Hilbert.PascalTheorem <> B:48 var
+R7705:7716 Hilbert.PascalTheorem <> line_through defax
+R7718:7718 Hilbert.PascalTheorem <> D:50 var
+R7720:7720 Hilbert.PascalTheorem <> E:51 var
+R7723:7723 Hilbert.PascalTheorem <> P:54 var
+R7728:7732 Hilbert.Common <> Incid defax
+R7734:7734 Hilbert.PascalTheorem <> P:54 var
+R7736:7737 Hilbert.PascalTheorem <> l':53 var
+R7747:7747 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7845:7854 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7952:7952 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7760:7764 Hilbert.Common <> Point defax
+binder 7756:7756 <> Q:55
+R7831:7834 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7774:7790 Hilbert.PascalTheorem <> IntersectionPoint def
+R7793:7804 Hilbert.PascalTheorem <> line_through defax
+R7806:7806 Hilbert.PascalTheorem <> B:48 var
+R7808:7808 Hilbert.PascalTheorem <> C:49 var
+R7812:7823 Hilbert.PascalTheorem <> line_through defax
+R7825:7825 Hilbert.PascalTheorem <> E:51 var
+R7827:7827 Hilbert.PascalTheorem <> A:47 var
+R7830:7830 Hilbert.PascalTheorem <> Q:55 var
+R7835:7839 Hilbert.Common <> Incid defax
+R7841:7841 Hilbert.PascalTheorem <> Q:55 var
+R7843:7844 Hilbert.PascalTheorem <> l':53 var
+R7867:7871 Hilbert.Common <> Point defax
+binder 7863:7863 <> R:56
+R7938:7941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7881:7897 Hilbert.PascalTheorem <> IntersectionPoint def
+R7900:7911 Hilbert.PascalTheorem <> line_through defax
+R7913:7913 Hilbert.PascalTheorem <> C:49 var
+R7915:7915 Hilbert.PascalTheorem <> D:50 var
+R7919:7930 Hilbert.PascalTheorem <> line_through defax
+R7932:7932 Hilbert.PascalTheorem <> A:47 var
+R7934:7934 Hilbert.PascalTheorem <> A:47 var
+R7937:7937 Hilbert.PascalTheorem <> R:56 var
+R7942:7946 Hilbert.Common <> Incid defax
+R7948:7948 Hilbert.PascalTheorem <> R:56 var
+R7950:7951 Hilbert.PascalTheorem <> l':53 var

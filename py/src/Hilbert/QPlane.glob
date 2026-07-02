@@ -1,0 +1,1138 @@
+DIGEST 2d41976e014bd4073d51ba6160beae12
+FHilbert.QPlane
+R2597:2602 Stdlib.QArith.QArith <> <> lib
+R2632:2640 Stdlib.Logic.Classical <> <> lib
+R2642:2653 Stdlib.QArith.QOrderedType <> <> lib
+R2684:2699 Hilbert.HilbertStructure <> <> lib
+def 2992:2997 <> QPoint
+R3010:3012 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R3009:3009 Stdlib.QArith.QArith_base <> Q rec
+R3013:3013 Stdlib.QArith.QArith_base <> Q rec
+def 3089:3099 <> QPlanePlane
+R3111:3114 Corelib.Init.Datatypes <> unit ind
+def 3189:3199 <> QIncidPlane
+R3206:3211 Hilbert.QPlane <> QPoint def
+binder 3202:3202 <> P:1
+R3223:3233 Hilbert.QPlane <> QPlanePlane def
+binder 3215:3219 <> alpha:2
+R3246:3249 Corelib.Init.Logic <> True ind
+rec 3918:3922 <> QLine
+proj 3946:3957 <> qline_origin
+proj 3971:3979 <> qline_dir
+R3961:3966 Hilbert.QPlane <> QPoint def
+R3983:3988 Hilbert.QPlane <> QPoint def
+def 4066:4071 <> QIncid
+R4078:4083 Hilbert.QPlane <> QPoint def
+binder 4074:4074 <> P:6
+R4091:4095 Hilbert.QPlane <> QLine rec
+binder 4087:4087 <> l:7
+R4110:4116 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4122:4123 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4121:4121 Stdlib.QArith.QArith_base <> Q rec
+binder 4117:4117 <> t:8
+R4125:4127 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4124:4124 Hilbert.QPlane <> P:6 var
+R4128:4128 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4173:4195 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4240:4240 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4149:4151 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R4129:4131 Corelib.Init.Datatypes <> fst def
+R4134:4145 Hilbert.QPlane <> qline_origin proj
+R4147:4147 Hilbert.QPlane <> l:7 var
+R4153:4155 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4152:4152 Hilbert.QPlane <> t:8 var
+R4156:4158 Corelib.Init.Datatypes <> fst def
+R4161:4169 Hilbert.QPlane <> qline_dir proj
+R4171:4171 Hilbert.QPlane <> l:7 var
+R4216:4218 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R4196:4198 Corelib.Init.Datatypes <> snd def
+R4201:4212 Hilbert.QPlane <> qline_origin proj
+R4214:4214 Hilbert.QPlane <> l:7 var
+R4220:4222 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4219:4219 Hilbert.QPlane <> t:8 var
+R4223:4225 Corelib.Init.Datatypes <> snd def
+R4228:4236 Hilbert.QPlane <> qline_dir proj
+R4238:4238 Hilbert.QPlane <> l:7 var
+def 4337:4344 <> QLine_of
+R4353:4358 Hilbert.QPlane <> QPoint def
+binder 4347:4347 <> P:9
+binder 4349:4349 <> Q:10
+R4363:4367 Hilbert.QPlane <> QLine rec
+R4374:4380 Hilbert.QPlane <> mkQLine constr
+R4382:4382 Hilbert.QPlane <> P:9 var
+R4384:4384 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4398:4399 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4413:4413 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4390:4392 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4385:4387 Corelib.Init.Datatypes <> fst def
+R4389:4389 Hilbert.QPlane <> Q:10 var
+R4393:4395 Corelib.Init.Datatypes <> fst def
+R4397:4397 Hilbert.QPlane <> P:9 var
+R4405:4407 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4400:4402 Corelib.Init.Datatypes <> snd def
+R4404:4404 Hilbert.QPlane <> Q:10 var
+R4408:4410 Corelib.Init.Datatypes <> snd def
+R4412:4412 Hilbert.QPlane <> P:9 var
+prf 4484:4493 <> Qmult_0_l'
+R4500:4500 Stdlib.QArith.QArith_base <> Q rec
+binder 4496:4496 <> x:11
+R4510:4513 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R4506:4508 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4509:4509 Hilbert.QPlane <> x:11 var
+R4530:4538 Stdlib.QArith.QArith_base <> Qmult_0_l thm
+R4530:4538 Stdlib.QArith.QArith_base <> Qmult_0_l thm
+prf 4552:4561 <> Qmult_1_l'
+R4568:4568 Stdlib.QArith.QArith_base <> Q rec
+binder 4564:4564 <> x:12
+R4578:4581 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R4574:4576 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4577:4577 Hilbert.QPlane <> x:12 var
+R4582:4582 Hilbert.QPlane <> x:12 var
+R4598:4606 Stdlib.QArith.QArith_base <> Qmult_1_l thm
+R4598:4606 Stdlib.QArith.QArith_base <> Qmult_1_l thm
+prf 4620:4629 <> Qplus_0_l'
+R4636:4636 Stdlib.QArith.QArith_base <> Q rec
+binder 4632:4632 <> x:13
+R4646:4649 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R4642:4644 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R4645:4645 Hilbert.QPlane <> x:13 var
+R4650:4650 Hilbert.QPlane <> x:13 var
+R4666:4674 Stdlib.QArith.QArith_base <> Qplus_0_l thm
+R4666:4674 Stdlib.QArith.QArith_base <> Qplus_0_l thm
+prf 4688:4697 <> Qplus_0_r'
+R4704:4704 Stdlib.QArith.QArith_base <> Q rec
+binder 4700:4700 <> x:14
+R4714:4717 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R4710:4712 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R4709:4709 Hilbert.QPlane <> x:14 var
+R4718:4718 Hilbert.QPlane <> x:14 var
+R4734:4742 Stdlib.QArith.QArith_base <> Qplus_0_r thm
+R4734:4742 Stdlib.QArith.QArith_base <> Qplus_0_r thm
+prf 4805:4816 <> QLine_exists
+R4833:4838 Hilbert.QPlane <> QPoint def
+binder 4827:4827 <> P:15
+binder 4829:4829 <> Q:16
+R4841:4847 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4857:4858 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4852:4856 Hilbert.QPlane <> QLine rec
+binder 4848:4848 <> l:17
+R4869:4872 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4859:4864 Hilbert.QPlane <> QIncid def
+R4866:4866 Hilbert.QPlane <> P:15 var
+R4868:4868 Hilbert.QPlane <> l:17 var
+R4873:4878 Hilbert.QPlane <> QIncid def
+R4880:4880 Hilbert.QPlane <> Q:16 var
+R4882:4882 Hilbert.QPlane <> l:17 var
+R4928:4934 Hilbert.QPlane <> mkQLine constr
+R4936:4936 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4939:4940 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4943:4943 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4945:4945 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4953:4954 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4962:4962 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4948:4950 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4957:4959 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4928:4934 Hilbert.QPlane <> mkQLine constr
+R4936:4936 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4939:4940 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4943:4943 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4945:4945 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4953:4954 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4962:4962 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R4948:4950 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4957:4959 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R4975:4980 Hilbert.QPlane <> QIncid def
+prf 5297:5314 <> QLine_at_least_two
+R5332:5337 Hilbert.QPlane <> QPoint def
+binder 5326:5326 <> P:18
+binder 5328:5328 <> Q:19
+R5345:5349 Hilbert.QPlane <> QLine rec
+binder 5341:5341 <> l:20
+R5365:5368 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5355:5360 Hilbert.QPlane <> QIncid def
+R5362:5362 Hilbert.QPlane <> P:18 var
+R5364:5364 Hilbert.QPlane <> l:20 var
+R5379:5382 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5369:5374 Hilbert.QPlane <> QIncid def
+R5376:5376 Hilbert.QPlane <> Q:19 var
+R5378:5378 Hilbert.QPlane <> l:20 var
+R5389:5394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5384:5387 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5383:5383 Hilbert.QPlane <> P:18 var
+R5388:5388 Hilbert.QPlane <> Q:19 var
+R5395:5401 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5414:5415 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5408:5413 Hilbert.QPlane <> QPoint def
+binder 5402:5402 <> A:21
+R5408:5413 Hilbert.QPlane <> QPoint def
+binder 5404:5404 <> B:22
+R5426:5429 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5416:5421 Hilbert.QPlane <> QIncid def
+R5423:5423 Hilbert.QPlane <> A:21 var
+R5425:5425 Hilbert.QPlane <> l:20 var
+R5440:5443 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5430:5435 Hilbert.QPlane <> QIncid def
+R5437:5437 Hilbert.QPlane <> B:22 var
+R5439:5439 Hilbert.QPlane <> l:20 var
+R5445:5448 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5444:5444 Hilbert.QPlane <> A:21 var
+R5449:5449 Hilbert.QPlane <> B:22 var
+R5509:5512 Corelib.Init.Logic <> conj constr
+R5519:5522 Corelib.Init.Logic <> conj constr
+R5509:5512 Corelib.Init.Logic <> conj constr
+R5519:5522 Corelib.Init.Logic <> conj constr
+prf 5662:5681 <> Q_three_noncollinear
+R5685:5691 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5706:5709 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5700:5705 Hilbert.QPlane <> QPoint def
+binder 5692:5692 <> A:23
+R5700:5705 Hilbert.QPlane <> QPoint def
+binder 5694:5694 <> B:24
+R5700:5705 Hilbert.QPlane <> QPoint def
+binder 5696:5696 <> C:25
+R5710:5711 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5768:5768 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5712:5718 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5728:5729 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5723:5727 Hilbert.QPlane <> QLine rec
+binder 5719:5719 <> l:26
+R5740:5743 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5730:5735 Hilbert.QPlane <> QIncid def
+R5737:5737 Hilbert.QPlane <> A:23 var
+R5739:5739 Hilbert.QPlane <> l:26 var
+R5754:5757 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5744:5749 Hilbert.QPlane <> QIncid def
+R5751:5751 Hilbert.QPlane <> B:24 var
+R5753:5753 Hilbert.QPlane <> l:26 var
+R5758:5763 Hilbert.QPlane <> QIncid def
+R5765:5765 Hilbert.QPlane <> C:25 var
+R5767:5767 Hilbert.QPlane <> l:26 var
+R5787:5787 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5789:5790 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5792:5792 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5795:5795 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5797:5798 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5800:5800 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5803:5803 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5805:5806 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5808:5808 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5787:5787 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5789:5790 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5792:5792 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5795:5795 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5797:5798 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5800:5800 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5803:5803 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5805:5806 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5808:5808 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R5847:5852 Hilbert.QPlane <> QIncid def
+ax 7432:7435 <> Q_I2
+R7453:7457 Hilbert.QPlane <> QLine rec
+binder 7447:7447 <> l:27
+binder 7449:7449 <> m:28
+R7467:7472 Hilbert.QPlane <> QPoint def
+binder 7461:7461 <> P:29
+binder 7463:7463 <> Q:30
+R7530:7533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7488:7491 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7478:7483 Hilbert.QPlane <> QIncid def
+R7485:7485 Hilbert.QPlane <> P:29 var
+R7487:7487 Hilbert.QPlane <> l:27 var
+R7502:7505 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7492:7497 Hilbert.QPlane <> QIncid def
+R7499:7499 Hilbert.QPlane <> Q:30 var
+R7501:7501 Hilbert.QPlane <> l:27 var
+R7516:7519 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7506:7511 Hilbert.QPlane <> QIncid def
+R7513:7513 Hilbert.QPlane <> P:29 var
+R7515:7515 Hilbert.QPlane <> m:28 var
+R7520:7525 Hilbert.QPlane <> QIncid def
+R7527:7527 Hilbert.QPlane <> Q:30 var
+R7529:7529 Hilbert.QPlane <> m:28 var
+R7535:7537 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7534:7534 Hilbert.QPlane <> l:27 var
+R7538:7538 Hilbert.QPlane <> m:28 var
+ax 7716:7729 <> Q_line_two_pts
+R7744:7748 Hilbert.QPlane <> QLine rec
+binder 7740:7740 <> l:33
+R7751:7757 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7770:7773 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7764:7769 Hilbert.QPlane <> QPoint def
+binder 7758:7758 <> P:34
+R7764:7769 Hilbert.QPlane <> QPoint def
+binder 7760:7760 <> Q:35
+R7784:7787 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7774:7779 Hilbert.QPlane <> QIncid def
+R7781:7781 Hilbert.QPlane <> P:34 var
+R7783:7783 Hilbert.QPlane <> l:33 var
+R7798:7801 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7788:7793 Hilbert.QPlane <> QIncid def
+R7795:7795 Hilbert.QPlane <> Q:35 var
+R7797:7797 Hilbert.QPlane <> l:33 var
+R7803:7806 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7802:7802 Hilbert.QPlane <> P:34 var
+R7807:7807 Hilbert.QPlane <> Q:35 var
+prf 7991:8005 <> Q_I4_uniqueness
+R8024:8029 Hilbert.QPlane <> QPoint def
+binder 8016:8016 <> A:38
+binder 8018:8018 <> B:39
+binder 8020:8020 <> C:40
+R8093:8098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8034:8035 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R8092:8092 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R8036:8042 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8052:8053 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8047:8051 Hilbert.QPlane <> QLine rec
+binder 8043:8043 <> l:41
+R8064:8067 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8054:8059 Hilbert.QPlane <> QIncid def
+R8061:8061 Hilbert.QPlane <> A:38 var
+R8063:8063 Hilbert.QPlane <> l:41 var
+R8078:8081 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8068:8073 Hilbert.QPlane <> QIncid def
+R8075:8075 Hilbert.QPlane <> B:39 var
+R8077:8077 Hilbert.QPlane <> l:41 var
+R8082:8087 Hilbert.QPlane <> QIncid def
+R8089:8089 Hilbert.QPlane <> C:40 var
+R8091:8091 Hilbert.QPlane <> l:41 var
+R8099:8106 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R8126:8127 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R8115:8125 Hilbert.QPlane <> QPlanePlane def
+binder 8107:8111 <> alpha:42
+R8147:8150 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8128:8138 Hilbert.QPlane <> QIncidPlane def
+R8140:8140 Hilbert.QPlane <> A:38 var
+R8142:8146 Hilbert.QPlane <> alpha:42 var
+R8170:8173 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8151:8161 Hilbert.QPlane <> QIncidPlane def
+R8163:8163 Hilbert.QPlane <> B:39 var
+R8165:8169 Hilbert.QPlane <> alpha:42 var
+R8174:8184 Hilbert.QPlane <> QIncidPlane def
+R8186:8186 Hilbert.QPlane <> C:40 var
+R8188:8192 Hilbert.QPlane <> alpha:42 var
+R8229:8230 Corelib.Init.Datatypes <> tt constr
+R8229:8230 Corelib.Init.Datatypes <> tt constr
+prf 8370:8383 <> Q_I4_existence
+R8402:8412 Hilbert.QPlane <> QPlanePlane def
+binder 8394:8398 <> alpha:43
+R8415:8421 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8432:8433 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8426:8431 Hilbert.QPlane <> QPoint def
+binder 8422:8422 <> P:44
+R8434:8444 Hilbert.QPlane <> QIncidPlane def
+R8446:8446 Hilbert.QPlane <> P:44 var
+R8448:8452 Hilbert.QPlane <> alpha:43 var
+R8485:8485 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8487:8488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8490:8490 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8485:8485 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8487:8488 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8490:8490 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8506:8506 Corelib.Init.Logic <> I constr
+R8506:8506 Corelib.Init.Logic <> I constr
+prf 8627:8630 <> Q_I5
+R8646:8650 Hilbert.QPlane <> QLine rec
+binder 8642:8642 <> a:45
+R8662:8672 Hilbert.QPlane <> QPlanePlane def
+binder 8654:8658 <> alpha:46
+R8682:8687 Hilbert.QPlane <> QPoint def
+binder 8676:8676 <> A:47
+binder 8678:8678 <> B:48
+R8703:8706 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8693:8698 Hilbert.QPlane <> QIncid def
+R8700:8700 Hilbert.QPlane <> A:47 var
+R8702:8702 Hilbert.QPlane <> a:45 var
+R8717:8720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8707:8712 Hilbert.QPlane <> QIncid def
+R8714:8714 Hilbert.QPlane <> B:48 var
+R8716:8716 Hilbert.QPlane <> a:45 var
+R8740:8743 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8721:8731 Hilbert.QPlane <> QIncidPlane def
+R8733:8733 Hilbert.QPlane <> A:47 var
+R8735:8739 Hilbert.QPlane <> alpha:46 var
+R8763:8768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8744:8754 Hilbert.QPlane <> QIncidPlane def
+R8756:8756 Hilbert.QPlane <> B:48 var
+R8758:8762 Hilbert.QPlane <> alpha:46 var
+R8780:8785 Hilbert.QPlane <> QPoint def
+binder 8776:8776 <> X:49
+R8798:8801 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8788:8793 Hilbert.QPlane <> QIncid def
+R8795:8795 Hilbert.QPlane <> X:49 var
+R8797:8797 Hilbert.QPlane <> a:45 var
+R8802:8812 Hilbert.QPlane <> QIncidPlane def
+R8814:8814 Hilbert.QPlane <> X:49 var
+R8816:8820 Hilbert.QPlane <> alpha:46 var
+R8877:8877 Corelib.Init.Logic <> I constr
+R8877:8877 Corelib.Init.Logic <> I constr
+prf 8947:8952 <> Q_I6_a
+R8971:8981 Hilbert.QPlane <> QPlanePlane def
+binder 8963:8967 <> alpha:50
+R8986:8992 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9007:9012 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9001:9006 Hilbert.QPlane <> QPoint def
+binder 8993:8993 <> A:51
+R9001:9006 Hilbert.QPlane <> QPoint def
+binder 8995:8995 <> B:52
+R9001:9006 Hilbert.QPlane <> QPoint def
+binder 8997:8997 <> C:53
+R9032:9035 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9013:9023 Hilbert.QPlane <> QIncidPlane def
+R9025:9025 Hilbert.QPlane <> A:51 var
+R9027:9031 Hilbert.QPlane <> alpha:50 var
+R9055:9058 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9036:9046 Hilbert.QPlane <> QIncidPlane def
+R9048:9048 Hilbert.QPlane <> B:52 var
+R9050:9054 Hilbert.QPlane <> alpha:50 var
+R9078:9085 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9059:9069 Hilbert.QPlane <> QIncidPlane def
+R9071:9071 Hilbert.QPlane <> C:53 var
+R9073:9077 Hilbert.QPlane <> alpha:50 var
+R9086:9087 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R9144:9144 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R9088:9094 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9104:9105 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9099:9103 Hilbert.QPlane <> QLine rec
+binder 9095:9095 <> l:54
+R9116:9119 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9106:9111 Hilbert.QPlane <> QIncid def
+R9113:9113 Hilbert.QPlane <> A:51 var
+R9115:9115 Hilbert.QPlane <> l:54 var
+R9130:9133 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9120:9125 Hilbert.QPlane <> QIncid def
+R9127:9127 Hilbert.QPlane <> B:52 var
+R9129:9129 Hilbert.QPlane <> l:54 var
+R9134:9139 Hilbert.QPlane <> QIncid def
+R9141:9141 Hilbert.QPlane <> C:53 var
+R9143:9143 Hilbert.QPlane <> l:54 var
+R9177:9177 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9179:9180 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9182:9182 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9185:9185 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9187:9188 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9190:9190 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9193:9193 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9195:9196 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9198:9198 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9177:9177 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9179:9180 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9182:9182 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9185:9185 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9187:9188 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9190:9190 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9193:9193 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9195:9196 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9198:9198 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R9234:9234 Corelib.Init.Logic <> I constr
+R9234:9234 Corelib.Init.Logic <> I constr
+ax 9837:9840 <> Q_I7
+R9864:9874 Hilbert.QPlane <> QPlanePlane def
+binder 9851:9855 <> alpha:55
+binder 9857:9860 <> beta:56
+R9890:9895 Hilbert.QPlane <> QPoint def
+binder 9886:9886 <> A:57
+R9939:9944 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9917:9920 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9898:9908 Hilbert.QPlane <> QIncidPlane def
+R9910:9910 Hilbert.QPlane <> A:57 var
+R9912:9916 Hilbert.QPlane <> alpha:55 var
+R9921:9931 Hilbert.QPlane <> QIncidPlane def
+R9933:9933 Hilbert.QPlane <> A:57 var
+R9935:9938 Hilbert.QPlane <> beta:56 var
+R9945:9951 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9962:9963 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9956:9961 Hilbert.QPlane <> QPoint def
+binder 9952:9952 <> B:58
+R9983:9986 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9964:9974 Hilbert.QPlane <> QIncidPlane def
+R9976:9976 Hilbert.QPlane <> B:58 var
+R9978:9982 Hilbert.QPlane <> alpha:55 var
+R10005:10008 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9987:9997 Hilbert.QPlane <> QIncidPlane def
+R9999:9999 Hilbert.QPlane <> B:58 var
+R10001:10004 Hilbert.QPlane <> beta:56 var
+R10010:10013 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10009:10009 Hilbert.QPlane <> A:57 var
+R10014:10014 Hilbert.QPlane <> B:58 var
+ax 10023:10026 <> Q_I8
+R10030:10036 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10053:10056 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10047:10052 Hilbert.QPlane <> QPoint def
+binder 10037:10037 <> A:61
+R10047:10052 Hilbert.QPlane <> QPoint def
+binder 10039:10039 <> B:62
+R10047:10052 Hilbert.QPlane <> QPoint def
+binder 10041:10041 <> C:63
+R10047:10052 Hilbert.QPlane <> QPoint def
+binder 10043:10043 <> D:64
+R10057:10058 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R10203:10203 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R10059:10065 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10085:10086 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10074:10084 Hilbert.QPlane <> QPlanePlane def
+binder 10066:10070 <> alpha:65
+R10106:10109 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10087:10097 Hilbert.QPlane <> QIncidPlane def
+R10099:10099 Hilbert.QPlane <> A:61 var
+R10101:10105 Hilbert.QPlane <> alpha:65 var
+R10129:10160 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10110:10120 Hilbert.QPlane <> QIncidPlane def
+R10122:10122 Hilbert.QPlane <> B:62 var
+R10124:10128 Hilbert.QPlane <> alpha:65 var
+R10180:10183 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10161:10171 Hilbert.QPlane <> QIncidPlane def
+R10173:10173 Hilbert.QPlane <> C:63 var
+R10175:10179 Hilbert.QPlane <> alpha:65 var
+R10184:10194 Hilbert.QPlane <> QIncidPlane def
+R10196:10196 Hilbert.QPlane <> D:64 var
+R10198:10202 Hilbert.QPlane <> alpha:65 var
+def 10476:10487 <> Q2_Incidence
+R10491:10508 Hilbert.HilbertStructure <> IncidenceStructure rec
+R10518:10525 Hilbert.HilbertStructure <> IncPoint proj
+R10518:10525 Hilbert.HilbertStructure <> IncPoint proj
+R10518:10525 Hilbert.HilbertStructure <> IncPoint proj
+R10540:10546 Hilbert.HilbertStructure <> IncLine proj
+R10540:10546 Hilbert.HilbertStructure <> IncLine proj
+R10560:10567 Hilbert.HilbertStructure <> IncPlane proj
+R10560:10567 Hilbert.HilbertStructure <> IncPlane proj
+R10587:10591 Hilbert.HilbertStructure <> Incid proj
+R10587:10591 Hilbert.HilbertStructure <> Incid proj
+R10606:10615 Hilbert.HilbertStructure <> IncidPlane proj
+R10606:10615 Hilbert.HilbertStructure <> IncidPlane proj
+R10635:10636 Hilbert.HilbertStructure <> I1 proj
+R10635:10636 Hilbert.HilbertStructure <> I1 proj
+R10657:10658 Hilbert.HilbertStructure <> I2 proj
+R10657:10658 Hilbert.HilbertStructure <> I2 proj
+R10671:10672 Hilbert.HilbertStructure <> I3 proj
+R10671:10672 Hilbert.HilbertStructure <> I3 proj
+R10721:10722 Hilbert.HilbertStructure <> I4 proj
+R10721:10722 Hilbert.HilbertStructure <> I4 proj
+R10766:10767 Hilbert.HilbertStructure <> I5 proj
+R10766:10767 Hilbert.HilbertStructure <> I5 proj
+R10780:10781 Hilbert.HilbertStructure <> I6 proj
+R10780:10781 Hilbert.HilbertStructure <> I6 proj
+R10796:10797 Hilbert.HilbertStructure <> I7 proj
+R10796:10797 Hilbert.HilbertStructure <> I7 proj
+R10810:10811 Hilbert.HilbertStructure <> I8 proj
+R10810:10811 Hilbert.HilbertStructure <> I8 proj
+R10530:10535 Hilbert.QPlane <> QPoint def
+R10551:10555 Hilbert.QPlane <> QLine rec
+R10572:10582 Hilbert.QPlane <> QPlanePlane def
+R10596:10601 Hilbert.QPlane <> QIncid def
+R10620:10630 Hilbert.QPlane <> QIncidPlane def
+R10641:10652 Hilbert.QPlane <> QLine_exists prfax
+R10663:10666 Hilbert.QPlane <> Q_I2 prfax
+R10677:10680 Corelib.Init.Logic <> conj constr
+R10697:10716 Hilbert.QPlane <> Q_three_noncollinear prfax
+R10682:10695 Hilbert.QPlane <> Q_line_two_pts prfax
+R10727:10730 Corelib.Init.Logic <> conj constr
+R10748:10761 Hilbert.QPlane <> Q_I4_existence thm
+R10732:10746 Hilbert.QPlane <> Q_I4_uniqueness thm
+R10772:10775 Hilbert.QPlane <> Q_I5 thm
+R10786:10791 Hilbert.QPlane <> Q_I6_a prfax
+R10802:10805 Hilbert.QPlane <> Q_I7 prfax
+R10816:10819 Hilbert.QPlane <> Q_I8 prfax
+def 11546:11549 <> QBet
+R11560:11565 Hilbert.QPlane <> QPoint def
+binder 11552:11552 <> A:68
+binder 11554:11554 <> B:69
+binder 11556:11556 <> C:70
+R11580:11586 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11592:11593 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11591:11591 Stdlib.QArith.QArith_base <> Q rec
+binder 11587:11587 <> t:71
+R11603:11606 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11594:11596 Stdlib.QArith.QArith_base <> Qlt def
+R11602:11602 Hilbert.QPlane <> t:71 var
+R11616:11623 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11607:11609 Stdlib.QArith.QArith_base <> Qlt def
+R11611:11611 Hilbert.QPlane <> t:71 var
+R11665:11672 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11624:11626 Stdlib.QArith.QArith_base <> Qeq def
+R11629:11631 Corelib.Init.Datatypes <> fst def
+R11633:11633 Hilbert.QPlane <> B:69 var
+R11642:11644 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R11637:11639 Corelib.Init.Datatypes <> fst def
+R11641:11641 Hilbert.QPlane <> A:68 var
+R11646:11649 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R11663:11663 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R11645:11645 Hilbert.QPlane <> t:71 var
+R11655:11657 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R11650:11652 Corelib.Init.Datatypes <> fst def
+R11654:11654 Hilbert.QPlane <> C:70 var
+R11658:11660 Corelib.Init.Datatypes <> fst def
+R11662:11662 Hilbert.QPlane <> A:68 var
+R11673:11675 Stdlib.QArith.QArith_base <> Qeq def
+R11678:11680 Corelib.Init.Datatypes <> snd def
+R11682:11682 Hilbert.QPlane <> B:69 var
+R11691:11693 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R11686:11688 Corelib.Init.Datatypes <> snd def
+R11690:11690 Hilbert.QPlane <> A:68 var
+R11695:11698 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R11712:11712 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R11694:11694 Hilbert.QPlane <> t:71 var
+R11704:11706 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R11699:11701 Corelib.Init.Datatypes <> snd def
+R11703:11703 Hilbert.QPlane <> C:70 var
+R11707:11709 Corelib.Init.Datatypes <> snd def
+R11711:11711 Hilbert.QPlane <> A:68 var
+R11727:11730 Hilbert.QPlane <> QBet def
+ax 11754:11766 <> Q_bet_on_line
+R11784:11789 Hilbert.QPlane <> QPoint def
+binder 11778:11778 <> A:72
+binder 11780:11780 <> B:73
+R11797:11801 Hilbert.QPlane <> QLine rec
+binder 11793:11793 <> l:74
+R11841:11846 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11817:11820 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11807:11812 Hilbert.QPlane <> QIncid def
+R11814:11814 Hilbert.QPlane <> A:72 var
+R11816:11816 Hilbert.QPlane <> l:74 var
+R11831:11834 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11821:11826 Hilbert.QPlane <> QIncid def
+R11828:11828 Hilbert.QPlane <> B:73 var
+R11830:11830 Hilbert.QPlane <> l:74 var
+R11836:11839 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11835:11835 Hilbert.QPlane <> A:72 var
+R11840:11840 Hilbert.QPlane <> B:73 var
+R11847:11853 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11864:11865 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11858:11863 Hilbert.QPlane <> QPoint def
+binder 11854:11854 <> R:75
+R11876:11879 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R11866:11871 Hilbert.QPlane <> QIncid def
+R11873:11873 Hilbert.QPlane <> R:75 var
+R11875:11875 Hilbert.QPlane <> l:74 var
+R11880:11883 Hilbert.QPlane <> QBet def
+R11885:11885 Hilbert.QPlane <> A:72 var
+R11887:11887 Hilbert.QPlane <> R:75 var
+R11889:11889 Hilbert.QPlane <> B:73 var
+ax 11898:11906 <> Q_bet_sym
+R11925:11930 Hilbert.QPlane <> QPoint def
+binder 11917:11917 <> A:78
+binder 11919:11919 <> B:79
+binder 11921:11921 <> C:80
+R11943:11946 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11933:11936 Hilbert.QPlane <> QBet def
+R11938:11938 Hilbert.QPlane <> A:78 var
+R11940:11940 Hilbert.QPlane <> B:79 var
+R11942:11942 Hilbert.QPlane <> C:80 var
+R11947:11950 Hilbert.QPlane <> QBet def
+R11952:11952 Hilbert.QPlane <> C:80 var
+R11954:11954 Hilbert.QPlane <> B:79 var
+R11956:11956 Hilbert.QPlane <> A:78 var
+ax 11965:11976 <> Q_bet_nondeg
+R11995:12000 Hilbert.QPlane <> QPoint def
+binder 11987:11987 <> A:83
+binder 11989:11989 <> B:84
+binder 11991:11991 <> C:85
+R12013:12016 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12003:12006 Hilbert.QPlane <> QBet def
+R12008:12008 Hilbert.QPlane <> A:83 var
+R12010:12010 Hilbert.QPlane <> B:84 var
+R12012:12012 Hilbert.QPlane <> C:85 var
+R12023:12026 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12018:12021 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12017:12017 Hilbert.QPlane <> A:83 var
+R12022:12022 Hilbert.QPlane <> B:84 var
+R12033:12036 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12028:12031 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12027:12027 Hilbert.QPlane <> B:84 var
+R12032:12032 Hilbert.QPlane <> C:85 var
+R12038:12041 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12037:12037 Hilbert.QPlane <> A:83 var
+R12042:12042 Hilbert.QPlane <> C:85 var
+ax 12051:12061 <> Q_bet_trans
+R12082:12087 Hilbert.QPlane <> QPoint def
+binder 12072:12072 <> A:88
+binder 12074:12074 <> B:89
+binder 12076:12076 <> C:90
+binder 12078:12078 <> D:91
+R12102:12105 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12092:12095 Hilbert.QPlane <> QBet def
+R12097:12097 Hilbert.QPlane <> A:88 var
+R12099:12099 Hilbert.QPlane <> B:89 var
+R12101:12101 Hilbert.QPlane <> C:90 var
+R12116:12119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12106:12109 Hilbert.QPlane <> QBet def
+R12111:12111 Hilbert.QPlane <> B:89 var
+R12113:12113 Hilbert.QPlane <> C:90 var
+R12115:12115 Hilbert.QPlane <> D:91 var
+R12126:12129 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12121:12124 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12120:12120 Hilbert.QPlane <> B:89 var
+R12125:12125 Hilbert.QPlane <> C:90 var
+R12130:12133 Hilbert.QPlane <> QBet def
+R12135:12135 Hilbert.QPlane <> A:88 var
+R12137:12137 Hilbert.QPlane <> B:89 var
+R12139:12139 Hilbert.QPlane <> D:91 var
+ax 12148:12154 <> Q_pasch
+R12177:12182 Hilbert.QPlane <> QPoint def
+binder 12165:12165 <> A:94
+binder 12167:12167 <> B:95
+binder 12169:12169 <> C:96
+binder 12171:12171 <> P:97
+binder 12173:12173 <> Q:98
+R12197:12200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12187:12190 Hilbert.QPlane <> QBet def
+R12192:12192 Hilbert.QPlane <> A:94 var
+R12194:12194 Hilbert.QPlane <> P:97 var
+R12196:12196 Hilbert.QPlane <> C:96 var
+R12211:12214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12201:12204 Hilbert.QPlane <> QBet def
+R12206:12206 Hilbert.QPlane <> B:95 var
+R12208:12208 Hilbert.QPlane <> Q:98 var
+R12210:12210 Hilbert.QPlane <> C:96 var
+R12221:12224 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12216:12219 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12215:12215 Hilbert.QPlane <> P:97 var
+R12220:12220 Hilbert.QPlane <> C:96 var
+R12231:12236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12226:12229 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R12225:12225 Hilbert.QPlane <> Q:98 var
+R12230:12230 Hilbert.QPlane <> C:96 var
+R12237:12243 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12254:12255 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12248:12253 Hilbert.QPlane <> QPoint def
+binder 12244:12244 <> X:99
+R12266:12270 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12295:12295 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12256:12259 Hilbert.QPlane <> QBet def
+R12261:12261 Hilbert.QPlane <> P:97 var
+R12263:12263 Hilbert.QPlane <> X:99 var
+R12265:12265 Hilbert.QPlane <> Q:98 var
+R12281:12284 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R12271:12274 Hilbert.QPlane <> QBet def
+R12276:12276 Hilbert.QPlane <> A:94 var
+R12278:12278 Hilbert.QPlane <> X:99 var
+R12280:12280 Hilbert.QPlane <> B:95 var
+R12285:12288 Hilbert.QPlane <> QBet def
+R12290:12290 Hilbert.QPlane <> B:95 var
+R12292:12292 Hilbert.QPlane <> X:99 var
+R12294:12294 Hilbert.QPlane <> A:94 var
+def 12333:12340 <> Q2_Order
+R12344:12357 Hilbert.HilbertStructure <> OrderStructure rec
+R12359:12370 Hilbert.QPlane <> Q2_Incidence def
+R12390:12396 Hilbert.HilbertStructure <> mkOrder constr
+R12398:12409 Hilbert.QPlane <> Q2_Incidence def
+binder 12416:12416 <> A:102
+binder 12418:12418 <> B:103
+binder 12420:12420 <> C:104
+R12425:12428 Hilbert.QPlane <> QBet def
+R12430:12430 Hilbert.QPlane <> A:102 var
+R12432:12432 Hilbert.QPlane <> B:103 var
+R12434:12434 Hilbert.QPlane <> C:104 var
+R12390:12396 Hilbert.HilbertStructure <> mkOrder constr
+R12398:12409 Hilbert.QPlane <> Q2_Incidence def
+binder 12416:12416 <> A:105
+binder 12418:12418 <> B:106
+binder 12420:12420 <> C:107
+R12425:12428 Hilbert.QPlane <> QBet def
+R12430:12430 Hilbert.QPlane <> A:105 var
+R12432:12432 Hilbert.QPlane <> B:106 var
+R12434:12434 Hilbert.QPlane <> C:107 var
+R12459:12471 Hilbert.QPlane <> Q_bet_on_line prfax
+R12459:12471 Hilbert.QPlane <> Q_bet_on_line prfax
+R12484:12492 Hilbert.QPlane <> Q_bet_sym prfax
+R12484:12492 Hilbert.QPlane <> Q_bet_sym prfax
+R12505:12516 Hilbert.QPlane <> Q_bet_nondeg prfax
+R12505:12516 Hilbert.QPlane <> Q_bet_nondeg prfax
+R12529:12539 Hilbert.QPlane <> Q_bet_trans prfax
+R12529:12539 Hilbert.QPlane <> Q_bet_trans prfax
+R12552:12558 Hilbert.QPlane <> Q_pasch prfax
+R12552:12558 Hilbert.QPlane <> Q_pasch prfax
+rec 12909:12912 <> QRay
+proj 12935:12945 <> qray_origin
+proj 12959:12967 <> qray_line
+R12949:12954 Hilbert.QPlane <> QPoint def
+R12973:12977 Hilbert.QPlane <> QLine rec
+def 13016:13021 <> QOnRay
+R13028:13033 Hilbert.QPlane <> QPoint def
+binder 13024:13024 <> P:111
+R13041:13044 Hilbert.QPlane <> QRay rec
+binder 13037:13037 <> r:112
+R13059:13064 Hilbert.QPlane <> QIncid def
+R13066:13066 Hilbert.QPlane <> P:111 var
+R13069:13077 Hilbert.QPlane <> qray_line proj
+R13079:13079 Hilbert.QPlane <> r:112 var
+ax 13090:13100 <> Q_ray_valid
+R13115:13118 Hilbert.QPlane <> QRay rec
+binder 13111:13111 <> r:113
+R13121:13126 Hilbert.QPlane <> QIncid def
+R13129:13139 Hilbert.QPlane <> qray_origin proj
+R13141:13141 Hilbert.QPlane <> r:113 var
+R13145:13153 Hilbert.QPlane <> qray_line proj
+R13155:13155 Hilbert.QPlane <> r:113 var
+def 13190:13196 <> QDistSq
+R13205:13210 Hilbert.QPlane <> QPoint def
+binder 13199:13199 <> A:116
+binder 13201:13201 <> B:117
+R13215:13215 Stdlib.QArith.QArith_base <> Q rec
+R13237:13239 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R13232:13234 Corelib.Init.Datatypes <> fst def
+R13236:13236 Hilbert.QPlane <> A:116 var
+R13240:13242 Corelib.Init.Datatypes <> fst def
+R13244:13244 Hilbert.QPlane <> B:117 var
+binder 13226:13227 <> dx:118
+R13266:13268 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R13261:13263 Corelib.Init.Datatypes <> snd def
+R13265:13265 Hilbert.QPlane <> A:116 var
+R13269:13271 Corelib.Init.Datatypes <> snd def
+R13273:13273 Hilbert.QPlane <> B:117 var
+binder 13255:13256 <> dy:119
+R13287:13289 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R13282:13284 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R13280:13281 Hilbert.QPlane <> dx:118 var
+R13285:13286 Hilbert.QPlane <> dx:118 var
+R13292:13294 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R13290:13291 Hilbert.QPlane <> dy:119 var
+R13295:13296 Hilbert.QPlane <> dy:119 var
+def 13330:13337 <> QCongSeg
+R13350:13355 Hilbert.QPlane <> QPoint def
+binder 13340:13340 <> A:120
+binder 13342:13342 <> B:121
+binder 13344:13344 <> C:122
+binder 13346:13346 <> D:123
+R13379:13382 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R13368:13374 Hilbert.QPlane <> QDistSq def
+R13376:13376 Hilbert.QPlane <> A:120 var
+R13378:13378 Hilbert.QPlane <> B:121 var
+R13383:13389 Hilbert.QPlane <> QDistSq def
+R13391:13391 Hilbert.QPlane <> C:122 var
+R13393:13393 Hilbert.QPlane <> D:123 var
+ax 13459:13466 <> QCongAng
+R13476:13479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13470:13475 Hilbert.QPlane <> QPoint def
+R13486:13489 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13480:13485 Hilbert.QPlane <> QPoint def
+R13496:13499 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13490:13495 Hilbert.QPlane <> QPoint def
+R13506:13509 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13500:13505 Hilbert.QPlane <> QPoint def
+R13516:13519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13510:13515 Hilbert.QPlane <> QPoint def
+R13526:13529 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13520:13525 Hilbert.QPlane <> QPoint def
+ax 13583:13588 <> Q_III1
+R13606:13611 Hilbert.QPlane <> QPoint def
+binder 13600:13600 <> A:126
+binder 13602:13602 <> B:127
+R13619:13622 Hilbert.QPlane <> QRay rec
+binder 13615:13615 <> r:128
+R13634:13637 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13629:13632 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R13628:13628 Hilbert.QPlane <> A:126 var
+R13633:13633 Hilbert.QPlane <> B:127 var
+R13638:13645 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R13656:13657 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R13650:13655 Hilbert.QPlane <> QPoint def
+binder 13646:13646 <> X:129
+R13668:13671 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13658:13663 Hilbert.QPlane <> QOnRay def
+R13665:13665 Hilbert.QPlane <> X:129 var
+R13667:13667 Hilbert.QPlane <> r:128 var
+R13672:13679 Hilbert.QPlane <> QCongSeg def
+R13681:13681 Hilbert.QPlane <> A:126 var
+R13683:13683 Hilbert.QPlane <> B:127 var
+R13686:13696 Hilbert.QPlane <> qray_origin proj
+R13698:13698 Hilbert.QPlane <> r:128 var
+R13701:13701 Hilbert.QPlane <> X:129 var
+ax 13737:13742 <> Q_III2
+R13767:13772 Hilbert.QPlane <> QPoint def
+binder 13753:13753 <> A:132
+binder 13755:13755 <> B:133
+binder 13757:13757 <> C:134
+binder 13759:13759 <> D:135
+binder 13761:13761 <> E:136
+binder 13763:13763 <> F:137
+R13793:13796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13777:13784 Hilbert.QPlane <> QCongSeg def
+R13786:13786 Hilbert.QPlane <> A:132 var
+R13788:13788 Hilbert.QPlane <> B:133 var
+R13790:13790 Hilbert.QPlane <> C:134 var
+R13792:13792 Hilbert.QPlane <> D:135 var
+R13813:13816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13797:13804 Hilbert.QPlane <> QCongSeg def
+R13806:13806 Hilbert.QPlane <> A:132 var
+R13808:13808 Hilbert.QPlane <> B:133 var
+R13810:13810 Hilbert.QPlane <> E:136 var
+R13812:13812 Hilbert.QPlane <> F:137 var
+R13817:13824 Hilbert.QPlane <> QCongSeg def
+R13826:13826 Hilbert.QPlane <> C:134 var
+R13828:13828 Hilbert.QPlane <> D:135 var
+R13830:13830 Hilbert.QPlane <> E:136 var
+R13832:13832 Hilbert.QPlane <> F:137 var
+ax 13885:13890 <> Q_III3
+R13918:13923 Hilbert.QPlane <> QPoint def
+binder 13901:13901 <> A:140
+binder 13903:13903 <> B:141
+binder 13905:13905 <> C:142
+binder 13907:13908 <> A':143
+binder 13910:13911 <> B':144
+binder 13913:13914 <> C':145
+R13938:13941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13928:13931 Hilbert.QPlane <> QBet def
+R13933:13933 Hilbert.QPlane <> A:140 var
+R13935:13935 Hilbert.QPlane <> B:141 var
+R13937:13937 Hilbert.QPlane <> C:142 var
+R13955:13960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13942:13945 Hilbert.QPlane <> QBet def
+R13947:13948 Hilbert.QPlane <> A':143 var
+R13950:13951 Hilbert.QPlane <> B':144 var
+R13953:13954 Hilbert.QPlane <> C':145 var
+R13979:13982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13961:13968 Hilbert.QPlane <> QCongSeg def
+R13970:13970 Hilbert.QPlane <> A:140 var
+R13972:13972 Hilbert.QPlane <> B:141 var
+R13974:13975 Hilbert.QPlane <> A':143 var
+R13977:13978 Hilbert.QPlane <> B':144 var
+R14001:14006 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13983:13990 Hilbert.QPlane <> QCongSeg def
+R13992:13992 Hilbert.QPlane <> B:141 var
+R13994:13994 Hilbert.QPlane <> C:142 var
+R13996:13997 Hilbert.QPlane <> B':144 var
+R13999:14000 Hilbert.QPlane <> C':145 var
+R14007:14014 Hilbert.QPlane <> QCongSeg def
+R14016:14016 Hilbert.QPlane <> A:140 var
+R14018:14018 Hilbert.QPlane <> C:142 var
+R14020:14021 Hilbert.QPlane <> A':143 var
+R14023:14024 Hilbert.QPlane <> C':145 var
+ax 14060:14065 <> Q_III4
+R14086:14091 Hilbert.QPlane <> QPoint def
+binder 14076:14076 <> A:148
+binder 14078:14078 <> B:149
+binder 14080:14080 <> C:150
+binder 14082:14082 <> D:151
+R14110:14113 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14094:14101 Hilbert.QPlane <> QCongSeg def
+R14103:14103 Hilbert.QPlane <> A:148 var
+R14105:14105 Hilbert.QPlane <> B:149 var
+R14107:14107 Hilbert.QPlane <> C:150 var
+R14109:14109 Hilbert.QPlane <> D:151 var
+R14114:14121 Hilbert.QPlane <> QCongSeg def
+R14123:14123 Hilbert.QPlane <> C:150 var
+R14125:14125 Hilbert.QPlane <> D:151 var
+R14127:14127 Hilbert.QPlane <> A:148 var
+R14129:14129 Hilbert.QPlane <> B:149 var
+ax 14165:14170 <> Q_III5
+R14187:14192 Hilbert.QPlane <> QPoint def
+binder 14181:14181 <> A:154
+binder 14183:14183 <> B:155
+R14195:14202 Hilbert.QPlane <> QCongSeg def
+R14204:14204 Hilbert.QPlane <> A:154 var
+R14206:14206 Hilbert.QPlane <> B:155 var
+R14208:14208 Hilbert.QPlane <> A:154 var
+R14210:14210 Hilbert.QPlane <> B:155 var
+ax 14249:14254 <> Q_III6
+R14279:14284 Hilbert.QPlane <> QPoint def
+binder 14265:14265 <> A:158
+binder 14267:14267 <> B:159
+binder 14269:14269 <> C:160
+binder 14271:14271 <> D:161
+binder 14273:14273 <> E:162
+binder 14275:14275 <> F:163
+R14307:14310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14287:14294 Hilbert.QPlane <> QCongAng prfax
+R14296:14296 Hilbert.QPlane <> A:158 var
+R14298:14298 Hilbert.QPlane <> B:159 var
+R14300:14300 Hilbert.QPlane <> C:160 var
+R14302:14302 Hilbert.QPlane <> D:161 var
+R14304:14304 Hilbert.QPlane <> E:162 var
+R14306:14306 Hilbert.QPlane <> F:163 var
+R14311:14318 Hilbert.QPlane <> QCongAng prfax
+R14320:14320 Hilbert.QPlane <> D:161 var
+R14322:14322 Hilbert.QPlane <> E:162 var
+R14324:14324 Hilbert.QPlane <> F:163 var
+R14326:14326 Hilbert.QPlane <> A:158 var
+R14328:14328 Hilbert.QPlane <> B:159 var
+R14330:14330 Hilbert.QPlane <> C:160 var
+def 14368:14380 <> Q2_Congruence
+R14384:14402 Hilbert.HilbertStructure <> CongruenceStructure rec
+R14404:14415 Hilbert.QPlane <> Q2_Incidence def
+R14417:14424 Hilbert.QPlane <> Q2_Order def
+R14444:14455 Hilbert.HilbertStructure <> mkCongruence constr
+R14457:14468 Hilbert.QPlane <> Q2_Incidence def
+R14470:14477 Hilbert.QPlane <> Q2_Order def
+binder 14488:14488 <> A:166
+binder 14490:14490 <> B:167
+binder 14492:14492 <> C:168
+binder 14494:14494 <> D:169
+R14499:14506 Hilbert.QPlane <> QCongSeg def
+R14508:14508 Hilbert.QPlane <> A:166 var
+R14510:14510 Hilbert.QPlane <> B:167 var
+R14512:14512 Hilbert.QPlane <> C:168 var
+R14514:14514 Hilbert.QPlane <> D:169 var
+R14521:14528 Hilbert.QPlane <> QCongAng prfax
+R14530:14533 Hilbert.QPlane <> QRay rec
+R14535:14545 Hilbert.QPlane <> qray_origin proj
+R14547:14555 Hilbert.QPlane <> qray_line proj
+R14561:14571 Hilbert.QPlane <> Q_ray_valid prfax
+R14573:14578 Hilbert.QPlane <> QOnRay def
+R14444:14455 Hilbert.HilbertStructure <> mkCongruence constr
+R14457:14468 Hilbert.QPlane <> Q2_Incidence def
+R14470:14477 Hilbert.QPlane <> Q2_Order def
+binder 14488:14488 <> A:170
+binder 14490:14490 <> B:171
+binder 14492:14492 <> C:172
+binder 14494:14494 <> D:173
+R14499:14506 Hilbert.QPlane <> QCongSeg def
+R14508:14508 Hilbert.QPlane <> A:170 var
+R14510:14510 Hilbert.QPlane <> B:171 var
+R14512:14512 Hilbert.QPlane <> C:172 var
+R14514:14514 Hilbert.QPlane <> D:173 var
+R14521:14528 Hilbert.QPlane <> QCongAng prfax
+R14530:14533 Hilbert.QPlane <> QRay rec
+R14535:14545 Hilbert.QPlane <> qray_origin proj
+R14547:14555 Hilbert.QPlane <> qray_line proj
+R14561:14571 Hilbert.QPlane <> Q_ray_valid prfax
+R14573:14578 Hilbert.QPlane <> QOnRay def
+R14608:14613 Hilbert.QPlane <> Q_III1 prfax
+R14608:14613 Hilbert.QPlane <> Q_III1 prfax
+R14626:14631 Hilbert.QPlane <> Q_III2 prfax
+R14626:14631 Hilbert.QPlane <> Q_III2 prfax
+R14644:14649 Hilbert.QPlane <> Q_III3 prfax
+R14644:14649 Hilbert.QPlane <> Q_III3 prfax
+R14662:14667 Hilbert.QPlane <> Q_III4 prfax
+R14662:14667 Hilbert.QPlane <> Q_III4 prfax
+R14680:14685 Hilbert.QPlane <> Q_III5 prfax
+R14680:14685 Hilbert.QPlane <> Q_III5 prfax
+R14698:14703 Hilbert.QPlane <> Q_III6 prfax
+R14698:14703 Hilbert.QPlane <> Q_III6 prfax
+rec 15011:15018 <> QSegment
+proj 15045:15049 <> seg_p
+proj 15063:15067 <> seg_q
+R15053:15058 Hilbert.QPlane <> QPoint def
+R15071:15076 Hilbert.QPlane <> QPoint def
+ax 15110:15119 <> Q_segValid
+R15134:15141 Hilbert.QPlane <> QSegment rec
+binder 15130:15130 <> s:177
+R15151:15154 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15144:15148 Hilbert.QPlane <> seg_p proj
+R15150:15150 Hilbert.QPlane <> s:177 var
+R15155:15159 Hilbert.QPlane <> seg_q proj
+R15161:15161 Hilbert.QPlane <> s:177 var
+def 15363:15375 <> QSegmentTimes
+R15382:15389 Hilbert.QPlane <> QSegment rec
+binder 15378:15378 <> s:180
+R15397:15399 Corelib.Init.Datatypes <> nat ind
+binder 15393:15393 <> n:181
+R15404:15411 Hilbert.QPlane <> QSegment rec
+R15421:15425 Hilbert.QPlane <> seg_p proj
+R15421:15425 Hilbert.QPlane <> seg_p proj
+R15421:15425 Hilbert.QPlane <> seg_p proj
+R15439:15443 Hilbert.QPlane <> seg_q proj
+R15439:15443 Hilbert.QPlane <> seg_q proj
+R15430:15434 Hilbert.QPlane <> seg_p proj
+R15436:15436 Hilbert.QPlane <> s:180 var
+R15448:15452 Hilbert.QPlane <> seg_q proj
+R15454:15454 Hilbert.QPlane <> s:180 var
+def 15531:15540 <> QSegmentLe
+R15549:15556 Hilbert.QPlane <> QSegment rec
+binder 15543:15543 <> s:182
+binder 15545:15545 <> t:183
+R15571:15573 Stdlib.QArith.QArith_base <> Qle def
+R15576:15582 Hilbert.QPlane <> QDistSq def
+R15585:15589 Hilbert.QPlane <> seg_p proj
+R15591:15591 Hilbert.QPlane <> s:182 var
+R15595:15599 Hilbert.QPlane <> seg_q proj
+R15601:15601 Hilbert.QPlane <> s:182 var
+R15606:15612 Hilbert.QPlane <> QDistSq def
+R15615:15619 Hilbert.QPlane <> seg_p proj
+R15621:15621 Hilbert.QPlane <> t:183 var
+R15625:15629 Hilbert.QPlane <> seg_q proj
+R15631:15631 Hilbert.QPlane <> t:183 var
+ax 15842:15853 <> Q_archimedes
+R15871:15878 Hilbert.QPlane <> QSegment rec
+binder 15865:15865 <> s:184
+binder 15867:15867 <> t:185
+R15884:15890 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15898:15899 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15895:15897 Corelib.Init.Datatypes <> nat ind
+binder 15891:15891 <> n:186
+R15900:15901 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R15902:15911 Hilbert.QPlane <> QSegmentLe def
+R15914:15926 Hilbert.QPlane <> QSegmentTimes def
+R15928:15928 Hilbert.QPlane <> s:184 var
+R15930:15930 Hilbert.QPlane <> n:186 var
+R15933:15933 Hilbert.QPlane <> t:185 var
+def 15976:15988 <> Q2_Archimedes
+R15992:16010 Hilbert.HilbertStructure <> ArchimedesStructure rec
+R16012:16023 Hilbert.QPlane <> Q2_Incidence def
+R16025:16032 Hilbert.QPlane <> Q2_Order def
+R16034:16046 Hilbert.QPlane <> Q2_Congruence def
+R16066:16077 Hilbert.HilbertStructure <> mkArchimedes constr
+R16079:16090 Hilbert.QPlane <> Q2_Incidence def
+R16092:16099 Hilbert.QPlane <> Q2_Order def
+R16101:16113 Hilbert.QPlane <> Q2_Congruence def
+R16119:16126 Hilbert.QPlane <> QSegment rec
+R16128:16132 Hilbert.QPlane <> seg_p proj
+R16134:16138 Hilbert.QPlane <> seg_q proj
+R16140:16149 Hilbert.QPlane <> Q_segValid prfax
+R16155:16167 Hilbert.QPlane <> QSegmentTimes def
+R16169:16178 Hilbert.QPlane <> QSegmentLe def
+R16066:16077 Hilbert.HilbertStructure <> mkArchimedes constr
+R16079:16090 Hilbert.QPlane <> Q2_Incidence def
+R16092:16099 Hilbert.QPlane <> Q2_Order def
+R16101:16113 Hilbert.QPlane <> Q2_Congruence def
+R16119:16126 Hilbert.QPlane <> QSegment rec
+R16128:16132 Hilbert.QPlane <> seg_p proj
+R16134:16138 Hilbert.QPlane <> seg_q proj
+R16140:16149 Hilbert.QPlane <> Q_segValid prfax
+R16155:16167 Hilbert.QPlane <> QSegmentTimes def
+R16169:16178 Hilbert.QPlane <> QSegmentLe def
+R16192:16203 Hilbert.QPlane <> Q_archimedes prfax
+R16192:16203 Hilbert.QPlane <> Q_archimedes prfax
+rec 16558:16569 <> QDedekindCut
+proj 16592:16595 <> cutL
+proj 16617:16620 <> cutU
+R16605:16608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16599:16604 Hilbert.QPlane <> QPoint def
+R16630:16633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16624:16629 Hilbert.QPlane <> QPoint def
+ax 16649:16658 <> Q_cutValid
+R16676:16687 Hilbert.QPlane <> QDedekindCut rec
+binder 16670:16672 <> cut:192
+R16695:16700 Hilbert.QPlane <> QPoint def
+binder 16691:16691 <> P:193
+R16716:16720 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R16706:16709 Hilbert.QPlane <> cutL proj
+R16711:16713 Hilbert.QPlane <> cut:192 var
+R16715:16715 Hilbert.QPlane <> P:193 var
+R16721:16722 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R16723:16726 Hilbert.QPlane <> cutU proj
+R16728:16730 Hilbert.QPlane <> cut:192 var
+R16732:16732 Hilbert.QPlane <> P:193 var
+ax 17457:17470 <> Q_not_dedekind
+R17486:17490 Hilbert.QPlane <> QLine rec
+binder 17482:17482 <> a:196
+R17500:17511 Hilbert.QPlane <> QDedekindCut rec
+binder 17494:17496 <> cut:197
+R17517:17517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17606:17612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17529:17536 Hilbert.HilbertStructure <> IncPoint proj
+R17538:17549 Hilbert.QPlane <> Q2_Incidence def
+binder 17525:17525 <> S:198
+R17578:17585 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17556:17560 Hilbert.HilbertStructure <> Incid proj
+R17562:17573 Hilbert.QPlane <> Q2_Incidence def
+R17575:17575 Hilbert.QPlane <> S:198 var
+R17577:17577 Hilbert.QPlane <> a:196 var
+R17597:17600 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17587:17590 Hilbert.QPlane <> QBet def
+R17592:17592 Hilbert.QPlane <> S:198 var
+R17594:17594 Hilbert.QPlane <> S:198 var
+R17596:17596 Hilbert.QPlane <> S:198 var
+R17601:17605 Corelib.Init.Logic <> False ind
+R17613:17617 Corelib.Init.Logic <> False ind
+def 17887:17893 <> Q2_Weak
+R17897:17912 Hilbert.HilbertStructure <> WeakHilbertPlane rec
+R17932:17944 Hilbert.HilbertStructure <> mkWeakHilbert constr
+R17946:17957 Hilbert.QPlane <> Q2_Incidence def
+R17959:17966 Hilbert.QPlane <> Q2_Order def
+R17968:17980 Hilbert.QPlane <> Q2_Congruence def
+R17982:17994 Hilbert.QPlane <> Q2_Archimedes def
+R17932:17944 Hilbert.HilbertStructure <> mkWeakHilbert constr
+R17946:17957 Hilbert.QPlane <> Q2_Incidence def
+R17959:17966 Hilbert.QPlane <> Q2_Order def
+R17968:17980 Hilbert.QPlane <> Q2_Congruence def
+R17982:17994 Hilbert.QPlane <> Q2_Archimedes def

@@ -1,0 +1,1255 @@
+DIGEST 8fde12a37177ef9489310823d5e1af72
+FLinearAlgebra.SymmetricMatrix
+R160:164 Stdlib.Reals.Reals <> <> lib
+R182:186 Stdlib.Reals.Reals <> <> lib
+R188:190 Stdlib.micromega.Lra <> <> lib
+R208:231 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R249:257 Stdlib.Logic.Classical <> <> lib
+R275:279 Stdlib.Arith.Arith <> <> lib
+R281:283 Stdlib.micromega.Lia <> <> lib
+def 554:559 <> Matrix
+R566:568 Corelib.Init.Datatypes <> nat ind
+binder 562:562 <> n:1
+R577:580 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R574:576 Corelib.Init.Datatypes <> nat ind
+R584:587 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R581:583 Corelib.Init.Datatypes <> nat ind
+R588:588 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 603:612 <> matrix_add
+R619:621 Corelib.Init.Datatypes <> nat ind
+binder 615:615 <> n:2
+R631:636 LinearAlgebra.SymmetricMatrix <> Matrix def
+R638:638 LinearAlgebra.SymmetricMatrix <> n:2 var
+binder 625:625 <> A:3
+binder 627:627 <> B:4
+R643:648 LinearAlgebra.SymmetricMatrix <> Matrix def
+R650:650 LinearAlgebra.SymmetricMatrix <> n:2 var
+binder 661:661 <> i:5
+binder 663:663 <> j:6
+R673:675 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R668:668 LinearAlgebra.SymmetricMatrix <> A:3 var
+R670:670 LinearAlgebra.SymmetricMatrix <> i:5 var
+R672:672 LinearAlgebra.SymmetricMatrix <> j:6 var
+R676:676 LinearAlgebra.SymmetricMatrix <> B:4 var
+R678:678 LinearAlgebra.SymmetricMatrix <> i:5 var
+R680:680 LinearAlgebra.SymmetricMatrix <> j:6 var
+def 693:710 <> matrix_mult_helper
+R719:721 Corelib.Init.Datatypes <> nat ind
+binder 713:713 <> n:7
+binder 715:715 <> k:8
+R731:736 LinearAlgebra.SymmetricMatrix <> Matrix def
+R738:738 LinearAlgebra.SymmetricMatrix <> n:7 var
+binder 725:725 <> A:9
+binder 727:727 <> B:10
+R748:750 Corelib.Init.Datatypes <> nat ind
+binder 742:742 <> i:11
+binder 744:744 <> j:12
+R755:755 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R768:768 LinearAlgebra.SymmetricMatrix <> k:8 var
+R797:799 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R788:788 LinearAlgebra.SymmetricMatrix <> A:9 var
+R790:790 LinearAlgebra.SymmetricMatrix <> i:11 var
+R800:800 LinearAlgebra.SymmetricMatrix <> B:10 var
+R808:808 LinearAlgebra.SymmetricMatrix <> j:12 var
+R814:814 Corelib.Init.Datatypes <> S constr
+R845:847 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R832:834 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R822:822 LinearAlgebra.SymmetricMatrix <> A:9 var
+R824:824 LinearAlgebra.SymmetricMatrix <> i:11 var
+R827:827 Corelib.Init.Datatypes <> S constr
+R835:835 LinearAlgebra.SymmetricMatrix <> B:10 var
+R838:838 Corelib.Init.Datatypes <> S constr
+R844:844 LinearAlgebra.SymmetricMatrix <> j:12 var
+R848:865 LinearAlgebra.SymmetricMatrix <> matrix_mult_helper:13 def
+R878:878 LinearAlgebra.SymmetricMatrix <> j:12 var
+R876:876 LinearAlgebra.SymmetricMatrix <> i:11 var
+R874:874 LinearAlgebra.SymmetricMatrix <> B:10 var
+R872:872 LinearAlgebra.SymmetricMatrix <> A:9 var
+R867:867 LinearAlgebra.SymmetricMatrix <> n:7 var
+def 899:909 <> matrix_mult
+R916:918 Corelib.Init.Datatypes <> nat ind
+binder 912:912 <> n:15
+R928:933 LinearAlgebra.SymmetricMatrix <> Matrix def
+R935:935 LinearAlgebra.SymmetricMatrix <> n:15 var
+binder 922:922 <> A:16
+binder 924:924 <> B:17
+R940:945 LinearAlgebra.SymmetricMatrix <> Matrix def
+R947:947 LinearAlgebra.SymmetricMatrix <> n:15 var
+binder 958:958 <> i:18
+binder 960:960 <> j:19
+R975:975 LinearAlgebra.SymmetricMatrix <> n:15 var
+R1005:1005 Corelib.Init.Datatypes <> S constr
+R1012:1029 LinearAlgebra.SymmetricMatrix <> matrix_mult_helper def
+R1031:1031 LinearAlgebra.SymmetricMatrix <> n:15 var
+R1035:1035 LinearAlgebra.SymmetricMatrix <> A:16 var
+R1037:1037 LinearAlgebra.SymmetricMatrix <> B:17 var
+R1039:1039 LinearAlgebra.SymmetricMatrix <> i:18 var
+R1041:1041 LinearAlgebra.SymmetricMatrix <> j:19 var
+def 1064:1072 <> transpose
+R1079:1081 Corelib.Init.Datatypes <> nat ind
+binder 1075:1075 <> n:21
+R1089:1094 LinearAlgebra.SymmetricMatrix <> Matrix def
+R1096:1096 LinearAlgebra.SymmetricMatrix <> n:21 var
+binder 1085:1085 <> A:22
+R1101:1106 LinearAlgebra.SymmetricMatrix <> Matrix def
+R1108:1108 LinearAlgebra.SymmetricMatrix <> n:21 var
+binder 1119:1119 <> i:23
+binder 1121:1121 <> j:24
+R1126:1126 LinearAlgebra.SymmetricMatrix <> A:22 var
+R1128:1128 LinearAlgebra.SymmetricMatrix <> j:24 var
+R1130:1130 LinearAlgebra.SymmetricMatrix <> i:23 var
+def 1379:1390 <> is_symmetric
+R1397:1399 Corelib.Init.Datatypes <> nat ind
+binder 1393:1393 <> n:25
+R1407:1412 LinearAlgebra.SymmetricMatrix <> Matrix def
+R1414:1414 LinearAlgebra.SymmetricMatrix <> n:25 var
+binder 1403:1403 <> A:26
+R1443:1445 Corelib.Init.Datatypes <> nat ind
+binder 1437:1437 <> i:27
+binder 1439:1439 <> j:28
+R1460:1463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1451:1453 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1450:1450 LinearAlgebra.SymmetricMatrix <> i:27 var
+R1454:1454 LinearAlgebra.SymmetricMatrix <> n:25 var
+R1475:1478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1466:1468 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R1465:1465 LinearAlgebra.SymmetricMatrix <> j:28 var
+R1469:1469 LinearAlgebra.SymmetricMatrix <> n:25 var
+R1484:1486 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1479:1479 LinearAlgebra.SymmetricMatrix <> A:26 var
+R1481:1481 LinearAlgebra.SymmetricMatrix <> i:27 var
+R1483:1483 LinearAlgebra.SymmetricMatrix <> j:28 var
+R1487:1487 LinearAlgebra.SymmetricMatrix <> A:26 var
+R1489:1489 LinearAlgebra.SymmetricMatrix <> j:28 var
+R1491:1491 LinearAlgebra.SymmetricMatrix <> i:27 var
+def 1860:1867 <> qf_inner
+R1876:1878 Corelib.Init.Datatypes <> nat ind
+binder 1870:1870 <> n:29
+binder 1872:1872 <> k:30
+R1886:1891 LinearAlgebra.SymmetricMatrix <> Matrix def
+R1893:1893 LinearAlgebra.SymmetricMatrix <> n:29 var
+binder 1882:1882 <> A:31
+R1904:1907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1901:1903 Corelib.Init.Datatypes <> nat ind
+R1908:1908 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1897:1897 <> x:32
+R1916:1918 Corelib.Init.Datatypes <> nat ind
+binder 1912:1912 <> i:33
+R1923:1923 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1936:1936 LinearAlgebra.SymmetricMatrix <> k:30 var
+R1965:1967 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1956:1956 LinearAlgebra.SymmetricMatrix <> A:31 var
+R1958:1958 LinearAlgebra.SymmetricMatrix <> i:33 var
+R1968:1968 LinearAlgebra.SymmetricMatrix <> x:32 var
+R1980:1980 Corelib.Init.Datatypes <> S constr
+R2009:2011 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1998:2000 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1988:1988 LinearAlgebra.SymmetricMatrix <> A:31 var
+R1990:1990 LinearAlgebra.SymmetricMatrix <> i:33 var
+R1993:1993 Corelib.Init.Datatypes <> S constr
+R2001:2001 LinearAlgebra.SymmetricMatrix <> x:32 var
+R2004:2004 Corelib.Init.Datatypes <> S constr
+R2012:2019 LinearAlgebra.SymmetricMatrix <> qf_inner:34 def
+R2030:2030 LinearAlgebra.SymmetricMatrix <> i:33 var
+R2028:2028 LinearAlgebra.SymmetricMatrix <> x:32 var
+R2026:2026 LinearAlgebra.SymmetricMatrix <> A:31 var
+R2021:2021 LinearAlgebra.SymmetricMatrix <> n:29 var
+def 2049:2056 <> qf_outer
+R2065:2067 Corelib.Init.Datatypes <> nat ind
+binder 2059:2059 <> n:36
+binder 2061:2061 <> i:37
+R2075:2080 LinearAlgebra.SymmetricMatrix <> Matrix def
+R2082:2082 LinearAlgebra.SymmetricMatrix <> n:36 var
+binder 2071:2071 <> A:38
+R2093:2096 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2090:2092 Corelib.Init.Datatypes <> nat ind
+R2097:2097 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2086:2086 <> x:39
+R2102:2102 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2115:2115 LinearAlgebra.SymmetricMatrix <> i:37 var
+R2142:2144 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2135:2135 LinearAlgebra.SymmetricMatrix <> x:39 var
+R2145:2152 LinearAlgebra.SymmetricMatrix <> qf_inner def
+R2154:2154 LinearAlgebra.SymmetricMatrix <> n:36 var
+R2156:2156 LinearAlgebra.SymmetricMatrix <> n:36 var
+R2158:2158 LinearAlgebra.SymmetricMatrix <> A:38 var
+R2160:2160 LinearAlgebra.SymmetricMatrix <> x:39 var
+R2172:2172 Corelib.Init.Datatypes <> S constr
+R2214:2216 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2188:2190 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2180:2180 LinearAlgebra.SymmetricMatrix <> x:39 var
+R2183:2183 Corelib.Init.Datatypes <> S constr
+R2191:2198 LinearAlgebra.SymmetricMatrix <> qf_inner def
+R2200:2200 LinearAlgebra.SymmetricMatrix <> n:36 var
+R2202:2202 LinearAlgebra.SymmetricMatrix <> n:36 var
+R2204:2204 LinearAlgebra.SymmetricMatrix <> A:38 var
+R2206:2206 LinearAlgebra.SymmetricMatrix <> x:39 var
+R2209:2209 Corelib.Init.Datatypes <> S constr
+R2217:2224 LinearAlgebra.SymmetricMatrix <> qf_outer:40 def
+R2233:2233 LinearAlgebra.SymmetricMatrix <> x:39 var
+R2231:2231 LinearAlgebra.SymmetricMatrix <> A:38 var
+R2226:2226 LinearAlgebra.SymmetricMatrix <> n:36 var
+def 2254:2273 <> is_positive_definite
+R2280:2282 Corelib.Init.Datatypes <> nat ind
+binder 2276:2276 <> n:42
+R2290:2295 LinearAlgebra.SymmetricMatrix <> Matrix def
+R2297:2297 LinearAlgebra.SymmetricMatrix <> n:42 var
+binder 2286:2286 <> A:43
+R2327:2330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2324:2326 Corelib.Init.Datatypes <> nat ind
+R2331:2331 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2320:2320 <> x:44
+R2339:2339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2373:2381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2340:2346 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2348:2349 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 2347:2347 <> i:45
+R2361:2364 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2352:2354 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R2351:2351 LinearAlgebra.SymmetricMatrix <> i:45 var
+R2355:2355 LinearAlgebra.SymmetricMatrix <> n:42 var
+R2368:2371 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2365:2365 LinearAlgebra.SymmetricMatrix <> x:44 var
+R2367:2367 LinearAlgebra.SymmetricMatrix <> i:45 var
+R2388:2388 LinearAlgebra.SymmetricMatrix <> n:42 var
+R2410:2414 Corelib.Init.Logic <> False ind
+R2422:2422 Corelib.Init.Datatypes <> S constr
+R2445:2447 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2429:2436 LinearAlgebra.SymmetricMatrix <> qf_outer def
+R2438:2438 LinearAlgebra.SymmetricMatrix <> n:42 var
+R2442:2442 LinearAlgebra.SymmetricMatrix <> A:43 var
+R2444:2444 LinearAlgebra.SymmetricMatrix <> x:44 var
+def 2750:2763 <> mat_vec_helper
+R2772:2774 Corelib.Init.Datatypes <> nat ind
+binder 2766:2766 <> n:47
+binder 2768:2768 <> k:48
+R2782:2787 LinearAlgebra.SymmetricMatrix <> Matrix def
+R2789:2789 LinearAlgebra.SymmetricMatrix <> n:47 var
+binder 2778:2778 <> A:49
+R2800:2803 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2797:2799 Corelib.Init.Datatypes <> nat ind
+R2804:2804 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2793:2793 <> v:50
+R2812:2814 Corelib.Init.Datatypes <> nat ind
+binder 2808:2808 <> i:51
+R2819:2819 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2832:2832 LinearAlgebra.SymmetricMatrix <> k:48 var
+R2861:2863 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2852:2852 LinearAlgebra.SymmetricMatrix <> A:49 var
+R2854:2854 LinearAlgebra.SymmetricMatrix <> i:51 var
+R2864:2864 LinearAlgebra.SymmetricMatrix <> v:50 var
+R2876:2876 Corelib.Init.Datatypes <> S constr
+R2905:2907 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2894:2896 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2884:2884 LinearAlgebra.SymmetricMatrix <> A:49 var
+R2886:2886 LinearAlgebra.SymmetricMatrix <> i:51 var
+R2889:2889 Corelib.Init.Datatypes <> S constr
+R2897:2897 LinearAlgebra.SymmetricMatrix <> v:50 var
+R2900:2900 Corelib.Init.Datatypes <> S constr
+R2908:2921 LinearAlgebra.SymmetricMatrix <> mat_vec_helper:52 def
+R2932:2932 LinearAlgebra.SymmetricMatrix <> i:51 var
+R2930:2930 LinearAlgebra.SymmetricMatrix <> v:50 var
+R2928:2928 LinearAlgebra.SymmetricMatrix <> A:49 var
+R2923:2923 LinearAlgebra.SymmetricMatrix <> n:47 var
+def 2953:2964 <> mat_vec_mult
+R2971:2973 Corelib.Init.Datatypes <> nat ind
+binder 2967:2967 <> n:54
+R2981:2986 LinearAlgebra.SymmetricMatrix <> Matrix def
+R2988:2988 LinearAlgebra.SymmetricMatrix <> n:54 var
+binder 2977:2977 <> A:55
+R2999:3002 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2996:2998 Corelib.Init.Datatypes <> nat ind
+R3003:3003 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2992:2992 <> v:56
+R3011:3014 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3008:3010 Corelib.Init.Datatypes <> nat ind
+R3015:3015 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3026:3026 <> i:57
+R3041:3041 LinearAlgebra.SymmetricMatrix <> n:54 var
+R3071:3071 Corelib.Init.Datatypes <> S constr
+R3078:3091 LinearAlgebra.SymmetricMatrix <> mat_vec_helper def
+R3093:3093 LinearAlgebra.SymmetricMatrix <> n:54 var
+R3097:3097 LinearAlgebra.SymmetricMatrix <> A:55 var
+R3099:3099 LinearAlgebra.SymmetricMatrix <> v:56 var
+R3101:3101 LinearAlgebra.SymmetricMatrix <> i:57 var
+R3138:3149 LinearAlgebra.SymmetricMatrix <> mat_vec_mult def
+not 3122:3122 <> :::x_'⟪'_x
+def 3249:3261 <> is_eigenvalue
+R3268:3270 Corelib.Init.Datatypes <> nat ind
+binder 3264:3264 <> n:59
+R3278:3283 LinearAlgebra.SymmetricMatrix <> Matrix def
+R3285:3285 LinearAlgebra.SymmetricMatrix <> n:59 var
+binder 3274:3274 <> A:60
+R3298:3298 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3289:3294 <> lambda:61
+R3313:3320 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3333:3339 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3328:3331 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3325:3327 Corelib.Init.Datatypes <> nat ind
+R3332:3332 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3321:3321 <> v:62
+R3340:3340 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3374:3427 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3485:3485 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3341:3347 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3349:3350 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 3348:3348 <> i:63
+R3362:3365 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3353:3355 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R3352:3352 LinearAlgebra.SymmetricMatrix <> i:63 var
+R3356:3356 LinearAlgebra.SymmetricMatrix <> n:59 var
+R3369:3372 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3366:3366 LinearAlgebra.SymmetricMatrix <> v:62 var
+R3368:3368 LinearAlgebra.SymmetricMatrix <> i:63 var
+R3439:3441 Corelib.Init.Datatypes <> nat ind
+binder 3435:3435 <> i:64
+R3455:3458 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3446:3448 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R3445:3445 LinearAlgebra.SymmetricMatrix <> i:64 var
+R3449:3449 LinearAlgebra.SymmetricMatrix <> n:59 var
+R3470:3472 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3459:3459 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R3461:3465 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R3467:3469 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R3460:3460 LinearAlgebra.SymmetricMatrix <> A:60 var
+R3466:3466 LinearAlgebra.SymmetricMatrix <> v:62 var
+R3469:3469 LinearAlgebra.SymmetricMatrix <> i:64 var
+R3479:3481 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3473:3478 LinearAlgebra.SymmetricMatrix <> lambda:61 var
+R3482:3482 LinearAlgebra.SymmetricMatrix <> v:62 var
+R3484:3484 LinearAlgebra.SymmetricMatrix <> i:64 var
+def 3500:3523 <> all_eigenvalues_positive
+R3530:3532 Corelib.Init.Datatypes <> nat ind
+binder 3526:3526 <> n:65
+R3540:3545 LinearAlgebra.SymmetricMatrix <> Matrix def
+R3547:3547 LinearAlgebra.SymmetricMatrix <> n:65 var
+binder 3536:3536 <> A:66
+binder 3569:3574 <> lambda:67
+R3601:3604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3577:3589 LinearAlgebra.SymmetricMatrix <> is_eigenvalue def
+R3591:3591 LinearAlgebra.SymmetricMatrix <> n:65 var
+R3593:3593 LinearAlgebra.SymmetricMatrix <> A:66 var
+R3595:3600 LinearAlgebra.SymmetricMatrix <> lambda:67 var
+R3611:3613 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3605:3610 LinearAlgebra.SymmetricMatrix <> lambda:67 var
+ax 4237:4270 <> spectral_theorem_orthogonal_exists
+R4287:4289 Corelib.Init.Datatypes <> nat ind
+binder 4283:4283 <> n:68
+R4297:4302 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4304:4304 LinearAlgebra.SymmetricMatrix <> n:68 var
+binder 4293:4293 <> A:69
+R4323:4330 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4314:4316 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R4313:4313 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4347:4354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4331:4342 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R4344:4344 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4346:4346 LinearAlgebra.SymmetricMatrix <> A:69 var
+R4355:4362 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4375:4384 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4511:4511 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4367:4372 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4374:4374 LinearAlgebra.SymmetricMatrix <> n:68 var
+binder 4363:4363 <> Q:70
+R4399:4401 Corelib.Init.Datatypes <> nat ind
+binder 4393:4393 <> i:71
+binder 4395:4395 <> j:72
+R4416:4419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4407:4409 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4406:4406 LinearAlgebra.SymmetricMatrix <> i:71 var
+R4410:4410 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4431:4442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4422:4424 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4421:4421 LinearAlgebra.SymmetricMatrix <> j:72 var
+R4425:4425 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4478:4481 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4510:4510 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4443:4453 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R4455:4455 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4458:4466 LinearAlgebra.SymmetricMatrix <> transpose def
+R4468:4468 LinearAlgebra.SymmetricMatrix <> n:68 var
+R4470:4470 LinearAlgebra.SymmetricMatrix <> Q:70 var
+R4473:4473 LinearAlgebra.SymmetricMatrix <> Q:70 var
+R4475:4475 LinearAlgebra.SymmetricMatrix <> i:71 var
+R4477:4477 LinearAlgebra.SymmetricMatrix <> j:72 var
+R4485:4491 Stdlib.Arith.PeanoNat Nat eqb def
+R4493:4493 LinearAlgebra.SymmetricMatrix <> i:71 var
+R4495:4495 LinearAlgebra.SymmetricMatrix <> j:72 var
+ax 4560:4591 <> spectral_theorem_diagonal_exists
+R4608:4610 Corelib.Init.Datatypes <> nat ind
+binder 4604:4604 <> n:75
+R4618:4623 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4625:4625 LinearAlgebra.SymmetricMatrix <> n:75 var
+binder 4614:4614 <> A:76
+R4644:4651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4635:4637 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R4634:4634 LinearAlgebra.SymmetricMatrix <> n:75 var
+R4668:4675 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4652:4663 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R4665:4665 LinearAlgebra.SymmetricMatrix <> n:75 var
+R4667:4667 LinearAlgebra.SymmetricMatrix <> A:76 var
+R4676:4683 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4696:4705 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4775:4775 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4688:4693 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4695:4695 LinearAlgebra.SymmetricMatrix <> n:75 var
+binder 4684:4684 <> D:77
+R4720:4722 Corelib.Init.Datatypes <> nat ind
+binder 4714:4714 <> i:78
+binder 4716:4716 <> j:79
+R4737:4740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4728:4730 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4727:4727 LinearAlgebra.SymmetricMatrix <> i:78 var
+R4731:4731 LinearAlgebra.SymmetricMatrix <> n:75 var
+R4752:4755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4743:4745 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4742:4742 LinearAlgebra.SymmetricMatrix <> j:79 var
+R4746:4746 LinearAlgebra.SymmetricMatrix <> n:75 var
+R4762:4765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4757:4760 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4756:4756 LinearAlgebra.SymmetricMatrix <> i:78 var
+R4761:4761 LinearAlgebra.SymmetricMatrix <> j:79 var
+R4771:4773 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4766:4766 LinearAlgebra.SymmetricMatrix <> D:77 var
+R4768:4768 LinearAlgebra.SymmetricMatrix <> i:78 var
+R4770:4770 LinearAlgebra.SymmetricMatrix <> j:79 var
+ax 4834:4863 <> spectral_theorem_decomposition
+R4880:4882 Corelib.Init.Datatypes <> nat ind
+binder 4876:4876 <> n:82
+R4890:4895 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4897:4897 LinearAlgebra.SymmetricMatrix <> n:82 var
+binder 4886:4886 <> A:83
+R4916:4923 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4907:4909 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R4906:4906 LinearAlgebra.SymmetricMatrix <> n:82 var
+R4940:4947 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4924:4935 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R4937:4937 LinearAlgebra.SymmetricMatrix <> n:82 var
+R4939:4939 LinearAlgebra.SymmetricMatrix <> A:83 var
+R4948:4955 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4983:4991 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4960:4965 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4967:4967 LinearAlgebra.SymmetricMatrix <> n:82 var
+binder 4956:4956 <> Q:84
+R4975:4980 LinearAlgebra.SymmetricMatrix <> Matrix def
+R4982:4982 LinearAlgebra.SymmetricMatrix <> n:82 var
+binder 4971:4971 <> D:85
+R4992:4992 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5119:5129 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5007:5009 Corelib.Init.Datatypes <> nat ind
+binder 5001:5001 <> i:86
+binder 5003:5003 <> j:87
+R5024:5027 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5015:5017 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5014:5014 LinearAlgebra.SymmetricMatrix <> i:86 var
+R5018:5018 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5039:5050 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5030:5032 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5029:5029 LinearAlgebra.SymmetricMatrix <> j:87 var
+R5033:5033 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5086:5089 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5118:5118 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5051:5061 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5063:5063 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5066:5074 LinearAlgebra.SymmetricMatrix <> transpose def
+R5076:5076 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5078:5078 LinearAlgebra.SymmetricMatrix <> Q:84 var
+R5081:5081 LinearAlgebra.SymmetricMatrix <> Q:84 var
+R5083:5083 LinearAlgebra.SymmetricMatrix <> i:86 var
+R5085:5085 LinearAlgebra.SymmetricMatrix <> j:87 var
+R5093:5099 Stdlib.Arith.PeanoNat Nat eqb def
+R5101:5101 LinearAlgebra.SymmetricMatrix <> i:86 var
+R5103:5103 LinearAlgebra.SymmetricMatrix <> j:87 var
+R5130:5130 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5200:5211 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5331:5331 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5145:5147 Corelib.Init.Datatypes <> nat ind
+binder 5139:5139 <> i:88
+binder 5141:5141 <> j:89
+R5162:5165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5153:5155 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5152:5152 LinearAlgebra.SymmetricMatrix <> i:88 var
+R5156:5156 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5177:5180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5168:5170 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5167:5167 LinearAlgebra.SymmetricMatrix <> j:89 var
+R5171:5171 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5187:5190 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5182:5185 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5181:5181 LinearAlgebra.SymmetricMatrix <> i:88 var
+R5186:5186 LinearAlgebra.SymmetricMatrix <> j:89 var
+R5196:5198 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5191:5191 LinearAlgebra.SymmetricMatrix <> D:85 var
+R5193:5193 LinearAlgebra.SymmetricMatrix <> i:88 var
+R5195:5195 LinearAlgebra.SymmetricMatrix <> j:89 var
+R5226:5228 Corelib.Init.Datatypes <> nat ind
+binder 5220:5220 <> i:90
+binder 5222:5222 <> j:91
+R5243:5246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5234:5236 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5233:5233 LinearAlgebra.SymmetricMatrix <> i:90 var
+R5237:5237 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5258:5269 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5249:5251 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5248:5248 LinearAlgebra.SymmetricMatrix <> j:91 var
+R5252:5252 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5275:5277 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5270:5270 LinearAlgebra.SymmetricMatrix <> A:83 var
+R5272:5272 LinearAlgebra.SymmetricMatrix <> i:90 var
+R5274:5274 LinearAlgebra.SymmetricMatrix <> j:91 var
+R5278:5288 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5290:5290 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5293:5303 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5305:5305 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5307:5307 LinearAlgebra.SymmetricMatrix <> Q:84 var
+R5309:5309 LinearAlgebra.SymmetricMatrix <> D:85 var
+R5313:5321 LinearAlgebra.SymmetricMatrix <> transpose def
+R5323:5323 LinearAlgebra.SymmetricMatrix <> n:82 var
+R5325:5325 LinearAlgebra.SymmetricMatrix <> Q:84 var
+R5328:5328 LinearAlgebra.SymmetricMatrix <> i:90 var
+R5330:5330 LinearAlgebra.SymmetricMatrix <> j:91 var
+ax 5377:5418 <> spectral_theorem_eigenvalue_correspondence
+R5435:5437 Corelib.Init.Datatypes <> nat ind
+binder 5431:5431 <> n:94
+R5445:5450 LinearAlgebra.SymmetricMatrix <> Matrix def
+R5452:5452 LinearAlgebra.SymmetricMatrix <> n:94 var
+binder 5441:5441 <> A:95
+R5462:5467 LinearAlgebra.SymmetricMatrix <> Matrix def
+R5469:5469 LinearAlgebra.SymmetricMatrix <> n:94 var
+binder 5456:5456 <> Q:96
+binder 5458:5458 <> D:97
+R5488:5495 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5479:5481 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R5478:5478 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5512:5519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5496:5507 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R5509:5509 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5511:5511 LinearAlgebra.SymmetricMatrix <> A:95 var
+R5520:5520 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5645:5653 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5535:5537 Corelib.Init.Datatypes <> nat ind
+binder 5529:5529 <> i:98
+binder 5531:5531 <> j:99
+R5552:5555 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5543:5545 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5542:5542 LinearAlgebra.SymmetricMatrix <> i:98 var
+R5546:5546 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5567:5576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5558:5560 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5557:5557 LinearAlgebra.SymmetricMatrix <> j:99 var
+R5561:5561 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5612:5615 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5644:5644 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5577:5587 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5589:5589 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5592:5600 LinearAlgebra.SymmetricMatrix <> transpose def
+R5602:5602 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5604:5604 LinearAlgebra.SymmetricMatrix <> Q:96 var
+R5607:5607 LinearAlgebra.SymmetricMatrix <> Q:96 var
+R5609:5609 LinearAlgebra.SymmetricMatrix <> i:98 var
+R5611:5611 LinearAlgebra.SymmetricMatrix <> j:99 var
+R5619:5625 Stdlib.Arith.PeanoNat Nat eqb def
+R5627:5627 LinearAlgebra.SymmetricMatrix <> i:98 var
+R5629:5629 LinearAlgebra.SymmetricMatrix <> j:99 var
+R5654:5654 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5724:5732 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5669:5671 Corelib.Init.Datatypes <> nat ind
+binder 5663:5663 <> i:100
+binder 5665:5665 <> j:101
+R5686:5689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5677:5679 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5676:5676 LinearAlgebra.SymmetricMatrix <> i:100 var
+R5680:5680 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5701:5704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5692:5694 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5691:5691 LinearAlgebra.SymmetricMatrix <> j:101 var
+R5695:5695 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5711:5714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5706:5709 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5705:5705 LinearAlgebra.SymmetricMatrix <> i:100 var
+R5710:5710 LinearAlgebra.SymmetricMatrix <> j:101 var
+R5720:5722 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5715:5715 LinearAlgebra.SymmetricMatrix <> D:97 var
+R5717:5717 LinearAlgebra.SymmetricMatrix <> i:100 var
+R5719:5719 LinearAlgebra.SymmetricMatrix <> j:101 var
+R5733:5733 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5851:5859 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5748:5750 Corelib.Init.Datatypes <> nat ind
+binder 5742:5742 <> i:102
+binder 5744:5744 <> j:103
+R5765:5768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5756:5758 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5755:5755 LinearAlgebra.SymmetricMatrix <> i:102 var
+R5759:5759 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5780:5789 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5771:5773 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5770:5770 LinearAlgebra.SymmetricMatrix <> j:103 var
+R5774:5774 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5795:5797 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5790:5790 LinearAlgebra.SymmetricMatrix <> A:95 var
+R5792:5792 LinearAlgebra.SymmetricMatrix <> i:102 var
+R5794:5794 LinearAlgebra.SymmetricMatrix <> j:103 var
+R5798:5808 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5810:5810 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5813:5823 LinearAlgebra.SymmetricMatrix <> matrix_mult def
+R5825:5825 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5827:5827 LinearAlgebra.SymmetricMatrix <> Q:96 var
+R5829:5829 LinearAlgebra.SymmetricMatrix <> D:97 var
+R5833:5841 LinearAlgebra.SymmetricMatrix <> transpose def
+R5843:5843 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5845:5845 LinearAlgebra.SymmetricMatrix <> Q:96 var
+R5848:5848 LinearAlgebra.SymmetricMatrix <> i:102 var
+R5850:5850 LinearAlgebra.SymmetricMatrix <> j:103 var
+binder 5867:5867 <> i:104
+R5881:5884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5872:5874 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R5871:5871 LinearAlgebra.SymmetricMatrix <> i:104 var
+R5875:5875 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5885:5897 LinearAlgebra.SymmetricMatrix <> is_eigenvalue def
+R5899:5899 LinearAlgebra.SymmetricMatrix <> n:94 var
+R5901:5901 LinearAlgebra.SymmetricMatrix <> A:95 var
+R5904:5904 LinearAlgebra.SymmetricMatrix <> D:97 var
+R5906:5906 LinearAlgebra.SymmetricMatrix <> i:104 var
+R5908:5908 LinearAlgebra.SymmetricMatrix <> i:104 var
+ax 6139:6163 <> positive_eigenvalues_span
+R6180:6182 Corelib.Init.Datatypes <> nat ind
+binder 6176:6176 <> n:107
+R6190:6195 LinearAlgebra.SymmetricMatrix <> Matrix def
+R6197:6197 LinearAlgebra.SymmetricMatrix <> n:107 var
+binder 6186:6186 <> A:108
+R6216:6223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6207:6209 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R6206:6206 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6240:6247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6224:6235 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R6237:6237 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6239:6239 LinearAlgebra.SymmetricMatrix <> A:108 var
+R6276:6283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6248:6271 LinearAlgebra.SymmetricMatrix <> all_eigenvalues_positive def
+R6273:6273 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6275:6275 LinearAlgebra.SymmetricMatrix <> A:108 var
+R6284:6291 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6316:6325 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6436:6436 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6304:6307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6301:6303 Corelib.Init.Datatypes <> nat ind
+R6311:6314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6308:6310 Corelib.Init.Datatypes <> nat ind
+R6315:6315 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6292:6297 <> v_list:109
+binder 6333:6333 <> k:110
+R6347:6350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6338:6340 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6337:6337 LinearAlgebra.SymmetricMatrix <> k:110 var
+R6341:6341 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6351:6357 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6364:6365 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6358:6363 <> lambda:111
+R6390:6394 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6435:6435 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6366:6378 LinearAlgebra.SymmetricMatrix <> is_eigenvalue def
+R6380:6380 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6382:6382 LinearAlgebra.SymmetricMatrix <> A:108 var
+R6384:6389 LinearAlgebra.SymmetricMatrix <> lambda:111 var
+R6395:6401 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6403:6404 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6402:6402 <> i:112
+R6416:6419 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6407:6409 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6406:6406 LinearAlgebra.SymmetricMatrix <> i:112 var
+R6410:6410 LinearAlgebra.SymmetricMatrix <> n:107 var
+R6430:6433 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6420:6425 LinearAlgebra.SymmetricMatrix <> v_list:109 var
+R6429:6429 LinearAlgebra.SymmetricMatrix <> i:112 var
+R6427:6427 LinearAlgebra.SymmetricMatrix <> k:110 var
+ax 6526:6563 <> positive_definite_from_eigen_expansion
+R6580:6582 Corelib.Init.Datatypes <> nat ind
+binder 6576:6576 <> n:115
+R6590:6595 LinearAlgebra.SymmetricMatrix <> Matrix def
+R6597:6597 LinearAlgebra.SymmetricMatrix <> n:115 var
+binder 6586:6586 <> A:116
+R6616:6623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6607:6609 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R6606:6606 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6640:6647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6624:6635 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R6637:6637 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6639:6639 LinearAlgebra.SymmetricMatrix <> A:116 var
+R6676:6683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6648:6671 LinearAlgebra.SymmetricMatrix <> all_eigenvalues_positive def
+R6673:6673 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6675:6675 LinearAlgebra.SymmetricMatrix <> A:116 var
+R6699:6702 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6696:6698 Corelib.Init.Datatypes <> nat ind
+R6703:6703 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6692:6692 <> x:117
+R6713:6713 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6747:6757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6714:6720 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6722:6723 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 6721:6721 <> i:118
+R6735:6738 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6726:6728 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6725:6725 LinearAlgebra.SymmetricMatrix <> i:118 var
+R6729:6729 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6742:6745 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6739:6739 LinearAlgebra.SymmetricMatrix <> x:117 var
+R6741:6741 LinearAlgebra.SymmetricMatrix <> i:118 var
+R6764:6764 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6788:6792 Corelib.Init.Logic <> False ind
+R6802:6802 Corelib.Init.Datatypes <> S constr
+R6825:6827 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6809:6816 LinearAlgebra.SymmetricMatrix <> qf_outer def
+R6818:6818 LinearAlgebra.SymmetricMatrix <> n:115 var
+R6822:6822 LinearAlgebra.SymmetricMatrix <> A:116 var
+R6824:6824 LinearAlgebra.SymmetricMatrix <> x:117 var
+def 7145:7148 <> Rsum
+R7155:7157 Corelib.Init.Datatypes <> nat ind
+binder 7151:7151 <> n:122
+R7168:7171 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7165:7167 Corelib.Init.Datatypes <> nat ind
+R7172:7172 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7161:7161 <> f:123
+R7177:7177 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R7190:7190 LinearAlgebra.SymmetricMatrix <> n:122 var
+R7212:7212 Corelib.Init.Datatypes <> S constr
+R7224:7226 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R7220:7220 LinearAlgebra.SymmetricMatrix <> f:123 var
+R7227:7230 LinearAlgebra.SymmetricMatrix <> Rsum:124 def
+R7235:7235 LinearAlgebra.SymmetricMatrix <> f:123 var
+prf 7288:7298 <> Rsum_eq_ext
+R7315:7317 Corelib.Init.Datatypes <> nat ind
+binder 7311:7311 <> n:126
+R7330:7333 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7327:7329 Corelib.Init.Datatypes <> nat ind
+R7334:7334 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7321:7321 <> f:127
+binder 7323:7323 <> g:128
+R7342:7342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7377:7385 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 7350:7350 <> k:129
+R7364:7367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7355:7357 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R7354:7354 LinearAlgebra.SymmetricMatrix <> k:129 var
+R7358:7358 LinearAlgebra.SymmetricMatrix <> n:126 var
+R7371:7373 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7368:7368 LinearAlgebra.SymmetricMatrix <> f:127 var
+R7370:7370 LinearAlgebra.SymmetricMatrix <> k:129 var
+R7374:7374 LinearAlgebra.SymmetricMatrix <> g:128 var
+R7376:7376 LinearAlgebra.SymmetricMatrix <> k:129 var
+R7394:7396 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7386:7389 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7391:7391 LinearAlgebra.SymmetricMatrix <> n:126 var
+R7393:7393 LinearAlgebra.SymmetricMatrix <> f:127 var
+R7397:7400 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7402:7402 LinearAlgebra.SymmetricMatrix <> n:126 var
+R7404:7404 LinearAlgebra.SymmetricMatrix <> g:128 var
+prf 7620:7626 <> Rsum_rm
+R7643:7645 Corelib.Init.Datatypes <> nat ind
+binder 7639:7639 <> n:130
+R7653:7653 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7649:7649 <> a:131
+R7664:7667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7661:7663 Corelib.Init.Datatypes <> nat ind
+R7668:7668 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7657:7657 <> f:132
+R7701:7703 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7676:7679 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7681:7681 LinearAlgebra.SymmetricMatrix <> n:130 var
+binder 7688:7688 <> k:133
+R7694:7696 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7693:7693 LinearAlgebra.SymmetricMatrix <> a:131 var
+R7697:7697 LinearAlgebra.SymmetricMatrix <> f:132 var
+R7699:7699 LinearAlgebra.SymmetricMatrix <> k:133 var
+R7705:7707 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7704:7704 LinearAlgebra.SymmetricMatrix <> a:131 var
+R7708:7711 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7713:7713 LinearAlgebra.SymmetricMatrix <> n:130 var
+R7715:7715 LinearAlgebra.SymmetricMatrix <> f:132 var
+prf 7887:7895 <> Rsum_rm_l
+R7912:7914 Corelib.Init.Datatypes <> nat ind
+binder 7908:7908 <> n:134
+R7922:7922 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7918:7918 <> a:135
+R7933:7936 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7930:7932 Corelib.Init.Datatypes <> nat ind
+R7937:7937 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7926:7926 <> f:136
+R7970:7972 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7945:7948 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7950:7950 LinearAlgebra.SymmetricMatrix <> n:134 var
+binder 7957:7957 <> k:137
+R7965:7967 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7962:7962 LinearAlgebra.SymmetricMatrix <> f:136 var
+R7964:7964 LinearAlgebra.SymmetricMatrix <> k:137 var
+R7968:7968 LinearAlgebra.SymmetricMatrix <> a:135 var
+R7974:7976 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7973:7973 LinearAlgebra.SymmetricMatrix <> a:135 var
+R7977:7980 LinearAlgebra.SymmetricMatrix <> Rsum def
+R7982:7982 LinearAlgebra.SymmetricMatrix <> n:134 var
+R7984:7984 LinearAlgebra.SymmetricMatrix <> f:136 var
+prf 8095:8108 <> Rsum_distrib_l
+R8125:8127 Corelib.Init.Datatypes <> nat ind
+binder 8121:8121 <> n:138
+R8135:8135 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8131:8131 <> a:139
+R8148:8151 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8145:8147 Corelib.Init.Datatypes <> nat ind
+R8152:8152 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8139:8139 <> f:140
+binder 8141:8141 <> g:141
+R8191:8193 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8160:8163 LinearAlgebra.SymmetricMatrix <> Rsum def
+R8165:8165 LinearAlgebra.SymmetricMatrix <> n:138 var
+binder 8172:8172 <> k:142
+R8184:8186 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8178:8180 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8177:8177 LinearAlgebra.SymmetricMatrix <> a:139 var
+R8181:8181 LinearAlgebra.SymmetricMatrix <> f:140 var
+R8183:8183 LinearAlgebra.SymmetricMatrix <> k:142 var
+R8187:8187 LinearAlgebra.SymmetricMatrix <> g:141 var
+R8189:8189 LinearAlgebra.SymmetricMatrix <> k:142 var
+R8206:8208 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8195:8197 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R8194:8194 LinearAlgebra.SymmetricMatrix <> a:139 var
+R8198:8201 LinearAlgebra.SymmetricMatrix <> Rsum def
+R8203:8203 LinearAlgebra.SymmetricMatrix <> n:138 var
+R8205:8205 LinearAlgebra.SymmetricMatrix <> f:140 var
+R8209:8212 LinearAlgebra.SymmetricMatrix <> Rsum def
+R8214:8214 LinearAlgebra.SymmetricMatrix <> n:138 var
+R8216:8216 LinearAlgebra.SymmetricMatrix <> g:141 var
+prf 8315:8323 <> Rplus_ge0
+R8340:8340 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8334:8334 <> a:143
+binder 8336:8336 <> b:144
+R8349:8352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8344:8347 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8343:8343 LinearAlgebra.SymmetricMatrix <> a:143 var
+R8359:8362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8354:8357 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8353:8353 LinearAlgebra.SymmetricMatrix <> b:144 var
+R8368:8371 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8364:8366 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8363:8363 LinearAlgebra.SymmetricMatrix <> a:143 var
+R8367:8367 LinearAlgebra.SymmetricMatrix <> b:144 var
+prf 8482:8492 <> Rsum_nonneg
+R8509:8511 Corelib.Init.Datatypes <> nat ind
+binder 8505:8505 <> n:145
+R8522:8525 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8519:8521 Corelib.Init.Datatypes <> nat ind
+R8526:8526 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8515:8515 <> f:146
+R8534:8534 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8568:8576 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 8542:8542 <> k:147
+R8556:8559 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8547:8549 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R8546:8546 LinearAlgebra.SymmetricMatrix <> k:147 var
+R8550:8550 LinearAlgebra.SymmetricMatrix <> n:145 var
+R8563:8566 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8560:8560 LinearAlgebra.SymmetricMatrix <> f:146 var
+R8562:8562 LinearAlgebra.SymmetricMatrix <> k:147 var
+R8585:8588 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R8577:8580 LinearAlgebra.SymmetricMatrix <> Rsum def
+R8582:8582 LinearAlgebra.SymmetricMatrix <> n:145 var
+R8584:8584 LinearAlgebra.SymmetricMatrix <> f:146 var
+R8659:8667 LinearAlgebra.SymmetricMatrix <> Rplus_ge0 thm
+R8659:8667 LinearAlgebra.SymmetricMatrix <> Rplus_ge0 thm
+prf 8861:8873 <> Rsum_remove_0
+R8890:8892 Corelib.Init.Datatypes <> nat ind
+binder 8886:8886 <> n:148
+R8903:8906 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8900:8902 Corelib.Init.Datatypes <> nat ind
+R8907:8907 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8896:8896 <> f:149
+R8923:8929 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8915:8918 LinearAlgebra.SymmetricMatrix <> Rsum def
+R8920:8920 LinearAlgebra.SymmetricMatrix <> n:148 var
+R8922:8922 LinearAlgebra.SymmetricMatrix <> f:149 var
+R8936:8936 LinearAlgebra.SymmetricMatrix <> n:148 var
+R8962:8962 Corelib.Init.Datatypes <> S constr
+R8979:8981 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8971:8971 LinearAlgebra.SymmetricMatrix <> f:149 var
+R8982:8985 LinearAlgebra.SymmetricMatrix <> Rsum def
+binder 8995:8995 <> k:151
+R9000:9000 LinearAlgebra.SymmetricMatrix <> f:149 var
+R9003:9003 Corelib.Init.Datatypes <> S constr
+R9005:9005 LinearAlgebra.SymmetricMatrix <> k:151 var
+R9218:9246 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9168:9171 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9217:9217 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9181:9183 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9175:9175 Corelib.Init.Datatypes <> S constr
+R9184:9187 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9202:9204 Corelib.Init.Datatypes <> nat ind
+binder 9198:9198 <> k:152
+R9212:9212 Corelib.Init.Datatypes <> S constr
+R9214:9214 LinearAlgebra.SymmetricMatrix <> k:152 var
+R9247:9247 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9291:9293 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9255:9257 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9258:9261 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9276:9278 Corelib.Init.Datatypes <> nat ind
+binder 9272:9272 <> k:153
+R9286:9286 Corelib.Init.Datatypes <> S constr
+R9288:9288 LinearAlgebra.SymmetricMatrix <> k:153 var
+R9297:9297 Corelib.Init.Datatypes <> S constr
+R9218:9246 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9168:9171 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9217:9217 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9181:9183 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9175:9175 Corelib.Init.Datatypes <> S constr
+R9184:9187 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9202:9204 Corelib.Init.Datatypes <> nat ind
+binder 9198:9198 <> k:154
+R9212:9212 Corelib.Init.Datatypes <> S constr
+R9214:9214 LinearAlgebra.SymmetricMatrix <> k:154 var
+R9247:9247 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9291:9293 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9255:9257 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9258:9261 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9276:9278 Corelib.Init.Datatypes <> nat ind
+binder 9272:9272 <> k:155
+R9286:9286 Corelib.Init.Datatypes <> S constr
+R9288:9288 LinearAlgebra.SymmetricMatrix <> k:155 var
+R9297:9297 Corelib.Init.Datatypes <> S constr
+R9384:9387 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9406:9406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9370:9373 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9376:9376 Corelib.Init.Datatypes <> S constr
+R9393:9395 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9396:9399 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9384:9387 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9406:9406 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9370:9373 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9376:9376 Corelib.Init.Datatypes <> S constr
+R9393:9395 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9396:9399 LinearAlgebra.SymmetricMatrix <> Rsum def
+prf 9600:9612 <> Rsum_split_at
+R9631:9633 Corelib.Init.Datatypes <> nat ind
+binder 9625:9625 <> n:156
+binder 9627:9627 <> i:157
+R9644:9647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9641:9643 Corelib.Init.Datatypes <> nat ind
+R9648:9648 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9637:9637 <> f:158
+R9667:9674 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9658:9660 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R9657:9657 LinearAlgebra.SymmetricMatrix <> i:157 var
+R9661:9661 LinearAlgebra.SymmetricMatrix <> n:156 var
+R9683:9685 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9675:9678 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9680:9680 LinearAlgebra.SymmetricMatrix <> n:156 var
+R9682:9682 LinearAlgebra.SymmetricMatrix <> f:158 var
+R9700:9702 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9694:9696 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R9686:9689 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9691:9691 LinearAlgebra.SymmetricMatrix <> i:157 var
+R9693:9693 LinearAlgebra.SymmetricMatrix <> f:158 var
+R9697:9697 LinearAlgebra.SymmetricMatrix <> f:158 var
+R9699:9699 LinearAlgebra.SymmetricMatrix <> i:157 var
+R9703:9706 LinearAlgebra.SymmetricMatrix <> Rsum def
+R9710:9712 Corelib.Init.Peano <> ::nat_scope:x_'-'_x not
+R9709:9709 LinearAlgebra.SymmetricMatrix <> n:156 var
+R9713:9713 Corelib.Init.Datatypes <> S constr
+R9715:9715 LinearAlgebra.SymmetricMatrix <> i:157 var
+binder 9723:9723 <> k:159
+R9728:9728 LinearAlgebra.SymmetricMatrix <> f:158 var
+R9734:9736 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R9731:9731 Corelib.Init.Datatypes <> S constr
+R9733:9733 LinearAlgebra.SymmetricMatrix <> i:157 var
+R9737:9737 Corelib.Init.Datatypes <> S constr
+R9739:9739 LinearAlgebra.SymmetricMatrix <> k:159 var
+prf 10139:10158 <> R_sq_pos_iff_nonzero
+R10174:10174 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10170:10170 <> x:160
+R10186:10190 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R10182:10184 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10178:10180 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10177:10177 LinearAlgebra.SymmetricMatrix <> x:160 var
+R10181:10181 LinearAlgebra.SymmetricMatrix <> x:160 var
+R10192:10195 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10191:10191 LinearAlgebra.SymmetricMatrix <> x:160 var
+prf 10237:10247 <> R_sq_nonneg
+R10261:10261 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10257:10257 <> x:161
+R10269:10272 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R10265:10267 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10264:10264 LinearAlgebra.SymmetricMatrix <> x:161 var
+R10268:10268 LinearAlgebra.SymmetricMatrix <> x:161 var
+def 10352:10358 <> norm_sq
+R10365:10367 Corelib.Init.Datatypes <> nat ind
+binder 10361:10361 <> n:162
+R10378:10381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10375:10377 Corelib.Init.Datatypes <> nat ind
+R10382:10382 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10371:10371 <> v:163
+R10387:10387 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R10394:10397 LinearAlgebra.SymmetricMatrix <> Rsum def
+R10399:10399 LinearAlgebra.SymmetricMatrix <> n:162 var
+binder 10406:10406 <> k:164
+R10414:10416 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R10411:10411 LinearAlgebra.SymmetricMatrix <> v:163 var
+R10413:10413 LinearAlgebra.SymmetricMatrix <> k:164 var
+R10417:10417 LinearAlgebra.SymmetricMatrix <> v:163 var
+R10419:10419 LinearAlgebra.SymmetricMatrix <> k:164 var
+prf 10455:10468 <> norm_sq_nonneg
+R10485:10487 Corelib.Init.Datatypes <> nat ind
+binder 10481:10481 <> n:165
+R10498:10501 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10495:10497 Corelib.Init.Datatypes <> nat ind
+R10502:10502 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10491:10491 <> v:166
+R10521:10524 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R10510:10516 LinearAlgebra.SymmetricMatrix <> norm_sq def
+R10518:10518 LinearAlgebra.SymmetricMatrix <> n:165 var
+R10520:10520 LinearAlgebra.SymmetricMatrix <> v:166 var
+R10556:10562 LinearAlgebra.SymmetricMatrix <> norm_sq def
+R10571:10581 LinearAlgebra.SymmetricMatrix <> Rsum_nonneg thm
+R10571:10581 LinearAlgebra.SymmetricMatrix <> Rsum_nonneg thm
+R10602:10612 LinearAlgebra.SymmetricMatrix <> R_sq_nonneg prfax
+R10602:10612 LinearAlgebra.SymmetricMatrix <> R_sq_nonneg prfax
+prf 10667:10689 <> norm_sq_pos_iff_nonzero
+R10706:10708 Corelib.Init.Datatypes <> nat ind
+binder 10702:10702 <> n:167
+R10719:10722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10716:10718 Corelib.Init.Datatypes <> nat ind
+R10723:10723 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 10712:10712 <> v:168
+R10731:10731 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R10767:10772 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R10732:10738 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R10740:10741 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 10739:10739 <> i:169
+R10753:10757 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10766:10766 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R10744:10746 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R10743:10743 LinearAlgebra.SymmetricMatrix <> i:169 var
+R10747:10747 LinearAlgebra.SymmetricMatrix <> n:167 var
+R10761:10764 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10758:10758 LinearAlgebra.SymmetricMatrix <> v:168 var
+R10760:10760 LinearAlgebra.SymmetricMatrix <> i:169 var
+R10784:10786 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R10773:10779 LinearAlgebra.SymmetricMatrix <> norm_sq def
+R10781:10781 LinearAlgebra.SymmetricMatrix <> n:167 var
+R10783:10783 LinearAlgebra.SymmetricMatrix <> v:168 var
+def 11207:11211 <> inner
+R11218:11220 Corelib.Init.Datatypes <> nat ind
+binder 11214:11214 <> n:170
+R11233:11236 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11230:11232 Corelib.Init.Datatypes <> nat ind
+R11237:11237 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11224:11224 <> u:171
+binder 11226:11226 <> v:172
+R11242:11242 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R11249:11252 LinearAlgebra.SymmetricMatrix <> Rsum def
+R11254:11254 LinearAlgebra.SymmetricMatrix <> n:170 var
+binder 11261:11261 <> k:173
+R11269:11271 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R11266:11266 LinearAlgebra.SymmetricMatrix <> u:171 var
+R11268:11268 LinearAlgebra.SymmetricMatrix <> k:173 var
+R11272:11272 LinearAlgebra.SymmetricMatrix <> v:172 var
+R11274:11274 LinearAlgebra.SymmetricMatrix <> k:173 var
+prf 11285:11294 <> inner_symm
+R11311:11313 Corelib.Init.Datatypes <> nat ind
+binder 11307:11307 <> n:174
+R11326:11329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11323:11325 Corelib.Init.Datatypes <> nat ind
+R11330:11330 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11317:11317 <> u:175
+binder 11319:11319 <> v:176
+R11345:11347 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11334:11338 LinearAlgebra.SymmetricMatrix <> inner def
+R11340:11340 LinearAlgebra.SymmetricMatrix <> n:174 var
+R11342:11342 LinearAlgebra.SymmetricMatrix <> u:175 var
+R11344:11344 LinearAlgebra.SymmetricMatrix <> v:176 var
+R11348:11352 LinearAlgebra.SymmetricMatrix <> inner def
+R11354:11354 LinearAlgebra.SymmetricMatrix <> n:174 var
+R11356:11356 LinearAlgebra.SymmetricMatrix <> v:176 var
+R11358:11358 LinearAlgebra.SymmetricMatrix <> u:175 var
+R11391:11395 LinearAlgebra.SymmetricMatrix <> inner def
+R11404:11414 LinearAlgebra.SymmetricMatrix <> Rsum_eq_ext thm
+R11404:11414 LinearAlgebra.SymmetricMatrix <> Rsum_eq_ext thm
+R11437:11446 Stdlib.Reals.Raxioms <> Rmult_comm thm
+R11437:11446 Stdlib.Reals.Raxioms <> Rmult_comm thm
+R11437:11446 Stdlib.Reals.Raxioms <> Rmult_comm thm
+def 11545:11558 <> quadratic_form
+R11565:11567 Corelib.Init.Datatypes <> nat ind
+binder 11561:11561 <> n:177
+R11575:11580 LinearAlgebra.SymmetricMatrix <> Matrix def
+R11582:11582 LinearAlgebra.SymmetricMatrix <> n:177 var
+binder 11571:11571 <> A:178
+R11593:11596 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11590:11592 Corelib.Init.Datatypes <> nat ind
+R11597:11597 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11586:11586 <> x:179
+R11602:11602 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R11609:11613 LinearAlgebra.SymmetricMatrix <> inner def
+R11615:11615 LinearAlgebra.SymmetricMatrix <> n:177 var
+R11617:11617 LinearAlgebra.SymmetricMatrix <> x:179 var
+R11621:11625 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R11620:11620 LinearAlgebra.SymmetricMatrix <> A:178 var
+R11626:11626 LinearAlgebra.SymmetricMatrix <> x:179 var
+prf 11697:11722 <> qf_outer_eq_quadratic_form
+R11739:11741 Corelib.Init.Datatypes <> nat ind
+binder 11735:11735 <> n:180
+R11749:11751 Corelib.Init.Datatypes <> nat ind
+binder 11745:11745 <> m:181
+R11759:11764 LinearAlgebra.SymmetricMatrix <> Matrix def
+R11766:11766 LinearAlgebra.SymmetricMatrix <> n:180 var
+binder 11755:11755 <> A:182
+R11777:11780 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11774:11776 Corelib.Init.Datatypes <> nat ind
+R11781:11781 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 11770:11770 <> x:183
+R11796:11803 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11790:11792 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11789:11789 LinearAlgebra.SymmetricMatrix <> n:180 var
+R11793:11793 Corelib.Init.Datatypes <> S constr
+R11795:11795 LinearAlgebra.SymmetricMatrix <> m:181 var
+R11820:11822 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11804:11811 LinearAlgebra.SymmetricMatrix <> qf_outer def
+R11813:11813 LinearAlgebra.SymmetricMatrix <> n:180 var
+R11815:11815 LinearAlgebra.SymmetricMatrix <> m:181 var
+R11817:11817 LinearAlgebra.SymmetricMatrix <> A:182 var
+R11819:11819 LinearAlgebra.SymmetricMatrix <> x:183 var
+R11823:11836 LinearAlgebra.SymmetricMatrix <> quadratic_form def
+R11838:11838 LinearAlgebra.SymmetricMatrix <> n:180 var
+R11840:11840 LinearAlgebra.SymmetricMatrix <> A:182 var
+R11842:11842 LinearAlgebra.SymmetricMatrix <> x:183 var
+prf 12184:12197 <> eigenvector_qf
+R12214:12216 Corelib.Init.Datatypes <> nat ind
+binder 12210:12210 <> n:184
+R12224:12229 LinearAlgebra.SymmetricMatrix <> Matrix def
+R12231:12231 LinearAlgebra.SymmetricMatrix <> n:184 var
+binder 12220:12220 <> A:185
+R12242:12245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12239:12241 Corelib.Init.Datatypes <> nat ind
+R12246:12246 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 12235:12235 <> v:186
+R12259:12259 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 12250:12255 <> lambda:187
+R12267:12267 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12319:12327 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 12275:12275 <> i:188
+R12289:12292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12280:12282 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R12279:12279 LinearAlgebra.SymmetricMatrix <> i:188 var
+R12283:12283 LinearAlgebra.SymmetricMatrix <> n:184 var
+R12304:12306 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12293:12293 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R12295:12299 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R12301:12303 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R12294:12294 LinearAlgebra.SymmetricMatrix <> A:185 var
+R12300:12300 LinearAlgebra.SymmetricMatrix <> v:186 var
+R12303:12303 LinearAlgebra.SymmetricMatrix <> i:188 var
+R12313:12315 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12307:12312 LinearAlgebra.SymmetricMatrix <> lambda:187 var
+R12316:12316 LinearAlgebra.SymmetricMatrix <> v:186 var
+R12318:12318 LinearAlgebra.SymmetricMatrix <> i:188 var
+R12348:12350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12328:12341 LinearAlgebra.SymmetricMatrix <> quadratic_form def
+R12343:12343 LinearAlgebra.SymmetricMatrix <> n:184 var
+R12345:12345 LinearAlgebra.SymmetricMatrix <> A:185 var
+R12347:12347 LinearAlgebra.SymmetricMatrix <> v:186 var
+R12357:12359 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12351:12356 LinearAlgebra.SymmetricMatrix <> lambda:187 var
+R12360:12366 LinearAlgebra.SymmetricMatrix <> norm_sq def
+R12368:12368 LinearAlgebra.SymmetricMatrix <> n:184 var
+R12370:12370 LinearAlgebra.SymmetricMatrix <> v:186 var
+R12414:12427 LinearAlgebra.SymmetricMatrix <> quadratic_form def
+R12430:12434 LinearAlgebra.SymmetricMatrix <> inner def
+R12437:12443 LinearAlgebra.SymmetricMatrix <> norm_sq def
+binder 12797:12797 <> k:189
+R12805:12807 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12804:12804 LinearAlgebra.SymmetricMatrix <> k:189 var
+R12810:12810 LinearAlgebra.SymmetricMatrix <> k:189 var
+R12760:12766 LinearAlgebra.SymmetricMatrix <> Rsum_rm thm
+binder 12797:12797 <> k:190
+R12805:12807 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12804:12804 LinearAlgebra.SymmetricMatrix <> k:190 var
+R12810:12810 LinearAlgebra.SymmetricMatrix <> k:190 var
+R12760:12766 LinearAlgebra.SymmetricMatrix <> Rsum_rm thm
+binder 12797:12797 <> k:191
+R12805:12807 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R12804:12804 LinearAlgebra.SymmetricMatrix <> k:191 var
+R12810:12810 LinearAlgebra.SymmetricMatrix <> k:191 var
+R12760:12766 LinearAlgebra.SymmetricMatrix <> Rsum_rm thm
+R12822:12832 LinearAlgebra.SymmetricMatrix <> Rsum_eq_ext thm
+R12822:12832 LinearAlgebra.SymmetricMatrix <> Rsum_eq_ext thm
+prf 13133:13162 <> pd_implies_eigenvalue_positive
+R13179:13181 Corelib.Init.Datatypes <> nat ind
+binder 13175:13175 <> n:192
+R13189:13194 LinearAlgebra.SymmetricMatrix <> Matrix def
+R13196:13196 LinearAlgebra.SymmetricMatrix <> n:192 var
+binder 13185:13185 <> A:193
+R13209:13209 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13200:13205 <> lambda:194
+R13220:13223 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13217:13219 Corelib.Init.Datatypes <> nat ind
+R13224:13224 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13213:13213 <> v:195
+R13243:13250 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13234:13236 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R13233:13233 LinearAlgebra.SymmetricMatrix <> n:192 var
+R13275:13282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13251:13270 LinearAlgebra.SymmetricMatrix <> is_positive_definite def
+R13272:13272 LinearAlgebra.SymmetricMatrix <> n:192 var
+R13274:13274 LinearAlgebra.SymmetricMatrix <> A:193 var
+R13283:13283 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13317:13325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13284:13290 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13292:13293 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 13291:13291 <> i:196
+R13305:13308 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13296:13298 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R13295:13295 LinearAlgebra.SymmetricMatrix <> i:196 var
+R13299:13299 LinearAlgebra.SymmetricMatrix <> n:192 var
+R13312:13315 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R13309:13309 LinearAlgebra.SymmetricMatrix <> v:195 var
+R13311:13311 LinearAlgebra.SymmetricMatrix <> i:196 var
+R13326:13326 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13378:13386 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 13334:13334 <> i:197
+R13348:13351 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13339:13341 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R13338:13338 LinearAlgebra.SymmetricMatrix <> i:197 var
+R13342:13342 LinearAlgebra.SymmetricMatrix <> n:192 var
+R13363:13365 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13352:13352 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R13354:13358 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R13360:13362 LinearAlgebra.SymmetricMatrix <> :::x_'⟪'_x not
+R13353:13353 LinearAlgebra.SymmetricMatrix <> A:193 var
+R13359:13359 LinearAlgebra.SymmetricMatrix <> v:195 var
+R13362:13362 LinearAlgebra.SymmetricMatrix <> i:197 var
+R13372:13374 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R13366:13371 LinearAlgebra.SymmetricMatrix <> lambda:194 var
+R13375:13375 LinearAlgebra.SymmetricMatrix <> v:195 var
+R13377:13377 LinearAlgebra.SymmetricMatrix <> i:197 var
+R13393:13395 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R13387:13392 LinearAlgebra.SymmetricMatrix <> lambda:194 var
+prf 13768:13819 <> symmetric_positive_definite_iff_eigenvalues_positive
+R13836:13838 Corelib.Init.Datatypes <> nat ind
+binder 13832:13832 <> n:198
+R13846:13851 LinearAlgebra.SymmetricMatrix <> Matrix def
+R13853:13853 LinearAlgebra.SymmetricMatrix <> n:198 var
+binder 13842:13842 <> A:199
+R13872:13879 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13863:13865 Corelib.Init.Peano <> ::nat_scope:x_'>'_x not
+R13862:13862 LinearAlgebra.SymmetricMatrix <> n:198 var
+R13896:13904 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13962:13962 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13880:13891 LinearAlgebra.SymmetricMatrix <> is_symmetric def
+R13893:13893 LinearAlgebra.SymmetricMatrix <> n:198 var
+R13895:13895 LinearAlgebra.SymmetricMatrix <> A:199 var
+R13929:13933 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R13905:13924 LinearAlgebra.SymmetricMatrix <> is_positive_definite def
+R13926:13926 LinearAlgebra.SymmetricMatrix <> n:198 var
+R13928:13928 LinearAlgebra.SymmetricMatrix <> A:199 var
+R13934:13957 LinearAlgebra.SymmetricMatrix <> all_eigenvalues_positive def
+R13959:13959 LinearAlgebra.SymmetricMatrix <> n:198 var
+R13961:13961 LinearAlgebra.SymmetricMatrix <> A:199 var
+R14314:14343 LinearAlgebra.SymmetricMatrix <> pd_implies_eigenvalue_positive prfax
+R14314:14343 LinearAlgebra.SymmetricMatrix <> pd_implies_eigenvalue_positive prfax
+R14540:14577 LinearAlgebra.SymmetricMatrix <> positive_definite_from_eigen_expansion prfax
+R14540:14577 LinearAlgebra.SymmetricMatrix <> positive_definite_from_eigen_expansion prfax

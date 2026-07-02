@@ -1,0 +1,281 @@
+DIGEST 9e1d0e8ba5d0de05fd27823c28e9eb07
+FCompactEmbedding.Equicontinuity
+R189:193 Stdlib.Reals.Reals <> <> lib
+R234:246 CompactEmbedding.MetricCompact <> <> lib
+def 516:529 <> Equicontinuous
+R538:541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R536:537 CompactEmbedding.MetricCompact <> Rn def
+binder 532:532 <> K:1
+R560:563 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R553:557 CompactEmbedding.MetricCompact <> C0_on def
+R559:559 CompactEmbedding.Equicontinuity <> K:1 var
+binder 549:549 <> F:2
+R595:595 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 589:591 <> eps:3
+R605:612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R601:603 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R598:600 CompactEmbedding.Equicontinuity <> eps:3 var
+R613:619 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R629:630 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R628:628 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 620:624 <> delta:4
+R640:649 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R636:638 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R631:635 CompactEmbedding.Equicontinuity <> delta:4 var
+R662:666 CompactEmbedding.MetricCompact <> C0_on def
+R668:668 CompactEmbedding.Equicontinuity <> K:1 var
+binder 658:658 <> f:5
+R683:694 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R680:680 CompactEmbedding.Equicontinuity <> F:2 var
+R682:682 CompactEmbedding.Equicontinuity <> f:5 var
+R709:710 CompactEmbedding.MetricCompact <> Rn def
+binder 703:703 <> x:6
+binder 705:705 <> y:7
+R727:730 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R724:724 CompactEmbedding.Equicontinuity <> K:1 var
+R726:726 CompactEmbedding.Equicontinuity <> x:6 var
+R734:737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R731:731 CompactEmbedding.Equicontinuity <> K:1 var
+R733:733 CompactEmbedding.Equicontinuity <> y:7 var
+R761:774 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R753:755 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R738:748 CompactEmbedding.MetricCompact <> Rn_distance def
+R750:750 CompactEmbedding.Equicontinuity <> x:6 var
+R752:752 CompactEmbedding.Equicontinuity <> y:7 var
+R756:760 CompactEmbedding.Equicontinuity <> delta:4 var
+R811:813 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R775:778 Stdlib.Reals.Rbasic_fun <> Rabs def
+R794:796 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R781:789 Corelib.Init.Specif <> proj1_sig def
+R793:793 CompactEmbedding.Equicontinuity <> x:6 var
+R791:791 CompactEmbedding.Equicontinuity <> f:5 var
+R797:805 Corelib.Init.Specif <> proj1_sig def
+R809:809 CompactEmbedding.Equicontinuity <> y:7 var
+R807:807 CompactEmbedding.Equicontinuity <> f:5 var
+R814:816 CompactEmbedding.Equicontinuity <> eps:3 var
+rec 1061:1079 <> ModulusOfContinuity
+proj 1129:1134 <> mod_fn
+proj 1148:1154 <> mod_pos
+proj 1203:1210 <> mod_cont
+R1088:1091 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1086:1087 CompactEmbedding.MetricCompact <> Rn def
+binder 1082:1082 <> K:8
+R1103:1107 CompactEmbedding.MetricCompact <> C0_on def
+R1109:1109 CompactEmbedding.Equicontinuity <> K:8 var
+binder 1099:1099 <> f:9
+R1139:1142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1138:1138 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1143:1143 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1171:1171 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1165:1167 <> eps:12
+R1181:1184 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1177:1179 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1174:1176 CompactEmbedding.Equicontinuity <> eps:12 var
+R1195:1197 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1185:1190 CompactEmbedding.Equicontinuity <> mod_fn:11 meth
+R1192:1194 CompactEmbedding.Equicontinuity <> eps:12 var
+R1228:1228 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1222:1224 <> eps:14
+R1238:1239 CompactEmbedding.MetricCompact <> Rn def
+binder 1232:1232 <> x:15
+binder 1234:1234 <> y:16
+R1254:1257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1250:1252 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1247:1249 CompactEmbedding.Equicontinuity <> eps:14 var
+R1261:1264 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1258:1258 CompactEmbedding.Equicontinuity <> K:8 var
+R1260:1260 CompactEmbedding.Equicontinuity <> x:15 var
+R1268:1271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1265:1265 CompactEmbedding.Equicontinuity <> K:8 var
+R1267:1267 CompactEmbedding.Equicontinuity <> y:16 var
+R1300:1309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1287:1289 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1272:1282 CompactEmbedding.MetricCompact <> Rn_distance def
+R1284:1284 CompactEmbedding.Equicontinuity <> x:15 var
+R1286:1286 CompactEmbedding.Equicontinuity <> y:16 var
+R1290:1295 CompactEmbedding.Equicontinuity <> mod_fn:11 meth
+R1297:1299 CompactEmbedding.Equicontinuity <> eps:14 var
+R1346:1348 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1310:1313 Stdlib.Reals.Rbasic_fun <> Rabs def
+R1329:1331 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1316:1324 Corelib.Init.Specif <> proj1_sig def
+R1328:1328 CompactEmbedding.Equicontinuity <> x:15 var
+R1326:1326 CompactEmbedding.Equicontinuity <> f:9 var
+R1332:1340 Corelib.Init.Specif <> proj1_sig def
+R1344:1344 CompactEmbedding.Equicontinuity <> y:16 var
+R1342:1342 CompactEmbedding.Equicontinuity <> f:9 var
+R1349:1351 CompactEmbedding.Equicontinuity <> eps:14 var
+def 1446:1459 <> common_modulus
+R1468:1471 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1466:1467 CompactEmbedding.MetricCompact <> Rn def
+binder 1462:1462 <> K:18
+R1490:1493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1483:1487 CompactEmbedding.MetricCompact <> C0_on def
+R1489:1489 CompactEmbedding.Equicontinuity <> K:18 var
+binder 1479:1479 <> F:19
+R1525:1525 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1519:1521 <> eps:20
+R1535:1542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1531:1533 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1528:1530 CompactEmbedding.Equicontinuity <> eps:20 var
+R1543:1549 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1559:1560 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1558:1558 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1550:1554 <> delta:21
+R1570:1579 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1566:1568 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1561:1565 CompactEmbedding.Equicontinuity <> delta:21 var
+R1592:1596 CompactEmbedding.MetricCompact <> C0_on def
+R1598:1598 CompactEmbedding.Equicontinuity <> K:18 var
+binder 1588:1588 <> f:22
+R1605:1616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1602:1602 CompactEmbedding.Equicontinuity <> F:19 var
+R1604:1604 CompactEmbedding.Equicontinuity <> f:22 var
+R1631:1632 CompactEmbedding.MetricCompact <> Rn def
+binder 1625:1625 <> x:23
+binder 1627:1627 <> y:24
+R1649:1652 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1646:1646 CompactEmbedding.Equicontinuity <> K:18 var
+R1648:1648 CompactEmbedding.Equicontinuity <> x:23 var
+R1656:1659 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1653:1653 CompactEmbedding.Equicontinuity <> K:18 var
+R1655:1655 CompactEmbedding.Equicontinuity <> y:24 var
+R1683:1696 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1675:1677 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1660:1670 CompactEmbedding.MetricCompact <> Rn_distance def
+R1672:1672 CompactEmbedding.Equicontinuity <> x:23 var
+R1674:1674 CompactEmbedding.Equicontinuity <> y:24 var
+R1678:1682 CompactEmbedding.Equicontinuity <> delta:21 var
+R1733:1735 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1697:1700 Stdlib.Reals.Rbasic_fun <> Rabs def
+R1716:1718 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1703:1711 Corelib.Init.Specif <> proj1_sig def
+R1715:1715 CompactEmbedding.Equicontinuity <> x:23 var
+R1713:1713 CompactEmbedding.Equicontinuity <> f:22 var
+R1719:1727 Corelib.Init.Specif <> proj1_sig def
+R1731:1731 CompactEmbedding.Equicontinuity <> y:24 var
+R1729:1729 CompactEmbedding.Equicontinuity <> f:22 var
+R1736:1738 CompactEmbedding.Equicontinuity <> eps:20 var
+prf 1794:1826 <> equicontinuous_iff_common_modulus
+R1835:1838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1833:1834 CompactEmbedding.MetricCompact <> Rn def
+binder 1829:1829 <> K:25
+R1857:1860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1850:1854 CompactEmbedding.MetricCompact <> C0_on def
+R1856:1856 CompactEmbedding.Equicontinuity <> K:25 var
+binder 1846:1846 <> F:26
+R1889:1893 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1871:1884 CompactEmbedding.Equicontinuity <> Equicontinuous def
+R1886:1886 CompactEmbedding.Equicontinuity <> K:25 var
+R1888:1888 CompactEmbedding.Equicontinuity <> F:26 var
+R1894:1907 CompactEmbedding.Equicontinuity <> common_modulus def
+R1909:1909 CompactEmbedding.Equicontinuity <> K:25 var
+R1911:1911 CompactEmbedding.Equicontinuity <> F:26 var
+R1930:1943 CompactEmbedding.Equicontinuity <> Equicontinuous def
+R1946:1959 CompactEmbedding.Equicontinuity <> common_modulus def
+def 2246:2260 <> pointwise_limit
+R2269:2272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2267:2268 CompactEmbedding.MetricCompact <> Rn def
+binder 2263:2263 <> K:27
+R2289:2292 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2286:2288 Corelib.Init.Datatypes <> nat ind
+R2293:2297 CompactEmbedding.MetricCompact <> C0_on def
+R2299:2299 CompactEmbedding.Equicontinuity <> K:27 var
+binder 2280:2282 <> seq:28
+R2307:2311 CompactEmbedding.MetricCompact <> C0_on def
+R2313:2313 CompactEmbedding.Equicontinuity <> K:27 var
+binder 2303:2303 <> f:29
+R2339:2340 CompactEmbedding.MetricCompact <> Rn def
+binder 2335:2335 <> x:30
+R2346:2353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2343:2343 CompactEmbedding.Equicontinuity <> K:27 var
+R2345:2345 CompactEmbedding.Equicontinuity <> x:30 var
+R2367:2367 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2361:2363 <> eps:31
+R2377:2386 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2373:2375 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2370:2372 CompactEmbedding.Equicontinuity <> eps:31 var
+R2387:2393 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2401:2402 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2398:2400 Corelib.Init.Datatypes <> nat ind
+binder 2394:2394 <> N:32
+R2414:2416 Corelib.Init.Datatypes <> nat ind
+binder 2410:2410 <> n:33
+R2431:2442 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2421:2424 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R2420:2420 CompactEmbedding.Equicontinuity <> n:33 var
+R2425:2425 CompactEmbedding.Equicontinuity <> N:32 var
+R2485:2487 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2443:2446 Stdlib.Reals.Rbasic_fun <> Rabs def
+R2468:2470 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2449:2457 Corelib.Init.Specif <> proj1_sig def
+R2467:2467 CompactEmbedding.Equicontinuity <> x:30 var
+R2460:2462 CompactEmbedding.Equicontinuity <> seq:28 var
+R2464:2464 CompactEmbedding.Equicontinuity <> n:33 var
+R2471:2479 Corelib.Init.Specif <> proj1_sig def
+R2483:2483 CompactEmbedding.Equicontinuity <> x:30 var
+R2481:2481 CompactEmbedding.Equicontinuity <> f:29 var
+R2488:2490 CompactEmbedding.Equicontinuity <> eps:31 var
+prf 2550:2589 <> equicontinuous_pointwise_implies_uniform
+R2598:2601 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2596:2597 CompactEmbedding.MetricCompact <> Rn def
+binder 2592:2592 <> K:34
+R2618:2621 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2615:2617 Corelib.Init.Datatypes <> nat ind
+R2622:2626 CompactEmbedding.MetricCompact <> C0_on def
+R2628:2628 CompactEmbedding.Equicontinuity <> K:34 var
+binder 2609:2611 <> seq:35
+R2636:2640 CompactEmbedding.MetricCompact <> C0_on def
+R2642:2642 CompactEmbedding.Equicontinuity <> K:34 var
+binder 2632:2632 <> f:36
+R2661:2666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2649:2658 CompactEmbedding.MetricCompact <> is_compact def
+R2660:2660 CompactEmbedding.Equicontinuity <> K:34 var
+R2720:2725 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2667:2680 CompactEmbedding.Equicontinuity <> Equicontinuous def
+R2682:2682 CompactEmbedding.Equicontinuity <> K:34 var
+binder 2689:2689 <> g:37
+R2694:2700 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2708:2709 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2705:2707 Corelib.Init.Datatypes <> nat ind
+binder 2701:2701 <> n:38
+R2711:2713 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2710:2710 CompactEmbedding.Equicontinuity <> g:37 var
+R2714:2716 CompactEmbedding.Equicontinuity <> seq:35 var
+R2718:2718 CompactEmbedding.Equicontinuity <> n:38 var
+R2749:2754 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2726:2740 CompactEmbedding.Equicontinuity <> pointwise_limit def
+R2742:2742 CompactEmbedding.Equicontinuity <> K:34 var
+R2744:2746 CompactEmbedding.Equicontinuity <> seq:35 var
+R2748:2748 CompactEmbedding.Equicontinuity <> f:36 var
+R2768:2768 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2762:2764 <> eps:39
+R2778:2785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2774:2776 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2771:2773 CompactEmbedding.Equicontinuity <> eps:39 var
+R2786:2792 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2800:2801 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2797:2799 Corelib.Init.Datatypes <> nat ind
+binder 2793:2793 <> N:40
+R2813:2815 Corelib.Init.Datatypes <> nat ind
+binder 2809:2809 <> n:41
+R2830:2839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2820:2823 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R2819:2819 CompactEmbedding.Equicontinuity <> n:41 var
+R2824:2824 CompactEmbedding.Equicontinuity <> N:40 var
+R2851:2852 CompactEmbedding.MetricCompact <> Rn def
+binder 2847:2847 <> x:42
+R2858:2869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2855:2855 CompactEmbedding.Equicontinuity <> K:34 var
+R2857:2857 CompactEmbedding.Equicontinuity <> x:42 var
+R2912:2914 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2870:2873 Stdlib.Reals.Rbasic_fun <> Rabs def
+R2895:2897 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2876:2884 Corelib.Init.Specif <> proj1_sig def
+R2894:2894 CompactEmbedding.Equicontinuity <> x:42 var
+R2887:2889 CompactEmbedding.Equicontinuity <> seq:35 var
+R2891:2891 CompactEmbedding.Equicontinuity <> n:41 var
+R2898:2906 Corelib.Init.Specif <> proj1_sig def
+R2910:2910 CompactEmbedding.Equicontinuity <> x:42 var
+R2908:2908 CompactEmbedding.Equicontinuity <> f:36 var
+R2915:2917 CompactEmbedding.Equicontinuity <> eps:39 var

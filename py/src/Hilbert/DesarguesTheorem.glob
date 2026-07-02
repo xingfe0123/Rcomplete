@@ -1,0 +1,709 @@
+DIGEST 84a08458af1ea137e23055716f9d24c9
+FHilbert.DesarguesTheorem
+R1026:1034 Stdlib.Logic.Classical <> <> lib
+R1036:1062 Stdlib.Logic.IndefiniteDescription <> <> lib
+R1093:1108 Hilbert.HilbertStructure <> <> lib
+R1110:1124 Hilbert.IncidenceAxioms <> <> lib
+def 1433:1446 <> LinesIntersect
+R1453:1470 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 1449:1449 <> I:1
+R1480:1486 Hilbert.HilbertStructure <> IncLine proj
+R1488:1488 Hilbert.DesarguesTheorem <> I:1 var
+binder 1474:1474 <> a:2
+binder 1476:1476 <> b:3
+R1503:1510 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R1525:1526 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R1515:1522 Hilbert.HilbertStructure <> IncPoint proj
+R1524:1524 Hilbert.DesarguesTheorem <> I:1 var
+binder 1511:1511 <> P:4
+R1538:1541 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1527:1531 Hilbert.HilbertStructure <> Incid proj
+R1533:1533 Hilbert.DesarguesTheorem <> I:1 var
+R1535:1535 Hilbert.DesarguesTheorem <> P:4 var
+R1537:1537 Hilbert.DesarguesTheorem <> a:2 var
+R1542:1546 Hilbert.HilbertStructure <> Incid proj
+R1548:1548 Hilbert.DesarguesTheorem <> I:1 var
+R1550:1550 Hilbert.DesarguesTheorem <> P:4 var
+R1552:1552 Hilbert.DesarguesTheorem <> b:3 var
+def 1624:1632 <> Collinear
+R1639:1656 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 1635:1635 <> I:5
+R1668:1675 Hilbert.HilbertStructure <> IncPoint proj
+R1677:1677 Hilbert.DesarguesTheorem <> I:5 var
+binder 1660:1660 <> A:6
+binder 1662:1662 <> B:7
+binder 1664:1664 <> C:8
+R1692:1698 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1712:1713 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1703:1709 Hilbert.HilbertStructure <> IncLine proj
+R1711:1711 Hilbert.DesarguesTheorem <> I:5 var
+binder 1699:1699 <> l:9
+R1725:1728 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1714:1718 Hilbert.HilbertStructure <> Incid proj
+R1720:1720 Hilbert.DesarguesTheorem <> I:5 var
+R1722:1722 Hilbert.DesarguesTheorem <> A:6 var
+R1724:1724 Hilbert.DesarguesTheorem <> l:9 var
+R1740:1743 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1729:1733 Hilbert.HilbertStructure <> Incid proj
+R1735:1735 Hilbert.DesarguesTheorem <> I:5 var
+R1737:1737 Hilbert.DesarguesTheorem <> B:7 var
+R1739:1739 Hilbert.DesarguesTheorem <> l:9 var
+R1744:1748 Hilbert.HilbertStructure <> Incid proj
+R1750:1750 Hilbert.DesarguesTheorem <> I:5 var
+R1752:1752 Hilbert.DesarguesTheorem <> C:8 var
+R1754:1754 Hilbert.DesarguesTheorem <> l:9 var
+def 1826:1842 <> IntersectionPoint
+R1849:1866 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 1845:1845 <> I:10
+R1876:1882 Hilbert.HilbertStructure <> IncLine proj
+R1884:1884 Hilbert.DesarguesTheorem <> I:10 var
+binder 1870:1870 <> a:11
+binder 1872:1872 <> b:12
+R1892:1899 Hilbert.HilbertStructure <> IncPoint proj
+R1901:1901 Hilbert.DesarguesTheorem <> I:10 var
+binder 1888:1888 <> P:13
+R1927:1930 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1916:1920 Hilbert.HilbertStructure <> Incid proj
+R1922:1922 Hilbert.DesarguesTheorem <> I:10 var
+R1924:1924 Hilbert.DesarguesTheorem <> P:13 var
+R1926:1926 Hilbert.DesarguesTheorem <> a:11 var
+R1931:1935 Hilbert.HilbertStructure <> Incid proj
+R1937:1937 Hilbert.DesarguesTheorem <> I:10 var
+R1939:1939 Hilbert.DesarguesTheorem <> P:13 var
+R1941:1941 Hilbert.DesarguesTheorem <> b:12 var
+rec 2321:2333 <> LineWithProof
+proj 2409:2416 <> lwp_line
+proj 2433:2439 <> lwp_Ain
+proj 2465:2471 <> lwp_Bin
+R2340:2357 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 2336:2336 <> I:14
+R2367:2374 Hilbert.HilbertStructure <> IncPoint proj
+R2376:2376 Hilbert.DesarguesTheorem <> I:14 var
+binder 2361:2361 <> A:15
+binder 2363:2363 <> B:16
+R2420:2426 Hilbert.HilbertStructure <> IncLine proj
+R2428:2428 Hilbert.DesarguesTheorem <> I:14 var
+R2443:2447 Hilbert.HilbertStructure <> Incid proj
+R2449:2449 Hilbert.DesarguesTheorem <> I:14 var
+R2451:2451 Hilbert.DesarguesTheorem <> A:15 var
+R2453:2460 Hilbert.DesarguesTheorem <> lwp_line:18 meth
+R2475:2479 Hilbert.HilbertStructure <> Incid proj
+R2481:2481 Hilbert.DesarguesTheorem <> I:14 var
+R2483:2483 Hilbert.DesarguesTheorem <> B:16 var
+R2485:2492 Hilbert.DesarguesTheorem <> lwp_line:18 meth
+def 2574:2585 <> line_through
+R2592:2609 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 2588:2588 <> I:21
+R2619:2626 Hilbert.HilbertStructure <> IncPoint proj
+R2628:2628 Hilbert.DesarguesTheorem <> I:21 var
+binder 2613:2613 <> A:22
+binder 2615:2615 <> B:23
+R2633:2639 Hilbert.HilbertStructure <> IncLine proj
+R2641:2641 Hilbert.DesarguesTheorem <> I:21 var
+R2654:2688 Stdlib.Logic.IndefiniteDescription <> constructive_indefinite_description prfax
+R2741:2742 Hilbert.HilbertStructure <> I1 proj
+R2744:2744 Hilbert.DesarguesTheorem <> I:21 var
+R2746:2746 Hilbert.DesarguesTheorem <> A:22 var
+R2748:2748 Hilbert.DesarguesTheorem <> B:23 var
+R2699:2705 Hilbert.HilbertStructure <> IncLine proj
+R2707:2707 Hilbert.DesarguesTheorem <> I:21 var
+binder 2695:2695 <> l:24
+R2723:2726 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2712:2716 Hilbert.HilbertStructure <> Incid proj
+R2718:2718 Hilbert.DesarguesTheorem <> I:21 var
+R2720:2720 Hilbert.DesarguesTheorem <> A:22 var
+R2722:2722 Hilbert.DesarguesTheorem <> l:24 var
+R2727:2731 Hilbert.HilbertStructure <> Incid proj
+R2733:2733 Hilbert.DesarguesTheorem <> I:21 var
+R2735:2735 Hilbert.DesarguesTheorem <> B:23 var
+R2737:2737 Hilbert.DesarguesTheorem <> l:24 var
+R2760:2764 Corelib.Init.Specif <> exist constr
+prf 2791:2807 <> line_through_prop
+R2823:2840 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 2819:2819 <> I:25
+R2850:2857 Hilbert.HilbertStructure <> IncPoint proj
+R2859:2859 Hilbert.DesarguesTheorem <> I:25 var
+binder 2844:2844 <> A:26
+binder 2846:2846 <> B:27
+R2895:2898 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2865:2869 Hilbert.HilbertStructure <> Incid proj
+R2871:2871 Hilbert.DesarguesTheorem <> I:25 var
+R2873:2873 Hilbert.DesarguesTheorem <> A:26 var
+R2876:2887 Hilbert.DesarguesTheorem <> line_through def
+R2889:2889 Hilbert.DesarguesTheorem <> I:25 var
+R2891:2891 Hilbert.DesarguesTheorem <> A:26 var
+R2893:2893 Hilbert.DesarguesTheorem <> B:27 var
+R2899:2903 Hilbert.HilbertStructure <> Incid proj
+R2905:2905 Hilbert.DesarguesTheorem <> I:25 var
+R2907:2907 Hilbert.DesarguesTheorem <> B:27 var
+R2910:2921 Hilbert.DesarguesTheorem <> line_through def
+R2923:2923 Hilbert.DesarguesTheorem <> I:25 var
+R2925:2925 Hilbert.DesarguesTheorem <> A:26 var
+R2927:2927 Hilbert.DesarguesTheorem <> B:27 var
+R2963:2974 Hilbert.DesarguesTheorem <> line_through def
+R2989:3023 Stdlib.Logic.IndefiniteDescription <> constructive_indefinite_description prfax
+R3076:3077 Hilbert.HilbertStructure <> I1 proj
+R3034:3040 Hilbert.HilbertStructure <> IncLine proj
+binder 3030:3030 <> l:28
+R3058:3061 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3047:3051 Hilbert.HilbertStructure <> Incid proj
+R3057:3057 Hilbert.DesarguesTheorem <> l:28 var
+R3062:3066 Hilbert.HilbertStructure <> Incid proj
+R3072:3072 Hilbert.DesarguesTheorem <> l:28 var
+R2989:3023 Stdlib.Logic.IndefiniteDescription <> constructive_indefinite_description prfax
+R3076:3077 Hilbert.HilbertStructure <> I1 proj
+R3034:3040 Hilbert.HilbertStructure <> IncLine proj
+binder 3030:3030 <> l:29
+R3058:3061 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3047:3051 Hilbert.HilbertStructure <> Incid proj
+R3057:3057 Hilbert.DesarguesTheorem <> l:29 var
+R3062:3066 Hilbert.HilbertStructure <> Incid proj
+R3072:3072 Hilbert.DesarguesTheorem <> l:29 var
+R3114:3117 Corelib.Init.Logic <> conj constr
+R3114:3117 Corelib.Init.Logic <> conj constr
+prf 3141:3159 <> line_through_unique
+R3175:3192 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 3171:3171 <> I:30
+R3202:3209 Hilbert.HilbertStructure <> IncPoint proj
+R3211:3211 Hilbert.DesarguesTheorem <> I:30 var
+binder 3196:3196 <> A:31
+binder 3198:3198 <> B:32
+R3219:3225 Hilbert.HilbertStructure <> IncLine proj
+R3227:3227 Hilbert.DesarguesTheorem <> I:30 var
+binder 3215:3215 <> l:33
+R3239:3242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3234:3237 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3233:3233 Hilbert.DesarguesTheorem <> A:31 var
+R3238:3238 Hilbert.DesarguesTheorem <> B:32 var
+R3254:3257 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3243:3247 Hilbert.HilbertStructure <> Incid proj
+R3249:3249 Hilbert.DesarguesTheorem <> I:30 var
+R3251:3251 Hilbert.DesarguesTheorem <> A:31 var
+R3253:3253 Hilbert.DesarguesTheorem <> l:33 var
+R3269:3272 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3258:3262 Hilbert.HilbertStructure <> Incid proj
+R3264:3264 Hilbert.DesarguesTheorem <> I:30 var
+R3266:3266 Hilbert.DesarguesTheorem <> B:32 var
+R3268:3268 Hilbert.DesarguesTheorem <> l:33 var
+R3274:3276 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3273:3273 Hilbert.DesarguesTheorem <> l:33 var
+R3277:3288 Hilbert.DesarguesTheorem <> line_through def
+R3290:3290 Hilbert.DesarguesTheorem <> I:30 var
+R3292:3292 Hilbert.DesarguesTheorem <> A:31 var
+R3294:3294 Hilbert.DesarguesTheorem <> B:32 var
+R3343:3354 Hilbert.DesarguesTheorem <> line_through def
+R3369:3403 Stdlib.Logic.IndefiniteDescription <> constructive_indefinite_description prfax
+R3456:3457 Hilbert.HilbertStructure <> I1 proj
+R3414:3420 Hilbert.HilbertStructure <> IncLine proj
+binder 3410:3410 <> m:34
+R3438:3441 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3427:3431 Hilbert.HilbertStructure <> Incid proj
+R3437:3437 Hilbert.DesarguesTheorem <> m:34 var
+R3442:3446 Hilbert.HilbertStructure <> Incid proj
+R3452:3452 Hilbert.DesarguesTheorem <> m:34 var
+R3369:3403 Stdlib.Logic.IndefiniteDescription <> constructive_indefinite_description prfax
+R3456:3457 Hilbert.HilbertStructure <> I1 proj
+R3414:3420 Hilbert.HilbertStructure <> IncLine proj
+binder 3410:3410 <> m:35
+R3438:3441 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3427:3431 Hilbert.HilbertStructure <> Incid proj
+R3437:3437 Hilbert.DesarguesTheorem <> m:35 var
+R3442:3446 Hilbert.HilbertStructure <> Incid proj
+R3452:3452 Hilbert.DesarguesTheorem <> m:35 var
+R3497:3498 Hilbert.HilbertStructure <> I2 proj
+R3512:3515 Corelib.Init.Logic <> conj constr
+R3522:3525 Corelib.Init.Logic <> conj constr
+R3532:3535 Corelib.Init.Logic <> conj constr
+R3497:3498 Hilbert.HilbertStructure <> I2 proj
+R3512:3515 Corelib.Init.Logic <> conj constr
+R3522:3525 Corelib.Init.Logic <> conj constr
+R3532:3535 Corelib.Init.Logic <> conj constr
+def 3855:3862 <> Triangle
+R3869:3886 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 3865:3865 <> I:36
+R3898:3905 Hilbert.HilbertStructure <> IncPoint proj
+R3907:3907 Hilbert.DesarguesTheorem <> I:36 var
+binder 3890:3890 <> A:37
+binder 3892:3892 <> B:38
+binder 3894:3894 <> C:39
+R3941:3944 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3922:3923 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3924:3932 Hilbert.DesarguesTheorem <> Collinear def
+R3934:3934 Hilbert.DesarguesTheorem <> I:36 var
+R3936:3936 Hilbert.DesarguesTheorem <> A:37 var
+R3938:3938 Hilbert.DesarguesTheorem <> B:38 var
+R3940:3940 Hilbert.DesarguesTheorem <> C:39 var
+R3951:3954 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3946:3949 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3945:3945 Hilbert.DesarguesTheorem <> A:37 var
+R3950:3950 Hilbert.DesarguesTheorem <> B:38 var
+R3961:3964 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3956:3959 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3955:3955 Hilbert.DesarguesTheorem <> B:38 var
+R3960:3960 Hilbert.DesarguesTheorem <> C:39 var
+R3966:3969 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3965:3965 Hilbert.DesarguesTheorem <> A:37 var
+R3970:3970 Hilbert.DesarguesTheorem <> C:39 var
+def 4049:4068 <> PerspectiveFromPoint
+R4075:4092 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 4071:4071 <> I:40
+R4115:4122 Hilbert.HilbertStructure <> IncPoint proj
+R4124:4124 Hilbert.DesarguesTheorem <> I:40 var
+binder 4096:4096 <> A:41
+binder 4098:4098 <> B:42
+binder 4100:4100 <> C:43
+binder 4102:4103 <> A':44
+binder 4105:4106 <> B':45
+binder 4108:4109 <> C':46
+binder 4111:4111 <> O:47
+R4155:4158 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4139:4146 Hilbert.DesarguesTheorem <> Triangle def
+R4148:4148 Hilbert.DesarguesTheorem <> I:40 var
+R4150:4150 Hilbert.DesarguesTheorem <> A:41 var
+R4152:4152 Hilbert.DesarguesTheorem <> B:42 var
+R4154:4154 Hilbert.DesarguesTheorem <> C:43 var
+R4178:4183 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4159:4166 Hilbert.DesarguesTheorem <> Triangle def
+R4168:4168 Hilbert.DesarguesTheorem <> I:40 var
+R4170:4171 Hilbert.DesarguesTheorem <> A':44 var
+R4173:4174 Hilbert.DesarguesTheorem <> B':45 var
+R4176:4177 Hilbert.DesarguesTheorem <> C':46 var
+R4202:4205 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4184:4192 Hilbert.DesarguesTheorem <> Collinear def
+R4194:4194 Hilbert.DesarguesTheorem <> I:40 var
+R4196:4196 Hilbert.DesarguesTheorem <> O:47 var
+R4198:4198 Hilbert.DesarguesTheorem <> A:41 var
+R4200:4201 Hilbert.DesarguesTheorem <> A':44 var
+R4224:4227 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4206:4214 Hilbert.DesarguesTheorem <> Collinear def
+R4216:4216 Hilbert.DesarguesTheorem <> I:40 var
+R4218:4218 Hilbert.DesarguesTheorem <> O:47 var
+R4220:4220 Hilbert.DesarguesTheorem <> B:42 var
+R4222:4223 Hilbert.DesarguesTheorem <> B':45 var
+R4228:4236 Hilbert.DesarguesTheorem <> Collinear def
+R4238:4238 Hilbert.DesarguesTheorem <> I:40 var
+R4240:4240 Hilbert.DesarguesTheorem <> O:47 var
+R4242:4242 Hilbert.DesarguesTheorem <> C:43 var
+R4244:4245 Hilbert.DesarguesTheorem <> C':46 var
+def 4325:4343 <> PerspectiveFromLine
+R4350:4367 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 4346:4346 <> I:48
+R4388:4395 Hilbert.HilbertStructure <> IncPoint proj
+R4397:4397 Hilbert.DesarguesTheorem <> I:48 var
+binder 4371:4371 <> A:49
+binder 4373:4373 <> B:50
+binder 4375:4375 <> C:51
+binder 4377:4378 <> A':52
+binder 4380:4381 <> B':53
+binder 4383:4384 <> C':54
+R4405:4411 Hilbert.HilbertStructure <> IncLine proj
+R4413:4413 Hilbert.DesarguesTheorem <> I:48 var
+binder 4401:4401 <> l:55
+R4444:4447 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4428:4435 Hilbert.DesarguesTheorem <> Triangle def
+R4437:4437 Hilbert.DesarguesTheorem <> I:48 var
+R4439:4439 Hilbert.DesarguesTheorem <> A:49 var
+R4441:4441 Hilbert.DesarguesTheorem <> B:50 var
+R4443:4443 Hilbert.DesarguesTheorem <> C:51 var
+R4467:4472 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4448:4455 Hilbert.DesarguesTheorem <> Triangle def
+R4457:4457 Hilbert.DesarguesTheorem <> I:48 var
+R4459:4460 Hilbert.DesarguesTheorem <> A':52 var
+R4462:4463 Hilbert.DesarguesTheorem <> B':53 var
+R4465:4466 Hilbert.DesarguesTheorem <> C':54 var
+R4473:4473 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4683:4689 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4474:4480 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4495:4496 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4485:4492 Hilbert.HilbertStructure <> IncPoint proj
+R4494:4494 Hilbert.DesarguesTheorem <> I:48 var
+binder 4481:4481 <> P:56
+R4557:4581 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4497:4510 Hilbert.DesarguesTheorem <> LinesIntersect def
+R4512:4512 Hilbert.DesarguesTheorem <> I:48 var
+R4515:4526 Hilbert.DesarguesTheorem <> line_through def
+R4528:4528 Hilbert.DesarguesTheorem <> I:48 var
+R4530:4530 Hilbert.DesarguesTheorem <> A:49 var
+R4532:4532 Hilbert.DesarguesTheorem <> B:50 var
+R4536:4547 Hilbert.DesarguesTheorem <> line_through def
+R4549:4549 Hilbert.DesarguesTheorem <> I:48 var
+R4551:4552 Hilbert.DesarguesTheorem <> A':52 var
+R4554:4555 Hilbert.DesarguesTheorem <> B':53 var
+R4647:4671 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4582:4598 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R4600:4600 Hilbert.DesarguesTheorem <> I:48 var
+R4603:4614 Hilbert.DesarguesTheorem <> line_through def
+R4616:4616 Hilbert.DesarguesTheorem <> I:48 var
+R4618:4618 Hilbert.DesarguesTheorem <> A:49 var
+R4620:4620 Hilbert.DesarguesTheorem <> B:50 var
+R4624:4635 Hilbert.DesarguesTheorem <> line_through def
+R4637:4637 Hilbert.DesarguesTheorem <> I:48 var
+R4639:4640 Hilbert.DesarguesTheorem <> A':52 var
+R4642:4643 Hilbert.DesarguesTheorem <> B':53 var
+R4646:4646 Hilbert.DesarguesTheorem <> P:56 var
+R4672:4676 Hilbert.HilbertStructure <> Incid proj
+R4678:4678 Hilbert.DesarguesTheorem <> I:48 var
+R4680:4680 Hilbert.DesarguesTheorem <> P:56 var
+R4682:4682 Hilbert.DesarguesTheorem <> l:55 var
+R4690:4690 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4900:4907 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5117:5117 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4691:4697 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4712:4713 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4702:4709 Hilbert.HilbertStructure <> IncPoint proj
+R4711:4711 Hilbert.DesarguesTheorem <> I:48 var
+binder 4698:4698 <> Q:57
+R4774:4798 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4714:4727 Hilbert.DesarguesTheorem <> LinesIntersect def
+R4729:4729 Hilbert.DesarguesTheorem <> I:48 var
+R4732:4743 Hilbert.DesarguesTheorem <> line_through def
+R4745:4745 Hilbert.DesarguesTheorem <> I:48 var
+R4747:4747 Hilbert.DesarguesTheorem <> A:49 var
+R4749:4749 Hilbert.DesarguesTheorem <> C:51 var
+R4753:4764 Hilbert.DesarguesTheorem <> line_through def
+R4766:4766 Hilbert.DesarguesTheorem <> I:48 var
+R4768:4769 Hilbert.DesarguesTheorem <> A':52 var
+R4771:4772 Hilbert.DesarguesTheorem <> C':54 var
+R4864:4888 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4799:4815 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R4817:4817 Hilbert.DesarguesTheorem <> I:48 var
+R4820:4831 Hilbert.DesarguesTheorem <> line_through def
+R4833:4833 Hilbert.DesarguesTheorem <> I:48 var
+R4835:4835 Hilbert.DesarguesTheorem <> A:49 var
+R4837:4837 Hilbert.DesarguesTheorem <> C:51 var
+R4841:4852 Hilbert.DesarguesTheorem <> line_through def
+R4854:4854 Hilbert.DesarguesTheorem <> I:48 var
+R4856:4857 Hilbert.DesarguesTheorem <> A':52 var
+R4859:4860 Hilbert.DesarguesTheorem <> C':54 var
+R4863:4863 Hilbert.DesarguesTheorem <> Q:57 var
+R4889:4893 Hilbert.HilbertStructure <> Incid proj
+R4895:4895 Hilbert.DesarguesTheorem <> I:48 var
+R4897:4897 Hilbert.DesarguesTheorem <> Q:57 var
+R4899:4899 Hilbert.DesarguesTheorem <> l:55 var
+R4908:4914 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4929:4930 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4919:4926 Hilbert.HilbertStructure <> IncPoint proj
+R4928:4928 Hilbert.DesarguesTheorem <> I:48 var
+binder 4915:4915 <> R:58
+R4991:5015 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4931:4944 Hilbert.DesarguesTheorem <> LinesIntersect def
+R4946:4946 Hilbert.DesarguesTheorem <> I:48 var
+R4949:4960 Hilbert.DesarguesTheorem <> line_through def
+R4962:4962 Hilbert.DesarguesTheorem <> I:48 var
+R4964:4964 Hilbert.DesarguesTheorem <> B:50 var
+R4966:4966 Hilbert.DesarguesTheorem <> C:51 var
+R4970:4981 Hilbert.DesarguesTheorem <> line_through def
+R4983:4983 Hilbert.DesarguesTheorem <> I:48 var
+R4985:4986 Hilbert.DesarguesTheorem <> B':53 var
+R4988:4989 Hilbert.DesarguesTheorem <> C':54 var
+R5081:5105 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5016:5032 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R5034:5034 Hilbert.DesarguesTheorem <> I:48 var
+R5037:5048 Hilbert.DesarguesTheorem <> line_through def
+R5050:5050 Hilbert.DesarguesTheorem <> I:48 var
+R5052:5052 Hilbert.DesarguesTheorem <> B:50 var
+R5054:5054 Hilbert.DesarguesTheorem <> C:51 var
+R5058:5069 Hilbert.DesarguesTheorem <> line_through def
+R5071:5071 Hilbert.DesarguesTheorem <> I:48 var
+R5073:5074 Hilbert.DesarguesTheorem <> B':53 var
+R5076:5077 Hilbert.DesarguesTheorem <> C':54 var
+R5080:5080 Hilbert.DesarguesTheorem <> R:58 var
+R5106:5110 Hilbert.HilbertStructure <> Incid proj
+R5112:5112 Hilbert.DesarguesTheorem <> I:48 var
+R5114:5114 Hilbert.DesarguesTheorem <> R:58 var
+R5116:5116 Hilbert.DesarguesTheorem <> l:55 var
+prf 6300:6316 <> Desargues_theorem
+R6332:6349 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 6328:6328 <> I:59
+R6372:6379 Hilbert.HilbertStructure <> IncPoint proj
+R6381:6381 Hilbert.DesarguesTheorem <> I:59 var
+binder 6353:6353 <> A:60
+binder 6355:6355 <> B:61
+binder 6357:6357 <> C:62
+binder 6359:6360 <> A':63
+binder 6362:6363 <> B':64
+binder 6365:6366 <> C':65
+binder 6368:6368 <> O:66
+R6389:6395 Hilbert.HilbertStructure <> IncLine proj
+R6397:6397 Hilbert.DesarguesTheorem <> I:59 var
+binder 6385:6385 <> l:67
+R6487:6490 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6469:6477 Hilbert.DesarguesTheorem <> Collinear def
+R6479:6479 Hilbert.DesarguesTheorem <> I:59 var
+R6481:6481 Hilbert.DesarguesTheorem <> O:66 var
+R6483:6483 Hilbert.DesarguesTheorem <> A:60 var
+R6485:6486 Hilbert.DesarguesTheorem <> A':63 var
+R6509:6512 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6491:6499 Hilbert.DesarguesTheorem <> Collinear def
+R6501:6501 Hilbert.DesarguesTheorem <> I:59 var
+R6503:6503 Hilbert.DesarguesTheorem <> O:66 var
+R6505:6505 Hilbert.DesarguesTheorem <> B:61 var
+R6507:6508 Hilbert.DesarguesTheorem <> B':64 var
+R6531:6577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6513:6521 Hilbert.DesarguesTheorem <> Collinear def
+R6523:6523 Hilbert.DesarguesTheorem <> I:59 var
+R6525:6525 Hilbert.DesarguesTheorem <> O:66 var
+R6527:6527 Hilbert.DesarguesTheorem <> C:62 var
+R6529:6530 Hilbert.DesarguesTheorem <> C':65 var
+R6594:6597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6578:6585 Hilbert.DesarguesTheorem <> Triangle def
+R6587:6587 Hilbert.DesarguesTheorem <> I:59 var
+R6589:6589 Hilbert.DesarguesTheorem <> A:60 var
+R6591:6591 Hilbert.DesarguesTheorem <> B:61 var
+R6593:6593 Hilbert.DesarguesTheorem <> C:62 var
+R6617:6660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6598:6605 Hilbert.DesarguesTheorem <> Triangle def
+R6607:6607 Hilbert.DesarguesTheorem <> I:59 var
+R6609:6610 Hilbert.DesarguesTheorem <> A':63 var
+R6612:6613 Hilbert.DesarguesTheorem <> B':64 var
+R6615:6616 Hilbert.DesarguesTheorem <> C':65 var
+R6721:6726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6661:6674 Hilbert.DesarguesTheorem <> LinesIntersect def
+R6676:6676 Hilbert.DesarguesTheorem <> I:59 var
+R6679:6690 Hilbert.DesarguesTheorem <> line_through def
+R6692:6692 Hilbert.DesarguesTheorem <> I:59 var
+R6694:6694 Hilbert.DesarguesTheorem <> A:60 var
+R6696:6696 Hilbert.DesarguesTheorem <> B:61 var
+R6700:6711 Hilbert.DesarguesTheorem <> line_through def
+R6713:6713 Hilbert.DesarguesTheorem <> I:59 var
+R6715:6716 Hilbert.DesarguesTheorem <> A':63 var
+R6718:6719 Hilbert.DesarguesTheorem <> B':64 var
+R6787:6792 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6727:6740 Hilbert.DesarguesTheorem <> LinesIntersect def
+R6742:6742 Hilbert.DesarguesTheorem <> I:59 var
+R6745:6756 Hilbert.DesarguesTheorem <> line_through def
+R6758:6758 Hilbert.DesarguesTheorem <> I:59 var
+R6760:6760 Hilbert.DesarguesTheorem <> A:60 var
+R6762:6762 Hilbert.DesarguesTheorem <> C:62 var
+R6766:6777 Hilbert.DesarguesTheorem <> line_through def
+R6779:6779 Hilbert.DesarguesTheorem <> I:59 var
+R6781:6782 Hilbert.DesarguesTheorem <> A':63 var
+R6784:6785 Hilbert.DesarguesTheorem <> C':65 var
+R6853:6893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6793:6806 Hilbert.DesarguesTheorem <> LinesIntersect def
+R6808:6808 Hilbert.DesarguesTheorem <> I:59 var
+R6811:6822 Hilbert.DesarguesTheorem <> line_through def
+R6824:6824 Hilbert.DesarguesTheorem <> I:59 var
+R6826:6826 Hilbert.DesarguesTheorem <> B:61 var
+R6828:6828 Hilbert.DesarguesTheorem <> C:62 var
+R6832:6843 Hilbert.DesarguesTheorem <> line_through def
+R6845:6845 Hilbert.DesarguesTheorem <> I:59 var
+R6847:6848 Hilbert.DesarguesTheorem <> B':64 var
+R6850:6851 Hilbert.DesarguesTheorem <> C':65 var
+R6894:6901 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6916:6922 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6907:6913 Hilbert.HilbertStructure <> IncLine proj
+R6915:6915 Hilbert.DesarguesTheorem <> I:59 var
+binder 6902:6903 <> l':68
+R6923:6923 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7036:7044 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6936:6943 Hilbert.HilbertStructure <> IncPoint proj
+R6945:6945 Hilbert.DesarguesTheorem <> I:59 var
+binder 6932:6932 <> P:69
+R7020:7023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6955:6971 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R6973:6973 Hilbert.DesarguesTheorem <> I:59 var
+R6976:6987 Hilbert.DesarguesTheorem <> line_through def
+R6989:6989 Hilbert.DesarguesTheorem <> I:59 var
+R6991:6991 Hilbert.DesarguesTheorem <> A:60 var
+R6993:6993 Hilbert.DesarguesTheorem <> B:61 var
+R6997:7008 Hilbert.DesarguesTheorem <> line_through def
+R7010:7010 Hilbert.DesarguesTheorem <> I:59 var
+R7012:7013 Hilbert.DesarguesTheorem <> A':63 var
+R7015:7016 Hilbert.DesarguesTheorem <> B':64 var
+R7019:7019 Hilbert.DesarguesTheorem <> P:69 var
+R7024:7028 Hilbert.HilbertStructure <> Incid proj
+R7030:7030 Hilbert.DesarguesTheorem <> I:59 var
+R7032:7032 Hilbert.DesarguesTheorem <> P:69 var
+R7034:7035 Hilbert.DesarguesTheorem <> l':68 var
+R7045:7045 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7158:7167 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7280:7280 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7058:7065 Hilbert.HilbertStructure <> IncPoint proj
+R7067:7067 Hilbert.DesarguesTheorem <> I:59 var
+binder 7054:7054 <> Q:70
+R7142:7145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7077:7093 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R7095:7095 Hilbert.DesarguesTheorem <> I:59 var
+R7098:7109 Hilbert.DesarguesTheorem <> line_through def
+R7111:7111 Hilbert.DesarguesTheorem <> I:59 var
+R7113:7113 Hilbert.DesarguesTheorem <> A:60 var
+R7115:7115 Hilbert.DesarguesTheorem <> C:62 var
+R7119:7130 Hilbert.DesarguesTheorem <> line_through def
+R7132:7132 Hilbert.DesarguesTheorem <> I:59 var
+R7134:7135 Hilbert.DesarguesTheorem <> A':63 var
+R7137:7138 Hilbert.DesarguesTheorem <> C':65 var
+R7141:7141 Hilbert.DesarguesTheorem <> Q:70 var
+R7146:7150 Hilbert.HilbertStructure <> Incid proj
+R7152:7152 Hilbert.DesarguesTheorem <> I:59 var
+R7154:7154 Hilbert.DesarguesTheorem <> Q:70 var
+R7156:7157 Hilbert.DesarguesTheorem <> l':68 var
+R7180:7187 Hilbert.HilbertStructure <> IncPoint proj
+R7189:7189 Hilbert.DesarguesTheorem <> I:59 var
+binder 7176:7176 <> R:71
+R7264:7267 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7199:7215 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R7217:7217 Hilbert.DesarguesTheorem <> I:59 var
+R7220:7231 Hilbert.DesarguesTheorem <> line_through def
+R7233:7233 Hilbert.DesarguesTheorem <> I:59 var
+R7235:7235 Hilbert.DesarguesTheorem <> B:61 var
+R7237:7237 Hilbert.DesarguesTheorem <> C:62 var
+R7241:7252 Hilbert.DesarguesTheorem <> line_through def
+R7254:7254 Hilbert.DesarguesTheorem <> I:59 var
+R7256:7257 Hilbert.DesarguesTheorem <> B':64 var
+R7259:7260 Hilbert.DesarguesTheorem <> C':65 var
+R7263:7263 Hilbert.DesarguesTheorem <> R:71 var
+R7268:7272 Hilbert.HilbertStructure <> Incid proj
+R7274:7274 Hilbert.DesarguesTheorem <> I:59 var
+R7276:7276 Hilbert.DesarguesTheorem <> R:71 var
+R7278:7279 Hilbert.DesarguesTheorem <> l':68 var
+prf 7961:7978 <> Desargues_converse
+R7994:8011 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 7990:7990 <> I:72
+R8032:8039 Hilbert.HilbertStructure <> IncPoint proj
+R8041:8041 Hilbert.DesarguesTheorem <> I:72 var
+binder 8015:8015 <> A:73
+binder 8017:8017 <> B:74
+binder 8019:8019 <> C:75
+binder 8021:8022 <> A':76
+binder 8024:8025 <> B':77
+binder 8027:8028 <> C':78
+R8049:8055 Hilbert.HilbertStructure <> IncLine proj
+R8057:8057 Hilbert.DesarguesTheorem <> I:72 var
+binder 8045:8045 <> l:79
+R8079:8082 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8063:8070 Hilbert.DesarguesTheorem <> Triangle def
+R8072:8072 Hilbert.DesarguesTheorem <> I:72 var
+R8074:8074 Hilbert.DesarguesTheorem <> A:73 var
+R8076:8076 Hilbert.DesarguesTheorem <> B:74 var
+R8078:8078 Hilbert.DesarguesTheorem <> C:75 var
+R8102:8107 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8083:8090 Hilbert.DesarguesTheorem <> Triangle def
+R8092:8092 Hilbert.DesarguesTheorem <> I:72 var
+R8094:8095 Hilbert.DesarguesTheorem <> A':76 var
+R8097:8098 Hilbert.DesarguesTheorem <> B':77 var
+R8100:8101 Hilbert.DesarguesTheorem <> C':78 var
+R8108:8108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8318:8324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8109:8115 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8130:8131 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8120:8127 Hilbert.HilbertStructure <> IncPoint proj
+R8129:8129 Hilbert.DesarguesTheorem <> I:72 var
+binder 8116:8116 <> P:80
+R8192:8216 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8132:8145 Hilbert.DesarguesTheorem <> LinesIntersect def
+R8147:8147 Hilbert.DesarguesTheorem <> I:72 var
+R8150:8161 Hilbert.DesarguesTheorem <> line_through def
+R8163:8163 Hilbert.DesarguesTheorem <> I:72 var
+R8165:8165 Hilbert.DesarguesTheorem <> A:73 var
+R8167:8167 Hilbert.DesarguesTheorem <> B:74 var
+R8171:8182 Hilbert.DesarguesTheorem <> line_through def
+R8184:8184 Hilbert.DesarguesTheorem <> I:72 var
+R8186:8187 Hilbert.DesarguesTheorem <> A':76 var
+R8189:8190 Hilbert.DesarguesTheorem <> B':77 var
+R8282:8306 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8217:8233 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R8235:8235 Hilbert.DesarguesTheorem <> I:72 var
+R8238:8249 Hilbert.DesarguesTheorem <> line_through def
+R8251:8251 Hilbert.DesarguesTheorem <> I:72 var
+R8253:8253 Hilbert.DesarguesTheorem <> A:73 var
+R8255:8255 Hilbert.DesarguesTheorem <> B:74 var
+R8259:8270 Hilbert.DesarguesTheorem <> line_through def
+R8272:8272 Hilbert.DesarguesTheorem <> I:72 var
+R8274:8275 Hilbert.DesarguesTheorem <> A':76 var
+R8277:8278 Hilbert.DesarguesTheorem <> B':77 var
+R8281:8281 Hilbert.DesarguesTheorem <> P:80 var
+R8307:8311 Hilbert.HilbertStructure <> Incid proj
+R8313:8313 Hilbert.DesarguesTheorem <> I:72 var
+R8315:8315 Hilbert.DesarguesTheorem <> P:80 var
+R8317:8317 Hilbert.DesarguesTheorem <> l:79 var
+R8325:8325 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8535:8541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8326:8332 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8347:8348 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8337:8344 Hilbert.HilbertStructure <> IncPoint proj
+R8346:8346 Hilbert.DesarguesTheorem <> I:72 var
+binder 8333:8333 <> Q:81
+R8409:8433 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8349:8362 Hilbert.DesarguesTheorem <> LinesIntersect def
+R8364:8364 Hilbert.DesarguesTheorem <> I:72 var
+R8367:8378 Hilbert.DesarguesTheorem <> line_through def
+R8380:8380 Hilbert.DesarguesTheorem <> I:72 var
+R8382:8382 Hilbert.DesarguesTheorem <> A:73 var
+R8384:8384 Hilbert.DesarguesTheorem <> C:75 var
+R8388:8399 Hilbert.DesarguesTheorem <> line_through def
+R8401:8401 Hilbert.DesarguesTheorem <> I:72 var
+R8403:8404 Hilbert.DesarguesTheorem <> A':76 var
+R8406:8407 Hilbert.DesarguesTheorem <> C':78 var
+R8499:8523 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8434:8450 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R8452:8452 Hilbert.DesarguesTheorem <> I:72 var
+R8455:8466 Hilbert.DesarguesTheorem <> line_through def
+R8468:8468 Hilbert.DesarguesTheorem <> I:72 var
+R8470:8470 Hilbert.DesarguesTheorem <> A:73 var
+R8472:8472 Hilbert.DesarguesTheorem <> C:75 var
+R8476:8487 Hilbert.DesarguesTheorem <> line_through def
+R8489:8489 Hilbert.DesarguesTheorem <> I:72 var
+R8491:8492 Hilbert.DesarguesTheorem <> A':76 var
+R8494:8495 Hilbert.DesarguesTheorem <> C':78 var
+R8498:8498 Hilbert.DesarguesTheorem <> Q:81 var
+R8524:8528 Hilbert.HilbertStructure <> Incid proj
+R8530:8530 Hilbert.DesarguesTheorem <> I:72 var
+R8532:8532 Hilbert.DesarguesTheorem <> Q:81 var
+R8534:8534 Hilbert.DesarguesTheorem <> l:79 var
+R8542:8542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8752:8758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8543:8549 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8564:8565 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8554:8561 Hilbert.HilbertStructure <> IncPoint proj
+R8563:8563 Hilbert.DesarguesTheorem <> I:72 var
+binder 8550:8550 <> R:82
+R8626:8650 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8566:8579 Hilbert.DesarguesTheorem <> LinesIntersect def
+R8581:8581 Hilbert.DesarguesTheorem <> I:72 var
+R8584:8595 Hilbert.DesarguesTheorem <> line_through def
+R8597:8597 Hilbert.DesarguesTheorem <> I:72 var
+R8599:8599 Hilbert.DesarguesTheorem <> B:74 var
+R8601:8601 Hilbert.DesarguesTheorem <> C:75 var
+R8605:8616 Hilbert.DesarguesTheorem <> line_through def
+R8618:8618 Hilbert.DesarguesTheorem <> I:72 var
+R8620:8621 Hilbert.DesarguesTheorem <> B':77 var
+R8623:8624 Hilbert.DesarguesTheorem <> C':78 var
+R8716:8740 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8651:8667 Hilbert.DesarguesTheorem <> IntersectionPoint def
+R8669:8669 Hilbert.DesarguesTheorem <> I:72 var
+R8672:8683 Hilbert.DesarguesTheorem <> line_through def
+R8685:8685 Hilbert.DesarguesTheorem <> I:72 var
+R8687:8687 Hilbert.DesarguesTheorem <> B:74 var
+R8689:8689 Hilbert.DesarguesTheorem <> C:75 var
+R8693:8704 Hilbert.DesarguesTheorem <> line_through def
+R8706:8706 Hilbert.DesarguesTheorem <> I:72 var
+R8708:8709 Hilbert.DesarguesTheorem <> B':77 var
+R8711:8712 Hilbert.DesarguesTheorem <> C':78 var
+R8715:8715 Hilbert.DesarguesTheorem <> R:82 var
+R8741:8745 Hilbert.HilbertStructure <> Incid proj
+R8747:8747 Hilbert.DesarguesTheorem <> I:72 var
+R8749:8749 Hilbert.DesarguesTheorem <> R:82 var
+R8751:8751 Hilbert.DesarguesTheorem <> l:79 var
+R8759:8765 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8780:8785 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8770:8777 Hilbert.HilbertStructure <> IncPoint proj
+R8779:8779 Hilbert.DesarguesTheorem <> I:72 var
+binder 8766:8766 <> O:83
+R8804:8807 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8786:8794 Hilbert.DesarguesTheorem <> Collinear def
+R8796:8796 Hilbert.DesarguesTheorem <> I:72 var
+R8798:8798 Hilbert.DesarguesTheorem <> O:83 var
+R8800:8800 Hilbert.DesarguesTheorem <> A:73 var
+R8802:8803 Hilbert.DesarguesTheorem <> A':76 var
+R8826:8829 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8808:8816 Hilbert.DesarguesTheorem <> Collinear def
+R8818:8818 Hilbert.DesarguesTheorem <> I:72 var
+R8820:8820 Hilbert.DesarguesTheorem <> O:83 var
+R8822:8822 Hilbert.DesarguesTheorem <> B:74 var
+R8824:8825 Hilbert.DesarguesTheorem <> B':77 var
+R8830:8838 Hilbert.DesarguesTheorem <> Collinear def
+R8840:8840 Hilbert.DesarguesTheorem <> I:72 var
+R8842:8842 Hilbert.DesarguesTheorem <> O:83 var
+R8844:8844 Hilbert.DesarguesTheorem <> C:75 var
+R8846:8847 Hilbert.DesarguesTheorem <> C':78 var

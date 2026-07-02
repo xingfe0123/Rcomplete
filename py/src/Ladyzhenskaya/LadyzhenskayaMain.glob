@@ -1,0 +1,60 @@
+DIGEST 39d45958a4c3fd3a826fec059cbfe8bd
+FLadyzhenskaya.LadyzhenskayaMain
+R227:237 Ladyzhenskaya.HolderSpace <> <> lib
+R274:294 Ladyzhenskaya.ParabolicCoefficients <> <> lib
+R331:338 Ladyzhenskaya.Galerkin <> <> lib
+R375:382 Ladyzhenskaya.Schauder <> <> lib
+R419:428 Ladyzhenskaya.Uniqueness <> <> lib
+prf 1462:1481 <> galerkin_convergence
+R1499:1514 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 1495:1495 <> P:1
+R1522:1528 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1550:1551 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1533:1549 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 1529:1529 <> u:2
+R1552:1570 Ladyzhenskaya.Galerkin <> short_time_solution def
+R1574:1574 Ladyzhenskaya.LadyzhenskayaMain <> u:2 var
+R1572:1572 Ladyzhenskaya.LadyzhenskayaMain <> P:1 var
+R1608:1624 Ladyzhenskaya.Galerkin <> galerkin_sequence prfax
+R1608:1624 Ladyzhenskaya.Galerkin <> galerkin_sequence prfax
+R1742:1761 Ladyzhenskaya.Schauder <> schauder_compactness prfax
+R1742:1761 Ladyzhenskaya.Schauder <> schauder_compactness prfax
+prf 1896:1934 <> ladyzhenskaya_short_time_existence_full
+R1952:1967 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 1948:1948 <> P:3
+R1975:1981 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2003:2010 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1986:2002 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 1982:1982 <> u:4
+R2034:2044 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2131:2131 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2011:2029 Ladyzhenskaya.Galerkin <> short_time_solution def
+R2033:2033 Ladyzhenskaya.LadyzhenskayaMain <> u:4 var
+R2031:2031 Ladyzhenskaya.LadyzhenskayaMain <> P:3 var
+R2056:2072 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 2052:2052 <> v:5
+R2098:2101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2075:2093 Ladyzhenskaya.Galerkin <> short_time_solution def
+R2097:2097 Ladyzhenskaya.LadyzhenskayaMain <> v:5 var
+R2095:2095 Ladyzhenskaya.LadyzhenskayaMain <> P:3 var
+R2115:2117 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2102:2112 Ladyzhenskaya.Galerkin <> ps_function proj
+R2114:2114 Ladyzhenskaya.LadyzhenskayaMain <> v:5 var
+R2118:2128 Ladyzhenskaya.Galerkin <> ps_function proj
+R2130:2130 Ladyzhenskaya.LadyzhenskayaMain <> u:4 var
+R2165:2184 Ladyzhenskaya.LadyzhenskayaMain <> galerkin_convergence thm
+R2165:2184 Ladyzhenskaya.LadyzhenskayaMain <> galerkin_convergence thm
+R2268:2293 Ladyzhenskaya.Uniqueness <> schauder_global_uniqueness thm
+R2268:2293 Ladyzhenskaya.Uniqueness <> schauder_global_uniqueness thm
+prf 2366:2388 <> ladyzhenskaya_existence
+R2406:2421 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 2402:2402 <> P:6
+R2429:2435 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2457:2458 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2440:2456 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 2436:2436 <> u:7
+R2459:2477 Ladyzhenskaya.Galerkin <> short_time_solution def
+R2481:2481 Ladyzhenskaya.LadyzhenskayaMain <> u:7 var
+R2479:2479 Ladyzhenskaya.LadyzhenskayaMain <> P:6 var
+R2499:2518 Ladyzhenskaya.LadyzhenskayaMain <> galerkin_convergence thm
+R2499:2518 Ladyzhenskaya.LadyzhenskayaMain <> galerkin_convergence thm

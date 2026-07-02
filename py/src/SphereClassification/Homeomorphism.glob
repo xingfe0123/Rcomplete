@@ -1,0 +1,175 @@
+DIGEST 5ac1850e99d311495f58d4aa32d66976
+FSphereClassification.Homeomorphism
+R157:164 SphereClassification.Topology <> <> lib
+prf 423:441 <> isHomeomorphic_refl
+binder 455:455 <> X:1
+R470:476 SphereClassification.Topology <> Toplogy rec
+R478:478 SphereClassification.Homeomorphism <> X:1 var
+binder 466:466 <> T:2
+R487:500 SphereClassification.Topology <> IsHomeomorphic rec
+R502:502 SphereClassification.Homeomorphism <> X:1 var
+R504:504 SphereClassification.Homeomorphism <> X:1 var
+R506:506 SphereClassification.Homeomorphism <> T:2 var
+R508:508 SphereClassification.Homeomorphism <> T:2 var
+R542:557 SphereClassification.Topology <> mkIsHomeomorphic constr
+binder 572:572 <> x:3
+R577:577 SphereClassification.Homeomorphism <> x:3 var
+binder 585:585 <> x:4
+R590:590 SphereClassification.Homeomorphism <> x:4 var
+R542:557 SphereClassification.Topology <> mkIsHomeomorphic constr
+binder 572:572 <> x:5
+R577:577 SphereClassification.Homeomorphism <> x:5 var
+binder 585:585 <> x:6
+R590:590 SphereClassification.Homeomorphism <> x:6 var
+R655:664 SphereClassification.Topology <> Continuous def
+R764:773 SphereClassification.Topology <> Continuous def
+prf 1052:1069 <> isHomeomorphic_sym
+binder 1083:1083 <> X:7
+binder 1085:1085 <> Y:8
+R1100:1106 SphereClassification.Topology <> Toplogy rec
+R1108:1108 SphereClassification.Homeomorphism <> X:7 var
+binder 1096:1096 <> T:9
+R1116:1122 SphereClassification.Topology <> Toplogy rec
+R1124:1124 SphereClassification.Homeomorphism <> Y:8 var
+binder 1112:1112 <> S:10
+R1155:1162 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1133:1146 SphereClassification.Topology <> IsHomeomorphic rec
+R1148:1148 SphereClassification.Homeomorphism <> X:7 var
+R1150:1150 SphereClassification.Homeomorphism <> Y:8 var
+R1152:1152 SphereClassification.Homeomorphism <> T:9 var
+R1154:1154 SphereClassification.Homeomorphism <> S:10 var
+R1164:1177 SphereClassification.Topology <> IsHomeomorphic rec
+R1179:1179 SphereClassification.Homeomorphism <> Y:8 var
+R1181:1181 SphereClassification.Homeomorphism <> X:7 var
+R1183:1183 SphereClassification.Homeomorphism <> S:10 var
+R1185:1185 SphereClassification.Homeomorphism <> T:9 var
+R1263:1278 SphereClassification.Topology <> mkIsHomeomorphic constr
+R1263:1278 SphereClassification.Topology <> mkIsHomeomorphic constr
+prf 1574:1593 <> isHomeomorphic_trans
+binder 1607:1607 <> X:11
+binder 1609:1609 <> Y:12
+binder 1611:1611 <> Z:13
+R1626:1632 SphereClassification.Topology <> Toplogy rec
+R1634:1634 SphereClassification.Homeomorphism <> X:11 var
+binder 1622:1622 <> T:14
+R1642:1648 SphereClassification.Topology <> Toplogy rec
+R1650:1650 SphereClassification.Homeomorphism <> Y:12 var
+binder 1638:1638 <> S:15
+R1658:1664 SphereClassification.Topology <> Toplogy rec
+R1666:1666 SphereClassification.Homeomorphism <> Z:13 var
+binder 1654:1654 <> U:16
+R1697:1704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1675:1688 SphereClassification.Topology <> IsHomeomorphic rec
+R1690:1690 SphereClassification.Homeomorphism <> X:11 var
+R1692:1692 SphereClassification.Homeomorphism <> Y:12 var
+R1694:1694 SphereClassification.Homeomorphism <> T:14 var
+R1696:1696 SphereClassification.Homeomorphism <> S:15 var
+R1728:1735 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1706:1719 SphereClassification.Topology <> IsHomeomorphic rec
+R1721:1721 SphereClassification.Homeomorphism <> Y:12 var
+R1723:1723 SphereClassification.Homeomorphism <> Z:13 var
+R1725:1725 SphereClassification.Homeomorphism <> S:15 var
+R1727:1727 SphereClassification.Homeomorphism <> U:16 var
+R1737:1750 SphereClassification.Topology <> IsHomeomorphic rec
+R1752:1752 SphereClassification.Homeomorphism <> X:11 var
+R1754:1754 SphereClassification.Homeomorphism <> Z:13 var
+R1756:1756 SphereClassification.Homeomorphism <> T:14 var
+R1758:1758 SphereClassification.Homeomorphism <> U:16 var
+R1890:1905 SphereClassification.Topology <> mkIsHomeomorphic constr
+binder 1920:1920 <> x:17
+R1930:1930 SphereClassification.Homeomorphism <> x:17 var
+binder 1939:1939 <> z:18
+R1951:1951 SphereClassification.Homeomorphism <> z:18 var
+R1890:1905 SphereClassification.Topology <> mkIsHomeomorphic constr
+binder 1920:1920 <> x:19
+R1930:1930 SphereClassification.Homeomorphism <> x:19 var
+binder 1939:1939 <> z:20
+R1951:1951 SphereClassification.Homeomorphism <> z:20 var
+R2011:2020 SphereClassification.Topology <> Continuous def
+R2126:2131 SphereClassification.Topology <> isOpen proj
+binder 2142:2142 <> y:21
+R2152:2152 SphereClassification.Homeomorphism <> y:21 var
+R2126:2131 SphereClassification.Topology <> isOpen proj
+binder 2142:2142 <> y:22
+R2152:2152 SphereClassification.Homeomorphism <> y:22 var
+binder 2410:2410 <> y:23
+R2420:2420 SphereClassification.Homeomorphism <> y:23 var
+binder 2410:2410 <> y:24
+R2420:2420 SphereClassification.Homeomorphism <> y:24 var
+R2483:2492 SphereClassification.Topology <> Continuous def
+R2600:2605 SphereClassification.Topology <> isOpen proj
+binder 2616:2616 <> y:25
+R2627:2627 SphereClassification.Homeomorphism <> y:25 var
+R2600:2605 SphereClassification.Topology <> isOpen proj
+binder 2616:2616 <> y:26
+R2627:2627 SphereClassification.Homeomorphism <> y:26 var
+binder 2818:2818 <> y:27
+R2829:2829 SphereClassification.Homeomorphism <> y:27 var
+binder 2818:2818 <> y:28
+R2829:2829 SphereClassification.Homeomorphism <> y:28 var
+def 3492:3504 <> compose_homeo
+binder 3507:3507 <> X:29
+binder 3509:3509 <> Y:30
+binder 3511:3511 <> Z:31
+R3526:3532 SphereClassification.Topology <> Toplogy rec
+R3534:3534 SphereClassification.Homeomorphism <> X:29 var
+binder 3522:3522 <> T:32
+R3542:3548 SphereClassification.Topology <> Toplogy rec
+R3550:3550 SphereClassification.Homeomorphism <> Y:30 var
+binder 3538:3538 <> S:33
+R3558:3564 SphereClassification.Topology <> Toplogy rec
+R3566:3566 SphereClassification.Homeomorphism <> Z:31 var
+binder 3554:3554 <> U:34
+R3578:3591 SphereClassification.Topology <> IsHomeomorphic rec
+R3593:3593 SphereClassification.Homeomorphism <> X:29 var
+R3595:3595 SphereClassification.Homeomorphism <> Y:30 var
+R3597:3597 SphereClassification.Homeomorphism <> T:32 var
+R3599:3599 SphereClassification.Homeomorphism <> S:33 var
+binder 3572:3573 <> H1:35
+R3609:3622 SphereClassification.Topology <> IsHomeomorphic rec
+R3624:3624 SphereClassification.Homeomorphism <> Y:30 var
+R3626:3626 SphereClassification.Homeomorphism <> Z:31 var
+R3628:3628 SphereClassification.Homeomorphism <> S:33 var
+R3630:3630 SphereClassification.Homeomorphism <> U:34 var
+binder 3603:3604 <> H2:36
+R3638:3651 SphereClassification.Topology <> IsHomeomorphic rec
+R3653:3653 SphereClassification.Homeomorphism <> X:29 var
+R3655:3655 SphereClassification.Homeomorphism <> Z:31 var
+R3657:3657 SphereClassification.Homeomorphism <> T:32 var
+R3659:3659 SphereClassification.Homeomorphism <> U:34 var
+R3678:3697 SphereClassification.Homeomorphism <> isHomeomorphic_trans thm
+R3678:3697 SphereClassification.Homeomorphism <> isHomeomorphic_trans thm
+def 3981:3988 <> id_homeo
+binder 3991:3991 <> X:37
+R4006:4012 SphereClassification.Topology <> Toplogy rec
+R4014:4014 SphereClassification.Homeomorphism <> X:37 var
+binder 4002:4002 <> T:38
+R4022:4035 SphereClassification.Topology <> IsHomeomorphic rec
+R4037:4037 SphereClassification.Homeomorphism <> X:37 var
+R4039:4039 SphereClassification.Homeomorphism <> X:37 var
+R4041:4041 SphereClassification.Homeomorphism <> T:38 var
+R4043:4043 SphereClassification.Homeomorphism <> T:38 var
+R4062:4080 SphereClassification.Homeomorphism <> isHomeomorphic_refl thm
+R4062:4080 SphereClassification.Homeomorphism <> isHomeomorphic_refl thm
+def 4336:4344 <> inv_homeo
+binder 4347:4347 <> X:39
+binder 4349:4349 <> Y:40
+R4364:4370 SphereClassification.Topology <> Toplogy rec
+R4372:4372 SphereClassification.Homeomorphism <> X:39 var
+binder 4360:4360 <> T:41
+R4380:4386 SphereClassification.Topology <> Toplogy rec
+R4388:4388 SphereClassification.Homeomorphism <> Y:40 var
+binder 4376:4376 <> S:42
+R4399:4412 SphereClassification.Topology <> IsHomeomorphic rec
+R4414:4414 SphereClassification.Homeomorphism <> X:39 var
+R4416:4416 SphereClassification.Homeomorphism <> Y:40 var
+R4418:4418 SphereClassification.Homeomorphism <> T:41 var
+R4420:4420 SphereClassification.Homeomorphism <> S:42 var
+binder 4394:4394 <> H:43
+R4428:4441 SphereClassification.Topology <> IsHomeomorphic rec
+R4443:4443 SphereClassification.Homeomorphism <> Y:40 var
+R4445:4445 SphereClassification.Homeomorphism <> X:39 var
+R4447:4447 SphereClassification.Homeomorphism <> S:42 var
+R4449:4449 SphereClassification.Homeomorphism <> T:41 var
+R4468:4485 SphereClassification.Homeomorphism <> isHomeomorphic_sym thm
+R4468:4485 SphereClassification.Homeomorphism <> isHomeomorphic_sym thm

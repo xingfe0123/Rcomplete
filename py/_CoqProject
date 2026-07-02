@@ -1,18 +1,73 @@
-(* _CoqProject - Sphere Classification formalization (Record style) *)
--Q src/CompactEmbeddingDir CompactEmbedding
-src/CompactEmbeddingDir/MetricCompact.v
-src/CompactEmbeddingDir/ArzelaAscoli.v
--Q src/SphereClassificationDir SphereClassification
-src/SphereClassificationDir/Topology.v
-src/SphereClassificationDir/FundamentalGroup.v
-src/SphereClassificationDir/Manifold.v
-src/SphereClassificationDir/RiemannMetric.v
-src/SphereClassificationDir/RiemannTensor.v
-src/SphereClassificationDir/Geodesic.v
-src/SphereClassificationDir/HopfRinow.v
-src/SphereClassificationDir/HadamardCartan.v
-src/SphereClassificationDir/KillingHopf.v
-src/SphereClassificationDir/SphereTheorem.v
-src/SphereClassificationDir/BonnetMyers.v
--Q src/GronwallDir GronwallDir
-src/GronwallDir/Gronwall.v
+(* _CoqProject — 完整注册所有模块 *)
+
+-Q src/CompactEmbedding CompactEmbedding
+src/CompactEmbedding/ArzelaAscoli.v
+src/CompactEmbedding/BanachC0.v
+src/CompactEmbedding/CompactEmbedding.v
+src/CompactEmbedding/Equicontinuity.v
+src/CompactEmbedding/MetricCompact.v
+src/CompactEmbedding/UniformBounded.v
+
+-Q src/Gronwall Gronwall
+src/Gronwall/Gronwall.v
+
+-Q src/Hilbert Hilbert
+src/Hilbert/Common.v
+src/Hilbert/Types.v
+src/Hilbert/IncidenceAxioms.v
+src/Hilbert/OrderAxioms.v
+src/Hilbert/CongruenceAxioms.v
+src/Hilbert/ParallelAxioms.v
+src/Hilbert/ContinuityAxioms.v
+src/Hilbert/HilbertFoundations.v
+src/Hilbert/DesarguesTheorem.v
+src/Hilbert/PascalTheorem.v
+src/Hilbert/IV_Independence.v
+src/Hilbert/V1_Independence.v
+src/Hilbert/V2_Independence.v
+src/Hilbert/III5_Independence.v
+src/Hilbert/Model_Consistency.v
+
+-Q src/Hopf Hopf
+src/Hopf/Hopf.v
+
+-Q src/Ladyzhenskaya Ladyzhenskaya
+src/Ladyzhenskaya/ABPCalderonZygmund.v
+src/Ladyzhenskaya/CaccioppoliDeGiorgiSobolev.v
+src/Ladyzhenskaya/DeTurck.v
+src/Ladyzhenskaya/Derivatives.v
+src/Ladyzhenskaya/EllipticParabolicAnalysis.v
+src/Ladyzhenskaya/Galerkin.v
+src/Ladyzhenskaya/HolderSpace.v
+src/Ladyzhenskaya/HopfBoundaryAnalysis.v
+src/Ladyzhenskaya/LadyzhenskayaMain.v
+src/Ladyzhenskaya/MoserIteration.v
+src/Ladyzhenskaya/ParabolicCoefficients.v
+src/Ladyzhenskaya/RicciFlow.v
+src/Ladyzhenskaya/Schauder.v
+src/Ladyzhenskaya/SobolevSpace.v
+src/Ladyzhenskaya/Uniqueness.v
+
+-Q src/LinearAlgebra LinearAlgebra
+src/LinearAlgebra/LinearAlgebraFoundations.v
+src/LinearAlgebra/SymmetricMatrix.v
+
+-Q src/SphereClassification SphereClassification
+src/SphereClassification/BonnetMyers.v
+src/SphereClassification/CheegerGromov.v
+src/SphereClassification/Christoffel.v
+src/SphereClassification/ConnectionBianchi.v
+src/SphereClassification/FundamentalGroup.v
+src/SphereClassification/Geodesic.v
+src/SphereClassification/HadamardCartan.v
+src/SphereClassification/HopfRinow.v
+src/SphereClassification/Homeomorphism.v
+src/SphereClassification/InjectivityRadius.v
+src/SphereClassification/KillingHopf.v
+src/SphereClassification/Manifold.v
+src/SphereClassification/RiemannMetric.v
+src/SphereClassification/RiemannTensor.v
+src/SphereClassification/RiemannianVolume.v
+src/SphereClassification/SphereTheorem.v
+src/SphereClassification/Topology.v
+

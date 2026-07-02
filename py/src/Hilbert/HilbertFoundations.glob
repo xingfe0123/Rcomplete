@@ -1,0 +1,12 @@
+DIGEST 63dabe9c299ade136be1f18569c4dc86
+FHilbert.HilbertFoundations
+R3727:3732 Hilbert.Common <> <> lib
+R3763:3767 Hilbert.Types <> <> lib
+R3798:3812 Hilbert.IncidenceAxioms <> <> lib
+R3843:3853 Hilbert.OrderAxioms <> <> lib
+R3884:3899 Hilbert.CongruenceAxioms <> <> lib
+R3930:3943 Hilbert.ParallelAxioms <> <> lib
+R3974:3989 Hilbert.ContinuityAxioms <> <> lib
+R4020:4035 Hilbert.DesarguesTheorem <> <> lib
+R4066:4078 Hilbert.PascalTheorem <> <> lib
+R4109:4123 Hilbert.IV_Independence <> <> lib

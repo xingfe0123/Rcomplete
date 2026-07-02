@@ -1,0 +1,210 @@
+(* ============================================================================ *)
+(*  HilbertStructure.v                                                          *)
+(*  Tier-5: Hilbert 公理系统的 5 个独立 Record 抽象                                *)
+(*                                                                            *)
+(*  把 Hilbert 公理系统拆分为 5 个独立 Record, 每个 Record 自包含载体类型和公理.    *)
+(*  这样 Q² 可以作为 Record 的具体实例构造, 验证公理的独立性 (V_2 独立于 V_1).   *)
+(*                                                                            *)
+(*  5 个 Record:                                                               *)
+(*    IncidenceStructure    — I-1~I-8 (关联公理)                                 *)
+(*    OrderStructure        — II-1~II-4 + Pasch (顺序公理)                       *)
+(*    CongruenceStructure   — III-1~III-6 + CongSeg/CongAng 参数 (合同公理)     *)
+(*    ArchimedesStructure   — V-1 (Archimedes 公理)                              *)
+(*    DedekindStructure     — V-2 (戴德金完备性公理)                              *)
+(*                                                                            *)
+(*  设计目标:                                                                  *)
+(*    1. 每个 Record 包含 载体 (Point/Line) + 关系 + 公理, 自包含              *)
+(*    2. Q² 可作为前 4 个 Record 的实例 (满足 I-III + V_1)                      *)
+(*    3. Q² 不能作为 DedekindStructure 的实例 (V_2 在 Q 中不成立, √2 反例)      *)
+(*                                                                            *)
+(*  依赖: Common.v (作为 "抽象接口", 后续文件可改用具体 Record 实例)              *)
+(* ============================================================================ *)
+
+From Stdlib Require Import Classical.
+
+(* ============================================================================ *)
+(*  IncidenceStructure: 关联公理 (I-1 ~ I-8)                                     *)
+(*                                                                            *)
+(*  载体: Point, Line, Plane                                                    *)
+(*  关系: Incid (点在直线上), IncidPlane (点在平面上)                            *)
+(*  公理: I-1: 两点确定一直线                                                   *)
+(*        I-2: 两点至多确定一直线                                               *)
+(*        I-3: 直线上至少两点 + 至少三点不共线                                  *)
+(*        I-4: 三点不共线唯一确定一平面                                         *)
+(*        I-5: 直线两点在平面内 ⇒ 整直线在平面内                                *)
+(*        I-6: 平面内至少三点不共线 + 平面外存在一点                            *)
+(*        I-7: 两平面交于一点 ⇒ 至少交于两点                                    *)
+(*        I-8: 至少四点不共面                                                   *)
+(* ============================================================================ *)
+
+Record IncidenceStructure : Type := mkIncidence {
+  IncPoint : Type;
+  IncLine : Type;
+  IncPlane : Type;
+  Incid : IncPoint -> IncLine -> Prop;
+  IncidPlane : IncPoint -> IncPlane -> Prop;
+
+  I1 : forall A B : IncPoint, exists l : IncLine, Incid A l /\ Incid B l;
+  I2 : forall (l m : IncLine) (P Q : IncPoint),
+    Incid P l /\ Incid Q l /\ Incid P m /\ Incid Q m -> l = m;
+  I3 : (forall l : IncLine, exists P Q : IncPoint, Incid P l /\ Incid Q l /\ P <> Q)
+       /\ (exists A B C : IncPoint, ~(exists l : IncLine, Incid A l /\ Incid B l /\ Incid C l));
+  I4 : (forall A B C : IncPoint,
+    ~(exists l : IncLine, Incid A l /\ Incid B l /\ Incid C l) ->
+    exists! alpha : IncPlane,
+      IncidPlane A alpha /\ IncidPlane B alpha /\ IncidPlane C alpha)
+    /\ (forall alpha : IncPlane, exists P : IncPoint, IncidPlane P alpha);
+  I5 : forall (a : IncLine) (alpha : IncPlane) (A B : IncPoint),
+    Incid A a -> Incid B a -> IncidPlane A alpha -> IncidPlane B alpha ->
+    forall X : IncPoint, Incid X a -> IncidPlane X alpha;
+  I6 : forall alpha : IncPlane,
+    exists A B C : IncPoint,
+      IncidPlane A alpha /\ IncidPlane B alpha /\ IncidPlane C alpha /\
+      ~(exists l : IncLine, Incid A l /\ Incid B l /\ Incid C l);
+  I7 : forall alpha beta : IncPlane,
+    forall A : IncPoint, IncidPlane A alpha /\ IncidPlane A beta ->
+    exists B : IncPoint, IncidPlane B alpha /\ IncidPlane B beta /\ A <> B;
+  I8 : exists A B C D : IncPoint,
+    ~(exists alpha : IncPlane, IncidPlane A alpha /\ IncidPlane B alpha /\
+                              IncidPlane C alpha /\ IncidPlane D alpha)
+}.
+
+(* ============================================================================ *)
+(*  OrderStructure: 顺序公理 (II-1 ~ II-4 + Pasch)                              *)
+(*                                                                            *)
+(*  依赖: IncidenceStructure (需要 Point, Line, Incid)                          *)
+(*  新增关系: Bet (B 在 A,C 之间)                                               *)
+(*  公理: II-1: 共线两点之间至少存在一点                                          *)
+(*        II-2: Bet 对称                                                        *)
+(*        II-3: Bet 非退化                                                      *)
+(*        II-4: 内点传递                                                        *)
+(*        Pasch: 三角形一边的两点连线穿过另一边                                  *)
+(* ============================================================================ *)
+
+Record OrderStructure (I : IncidenceStructure) : Type := mkOrder {
+  Bet : IncPoint I -> IncPoint I -> IncPoint I -> Prop;
+
+  II1 : forall (P Q : IncPoint I) (a : IncLine I),
+    Incid I P a /\ Incid I Q a /\ P <> Q ->
+    exists R : IncPoint I, Incid I R a /\ Bet P R Q;
+  II2 : forall A B C : IncPoint I, Bet A B C -> Bet C B A;
+  II3 : forall A B C : IncPoint I, Bet A B C -> A <> B /\ B <> C /\ A <> C;
+  II4 : forall A B C D : IncPoint I,
+    Bet A B C -> Bet B C D -> B <> C -> Bet A B D;
+  Pasch : forall A B C P Q : IncPoint I,
+    Bet A P C -> Bet B Q C ->
+    P <> C -> Q <> C ->
+    exists X : IncPoint I, Bet P X Q /\ (Bet A X B \/ Bet B X A)
+}.
+
+(* ============================================================================ *)
+(*  CongruenceStructure: 合同公理 (III-1 ~ III-6)                                *)
+(*                                                                            *)
+(*  依赖: IncidenceStructure + OrderStructure (需要 Ray 类型)                    *)
+(*  新增参数: CongSeg (线段合同), CongAng (角合同)                              *)
+(*  公理: III-1: 线段迁移 (存在+唯一)                                            *)
+(*        III-2: 合同传递                                                        *)
+(*        III-3: 线段加法                                                        *)
+(*        III-4: 合同对称 (独立)                                                 *)
+(*        III-5: 合同自反                                                        *)
+(*        III-6: 角合同对称                                                      *)
+(* ============================================================================ *)
+
+Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I) : Type := mkCongruence {
+  CongSeg : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
+  CongAng : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
+  Ray : Type;  (* 射线类型 — 实例化时具体定义 *)
+  ray_origin : Ray -> IncPoint I;
+  ray_line   : Ray -> IncLine I;
+  ray_valid  : forall r : Ray, (Incid I) (ray_origin r) (ray_line r);
+  OnRay : IncPoint I -> Ray -> Prop;
+
+  III1 : forall (A B : IncPoint I) (r : Ray),
+    A <> B ->
+    exists! X : IncPoint I, OnRay X r /\ (CongSeg) A B (ray_origin r) X;
+  III2 : forall A B C D E F : IncPoint I,
+    CongSeg A B C D -> CongSeg A B E F -> CongSeg C D E F;
+  III3 : forall A B C A' B' C' : IncPoint I,
+    @Bet I O A B C -> @Bet I O A' B' C' ->
+    CongSeg A B A' B' -> CongSeg B C B' C' ->
+    CongSeg A C A' C';
+  III4 : forall A B C D : IncPoint I,
+    CongSeg A B C D -> CongSeg C D A B;
+  III5 : forall A B : IncPoint I, CongSeg A B A B;
+  III6 : forall A B C D E F : IncPoint I,
+    CongAng A B C D E F -> CongAng D E F A B C
+}.
+
+(* ============================================================================ *)
+(*  ArchimedesStructure: V-1 (Archimedes 公理)                                   *)
+(*                                                                            *)
+(*  依赖: IncidenceStructure + OrderStructure + CongruenceStructure              *)
+(*  新增类型: Segment (线段)                                                    *)
+(*  新增定义: SegmentTimes (n 段累加), SegmentLe (偏序)                          *)
+(*  公理: V-1: 对任意两线段 s, t, 存在 n 使 n·s 累加超过 t                      *)
+(* ============================================================================ *)
+
+Record ArchimedesStructure (I : IncidenceStructure) (O : OrderStructure I)
+                            (C : CongruenceStructure I O) : Type := mkArchimedes {
+  Segment : Type;
+  segStart : Segment -> IncPoint I;
+  segEnd   : Segment -> IncPoint I;
+  segValid : forall s : Segment, segStart s <> segEnd s;
+  SegmentTimes : Segment -> nat -> Segment;
+  SegmentLe : Segment -> Segment -> Prop;
+
+  V1 : forall (s t : Segment),
+    exists n : nat, ~ SegmentLe (SegmentTimes s n) t
+}.
+
+(* ============================================================================ *)
+(*  DedekindStructure: V-2 (戴德金完备性公理)                                    *)
+(*                                                                            *)
+(*  依赖: IncidenceStructure + OrderStructure                                   *)
+(*  新增类型: DedekindCut (戴德金分割 = Lower/Upper 互斥且穷尽)                 *)
+(*  公理: V-2: 戴德金分割有唯一分界点 (完备性)                                   *)
+(* ============================================================================ *)
+
+Record DedekindStructure (I : IncidenceStructure) (O : OrderStructure I) : Type := mkDedekind {
+  DedekindCut : Type;
+  cutLower : DedekindCut -> IncPoint I -> Prop;
+  cutUpper : DedekindCut -> IncPoint I -> Prop;
+  cutValid : forall (cut : DedekindCut) (P : IncPoint I), cutLower cut P <-> ~ cutUpper cut P;
+
+  V2 : forall (cut : DedekindCut) (a : IncLine I),
+    (exists P : IncPoint I, (Incid I) P a /\ cutLower cut P) ->
+    (exists Q : IncPoint I, (Incid I) Q a /\ cutUpper cut Q) ->
+    exists S : IncPoint I, (Incid I) S a /\
+      (forall P : IncPoint I, (Incid I) P a -> cutLower cut P -> exists T : IncPoint I, @Bet I O P S T) /\
+      (forall Q : IncPoint I, (Incid I) Q a -> cutUpper cut Q -> exists T : IncPoint I, @Bet I O S Q T)
+}.
+
+(* ============================================================================ *)
+(*  5 层 Hilbert 系统: I + II + III + V_1 (弱) + V_2 (强)                       *)
+(* ============================================================================ *)
+
+(* 弱 Hilbert 系统: I + II + III + V_1 (Archimedes) 但不要求 V_2 (完备性) *)
+Record WeakHilbertPlane : Type := mkWeakHilbert {
+  whI : IncidenceStructure;
+  whO : OrderStructure whI;
+  whC : CongruenceStructure whI whO;
+  whA : ArchimedesStructure whI whO whC  (* shA 也需要 whC, whO 在前, whC 在后 *)
+
+}.
+
+(* 强 Hilbert 系统: 弱 + V_2 (完备性) *)
+Record StrongHilbertPlane : Type := mkStrongHilbert {
+  shI : IncidenceStructure;
+  shO : OrderStructure shI;
+  shC : CongruenceStructure shI shO;
+  shA : ArchimedesStructure shI shO shC;
+  shD : DedekindStructure shI shO
+}.
+
+(* shD 满足 shI+shO (与 shC, shA 无关) — V_2 仅依赖 I + II *)
+
+(* Tier-5 净增量: 5 个 Record + 2 个组合 Record                                 *)
+(* Tier-6 目标:                                                                  *)
+(*   - QPlane.v: 构造 Q² 作为 WeakHilbertPlane 实例 (满足 I-III + V_1)          *)
+(*   - QPlaneNotDedekind.v: 证明 Q² 不满足 V_2 (√2 反例)                       *)
+(*   - RealPlane.v: 构造 R² 作为 StrongHilbertPlane 实例                        *)

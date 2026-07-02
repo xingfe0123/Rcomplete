@@ -1,5 +1,0 @@
-DIGEST 7c6c87ea63c55205111151d9b64113ed
-Ftest_abs
-R15:19 Coq.Reals.Reals <> <> lib
-R21:23 Coq.micromega.Lra <> <> lib
-R25:30 Coq.Vectors.Vector <> <> lib
