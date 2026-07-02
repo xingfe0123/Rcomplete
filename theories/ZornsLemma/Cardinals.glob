@@ -1,8 +1,0 @@
-DIGEST 493ae9eeb19be152502223ea187a78df
-FZornsLemma.Cardinals
-R83:101 ZornsLemma.Cardinals.Cardinals <> <> lib
-R105:126 ZornsLemma.Cardinals.CardinalsEns <> <> lib
-R130:152 ZornsLemma.Cardinals.Combinatorics <> <> lib
-R156:168 ZornsLemma.Cardinals.CSB <> <> lib
-R172:196 ZornsLemma.Cardinals.Diagonalization <> <> lib
-R200:226 ZornsLemma.Cardinals.LeastCardinalsEns <> <> lib

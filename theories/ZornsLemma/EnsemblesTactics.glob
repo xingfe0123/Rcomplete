@@ -1,9 +1,0 @@
-DIGEST b9db40e23da60ef3041ee97e5a39b7b3
-FZornsLemma.EnsemblesTactics
-R31:47 ZornsLemma.EnsemblesImplicit <> <> lib
-R108:119 Coq.Sets.Ensembles <> In def
-R108:119 Coq.Sets.Ensembles <> In def
-R193:216 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
-R334:345 Coq.Sets.Ensembles <> In def
-R334:345 Coq.Sets.Ensembles <> In def
-R433:456 Coq.Sets.Ensembles <> Extensionality_Ensembles prfax
