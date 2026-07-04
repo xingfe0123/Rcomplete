@@ -1,48 +1,48 @@
-DIGEST 5140ed8d60551052e9fdcd78d200300b
+DIGEST 4c11a1356d46fa63714dcb24c9189570
 FHilbert.Types
-R1271:1279 Stdlib.Logic.Classical <> <> lib
-R1310:1315 Hilbert.Common <> <> lib
-rec 1874:1876 <> Ray
-proj 1898:1907 <> ray_origin
-proj 1920:1927 <> ray_line
-proj 1941:1949 <> ray_valid
-R1911:1915 Hilbert.Common <> Point defax
-R1933:1936 Hilbert.Common <> Line defax
-R1954:1958 Hilbert.Common <> Incid defax
-R1960:1969 Hilbert.Types <> ray_origin:2 meth
-R1971:1978 Hilbert.Types <> ray_line:3 meth
-def 1995:1999 <> OnRay
-R2006:2010 Hilbert.Common <> Point defax
-binder 2002:2002 <> X:5
-R2018:2020 Hilbert.Types <> Ray rec
-binder 2014:2014 <> r:6
-R2051:2055 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
-R2097:2097 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
-R2036:2038 Corelib.Init.Logic <> ::type_scope:x_'='_x not
-R2035:2035 Hilbert.Types <> X:5 var
-R2039:2048 Hilbert.Types <> ray_origin proj
-R2050:2050 Hilbert.Types <> r:6 var
-R2076:2079 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R2056:2060 Hilbert.Common <> Incid defax
-R2062:2062 Hilbert.Types <> X:5 var
-R2065:2072 Hilbert.Types <> ray_line proj
-R2074:2074 Hilbert.Types <> r:6 var
-R2081:2084 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R2080:2080 Hilbert.Types <> X:5 var
-R2085:2094 Hilbert.Types <> ray_origin proj
-R2096:2096 Hilbert.Types <> r:6 var
-rec 2649:2653 <> Angle
-proj 2677:2688 <> angle_vertex
-proj 2703:2713 <> angle_ray_a
-proj 2767:2777 <> angle_ray_c
-proj 2831:2843 <> angle_valid_a
-proj 2882:2894 <> angle_valid_c
-R2694:2698 Hilbert.Common <> Point defax
-R2720:2723 Hilbert.Common <> Line defax
-R2784:2787 Hilbert.Common <> Line defax
-R2848:2852 Hilbert.Common <> Incid defax
-R2854:2865 Hilbert.Types <> angle_vertex:8 meth
-R2867:2877 Hilbert.Types <> angle_ray_a:9 meth
-R2899:2903 Hilbert.Common <> Incid defax
-R2905:2916 Hilbert.Types <> angle_vertex:8 meth
-R2918:2928 Hilbert.Types <> angle_ray_c:10 meth
+R1273:1281 Stdlib.Logic.Classical <> <> lib
+R1312:1317 Hilbert.Common <> <> lib
+rec 1876:1878 <> Ray
+proj 1900:1909 <> ray_origin
+proj 1922:1929 <> ray_line
+proj 1943:1951 <> ray_valid
+R1913:1917 Hilbert.Common <> Point defax
+R1935:1938 Hilbert.Common <> Line defax
+R1956:1960 Hilbert.Common <> Incid defax
+R1962:1971 Hilbert.Types <> ray_origin:2 meth
+R1973:1980 Hilbert.Types <> ray_line:3 meth
+def 1997:2001 <> OnRay
+R2008:2012 Hilbert.Common <> Point defax
+binder 2004:2004 <> X:5
+R2020:2022 Hilbert.Types <> Ray rec
+binder 2016:2016 <> r:6
+R2053:2057 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2099:2099 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2038:2040 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2037:2037 Hilbert.Types <> X:5 var
+R2041:2050 Hilbert.Types <> ray_origin proj
+R2052:2052 Hilbert.Types <> r:6 var
+R2078:2081 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2058:2062 Hilbert.Common <> Incid defax
+R2064:2064 Hilbert.Types <> X:5 var
+R2067:2074 Hilbert.Types <> ray_line proj
+R2076:2076 Hilbert.Types <> r:6 var
+R2083:2086 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2082:2082 Hilbert.Types <> X:5 var
+R2087:2096 Hilbert.Types <> ray_origin proj
+R2098:2098 Hilbert.Types <> r:6 var
+rec 2652:2656 <> Angle
+proj 2680:2691 <> angle_vertex
+proj 2706:2716 <> angle_ray_a
+proj 2770:2780 <> angle_ray_c
+proj 2834:2846 <> angle_valid_a
+proj 2885:2897 <> angle_valid_c
+R2697:2701 Hilbert.Common <> Point defax
+R2723:2726 Hilbert.Common <> Line defax
+R2787:2790 Hilbert.Common <> Line defax
+R2851:2855 Hilbert.Common <> Incid defax
+R2857:2868 Hilbert.Types <> angle_vertex:8 meth
+R2870:2880 Hilbert.Types <> angle_ray_a:9 meth
+R2902:2906 Hilbert.Common <> Incid defax
+R2908:2919 Hilbert.Types <> angle_vertex:8 meth
+R2921:2931 Hilbert.Types <> angle_ray_c:10 meth

@@ -1,5 +1,5 @@
 (* ============================================================================ *)
-(*  ContinuityAxioms.v                                                         *)
+(*  ContinuityTheorem.v                                                         *)
 (*  Tier-3: Hilbert 第 V 组公理 — 连续公理 (2 条 Axiom)                          *)
 (*                                                                            *)
 (*  依赖: Common.v (Point, Line, Incid, Bet)                                    *)
@@ -19,7 +19,7 @@
 
 From Stdlib Require Import Classical.
 From Hilbert Require Import Common.
-From Hilbert Require Import CongruenceAxioms.
+From Hilbert Require Import CongruenceTheorem.
 
 (* --- 线段类型 -------------------------------------------------------------- *)
 Record Segment := mkSegment {

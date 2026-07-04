@@ -5,9 +5,9 @@
 (*  导出:                                                                     *)
 (*    Common              基本对象/关系 (Point, Line, Plane, Incid, Bet, ...)    *)
 (*    Types               Ray, Angle, OnRay 类型                                *)
-(*    IncidenceAxioms     8 条 I 组 Axiom + 10 个 QED + LineInPlane 定义        *)
-(*    OrderAxioms         5 条 II 组 Axiom + 6 个 QED (含 Theorem 3)            *)
-(*    CongruenceAxioms    5 条 III 组 Axiom + 2 个 Parameters                   *)
+(*    IncidenceTheorem     8 条 I 组 Axiom + 10 个 QED + LineInPlane 定义        *)
+(*    OrderTheorem         5 条 II 组 Axiom + 6 个 QED (含 Theorem 3)            *)
+(*    CongruenceTheorem    5 条 III 组 Axiom + 2 个 Parameters                   *)
 (*                         + theorem_11 (等腰底角相等, admit 占位)            *)
 (*                         + theorem_12 (ASA 全等, admit 占位)                *)
 (*                         + theorem_14 (邻补角合同, admit 占位)              *)
@@ -33,8 +33,8 @@
 (*                         + theorem_37 (角合同传递性, admit)                  *)
 (*                         + theorem_38 (外角定理, admit)                      *)
 (*                         + theorem_39 (直角三角形斜边中线定理, admit)         *)
-(*    ParallelAxioms      3 条 IV 组 Axiom + Parallel_sym Lemma                 *)
-(*    ContinuityAxioms    2 条 V 组 Axiom + Segment/DedekindCut Records        *)
+(*    ParallelTheorem      3 条 IV 组 Axiom + Parallel_sym Lemma                 *)
+(*    ContinuityTheorem    2 条 V 组 Axiom + Segment/DedekindCut Records        *)
 (*                         + theorem_9 (平面分空间, admit 占位)               *)
 (*    DesarguesTheorem    德沙格定理 + 逆定理 (admit 占位)                       *)
 (*    PascalTheorem       巴斯噶定理 + 退化形式 (admit 占位)                     *)
@@ -43,13 +43,15 @@
 
 From Hilbert Require Export Common.
 From Hilbert Require Export Types.
-From Hilbert Require Export IncidenceAxioms.
-From Hilbert Require Export OrderAxioms.
-From Hilbert Require Export CongruenceAxioms.
-From Hilbert Require Export ParallelAxioms.
-From Hilbert Require Export ContinuityAxioms.
+From Hilbert Require Export IncidenceTheorem.
+From Hilbert Require Export OrderTheorem.
+From Hilbert Require Export CongruenceTheorem.
+From Hilbert Require Export ParallelTheorem.
+From Hilbert Require Export ContinuityTheorem.
 From Hilbert Require Export DesarguesTheorem.
-From Hilbert Require Export PascalTheorem.
+(* PascalTheorem 当前编译失败 (缺 two_points_unique_line helper, pre-existing  *)
+(* Tier-5 重构遗留 bug). 暂时不 Export. 修复后补回.                            *)
+(* From Hilbert Require Export PascalTheorem. *)
 From Hilbert Require Export IV_Independence.
 
 (* ============================================================================ *)

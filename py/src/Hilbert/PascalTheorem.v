@@ -13,14 +13,14 @@
 (*    - 平行公理 — IV 组 (欧氏平面)                                           *)
 (*    - 顺序公理 — II 组 (圆内接顺序)                                        *)
 (*                                                                            *)
-(*  依赖: Common.v, IncidenceAxioms.v, CongruenceAxioms.v, ParallelAxioms.v   *)
+(*  依赖: Common.v, IncidenceTheorem.v, CongruenceTheorem.v, ParallelTheorem.v   *)
 (* ========================================================================= *)
 
 From Stdlib Require Import Classical.
 From Hilbert Require Import Common.
-From Hilbert Require Import IncidenceAxioms.
-From Hilbert Require Import CongruenceAxioms.
-From Hilbert Require Import ParallelAxioms.
+From Hilbert Require Import IncidenceTheorem.
+From Hilbert Require Import CongruenceTheorem.
+From Hilbert Require Import ParallelTheorem.
 
 (* ========================================================================= *)
 (*  1. 基本定义                                                              *)

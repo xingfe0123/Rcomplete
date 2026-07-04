@@ -1,4 +1,4 @@
-DIGEST cc49304c13677fe44fa843ddc3c3f486
+DIGEST 939ad298896150b615b3872e38506ae3
 FHilbert.HilbertStructure
 R1932:1940 Stdlib.Logic.Classical <> <> lib
 rec 3232:3249 <> IncidenceStructure
@@ -288,584 +288,656 @@ R4784:4784 Hilbert.HilbertStructure <> C:51 var
 R4795:4804 Hilbert.HilbertStructure <> IncidPlane:6 meth
 R4808:4812 Hilbert.HilbertStructure <> alpha:53 var
 R4806:4806 Hilbert.HilbertStructure <> D:52 var
-rec 5794:5807 <> OrderStructure
-proj 5856:5858 <> Bet
-proj 5913:5915 <> II1
-proj 6061:6063 <> II2
-proj 6120:6122 <> II3
-proj 6196:6198 <> II4
-proj 6284:6288 <> Pasch
-R5814:5831 Hilbert.HilbertStructure <> IncidenceStructure rec
-binder 5810:5810 <> I:55
-R5872:5875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R5862:5869 Hilbert.HilbertStructure <> IncPoint proj
-R5871:5871 Hilbert.HilbertStructure <> I:55 var
-R5886:5889 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R5876:5883 Hilbert.HilbertStructure <> IncPoint proj
-R5885:5885 Hilbert.HilbertStructure <> I:55 var
-R5900:5903 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R5890:5897 Hilbert.HilbertStructure <> IncPoint proj
-R5899:5899 Hilbert.HilbertStructure <> I:55 var
-R5933:5940 Hilbert.HilbertStructure <> IncPoint proj
-R5942:5942 Hilbert.HilbertStructure <> I:55 var
-binder 5927:5927 <> P:58
-binder 5929:5929 <> Q:59
-R5950:5956 Hilbert.HilbertStructure <> IncLine proj
-R5958:5958 Hilbert.HilbertStructure <> I:55 var
-binder 5946:5946 <> a:60
-R6002:6009 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R5977:5980 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R5966:5970 Hilbert.HilbertStructure <> Incid proj
-R5972:5972 Hilbert.HilbertStructure <> I:55 var
-R5974:5974 Hilbert.HilbertStructure <> P:58 var
-R5976:5976 Hilbert.HilbertStructure <> a:60 var
-R5992:5995 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R5981:5985 Hilbert.HilbertStructure <> Incid proj
-R5987:5987 Hilbert.HilbertStructure <> I:55 var
-R5989:5989 Hilbert.HilbertStructure <> Q:59 var
-R5991:5991 Hilbert.HilbertStructure <> a:60 var
-R5997:6000 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R5996:5996 Hilbert.HilbertStructure <> P:58 var
-R6001:6001 Hilbert.HilbertStructure <> Q:59 var
-R6010:6016 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R6031:6032 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R6021:6028 Hilbert.HilbertStructure <> IncPoint proj
-R6030:6030 Hilbert.HilbertStructure <> I:55 var
-binder 6017:6017 <> R:61
-R6044:6047 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R6033:6037 Hilbert.HilbertStructure <> Incid proj
-R6039:6039 Hilbert.HilbertStructure <> I:55 var
-R6041:6041 Hilbert.HilbertStructure <> R:61 var
-R6043:6043 Hilbert.HilbertStructure <> a:60 var
-R6048:6050 Hilbert.HilbertStructure <> Bet:57 meth
-R6056:6056 Hilbert.HilbertStructure <> Q:59 var
-R6054:6054 Hilbert.HilbertStructure <> R:61 var
-R6052:6052 Hilbert.HilbertStructure <> P:58 var
-R6082:6089 Hilbert.HilbertStructure <> IncPoint proj
-R6091:6091 Hilbert.HilbertStructure <> I:55 var
-binder 6074:6074 <> A:63
-binder 6076:6076 <> B:64
-binder 6078:6078 <> C:65
-R6103:6106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6094:6096 Hilbert.HilbertStructure <> Bet:57 meth
-R6102:6102 Hilbert.HilbertStructure <> C:65 var
-R6100:6100 Hilbert.HilbertStructure <> B:64 var
-R6098:6098 Hilbert.HilbertStructure <> A:63 var
-R6107:6109 Hilbert.HilbertStructure <> Bet:57 meth
-R6115:6115 Hilbert.HilbertStructure <> A:63 var
-R6113:6113 Hilbert.HilbertStructure <> B:64 var
-R6111:6111 Hilbert.HilbertStructure <> C:65 var
-R6141:6148 Hilbert.HilbertStructure <> IncPoint proj
-R6150:6150 Hilbert.HilbertStructure <> I:55 var
-binder 6133:6133 <> A:67
-binder 6135:6135 <> B:68
-binder 6137:6137 <> C:69
-R6162:6165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6153:6155 Hilbert.HilbertStructure <> Bet:57 meth
-R6161:6161 Hilbert.HilbertStructure <> C:69 var
-R6159:6159 Hilbert.HilbertStructure <> B:68 var
-R6157:6157 Hilbert.HilbertStructure <> A:67 var
-R6172:6175 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R6167:6170 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6166:6166 Hilbert.HilbertStructure <> A:67 var
-R6171:6171 Hilbert.HilbertStructure <> B:68 var
-R6182:6185 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R6177:6180 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6176:6176 Hilbert.HilbertStructure <> B:68 var
-R6181:6181 Hilbert.HilbertStructure <> C:69 var
-R6187:6190 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6186:6186 Hilbert.HilbertStructure <> A:67 var
-R6191:6191 Hilbert.HilbertStructure <> C:69 var
-R6219:6226 Hilbert.HilbertStructure <> IncPoint proj
-R6228:6228 Hilbert.HilbertStructure <> I:55 var
-binder 6209:6209 <> A:71
-binder 6211:6211 <> B:72
-binder 6213:6213 <> C:73
-binder 6215:6215 <> D:74
-R6244:6247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6235:6237 Hilbert.HilbertStructure <> Bet:57 meth
-R6243:6243 Hilbert.HilbertStructure <> C:73 var
-R6241:6241 Hilbert.HilbertStructure <> B:72 var
-R6239:6239 Hilbert.HilbertStructure <> A:71 var
-R6257:6260 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6248:6250 Hilbert.HilbertStructure <> Bet:57 meth
-R6256:6256 Hilbert.HilbertStructure <> D:74 var
-R6254:6254 Hilbert.HilbertStructure <> C:73 var
-R6252:6252 Hilbert.HilbertStructure <> B:72 var
-R6267:6270 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6262:6265 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6261:6261 Hilbert.HilbertStructure <> B:72 var
-R6266:6266 Hilbert.HilbertStructure <> C:73 var
-R6271:6273 Hilbert.HilbertStructure <> Bet:57 meth
-R6279:6279 Hilbert.HilbertStructure <> D:74 var
-R6277:6277 Hilbert.HilbertStructure <> B:72 var
-R6275:6275 Hilbert.HilbertStructure <> A:71 var
-R6311:6318 Hilbert.HilbertStructure <> IncPoint proj
-R6320:6320 Hilbert.HilbertStructure <> I:55 var
-binder 6299:6299 <> A:76
-binder 6301:6301 <> B:77
-binder 6303:6303 <> C:78
-binder 6305:6305 <> P:79
-binder 6307:6307 <> Q:80
-R6336:6339 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6327:6329 Hilbert.HilbertStructure <> Bet:57 meth
-R6335:6335 Hilbert.HilbertStructure <> C:78 var
-R6333:6333 Hilbert.HilbertStructure <> P:79 var
-R6331:6331 Hilbert.HilbertStructure <> A:76 var
-R6349:6356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6340:6342 Hilbert.HilbertStructure <> Bet:57 meth
-R6348:6348 Hilbert.HilbertStructure <> C:78 var
-R6346:6346 Hilbert.HilbertStructure <> Q:80 var
-R6344:6344 Hilbert.HilbertStructure <> B:77 var
-R6363:6366 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6358:6361 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6357:6357 Hilbert.HilbertStructure <> P:79 var
-R6362:6362 Hilbert.HilbertStructure <> C:78 var
-R6373:6380 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R6368:6371 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R6367:6367 Hilbert.HilbertStructure <> Q:80 var
-R6372:6372 Hilbert.HilbertStructure <> C:78 var
-R6381:6387 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R6402:6403 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R6392:6399 Hilbert.HilbertStructure <> IncPoint proj
-R6401:6401 Hilbert.HilbertStructure <> I:55 var
-binder 6388:6388 <> X:81
-R6413:6417 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R6440:6440 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R6404:6406 Hilbert.HilbertStructure <> Bet:57 meth
-R6412:6412 Hilbert.HilbertStructure <> Q:80 var
-R6410:6410 Hilbert.HilbertStructure <> X:81 var
-R6408:6408 Hilbert.HilbertStructure <> P:79 var
-R6427:6430 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
-R6418:6420 Hilbert.HilbertStructure <> Bet:57 meth
-R6426:6426 Hilbert.HilbertStructure <> B:77 var
-R6424:6424 Hilbert.HilbertStructure <> X:81 var
-R6422:6422 Hilbert.HilbertStructure <> A:76 var
-R6431:6433 Hilbert.HilbertStructure <> Bet:57 meth
-R6439:6439 Hilbert.HilbertStructure <> A:76 var
-R6437:6437 Hilbert.HilbertStructure <> X:81 var
-R6435:6435 Hilbert.HilbertStructure <> B:77 var
-rec 7510:7528 <> CongruenceStructure
-proj 7605:7611 <> CongSeg
-proj 7679:7685 <> CongAng
-proj 7781:7783 <> Ray
-proj 7844:7853 <> ray_origin
-proj 7878:7885 <> ray_line
-proj 7911:7919 <> ray_valid
-proj 7981:7985 <> OnRay
-proj 8019:8022 <> III1
-proj 8152:8155 <> III2
-proj 8253:8256 <> III3
-proj 8410:8413 <> III4
-proj 8488:8491 <> III5
-proj 8539:8542 <> III6
-R7535:7552 Hilbert.HilbertStructure <> IncidenceStructure rec
-binder 7531:7531 <> I:83
-R7560:7573 Hilbert.HilbertStructure <> OrderStructure rec
-R7575:7575 Hilbert.HilbertStructure <> I:83 var
-binder 7556:7556 <> O:84
-R7625:7628 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7615:7622 Hilbert.HilbertStructure <> IncPoint proj
-R7624:7624 Hilbert.HilbertStructure <> I:83 var
-R7639:7642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7629:7636 Hilbert.HilbertStructure <> IncPoint proj
-R7638:7638 Hilbert.HilbertStructure <> I:83 var
-R7653:7656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7643:7650 Hilbert.HilbertStructure <> IncPoint proj
-R7652:7652 Hilbert.HilbertStructure <> I:83 var
-R7667:7670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7657:7664 Hilbert.HilbertStructure <> IncPoint proj
-R7666:7666 Hilbert.HilbertStructure <> I:83 var
-R7699:7702 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7689:7696 Hilbert.HilbertStructure <> IncPoint proj
-R7698:7698 Hilbert.HilbertStructure <> I:83 var
-R7713:7716 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7703:7710 Hilbert.HilbertStructure <> IncPoint proj
-R7712:7712 Hilbert.HilbertStructure <> I:83 var
+rec 6781:6794 <> OrderStructure
+proj 6843:6845 <> Bet
+proj 7000:7003 <> II_1
+proj 7250:7253 <> II_2
+proj 7491:7494 <> II_3
+proj 7681:7687 <> Bet_sym
+proj 7744:7753 <> Bet_nondeg
+proj 7827:7835 <> Bet_trans
+proj 7922:7926 <> Pasch
+R6801:6818 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 6797:6797 <> I:55
+R6859:6862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6849:6856 Hilbert.HilbertStructure <> IncPoint proj
+R6858:6858 Hilbert.HilbertStructure <> I:55 var
+R6873:6876 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6863:6870 Hilbert.HilbertStructure <> IncPoint proj
+R6872:6872 Hilbert.HilbertStructure <> I:55 var
+R6887:6890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6877:6884 Hilbert.HilbertStructure <> IncPoint proj
+R6886:6886 Hilbert.HilbertStructure <> I:55 var
+R7021:7028 Hilbert.HilbertStructure <> IncPoint proj
+R7030:7030 Hilbert.HilbertStructure <> I:55 var
+binder 7015:7015 <> A:58
+binder 7017:7017 <> B:59
+R7038:7044 Hilbert.HilbertStructure <> IncLine proj
+R7046:7046 Hilbert.HilbertStructure <> I:55 var
+binder 7034:7034 <> a:60
+R7090:7097 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7065:7068 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7054:7058 Hilbert.HilbertStructure <> Incid proj
+R7060:7060 Hilbert.HilbertStructure <> I:55 var
+R7062:7062 Hilbert.HilbertStructure <> A:58 var
+R7064:7064 Hilbert.HilbertStructure <> a:60 var
+R7080:7083 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7069:7073 Hilbert.HilbertStructure <> Incid proj
+R7075:7075 Hilbert.HilbertStructure <> I:55 var
+R7077:7077 Hilbert.HilbertStructure <> B:59 var
+R7079:7079 Hilbert.HilbertStructure <> a:60 var
+R7085:7088 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7084:7084 Hilbert.HilbertStructure <> A:58 var
+R7089:7089 Hilbert.HilbertStructure <> B:59 var
+R7098:7104 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7119:7120 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7109:7116 Hilbert.HilbertStructure <> IncPoint proj
+R7118:7118 Hilbert.HilbertStructure <> I:55 var
+binder 7105:7105 <> C:61
+R7132:7135 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7121:7125 Hilbert.HilbertStructure <> Incid proj
+R7127:7127 Hilbert.HilbertStructure <> I:55 var
+R7129:7129 Hilbert.HilbertStructure <> C:61 var
+R7131:7131 Hilbert.HilbertStructure <> a:60 var
+R7136:7138 Hilbert.HilbertStructure <> Bet:57 meth
+R7144:7144 Hilbert.HilbertStructure <> C:61 var
+R7142:7142 Hilbert.HilbertStructure <> B:59 var
+R7140:7140 Hilbert.HilbertStructure <> A:58 var
+R7271:7278 Hilbert.HilbertStructure <> IncPoint proj
+R7280:7280 Hilbert.HilbertStructure <> I:55 var
+binder 7265:7265 <> A:63
+binder 7267:7267 <> B:64
+R7288:7294 Hilbert.HilbertStructure <> IncLine proj
+R7296:7296 Hilbert.HilbertStructure <> I:55 var
+binder 7284:7284 <> a:65
+R7340:7347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7315:7318 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7304:7308 Hilbert.HilbertStructure <> Incid proj
+R7310:7310 Hilbert.HilbertStructure <> I:55 var
+R7312:7312 Hilbert.HilbertStructure <> A:63 var
+R7314:7314 Hilbert.HilbertStructure <> a:65 var
+R7330:7333 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7319:7323 Hilbert.HilbertStructure <> Incid proj
+R7325:7325 Hilbert.HilbertStructure <> I:55 var
+R7327:7327 Hilbert.HilbertStructure <> B:64 var
+R7329:7329 Hilbert.HilbertStructure <> a:65 var
+R7335:7338 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7334:7334 Hilbert.HilbertStructure <> A:63 var
+R7339:7339 Hilbert.HilbertStructure <> B:64 var
+R7348:7354 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7369:7370 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7359:7366 Hilbert.HilbertStructure <> IncPoint proj
+R7368:7368 Hilbert.HilbertStructure <> I:55 var
+binder 7355:7355 <> D:66
+R7382:7385 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7371:7375 Hilbert.HilbertStructure <> Incid proj
+R7377:7377 Hilbert.HilbertStructure <> I:55 var
+R7379:7379 Hilbert.HilbertStructure <> D:66 var
+R7381:7381 Hilbert.HilbertStructure <> a:65 var
+R7386:7388 Hilbert.HilbertStructure <> Bet:57 meth
+R7394:7394 Hilbert.HilbertStructure <> B:64 var
+R7392:7392 Hilbert.HilbertStructure <> A:63 var
+R7390:7390 Hilbert.HilbertStructure <> D:66 var
+R7512:7519 Hilbert.HilbertStructure <> IncPoint proj
+R7521:7521 Hilbert.HilbertStructure <> I:55 var
+binder 7506:7506 <> A:68
+binder 7508:7508 <> B:69
+R7529:7535 Hilbert.HilbertStructure <> IncLine proj
+R7537:7537 Hilbert.HilbertStructure <> I:55 var
+binder 7525:7525 <> a:70
+R7581:7588 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7556:7559 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7545:7549 Hilbert.HilbertStructure <> Incid proj
+R7551:7551 Hilbert.HilbertStructure <> I:55 var
+R7553:7553 Hilbert.HilbertStructure <> A:68 var
+R7555:7555 Hilbert.HilbertStructure <> a:70 var
+R7571:7574 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7560:7564 Hilbert.HilbertStructure <> Incid proj
+R7566:7566 Hilbert.HilbertStructure <> I:55 var
+R7568:7568 Hilbert.HilbertStructure <> B:69 var
+R7570:7570 Hilbert.HilbertStructure <> a:70 var
+R7576:7579 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7575:7575 Hilbert.HilbertStructure <> A:68 var
+R7580:7580 Hilbert.HilbertStructure <> B:69 var
+R7589:7595 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7610:7611 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7600:7607 Hilbert.HilbertStructure <> IncPoint proj
+R7609:7609 Hilbert.HilbertStructure <> I:55 var
+binder 7596:7596 <> C:71
+R7623:7626 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7612:7616 Hilbert.HilbertStructure <> Incid proj
+R7618:7618 Hilbert.HilbertStructure <> I:55 var
+R7620:7620 Hilbert.HilbertStructure <> C:71 var
+R7622:7622 Hilbert.HilbertStructure <> a:70 var
+R7627:7629 Hilbert.HilbertStructure <> Bet:57 meth
+R7635:7635 Hilbert.HilbertStructure <> B:69 var
+R7633:7633 Hilbert.HilbertStructure <> C:71 var
+R7631:7631 Hilbert.HilbertStructure <> A:68 var
+R7706:7713 Hilbert.HilbertStructure <> IncPoint proj
+R7715:7715 Hilbert.HilbertStructure <> I:55 var
+binder 7698:7698 <> A:73
+binder 7700:7700 <> B:74
+binder 7702:7702 <> C:75
 R7727:7730 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7717:7724 Hilbert.HilbertStructure <> IncPoint proj
-R7726:7726 Hilbert.HilbertStructure <> I:83 var
-R7741:7744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7731:7738 Hilbert.HilbertStructure <> IncPoint proj
-R7740:7740 Hilbert.HilbertStructure <> I:83 var
-R7755:7758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7745:7752 Hilbert.HilbertStructure <> IncPoint proj
-R7754:7754 Hilbert.HilbertStructure <> I:83 var
-R7769:7772 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7759:7766 Hilbert.HilbertStructure <> IncPoint proj
-R7768:7768 Hilbert.HilbertStructure <> I:83 var
-R7860:7863 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7857:7859 Hilbert.HilbertStructure <> Ray:88 meth
-R7864:7871 Hilbert.HilbertStructure <> IncPoint proj
-R7873:7873 Hilbert.HilbertStructure <> I:83 var
+R7718:7720 Hilbert.HilbertStructure <> Bet:57 meth
+R7726:7726 Hilbert.HilbertStructure <> C:75 var
+R7724:7724 Hilbert.HilbertStructure <> B:74 var
+R7722:7722 Hilbert.HilbertStructure <> A:73 var
+R7731:7733 Hilbert.HilbertStructure <> Bet:57 meth
+R7739:7739 Hilbert.HilbertStructure <> A:73 var
+R7737:7737 Hilbert.HilbertStructure <> B:74 var
+R7735:7735 Hilbert.HilbertStructure <> C:75 var
+R7772:7779 Hilbert.HilbertStructure <> IncPoint proj
+R7781:7781 Hilbert.HilbertStructure <> I:55 var
+binder 7764:7764 <> A:77
+binder 7766:7766 <> B:78
+binder 7768:7768 <> C:79
+R7793:7796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7784:7786 Hilbert.HilbertStructure <> Bet:57 meth
+R7792:7792 Hilbert.HilbertStructure <> C:79 var
+R7790:7790 Hilbert.HilbertStructure <> B:78 var
+R7788:7788 Hilbert.HilbertStructure <> A:77 var
+R7803:7806 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7798:7801 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7797:7797 Hilbert.HilbertStructure <> A:77 var
+R7802:7802 Hilbert.HilbertStructure <> B:78 var
+R7813:7816 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7808:7811 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7807:7807 Hilbert.HilbertStructure <> B:78 var
+R7812:7812 Hilbert.HilbertStructure <> C:79 var
+R7818:7821 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7817:7817 Hilbert.HilbertStructure <> A:77 var
+R7822:7822 Hilbert.HilbertStructure <> C:79 var
+R7856:7863 Hilbert.HilbertStructure <> IncPoint proj
+R7865:7865 Hilbert.HilbertStructure <> I:55 var
+binder 7846:7846 <> A:81
+binder 7848:7848 <> B:82
+binder 7850:7850 <> C:83
+binder 7852:7852 <> D:84
+R7881:7884 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7872:7874 Hilbert.HilbertStructure <> Bet:57 meth
+R7880:7880 Hilbert.HilbertStructure <> C:83 var
+R7878:7878 Hilbert.HilbertStructure <> B:82 var
+R7876:7876 Hilbert.HilbertStructure <> A:81 var
 R7894:7897 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7891:7893 Hilbert.HilbertStructure <> Ray:88 meth
-R7898:7904 Hilbert.HilbertStructure <> IncLine proj
-R7906:7906 Hilbert.HilbertStructure <> I:83 var
-R7935:7937 Hilbert.HilbertStructure <> Ray:88 meth
-binder 7931:7931 <> r:91
-R7941:7945 Hilbert.HilbertStructure <> Incid proj
-R7947:7947 Hilbert.HilbertStructure <> I:83 var
-R7951:7960 Hilbert.HilbertStructure <> ray_origin:89 meth
-R7962:7962 Hilbert.HilbertStructure <> r:91 var
-R7966:7973 Hilbert.HilbertStructure <> ray_line:90 meth
-R7975:7975 Hilbert.HilbertStructure <> r:91 var
-R7999:8002 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R7989:7996 Hilbert.HilbertStructure <> IncPoint proj
-R7998:7998 Hilbert.HilbertStructure <> I:83 var
-R8006:8009 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8003:8005 Hilbert.HilbertStructure <> Ray:88 meth
-R8040:8047 Hilbert.HilbertStructure <> IncPoint proj
-R8049:8049 Hilbert.HilbertStructure <> I:83 var
-binder 8034:8034 <> A:94
-binder 8036:8036 <> B:95
-R8057:8059 Hilbert.HilbertStructure <> Ray:88 meth
-binder 8053:8053 <> r:96
-R8073:8080 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8068:8071 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R8067:8067 Hilbert.HilbertStructure <> A:94 var
-R8072:8072 Hilbert.HilbertStructure <> B:95 var
-R8081:8088 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
-R8103:8104 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
-R8093:8100 Hilbert.HilbertStructure <> IncPoint proj
-R8102:8102 Hilbert.HilbertStructure <> I:83 var
-binder 8089:8089 <> X:97
-R8114:8117 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R8105:8109 Hilbert.HilbertStructure <> OnRay:93 meth
-R8113:8113 Hilbert.HilbertStructure <> r:96 var
-R8111:8111 Hilbert.HilbertStructure <> X:97 var
-R8119:8125 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8147:8147 Hilbert.HilbertStructure <> X:97 var
-R8133:8142 Hilbert.HilbertStructure <> ray_origin:89 meth
-R8144:8144 Hilbert.HilbertStructure <> r:96 var
-R8130:8130 Hilbert.HilbertStructure <> B:95 var
-R8128:8128 Hilbert.HilbertStructure <> A:94 var
-R8180:8187 Hilbert.HilbertStructure <> IncPoint proj
-R8189:8189 Hilbert.HilbertStructure <> I:83 var
-binder 8166:8166 <> A:99
-binder 8168:8168 <> B:100
-binder 8170:8170 <> C:101
-binder 8172:8172 <> D:102
-binder 8174:8174 <> E:103
-binder 8176:8176 <> F:104
-R8211:8214 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8196:8202 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8210:8210 Hilbert.HilbertStructure <> D:102 var
-R8208:8208 Hilbert.HilbertStructure <> C:101 var
-R8206:8206 Hilbert.HilbertStructure <> B:100 var
-R8204:8204 Hilbert.HilbertStructure <> A:99 var
-R8230:8233 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8215:8221 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8229:8229 Hilbert.HilbertStructure <> F:104 var
-R8227:8227 Hilbert.HilbertStructure <> E:103 var
-R8225:8225 Hilbert.HilbertStructure <> B:100 var
-R8223:8223 Hilbert.HilbertStructure <> A:99 var
-R8234:8240 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8248:8248 Hilbert.HilbertStructure <> F:104 var
-R8246:8246 Hilbert.HilbertStructure <> E:103 var
-R8244:8244 Hilbert.HilbertStructure <> D:102 var
-R8242:8242 Hilbert.HilbertStructure <> C:101 var
-R8284:8291 Hilbert.HilbertStructure <> IncPoint proj
-R8293:8293 Hilbert.HilbertStructure <> I:83 var
-binder 8267:8267 <> A:106
-binder 8269:8269 <> B:107
-binder 8271:8271 <> C:108
-binder 8273:8274 <> A':109
-binder 8276:8277 <> B':110
-binder 8279:8280 <> C':111
-R8314:8317 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8301:8303 Hilbert.HilbertStructure <> Bet proj
-R8305:8305 Hilbert.HilbertStructure <> I:83 var
-R8307:8307 Hilbert.HilbertStructure <> O:84 var
-R8309:8309 Hilbert.HilbertStructure <> A:106 var
-R8311:8311 Hilbert.HilbertStructure <> B:107 var
-R8313:8313 Hilbert.HilbertStructure <> C:108 var
-R8335:8342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8319:8321 Hilbert.HilbertStructure <> Bet proj
-R8323:8323 Hilbert.HilbertStructure <> I:83 var
-R8325:8325 Hilbert.HilbertStructure <> O:84 var
-R8327:8328 Hilbert.HilbertStructure <> A':109 var
-R8330:8331 Hilbert.HilbertStructure <> B':110 var
-R8333:8334 Hilbert.HilbertStructure <> C':111 var
-R8360:8363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8343:8349 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8358:8359 Hilbert.HilbertStructure <> B':110 var
-R8355:8356 Hilbert.HilbertStructure <> A':109 var
-R8353:8353 Hilbert.HilbertStructure <> B:107 var
-R8351:8351 Hilbert.HilbertStructure <> A:106 var
-R8381:8388 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8364:8370 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8379:8380 Hilbert.HilbertStructure <> C':111 var
-R8376:8377 Hilbert.HilbertStructure <> B':110 var
-R8374:8374 Hilbert.HilbertStructure <> C:108 var
-R8372:8372 Hilbert.HilbertStructure <> B:107 var
-R8389:8395 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8404:8405 Hilbert.HilbertStructure <> C':111 var
-R8401:8402 Hilbert.HilbertStructure <> A':109 var
-R8399:8399 Hilbert.HilbertStructure <> C:108 var
-R8397:8397 Hilbert.HilbertStructure <> A:106 var
-R8434:8441 Hilbert.HilbertStructure <> IncPoint proj
-R8443:8443 Hilbert.HilbertStructure <> I:83 var
-binder 8424:8424 <> A:113
-binder 8426:8426 <> B:114
-binder 8428:8428 <> C:115
-binder 8430:8430 <> D:116
-R8465:8468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8450:8456 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8464:8464 Hilbert.HilbertStructure <> D:116 var
-R8462:8462 Hilbert.HilbertStructure <> C:115 var
-R8460:8460 Hilbert.HilbertStructure <> B:114 var
-R8458:8458 Hilbert.HilbertStructure <> A:113 var
-R8469:8475 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8483:8483 Hilbert.HilbertStructure <> B:114 var
-R8481:8481 Hilbert.HilbertStructure <> A:113 var
-R8479:8479 Hilbert.HilbertStructure <> D:116 var
-R8477:8477 Hilbert.HilbertStructure <> C:115 var
-R8508:8515 Hilbert.HilbertStructure <> IncPoint proj
-R8517:8517 Hilbert.HilbertStructure <> I:83 var
-binder 8502:8502 <> A:118
-binder 8504:8504 <> B:119
-R8520:8526 Hilbert.HilbertStructure <> CongSeg:86 meth
-R8534:8534 Hilbert.HilbertStructure <> B:119 var
-R8532:8532 Hilbert.HilbertStructure <> A:118 var
-R8530:8530 Hilbert.HilbertStructure <> B:119 var
-R8528:8528 Hilbert.HilbertStructure <> A:118 var
-R8567:8574 Hilbert.HilbertStructure <> IncPoint proj
-R8576:8576 Hilbert.HilbertStructure <> I:83 var
-binder 8553:8553 <> A:121
-binder 8555:8555 <> B:122
-binder 8557:8557 <> C:123
-binder 8559:8559 <> D:124
-binder 8561:8561 <> E:125
-binder 8563:8563 <> F:126
-R8602:8605 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R8583:8589 Hilbert.HilbertStructure <> CongAng:87 meth
-R8601:8601 Hilbert.HilbertStructure <> F:126 var
-R8599:8599 Hilbert.HilbertStructure <> E:125 var
-R8597:8597 Hilbert.HilbertStructure <> D:124 var
-R8595:8595 Hilbert.HilbertStructure <> C:123 var
-R8593:8593 Hilbert.HilbertStructure <> B:122 var
-R8591:8591 Hilbert.HilbertStructure <> A:121 var
-R8606:8612 Hilbert.HilbertStructure <> CongAng:87 meth
-R8624:8624 Hilbert.HilbertStructure <> C:123 var
-R8622:8622 Hilbert.HilbertStructure <> B:122 var
-R8620:8620 Hilbert.HilbertStructure <> A:121 var
-R8618:8618 Hilbert.HilbertStructure <> F:126 var
-R8616:8616 Hilbert.HilbertStructure <> E:125 var
-R8614:8614 Hilbert.HilbertStructure <> D:124 var
-rec 9338:9356 <> ArchimedesStructure
-proj 9491:9497 <> Segment
-proj 9509:9516 <> segStart
-proj 9545:9550 <> segEnd
-proj 9581:9588 <> segValid
-proj 9638:9649 <> SegmentTimes
-proj 9682:9690 <> SegmentLe
-proj 9725:9726 <> V1
-R9363:9380 Hilbert.HilbertStructure <> IncidenceStructure rec
-binder 9359:9359 <> I:128
-R9388:9401 Hilbert.HilbertStructure <> OrderStructure rec
-R9403:9403 Hilbert.HilbertStructure <> I:128 var
-binder 9384:9384 <> O:129
-R9439:9457 Hilbert.HilbertStructure <> CongruenceStructure rec
-R9459:9459 Hilbert.HilbertStructure <> I:128 var
-R9461:9461 Hilbert.HilbertStructure <> O:129 var
-binder 9435:9435 <> C:130
-R9527:9530 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9520:9526 Hilbert.HilbertStructure <> Segment:132 meth
-R9531:9538 Hilbert.HilbertStructure <> IncPoint proj
-R9540:9540 Hilbert.HilbertStructure <> I:128 var
-R9563:9566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9556:9562 Hilbert.HilbertStructure <> Segment:132 meth
-R9567:9574 Hilbert.HilbertStructure <> IncPoint proj
-R9576:9576 Hilbert.HilbertStructure <> I:128 var
-R9603:9609 Hilbert.HilbertStructure <> Segment:132 meth
-binder 9599:9599 <> s:135
-R9622:9625 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
-R9612:9619 Hilbert.HilbertStructure <> segStart:133 meth
-R9621:9621 Hilbert.HilbertStructure <> s:135 var
-R9626:9631 Hilbert.HilbertStructure <> segEnd:134 meth
-R9633:9633 Hilbert.HilbertStructure <> s:135 var
-R9660:9663 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9653:9659 Hilbert.HilbertStructure <> Segment:132 meth
-R9667:9670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9664:9666 Corelib.Init.Datatypes <> nat ind
-R9671:9677 Hilbert.HilbertStructure <> Segment:132 meth
-R9701:9704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9694:9700 Hilbert.HilbertStructure <> Segment:132 meth
-R9712:9715 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R9705:9711 Hilbert.HilbertStructure <> Segment:132 meth
-R9744:9750 Hilbert.HilbertStructure <> Segment:132 meth
-binder 9738:9738 <> s:139
-binder 9740:9740 <> t:140
-R9758:9764 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R9772:9773 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R9769:9771 Corelib.Init.Datatypes <> nat ind
-binder 9765:9765 <> n:141
-R9774:9775 Corelib.Init.Logic <> ::type_scope:'~'_x not
-R9776:9784 Hilbert.HilbertStructure <> SegmentLe:138 meth
-R9805:9805 Hilbert.HilbertStructure <> t:140 var
-R9787:9798 Hilbert.HilbertStructure <> SegmentTimes:137 meth
-R9802:9802 Hilbert.HilbertStructure <> n:141 var
-R9800:9800 Hilbert.HilbertStructure <> s:139 var
-rec 10440:10456 <> DedekindStructure
-proj 10531:10541 <> DedekindCut
-proj 10553:10560 <> cutLower
-proj 10601:10608 <> cutUpper
-proj 10649:10656 <> cutValid
-proj 10745:10746 <> V2
-R10463:10480 Hilbert.HilbertStructure <> IncidenceStructure rec
-binder 10459:10459 <> I:143
-R10488:10501 Hilbert.HilbertStructure <> OrderStructure rec
-R10503:10503 Hilbert.HilbertStructure <> I:143 var
-binder 10484:10484 <> O:144
-R10575:10578 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10564:10574 Hilbert.HilbertStructure <> DedekindCut:146 meth
-R10589:10592 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10579:10586 Hilbert.HilbertStructure <> IncPoint proj
-R10588:10588 Hilbert.HilbertStructure <> I:143 var
-R10623:10626 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10612:10622 Hilbert.HilbertStructure <> DedekindCut:146 meth
-R10637:10640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10627:10634 Hilbert.HilbertStructure <> IncPoint proj
-R10636:10636 Hilbert.HilbertStructure <> I:143 var
-R10674:10684 Hilbert.HilbertStructure <> DedekindCut:146 meth
-binder 10668:10670 <> cut:149
-R10692:10699 Hilbert.HilbertStructure <> IncPoint proj
-R10701:10701 Hilbert.HilbertStructure <> I:143 var
-binder 10688:10688 <> P:150
-R10719:10723 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
-R10705:10712 Hilbert.HilbertStructure <> cutLower:147 meth
-R10718:10718 Hilbert.HilbertStructure <> P:150 var
-R10714:10716 Hilbert.HilbertStructure <> cut:149 var
-R10724:10725 Corelib.Init.Logic <> ::type_scope:'~'_x not
-R10726:10733 Hilbert.HilbertStructure <> cutUpper:148 meth
-R10739:10739 Hilbert.HilbertStructure <> P:150 var
-R10735:10737 Hilbert.HilbertStructure <> cut:149 var
-R10764:10774 Hilbert.HilbertStructure <> DedekindCut:146 meth
-binder 10758:10760 <> cut:152
-R10782:10788 Hilbert.HilbertStructure <> IncLine proj
-R10790:10790 Hilbert.HilbertStructure <> I:143 var
-binder 10778:10778 <> a:153
-R10798:10798 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10853:10861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10799:10805 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10820:10821 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10810:10817 Hilbert.HilbertStructure <> IncPoint proj
-R10819:10819 Hilbert.HilbertStructure <> I:143 var
-binder 10806:10806 <> P:154
-R10835:10838 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R10823:10827 Hilbert.HilbertStructure <> Incid proj
-R10829:10829 Hilbert.HilbertStructure <> I:143 var
-R10832:10832 Hilbert.HilbertStructure <> P:154 var
-R10834:10834 Hilbert.HilbertStructure <> a:153 var
-R10839:10846 Hilbert.HilbertStructure <> cutLower:147 meth
-R10852:10852 Hilbert.HilbertStructure <> P:154 var
-R10848:10850 Hilbert.HilbertStructure <> cut:152 var
-R10862:10862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10917:10925 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10863:10869 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10884:10885 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10874:10881 Hilbert.HilbertStructure <> IncPoint proj
-R10883:10883 Hilbert.HilbertStructure <> I:143 var
-binder 10870:10870 <> Q:155
-R10899:10902 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R10887:10891 Hilbert.HilbertStructure <> Incid proj
-R10893:10893 Hilbert.HilbertStructure <> I:143 var
-R10896:10896 Hilbert.HilbertStructure <> Q:155 var
-R10898:10898 Hilbert.HilbertStructure <> a:153 var
-R10903:10910 Hilbert.HilbertStructure <> cutUpper:148 meth
-R10916:10916 Hilbert.HilbertStructure <> Q:155 var
-R10912:10914 Hilbert.HilbertStructure <> cut:152 var
-R10926:10932 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10947:10948 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R10937:10944 Hilbert.HilbertStructure <> IncPoint proj
-R10946:10946 Hilbert.HilbertStructure <> I:143 var
-binder 10933:10933 <> S:156
-R10962:10971 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R10950:10954 Hilbert.HilbertStructure <> Incid proj
-R10956:10956 Hilbert.HilbertStructure <> I:143 var
-R10959:10959 Hilbert.HilbertStructure <> S:156 var
-R10961:10961 Hilbert.HilbertStructure <> a:153 var
-R10972:10972 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R11068:11079 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R11175:11175 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
-R10984:10991 Hilbert.HilbertStructure <> IncPoint proj
-R10993:10993 Hilbert.HilbertStructure <> I:143 var
-binder 10980:10980 <> P:157
-R11009:11012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R10997:11001 Hilbert.HilbertStructure <> Incid proj
-R11003:11003 Hilbert.HilbertStructure <> I:143 var
-R11006:11006 Hilbert.HilbertStructure <> P:157 var
-R11008:11008 Hilbert.HilbertStructure <> a:153 var
-R11027:11030 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R11013:11020 Hilbert.HilbertStructure <> cutLower:147 meth
-R11026:11026 Hilbert.HilbertStructure <> P:157 var
-R11022:11024 Hilbert.HilbertStructure <> cut:152 var
-R11031:11037 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R11052:11053 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R11042:11049 Hilbert.HilbertStructure <> IncPoint proj
-R11051:11051 Hilbert.HilbertStructure <> I:143 var
-binder 11038:11038 <> T:158
-R11055:11057 Hilbert.HilbertStructure <> Bet proj
-R11059:11059 Hilbert.HilbertStructure <> I:143 var
-R11061:11061 Hilbert.HilbertStructure <> O:144 var
-R11063:11063 Hilbert.HilbertStructure <> P:157 var
-R11065:11065 Hilbert.HilbertStructure <> S:156 var
-R11067:11067 Hilbert.HilbertStructure <> T:158 var
-R11091:11098 Hilbert.HilbertStructure <> IncPoint proj
-R11100:11100 Hilbert.HilbertStructure <> I:143 var
-binder 11087:11087 <> Q:159
-R11116:11119 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R11104:11108 Hilbert.HilbertStructure <> Incid proj
-R11110:11110 Hilbert.HilbertStructure <> I:143 var
-R11113:11113 Hilbert.HilbertStructure <> Q:159 var
-R11115:11115 Hilbert.HilbertStructure <> a:153 var
-R11134:11137 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
-R11120:11127 Hilbert.HilbertStructure <> cutUpper:148 meth
-R11133:11133 Hilbert.HilbertStructure <> Q:159 var
-R11129:11131 Hilbert.HilbertStructure <> cut:152 var
-R11138:11144 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R11159:11160 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
-R11149:11156 Hilbert.HilbertStructure <> IncPoint proj
-R11158:11158 Hilbert.HilbertStructure <> I:143 var
-binder 11145:11145 <> T:160
-R11162:11164 Hilbert.HilbertStructure <> Bet proj
-R11166:11166 Hilbert.HilbertStructure <> I:143 var
-R11168:11168 Hilbert.HilbertStructure <> O:144 var
-R11170:11170 Hilbert.HilbertStructure <> S:156 var
-R11172:11172 Hilbert.HilbertStructure <> Q:159 var
-R11174:11174 Hilbert.HilbertStructure <> T:160 var
-rec 11530:11545 <> WeakHilbertPlane
-proj 11575:11577 <> whI
-proj 11603:11605 <> whO
-proj 11631:11633 <> whC
-proj 11668:11670 <> whA
-R11581:11598 Hilbert.HilbertStructure <> IncidenceStructure rec
-R11609:11622 Hilbert.HilbertStructure <> OrderStructure rec
-R11624:11626 Hilbert.HilbertStructure <> whI:163 meth
-R11637:11655 Hilbert.HilbertStructure <> CongruenceStructure rec
-R11657:11659 Hilbert.HilbertStructure <> whI:163 meth
-R11661:11663 Hilbert.HilbertStructure <> whO:164 meth
-R11674:11692 Hilbert.HilbertStructure <> ArchimedesStructure rec
-R11694:11696 Hilbert.HilbertStructure <> whI:163 meth
-R11698:11700 Hilbert.HilbertStructure <> whO:164 meth
-R11702:11704 Hilbert.HilbertStructure <> whC:165 meth
-rec 11815:11832 <> StrongHilbertPlane
-proj 11864:11866 <> shI
-proj 11892:11894 <> shO
-proj 11920:11922 <> shC
-proj 11957:11959 <> shA
-proj 11998:12000 <> shD
-R11870:11887 Hilbert.HilbertStructure <> IncidenceStructure rec
-R11898:11911 Hilbert.HilbertStructure <> OrderStructure rec
-R11913:11915 Hilbert.HilbertStructure <> shI:168 meth
-R11926:11944 Hilbert.HilbertStructure <> CongruenceStructure rec
-R11946:11948 Hilbert.HilbertStructure <> shI:168 meth
-R11950:11952 Hilbert.HilbertStructure <> shO:169 meth
-R11963:11981 Hilbert.HilbertStructure <> ArchimedesStructure rec
-R11983:11985 Hilbert.HilbertStructure <> shI:168 meth
-R11987:11989 Hilbert.HilbertStructure <> shO:169 meth
-R11991:11993 Hilbert.HilbertStructure <> shC:170 meth
-R12004:12020 Hilbert.HilbertStructure <> DedekindStructure rec
-R12022:12024 Hilbert.HilbertStructure <> shI:168 meth
-R12026:12028 Hilbert.HilbertStructure <> shO:169 meth
+R7885:7887 Hilbert.HilbertStructure <> Bet:57 meth
+R7893:7893 Hilbert.HilbertStructure <> D:84 var
+R7891:7891 Hilbert.HilbertStructure <> C:83 var
+R7889:7889 Hilbert.HilbertStructure <> B:82 var
+R7904:7907 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7899:7902 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7898:7898 Hilbert.HilbertStructure <> B:82 var
+R7903:7903 Hilbert.HilbertStructure <> C:83 var
+R7908:7910 Hilbert.HilbertStructure <> Bet:57 meth
+R7916:7916 Hilbert.HilbertStructure <> D:84 var
+R7914:7914 Hilbert.HilbertStructure <> B:82 var
+R7912:7912 Hilbert.HilbertStructure <> A:81 var
+R7949:7956 Hilbert.HilbertStructure <> IncPoint proj
+R7958:7958 Hilbert.HilbertStructure <> I:55 var
+binder 7937:7937 <> A:86
+binder 7939:7939 <> B:87
+binder 7941:7941 <> C:88
+binder 7943:7943 <> P:89
+binder 7945:7945 <> Q:90
+R7974:7977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7965:7967 Hilbert.HilbertStructure <> Bet:57 meth
+R7973:7973 Hilbert.HilbertStructure <> C:88 var
+R7971:7971 Hilbert.HilbertStructure <> P:89 var
+R7969:7969 Hilbert.HilbertStructure <> A:86 var
+R7987:7994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7978:7980 Hilbert.HilbertStructure <> Bet:57 meth
+R7986:7986 Hilbert.HilbertStructure <> C:88 var
+R7984:7984 Hilbert.HilbertStructure <> Q:90 var
+R7982:7982 Hilbert.HilbertStructure <> B:87 var
+R8001:8004 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7996:7999 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7995:7995 Hilbert.HilbertStructure <> P:89 var
+R8000:8000 Hilbert.HilbertStructure <> C:88 var
+R8011:8018 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8006:8009 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8005:8005 Hilbert.HilbertStructure <> Q:90 var
+R8010:8010 Hilbert.HilbertStructure <> C:88 var
+R8019:8025 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8040:8041 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8030:8037 Hilbert.HilbertStructure <> IncPoint proj
+R8039:8039 Hilbert.HilbertStructure <> I:55 var
+binder 8026:8026 <> X:91
+R8051:8055 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8078:8078 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8042:8044 Hilbert.HilbertStructure <> Bet:57 meth
+R8050:8050 Hilbert.HilbertStructure <> Q:90 var
+R8048:8048 Hilbert.HilbertStructure <> X:91 var
+R8046:8046 Hilbert.HilbertStructure <> P:89 var
+R8065:8068 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R8056:8058 Hilbert.HilbertStructure <> Bet:57 meth
+R8064:8064 Hilbert.HilbertStructure <> B:87 var
+R8062:8062 Hilbert.HilbertStructure <> X:91 var
+R8060:8060 Hilbert.HilbertStructure <> A:86 var
+R8069:8071 Hilbert.HilbertStructure <> Bet:57 meth
+R8077:8077 Hilbert.HilbertStructure <> A:86 var
+R8075:8075 Hilbert.HilbertStructure <> X:91 var
+R8073:8073 Hilbert.HilbertStructure <> B:87 var
+rec 9148:9166 <> CongruenceStructure
+proj 9245:9251 <> CongSeg
+proj 9319:9325 <> CongAng
+proj 9421:9423 <> Ray
+proj 9484:9493 <> ray_origin
+proj 9518:9525 <> ray_line
+proj 9551:9559 <> ray_valid
+proj 9621:9625 <> OnRay
+proj 9659:9662 <> III1
+proj 9792:9795 <> III2
+proj 9893:9896 <> III3
+proj 10050:10053 <> III4
+proj 10128:10131 <> III5
+proj 10179:10182 <> III6
+R9173:9190 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 9169:9169 <> I:93
+R9198:9211 Hilbert.HilbertStructure <> OrderStructure rec
+R9213:9213 Hilbert.HilbertStructure <> I:93 var
+binder 9194:9194 <> O:94
+R9265:9268 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9255:9262 Hilbert.HilbertStructure <> IncPoint proj
+R9264:9264 Hilbert.HilbertStructure <> I:93 var
+R9279:9282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9269:9276 Hilbert.HilbertStructure <> IncPoint proj
+R9278:9278 Hilbert.HilbertStructure <> I:93 var
+R9293:9296 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9283:9290 Hilbert.HilbertStructure <> IncPoint proj
+R9292:9292 Hilbert.HilbertStructure <> I:93 var
+R9307:9310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9297:9304 Hilbert.HilbertStructure <> IncPoint proj
+R9306:9306 Hilbert.HilbertStructure <> I:93 var
+R9339:9342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9329:9336 Hilbert.HilbertStructure <> IncPoint proj
+R9338:9338 Hilbert.HilbertStructure <> I:93 var
+R9353:9356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9343:9350 Hilbert.HilbertStructure <> IncPoint proj
+R9352:9352 Hilbert.HilbertStructure <> I:93 var
+R9367:9370 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9357:9364 Hilbert.HilbertStructure <> IncPoint proj
+R9366:9366 Hilbert.HilbertStructure <> I:93 var
+R9381:9384 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9371:9378 Hilbert.HilbertStructure <> IncPoint proj
+R9380:9380 Hilbert.HilbertStructure <> I:93 var
+R9395:9398 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9385:9392 Hilbert.HilbertStructure <> IncPoint proj
+R9394:9394 Hilbert.HilbertStructure <> I:93 var
+R9409:9412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9399:9406 Hilbert.HilbertStructure <> IncPoint proj
+R9408:9408 Hilbert.HilbertStructure <> I:93 var
+R9500:9503 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9497:9499 Hilbert.HilbertStructure <> Ray:98 meth
+R9504:9511 Hilbert.HilbertStructure <> IncPoint proj
+R9513:9513 Hilbert.HilbertStructure <> I:93 var
+R9534:9537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9531:9533 Hilbert.HilbertStructure <> Ray:98 meth
+R9538:9544 Hilbert.HilbertStructure <> IncLine proj
+R9546:9546 Hilbert.HilbertStructure <> I:93 var
+R9575:9577 Hilbert.HilbertStructure <> Ray:98 meth
+binder 9571:9571 <> r:101
+R9581:9585 Hilbert.HilbertStructure <> Incid proj
+R9587:9587 Hilbert.HilbertStructure <> I:93 var
+R9591:9600 Hilbert.HilbertStructure <> ray_origin:99 meth
+R9602:9602 Hilbert.HilbertStructure <> r:101 var
+R9606:9613 Hilbert.HilbertStructure <> ray_line:100 meth
+R9615:9615 Hilbert.HilbertStructure <> r:101 var
+R9639:9642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9629:9636 Hilbert.HilbertStructure <> IncPoint proj
+R9638:9638 Hilbert.HilbertStructure <> I:93 var
+R9646:9649 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9643:9645 Hilbert.HilbertStructure <> Ray:98 meth
+R9680:9687 Hilbert.HilbertStructure <> IncPoint proj
+R9689:9689 Hilbert.HilbertStructure <> I:93 var
+binder 9674:9674 <> A:104
+binder 9676:9676 <> B:105
+R9697:9699 Hilbert.HilbertStructure <> Ray:98 meth
+binder 9693:9693 <> r:106
+R9713:9720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9708:9711 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9707:9707 Hilbert.HilbertStructure <> A:104 var
+R9712:9712 Hilbert.HilbertStructure <> B:105 var
+R9721:9728 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9743:9744 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9733:9740 Hilbert.HilbertStructure <> IncPoint proj
+R9742:9742 Hilbert.HilbertStructure <> I:93 var
+binder 9729:9729 <> X:107
+R9754:9757 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9745:9749 Hilbert.HilbertStructure <> OnRay:103 meth
+R9753:9753 Hilbert.HilbertStructure <> r:106 var
+R9751:9751 Hilbert.HilbertStructure <> X:107 var
+R9759:9765 Hilbert.HilbertStructure <> CongSeg:96 meth
+R9787:9787 Hilbert.HilbertStructure <> X:107 var
+R9773:9782 Hilbert.HilbertStructure <> ray_origin:99 meth
+R9784:9784 Hilbert.HilbertStructure <> r:106 var
+R9770:9770 Hilbert.HilbertStructure <> B:105 var
+R9768:9768 Hilbert.HilbertStructure <> A:104 var
+R9820:9827 Hilbert.HilbertStructure <> IncPoint proj
+R9829:9829 Hilbert.HilbertStructure <> I:93 var
+binder 9806:9806 <> A:109
+binder 9808:9808 <> B:110
+binder 9810:9810 <> C:111
+binder 9812:9812 <> D:112
+binder 9814:9814 <> E:113
+binder 9816:9816 <> F:114
+R9851:9854 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9836:9842 Hilbert.HilbertStructure <> CongSeg:96 meth
+R9850:9850 Hilbert.HilbertStructure <> D:112 var
+R9848:9848 Hilbert.HilbertStructure <> C:111 var
+R9846:9846 Hilbert.HilbertStructure <> B:110 var
+R9844:9844 Hilbert.HilbertStructure <> A:109 var
+R9870:9873 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9855:9861 Hilbert.HilbertStructure <> CongSeg:96 meth
+R9869:9869 Hilbert.HilbertStructure <> F:114 var
+R9867:9867 Hilbert.HilbertStructure <> E:113 var
+R9865:9865 Hilbert.HilbertStructure <> B:110 var
+R9863:9863 Hilbert.HilbertStructure <> A:109 var
+R9874:9880 Hilbert.HilbertStructure <> CongSeg:96 meth
+R9888:9888 Hilbert.HilbertStructure <> F:114 var
+R9886:9886 Hilbert.HilbertStructure <> E:113 var
+R9884:9884 Hilbert.HilbertStructure <> D:112 var
+R9882:9882 Hilbert.HilbertStructure <> C:111 var
+R9924:9931 Hilbert.HilbertStructure <> IncPoint proj
+R9933:9933 Hilbert.HilbertStructure <> I:93 var
+binder 9907:9907 <> A:116
+binder 9909:9909 <> B:117
+binder 9911:9911 <> C:118
+binder 9913:9914 <> A':119
+binder 9916:9917 <> B':120
+binder 9919:9920 <> C':121
+R9954:9957 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9941:9943 Hilbert.HilbertStructure <> Bet proj
+R9945:9945 Hilbert.HilbertStructure <> I:93 var
+R9947:9947 Hilbert.HilbertStructure <> O:94 var
+R9949:9949 Hilbert.HilbertStructure <> A:116 var
+R9951:9951 Hilbert.HilbertStructure <> B:117 var
+R9953:9953 Hilbert.HilbertStructure <> C:118 var
+R9975:9982 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9959:9961 Hilbert.HilbertStructure <> Bet proj
+R9963:9963 Hilbert.HilbertStructure <> I:93 var
+R9965:9965 Hilbert.HilbertStructure <> O:94 var
+R9967:9968 Hilbert.HilbertStructure <> A':119 var
+R9970:9971 Hilbert.HilbertStructure <> B':120 var
+R9973:9974 Hilbert.HilbertStructure <> C':121 var
+R10000:10003 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9983:9989 Hilbert.HilbertStructure <> CongSeg:96 meth
+R9998:9999 Hilbert.HilbertStructure <> B':120 var
+R9995:9996 Hilbert.HilbertStructure <> A':119 var
+R9993:9993 Hilbert.HilbertStructure <> B:117 var
+R9991:9991 Hilbert.HilbertStructure <> A:116 var
+R10021:10028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10004:10010 Hilbert.HilbertStructure <> CongSeg:96 meth
+R10019:10020 Hilbert.HilbertStructure <> C':121 var
+R10016:10017 Hilbert.HilbertStructure <> B':120 var
+R10014:10014 Hilbert.HilbertStructure <> C:118 var
+R10012:10012 Hilbert.HilbertStructure <> B:117 var
+R10029:10035 Hilbert.HilbertStructure <> CongSeg:96 meth
+R10044:10045 Hilbert.HilbertStructure <> C':121 var
+R10041:10042 Hilbert.HilbertStructure <> A':119 var
+R10039:10039 Hilbert.HilbertStructure <> C:118 var
+R10037:10037 Hilbert.HilbertStructure <> A:116 var
+R10074:10081 Hilbert.HilbertStructure <> IncPoint proj
+R10083:10083 Hilbert.HilbertStructure <> I:93 var
+binder 10064:10064 <> A:123
+binder 10066:10066 <> B:124
+binder 10068:10068 <> C:125
+binder 10070:10070 <> D:126
+R10105:10108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10090:10096 Hilbert.HilbertStructure <> CongSeg:96 meth
+R10104:10104 Hilbert.HilbertStructure <> D:126 var
+R10102:10102 Hilbert.HilbertStructure <> C:125 var
+R10100:10100 Hilbert.HilbertStructure <> B:124 var
+R10098:10098 Hilbert.HilbertStructure <> A:123 var
+R10109:10115 Hilbert.HilbertStructure <> CongSeg:96 meth
+R10123:10123 Hilbert.HilbertStructure <> B:124 var
+R10121:10121 Hilbert.HilbertStructure <> A:123 var
+R10119:10119 Hilbert.HilbertStructure <> D:126 var
+R10117:10117 Hilbert.HilbertStructure <> C:125 var
+R10148:10155 Hilbert.HilbertStructure <> IncPoint proj
+R10157:10157 Hilbert.HilbertStructure <> I:93 var
+binder 10142:10142 <> A:128
+binder 10144:10144 <> B:129
+R10160:10166 Hilbert.HilbertStructure <> CongSeg:96 meth
+R10174:10174 Hilbert.HilbertStructure <> B:129 var
+R10172:10172 Hilbert.HilbertStructure <> A:128 var
+R10170:10170 Hilbert.HilbertStructure <> B:129 var
+R10168:10168 Hilbert.HilbertStructure <> A:128 var
+R10207:10214 Hilbert.HilbertStructure <> IncPoint proj
+R10216:10216 Hilbert.HilbertStructure <> I:93 var
+binder 10193:10193 <> A:131
+binder 10195:10195 <> B:132
+binder 10197:10197 <> C:133
+binder 10199:10199 <> D:134
+binder 10201:10201 <> E:135
+binder 10203:10203 <> F:136
+R10242:10245 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10223:10229 Hilbert.HilbertStructure <> CongAng:97 meth
+R10241:10241 Hilbert.HilbertStructure <> F:136 var
+R10239:10239 Hilbert.HilbertStructure <> E:135 var
+R10237:10237 Hilbert.HilbertStructure <> D:134 var
+R10235:10235 Hilbert.HilbertStructure <> C:133 var
+R10233:10233 Hilbert.HilbertStructure <> B:132 var
+R10231:10231 Hilbert.HilbertStructure <> A:131 var
+R10246:10252 Hilbert.HilbertStructure <> CongAng:97 meth
+R10264:10264 Hilbert.HilbertStructure <> C:133 var
+R10262:10262 Hilbert.HilbertStructure <> B:132 var
+R10260:10260 Hilbert.HilbertStructure <> A:131 var
+R10258:10258 Hilbert.HilbertStructure <> F:136 var
+R10256:10256 Hilbert.HilbertStructure <> E:135 var
+R10254:10254 Hilbert.HilbertStructure <> D:134 var
+rec 10978:10996 <> ArchimedesStructure
+proj 11131:11137 <> Segment
+proj 11149:11156 <> segStart
+proj 11185:11190 <> segEnd
+proj 11221:11228 <> segValid
+proj 11278:11289 <> SegmentTimes
+proj 11322:11330 <> SegmentLe
+proj 11365:11366 <> V1
+R11003:11020 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 10999:10999 <> I:138
+R11028:11041 Hilbert.HilbertStructure <> OrderStructure rec
+R11043:11043 Hilbert.HilbertStructure <> I:138 var
+binder 11024:11024 <> O:139
+R11079:11097 Hilbert.HilbertStructure <> CongruenceStructure rec
+R11099:11099 Hilbert.HilbertStructure <> I:138 var
+R11101:11101 Hilbert.HilbertStructure <> O:139 var
+binder 11075:11075 <> C:140
+R11167:11170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11160:11166 Hilbert.HilbertStructure <> Segment:142 meth
+R11171:11178 Hilbert.HilbertStructure <> IncPoint proj
+R11180:11180 Hilbert.HilbertStructure <> I:138 var
+R11203:11206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11196:11202 Hilbert.HilbertStructure <> Segment:142 meth
+R11207:11214 Hilbert.HilbertStructure <> IncPoint proj
+R11216:11216 Hilbert.HilbertStructure <> I:138 var
+R11243:11249 Hilbert.HilbertStructure <> Segment:142 meth
+binder 11239:11239 <> s:145
+R11262:11265 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11252:11259 Hilbert.HilbertStructure <> segStart:143 meth
+R11261:11261 Hilbert.HilbertStructure <> s:145 var
+R11266:11271 Hilbert.HilbertStructure <> segEnd:144 meth
+R11273:11273 Hilbert.HilbertStructure <> s:145 var
+R11300:11303 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11293:11299 Hilbert.HilbertStructure <> Segment:142 meth
+R11307:11310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11304:11306 Corelib.Init.Datatypes <> nat ind
+R11311:11317 Hilbert.HilbertStructure <> Segment:142 meth
+R11341:11344 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11334:11340 Hilbert.HilbertStructure <> Segment:142 meth
+R11352:11355 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11345:11351 Hilbert.HilbertStructure <> Segment:142 meth
+R11384:11390 Hilbert.HilbertStructure <> Segment:142 meth
+binder 11378:11378 <> s:149
+binder 11380:11380 <> t:150
+R11398:11404 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11412:11413 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11409:11411 Corelib.Init.Datatypes <> nat ind
+binder 11405:11405 <> n:151
+R11414:11415 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R11416:11424 Hilbert.HilbertStructure <> SegmentLe:148 meth
+R11445:11445 Hilbert.HilbertStructure <> t:150 var
+R11427:11438 Hilbert.HilbertStructure <> SegmentTimes:147 meth
+R11442:11442 Hilbert.HilbertStructure <> n:151 var
+R11440:11440 Hilbert.HilbertStructure <> s:149 var
+rec 12080:12096 <> DedekindStructure
+proj 12171:12181 <> DedekindCut
+proj 12193:12200 <> cutLower
+proj 12241:12248 <> cutUpper
+proj 12289:12296 <> cutValid
+proj 12385:12386 <> V2
+R12103:12120 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 12099:12099 <> I:153
+R12128:12141 Hilbert.HilbertStructure <> OrderStructure rec
+R12143:12143 Hilbert.HilbertStructure <> I:153 var
+binder 12124:12124 <> O:154
+R12215:12218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12204:12214 Hilbert.HilbertStructure <> DedekindCut:156 meth
+R12229:12232 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12219:12226 Hilbert.HilbertStructure <> IncPoint proj
+R12228:12228 Hilbert.HilbertStructure <> I:153 var
+R12263:12266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12252:12262 Hilbert.HilbertStructure <> DedekindCut:156 meth
+R12277:12280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12267:12274 Hilbert.HilbertStructure <> IncPoint proj
+R12276:12276 Hilbert.HilbertStructure <> I:153 var
+R12314:12324 Hilbert.HilbertStructure <> DedekindCut:156 meth
+binder 12308:12310 <> cut:159
+R12332:12339 Hilbert.HilbertStructure <> IncPoint proj
+R12341:12341 Hilbert.HilbertStructure <> I:153 var
+binder 12328:12328 <> P:160
+R12359:12363 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R12345:12352 Hilbert.HilbertStructure <> cutLower:157 meth
+R12358:12358 Hilbert.HilbertStructure <> P:160 var
+R12354:12356 Hilbert.HilbertStructure <> cut:159 var
+R12364:12365 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R12366:12373 Hilbert.HilbertStructure <> cutUpper:158 meth
+R12379:12379 Hilbert.HilbertStructure <> P:160 var
+R12375:12377 Hilbert.HilbertStructure <> cut:159 var
+R12404:12414 Hilbert.HilbertStructure <> DedekindCut:156 meth
+binder 12398:12400 <> cut:162
+R12422:12428 Hilbert.HilbertStructure <> IncLine proj
+R12430:12430 Hilbert.HilbertStructure <> I:153 var
+binder 12418:12418 <> a:163
+R12438:12438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12493:12501 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12439:12445 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12460:12461 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12450:12457 Hilbert.HilbertStructure <> IncPoint proj
+R12459:12459 Hilbert.HilbertStructure <> I:153 var
+binder 12446:12446 <> P:164
+R12475:12478 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12463:12467 Hilbert.HilbertStructure <> Incid proj
+R12469:12469 Hilbert.HilbertStructure <> I:153 var
+R12472:12472 Hilbert.HilbertStructure <> P:164 var
+R12474:12474 Hilbert.HilbertStructure <> a:163 var
+R12479:12486 Hilbert.HilbertStructure <> cutLower:157 meth
+R12492:12492 Hilbert.HilbertStructure <> P:164 var
+R12488:12490 Hilbert.HilbertStructure <> cut:162 var
+R12502:12502 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12557:12565 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12503:12509 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12524:12525 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12514:12521 Hilbert.HilbertStructure <> IncPoint proj
+R12523:12523 Hilbert.HilbertStructure <> I:153 var
+binder 12510:12510 <> Q:165
+R12539:12542 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12527:12531 Hilbert.HilbertStructure <> Incid proj
+R12533:12533 Hilbert.HilbertStructure <> I:153 var
+R12536:12536 Hilbert.HilbertStructure <> Q:165 var
+R12538:12538 Hilbert.HilbertStructure <> a:163 var
+R12543:12550 Hilbert.HilbertStructure <> cutUpper:158 meth
+R12556:12556 Hilbert.HilbertStructure <> Q:165 var
+R12552:12554 Hilbert.HilbertStructure <> cut:162 var
+R12566:12572 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12587:12588 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12577:12584 Hilbert.HilbertStructure <> IncPoint proj
+R12586:12586 Hilbert.HilbertStructure <> I:153 var
+binder 12573:12573 <> S:166
+R12602:12611 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12590:12594 Hilbert.HilbertStructure <> Incid proj
+R12596:12596 Hilbert.HilbertStructure <> I:153 var
+R12599:12599 Hilbert.HilbertStructure <> S:166 var
+R12601:12601 Hilbert.HilbertStructure <> a:163 var
+R12612:12612 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12708:12719 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12815:12815 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12624:12631 Hilbert.HilbertStructure <> IncPoint proj
+R12633:12633 Hilbert.HilbertStructure <> I:153 var
+binder 12620:12620 <> P:167
+R12649:12652 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12637:12641 Hilbert.HilbertStructure <> Incid proj
+R12643:12643 Hilbert.HilbertStructure <> I:153 var
+R12646:12646 Hilbert.HilbertStructure <> P:167 var
+R12648:12648 Hilbert.HilbertStructure <> a:163 var
+R12667:12670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12653:12660 Hilbert.HilbertStructure <> cutLower:157 meth
+R12666:12666 Hilbert.HilbertStructure <> P:167 var
+R12662:12664 Hilbert.HilbertStructure <> cut:162 var
+R12671:12677 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12692:12693 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12682:12689 Hilbert.HilbertStructure <> IncPoint proj
+R12691:12691 Hilbert.HilbertStructure <> I:153 var
+binder 12678:12678 <> T:168
+R12695:12697 Hilbert.HilbertStructure <> Bet proj
+R12699:12699 Hilbert.HilbertStructure <> I:153 var
+R12701:12701 Hilbert.HilbertStructure <> O:154 var
+R12703:12703 Hilbert.HilbertStructure <> P:167 var
+R12705:12705 Hilbert.HilbertStructure <> S:166 var
+R12707:12707 Hilbert.HilbertStructure <> T:168 var
+R12731:12738 Hilbert.HilbertStructure <> IncPoint proj
+R12740:12740 Hilbert.HilbertStructure <> I:153 var
+binder 12727:12727 <> Q:169
+R12756:12759 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12744:12748 Hilbert.HilbertStructure <> Incid proj
+R12750:12750 Hilbert.HilbertStructure <> I:153 var
+R12753:12753 Hilbert.HilbertStructure <> Q:169 var
+R12755:12755 Hilbert.HilbertStructure <> a:163 var
+R12774:12777 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12760:12767 Hilbert.HilbertStructure <> cutUpper:158 meth
+R12773:12773 Hilbert.HilbertStructure <> Q:169 var
+R12769:12771 Hilbert.HilbertStructure <> cut:162 var
+R12778:12784 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12799:12800 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12789:12796 Hilbert.HilbertStructure <> IncPoint proj
+R12798:12798 Hilbert.HilbertStructure <> I:153 var
+binder 12785:12785 <> T:170
+R12802:12804 Hilbert.HilbertStructure <> Bet proj
+R12806:12806 Hilbert.HilbertStructure <> I:153 var
+R12808:12808 Hilbert.HilbertStructure <> O:154 var
+R12810:12810 Hilbert.HilbertStructure <> S:166 var
+R12812:12812 Hilbert.HilbertStructure <> Q:169 var
+R12814:12814 Hilbert.HilbertStructure <> T:170 var
+rec 13170:13185 <> WeakHilbertPlane
+proj 13215:13217 <> whI
+proj 13243:13245 <> whO
+proj 13271:13273 <> whC
+proj 13308:13310 <> whA
+R13221:13238 Hilbert.HilbertStructure <> IncidenceStructure rec
+R13249:13262 Hilbert.HilbertStructure <> OrderStructure rec
+R13264:13266 Hilbert.HilbertStructure <> whI:173 meth
+R13277:13295 Hilbert.HilbertStructure <> CongruenceStructure rec
+R13297:13299 Hilbert.HilbertStructure <> whI:173 meth
+R13301:13303 Hilbert.HilbertStructure <> whO:174 meth
+R13314:13332 Hilbert.HilbertStructure <> ArchimedesStructure rec
+R13334:13336 Hilbert.HilbertStructure <> whI:173 meth
+R13338:13340 Hilbert.HilbertStructure <> whO:174 meth
+R13342:13344 Hilbert.HilbertStructure <> whC:175 meth
+rec 13455:13472 <> StrongHilbertPlane
+proj 13504:13506 <> shI
+proj 13532:13534 <> shO
+proj 13560:13562 <> shC
+proj 13597:13599 <> shA
+proj 13638:13640 <> shD
+R13510:13527 Hilbert.HilbertStructure <> IncidenceStructure rec
+R13538:13551 Hilbert.HilbertStructure <> OrderStructure rec
+R13553:13555 Hilbert.HilbertStructure <> shI:178 meth
+R13566:13584 Hilbert.HilbertStructure <> CongruenceStructure rec
+R13586:13588 Hilbert.HilbertStructure <> shI:178 meth
+R13590:13592 Hilbert.HilbertStructure <> shO:179 meth
+R13603:13621 Hilbert.HilbertStructure <> ArchimedesStructure rec
+R13623:13625 Hilbert.HilbertStructure <> shI:178 meth
+R13627:13629 Hilbert.HilbertStructure <> shO:179 meth
+R13631:13633 Hilbert.HilbertStructure <> shC:180 meth
+R13644:13660 Hilbert.HilbertStructure <> DedekindStructure rec
+R13662:13664 Hilbert.HilbertStructure <> shI:178 meth
+R13666:13668 Hilbert.HilbertStructure <> shO:179 meth

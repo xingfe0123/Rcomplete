@@ -7,11 +7,11 @@
 (*  Hilbert 公理系统中, 德沙格定理在平面中依赖于平行公理 IV-1 (Euclid 公理)。         *)
 (*  在三维空间中, 德沙格定理仅用 I 组关联公理即可证明。                           *)
 (*                                                                            *)
-(*  依赖: HilbertStructure.v, IncidenceAxioms.v                                  *)
+(*  依赖: HilbertStructure.v, IncidenceTheorem.v                                  *)
 (* ========================================================================= *)
 
 From Stdlib Require Import Classical Logic.IndefiniteDescription.
-From Hilbert Require Import HilbertStructure IncidenceAxioms.
+From Hilbert Require Import HilbertStructure IncidenceTheorem.
 
 (* ========================================================================= *)
 (*  1. 基本定义 (参数化 over IncidenceStructure)                              *)

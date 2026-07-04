@@ -3,8 +3,8 @@
 (*  Tier-2 共享基础层: Hilbert 公理系统的所有基本对象与基本关系                  *)
 (*                                                                            *)
 (*  本文件只引入 Parameter, 不引入任何 Axiom                                    *)
-(*  所有 Axiom 在 IncidenceAxioms.v / OrderAxioms.v / CongruenceAxioms.v /     *)
-(*  ParallelAxioms.v / ContinuityAxioms.v 中各自声明                            *)
+(*  所有 Axiom 在 IncidenceTheorem.v / OrderTheorem.v / CongruenceTheorem.v /     *)
+(*  ParallelTheorem.v / ContinuityTheorem.v 中各自声明                            *)
 (*                                                                            *)
 (*  对象 / 关系分类:                                                           *)
 (*    - 点 / 直线 / 平面:  三类几何对象                                         *)
@@ -14,7 +14,7 @@
 (*    - SameSide:         同侧 (在直线上)                                       *)
 (*    - SameSideAngle:    同侧 (在角内, 用于 Pasch 变体)                        *)
 (*                                                                            *)
-(*  Cong / Segment / Angle 在 CongruenceAxioms.v 中独立声明                     *)
+(*  Cong / Segment / Angle 在 CongruenceTheorem.v 中独立声明                     *)
 (* ============================================================================ *)
 
 From Stdlib Require Import Classical.

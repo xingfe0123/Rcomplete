@@ -9,8 +9,8 @@
 (*    - Angle:      角 (三点 A,B,C 且 A≠B≠C), 用于角合同公理                     *)
 (*    - OnRay:      点在射线上                                                  *)
 (*                                                                            *)
-(*  CongSeg 在 CongruenceAxioms.v 中声明, 不在此引用                              *)
-(*  TransferCongSeg 定义在 CongruenceAxioms.v 中 (需 CongSeg)                     *)
+(*  CongSeg 在 CongruenceTheorem.v 中声明, 不在此引用                              *)
+(*  TransferCongSeg 定义在 CongruenceTheorem.v 中 (需 CongSeg)                     *)
 (* ============================================================================ *)
 
 From Stdlib Require Import Classical.
@@ -36,7 +36,7 @@ Definition OnRay (X : Point) (r : Ray) : Prop :=
 (*  Angle 类型: 角 ∠(A,B,C)                                                     *)
 (*                                                                            *)
 (*  角由顶点 B 与两条边 BA, BC 唯一确定. A≠B, B≠C, A≠C (非退化)                 *)
-(*  角合同 CongAng 已在 CongruenceAxioms.v 中声明, 此处仅定义角类型               *)
+(*  角合同 CongAng 已在 CongruenceTheorem.v 中声明, 此处仅定义角类型               *)
 (* ============================================================================ *)
 
 Record Angle : Type := mkAngle {
@@ -49,5 +49,5 @@ Record Angle : Type := mkAngle {
 
 (* ============================================================================ *)
 (*  Tier-3 引入: Ray + Angle, 零 Axiom                                          *)
-(*  所有参数在 Common.v / CongruenceAxioms.v 中                                  *)
+(*  所有参数在 Common.v / CongruenceTheorem.v 中                                  *)
 (* ============================================================================ *)

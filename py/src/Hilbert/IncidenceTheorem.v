@@ -1,27 +1,4 @@
-(* ============================================================================ *)
-(*  IncidenceAxioms.v                                                          *)
-(*  Tier-5 重构: Hilbert 第 I 组公理 — 关联公理 (8 条) + 基于 Record 的 QED 推导   *)
-(*                                                                            *)
-(*  依赖: Common.v, HilbertStructure.v                                          *)
-(*                                                                            *)
-(*  本文件用 IncidenceStructure Record 抽象替代直接的 Parameter + Axiom 风格.   *)
-(*  Hilbert 关联公理 8 条作为 Record 字段 (I1 ~ I8):                            *)
-(*    I1: 两点确定一直线                                                       *)
-(*    I2: 两点至多确定一直线                                                   *)
-(*    I3: 直线上至少两点 + 至少三点不共线 (Hilbert 原公理)                       *)
-(*    I4: 三点不共线确定一平面；任意平面上至少有一点                             *)
-(*    I5: 直线两点在平面内 ⇒ 整直线在平面内                                     *)
-(*    I6: 平面内至少三点不共线 + 平面外存在一点                                 *)
-(*    I7: 两平面交于一点 ⇒ 至少交于两点                                        *)
-(*    I8: 至少四点不共面                                                       *)
-(*                                                                            *)
-(*  Tier-5 QED 推导 (参数化 over IncidenceStructure):                           *)
-(*    - theorem_1a: 平面上两直线要么唯一交一点, 要么无交点                      *)
-(*    - theorem_1b: 两平面要么有公共直线, 要么无公共点                          *)
-(*    - theorem_1c: 平面和不在其上的直线, 要么唯一交一点, 要么无公共点           *)
-(*    - theorem_2a: 过一直线和不在这直线上的一点, 有且只有一个平面               *)
-(*    - theorem_2b: 过有公共点的两直线, 有且只有一个平面                         *)
-(* ============================================================================ *)
+
 
 From Stdlib Require Import Classical.
 From Hilbert Require Import Common HilbertStructure.
@@ -32,10 +9,6 @@ From Hilbert Require Import Common HilbertStructure.
 
 Definition LineInPlane (I : IncidenceStructure) (l : IncLine I) (alpha : IncPlane I) : Prop :=
   forall X : IncPoint I, Incid I X l -> IncidPlane I X alpha.
-
-(* ============================================================================ *)
-(*  QED 推导: Theorem 1a ~ Theorem 2b (参数化 over IncidenceStructure)         *)
-(* ============================================================================ *)
 
 (* ---- Theorem 1a: 平面上两直线要么唯一交一点, 要么无交点 -------------------- *)
 (* Hilbert 定理 1 (第一部分):                                                   *)
@@ -54,7 +27,9 @@ Proof.
     + intros Q [HQa HQb].
       destruct (classic (P = Q)) as [Heq | Hne].
       * exact Heq.
-      * exfalso. apply Hneq. apply (I2 I a b P Q (conj HPa (conj HQa (conj HPb HQb)))).
+      * exfalso. apply Hneq.
+        apply (I2 I a b P Q (conj HPa (conj HQa (conj HPb HQb)))).
+
   - right. exact Hno.
 Qed.
 
@@ -196,8 +171,3 @@ Proof.
     assert (HbetaR : IncidPlane I R beta) by (apply (Hlinebeta_b R HRb)).
     apply (Huniq beta (conj HbetaQ (conj HbetaP HbetaR))).
 Qed.
-
-(* Tier-5 净增量: 0 个 free Lemma, 5 个 Theorem (参数化 over IncidenceStructure) *)
-(* 备注: Hilbert 关联公理 8 条 I1~I8 是 IncidenceStructure Record 字段            *)
-(*       所有推导 (theorem_1a ~ theorem_2b) 都参数化 over 一个 Record 实例,    *)
-(*       可在任意 Hilbert 关联模型 (Q², R³, 球面, ...) 中实例化                  *)

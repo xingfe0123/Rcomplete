@@ -70,27 +70,52 @@ Record IncidenceStructure : Type := mkIncidence {
 }.
 
 (* ============================================================================ *)
-(*  OrderStructure: 顺序公理 (II-1 ~ II-4 + Pasch)                              *)
+(*  OrderStructure: 顺序公理 (Hilbert 1959 II-1 ~ II-4 + Pasch + Bet 元性质)      *)
 (*                                                                            *)
 (*  依赖: IncidenceStructure (需要 Point, Line, Incid)                          *)
 (*  新增关系: Bet (B 在 A,C 之间)                                               *)
-(*  公理: II-1: 共线两点之间至少存在一点                                          *)
-(*        II-2: Bet 对称                                                        *)
-(*        II-3: Bet 非退化                                                      *)
-(*        II-4: 内点传递                                                        *)
-(*        Pasch: 三角形一边的两点连线穿过另一边                                  *)
+(*                                                                            *)
+(*  Hilbert 1959 §4 公理 II:                                                    *)
+(*    II-1: 给定线段 AB, B 端延长线上存在点 C (即 Bet A B C)                 *)
+(*    II-2: 给定线段 AB, A 端延长线上存在点 D (即 Bet D A B)                 *)
+(*    II-3: 给定共线两点 A,B (A ≠ B), 存在第三点 C 使 Bet A C B                 *)
+(*          (此即 "betwixt" 公理, 任意两点之间有中间点)                          *)
+(*    II-4: Pasch 公理 — 直线穿过三角形一边的两点必穿过另一边                   *)
+(*                                                                            *)
+(*  Hilbert 1959 §3 定义 Bet 元性质: Bet 对称、非退化、内点传递.                *)
+(*                                                                            *)
+(*  字段命名映射:                                                              *)
+(*    II_1  = Hilbert 1959 II-1 (B 端延长)                                      *)
+(*    II_2  = Hilbert 1959 II-2 (A 端延长)                                      *)
+(*    II_3  = Hilbert 1959 II-3 (betwixt, 两点间有中间点)                       *)
+(*    Bet_sym / Bet_nondeg / Bet_trans: Hilbert 1959 §3 元性质                   *)
+(*    Pasch = Hilbert 1959 II-4 (Pasch 公理)                                    *)
 (* ============================================================================ *)
 
 Record OrderStructure (I : IncidenceStructure) : Type := mkOrder {
   Bet : IncPoint I -> IncPoint I -> IncPoint I -> Prop;
 
-  II1 : forall (P Q : IncPoint I) (a : IncLine I),
-    Incid I P a /\ Incid I Q a /\ P <> Q ->
-    exists R : IncPoint I, Incid I R a /\ Bet P R Q;
-  II2 : forall A B C : IncPoint I, Bet A B C -> Bet C B A;
-  II3 : forall A B C : IncPoint I, Bet A B C -> A <> B /\ B <> C /\ A <> C;
-  II4 : forall A B C D : IncPoint I,
+  (* Hilbert 1959 II-1: 给定线段 AB (A ≠ B 共线), B 端延长线上存在 C (Bet A B C). *)
+  II_1 : forall (A B : IncPoint I) (a : IncLine I),
+    Incid I A a /\ Incid I B a /\ A <> B ->
+    exists C : IncPoint I, Incid I C a /\ Bet A B C;
+
+  (* Hilbert 1959 II-2: 给定线段 AB (A ≠ B 共线), A 端延长线上存在 D (Bet D A B). *)
+  II_2 : forall (A B : IncPoint I) (a : IncLine I),
+    Incid I A a /\ Incid I B a /\ A <> B ->
+    exists D : IncPoint I, Incid I D a /\ Bet D A B;
+
+  (* Hilbert 1959 II-3: 共线两点 A,B (A ≠ B) 之间存在第三点 C (Bet A C B). *)
+  II_3 : forall (A B : IncPoint I) (a : IncLine I),
+    Incid I A a /\ Incid I B a /\ A <> B ->
+    exists C : IncPoint I, Incid I C a /\ Bet A C B;
+
+  (* Hilbert 1959 §3: Bet 元性质 *)
+  Bet_sym : forall A B C : IncPoint I, Bet A B C -> Bet C B A;
+  Bet_nondeg : forall A B C : IncPoint I, Bet A B C -> A <> B /\ B <> C /\ A <> C;
+  Bet_trans : forall A B C D : IncPoint I,
     Bet A B C -> Bet B C D -> B <> C -> Bet A B D;
+
   Pasch : forall A B C P Q : IncPoint I,
     Bet A P C -> Bet B Q C ->
     P <> C -> Q <> C ->
@@ -110,7 +135,8 @@ Record OrderStructure (I : IncidenceStructure) : Type := mkOrder {
 (*        III-6: 角合同对称                                                      *)
 (* ============================================================================ *)
 
-Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I) : Type := mkCongruence {
+Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I)
+  : Type := mkCongruence {
   CongSeg : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
   CongAng : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
   Ray : Type;  (* 射线类型 — 实例化时具体定义 *)
