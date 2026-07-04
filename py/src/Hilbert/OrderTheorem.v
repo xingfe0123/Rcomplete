@@ -15,7 +15,7 @@
 (*    II_1 (Hilbert 1959 II-1): B 端延长点 (给定 AB, ∃ C, Bet A B C)        *)
 (*    II_2 (Hilbert 1959 II-2): A 端延长点 (给定 AB, ∃ D, Bet D A B)        *)
 (*    II_3 (Hilbert 1959 II-3): 中间点 (给定 AB, ∃ C, Bet A C B)            *)
-(*    Hilbert_II_2 / Hilbert_II_3 / Hilbert_II_4: Bet 元性质                            *)
+(*    Bet_sym / Bet_nondeg / Bet_trans: Bet 元性质                            *)
 (*    Pasch: 三角形边线交公理                                                  *)
 (*                                                                            *)
 (*  Permutation 重表述: theorem_5_permutation 用 stdlib Permutation 表达    *)
@@ -44,28 +44,28 @@ Section OrderTheorem.
 
   Lemma Bet_neq_lemma : forall (A B C : IncPoint I), Bet I O A B C -> A <> B.
   Proof.
-    intros A B C H. exact (proj1 (@Hilbert_II_3 I O A B C H)).
+    intros A B C H. exact (proj1 (@Bet_nondeg I O A B C H)).
   Qed.
 
   Lemma Bet_neq_prime_lemma : forall (A B C : IncPoint I), Bet I O A B C -> B <> C.
   Proof.
-    intros A B C H. exact (proj1 (proj2 (@Hilbert_II_3 I O A B C H))).
+    intros A B C H. exact (proj1 (proj2 (@Bet_nondeg I O A B C H))).
   Qed.
 
   Lemma Bet_neq_ne_lemma : forall (A B C : IncPoint I), Bet I O A B C -> A <> C.
   Proof.
-    intros A B C H. exact (proj2 (proj2 (@Hilbert_II_3 I O A B C H))).
+    intros A B C H. exact (proj2 (proj2 (@Bet_nondeg I O A B C H))).
   Qed.
 
   Lemma Bet_sym_lemma : forall (A B C : IncPoint I), Bet I O A B C -> Bet I O C B A.
   Proof.
-    intros A B C H. exact (O.(Hilbert_II_2) A B C H).
+    intros A B C H. exact (Bet_sym I O A B C H).
   Qed.
 
   Lemma not_Bet_self_lemma : forall (A B : IncPoint I), ~ Bet I O A B A.
   Proof.
     intros A B H.
-    destruct (@Hilbert_II_3 I O A B A H) as [_ [_ Hcontra]].
+    destruct (@Bet_nondeg I O A B A H) as [_ [_ Hcontra]].
     exact (Hcontra (eq_refl A)).
   Qed.
 
@@ -73,11 +73,11 @@ Section OrderTheorem.
     Bet I O A B C -> Bet I O A C B -> B = C.
   Proof.
     intros A B C HBAC HBAC'.
-    destruct (@Hilbert_II_3 I O A B C HBAC) as [HAB [HBC _]].
+    destruct (@Bet_nondeg I O A B C HBAC) as [HAB [HBC _]].
     assert (HBCA : Bet I O B C A).
-    { apply Hilbert_II_2. exact HBAC'. }
+    { apply Bet_sym. exact HBAC'. }
     assert (HBAB : Bet I O A B A).
-    { apply (@Hilbert_II_4 I O A B C A HBAC HBCA HBC). }
+    { apply (@Bet_trans I O A B C A HBAC HBCA HBC). }
     exfalso. exact (not_Bet_self_lemma _ _ HBAB).
   Qed.
 
@@ -85,8 +85,8 @@ Section OrderTheorem.
     Bet I O A B C -> Bet I O B C D -> Bet I O A B D.
   Proof.
     intros A B C D HABC HBCD.
-    destruct (@Hilbert_II_3 I O A B C HABC) as [_ [HBC _]].
-    exact (@Hilbert_II_4 I O A B C D HABC HBCD HBC).
+    destruct (@Bet_nondeg I O A B C HABC) as [_ [HBC _]].
+    exact (@Bet_trans I O A B C D HABC HBCD HBC).
   Qed.
 
   (* ---- Theorem 3 (Hilbert 1959 II-3): 共线两点之间至少存在第三点 ------------ *)
@@ -211,10 +211,10 @@ Proof.
         (* -- case 1.3: Bet P4 P1 P2 (矛盾) -- *)
         - { admit. } }
 
-    (* ---- case 2: Bet P2 P3 P1 — 由 Hilbert_II_2 等价于 case 1 ---- *)
+    (* ---- case 2: Bet P2 P3 P1 — 由 Bet_sym 等价于 case 1 ---- *)
     - { admit. }
 
-    (* ---- case 3: Bet P3 P1 P2 — 由 Hilbert_II_2 等价于 case 1 ---- *)
+    (* ---- case 3: Bet P3 P1 P2 — 由 Bet_sym 等价于 case 1 ---- *)
     - { admit. }
   Admitted.
 
@@ -224,7 +224,7 @@ Proof.
   (*    且 D ≠ A, D ≠ C. (此定理可推广到无穷多个点, 当前证一次即可.)          *)
   (*                                                                            *)
   (*  QED 证明: 用 II_3 (Hilbert 1959 II-3 "betwixt" 公理) 取新点 D, 由       *)
-  (*    Hilbert_II_3 (Hilbert 元性质) 得 D ≠ A, D ≠ C.                              *)
+  (*    Bet_nondeg (Hilbert 元性质) 得 D ≠ A, D ≠ C.                              *)
   (* ========================================================================== *)
   Theorem theorem_7 : forall (A B C : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> Incid I C l ->
@@ -232,17 +232,17 @@ Proof.
     exists (D : IncPoint I), Incid I D l /\ Bet I O A D C /\ D <> A /\ D <> C.
   Proof.
     intros A B C l HA HB HC Hneq HACB.
-    (* 由 Hilbert_II_3: Bet A C B → A ≠ C *)
-    destruct (@Hilbert_II_3 I O) A C B HACB) as [HAC [HCB _]].
+    (* 由 Bet_nondeg: Bet A C B → A ≠ C *)
+    destruct (@Bet_nondeg I O A C B HACB) as [HAC [HCB _]].
     (* 由 II_3 (betwixt): 在 A,C 之间存在 D (Bet A D C) *)
     destruct ((II_3 I O) A C l (conj HA (conj HC HAC))) as [D [HDl HBetAD]].
     exists D.
     split; [exact HDl | split; [exact HBetAD | split]].
-    - (* D ≠ A: 由 Hilbert_II_3 (Bet A D C → A ≠ D) *)
-      destruct (@Hilbert_II_3 I O A D C HBetAD) as [HDA _].
+    - (* D ≠ A: 由 Bet_nondeg (Bet A D C → A ≠ D) *)
+      destruct (@Bet_nondeg I O A D C HBetAD) as [HDA _].
       intro HE. rewrite HE in HDA. apply HDA. reflexivity.
-    - (* D ≠ C: 由 Hilbert_II_3 (Bet A D C → D ≠ C) *)
-      destruct (@Hilbert_II_3 I O A D C HBetAD) as [_ [HDC _]]. exact HDC.
+    - (* D ≠ C: 由 Bet_nondeg (Bet A D C → D ≠ C) *)
+      destruct (@Bet_nondeg I O A D C HBetAD) as [_ [HDC _]]. exact HDC.
   Qed.
 
   (* ========================================================================== *)

@@ -119,15 +119,25 @@ Record OrderStructure (I : IncidenceStructure) : Type := mkOrder {
   Pasch : forall A B C P Q : IncPoint I,
     Bet A P C -> Bet B Q C ->
     P <> C -> Q <> C ->
-    exists X : IncPoint I, Bet P X Q /\ (Bet A X B \/ Bet B X A)
+    exists X : IncPoint I, Bet P X Q /\ (Bet A X B \/ Bet B X A);
+
+  (* 同侧: P,Q 在直线 l 的同侧 ⟺ 不存在 l 上的点 X 在 P,Q 之间 *)
+  SameSide : IncPoint I -> IncPoint I -> IncLine I -> Prop;
+
+  (* 射线类型 — 定义在 OrderStructure 中 (只需 I + Bet, 不需合同) *)
+  Ray : Type;
+  ray_origin : Ray -> IncPoint I;
+  ray_line : Ray -> IncLine I;
+  ray_valid : forall r : Ray, (Incid I) (ray_origin r) (ray_line r);
+  OnRay : IncPoint I -> Ray -> Prop
 }.
 
 (* ============================================================================ *)
 (*  CongruenceStructure: 合同公理 (III-1 ~ III-6)                                *)
 (*                                                                            *)
-(*  依赖: IncidenceStructure + OrderStructure (需要 Ray 类型)                    *)
+(*  依赖: IncidenceStructure + OrderStructure                                  *)
 (*  新增参数: CongSeg (线段合同), CongAng (角合同)                              *)
-(*  公理: III-1: 线段迁移 (存在+唯一)                                            *)
+(*  公理: III-1: 线段迁移 (存在+唯一, 使用 O.Ray/O.OnRay/O.ray_origin)           *)
 (*        III-2: 合同传递                                                        *)
 (*        III-3: 线段加法                                                        *)
 (*        III-4: 合同对称 (独立)                                                 *)
@@ -139,15 +149,25 @@ Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I)
   : Type := mkCongruence {
   CongSeg : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
   CongAng : IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> IncPoint I -> Prop;
-  Ray : Type;  (* 射线类型 — 实例化时具体定义 *)
-  ray_origin : Ray -> IncPoint I;
-  ray_line   : Ray -> IncLine I;
-  ray_valid  : forall r : Ray, (Incid I) (ray_origin r) (ray_line r);
-  OnRay : IncPoint I -> Ray -> Prop;
 
-  III1 : forall (A B : IncPoint I) (r : Ray),
+  (* 边 (Side): 线段 AB — 由两个端点确定的几何对象 *)
+  Side : Type;
+  side_start : Side -> IncPoint I;
+  side_end : Side -> IncPoint I;
+  side_valid : forall s : Side, side_start s <> side_end s;
+
+  (* 角 (Angle): 由顶点 B 和两条射线 BA, BC 组成的图形 *)
+  Angle : Type;
+  angle_vertex : Angle -> IncPoint I;        (* 顶点 *)
+  angle_side1 : Angle -> Ray I O;             (* 第一条边（射线） *)
+  angle_side2 : Angle -> Ray I O;             (* 第二条边（射线） *)
+  angle_valid : forall a : Angle,
+    (ray_origin I O) (angle_side1 a) = angle_vertex a /\
+    (ray_origin I O) (angle_side2 a) = angle_vertex a;
+
+  III1 : forall (A B : IncPoint I) (r : Ray I O),
     A <> B ->
-    exists! X : IncPoint I, OnRay X r /\ (CongSeg) A B (ray_origin r) X;
+    exists! X : IncPoint I, OnRay I O X r /\ (CongSeg) A B (ray_origin I O r) X;
   III2 : forall A B C D E F : IncPoint I,
     CongSeg A B C D -> CongSeg A B E F -> CongSeg C D E F;
   III3 : forall A B C A' B' C' : IncPoint I,
@@ -158,7 +178,15 @@ Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I)
     CongSeg A B C D -> CongSeg C D A B;
   III5 : forall A B : IncPoint I, CongSeg A B A B;
   III6 : forall A B C D E F : IncPoint I,
-    CongAng A B C D E F -> CongAng D E F A B C
+    CongAng A B C D E F -> CongAng D E F A B C;
+
+  (* SAS 全等公理 (Hilbert 原书 III.7): 两边及其夹角分别相等的两三角形全等 *)
+  III7 : forall A B C A' B' C' : IncPoint I,
+    A <> B -> B <> C -> A <> C ->
+    A' <> B' -> B' <> C' -> A' <> C' ->
+    CongSeg A B A' B' -> CongSeg A C A' C' ->
+    CongAng B A C B' A' C' ->
+    CongSeg B C B' C' /\ CongAng A B C A' B' C' /\ CongAng A C B A' C' B'
 }.
 
 (* ============================================================================ *)
