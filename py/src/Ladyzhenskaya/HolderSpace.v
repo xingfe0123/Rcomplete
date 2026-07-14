@@ -5,7 +5,7 @@
 (* Coq 8.18 + mathcomp-analysis 1.3.1. *)
 (* R / R0 / R1 / Rabs / Rplus / Rmult 来自 Coq 标准库 Reals. *)
 (* Rstruct 提供了 R 的 ssreflect 镜像 (Rleb, Rltb, etc). *)
-From Coq Require Export Reals Raxioms RIneq Rbasic_fun.
+From Stdlib Require Export Reals Raxioms RIneq Rbasic_fun.
 (* Note: mathcomp.analysis / Rstruct / mathcomp.classical not available
    in this environment; they are not actually used in this file's definitions. *)
 (* From mathcomp Require Import all_ssreflect ssralg poly mxpoly ssrnum archimedean. *)

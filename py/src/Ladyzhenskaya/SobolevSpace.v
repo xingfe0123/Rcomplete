@@ -3,7 +3,7 @@
 (* 用于形式化椭圆/抛物 Hopf 引理和最大值原理. *)
 (* 基于 Coq Reals 库构建，不依赖 mathcomp-analysis. *)
 
-From Coq Require Import Reals.Raxioms RIneq Rfunctions Rdefinitions Rbase.
+From Stdlib Require Import Reals.Raxioms RIneq Rfunctions Rdefinitions Rbase.
 From Ladyzhenskaya Require Import HolderSpace.
 (* Strictly_Increasing 定义在 CompactEmbedding.MetricCompact 中, 通过模块限定引用 *)
 (* 注: SobolevSpace 内的 MetricSpace 来自 HolderSpace.MetricSpace,

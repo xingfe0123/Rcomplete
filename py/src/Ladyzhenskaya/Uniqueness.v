@@ -2,7 +2,7 @@
 (* 抛物方程的弱最大值原理 -> 唯一性. *)
 (* Ladyzhenskaya Theorem III.6.1 证明的最后一步. *)
 
-From Coq Require Import Logic.FunctionalExtensionality.
+From Stdlib Require Import Logic.FunctionalExtensionality.
 From Ladyzhenskaya Require Import HolderSpace.
 From Ladyzhenskaya Require Import ParabolicCoefficients.
 From Ladyzhenskaya Require Import Derivatives.

@@ -259,6 +259,7 @@ Definition QOnRay (P : QPoint) (r : QRay) : Prop :=
 Axiom Q_ray_valid : forall r : QRay, QIncid (qray_origin r) (qray_line r).
 
 (* Q² 顺序结构 *)
+
 Transparent Q2_Incidence.
 Definition Q2_Order : OrderStructure Q2_Incidence :=
   @mkOrder Q2_Incidence
@@ -288,27 +289,41 @@ Definition QCongSeg (A B C D : QPoint) : Prop := QDistSq A B == QDistSq C D.
 Axiom QCongAng : QPoint -> QPoint -> QPoint -> QPoint -> QPoint -> QPoint -> Prop.
 
 (* III-1: 线段迁移 — 唯一性 *)
-Axiom Q_III1 : forall (A B : QPoint) (r : QRay),
-  A <> B -> exists! X : QPoint, QOnRay X r /\ QCongSeg A B (qray_origin r) X.
+Axiom Q_III1 : forall (A B : IncPoint Q2_Incidence) (r : Ray Q2_Incidence Q2_Order),
+  A <> B -> exists! X : IncPoint Q2_Incidence, OnRay Q2_Incidence Q2_Order X r /\ QCongSeg A B (ray_origin Q2_Incidence Q2_Order r) X.
 
 (* III-2: 合同传递 *)
-Axiom Q_III2 : forall A B C D E F : QPoint,
+Axiom Q_III2 : forall A B C D E F : IncPoint Q2_Incidence,
   QCongSeg A B C D -> QCongSeg A B E F -> QCongSeg C D E F.
 
 (* III-3: 线段加法 (与 Bet 配合) *)
-Axiom Q_III3 : forall A B C A' B' C' : QPoint,
-  QBet A B C -> QBet A' B' C' ->
+Axiom Q_III3 : forall A B C A' B' C' : IncPoint Q2_Incidence,
+  Bet Q2_Incidence Q2_Order A B C -> Bet Q2_Incidence Q2_Order A' B' C' ->
   QCongSeg A B A' B' -> QCongSeg B C B' C' ->
   QCongSeg A C A' C'.
 
 (* III-4: 合同对称 *)
-Axiom Q_III4 : forall A B C D : QPoint, QCongSeg A B C D -> QCongSeg C D A B.
+Axiom Q_III4 : forall A B C D : IncPoint Q2_Incidence, QCongSeg A B C D -> QCongSeg C D A B.
 
 (* III-5: 合同自反 *)
-Axiom Q_III5 : forall A B : QPoint, QCongSeg A B A B.
+Axiom Q_III5 : forall A B : IncPoint Q2_Incidence, QCongSeg A B A B.
 
 (* III-6: 角合同对称 *)
-Axiom Q_III6 : forall A B C D E F : QPoint, QCongAng A B C D E F -> QCongAng D E F A B C.
+Axiom Q_III6 : forall A B C D E F : IncPoint Q2_Incidence, QCongAng A B C D E F -> QCongAng D E F A B C.
+
+(* III-6-reflex: 角合同自反 *)
+Axiom Q_III6_reflex : forall A B C : IncPoint Q2_Incidence, QCongAng A B C A B C.
+
+(* III-6-undirected: 角无向性 — ∠BAC ≅ ∠CAB *)
+Axiom Q_III6_undirected : forall A B C : IncPoint Q2_Incidence, QCongAng A B C C B A.
+
+(* III-7: SAS 全等公理 *)
+Axiom Q_III7 : forall A B C A' B' C' : IncPoint Q2_Incidence,
+  A <> B -> B <> C -> A <> C ->
+  A' <> B' -> B' <> C' -> A' <> C' ->
+  QCongSeg A B A' B' -> QCongSeg A C A' C' ->
+  QCongAng B A C B' A' C' ->
+  QCongSeg B C B' C' /\ QCongAng A B C A' B' C' /\ QCongAng A C B A' C' B'.
 
 (* III-7: SAS 全等 *)
 Axiom Q_III7 : forall A B C A' B' C' : QPoint,
@@ -359,7 +374,35 @@ Proof.
 Defined.
 
 (* ============================================================================ *)
-(*  9. Q² 不满足 Dedekind 公理 (V-2) — √2 反例                                  *)
+(*  9. Q² 平行公理 (ParallelStructure) — Playfair 在 Q² 成立                     *)
+(* ============================================================================ *)
+
+(* 平行 = 不相交 *)
+Definition QParallel (a b : QLine) : Prop :=
+  ~ exists P : QPoint, QIncid P a /\ QIncid P b.
+
+(* IV-1 (Playfair): 至多只有一条直线经过 A 且不与 a 相交 *)
+Axiom Q_IV1 : forall (P : QPoint) (a : QLine),
+  ~ QIncid P a ->
+  forall (b c : QLine),
+    QIncid P b -> QIncid P c ->
+    QParallel a b -> QParallel a c ->
+    b = c.
+
+(* IV-2: 平行可传递 *)
+Axiom Q_IV2 : forall a b c : QLine,
+  QParallel a b -> QParallel b c -> QParallel a c.
+
+Definition Q2_Parallel : ParallelStructure Q2_Incidence :=
+  {|
+    Parallel := (fun (a b : IncLine Q2_Incidence) => QParallel a b);
+    IV_1 := Q_IV1;
+    IV_2 := Q_IV2;
+    Parallel_nointersect := fun a b => conj (fun H => H) (fun H => H)
+  |}.
+
+(* ============================================================================ *)
+(*  10. Q² 不满足 Dedekind 公理 (V-2) — √2 反例                                 *)
 (* ============================================================================ *)
 
 (* Dedekind 分割: Q 上的 A, B, A < B 且 A 无最大, B 无最小 *)
@@ -392,6 +435,7 @@ Axiom Q_not_dedekind : forall (a : QLine) (cut : QDedekindCut),
 (* Q² 平行结构 — admit: ParallelStructure 需定义 QParallel *)
 Definition Q2_Parallel : ParallelStructure Q2_Incidence.
 Admitted.
+
 
 (* Q² 弱 Hilbert 平面 *)
 Definition Q2_Weak : WeakHilbertPlane.

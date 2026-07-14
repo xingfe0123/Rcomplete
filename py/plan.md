@@ -49,7 +49,14 @@
 | **QPlane.v** | ❌ 失败 | ray_valid 字段 Record 投影不透明 |
 | **HilbertFoundations.v** | ❌ 失败 | 依赖 QPlane |
 
----
+#### ✅ 修复2: QPlane.v mkCongruence 缺少字段 + 新增 ParallelStructure
+- 位置: `src/Hilbert/QPlane.v` (本次修复)
+- 问题1: `mkCongruence` 只给了 6 个 `_` 孔 (III1~III6)，但 Record 新增了 III6_reflex, III6_undirected, III7
+- 修复1: 添加对应 Axiom (Q_III6_reflex, Q_III6_undirected, Q_III7) + 补全 3 个 bullet
+- 问题2: 公理使用 `QPoint`/`QRay`/`QBet` 但 Record 期望 `IncPoint Q2_Incidence`/`Ray Q2_Incidence Q2_Order`/`Bet Q2_Incidence Q2_Order`
+- 修复2: 重写公理类型使用 Record 投影类型
+- 问题3: `mkWeakHilbert` 缺少 `ParallelStructure` 参数
+- 修复3: 添加 `Q2_Parallel` 实例 (QParallel 定义 + Q_IV1/Q_IV2 公理)
 
 ## 二、当前阻塞问题
 

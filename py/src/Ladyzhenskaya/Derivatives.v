@@ -3,7 +3,7 @@
 (* Ladyzhenskaya Theorem III.6.1 基础: 偏导数、抛物算子定义 *)
 (* 使用 Coq Reals library 定义一阶导数和偏导数 *)
 
-From Coq Require Import Reals.Raxioms RIneq Rbasic_fun Rfunctions.
+From Stdlib Require Import Reals.Raxioms RIneq Rbasic_fun Rfunctions.
 From Ladyzhenskaya Require Import HolderSpace ParabolicCoefficients.
 
 Set Implicit Arguments.

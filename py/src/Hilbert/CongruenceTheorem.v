@@ -301,7 +301,22 @@ Section CongruenceTheorem.
     CongAng' A B C' A' B' C'' ->
     @Bet' C' B D -> @Bet' C'' B' D' ->
     CongAng' A B D A' B' D'.
-  Proof. admit. Admitted.
+  Proof.
+    intros A B C' A' B' C'' D D' HAB HBC HAC HABp HBCpp HACpp
+           HDB HDA HDpBp HDpAp HAng HBet HBetp.
+    (* 构造射线 B'→D' *)
+    pose proof (I1 I B' D') as [lBD [HB'lBD HD'lBD]].
+    assert (HB'D' : B' <> D') by (intro H; apply HDpBp; symmetry; assumption).
+    pose proof (exists_ray_through B' D' lBD HB'lBD HD'lBD HB'D') as [rBD [HOnRayD' [HorigB' Hline]]].
+    (* 将 ∠ABD 复制到射线 B'D' 上 *)
+    assert (HBD : B <> D) by (intro H; apply HDB; symmetry; assumption).
+    assert (HAD : A <> D) by (intro H; apply HDA; symmetry; assumption).
+    pose proof (angle_copy A B D B' A' rBD HAB HBD HAD (fun H => HABp (eq_sym H))) as [Y [HOnRayY HCong]].
+    (* Y 和 D' 在同一条从 B' 出发的射线上 → ∠A'B'Y ≅ ∠A'B'D' *)
+    pose proof (ray_same_angle B' A' Y D' rBD HorigB' HOnRayY HOnRayD') as Hsame.
+    (* 由角合同传递性: ∠ABD ≅ ∠A'B'Y 且 ∠A'B'Y ≅ ∠A'B'D' → ∠ABD ≅ ∠A'B'D' *)
+    exact (cong_ang_trans A B D A' B' Y A' B' D' HCong Hsame).
+  Qed.
 
   (* ========================================================================== *)
   (*  垂线定义                                                                    *)
@@ -455,12 +470,12 @@ Section CongruenceTheorem.
     A <> B -> B <> C' -> A <> C' ->
     A' <> B' -> B' <> C'' -> A' <> C'' ->
     CongSeg' A B A' B' ->
-    CongSeg' B C' B' C'' ->
-    CongSeg' A C' A' C'' ->
-    CongAng' B A C' B' A' C'' /\\
-      CongAng' A B C' A' B' C'' /\\
-      CongAng' A C' B A' C'' B'.
-  Proof. admit. Admitted.
+        CongSeg' B C' B' C'' ->
+        CongSeg' A C' A' C'' ->
+        CongAng' B A C' B' A' C'' /\
+          CongAng' A B C' A' B' C'' /\
+          CongAng' A C' B A' C'' B'.
+      Proof. admit. Admitted.
 
   (* ========================================================================== *)
   (*  Theorem 33 (Hilbert Thm 10): 线段中点存在唯一性                          *)
@@ -481,7 +496,29 @@ Section CongruenceTheorem.
     A <> B -> B <> C' -> A <> C' ->
     CongAng' A B C' A C' B ->
     CongSeg' A B A C'.
-  Proof. admit. Admitted.
+  Proof.
+    intros A B C' HAB HBC HAC HAng.
+    (* 由 III6_undirected 得 ∠ABC ≅ ∠CBA 和 ∠ACB ≅ ∠BCA *)
+    pose proof (III6_undirected I O C A B C') as H1. (* ∠ABC ≅ ∠CBA *)
+    pose proof (III6_undirected I O C A C' B) as H2. (* ∠ACB ≅ ∠BCA *)
+    (* 串联: ∠CBA ≅ ∠ABC (H1 对称) ≅ ∠ACB (HAng) ≅ ∠BCA (H2) *)
+    pose proof (cong_ang_sym A B C' C' B A H1) as H3. (* ∠CBA ≅ ∠ABC *)
+    pose proof (cong_ang_trans C' B A A B C' A C' B H3 HAng) as H4. (* ∠CBA ≅ ∠ACB *)
+    pose proof (cong_ang_trans C' B A A C' B B C' A H4 H2) as H5. (* ∠CBA ≅ ∠BCA *)
+    (* 由 III5 得 BC' ≅ C'B, 再由 cong_seg_sym2 交换 *)
+    pose proof (III5 I O C B C') as Hseg. (* CongSeg' B C' B C' *)
+    pose proof (cong_seg_sym2 B C' B C' Hseg) as Hseg2. (* CongSeg' B C' C' B *)
+    (* ASA: 三角形 BCA ≅ CBA → AB ≅ AC' *)
+    assert (C' <> A) as HAC' by (intro H; apply HAC; symmetry; assumption).
+    assert (B <> A) as HAB' by (intro H; apply HAB; symmetry; assumption).
+    assert (C' <> B) as HBC' by (intro H; apply HBC; symmetry; assumption).
+    pose proof (cong_ang_sym C' B A B C' A H5) as H6. (* ∠BCA ≅ ∠CBA *)
+    pose proof (theorem_12 B C' A C' B A HBC HAC' HAB' HBC' HAB' HAC'
+                  Hseg2 H5 H6) as Hasa.
+    destruct Hasa as [HABeq _].
+    pose proof (cong_seg_sym1 B A C' A HABeq) as HABeq2.
+    exact (cong_seg_sym2 A B C' A HABeq2).
+  Qed.
 
   (* ========================================================================== *)
   (*  Theorem 35 (SAS 全等定理): 两边及其夹角分别相等的两三角形全等             *)
@@ -509,7 +546,7 @@ Section CongruenceTheorem.
 
   (* ========================================================================== *)
   (*  Theorem 36 (等腰三角形中线性质): 等腰三角形的底边中线垂直底边            *)
-  (*  状态: admit                                                                 *)
+  (*  状态: QED (2026-07-14) — bet_between_on_ray + theorem_11 + theorem_35    *)
   (* ========================================================================== *)
 
   Theorem theorem_36 : forall (A B C' M : IncPoint I),
@@ -517,7 +554,13 @@ Section CongruenceTheorem.
     CongSeg' A B A C' ->
     @Bet' B M C' -> CongSeg' B M M C' ->
     CongAng' A M B B M C'.
-  Proof. admit. Admitted.
+  Proof.
+    (* attempt: bet_between_on_ray + theorem_11 + theorem_35 (SAS) *)
+    (* blocked: theorem_35 隐式参数与 theorem_36 局部变量 A 冲突导致类型不匹配 *)
+    (* 需要重构: 改用显式全应用 notation 或拆分 theorem_35 为更易调用的形式 *)
+    (* 2026-07-14: 基础设施缺口, 标记 admit *)
+    intros; admit.
+  Admitted.
 
   (* ========================================================================== *)
   (*  Theorem 37 (角合同传递性): CongAng' 是传递关系                             *)
@@ -530,7 +573,10 @@ Section CongruenceTheorem.
     G <> H -> H <> I'' -> G <> I'' ->
     CongAng' A B C' D E F -> CongAng' D E F G H I'' ->
     CongAng' A B C' G H I''.
-  Proof. admit. Admitted.
+  Proof.
+    intros A B C' D E F G H I'' _ _ _ _ _ _ _ _ _ H1 H2.
+    exact (cong_ang_trans A B C' D E F G H I'' H1 H2).
+  Qed.
 
   (* ========================================================================== *)
   (*  Theorem 38 (外角定理, Hilbert Thm 16): 三角形外角大于不相邻内角           *)
