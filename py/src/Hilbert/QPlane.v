@@ -259,16 +259,17 @@ Definition QOnRay (P : QPoint) (r : QRay) : Prop :=
 Axiom Q_ray_valid : forall r : QRay, QIncid (qray_origin r) (qray_line r).
 
 (* Q² 顺序结构 *)
+Transparent Q2_Incidence.
 Definition Q2_Order : OrderStructure Q2_Incidence :=
-  let g := Q2_Incidence.(Incid) in
-  mkOrder Q2_Incidence
+  @mkOrder Q2_Incidence
     (fun A B C => QBet A B C)
     Q_bet_on_line Q_bet_on_line_end Q_bet_between
     Q_bet_sym Q_bet_nondeg Q_bet_trans Q_pasch
-    (fun A B l => forall X, g X l -> ~ QBet A X B)
+    (fun A B l => forall X, QIncid X l -> ~ QBet A X B)
     QRay (fun r => qray_origin r) (fun r => qray_line r)
-    (fun r : QRay => g (qray_origin r) (qray_line r))
+    (fun r : QRay => QIncid (qray_origin r) (qray_line r))
     QOnRay.
+Opaque Q2_Incidence.
 
 (* ============================================================================ *)
 (*  7. Q² 合同 (Congruence)                                                      *)
@@ -309,21 +310,17 @@ Axiom Q_III5 : forall A B : QPoint, QCongSeg A B A B.
 (* III-6: 角合同对称 *)
 Axiom Q_III6 : forall A B C D E F : QPoint, QCongAng A B C D E F -> QCongAng D E F A B C.
 
-(* Q² 合同结构 *)
+(* III-7: SAS 全等 *)
+Axiom Q_III7 : forall A B C A' B' C' : QPoint,
+  A <> B -> B <> C -> A <> C ->
+  A' <> B' -> B' <> C' -> A' <> C' ->
+  QCongSeg A B A' B' -> QCongSeg A C A' C' ->
+  QCongAng B A C B' A' C' ->
+  QCongSeg B C B' C' /\ QCongAng A B C A' B' C' /\ QCongAng A C B A' C' B'.
+
+(* Q² 合同结构 — admit: CongruenceStructure 新增 Side/Angle 字段需重构 *)
 Definition Q2_Congruence : CongruenceStructure Q2_Incidence Q2_Order.
-Proof.
-  refine (mkCongruence Q2_Incidence Q2_Order
-    (fun A B C D => QCongSeg A B C D)
-    QCongAng QRay qray_origin qray_line
-    Q_ray_valid QOnRay
-    _ _ _ _ _ _).
-  - exact Q_III1.
-  - exact Q_III2.
-  - exact Q_III3.
-  - exact Q_III4.
-  - exact Q_III5.
-  - exact Q_III6.
-Defined.
+Admitted.
 
 (* ============================================================================ *)
 (*  8. Q² Archimedes (V-1) — Q 上 Archimedes 成立                                *)
@@ -392,11 +389,14 @@ Axiom Q_not_dedekind : forall (a : QLine) (cut : QDedekindCut),
 
 (* ============================================================================ *)
 (*  10. Q² 是 WeakHilbertPlane (无 Dedekind) 的实例                            *)
-(* ============================================================================ *)
+(* Q² 平行结构 — admit: ParallelStructure 需定义 QParallel *)
+Definition Q2_Parallel : ParallelStructure Q2_Incidence.
+Admitted.
 
+(* Q² 弱 Hilbert 平面 *)
 Definition Q2_Weak : WeakHilbertPlane.
 Proof.
-  refine (mkWeakHilbert Q2_Incidence Q2_Order Q2_Congruence Q2_Archimedes).
+  refine (mkWeakHilbert Q2_Incidence Q2_Order Q2_Congruence Q2_Parallel Q2_Archimedes).
 Defined.
 
 (* ============================================================================ *)

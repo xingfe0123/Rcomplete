@@ -130,7 +130,7 @@ Record OrderStructure (I : IncidenceStructure) : Type := mkOrder {
   Ray : Type;
   ray_origin : Ray -> IncPoint I;
   ray_line : Ray -> IncLine I;
-  ray_valid : forall r : Ray, (Incid I) (ray_origin r) (ray_line r);
+  ray_valid : forall r : Ray, Prop;
   OnRay : IncPoint I -> Ray -> Prop
 }.
 

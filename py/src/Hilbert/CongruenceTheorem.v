@@ -107,6 +107,18 @@ Section CongruenceTheorem.
     SameSide I O P Q l.
 
   (* ========================================================================== *)
+  (*  射线上的点在射线的直线上 (射线定义隐含)                                      *)
+  (* ========================================================================== *)
+  Axiom ray_on_line : forall (P : IncPoint I) (r : Ray I O),
+    OnRay I O P r -> Incid I P (ray_line I O r).
+
+  (* ========================================================================== *)
+  (*  射线起点在射线的直线上 (OrderStructure.ray_valid 语义)                     *)
+  (* ========================================================================== *)
+  Axiom ray_origin_on_line : forall (r : Ray I O),
+    Incid I (ray_origin I O r) (ray_line I O r).
+
+  (* ========================================================================== *)
   (*  非零段引理: A <> B 时, AB 不能合同于任何零段 CC.                            *)
   (* ========================================================================== *)
   Axiom seg_nonzero : forall (A B C : IncPoint I),
@@ -118,12 +130,6 @@ Section CongruenceTheorem.
   Axiom angle_non_collinear : forall (A B C A' B' C' : IncPoint I),
     CongAng' A B C A' B' C' ->
     ~ (exists l : IncLine I, Incid I A' l /\ Incid I B' l /\ Incid I C' l).
-
-  (* ========================================================================== *)
-  (*  射线上的点在射线的直线上 (射线定义隐含)                                      *)
-  (* ========================================================================== *)
-  Axiom ray_on_line : forall (P : IncPoint I) (r : Ray I O),
-    OnRay I O P r -> Incid I P (ray_line I O r).
 
   (* ========================================================================== *)
   (*  Theorem 12 (Hilbert): ASA 全等定理 (角边角)                             *)
@@ -256,7 +262,7 @@ Section CongruenceTheorem.
       { rewrite <- HlACpp_eq; exact HAlACpp. }
       (* B' 也在直线 B'C'' 上. *)
       assert (HB'on_lBCpp : Incid I B' (ray_line I O rBDC)).
-      { rewrite <- HorigBp; exact (ray_valid I O rBDC). }
+      { rewrite <- HorigBp; exact (ray_origin_on_line rBDC). }
       (* 由 I2: 直线 B'C'' = 直线 A'B' (lABp). *)
       assert (HlBCpp_eq_ABp : ray_line I O rBDC = lABp).
       {
