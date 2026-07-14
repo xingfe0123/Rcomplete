@@ -5,19 +5,21 @@
 (*  把 Hilbert 公理系统拆分为 5 个独立 Record, 每个 Record 自包含载体类型和公理.    *)
 (*  这样 Q² 可以作为 Record 的具体实例构造, 验证公理的独立性 (V_2 独立于 V_1).   *)
 (*                                                                            *)
-(*  5 个 Record:                                                               *)
+(*  6 个 Record:                                                               *)
 (*    IncidenceStructure    — I-1~I-8 (关联公理)                                 *)
 (*    OrderStructure        — II-1~II-4 + Pasch (顺序公理)                       *)
 (*    CongruenceStructure   — III-1~III-6 + CongSeg/CongAng 参数 (合同公理)     *)
+(*    ParallelStructure     — IV-1~IV-2 + Parallel (平行公理)                    *)
 (*    ArchimedesStructure   — V-1 (Archimedes 公理)                              *)
 (*    DedekindStructure     — V-2 (戴德金完备性公理)                              *)
 (*                                                                            *)
 (*  设计目标:                                                                  *)
 (*    1. 每个 Record 包含 载体 (Point/Line) + 关系 + 公理, 自包含              *)
-(*    2. Q² 可作为前 4 个 Record 的实例 (满足 I-III + V_1)                      *)
+(*    2. Q² 可作为前 4 个 Record 的实例 (满足 I-IV + V_1)                      *)
 (*    3. Q² 不能作为 DedekindStructure 的实例 (V_2 在 Q 中不成立, √2 反例)      *)
 (*                                                                            *)
 (*  依赖: Common.v (作为 "抽象接口", 后续文件可改用具体 Record 实例)              *)
+(*  平行关系 Parallel 从 Common.v 的 Parameter 迁移到 ParallelStructure Record    *)
 (* ============================================================================ *)
 
 From Stdlib Require Import Classical.
@@ -179,6 +181,10 @@ Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I)
   III5 : forall A B : IncPoint I, CongSeg A B A B;
   III6 : forall A B C D E F : IncPoint I,
     CongAng A B C D E F -> CongAng D E F A B C;
+  III6_reflex : forall A B C : IncPoint I, CongAng A B C A B C;
+  (* 角的无向性: ∠BAC ≅ ∠CAB (同一角, 顶点相同, 两边互换) *)
+  III6_undirected : forall A B C : IncPoint I,
+    CongAng A B C C B A;
 
   (* SAS 全等公理 (Hilbert 原书 III.7): 两边及其夹角分别相等的两三角形全等 *)
   III7 : forall A B C A' B' C' : IncPoint I,
@@ -189,6 +195,59 @@ Record CongruenceStructure (I : IncidenceStructure) (O : OrderStructure I)
     CongSeg B C B' C' /\ CongAng A B C A' B' C' /\ CongAng A C B A' C' B'
 }.
 
+(* ============================================================================ *)
+(*  ParallelStructure: 第 IV 组公理 — 平行公理 (Hilbert 1959 §6)                 *)
+(*                                                                            *)
+(*  依赖: IncidenceStructure (需要 Point, Line, Incid)                          *)
+(*  新增关系: Parallel (两直线平行)                                              *)
+(*                                                                            *)
+(*  公理:                                                                      *)
+(*    IV-1 (Playfair): 设 a 为一条直线, A 为 a 外的一点。在由 a 和 A           *)
+(*      确定的平面上, 至多只有一条直线经过 A 且不与 a 相交。                   *)
+(*    IV-2:            平行可传递                                              *)
+(*    Parallel_nointersect: 平行 = 不相交 (Hilbert 原始定义)                    *)
+(*                                                                            *)
+(*  QED 推导:                                                                  *)
+(*    Parallel_sym: 平行对称 (从 Parallel_nointersect 导出, 在 Record 外证明)    *)
+(* ============================================================================ *)
+Record ParallelStructure (I : IncidenceStructure) : Type := mkParallel {
+  Parallel : IncLine I -> IncLine I -> Prop;
+
+  (* IV-1 (Playfair): 至多只有一条直线经过 A 且不与 a 相交 *)
+  (*   设 a 为一条直线, A 为 a 外的一点。在由 a 和 A 确定的平面上,           *)
+  (*   对任意两条经过 A 的直线 b, c, 如果 b 和 c 都不与 a 相交, 则 b = c.  *)
+  IV_1 : forall (P : IncPoint I) (a : IncLine I),
+    ~ Incid I P a ->
+    forall (b c : IncLine I),
+      Incid I P b -> Incid I P c ->
+      Parallel a b -> Parallel a c ->
+      b = c;
+
+  (* IV-2: 平行可传递 *)
+  IV_2 : forall a b c : IncLine I,
+    Parallel a b -> Parallel b c -> Parallel a c;
+
+  (* 平行 = 不相交 (Hilbert 原始定义) *)
+  Parallel_nointersect : forall a b : IncLine I,
+    Parallel a b <-> ~ (exists P : IncPoint I, Incid I P a /\ Incid I P b)
+}.
+
+(* ============================================================================ *)
+(*  Wrapper 函数: 隐式参数风格，用于 theorem 文件的 Section 内                     *)
+(*  Bet_ A B C  ≡ Bet I O A B C                                                  *)
+(*  CongSeg_ A B C D  ≡ CongSeg I O Cstr A B C D                                 *)
+(*  CongAng_ A B C D E F  ≡ CongAng I O Cstr A B C D E F                         *)
+(* ============================================================================ *)
+Set Implicit Arguments.
+Definition Bet_ {I : IncidenceStructure} {O : OrderStructure I}
+  (A B C : IncPoint I) : Prop := Bet I O A B C.
+Definition CongSeg_ {I : IncidenceStructure} {O : OrderStructure I}
+  {Cstr : CongruenceStructure I O} (A B C' D : IncPoint I) : Prop :=
+  CongSeg I O Cstr A B C' D.
+Definition CongAng_ {I : IncidenceStructure} {O : OrderStructure I}
+  {Cstr : CongruenceStructure I O} (A B C' D E F : IncPoint I) : Prop :=
+  CongAng I O Cstr A B C' D E F.
+Unset Implicit Arguments.
 (* ============================================================================ *)
 (*  ArchimedesStructure: V-1 (Archimedes 公理)                                   *)
 (*                                                                            *)
@@ -234,14 +293,15 @@ Record DedekindStructure (I : IncidenceStructure) (O : OrderStructure I) : Type 
 }.
 
 (* ============================================================================ *)
-(*  5 层 Hilbert 系统: I + II + III + V_1 (弱) + V_2 (强)                       *)
+(*  6 层 Hilbert 系统: I + II + III + IV + V_1 (弱) + V_2 (强)                   *)
 (* ============================================================================ *)
 
-(* 弱 Hilbert 系统: I + II + III + V_1 (Archimedes) 但不要求 V_2 (完备性) *)
+(* 弱 Hilbert 系统: I + II + III + IV + V_1 (Archimedes) 但不要求 V_2 (完备性) *)
 Record WeakHilbertPlane : Type := mkWeakHilbert {
   whI : IncidenceStructure;
   whO : OrderStructure whI;
   whC : CongruenceStructure whI whO;
+  whP : ParallelStructure whI;
   whA : ArchimedesStructure whI whO whC  (* shA 也需要 whC, whO 在前, whC 在后 *)
 
 }.
@@ -251,14 +311,15 @@ Record StrongHilbertPlane : Type := mkStrongHilbert {
   shI : IncidenceStructure;
   shO : OrderStructure shI;
   shC : CongruenceStructure shI shO;
+  shP : ParallelStructure shI;
   shA : ArchimedesStructure shI shO shC;
   shD : DedekindStructure shI shO
 }.
 
 (* shD 满足 shI+shO (与 shC, shA 无关) — V_2 仅依赖 I + II *)
 
-(* Tier-5 净增量: 5 个 Record + 2 个组合 Record                                 *)
+(* Tier-5 净增量: 6 个 Record + 2 个组合 Record                                 *)
 (* Tier-6 目标:                                                                  *)
-(*   - QPlane.v: 构造 Q² 作为 WeakHilbertPlane 实例 (满足 I-III + V_1)          *)
+(*   - QPlane.v: 构造 Q² 作为 WeakHilbertPlane 实例 (满足 I-IV + V_1)          *)
 (*   - QPlaneNotDedekind.v: 证明 Q² 不满足 V_2 (√2 反例)                       *)
 (*   - RealPlane.v: 构造 R² 作为 StrongHilbertPlane 实例                        *)

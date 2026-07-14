@@ -1,133 +1,168 @@
 # Coq PDE/Hilbert 形式化项目 — 进展分析与规划
 
-**最后更新**: 2026-07-01
+**最后更新**: 2026-07-14
 **项目位置**: `/Users/luoxing/coq/py/`
-**Rocq 版本**: 9.1.1 (从 8.20 升级; 弃用 `From Coq` → `From Stdlib`)
+**Rocq 版本**: 9.1.1
 
 ---
 
-## 目录结构 (现状)
+## 编译状态 (实测 2026-07-14)
 
+**真实编译率: 57/60 (95%)** — 3 个 Hilbert 文件未通过编译。
+(此前 plan.md 声称 57/57 = 100% 有误，因 _CoqProject 引用了已重命名文件导致 build 直接失败)
+
+| 模块 | .v 主文件 | .vo 已编译 | 编译率 |
+|------|-----------|-----------|--------|
+| **CompactEmbedding** | 6 | 6 | 6/6 ✓ |
+| **Gronwall** | 1 | 1 | 1/1 ✓ |
+| **Hilbert** | 18 | 15 | 15/18 ⚠ |
+| **Hopf** | 1 | 1 | 1/1 ✓ |
+| **Ladyzhenskaya** | 15 | 15 | 15/15 ✓ |
+| **LinearAlgebra** | 2 | 2 | 2/2 ✓ |
+| **SphereClassification** | 17 | 17 | 17/17 ✓ |
+| **总计** | **60** | **57** | **57/60** |
+
+**已确认编译通过的模块**: Ladyzhenskaya 全部 15 个文件 ✓，SphereClassification 全部 17 个文件 ✓，LinearAlgebra 全部 2 个文件 ✓，CompactEmbedding 全部 6 个文件 ✓，Hopf 全部 1 个文件 ✓，Gronwall 全部 1 个文件 ✓。
+
+**Hilbert 已编译 (15/18)**: Common, Types, HilbertStructure, IncidenceTheorem, OrderTheorem, ParallelTheorem, ContinuityTheorem, DesarguesTheorem, PascalTheorem, EuclideanTheorem, IV_Independence, V1_Independence, V2_Independence, III5_Independence, Model_Consistency。
+
+---
+
+## 未编译文件 (3 个)
+
+### 1. CongruenceTheorem.v (P0 — 核心瓶颈)
+
+**错误位置**: line 475, theorem_35 (SAS 全等定理)
 ```
-~/coq/py/
-├── _CoqProject                  # 8 个模块 (-Q 映射, +CompactEmbedding +Vectors.Fin)
-├── plan.md                      # 本文件
-├── AxiomAudit.md                # Axiom/Admitted 审计报告 (2026-06-29)
-├── Interface / Makefile         # coq_makefile 产物
-└── src/
-    ├── CompactEmbedding/        # 紧嵌入定理 (6 .v, 排除测试)
-    ├── SphereClassification/    # 球面分类定理 (17 .v, 17/17 编译)
-    ├── Ladyzhenskaya/           # Ladyzhenskaya 抛物 PDE 理论 (15 .v)
-    ├── Hopf/                    # Hopf 强极大值原理 (1 .v)
-    ├── Gronwall/                # Gronwall 不等式 (1 .v)
-    ├── LinearAlgebra/           # 线性代数基础 (3 .v, 2/3 编译)
-    └── Hilbert/                 # Hilbert 公理体系形式化 (15 .v, 15/15 编译)
+HAC : CongAng I O C B C' A B' C'' A'
+Expected: CongAng' A C' B A' C'' B' = CongAng I O C A C' B A' C'' B'
+```
+**根因**: `III7` (ASA) 调用返回的 `HAC` 角参数顺序为 `(B C' A B' C'' A')`，但 theorem_35 证明期望 `(A C' B A' C'' B')`。`III7` 返回第三个角时把 `B C' A` (原角 C) 作为参数，而非 `A C' B`。
+
+**修复方向**: 在 `HAC` 之后加 `cong_ang_sym3` (∠BCA ≅ ∠B'C'A') 翻转角参数顺序，或修改 `III7` 调用让返回的 HAC 就是 A 角。
+
+**依赖**: 这是 theorem_11~39 中唯一有实际 QED 尝试的复杂定理，其他 24 个 theorem 均为 `admit` 占位。
+
+### 2. QPlane.v (P0 — Q² 模型实例化)
+
+**错误位置**: line 246, `mkOrder` 构造函数
+```
+mkOrder Q2_Incidence (fun A B C => QBet A B C)
+    ?II_1 ?II_2 ?II_3 ?Bet_sym ?Bet_nondeg
+```
+**根因**: `HilbertStructure.v` 中 `OrderStructure` Record 的字段数/顺序已变更 (增加了 `ray_through` 等字段)，但 `QPlane.v` 中的 `mkOrder` 调用仍使用旧的字段列表。
+
+**修复方向**: 对照 `HilbertStructure.v` 中 `OrderStructure` 的 Record 定义，给 `mkOrder` 补充缺失的字段参数。
+
+### 3. HilbertFoundations.v (P0 — 级联失败)
+
+**根因**: 依赖 `CongruenceTheorem.vo`，因 CongruenceTheorem 未编译成功而级联失败。CongruenceTheorem 修复后自然通过。
+
+---
+
+## _CoqProject 修复 (已完成 2026-07-14)
+
+**问题**: 文件引用了已重命名的旧文件名，导致 `make -f Interface` 启动即失败。
+
+**已修复的映射**:
+
+| 旧名 (_CoqProject 原引用) | 现名 (实际磁盘文件) |
+|--------------------------|-------------------|
+| IncidenceAxioms.v | IncidenceTheorem.v |
+| OrderAxioms.v | OrderTheorem.v |
+| CongruenceAxioms.v | CongruenceTheorem.v |
+| ParallelAxioms.v | ParallelTheorem.v |
+| ContinuityAxioms.v | ContinuityTheorem.v |
+
+**新增引用** (此前缺失): HilbertStructure.v, EuclideanTheorem.v, QPlane.v
+
+**_CoqProject 当前 Hilbert 顺序** (依赖拓扑):
+```
+Common.v → Types.v → HilbertStructure.v
+→ IncidenceTheorem.v → OrderTheorem.v → CongruenceTheorem.v
+→ ParallelTheorem.v → ContinuityTheorem.v
+→ DesarguesTheorem.v → PascalTheorem.v → EuclideanTheorem.v
+→ QPlane.v → IV_Independence.v → V1_Independence.v → V2_Independence.v → III5_Independence.v
+→ Model_Consistency.v → HilbertFoundations.v
 ```
 
 ---
 
-## 编译状态总览 (排除 test 文件)
+## Axiom / Admitted / QED 统计 (实测 grep, 2026-07-14)
 
-| 模块 | 主文件 .v | 已编译 | 未编译 | Axiom (估) | Admitted (估) |
-|------|-----------|--------|--------|-----------|--------------|
-| **Gronwall** | 1 | **1** ✓ | 0 | 0 | 0 |
-| **CompactEmbedding** | 6 | **6** ✓ | 0 | 8 | 5 |
-| **Hopf** | 1 | **1** ✓ | 0 | 6 | 4 |
-| **Ladyzhenskaya** | 15 | **15** ✓ | 0 | 191 | 15 |
-| **Hilbert** | 15 | **15** ✓ | 0 | 27 | 46 |
-| **LinearAlgebra** | 3 | **2** ✓ | 1 | 13 | 13 |
-| **SphereClassification** | 17 | **17** ✓ | 0 | 51 | 6 |
-| **总计 (主文件)** | 58 | **57 (98%)** | 1 | 296 | 89 |
+| 模块 | 文件 | 行数 | Axiom | Admitted | Qed |
+|------|------|------|-------|----------|-----|
+| CompactEmbedding | 6 | 918 | 7 | 9 | 17 |
+| Gronwall | 1 | 349 | 0 | 0 | 6 |
+| Hilbert | 18 | 4034 | 39 | 28 | 45 |
+| Hopf | 1 | 465 | 8 | 5 | 3 |
+| Ladyzhenskaya | 15 | 4743 | 191 | 15 | 41 |
+| LinearAlgebra | 2 | 829 | 13 | 14 | 21 |
+| SphereClassification | 17 | 3751 | 54 | 10 | 67 |
+| **总计** | **60** | **15089** | **312** | **81** | **200** |
 
-**总代码量**: ~15000 行 / 58 个主文件 / 57 个 .vo / 1 个未编译 (`Gronwall/TestGronwallAxioms.v` 非主链)
+**Ladyzhenskaya 是 Axiom 最大集中区** (191 个 Axiom):
+- Uniqueness.v: 59 Axiom + 12 Admitted (等待 Sobolev 基础设施)
+- MoserIteration.v: 22 Axiom (Moser L²→L^∞ + Harnack)
+- SobolevSpace.v: 21 Axiom + 2 Admitted (Sobolev 嵌入 + 迹定理)
+- HolderSpace.v: 19 Axiom (Hölder 范数公理 — 抽象 Parameter 接口，无法直接 QED)
+- HopfBoundaryAnalysis.v: 14 Axiom (障碍函数 + Hopf 边界点引理)
+- ABPCalderonZygmund.v: 13 Axiom (ABP + Calderón-Zygmund 分解)
+- EllipticParabolicAnalysis.v: 11 Axiom (符号分析)
+- Derivatives.v: 11 Axiom + 1 Admitted (偏导数性质)
 
----
+**Hilbert 模块 Axiom 分布**:
+- QPlane.v: 21 Axiom (QArith 等式占位 — 可 QED 化)
+- CongruenceTheorem.v: 12 Axiom (Ray 构造公理 + Hilbert III 组公理)
+- ParallelTheorem.v: 3 Axiom (IV 组公理)
+- PascalTheorem.v: 2 Axiom (Pascal 公理)
+- Model_Consistency.v: 1 Axiom
+- OrderTheorem.v: 0 Axiom (所有 II 组公理已 QED)
+- IncidenceTheorem.v: 0 Axiom (所有 I 组公理已 QED)
 
-## 模块详情与已知问题
-
-### P0: 已修复的编译错误 (2026-06-30 / P0.1-P0.3)
-
-以下 16 个未编译文件已在 2026-06-30 ~07-01 修复完成:
-
-#### LinearAlgebra/SymmetricMatrix.v
-- **已修复**: 3 处 tactic 错误 (`Rplus_gt_ge_compat` 方向 / `eigenvector_qf` / `exists_nonzero_iff_norm_positive`)
-- `rewrite <- Rplus_0_r` / `rewrite Rplus_comm` / `rewrite <- Rsum_rm` + `apply Rsum_eq_ext`
-- Lemma `exists_nonzero` 用 Admitted (pre-existing induction 设计 bug)
-- **验证**: `coqc SymmetricMatrix.v` 通过, .vo 25 KB
-
-#### SphereClassification 整个目录 (17/17 编译)
-- **依赖链根** `Geodesic.v` 编译通过 (17 KB)
-- **ConnectionBianchi.v**: 修复 `abla_` → `∇_` Unicode 编码错误 + 4 个 lemma Admitted
-- **CheegerGromov.v**: 添加 Homeomorphism import + `ls_conv` lemma (pre-existing bug)
-- **HopfRinow.v**: 添加 `CompactEmbedding` -Q 映射
-- 共修复 12 个文件, 从 4/17 提升至 17/17
-
-#### Hilbert/Model_Consistency.v
-- **已修复**: `Rminus_eq_0` → `Rminus_diag_uniq` (3 处)
-- Theorem I_4 proof body 含设计级 bug → 替换为 Admitted
-- **验证**: 15/15 Hilbert 模块全量编译通过
+**Hilbert QED 率**: 45/88 = 51% (45 Qed / (45 Qed + 28 Admitted + 39 Axiom 不含公理本身)
+注: 23 个 Hilbert 原公理 (I~V) 作为 Record 字段不算自由 Axiom。
 
 ---
 
-### P1: Axiom 集中区 (用户偏好: QED > Axiom)
+## 工程问题
 
-| 文件 | Axiom | Admitted | 备注 |
-|------|-------|----------|------|
-| Ladyzhenskaya/Uniqueness.v | **59** | 12 | 主定理唯一性链 — 19/19 Axiom 标记 "honest Admitted, 等待 Sobolev 基础设施" |
-| Ladyzhenskaya/MoserIteration.v | 22 | 0 | Moser L²→L^∞ + Harnack 不等式 Axiom |
-| Ladyzhenskaya/SobolevSpace.v | 21 | 2 | Sobolev 嵌入 + 迹定理 Axiom |
-| Ladyzhenskaya/HolderSpace.v | 19 | 0 | Hölder 范数公理 (HIGH — 定义时直接证明) |
-| Ladyzhenskaya/HopfBoundaryAnalysis.v | 14 | 0 | Hopf 边界点引理 + 障碍函数 Axiom |
-| Ladyzhenskaya/ABPCalderonZygmund.v | 13 | 0 | ABP + Calderón-Zygmund 分解 Axiom |
-| Ladyzhenskaya/EllipticParabolicAnalysis.v | 11 | 0 | 符号分析 Axiom |
-| Ladyzhenskaya/Derivatives.v | 11 | 1 | 偏导数性质 Axiom |
+### 1. Hilbert 模块文件重命名未同步到 _CoqProject
+- `*Axioms.v` → `*Theorem.v` (Incidence/Order/Congruence/Parallel/Continuity)
+- 新文件 HilbertStructure.v, EuclideanTheorem.v, QPlane.v 未注册
+- **已修复** (2026-07-14)
 
-**HolderSpace.v 19 个 Axiom** — 用户偏好路径: AxiomAudit.md HIGH 表已列出 10 个可立即 `lra`/定义时直接证明。
+### 2. CongruenceTheorem.v theorem_35 SAS 证明有类型错误
+- III7 返回的角参数顺序与期望不符
+- **需修复** (P0)
 
-### P2: KillingHopf 状态良好 (用户已知模式验证)
+### 3. QPlane.v mkOrder 构造函数字段不匹配
+- OrderStructure Record 已更新，QPlane 未跟进
+- **需修复** (P0)
 
-`KillingHopf.v` 已经是 QED-via-decomposed-Axioms 的范本:
-- 3 个 (D) Axiom (cartan_exp_covering / covering_implies_diffeomorphism / exp_is_isometry with IsSimplyConnected)
-- killing_hopf_theorem / killing_hopf_positive_curvature / killing_hopf_zero_curvature / killing_hopf_negative_curvature / killing_hopf_positive_curvature_sphere 均 QED
+### 4. ContinuityTheorem.v 是空桩 (21 行)
+- 只有 Section 定义，无任何公理/定理
+- **需补全** (P1)
 
-但当前 **KillingHopf.v 因 Geodesic.vo 缺失未编译** — 需要先修复 P0 才能验证。
+### 5. 8 个孤立测试文件
+- `src/Hilbert/test2.v`, `test3.v`, `test4.v`, `test_final.v`, `test_implicit.v`, `test_thm14.v`, `test_wrapper.v`
+- `src/Gronwall/TestGronwallAxioms.v`
+- `src/.test_hnot.aux` + 根目录 `test_hnot.v`, `test_hnot.glob`
+- **可清理** (P3)
 
----
+### 6. 4 个编辑器锁文件 (.#)
+- `src/Hilbert/.#HilbertStructure.v`, `.#IncidenceAxioms.v`, `.#IncidenceTheorem.v`
+- `src/LinearAlgebra/.#ex.v`
+- **可清理** (P3)
 
-### P3: Hilbert 模块 (新增, plan.md 旧版无)
+### 7. src/Ladyzhenskaya/src/LadyzhenskayaDir/ 嵌套目录
+- 6 个 .aux 文件，无对应 .v 文件
+- **可清理** (P3)
 
-Hilbert 形式化 **Hilbert《几何基础》公理体系 I-V** + 各组独立性证明:
-
-| 子模块 | 内容 | 状态 |
-|--------|------|------|
-| IncidenceAxioms | 公理 I-1..I-8 | ✓ 编译 |
-| OrderAxioms | 公理 II | ✓ 编译 |
-| CongruenceAxioms | 公理 III | ✓ 编译 (50 admit 集中) |
-| ParallelAxioms | 公理 IV | ✓ 编译 |
-| ContinuityAxioms | 公理 V | ✓ 编译 |
-| DesarguesTheorem | 定理 29 (依赖 I, II, III+IV) | ✓ 编译 |
-| PascalTheorem | 定理 38 (依赖 I, II, III+IV) | ✓ 编译 |
-| V1_Independence | V₁ 独立性 (Legendre 模型) | ✓ 编译 |
-| V2_Independence | V₂ 独立性 (弱阿基米德模型) | ✓ 编译 |
-| III5_Independence | III-5 独立性 (球面几何) | ✓ 编译 |
-| IV_Independence | IV 独立性 (球面几何) | ✓ 编译 |
-| HilbertFoundations | 整合入口 | ✓ 编译 |
-|| Common | 共享定义 | ✓ 编译 |
-|| Model_Consistency | Tier-5 相容性 (ℝ³ 模型) | ✓ 已修复 (P0.3) |
-|| Types | 基本类型 | ✓ 编译 |
-
-**Hilbert 整体编译率 15/15 (100%)**, 但 `CongruenceAxioms.v` 50 个 admit 集中在内 (诚实 admit, 等待 Hilbert 后续工作补完)。
-
----
-
-### P4: README 已更新 (P5 完成, 2026-07-01)
-
-README.md 已同步为当前真实状态:
-- SphereClassification: 17/17 ✓
-- Hilbert: 15/15 ✓
-- LinearAlgebra: 2/3 ✓
-- Rocq 9.1.1 (非 8.20)
-- 编译总览表 57/57 ✓
+### 8. From Coq → From Stdlib 弃用警告
+- 约 50+ 处 `Require Import Reals/Lra/Classical` 等未加 `From Stdlib` 前缀
+- Rocq 9.x 下会触发 deprecated-missing-stdlib 警告
+- **低优先** (P4)
 
 ---
 
@@ -135,27 +170,26 @@ README.md 已同步为当前真实状态:
 
 | 优先级 | 任务 | 工作量 | 影响 | 状态 |
 |--------|------|--------|------|------|
-| **P0.1** | 修复 `LinearAlgebra/SymmetricMatrix.v` 第338行 Rsum unification | 15 分钟 | 解阻 SphereClassification | ✅ 完成 |
-| **P0.2** | 修复 `SphereClassification/Geodesic.v` (依赖链根) | 1-2 小时 | 解阻 13 个文件 | ✅ 完成 |
-| **P0.3** | 修复 `Hilbert/Model_Consistency.v` 第326行 `Rminus_eq_0` → `Rminus_diag` | 5 分钟 | 完结 Hilbert (14/15 → 15/15) | ✅ 完成 |
-| **P1** | 修复后增量重编译整个项目, 统计新编译率 | 15 分钟 | 验证修复 | ✅ 完成 (57/57) |
-| **P5** | 更新 README.md, 反映真实状态 | 30 分钟 | 文档同步 | ✅ 完成 |
-| **P6** | 清理 test_*.v / tmp_test.v (15 个测试文件) | 15 分钟 | 工程整洁 | ✅ 完成 |
-| **P7** | Rn 重构: Vector.t → Fin.t -> R 双类型并存 | 2 小时 | 类型基础设施 | ✅ 完成 |
-| **P2** | HolderSpace.v 10 Axiom → QED | ~1 小时 | 架构性 Axiom | ❌ 不可行 — 10 个 Axiom 全部依赖抽象 `Parameter` (parabolic_distance/metric/phs_norm)，无具体定义可证明 |
-| **P3** | Hopf.v 主定理 `parabolic_strong_maximum_principle` Admitted → QED | 2-3 小时 | 与 README 一致 | ✅ 完成 — 添加 2 线性性 Axiom, 修复 `schauder_global_uniqueness` 和 `weak_comparison_principle` |
-| **P4** | Uniqueness.v 59 Axiom + 32 Admitted → AxiomBridge 分解 | 4+ 小时 | Ladyzhenskaya 主定理最终 QED | ⏳ 59 个 Deep Axiom (Hopf/Harnack/De Giorgi-Nash/Krylov-Safonov/最大原理) — 需大量前置形式化工作 |
+| **P0.1** | 修复 _CoqProject 文件名映射 | 5 分钟 | 解阻 build | ✅ 已完成 |
+| **P0.2** | 修复 CongruenceTheorem.v theorem_35 类型错误 | 30-60 分钟 | 让 theorem_35 QED + 解阻 HilbertFoundations | ⏳ 待修 |
+| **P0.3** | 修复 QPlane.v mkOrder 字段不匹配 | 15 分钟 | 让 Q² 模型实例化编译 | ⏳ 待修 |
+| **P0.4** | 验证 HilbertFoundations.v 编译通过 | 5 分钟 | 验证 P0.2+P0.3 | ⏳ 待修 |
+| **P1** | ContinuityTheorem.v 补全 (V 组公理 + theorem_9) | 1-2 小时 | Hilbert V 组完整化 | ⏳ 待做 |
+| **P2** | OrderTheorem 5 Admitted + Congruence 24 Admitted QED 化 | 10+ 小时 | Hilbert QED 率 51%→80%+ | ⏳ 长期 |
+| **P3** | 清理 8 个测试文件 + 4 个锁文件 + 嵌套目录 | 15 分钟 | 工程整洁 | ⏳ 待做 |
+| **P4** | From Coq → From Stdlib 警告消除 (全项目) | 2 小时 | 编译清洁 | ⏳ 待做 |
+| **P5** | Ladyzhenskaya 191 Axiom 降低策略 | 长期 | Ladyzhenskaya 主定理 QED | ⏳ 需前置 Sobolev 基础设施 |
+| **P6** | 更新 README.md 反映真实状态 | 30 分钟 | 文档同步 | ⏳ 待做 |
 
 ---
 
-## 用户偏好 (来自记忆, 本项目相关)
+## 用户偏好 (来自记忆)
 
-- **QED > Axiom**: 每个 Axiom 尽可能降级为 QED 定理 (能证明的不留 Axiom)
-- **KillingHopf 模式**: 1 monolithic Axiom → 分解为 3+ 较小 (D) Axiom + 符号推理的 QED Lemma
-- **IsSimplyConnected 必备**: 依赖此条件的定理 (如 `exp_is_isometry`) 必须显式包含它
-- **诚实 Admitted 标记**: "honest Admitted, 等待基础设施" 模式 (Uniqueness.v 典范)
-- **中文一行命令**: 直接执行 + smoke test, 不做新 audit
-- **4-tier scope decomposition**: skeleton → layered → subsystems → full, 用户必选 skeleton
+- **QED > Axiom**: 每个 Axiom 尽可能降级为 QED 定理
+- **诚实 Admitted 标记**: "honest Admitted, 等待基础设施" 模式
+- **中文一行命令**: 直接执行 + smoke test
+- **KillingHopf 模式**: monolithic Axiom → 分解为 3+ (D) Axiom + QED Lemma
+- **4-tier scope decomposition**: skeleton → layered → subsystems → full
 
 ---
 
@@ -163,157 +197,9 @@ README.md 已同步为当前真实状态:
 
 基于 Ladyzhenskaya 1968 + Hilbert《几何基础》(1899) + Hamilton 1982:
 
-1. **Ladyzhenskaya 主链** (核心): HolderSpace → Schauder → Galerkin → LadyzhenskayaMain (存在性) + Uniqueness (唯一性) + Hopf (强极大值)
-2. **SphereClassification 链** (Killing-Hopf 骨架): Topology → Manifold → Geodesic → HopfRinow → KillingHopf → SphereTheorem
-3. **CompactEmbedding 链** (Arzelà-Ascoli 紧性): MetricCompact → UniformBounded → Equicontinuity → ArzelaAscoli → CompactEmbedding
-4. **Hilbert 几何基础** (新增, Tier-5): I-V 公理 + Desargues/Pascal 定理 + V₁/V₂/III₅/IV 独立性 + ℝ³ 模型相容性
+1. **Ladyzhenskaya 主链** (核心): HolderSpace → Schauder → Galerkin → LadyzhenskayaMain + Uniqueness + Hopf
+2. **SphereClassification 链** (Killing-Hopf 骨架): Topology → Manifold → Geodesic → HopfRinow → KillingHopf → SphereTheorem (17/17 ✓)
+3. **CompactEmbedding 链** (Arzelà-Ascoli 紧性): MetricCompact → UniformBounded → Equicontinuity → ArzelaAscoli → CompactEmbedding (6/6 ✓)
+4. **Hilbert 几何基础**: I-V 公理 + Desargues/Pascal 定理 + V₁/V₂/III₅/IV 独立性 + ℝ³ 模型相容性 (15/18 ⚠)
 
-**当前最佳完成度** (2026-07-01): 全量 57/57 = **100% 编译通过**. P0/P1/P3/P5/P6/P7 全部完成. P2 不可行 (抽象接口), P4 需大量前置工作 (59 Deep Axiom).
-
----
-
-## P7. Rn 重构: `Vector.t R n_dim` → `Fin.t n_dim -> R`
-
-**状态**: ✅ 完成 (2026-07-01)
-
-**交付物**:
-- `Rn_new : Type := Vectors.Fin.t n_dim -> R` (MetricCompact.v:51)
-- `v2f : Rn -> Rn_new` (Vector → Fun 转换)
-- `f2v : (Fin.t n -> R) -> Vector.t R n` (Fun → Vector 转换)
-- `Rn_distance_fun : Rn_new -> Rn_new -> R` (Fun 版本度量)
-- `Rn_origin_new : Rn_new := fun _ => 0%R` (CheegerGromov.v:238)
-- `ls_conv` lemma 修复 (pre-existing bug, MetricCompact.v:38-44)
-
-**策略**: 双类型并存 (Rn = Vector.t, Rn_new = Fin.t -> R)，通过 v2f/f2v 桥接。避免全量重写 15 处 Vector ops 的 4-6 小时工作。
-
-**全量验证**: `make clean && make -f Interface` 57/57 .vo 编译通过。
-
-### 当前定义 (src/CompactEmbedding/MetricCompact.v:62)
-
-```coq
-Parameter n_dim : nat.
-Definition Rn : Type := t R n_dim.
-```
-
-`Vector.t A n` 是依赖对类型 — 长度 `n` 编码在类型里 (`nil : t A 0`, `cons : A -> t A n -> t A (S n)`)，保证良构性。
-
-### 目标定义
-
-```coq
-Definition Rn : Type := Fin.t n_dim -> R.
-```
-
-### 影响范围 (audit 结果, 2026-06-30)
-
-| 文件 | Vector 直接使用 | Rn 间接使用 | 评估 |
-|------|----------------|-------------|------|
-| `src/CompactEmbedding/MetricCompact.v` | 13 处 | 15 处 (定义点) | 重写核心 |
-| `src/SphereClassification/CheegerGromov.v` | 5 处 + `Rn_zero` Fixpoint | 6 处 | 使用 `Rn`，`Rn_origin` 改 `fun _ => 0` |
-| `src/SphereClassification/Christoffel.v` | 0 处直接 | `[[a1 a2] a3]` 三元组 destruct 模式 1 处 | 函数化不影响 |
-| `src/SphereClassification/ConnectionBianchi.v` | 0 处 | 同上 `(∇_X _)` 等 | 不影响 |
-| 其他 16 个文件 | 0 | 0 (通过 `tangent_space R3` 等独立类型) | 不影响 |
-
-### Migration 步骤
-
-1. **Phase 1: Audit + 添加新定义** (3 文件)
-   - `src/CompactEmbedding/MetricCompact.v`: 加 alias `Definition Rn_new : Type := Fin.t n_dim -> R.`；保留旧 `Rn` 暂存
-   - 验证 `Rn_new` 通过 `Require Import Fin` 编译
-
-2. **Phase 2: 在 MetricCompact 重写所有 vector ops** (~15 处 hd/tl)
-   - `Vector.hd x` → `x 0%fin` (注意 `%fin` notation)
-   - `Vector.tl x` → `fun i => x (Fin.FS i)` (依赖 Fin.shift)
-   - `Vector.nil R` → `fun _ => 0%R`
-   - `Vector.cons R a n v` → `fun i => if Fin.eq_dec i 0 then a else v (Fin.FS_inv i)`
-   - `Rn_distance` 重写：`Fixpoint` 改为 `Fixpoint vr_distance {n : nat} (x y : Fin.t n -> R) : R`，递归 base case 也需 Fin
-
-3. **Phase 3: CheegerGromov.v 适配**
-   - `Rn_zero` Fixpoint 删除，改为 `Definition Rn_origin : Rn := fun _ => 0.`
-   - `as [[a1 a2] a3]` destruct 模式保留（因为 `curvature`/`vector_field` 是 `R3` tuple 类型，不是 `Rn`）
-
-4. **Phase 4: 切换 `Rn` 定义 + 删除旧代码**
-   - `Definition Rn : Type := Fin.t n_dim -> R.`
-   - 删除所有 `Vector` import 和辅助函数
-   - 验证 17/17 文件编译
-
-5. **Phase 5: 验证 RComplete 与下游一致**
-   - `Make _CoqProject clean && make -f Interface` 全量重编译验证
-   - 检查所有下游 tactic chain（funext / functional_extensionality 优先于 destruct）
-
-### 优点 vs 缺点
-
-**优点**:
-- 不需要 `Require Import Vector` / `VectorSpec` (stdlib warning 减少)
-- 函数式写法更"lean-like"，统一风格
-- 减少 `destruct as [[a b] c]` 三元组模式（视觉清爽）
-
-**缺点**:
-- 每个 vector 等式证明需要 `extensionality; intro i; ...` (vs `destruct ... as [[a b] c]; ring`)
-- 必须加载 `Require Import Fin` (新依赖)
-- 重写 2 个文件 18 处调用 (机械但耗时)
-- `Ring` tactic 与函数定义不友好，可能需要更多 `rewrite` lemma
-
-### 风险评估
-
-- **核心风险**: CheegerGromov 已完成 Admitted（不再依赖 vector 特有功能），迁移后 tactic 链变化需要新一轮 proof 推演
-- **时间成本**: 4-6 小时 (3 Phase) 实施 + 1 小时验证
-- **回滚难度**: 低（旧 `Rn = Vector.t` 仍可作为 alias 短期保留）
-
-### 决策点
-
-- **必须执行吗**: 否。当前 `Rn = Vector.t R n_dim` 不影响 SphereClassification/Hilbert/Ladyzhenskaya 主链证明
-- **建议时机**: Ladyzhenskaya 主链完成后，作为 "stylistic refactoring" 单独一项
-- **建议方案**: 走 Phase 1→5 全量路径（不用 alias 并存），保留 commit history 便于回滚
-
-### 后续跟踪
-
-- 新增 todo 条目：`P7.1-Rn-Fn-t-migration` 待 user 决策执行时机
-- 不阻塞当前 P5 (README 更新) / P6 (test 文件清理) — 已完成
-
-
----
-
-## Tier-5 重大进展 (2026-07-01): Hilbert 公理 Record 重构
-
-### 完成的工程
-
-1. **HilbertStructure.v** (211 行) — 5 个独立 Record 抽象:
-   - `IncidenceStructure` (I-1 ~ I-8)
-   - `OrderStructure` (II-1, II-2, II-3, II-4, Pasch)
-   - `CongruenceStructure` (III-1 ~ III-6 + Ray)
-   - `ArchimedesStructure` (V-1, Segment)
-   - `DedekindStructure` (V-2, DedekindCut)
-   - 组合 Record: `WeakHilbertPlane` (I+II+III+V₁) / `StrongHilbertPlane` (I+II+III+V₁+V₂)
-
-2. **QPlane.v** (410 行, 编译通过) — Q² 作为 5 个 Record 的实例:
-   - `Q2_Incidence : IncidenceStructure` (4 Axiom: I-2, I-7, I-8 来自 unit 退化)
-   - `Q2_Order : OrderStructure` (5 Axiom: II-1 ~ II-4, Pasch)
-   - `Q2_Congruence : CongruenceStructure` (7 Axiom: III-1 ~ III-6, QCongAng)
-   - `Q2_Archimedes : ArchimedesStructure` (1 Axiom: V-1)
-   - `Q2_Weak : WeakHilbertPlane` (0 Axiom, 组合 4 个)
-
-3. **V-2 独立性证明**:
-   - `Q_not_dedekind` Axiom: Q² 不满足 V-2 (Dedekind 完备性)
-   - 反例: S = {(x,y) | x²+y² < 2} 无分界点 (√2 无理)
-
-### Axiom 统计 (QPlane.v)
-
-| Record | Axiom 数量 | 原因 |
-|--------|-----------|------|
-| Q2_Incidence | 4 | unit 退化 (I-2, I-7, I-8) |
-| Q2_Order | 5 | Qeq 算术展开 (II-1 ~ II-4, Pasch) |
-| Q2_Congruence | 7 | Q² 上合同唯一性 (III-1 ~ III-6) |
-| Q2_Archimedes | 1 | V-1 在 Q 上成立但需 Z 推理 |
-| **总计** | **17** | (Tier-6 改进: 改用 R³ 可降至 0) |
-
-### 文件位置
-
-```
-/Users/luoxing/coq/py/src/Hilbert/HilbertStructure.v  (Record 定义, 211 行)
-/Users/luoxing/coq/py/src/Hilbert/QPlane.v             (Q² 实例, 410 行)
-```
-
-### 下一步工作 (Tier-6)
-
-- [ ] R³ 模型: 改用 R³ 解决 unit 退化, 减少 4 个 Axiom (I-2, I-6b, I-7, I-8)
-- [ ] Qeq 算术展开: 显式 Qmult_integral 证明, 减少 12 个 Axiom
-- [ ] 弱化版 Hilbert 平面定理: 在 WeakHilbertPlane 上证明 Desargues/Pascal
+**当前完成度 (2026-07-14)**: 全量 57/60 = **95% 编译通过**。3 个 Hilbert 文件待修复 (CongruenceTheorem theorem_35, QPlane mkOrder, HilbertFoundations 级联)。

@@ -9,7 +9,7 @@
 **Statistics:**
 - **Parameters:** 9 geometric primitives (Common.v)
 - **Records:** 8 (Types.v: Ray, Angle; HilbertStructure.v: 6 core + 2 composite)
-- **Axioms:** 25 (I:8 + II:4 + Pasch + III:6 + IV:3 + V:2 + line_through:2)
+|- **Axioms:** 25 (I:8 + II:4 + Pasch + III:7 + IV:3 + V:2 + line_through:2)
 - **Theorems:** 36 (I:5 + II:3 + III:0 + IV:0 + V:0 + Desargues:2 + Pascal:2 + IV_Indep:8 + III5:3 + V1:2 + V2:2 + Model:5 + QPlane:4)
 - **Lemmas:** 35+ (supporting results across all files)
 - **Compilation:** 15/15 PASS
@@ -146,7 +146,8 @@ HilbertFoundations.v (Re-export hub)
 | 162 | `III3` | Axiom III_3 (segment addition) |
 | 163 | `III4` | Axiom III_4 (congruence symmetry) |
 | 164 | `III5` | Axiom III_5 (congruence reflexivity) |
-| 165 | `III6` | Axiom III_6 (SAS) |
+|| 165 | `III6` | Axiom III_6 (angle congruence symmetry) |
+|| 166 | `III7` | Axiom III_7 (SAS triangle congruence) |
 
 **ArchimedesStructure (V1):**
 

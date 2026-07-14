@@ -39,6 +39,7 @@
 (*    DesarguesTheorem    德沙格定理 + 逆定理 (admit 占位)                       *)
 (*    PascalTheorem       巴斯噶定理 + 退化形式 (admit 占位)                     *)
 (*    IV_Independence     平行公理独立性证明 (球面模型, admit 占位)               *)
+(*    EuclideanTheorem    4 个欧氏定理 (平行判定/性质 + 三角形/多边形内角和, all admit) *)
 (* ============================================================================ *)
 
 From Hilbert Require Export Common.
@@ -53,6 +54,7 @@ From Hilbert Require Export DesarguesTheorem.
 (* Tier-5 重构遗留 bug). 暂时不 Export. 修复后补回.                            *)
 (* From Hilbert Require Export PascalTheorem. *)
 From Hilbert Require Export IV_Independence.
+From Hilbert Require Export EuclideanTheorem.
 
 (* ============================================================================ *)
 (*  Tier-5 统计:                                                                *)

@@ -14,19 +14,22 @@ src/Gronwall/Gronwall.v
 -Q src/Hilbert Hilbert
 src/Hilbert/Common.v
 src/Hilbert/Types.v
-src/Hilbert/IncidenceAxioms.v
-src/Hilbert/OrderAxioms.v
-src/Hilbert/CongruenceAxioms.v
-src/Hilbert/ParallelAxioms.v
-src/Hilbert/ContinuityAxioms.v
-src/Hilbert/HilbertFoundations.v
+src/Hilbert/HilbertStructure.v
+src/Hilbert/IncidenceTheorem.v
+src/Hilbert/OrderTheorem.v
+src/Hilbert/CongruenceTheorem.v
+src/Hilbert/ParallelTheorem.v
+src/Hilbert/ContinuityTheorem.v
 src/Hilbert/DesarguesTheorem.v
 src/Hilbert/PascalTheorem.v
+src/Hilbert/EuclideanTheorem.v
+src/Hilbert/QPlane.v
 src/Hilbert/IV_Independence.v
 src/Hilbert/V1_Independence.v
 src/Hilbert/V2_Independence.v
 src/Hilbert/III5_Independence.v
 src/Hilbert/Model_Consistency.v
+src/Hilbert/HilbertFoundations.v
 
 -Q src/Hopf Hopf
 src/Hopf/Hopf.v

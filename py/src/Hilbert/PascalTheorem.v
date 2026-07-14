@@ -15,6 +15,10 @@ Section Pascal.
   Variables (I : IncidenceStructure) (O : OrderStructure I)
             (C : CongruenceStructure I O).
 
+  Let Bet' A B C := Bet I O A B C.
+  Let CongSeg' A B X Y := CongSeg I O C A B X Y.
+  Let CongAng' A B X Y Z W := CongAng I O C A B X Y Z W.
+
   (* ========================================================================== *)
   (*  1. 基本定义                                                              *)
   (* ========================================================================== *)
@@ -68,7 +72,7 @@ Section Pascal.
 
   (* 点在圆上: 到圆心的距离等于半径 *)
   Definition OnCircle (X : IncPoint I) (c : Circle) : Prop :=
-    CongSeg I O C (circle_center c) X (circle_center c) (circle_ref c).
+    CongSeg' (circle_center c) X (circle_center c) (circle_ref c).
 
   (* 弦: 圆上两点连成的线段 *)
   Definition Chord (A B : IncPoint I) (c : Circle) : Prop :=

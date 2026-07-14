@@ -23,13 +23,11 @@
 (*                                                                            *)
 (*  Notation 注意: Rocq 9.1 在 HilbertStructure context 下不能解析 `A -- B` *)
 (*    infix notation (parser 把 `A -- B /\ ...` 解析为 partial application).  *)
-(*    因此本文用 `Bet I O A B` 全名调用, 不用 notation 缩写.                  *)
+(*    因此本文用 `Bet' A B` 全名调用, 不用 notation 缩写.                  *)
 (* ============================================================================ *)
 
-From Stdlib Require Import Classical Sorting.Permutation.
+From Stdlib Require Import Classical Sorting.Permutation Lists.List Lia.
 From Hilbert Require Import HilbertStructure.
-
-Unset Implicit Arguments.  (* 防止 Rocq 9.1 把 Bet I O A B 解析成 partial application *)
 
 (* ============================================================================ *)
 (*  Section: 在 (I : IncidenceStructure) (O : OrderStructure I) 上下文内        *)
@@ -38,31 +36,33 @@ Section OrderTheorem.
 
   Variables (I : IncidenceStructure) (O : OrderStructure I).
 
+  Let Bet' A B C := Bet I O A B C.
+
   (* ========================================================================== *)
   (*  Bet_* 基本引理 (Hilbert II-1 ~ II-4 直接推论)                            *)
   (* ========================================================================== *)
 
-  Lemma Bet_neq_lemma : forall (A B C : IncPoint I), Bet I O A B C -> A <> B.
+  Lemma Bet_neq_lemma : forall (A B C : IncPoint I), Bet' A B C -> A <> B.
   Proof.
     intros A B C H. exact (proj1 (@Bet_nondeg I O A B C H)).
   Qed.
 
-  Lemma Bet_neq_prime_lemma : forall (A B C : IncPoint I), Bet I O A B C -> B <> C.
+  Lemma Bet_neq_prime_lemma : forall (A B C : IncPoint I), Bet' A B C -> B <> C.
   Proof.
     intros A B C H. exact (proj1 (proj2 (@Bet_nondeg I O A B C H))).
   Qed.
 
-  Lemma Bet_neq_ne_lemma : forall (A B C : IncPoint I), Bet I O A B C -> A <> C.
+  Lemma Bet_neq_ne_lemma : forall (A B C : IncPoint I), Bet' A B C -> A <> C.
   Proof.
     intros A B C H. exact (proj2 (proj2 (@Bet_nondeg I O A B C H))).
   Qed.
 
-  Lemma Bet_sym_lemma : forall (A B C : IncPoint I), Bet I O A B C -> Bet I O C B A.
+  Lemma Bet_sym_lemma : forall (A B C : IncPoint I), Bet' A B C -> Bet' C B A.
   Proof.
     intros A B C H. exact (Bet_sym I O A B C H).
   Qed.
 
-  Lemma not_Bet_self_lemma : forall (A B : IncPoint I), ~ Bet I O A B A.
+  Lemma not_Bet_self_lemma : forall (A B : IncPoint I), ~ Bet' A B A.
   Proof.
     intros A B H.
     destruct (@Bet_nondeg I O A B A H) as [_ [_ Hcontra]].
@@ -70,19 +70,19 @@ Section OrderTheorem.
   Qed.
 
   Lemma Bet_unique : forall (A B C : IncPoint I),
-    Bet I O A B C -> Bet I O A C B -> B = C.
+    Bet' A B C -> Bet' A C B -> B = C.
   Proof.
     intros A B C HBAC HBAC'.
     destruct (@Bet_nondeg I O A B C HBAC) as [HAB [HBC _]].
-    assert (HBCA : Bet I O B C A).
+    assert (HBCA : Bet' B C A).
     { apply Bet_sym. exact HBAC'. }
-    assert (HBAB : Bet I O A B A).
+    assert (HBAB : Bet' A B A).
     { apply (@Bet_trans I O A B C A HBAC HBCA HBC). }
     exfalso. exact (not_Bet_self_lemma _ _ HBAB).
   Qed.
 
   Lemma Bet_trans_lemma : forall (A B C D : IncPoint I),
-    Bet I O A B C -> Bet I O B C D -> Bet I O A B D.
+    Bet' A B C -> Bet' B C D -> Bet' A B D.
   Proof.
     intros A B C D HABC HBCD.
     destruct (@Bet_nondeg I O A B C HABC) as [_ [HBC _]].
@@ -96,7 +96,7 @@ Section OrderTheorem.
   (* ========================================================================== *)
   Theorem theorem_3 : forall (A C : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I C l -> A <> C ->
-    exists B : IncPoint I, Incid I B l /\ Bet I O A B C.
+    exists B : IncPoint I, Incid I B l /\ Bet' A B C.
   Proof.
     intros A C l HA HC Hneq.
     exact ((II_3 I O) A C l (conj HA (conj HC Hneq))).
@@ -112,7 +112,7 @@ Section OrderTheorem.
   Lemma three_collinear_one_between : forall (A B C : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> Incid I C l ->
     A <> B -> B <> C -> A <> C ->
-    (Bet I O A B C) \/ (Bet I O B C A) \/ (Bet I O C A B).
+    (Bet' A B C) \/ (Bet' B C A) \/ (Bet' C A B).
   Proof.
     intros A B C l HA HB HC HAB HBC HAC.
     (* 严格证明 admit (依赖 Pasch/II-3 Archimedes) *)
@@ -129,9 +129,9 @@ Section OrderTheorem.
   Theorem theorem_4 : forall (A B C : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> Incid I C l ->
     A <> B -> B <> C -> A <> C ->
-    (Bet I O A B C /\ ~ Bet I O B C A /\ ~ Bet I O C A B) \/
-    (Bet I O B C A /\ ~ Bet I O A B C /\ ~ Bet I O C A B) \/
-    (Bet I O C A B /\ ~ Bet I O A B C /\ ~ Bet I O B C A).
+    (Bet' A B C /\ ~ Bet' B C A /\ ~ Bet' C A B) \/
+    (Bet' B C A /\ ~ Bet' A B C /\ ~ Bet' C A B) \/
+    (Bet' C A B /\ ~ Bet' A B C /\ ~ Bet' B C A).
   Proof.
     intros A B C l HA HB HC HAB HBC HAC.
     (* 用 three_collinear_one_between 得存在性; 再证唯一性 *)
@@ -156,8 +156,8 @@ Section OrderTheorem.
     P1 <> P2 -> P1 <> P3 -> P1 <> P4 -> P2 <> P3 -> P2 <> P4 -> P3 <> P4 ->
     exists (A B C D : IncPoint I),
       Permutation (A :: B :: C :: D :: nil) (P1 :: P2 :: P3 :: P4 :: nil) /\
-      (Bet I O A B C) /\ (Bet I O A B D) /\
-      (Bet I O A C D) /\ (Bet I O B C D).
+      (Bet' A B C) /\ (Bet' A B D) /\
+      (Bet' A C D) /\ (Bet' B C D).
 
 Proof.
     intros P1 P2 P3 P4 l HP1l HP2l HP3l HP4l
@@ -218,6 +218,34 @@ Proof.
     - { admit. }
   Admitted.
 
+  (* ========================================================================== *)
+  (*  Theorem 6 (Hilbert 1959 II-5): 直线上任意有限个点的拓扑排序                *)
+  (*                                                                            *)
+  (*  Hilbert 表述: 一直线上的任意有限个点, 总可以标记为 A1, A2, …, An,        *)
+  (*    使得对于任意的下标 i, k, j, 如果 i < k < j, 那么 Ak 必定在 Ai 和 Aj  *)
+  (*    之间。                                                                  *)
+  (*                                                                            *)
+  (*  证明: 这是 Theorem 5 对任意有限点集的推广. 基例 (n ≤ 3) 由                *)
+  (*    three_collinear_one_between 保证; 归纳步由 Theorem 5 (排序四个点)      *)
+  (*    递归构造. 当前 prove admit。                                           *)
+  (* ========================================================================== *)
+  Theorem theorem_6 : forall (points : list (IncPoint I)) (l : IncLine I),
+    (forall p, In p points -> Incid I p l) ->
+    NoDup points ->
+    exists (ordered : list (IncPoint I)),
+    Permutation ordered points /\
+    forall (i j k : nat),
+      i < k -> k < j -> j < length ordered ->
+      exists (A C B : IncPoint I),
+        nth_error ordered i = Some A /\
+        nth_error ordered k = Some C /\
+        nth_error ordered j = Some B /\
+        Bet' A C B.
+  Proof.
+    admit.
+  Admitted.
+
+
 (*  Theorem 7 (Hilbert 1959 II-6): 直线上任意两点之间有无穷多个点                  *)
   (*                                                                            *)
   (*  Hilbert 表述: 给定 A,B 共线且 A < B (即 Bet A C B), 存在 D 在 A,C 之间  *)
@@ -228,8 +256,8 @@ Proof.
   (* ========================================================================== *)
   Theorem theorem_7 : forall (A B C : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> Incid I C l ->
-    A <> B -> Bet I O A C B ->
-    exists (D : IncPoint I), Incid I D l /\ Bet I O A D C /\ D <> A /\ D <> C.
+    A <> B -> Bet' A C B ->
+    exists (D : IncPoint I), Incid I D l /\ Bet' A D C /\ D <> A /\ D <> C.
   Proof.
     intros A B C l HA HB HC Hneq HACB.
     (* 由 Bet_nondeg: Bet A C B → A ≠ C *)
@@ -257,7 +285,7 @@ Proof.
   (* ========================================================================== *)
   Theorem theorem_extension_B : forall (A B : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> A <> B ->
-    exists C : IncPoint I, Incid I C l /\ Bet I O A B C.
+    exists C : IncPoint I, Incid I C l /\ Bet' A B C.
   Proof.
     intros A B l HA HB Hneq.
     exact ((II_1 I O) A B l (conj HA (conj HB Hneq))).
@@ -265,7 +293,7 @@ Proof.
 
   Theorem theorem_extension_A : forall (A B : IncPoint I) (l : IncLine I),
     Incid I A l -> Incid I B l -> A <> B ->
-    exists D : IncPoint I, Incid I D l /\ Bet I O D A B.
+    exists D : IncPoint I, Incid I D l /\ Bet' D A B.
   Proof.
     intros A B l HA HB Hneq.
     exact ((II_2 I O) A B l (conj HA (conj HB Hneq))).
@@ -316,5 +344,5 @@ Admitted.
 (*    - theorem_8_unavailable (需 SameSide 抽象, Tier-6)                       *)
 (*                                                                            *)
 (*  notation 限制: Rocq 9.1 在 HilbertStructure context 下不能解析 `A -- B`  *)
-(*    infix notation. 全文用 `Bet I O A B` 全名调用.                          *)
+(*    infix notation. 全文用 `Bet' A B` 全名调用.                          *)
 (* ============================================================================ *)

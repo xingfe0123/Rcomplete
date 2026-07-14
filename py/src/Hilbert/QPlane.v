@@ -231,7 +231,13 @@ Arguments QBet : simpl never.
 
 Axiom Q_bet_on_line : forall (A B : QPoint) (l : QLine),
   QIncid A l /\ QIncid B l /\ A <> B ->
-  exists R : QPoint, QIncid R l /\ QBet A R B.
+  exists R : QPoint, QIncid R l /\ QBet A B R.
+Axiom Q_bet_on_line_end : forall (A B : QPoint) (l : QLine),
+  QIncid A l /\ QIncid B l /\ A <> B ->
+  exists D : QPoint, QIncid D l /\ QBet D A B.
+Axiom Q_bet_between : forall (A B : QPoint) (l : QLine),
+  QIncid A l /\ QIncid B l /\ A <> B ->
+  exists C : QPoint, QIncid C l /\ QBet A C B.
 Axiom Q_bet_sym : forall A B C : QPoint, QBet A B C -> QBet C B A.
 Axiom Q_bet_nondeg : forall A B C : QPoint, QBet A B C -> A <> B /\ B <> C /\ A <> C.
 Axiom Q_bet_trans : forall A B C D : QPoint,
@@ -239,21 +245,6 @@ Axiom Q_bet_trans : forall A B C D : QPoint,
 Axiom Q_pasch : forall A B C P Q : QPoint,
   QBet A P C -> QBet B Q C -> P <> C -> Q <> C ->
   exists X : QPoint, QBet P X Q /\ (QBet A X B \/ QBet B X A).
-
-(* Q² 顺序结构 *)
-Definition Q2_Order : OrderStructure Q2_Incidence.
-Proof.
-  refine (mkOrder Q2_Incidence (fun A B C => QBet A B C) _ _ _ _ _).
-  - exact Q_bet_on_line.
-  - exact Q_bet_sym.
-  - exact Q_bet_nondeg.
-  - exact Q_bet_trans.
-  - exact Q_pasch.
-Defined.
-
-(* ============================================================================ *)
-(*  7. Q² 合同 (Congruence)                                                      *)
-(* ============================================================================ *)
 
 (* 射线: 起点 O 在直线 l 上, 方向由 (l, O, "正方向") 决定 *)
 Record QRay : Type := mkQRay {
@@ -266,6 +257,22 @@ Definition QOnRay (P : QPoint) (r : QRay) : Prop :=
   QIncid P (qray_line r).
 
 Axiom Q_ray_valid : forall r : QRay, QIncid (qray_origin r) (qray_line r).
+
+(* Q² 顺序结构 *)
+Definition Q2_Order : OrderStructure Q2_Incidence :=
+  let g := Q2_Incidence.(Incid) in
+  mkOrder Q2_Incidence
+    (fun A B C => QBet A B C)
+    Q_bet_on_line Q_bet_on_line_end Q_bet_between
+    Q_bet_sym Q_bet_nondeg Q_bet_trans Q_pasch
+    (fun A B l => forall X, g X l -> ~ QBet A X B)
+    QRay (fun r => qray_origin r) (fun r => qray_line r)
+    (fun r : QRay => g (qray_origin r) (qray_line r))
+    QOnRay.
+
+(* ============================================================================ *)
+(*  7. Q² 合同 (Congruence)                                                      *)
+(* ============================================================================ *)
 
 (* 距离平方 *)
 Definition QDistSq (A B : QPoint) : Q :=
