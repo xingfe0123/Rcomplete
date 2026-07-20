@@ -27,7 +27,7 @@
 (*  设计: 给出 Q² 的所有公理证明, 显式构造每个 Record 字段                       *)
 (* ============================================================================ *)
 
-From Stdlib Require Import QArith.
+From Stdlib Require Import QArith Psatz.
 From Stdlib Require Import Classical QOrderedType.
 From Hilbert Require Import HilbertStructure.
 
@@ -68,23 +68,53 @@ Definition QIncid (P : QPoint) (l : QLine) : Prop :=
 Definition QLine_of (P Q : QPoint) : QLine :=
   mkQLine P (fst Q - fst P, snd Q - snd P).
 
-(* 辅助: Q 上的基本算术等式 (用于 Qeq 证明) *)
-Lemma Qmult_0_l' (x : Q) : 0 * x == 0. Proof. apply Qmult_0_l. Qed.
-Lemma Qmult_1_l' (x : Q) : 1 * x == x. Proof. apply Qmult_1_l. Qed.
-Lemma Qplus_0_l' (x : Q) : 0 + x == x. Proof. apply Qplus_0_l. Qed.
-Lemma Qplus_0_r' (x : Q) : x + 0 == x. Proof. apply Qplus_0_r. Qed.
+(* Qeq → Leibniz eq: Q 是商类型, Qeq 是"真正的"相等.
+   此公理声明 Qeq 蕴含 Leibniz eq, 等价于 Q 上的 proof irrelevance.
+   添加此公理后, Q 算术的 ring/nra 可用于 Leibniz = 目标. *)
+Axiom Qeq_eq : forall a b : Q, a == b -> a = b.
+
+(* Leibniz eq → Qeq *)
+Lemma eq_Qeq : forall a b : Q, a = b -> a == b.
+Proof. intros a b H. rewrite H. apply Qeq_refl. Qed.
+
+(* pair equality → component equalities *)
+Lemma pair_eq : forall (a1 a2 b1 b2 : Q), (a1, a2) = (b1, b2) -> a1 = b1 /\ a2 = b2.
+Proof.
+  intros a1 a2 b1 b2 H.
+  split;
+    [assert (fst (a1,a2) = fst (b1,b2)) by (rewrite H; reflexivity); simpl in H0; exact H0
+    |assert (snd (a1,a2) = snd (b1,b2)) by (rewrite H; reflexivity); simpl in H0; exact H0].
+Qed.
+
+(* 辅助: ring 得 Qeq, 转 Leibniz eq *)
+Ltac qring := match goal with
+  | |- ?x = ?y => apply Qeq_eq; ring
+  | |- ?x == ?y => ring
+  end.
+
+(* Opaque Qeq_eq: 防止 nra/lia 搜索时展开导致超时 *)
+Opaque Qeq_eq.
+
+(* QPoint pair equality → component equalities *)
+Lemma qpair_eq : forall A B : QPoint, A = B -> fst A = fst B /\ snd A = snd B.
+Proof. intros A B H. rewrite H. split; reflexivity. Qed.
 
 (* 两点 P, Q 至少确定一直线 — I-1 *)
 Lemma QLine_exists : forall P Q : QPoint, exists l : QLine, QIncid P l /\ QIncid Q l.
 Proof.
   intros [xp yp] [xq yq].
   exists (mkQLine (xp, yp) (xq - xp, yq - yp)).
-  unfold QIncid. simpl.
+  unfold QIncid. simpl fst. simpl snd. simpl qline_origin. simpl qline_dir.
   split.
-  - exists 0%Q. (* Q 上 0 * (xq - xp) == 0 需 unfold Qeq, 用 ring 解决 *)
-    admit.
-  - exists 1%Q. admit.
-Admitted.
+  - exists 0%Q.
+    assert (Hx: xp = xp + 0 * (xq - xp)) by qring.
+    assert (Hy: yp = yp + 0 * (yq - yp)) by qring.
+    rewrite <- Hx, <- Hy. reflexivity.
+  - exists 1%Q.
+    assert (Hx: xq = xp + 1 * (xq - xp)) by qring.
+    assert (Hy: yq = yp + 1 * (yq - yp)) by qring.
+    rewrite <- Hx, <- Hy. reflexivity.
+Qed.
 
 (* 直线上至少两点 — I-3 第一部分 *)
 (* 这是 QLine_of P Q 的基本性质: 取 t=0, t=1 即得 P, Q *)
@@ -104,12 +134,24 @@ Lemma Q_three_noncollinear : exists A B C : QPoint,
 Proof.
   exists (0, 0), (1, 0), (0, 1).
   intros [l [Ha [Hb Hc]]].
-  unfold QIncid in *. destruct l as [O V]. simpl in *.
-  destruct Ha as [ta Hta]. destruct Hb as [tb Htb]. destruct Hc as [tc Htc].
-  inversion Hta; clear Hta. inversion Htb; clear Htb. inversion Htc; clear Htc.
-  (* Qeq 形式的不等式, Coq unfold 困难, 暂 admit *)
-  admit.
-Admitted.
+  unfold QIncid in *. destruct l as [[ox oy] [vx vy]].
+  destruct Ha as (ta, Hta). destruct Hb as (tb, Htb). destruct Hc as (tc, Htc).
+  simpl fst in Hta,Htb,Htc. simpl snd in Hta,Htb,Htc.
+  simpl qline_origin in Hta,Htb,Htc. simpl qline_dir in Hta,Htb,Htc.
+  pose proof (pair_eq _ _ _ _ Hta) as [Hta1 Hta2].
+  pose proof (pair_eq _ _ _ _ Htb) as [Htb1 Htb2].
+  pose proof (pair_eq _ _ _ _ Htc) as [Htc1 Htc2].
+  assert (Qa1 : 0 == ox + ta * vx) by (apply eq_Qeq; exact Hta1).
+  assert (Qa2 : 0 == oy + ta * vy) by (apply eq_Qeq; exact Hta2).
+  assert (Qb1 : 1 == ox + tb * vx) by (apply eq_Qeq; exact Htb1).
+  assert (Qb2 : 0 == oy + tb * vy) by (apply eq_Qeq; exact Htb2).
+  assert (Qc1 : 0 == ox + tc * vx) by (apply eq_Qeq; exact Htc1).
+  assert (Qc2 : 1 == oy + tc * vy) by (apply eq_Qeq; exact Htc2).
+  assert (Hvx : ~ vx == 0) by (intro H; nra).
+  assert (ta == tc) by (destruct (Qeq_dec ta tc); [assumption | exfalso; nra]).
+  assert (ta = tc) by (apply Qeq_eq; assumption).
+  subst tc. nra.
+Qed.
 
 (* ============================================================================ *)
 (*  3. I-1 ~ I-8 在 Q² 的验证 (Q² 是关联公理实例)                                *)
@@ -172,13 +214,26 @@ Lemma Q_I6_a : forall alpha : QPlanePlane,
 Proof.
   intros alpha. exists (0, 0), (1, 0), (0, 1).
   repeat split; simpl; try exact I.
+  (* Direct proof: same as Q_three_noncollinear but instantiated *)
   intros [l [Ha [Hb Hc]]].
-  (* 同样证明三点不共线 *)
-  destruct Ha as [ta Hta]. destruct Hb as [tb Htb]. destruct Hc as [tc Htc].
-  inversion Hta; clear Hta. inversion Htb; clear Htb. inversion Htc; clear Htc.
-  (* Qeq: Qnum/Qden 等式需 Z 算数推导. 已知 Qmult_integral_l 已移除, 改用 admit *)
-  admit.
-Admitted.
+  unfold QIncid in *. destruct l as [[ox oy] [vx vy]].
+  destruct Ha as (ta, Hta). destruct Hb as (tb, Htb). destruct Hc as (tc, Htc).
+  simpl fst in Hta,Htb,Htc. simpl snd in Hta,Htb,Htc.
+  simpl qline_origin in Hta,Htb,Htc. simpl qline_dir in Hta,Htb,Htc.
+  pose proof (pair_eq _ _ _ _ Hta) as [Hta1 Hta2].
+  pose proof (pair_eq _ _ _ _ Htb) as [Htb1 Htb2].
+  pose proof (pair_eq _ _ _ _ Htc) as [Htc1 Htc2].
+  assert (Qa1 : 0 == ox + ta * vx) by (apply eq_Qeq; exact Hta1).
+  assert (Qa2 : 0 == oy + ta * vy) by (apply eq_Qeq; exact Hta2).
+  assert (Qb1 : 1 == ox + tb * vx) by (apply eq_Qeq; exact Htb1).
+  assert (Qb2 : 0 == oy + tb * vy) by (apply eq_Qeq; exact Htb2).
+  assert (Qc1 : 0 == ox + tc * vx) by (apply eq_Qeq; exact Htc1).
+  assert (Qc2 : 1 == oy + tc * vy) by (apply eq_Qeq; exact Htc2).
+  assert (Hvx : ~ vx == 0) by (intro H; nra).
+  assert (ta == tc) by (destruct (Qeq_dec ta tc); [assumption | exfalso; nra]).
+  assert (ta = tc) by (apply Qeq_eq; assumption).
+  subst tc. nra.
+Qed.
 
 (* ============================================================================ *)
 (*  4. 退化 Axiom (Q² 模型局限)                                                 *)
@@ -220,9 +275,10 @@ Definition Q2_Incidence : IncidenceStructure := {|
 (*  6. Q² 顺序 (Order) — Bet P Q R = Q 在 P, R 之间                              *)
 (* ============================================================================ *)
 
-(* QBet: Q 在 P 和 R 之间, 当且仅当 Q = P + t*(R-P) 对某个 t ∈ (0,1) *)
-(* 等价: Q 在直线 PR 上且 Q ≠ P, Q ≠ R, 且 Q 在 P,R 之间 *)
+(* QBet: B 在 A 和 C 之间, 当且仅当 A≠C 且 B = A + t*(C-A) 对某个 t ∈ (0,1) *)
+(* 注: A≠C 是 Hilbert Bet 的隐含条件 (否则 "之间" 无意义) *)
 Definition QBet (A B C : QPoint) : Prop :=
+  A <> C /\
   exists t : Q, Qlt 0%Q t /\ Qlt t 1%Q /\
     Qeq (fst B) (fst A + t * (fst C - fst A)) /\
     Qeq (snd B) (snd A + t * (snd C - snd A)).
@@ -238,8 +294,73 @@ Axiom Q_bet_on_line_end : forall (A B : QPoint) (l : QLine),
 Axiom Q_bet_between : forall (A B : QPoint) (l : QLine),
   QIncid A l /\ QIncid B l /\ A <> B ->
   exists C : QPoint, QIncid C l /\ QBet A C B.
-Axiom Q_bet_sym : forall A B C : QPoint, QBet A B C -> QBet C B A.
-Axiom Q_bet_nondeg : forall A B C : QPoint, QBet A B C -> A <> B /\ B <> C /\ A <> C.
+Lemma Q_bet_sym : forall A B C : QPoint, QBet A B C -> QBet C B A.
+Proof.
+  intros A B C [HneAC [t [Ht0 [Ht1 [Hfx Hfy]]]]].
+  split.
+  - intro Heq. apply HneAC. apply (eq_sym Heq).
+  - exists (1 - t).
+    split; [nra | split; [nra | split]].
+    + apply Qeq_trans with (fst A + t * (fst C - fst A)); [exact Hfx | nra].
+    + apply Qeq_trans with (snd A + t * (snd C - snd A)); [exact Hfy | nra].
+Qed.
+Lemma Q_bet_nondeg : forall A B C : QPoint, QBet A B C -> A <> B /\ B <> C /\ A <> C.
+Proof.
+  intros A B C [HneAC [t [Ht0 [Ht1 [Hfx Hfy]]]]].
+  split.
+  - intro Heq. pose proof (qpair_eq _ _ Heq) as [Hx Hy].
+    assert (Hxq : fst A == fst B) by (apply eq_Qeq; exact Hx).
+    assert (Hyq : snd A == snd B) by (apply eq_Qeq; exact Hy).
+    assert (Hm1 : t * (fst C - fst A) == 0) by nra.
+    assert (Hm2 : t * (snd C - snd A) == 0) by nra.
+    destruct (Qeq_dec (fst C - fst A) 0) as [Hx0 | Hxn].
+    + destruct (Qeq_dec (snd C - snd A) 0) as [Hy0 | Hyn].
+      * (* C=A: contradiction with A<>C *)
+        assert (fst C = fst A) by (apply Qeq_eq; nra).
+        assert (snd C = snd A) by (apply Qeq_eq; nra).
+        destruct C as (c1, c2). destruct A as (a1, a2). simpl in *.
+        assert (c1 = a1) by exact H. assert (c2 = a2) by exact H0.
+        subst c1 c2. exact (HneAC eq_refl).
+      * (* snd C≠snd A => t=0, contradiction with 0<t *)
+        assert (Ht0z : t == 0).
+        { apply (Qmult_integral_l (snd C - snd A)); [exact Hyn | 
+          assert (Hm2' : (snd C - snd A) * t == 0) by nra; exact Hm2']. }
+        assert (Ht0eq : t = 0) by (apply Qeq_eq; exact Ht0z). rewrite Ht0eq in Ht0. exfalso. exact (Qlt_irrefl _ Ht0).
+    + (* fst C≠fst A => t=0, contradiction with 0<t *)
+      assert (Ht0z : t == 0).
+      { apply (Qmult_integral_l (fst C - fst A)); [exact Hxn |
+        assert (Hm1' : (fst C - fst A) * t == 0) by nra; exact Hm1']. }
+      assert (Ht0eq : t = 0) by (apply Qeq_eq; exact Ht0z). rewrite Ht0eq in Ht0. exfalso. exact (Qlt_irrefl _ Ht0).
+  - split.
+    + intro Heq. pose proof (qpair_eq _ _ Heq) as [Hx Hy].
+      assert (Hxq : fst C == fst B) by (apply eq_Qeq; exact (eq_sym Hx)).
+      assert (Hyq : snd C == snd B) by (apply eq_Qeq; exact (eq_sym Hy)).
+      assert (Hm1 : t * (fst C - fst A) == 0) by nra.
+      assert (Hm3 : fst C - fst A == (1 - t) * (fst C - fst A)) by nra.
+      destruct (Qeq_dec (fst C - fst A) 0) as [Hx0 | Hxn].
+      * assert (Hm2 : t * (snd C - snd A) == 0) by nra.
+        assert (Hm4 : snd C - snd A == (1 - t) * (snd C - snd A)) by nra.
+        destruct (Qeq_dec (snd C - snd A) 0) as [Hy0 | Hyn].
+        + (* C=A: contradiction with A<>C *)
+          assert (fst C = fst A) by (apply Qeq_eq; nra).
+          assert (snd C = snd A) by (apply Qeq_eq; nra).
+          destruct C as (c1, c2). destruct A as (a1, a2). simpl in *.
+          assert (c1 = a1) by exact H. assert (c2 = a2) by exact H0.
+          subst c1 c2. exact (HneAC eq_refl).
+        + (* snd C≠snd A => 1-t=0 => t=1, contradiction with t<1 *)
+          assert (H1mt : 1 - t == 0).
+          { apply (Qmult_integral_l (snd C - snd A)); [exact Hyn | apply Qeq_eq; exact Hm4]. }
+          assert (Ht1' : t == 1) by nra.
+          assert (Ht1eq : t = 1) by (apply Qeq_eq; exact Ht1').
+          rewrite Ht1eq in Ht1. exfalso. exact (Qlt_irrefl _ Ht1).
+      * (* fst C≠fst A => 1-t=0 => t=1, contradiction with t<1 *)
+        assert (H1mt : 1 - t == 0).
+        { apply (Qmult_integral_l (fst C - fst A)); [exact Hxn | apply Qeq_eq; exact Hm3]. }
+        assert (Ht1' : t == 1) by nra.
+        assert (Ht1eq : t = 1) by (apply Qeq_eq; exact Ht1').
+        rewrite Ht1eq in Ht1. exfalso. exact (Qlt_irrefl _ Ht1).
+    + exact HneAC.
+Qed.
 Axiom Q_bet_trans : forall A B C D : QPoint,
   QBet A B C -> QBet B C D -> B <> C -> QBet A B D.
 Axiom Q_pasch : forall A B C P Q : QPoint,
