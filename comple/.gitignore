@@ -1,0 +1,13 @@
+# Coq compiled files
+*.vo
+*.vos
+*.vok
+*.glob
+*.aux
+
+# macOS
+.DS_Store
+
+# Editor
+*~
+*.swp
