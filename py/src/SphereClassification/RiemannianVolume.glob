@@ -1,0 +1,119 @@
+DIGEST 850b1a5578331fa68fb16fd7d30ee24c
+FSphereClassification.RiemannianVolume
+R173:180 SphereClassification.Manifold <> <> lib
+R182:194 SphereClassification.RiemannMetric <> <> lib
+R196:208 SphereClassification.RiemannTensor <> <> lib
+R210:217 SphereClassification.Geodesic <> <> lib
+R219:226 SphereClassification.Topology <> <> lib
+R245:249 Stdlib.Reals.Reals <> <> lib
+R267:280 Stdlib.Logic.Classical_Prop <> <> lib
+R298:321 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R339:347 Stdlib.Logic.Classical <> <> lib
+ax 775:788 <> riemannian_det
+R806:814 SphereClassification.Manifold <> Manifold3 rec
+binder 802:802 <> M:1
+R822:837 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R839:839 SphereClassification.RiemannianVolume <> M:1 var
+binder 818:818 <> g:2
+R856:862 SphereClassification.Manifold <> sm_type proj
+R864:864 SphereClassification.RiemannianVolume <> M:1 var
+binder 852:852 <> p:3
+R872:872 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 917:939 <> riemannian_det_positive
+R957:965 SphereClassification.Manifold <> Manifold3 rec
+binder 953:953 <> M:6
+R973:988 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R990:990 SphereClassification.RiemannianVolume <> M:6 var
+binder 969:969 <> g:7
+R998:1004 SphereClassification.Manifold <> sm_type proj
+R1006:1006 SphereClassification.RiemannianVolume <> M:6 var
+binder 994:994 <> p:8
+R1034:1036 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1014:1027 SphereClassification.RiemannianVolume <> riemannian_det defax
+R1029:1029 SphereClassification.RiemannianVolume <> M:6 var
+R1031:1031 SphereClassification.RiemannianVolume <> g:7 var
+R1033:1033 SphereClassification.RiemannianVolume <> p:8 var
+def 1094:1112 <> riemannian_det_sqrt
+R1123:1131 SphereClassification.Manifold <> Manifold3 rec
+binder 1119:1119 <> M:11
+R1139:1154 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1156:1156 SphereClassification.RiemannianVolume <> M:11 var
+binder 1135:1135 <> g:12
+R1164:1170 SphereClassification.Manifold <> sm_type proj
+R1172:1172 SphereClassification.RiemannianVolume <> M:11 var
+binder 1160:1160 <> p:13
+R1177:1177 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1184:1187 Stdlib.Reals.RIneq <> Rsqr def
+R1190:1203 SphereClassification.RiemannianVolume <> riemannian_det defax
+R1205:1205 SphereClassification.RiemannianVolume <> M:11 var
+R1207:1207 SphereClassification.RiemannianVolume <> g:12 var
+R1209:1209 SphereClassification.RiemannianVolume <> p:13 var
+ax 1597:1610 <> volume_density
+R1628:1636 SphereClassification.Manifold <> Manifold3 rec
+binder 1624:1624 <> M:14
+R1644:1659 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1661:1661 SphereClassification.RiemannianVolume <> M:14 var
+binder 1640:1640 <> g:15
+R1678:1681 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1669:1675 SphereClassification.Manifold <> sm_type proj
+R1677:1677 SphereClassification.RiemannianVolume <> M:14 var
+R1682:1682 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 1726:1743 <> volume_density_def
+R1761:1769 SphereClassification.Manifold <> Manifold3 rec
+binder 1757:1757 <> M:18
+R1777:1792 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1794:1794 SphereClassification.RiemannianVolume <> M:18 var
+binder 1773:1773 <> g:19
+R1802:1808 SphereClassification.Manifold <> sm_type proj
+R1810:1810 SphereClassification.RiemannianVolume <> M:18 var
+binder 1798:1798 <> p:20
+R1838:1840 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1818:1831 SphereClassification.RiemannianVolume <> volume_density defax
+R1833:1833 SphereClassification.RiemannianVolume <> M:18 var
+R1835:1835 SphereClassification.RiemannianVolume <> g:19 var
+R1837:1837 SphereClassification.RiemannianVolume <> p:20 var
+R1841:1859 SphereClassification.RiemannianVolume <> riemannian_det_sqrt def
+R1861:1861 SphereClassification.RiemannianVolume <> M:18 var
+R1863:1863 SphereClassification.RiemannianVolume <> g:19 var
+R1865:1865 SphereClassification.RiemannianVolume <> p:20 var
+ax 2411:2427 <> riemannian_volume
+R2445:2453 SphereClassification.Manifold <> Manifold3 rec
+binder 2441:2441 <> M:23
+R2461:2476 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2478:2478 SphereClassification.RiemannianVolume <> M:23 var
+binder 2457:2457 <> g:24
+R2482:2482 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 2511:2534 <> riemannian_volume_nonneg
+R2552:2560 SphereClassification.Manifold <> Manifold3 rec
+binder 2548:2548 <> M:27
+R2568:2583 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2585:2585 SphereClassification.RiemannianVolume <> M:27 var
+binder 2564:2564 <> g:28
+R2614:2617 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R2593:2609 SphereClassification.RiemannianVolume <> riemannian_volume defax
+R2611:2611 SphereClassification.RiemannianVolume <> M:27 var
+R2613:2613 SphereClassification.RiemannianVolume <> g:28 var
+ax 2686:2707 <> riemannian_volume_zero
+R2725:2733 SphereClassification.Manifold <> Manifold3 rec
+binder 2721:2721 <> M:31
+R2741:2756 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2758:2758 SphereClassification.RiemannianVolume <> M:31 var
+binder 2737:2737 <> g:32
+R2791:2826 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2787:2789 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2766:2782 SphereClassification.RiemannianVolume <> riemannian_volume defax
+R2784:2784 SphereClassification.RiemannianVolume <> M:31 var
+R2786:2786 SphereClassification.RiemannianVolume <> g:32 var
+R2827:2830 Corelib.Init.Logic <> True ind
+ax 2930:2954 <> riemannian_volume_scaling
+R2972:2980 SphereClassification.Manifold <> Manifold3 rec
+binder 2968:2968 <> M:35
+R2988:3003 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3005:3005 SphereClassification.RiemannianVolume <> M:35 var
+binder 2984:2984 <> g:36
+R3013:3013 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3009:3009 <> c:37
+R3028:3088 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3022:3024 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3021:3021 SphereClassification.RiemannianVolume <> c:37 var
+R3089:3092 Corelib.Init.Logic <> True ind

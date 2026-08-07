@@ -1,0 +1,151 @@
+DIGEST 5d64d73cab02dd94b3f4e82a9e21d716
+FSphereClassification.BonnetMyers
+R435:439 Stdlib.Reals.Reals <> <> lib
+R457:470 Stdlib.Logic.Classical_Prop <> <> lib
+R488:492 Stdlib.Reals.Reals <> <> lib
+R494:496 Stdlib.micromega.Lra <> <> lib
+R514:537 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R555:563 Stdlib.Logic.Classical <> <> lib
+R581:586 Stdlib.ZArith.ZArith <> <> lib
+R626:654 SphereClassification.Manifold <> <> lib
+R672:700 SphereClassification.Topology <> <> lib
+R718:751 SphereClassification.RiemannMetric <> <> lib
+R769:802 SphereClassification.RiemannTensor <> <> lib
+R820:848 SphereClassification.Geodesic <> <> lib
+R866:895 SphereClassification.HopfRinow <> <> lib
+rec 1359:1373 <> RicciLowerBound
+proj 1449:1461 <> ricci_bound_k
+proj 1470:1489 <> ricci_bound_positive
+proj 1553:1567 <> ricci_bound_dim
+proj 1652:1672 <> ricci_bound_condition
+R1380:1388 SphereClassification.Manifold <> Manifold3 rec
+binder 1376:1376 <> M:1
+R1396:1411 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1413:1413 SphereClassification.BonnetMyers <> M:1 var
+binder 1392:1392 <> g:2
+R1421:1421 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1417:1417 <> k:3
+R1465:1465 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1506:1508 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1493:1505 SphereClassification.BonnetMyers <> ricci_bound_k:5 meth
+R1571:1573 Corelib.Init.Datatypes <> nat ind
+R1692:1698 SphereClassification.Manifold <> sm_type proj
+R1700:1700 SphereClassification.BonnetMyers <> M:1 var
+binder 1688:1688 <> p:8
+R1708:1726 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1728:1728 SphereClassification.BonnetMyers <> M:1 var
+binder 1704:1704 <> v:9
+R1765:1820 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1761:1763 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1738:1750 SphereClassification.RiemannMetric <> metric_tensor proj
+R1752:1752 SphereClassification.BonnetMyers <> M:1 var
+R1754:1754 SphereClassification.BonnetMyers <> g:2 var
+R1756:1756 SphereClassification.BonnetMyers <> p:8 var
+R1758:1758 SphereClassification.BonnetMyers <> v:9 var
+R1760:1760 SphereClassification.BonnetMyers <> v:9 var
+R1843:1846 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R1821:1832 SphereClassification.RiemannTensor <> ricci_tensor defax
+R1834:1834 SphereClassification.BonnetMyers <> M:1 var
+R1836:1836 SphereClassification.BonnetMyers <> g:2 var
+R1838:1838 SphereClassification.BonnetMyers <> p:8 var
+R1840:1840 SphereClassification.BonnetMyers <> v:9 var
+R1842:1842 SphereClassification.BonnetMyers <> v:9 var
+R1847:1847 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1871:1874 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1867:1869 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1848:1850 Stdlib.Reals.Raxioms <> INR def
+R1852:1866 SphereClassification.BonnetMyers <> ricci_bound_dim:7 meth
+R1875:1887 SphereClassification.BonnetMyers <> ricci_bound_k:5 meth
+ax 2407:2414 <> diameter
+R2432:2440 SphereClassification.Manifold <> Manifold3 rec
+binder 2428:2428 <> M:11
+R2448:2463 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2465:2465 SphereClassification.BonnetMyers <> M:11 var
+binder 2444:2444 <> g:12
+R2469:2469 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 2506:2521 <> diameter_bounded
+R2528:2536 SphereClassification.Manifold <> Manifold3 rec
+binder 2524:2524 <> M:15
+R2544:2559 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2561:2561 SphereClassification.BonnetMyers <> M:15 var
+binder 2540:2540 <> g:16
+R2569:2569 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2565:2565 <> D:17
+R2598:2604 SphereClassification.Manifold <> sm_type proj
+R2606:2606 SphereClassification.BonnetMyers <> M:15 var
+binder 2592:2592 <> p:18
+binder 2594:2594 <> q:19
+R2639:2642 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R2614:2630 SphereClassification.Geodesic <> geodesic_distance defax
+R2632:2632 SphereClassification.BonnetMyers <> M:15 var
+R2634:2634 SphereClassification.BonnetMyers <> g:16 var
+R2636:2636 SphereClassification.BonnetMyers <> p:18 var
+R2638:2638 SphereClassification.BonnetMyers <> q:19 var
+R2643:2643 SphereClassification.BonnetMyers <> D:17 var
+def 3021:3044 <> fundamental_group_finite
+R3051:3059 SphereClassification.Manifold <> Manifold3 rec
+binder 3047:3047 <> M:20
+R3103:3106 Corelib.Init.Logic <> True ind
+ax 4120:4139 <> bonnet_myers_theorem
+R4157:4165 SphereClassification.Manifold <> Manifold3 rec
+binder 4153:4153 <> M:21
+R4173:4188 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R4190:4190 SphereClassification.BonnetMyers <> M:21 var
+binder 4169:4169 <> g:22
+R4198:4198 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4194:4194 <> k:23
+R4237:4278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4233:4235 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4232:4232 SphereClassification.BonnetMyers <> k:23 var
+R4298:4367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4288:4291 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R4280:4285 SphereClassification.Manifold <> sm_dim proj
+R4287:4287 SphereClassification.BonnetMyers <> M:21 var
+R4372:4467 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4368:4371 Corelib.Init.Logic <> True ind
+R4468:4468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4511:4548 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4469:4476 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4504:4506 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4483:4497 SphereClassification.BonnetMyers <> RicciLowerBound rec
+R4499:4499 SphereClassification.BonnetMyers <> M:21 var
+R4501:4501 SphereClassification.BonnetMyers <> g:22 var
+R4503:4503 SphereClassification.BonnetMyers <> k:23 var
+binder 4477:4479 <> rlb:24
+R4507:4510 Corelib.Init.Logic <> True ind
+R4560:4600 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4549:4557 SphereClassification.HopfRinow <> IsCompact def
+R4559:4559 SphereClassification.BonnetMyers <> M:21 var
+R4635:4678 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4601:4616 SphereClassification.BonnetMyers <> diameter_bounded def
+R4618:4618 SphereClassification.BonnetMyers <> M:21 var
+R4620:4620 SphereClassification.BonnetMyers <> g:22 var
+R4625:4627 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4623:4624 Stdlib.Reals.Rtrigo1 <> PI def
+R4628:4631 Stdlib.Reals.R_sqrt <> sqrt def
+R4633:4633 SphereClassification.BonnetMyers <> k:23 var
+R4679:4702 SphereClassification.BonnetMyers <> fundamental_group_finite def
+R4704:4704 SphereClassification.BonnetMyers <> M:21 var
+ax 5091:5112 <> bonnet_myers_corollary
+R5130:5138 SphereClassification.Manifold <> Manifold3 rec
+binder 5126:5126 <> M:27
+R5146:5161 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R5163:5163 SphereClassification.BonnetMyers <> M:27 var
+binder 5142:5142 <> g:28
+R5194:5290 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5190:5193 Corelib.Init.Logic <> True ind
+R5295:5302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5291:5294 Corelib.Init.Logic <> True ind
+R5303:5326 SphereClassification.BonnetMyers <> fundamental_group_finite def
+R5328:5328 SphereClassification.BonnetMyers <> M:27 var
+ax 5718:5741 <> sphere_diameter_estimate
+R5759:5767 SphereClassification.Manifold <> Manifold3 rec
+binder 5755:5755 <> M:31
+R5776:5791 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R5793:5793 SphereClassification.BonnetMyers <> M:31 var
+binder 5771:5772 <> g3:32
+R5814:5817 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5801:5808 SphereClassification.BonnetMyers <> diameter defax
+R5810:5810 SphereClassification.BonnetMyers <> M:31 var
+R5812:5813 SphereClassification.BonnetMyers <> g3:32 var
+R5818:5819 Stdlib.Reals.Rtrigo1 <> PI def

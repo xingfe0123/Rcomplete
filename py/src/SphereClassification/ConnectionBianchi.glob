@@ -1,0 +1,1721 @@
+DIGEST 46aa750991306b39af57d5ca3018dbe0
+FSphereClassification.ConnectionBianchi
+R463:467 Stdlib.Reals.Reals <> <> lib
+R469:471 Stdlib.micromega.Lra <> <> lib
+R489:522 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R561:589 SphereClassification.Manifold <> <> lib
+R607:635 SphereClassification.Topology <> <> lib
+R653:686 SphereClassification.RiemannMetric <> <> lib
+R696:708 SphereClassification.RiemannMetric <> <> mod
+def 946:956 <> VectorField
+R963:971 SphereClassification.Manifold <> Manifold3 rec
+binder 959:959 <> M:1
+R995:998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R986:992 SphereClassification.Manifold <> sm_type proj
+R994:994 SphereClassification.ConnectionBianchi <> M:1 var
+R999:1017 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1019:1019 SphereClassification.ConnectionBianchi <> M:1 var
+def 1034:1041 <> pts_zero
+R1048:1056 SphereClassification.Manifold <> Manifold3 rec
+binder 1044:1044 <> M:2
+R1061:1071 SphereClassification.ConnectionBianchi <> VectorField def
+R1073:1073 SphereClassification.ConnectionBianchi <> M:2 var
+R1089:1098 SphereClassification.RiemannMetric <> ts_zero_of def
+R1100:1100 SphereClassification.ConnectionBianchi <> M:2 var
+def 1115:1121 <> pts_add
+R1128:1136 SphereClassification.Manifold <> Manifold3 rec
+binder 1124:1124 <> M:3
+R1146:1156 SphereClassification.ConnectionBianchi <> VectorField def
+R1158:1158 SphereClassification.ConnectionBianchi <> M:3 var
+binder 1140:1140 <> X:4
+binder 1142:1142 <> Y:5
+R1163:1173 SphereClassification.ConnectionBianchi <> VectorField def
+R1175:1175 SphereClassification.ConnectionBianchi <> M:3 var
+binder 1186:1186 <> p:6
+R1191:1199 SphereClassification.RiemannMetric <> ts_add_of def
+R1201:1201 SphereClassification.ConnectionBianchi <> M:3 var
+R1204:1204 SphereClassification.ConnectionBianchi <> X:4 var
+R1206:1206 SphereClassification.ConnectionBianchi <> p:6 var
+R1210:1210 SphereClassification.ConnectionBianchi <> Y:5 var
+R1212:1212 SphereClassification.ConnectionBianchi <> p:6 var
+def 1228:1234 <> pts_neg
+R1241:1249 SphereClassification.Manifold <> Manifold3 rec
+binder 1237:1237 <> M:7
+R1257:1267 SphereClassification.ConnectionBianchi <> VectorField def
+R1269:1269 SphereClassification.ConnectionBianchi <> M:7 var
+binder 1253:1253 <> X:8
+R1274:1284 SphereClassification.ConnectionBianchi <> VectorField def
+R1286:1286 SphereClassification.ConnectionBianchi <> M:7 var
+binder 1297:1297 <> p:9
+R1302:1310 SphereClassification.RiemannMetric <> ts_neg_of def
+R1312:1312 SphereClassification.ConnectionBianchi <> M:7 var
+R1315:1315 SphereClassification.ConnectionBianchi <> X:8 var
+R1317:1317 SphereClassification.ConnectionBianchi <> p:9 var
+def 1333:1341 <> pts_smult
+R1348:1356 SphereClassification.Manifold <> Manifold3 rec
+binder 1344:1344 <> M:10
+R1364:1364 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1360:1360 <> a:11
+R1372:1382 SphereClassification.ConnectionBianchi <> VectorField def
+R1384:1384 SphereClassification.ConnectionBianchi <> M:10 var
+binder 1368:1368 <> X:12
+R1389:1399 SphereClassification.ConnectionBianchi <> VectorField def
+R1401:1401 SphereClassification.ConnectionBianchi <> M:10 var
+binder 1412:1412 <> p:13
+R1417:1427 SphereClassification.RiemannMetric <> ts_smult_of def
+R1429:1429 SphereClassification.ConnectionBianchi <> M:10 var
+R1431:1431 SphereClassification.ConnectionBianchi <> a:11 var
+R1434:1434 SphereClassification.ConnectionBianchi <> X:12 var
+R1436:1436 SphereClassification.ConnectionBianchi <> p:13 var
+def 1452:1457 <> pts_eq
+R1464:1472 SphereClassification.Manifold <> Manifold3 rec
+binder 1460:1460 <> M:14
+R1482:1492 SphereClassification.ConnectionBianchi <> VectorField def
+R1494:1494 SphereClassification.ConnectionBianchi <> M:14 var
+binder 1476:1476 <> X:15
+binder 1478:1478 <> Y:16
+R1520:1526 SphereClassification.Manifold <> sm_type proj
+R1528:1528 SphereClassification.ConnectionBianchi <> M:14 var
+binder 1516:1516 <> p:17
+R1534:1536 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1531:1531 SphereClassification.ConnectionBianchi <> X:15 var
+R1533:1533 SphereClassification.ConnectionBianchi <> p:17 var
+R1537:1537 SphereClassification.ConnectionBianchi <> Y:16 var
+R1539:1539 SphereClassification.ConnectionBianchi <> p:17 var
+R1566:1571 SphereClassification.ConnectionBianchi <> pts_eq def
+not 1552:1552 <> :::x_'≡'_x
+R1618:1624 SphereClassification.ConnectionBianchi <> pts_add def
+not 1604:1604 <> :::x_'⊕'_x
+R1689:1695 SphereClassification.ConnectionBianchi <> pts_neg def
+not 1677:1677 <> :::'⊖'_x
+R1740:1748 SphereClassification.ConnectionBianchi <> pts_smult def
+not 1726:1726 <> :::x_'⊙'_x
+prf 2011:2021 <> pts_eq_refl
+R2028:2036 SphereClassification.Manifold <> Manifold3 rec
+binder 2024:2024 <> M:18
+R2044:2054 SphereClassification.ConnectionBianchi <> VectorField def
+R2056:2056 SphereClassification.ConnectionBianchi <> M:18 var
+binder 2040:2040 <> X:19
+R2062:2066 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2061:2061 SphereClassification.ConnectionBianchi <> X:19 var
+R2067:2067 SphereClassification.ConnectionBianchi <> X:19 var
+prf 2111:2120 <> pts_eq_sym
+R2127:2135 SphereClassification.Manifold <> Manifold3 rec
+binder 2123:2123 <> M:20
+R2145:2155 SphereClassification.ConnectionBianchi <> VectorField def
+R2157:2157 SphereClassification.ConnectionBianchi <> M:20 var
+binder 2139:2139 <> X:21
+binder 2141:2141 <> Y:22
+R2169:2172 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2163:2167 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2162:2162 SphereClassification.ConnectionBianchi <> X:21 var
+R2168:2168 SphereClassification.ConnectionBianchi <> Y:22 var
+R2174:2178 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2173:2173 SphereClassification.ConnectionBianchi <> Y:22 var
+R2179:2179 SphereClassification.ConnectionBianchi <> X:21 var
+prf 2232:2243 <> pts_eq_trans
+R2250:2258 SphereClassification.Manifold <> Manifold3 rec
+binder 2246:2246 <> M:23
+R2270:2280 SphereClassification.ConnectionBianchi <> VectorField def
+R2282:2282 SphereClassification.ConnectionBianchi <> M:23 var
+binder 2262:2262 <> X:24
+binder 2264:2264 <> Y:25
+binder 2266:2266 <> Z:26
+R2296:2299 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2290:2294 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2289:2289 SphereClassification.ConnectionBianchi <> X:24 var
+R2295:2295 SphereClassification.ConnectionBianchi <> Y:25 var
+R2307:2310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2301:2305 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2300:2300 SphereClassification.ConnectionBianchi <> Y:25 var
+R2306:2306 SphereClassification.ConnectionBianchi <> Z:26 var
+R2312:2316 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2311:2311 SphereClassification.ConnectionBianchi <> X:24 var
+R2317:2317 SphereClassification.ConnectionBianchi <> Z:26 var
+prf 2377:2388 <> pts_zero_add
+R2395:2403 SphereClassification.Manifold <> Manifold3 rec
+binder 2391:2391 <> M:27
+R2411:2421 SphereClassification.ConnectionBianchi <> VectorField def
+R2423:2423 SphereClassification.ConnectionBianchi <> M:27 var
+binder 2407:2407 <> X:28
+R2444:2448 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2438:2442 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2428:2435 SphereClassification.ConnectionBianchi <> pts_zero def
+R2437:2437 SphereClassification.ConnectionBianchi <> M:27 var
+R2443:2443 SphereClassification.ConnectionBianchi <> X:28 var
+R2449:2449 SphereClassification.ConnectionBianchi <> X:28 var
+R2475:2482 SphereClassification.ConnectionBianchi <> pts_zero def
+R2485:2491 SphereClassification.ConnectionBianchi <> pts_add def
+R2507:2517 SphereClassification.RiemannMetric <> ts_zero_add thm
+R2507:2517 SphereClassification.RiemannMetric <> ts_zero_add thm
+prf 2532:2543 <> pts_add_zero
+R2550:2558 SphereClassification.Manifold <> Manifold3 rec
+binder 2546:2546 <> M:29
+R2566:2576 SphereClassification.ConnectionBianchi <> VectorField def
+R2578:2578 SphereClassification.ConnectionBianchi <> M:29 var
+binder 2562:2562 <> X:30
+R2599:2603 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2584:2588 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2583:2583 SphereClassification.ConnectionBianchi <> X:30 var
+R2589:2596 SphereClassification.ConnectionBianchi <> pts_zero def
+R2598:2598 SphereClassification.ConnectionBianchi <> M:29 var
+R2604:2604 SphereClassification.ConnectionBianchi <> X:30 var
+R2630:2637 SphereClassification.ConnectionBianchi <> pts_zero def
+R2640:2646 SphereClassification.ConnectionBianchi <> pts_add def
+R2662:2672 SphereClassification.RiemannMetric <> ts_add_zero thm
+R2662:2672 SphereClassification.RiemannMetric <> ts_add_zero thm
+prf 2687:2698 <> pts_add_comm
+R2705:2713 SphereClassification.Manifold <> Manifold3 rec
+binder 2701:2701 <> M:31
+R2723:2733 SphereClassification.ConnectionBianchi <> VectorField def
+R2735:2735 SphereClassification.ConnectionBianchi <> M:31 var
+binder 2717:2717 <> X:32
+binder 2719:2719 <> Y:33
+R2747:2751 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2741:2745 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2740:2740 SphereClassification.ConnectionBianchi <> X:32 var
+R2746:2746 SphereClassification.ConnectionBianchi <> Y:33 var
+R2753:2757 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2752:2752 SphereClassification.ConnectionBianchi <> Y:33 var
+R2758:2758 SphereClassification.ConnectionBianchi <> X:32 var
+R2784:2790 SphereClassification.ConnectionBianchi <> pts_add def
+R2806:2816 SphereClassification.RiemannMetric <> ts_add_comm thm
+R2806:2816 SphereClassification.RiemannMetric <> ts_add_comm thm
+prf 2831:2843 <> pts_add_assoc
+R2850:2858 SphereClassification.Manifold <> Manifold3 rec
+binder 2846:2846 <> M:34
+R2870:2880 SphereClassification.ConnectionBianchi <> VectorField def
+R2882:2882 SphereClassification.ConnectionBianchi <> M:34 var
+binder 2862:2862 <> X:35
+binder 2864:2864 <> Y:36
+binder 2866:2866 <> Z:37
+R2904:2908 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R2889:2889 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2897:2902 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2891:2895 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2890:2890 SphereClassification.ConnectionBianchi <> X:35 var
+R2896:2896 SphereClassification.ConnectionBianchi <> Y:36 var
+R2903:2903 SphereClassification.ConnectionBianchi <> Z:37 var
+R2910:2915 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2923:2923 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2909:2909 SphereClassification.ConnectionBianchi <> X:35 var
+R2917:2921 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R2916:2916 SphereClassification.ConnectionBianchi <> Y:36 var
+R2922:2922 SphereClassification.ConnectionBianchi <> Z:37 var
+R2949:2955 SphereClassification.ConnectionBianchi <> pts_add def
+R2971:2982 SphereClassification.RiemannMetric <> ts_add_assoc thm
+R2971:2982 SphereClassification.RiemannMetric <> ts_add_assoc thm
+prf 2997:3007 <> pts_add_neg
+R3014:3022 SphereClassification.Manifold <> Manifold3 rec
+binder 3010:3010 <> M:38
+R3030:3040 SphereClassification.ConnectionBianchi <> VectorField def
+R3042:3042 SphereClassification.ConnectionBianchi <> M:38 var
+binder 3026:3026 <> X:39
+R3060:3064 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3048:3053 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3059:3059 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3047:3047 SphereClassification.ConnectionBianchi <> X:39 var
+R3054:3057 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R3058:3058 SphereClassification.ConnectionBianchi <> X:39 var
+R3065:3072 SphereClassification.ConnectionBianchi <> pts_zero def
+R3074:3074 SphereClassification.ConnectionBianchi <> M:38 var
+R3102:3108 SphereClassification.ConnectionBianchi <> pts_add def
+R3111:3117 SphereClassification.ConnectionBianchi <> pts_neg def
+R3120:3127 SphereClassification.ConnectionBianchi <> pts_zero def
+R3143:3152 SphereClassification.RiemannMetric <> ts_add_neg thm
+R3143:3152 SphereClassification.RiemannMetric <> ts_add_neg thm
+prf 3167:3177 <> pts_smult_1
+R3184:3192 SphereClassification.Manifold <> Manifold3 rec
+binder 3180:3180 <> M:40
+R3200:3210 SphereClassification.ConnectionBianchi <> VectorField def
+R3212:3212 SphereClassification.ConnectionBianchi <> M:40 var
+binder 3196:3196 <> X:41
+R3224:3228 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3218:3222 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3223:3223 SphereClassification.ConnectionBianchi <> X:41 var
+R3229:3229 SphereClassification.ConnectionBianchi <> X:41 var
+R3255:3263 SphereClassification.ConnectionBianchi <> pts_smult def
+R3279:3288 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R3279:3288 SphereClassification.RiemannMetric <> ts_smult_1 thm
+prf 3303:3315 <> pts_smult_mul
+R3322:3330 SphereClassification.Manifold <> Manifold3 rec
+binder 3318:3318 <> M:42
+R3340:3340 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3334:3334 <> a:43
+binder 3336:3336 <> b:44
+R3348:3358 SphereClassification.ConnectionBianchi <> VectorField def
+R3360:3360 SphereClassification.ConnectionBianchi <> M:42 var
+binder 3344:3344 <> X:45
+R3382:3386 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3368:3373 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3381:3381 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3367:3367 SphereClassification.ConnectionBianchi <> a:43 var
+R3375:3379 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3374:3374 SphereClassification.ConnectionBianchi <> b:44 var
+R3380:3380 SphereClassification.ConnectionBianchi <> X:45 var
+R3387:3387 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3393:3398 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3389:3391 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R3388:3388 SphereClassification.ConnectionBianchi <> a:43 var
+R3392:3392 SphereClassification.ConnectionBianchi <> b:44 var
+R3399:3399 SphereClassification.ConnectionBianchi <> X:45 var
+R3427:3435 SphereClassification.ConnectionBianchi <> pts_smult def
+R3451:3462 SphereClassification.RiemannMetric <> ts_smult_mul thm
+R3451:3462 SphereClassification.RiemannMetric <> ts_smult_mul thm
+prf 3477:3494 <> pts_smult_add_dist
+R3501:3509 SphereClassification.Manifold <> Manifold3 rec
+binder 3497:3497 <> M:46
+R3517:3517 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3513:3513 <> a:47
+R3527:3537 SphereClassification.ConnectionBianchi <> VectorField def
+R3539:3539 SphereClassification.ConnectionBianchi <> M:46 var
+binder 3521:3521 <> X:48
+binder 3523:3523 <> Y:49
+R3561:3565 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3547:3552 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3560:3560 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3546:3546 SphereClassification.ConnectionBianchi <> a:47 var
+R3554:3558 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3553:3553 SphereClassification.ConnectionBianchi <> X:48 var
+R3559:3559 SphereClassification.ConnectionBianchi <> Y:49 var
+R3566:3566 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3574:3580 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3588:3588 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3568:3572 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3567:3567 SphereClassification.ConnectionBianchi <> a:47 var
+R3573:3573 SphereClassification.ConnectionBianchi <> X:48 var
+R3582:3586 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3581:3581 SphereClassification.ConnectionBianchi <> a:47 var
+R3587:3587 SphereClassification.ConnectionBianchi <> Y:49 var
+R3616:3624 SphereClassification.ConnectionBianchi <> pts_smult def
+R3627:3633 SphereClassification.ConnectionBianchi <> pts_add def
+R3649:3665 SphereClassification.RiemannMetric <> ts_smult_add_dist thm
+R3649:3665 SphereClassification.RiemannMetric <> ts_smult_add_dist thm
+prf 3680:3698 <> pts_smult_plus_dist
+R3705:3713 SphereClassification.Manifold <> Manifold3 rec
+binder 3701:3701 <> M:50
+R3723:3723 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3717:3717 <> a:51
+binder 3719:3719 <> b:52
+R3731:3741 SphereClassification.ConnectionBianchi <> VectorField def
+R3743:3743 SphereClassification.ConnectionBianchi <> M:50 var
+binder 3727:3727 <> X:53
+R3763:3767 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3750:3750 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3756:3761 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3752:3754 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3751:3751 SphereClassification.ConnectionBianchi <> a:51 var
+R3755:3755 SphereClassification.ConnectionBianchi <> b:52 var
+R3762:3762 SphereClassification.ConnectionBianchi <> X:53 var
+R3768:3768 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3776:3782 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3790:3790 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R3770:3774 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3769:3769 SphereClassification.ConnectionBianchi <> a:51 var
+R3775:3775 SphereClassification.ConnectionBianchi <> X:53 var
+R3784:3788 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3783:3783 SphereClassification.ConnectionBianchi <> b:52 var
+R3789:3789 SphereClassification.ConnectionBianchi <> X:53 var
+R3818:3826 SphereClassification.ConnectionBianchi <> pts_smult def
+R3829:3835 SphereClassification.ConnectionBianchi <> pts_add def
+R3851:3868 SphereClassification.RiemannMetric <> ts_smult_plus_dist thm
+R3851:3868 SphereClassification.RiemannMetric <> ts_smult_plus_dist thm
+prf 3883:3906 <> pts_neg_eq_neg_one_smult
+R3913:3921 SphereClassification.Manifold <> Manifold3 rec
+binder 3909:3909 <> M:54
+R3929:3939 SphereClassification.ConnectionBianchi <> VectorField def
+R3941:3941 SphereClassification.ConnectionBianchi <> M:54 var
+binder 3925:3925 <> X:55
+R3953:3957 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R3948:3951 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R3952:3952 SphereClassification.ConnectionBianchi <> X:55 var
+R3958:3958 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3961:3966 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R3967:3967 SphereClassification.ConnectionBianchi <> X:55 var
+R3995:4001 SphereClassification.ConnectionBianchi <> pts_neg def
+R4004:4012 SphereClassification.ConnectionBianchi <> pts_smult def
+R4060:4068 SphereClassification.RiemannMetric <> ts_neg_of def
+R4071:4081 SphereClassification.RiemannMetric <> ts_smult_of def
+prf 4195:4210 <> ts_smult_neg_one
+R4217:4225 SphereClassification.Manifold <> Manifold3 rec
+binder 4213:4213 <> M:56
+R4233:4234 SphereClassification.RiemannMetric <> R3 def
+binder 4229:4229 <> v:57
+R4259:4261 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4239:4249 SphereClassification.RiemannMetric <> ts_smult_of def
+R4251:4251 SphereClassification.ConnectionBianchi <> M:56 var
+R4258:4258 SphereClassification.ConnectionBianchi <> v:57 var
+R4262:4270 SphereClassification.RiemannMetric <> ts_neg_of def
+R4272:4272 SphereClassification.ConnectionBianchi <> M:56 var
+R4274:4274 SphereClassification.ConnectionBianchi <> v:57 var
+R4321:4331 SphereClassification.RiemannMetric <> ts_smult_of def
+R4334:4342 SphereClassification.RiemannMetric <> ts_neg_of def
+prf 4442:4455 <> ts_neg_add_neg
+R4462:4470 SphereClassification.Manifold <> Manifold3 rec
+binder 4458:4458 <> M:58
+R4480:4481 SphereClassification.RiemannMetric <> R3 def
+binder 4474:4474 <> u:59
+binder 4476:4476 <> v:60
+R4531:4533 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4488:4496 SphereClassification.RiemannMetric <> ts_neg_of def
+R4498:4498 SphereClassification.ConnectionBianchi <> M:58 var
+R4501:4509 SphereClassification.RiemannMetric <> ts_add_of def
+R4511:4511 SphereClassification.ConnectionBianchi <> M:58 var
+R4513:4513 SphereClassification.ConnectionBianchi <> u:59 var
+R4516:4524 SphereClassification.RiemannMetric <> ts_neg_of def
+R4526:4526 SphereClassification.ConnectionBianchi <> M:58 var
+R4528:4528 SphereClassification.ConnectionBianchi <> v:60 var
+R4534:4542 SphereClassification.RiemannMetric <> ts_add_of def
+R4544:4544 SphereClassification.ConnectionBianchi <> M:58 var
+R4547:4555 SphereClassification.RiemannMetric <> ts_neg_of def
+R4557:4557 SphereClassification.ConnectionBianchi <> M:58 var
+R4559:4559 SphereClassification.ConnectionBianchi <> u:59 var
+R4562:4562 SphereClassification.ConnectionBianchi <> v:60 var
+R4639:4647 SphereClassification.RiemannMetric <> ts_add_of def
+R4650:4658 SphereClassification.RiemannMetric <> ts_neg_of def
+prf 4749:4758 <> ts_neg_neg
+R4765:4773 SphereClassification.Manifold <> Manifold3 rec
+binder 4761:4761 <> M:61
+R4781:4782 SphereClassification.RiemannMetric <> R3 def
+binder 4777:4777 <> u:62
+R4816:4818 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4789:4797 SphereClassification.RiemannMetric <> ts_neg_of def
+R4799:4799 SphereClassification.ConnectionBianchi <> M:61 var
+R4802:4810 SphereClassification.RiemannMetric <> ts_neg_of def
+R4812:4812 SphereClassification.ConnectionBianchi <> M:61 var
+R4814:4814 SphereClassification.ConnectionBianchi <> u:62 var
+R4819:4819 SphereClassification.ConnectionBianchi <> u:62 var
+R4868:4876 SphereClassification.RiemannMetric <> ts_neg_of def
+prf 4976:4989 <> pts_smult_zero
+R4996:5004 SphereClassification.Manifold <> Manifold3 rec
+binder 4992:4992 <> M:63
+R5012:5022 SphereClassification.ConnectionBianchi <> VectorField def
+R5024:5024 SphereClassification.ConnectionBianchi <> M:63 var
+binder 5008:5008 <> X:64
+R5036:5040 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R5030:5034 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R5035:5035 SphereClassification.ConnectionBianchi <> X:64 var
+R5041:5048 SphereClassification.ConnectionBianchi <> pts_zero def
+R5050:5050 SphereClassification.ConnectionBianchi <> M:63 var
+R5078:5086 SphereClassification.ConnectionBianchi <> pts_smult def
+R5089:5096 SphereClassification.ConnectionBianchi <> pts_zero def
+R5147:5157 SphereClassification.RiemannMetric <> ts_smult_of def
+R5160:5169 SphereClassification.RiemannMetric <> ts_zero_of def
+prf 5279:5291 <> ts_smult_zero
+R5298:5306 SphereClassification.Manifold <> Manifold3 rec
+binder 5294:5294 <> M:65
+R5314:5315 SphereClassification.RiemannMetric <> R3 def
+binder 5310:5310 <> v:66
+R5337:5339 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5320:5330 SphereClassification.RiemannMetric <> ts_smult_of def
+R5332:5332 SphereClassification.ConnectionBianchi <> M:65 var
+R5336:5336 SphereClassification.ConnectionBianchi <> v:66 var
+R5340:5349 SphereClassification.RiemannMetric <> ts_zero_of def
+R5351:5351 SphereClassification.ConnectionBianchi <> M:65 var
+R5398:5408 SphereClassification.RiemannMetric <> ts_smult_of def
+R5411:5420 SphereClassification.RiemannMetric <> ts_zero_of def
+ax 5702:5712 <> lie_bracket
+R5728:5736 SphereClassification.Manifold <> Manifold3 rec
+binder 5724:5724 <> M:67
+R5753:5756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5740:5750 SphereClassification.ConnectionBianchi <> VectorField def
+R5752:5752 SphereClassification.ConnectionBianchi <> M:67 var
+R5770:5773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5757:5767 SphereClassification.ConnectionBianchi <> VectorField def
+R5769:5769 SphereClassification.ConnectionBianchi <> M:67 var
+R5774:5784 SphereClassification.ConnectionBianchi <> VectorField def
+R5786:5786 SphereClassification.ConnectionBianchi <> M:67 var
+R5815:5825 SphereClassification.ConnectionBianchi <> lie_bracket defax
+not 5799:5799 <> :::'['_x_','_x_']'
+ax 5887:5912 <> lie_bracket_bilinear_first
+R5928:5936 SphereClassification.Manifold <> Manifold3 rec
+binder 5924:5924 <> M:70
+R5948:5958 SphereClassification.ConnectionBianchi <> VectorField def
+R5960:5960 SphereClassification.ConnectionBianchi <> M:70 var
+binder 5940:5940 <> X:71
+binder 5942:5942 <> Y:72
+binder 5944:5944 <> Z:73
+R5970:5970 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5964:5964 <> a:74
+binder 5966:5966 <> b:75
+R6000:6004 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R5976:5976 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R5996:5997 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R5999:5999 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R5984:5988 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R5978:5982 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R5977:5977 SphereClassification.ConnectionBianchi <> a:74 var
+R5983:5983 SphereClassification.ConnectionBianchi <> X:71 var
+R5990:5994 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R5989:5989 SphereClassification.ConnectionBianchi <> b:75 var
+R5995:5995 SphereClassification.ConnectionBianchi <> Y:72 var
+R5998:5998 SphereClassification.ConnectionBianchi <> Z:73 var
+R6006:6010 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6005:6005 SphereClassification.ConnectionBianchi <> a:74 var
+R6017:6021 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R6011:6011 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6013:6014 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6016:6016 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6012:6012 SphereClassification.ConnectionBianchi <> X:71 var
+R6015:6015 SphereClassification.ConnectionBianchi <> Z:73 var
+R6023:6027 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6022:6022 SphereClassification.ConnectionBianchi <> b:75 var
+R6028:6028 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6030:6031 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6033:6033 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6029:6029 SphereClassification.ConnectionBianchi <> Y:72 var
+R6032:6032 SphereClassification.ConnectionBianchi <> Z:73 var
+ax 6074:6100 <> lie_bracket_bilinear_second
+R6116:6124 SphereClassification.Manifold <> Manifold3 rec
+binder 6112:6112 <> M:78
+R6136:6146 SphereClassification.ConnectionBianchi <> VectorField def
+R6148:6148 SphereClassification.ConnectionBianchi <> M:78 var
+binder 6128:6128 <> X:79
+binder 6130:6130 <> Y:80
+binder 6132:6132 <> Z:81
+R6158:6158 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6152:6152 <> a:82
+binder 6154:6154 <> b:83
+R6188:6192 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6164:6164 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6166:6167 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6187:6187 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6165:6165 SphereClassification.ConnectionBianchi <> X:79 var
+R6175:6179 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R6169:6173 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6168:6168 SphereClassification.ConnectionBianchi <> a:82 var
+R6174:6174 SphereClassification.ConnectionBianchi <> Y:80 var
+R6181:6185 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6180:6180 SphereClassification.ConnectionBianchi <> b:83 var
+R6186:6186 SphereClassification.ConnectionBianchi <> Z:81 var
+R6194:6198 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6193:6193 SphereClassification.ConnectionBianchi <> a:82 var
+R6205:6209 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R6199:6199 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6201:6202 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6204:6204 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6200:6200 SphereClassification.ConnectionBianchi <> X:79 var
+R6203:6203 SphereClassification.ConnectionBianchi <> Y:80 var
+R6211:6215 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R6210:6210 SphereClassification.ConnectionBianchi <> b:83 var
+R6216:6216 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6218:6219 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6221:6221 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6217:6217 SphereClassification.ConnectionBianchi <> X:79 var
+R6220:6220 SphereClassification.ConnectionBianchi <> Z:81 var
+ax 6266:6286 <> lie_bracket_skew_symm
+R6302:6310 SphereClassification.Manifold <> Manifold3 rec
+binder 6298:6298 <> M:86
+R6320:6330 SphereClassification.ConnectionBianchi <> VectorField def
+R6332:6332 SphereClassification.ConnectionBianchi <> M:86 var
+binder 6314:6314 <> X:87
+binder 6316:6316 <> Y:88
+R6344:6348 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6338:6338 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6340:6341 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6343:6343 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6339:6339 SphereClassification.ConnectionBianchi <> X:87 var
+R6342:6342 SphereClassification.ConnectionBianchi <> Y:88 var
+R6349:6352 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R6353:6353 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6355:6356 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6358:6358 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6354:6354 SphereClassification.ConnectionBianchi <> Y:88 var
+R6357:6357 SphereClassification.ConnectionBianchi <> X:87 var
+ax 6430:6447 <> lie_bracket_jacobi
+R6463:6471 SphereClassification.Manifold <> Manifold3 rec
+binder 6459:6459 <> M:91
+R6483:6493 SphereClassification.ConnectionBianchi <> VectorField def
+R6495:6495 SphereClassification.ConnectionBianchi <> M:91 var
+binder 6475:6475 <> X:92
+binder 6477:6477 <> Y:93
+binder 6479:6479 <> Z:94
+R6501:6501 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6545:6551 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6562:6562 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6513:6517 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R6502:6502 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6504:6505 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6512:6512 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6503:6503 SphereClassification.ConnectionBianchi <> X:92 var
+R6506:6506 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6508:6509 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6511:6511 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6507:6507 SphereClassification.ConnectionBianchi <> Y:93 var
+R6510:6510 SphereClassification.ConnectionBianchi <> Z:94 var
+R6529:6533 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R6518:6518 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6520:6521 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6528:6528 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6519:6519 SphereClassification.ConnectionBianchi <> Y:93 var
+R6522:6522 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6524:6525 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6527:6527 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6523:6523 SphereClassification.ConnectionBianchi <> Z:94 var
+R6526:6526 SphereClassification.ConnectionBianchi <> X:92 var
+R6534:6534 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6536:6537 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6544:6544 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6535:6535 SphereClassification.ConnectionBianchi <> Z:94 var
+R6538:6538 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6540:6541 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6543:6543 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6539:6539 SphereClassification.ConnectionBianchi <> X:92 var
+R6542:6542 SphereClassification.ConnectionBianchi <> Y:93 var
+R6552:6559 SphereClassification.ConnectionBianchi <> pts_zero def
+R6561:6561 SphereClassification.ConnectionBianchi <> M:91 var
+prf 6596:6616 <> lie_bracket_self_zero
+R6623:6631 SphereClassification.Manifold <> Manifold3 rec
+binder 6619:6619 <> M:97
+R6639:6649 SphereClassification.ConnectionBianchi <> VectorField def
+R6651:6651 SphereClassification.ConnectionBianchi <> M:97 var
+binder 6635:6635 <> X:98
+R6662:6666 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R6656:6656 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6658:6659 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6661:6661 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6657:6657 SphereClassification.ConnectionBianchi <> X:98 var
+R6660:6660 SphereClassification.ConnectionBianchi <> X:98 var
+R6667:6674 SphereClassification.ConnectionBianchi <> pts_zero def
+R6676:6676 SphereClassification.ConnectionBianchi <> M:97 var
+R6711:6731 SphereClassification.ConnectionBianchi <> lie_bracket_skew_symm prfax
+R6711:6731 SphereClassification.ConnectionBianchi <> lie_bracket_skew_symm prfax
+R6759:6764 SphereClassification.ConnectionBianchi <> pts_eq def
+R6767:6773 SphereClassification.ConnectionBianchi <> pts_neg def
+R6776:6783 SphereClassification.ConnectionBianchi <> pts_zero def
+R6837:6837 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6839:6840 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6842:6844 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6868:6876 SphereClassification.RiemannMetric <> ts_neg_of def
+R6879:6888 SphereClassification.RiemannMetric <> ts_zero_of def
+R6837:6837 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6839:6840 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6842:6844 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R6924:6926 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6946:6952 Corelib.Init.Logic <> f_equal thm
+R6963:6964 SphereClassification.RiemannMetric <> R3 def
+binder 6959:6959 <> v:99
+R6969:6971 Corelib.Init.Datatypes <> fst def
+R6974:6976 Corelib.Init.Datatypes <> fst def
+R6978:6978 SphereClassification.ConnectionBianchi <> v:99 var
+R6924:6926 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6946:6952 Corelib.Init.Logic <> f_equal thm
+R6963:6964 SphereClassification.RiemannMetric <> R3 def
+binder 6959:6959 <> v:100
+R6969:6971 Corelib.Init.Datatypes <> fst def
+R6974:6976 Corelib.Init.Datatypes <> fst def
+R6978:6978 SphereClassification.ConnectionBianchi <> v:100 var
+R7026:7028 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7048:7054 Corelib.Init.Logic <> f_equal thm
+R7065:7066 SphereClassification.RiemannMetric <> R3 def
+binder 7061:7061 <> v:101
+R7071:7073 Corelib.Init.Datatypes <> snd def
+R7076:7078 Corelib.Init.Datatypes <> fst def
+R7080:7080 SphereClassification.ConnectionBianchi <> v:101 var
+R7026:7028 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7048:7054 Corelib.Init.Logic <> f_equal thm
+R7065:7066 SphereClassification.RiemannMetric <> R3 def
+binder 7061:7061 <> v:102
+R7071:7073 Corelib.Init.Datatypes <> snd def
+R7076:7078 Corelib.Init.Datatypes <> fst def
+R7080:7080 SphereClassification.ConnectionBianchi <> v:102 var
+R7128:7130 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7150:7156 Corelib.Init.Logic <> f_equal thm
+R7167:7168 SphereClassification.RiemannMetric <> R3 def
+binder 7163:7163 <> v:103
+R7173:7175 Corelib.Init.Datatypes <> snd def
+R7177:7177 SphereClassification.ConnectionBianchi <> v:103 var
+R7128:7130 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7150:7156 Corelib.Init.Logic <> f_equal thm
+R7167:7168 SphereClassification.RiemannMetric <> R3 def
+binder 7163:7163 <> v:104
+R7173:7175 Corelib.Init.Datatypes <> snd def
+R7177:7177 SphereClassification.ConnectionBianchi <> v:104 var
+ax 7468:7487 <> covariant_derivative
+R7503:7511 SphereClassification.Manifold <> Manifold3 rec
+binder 7499:7499 <> M:105
+R7530:7533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7517:7527 SphereClassification.ConnectionBianchi <> VectorField def
+R7529:7529 SphereClassification.ConnectionBianchi <> M:105 var
+R7547:7550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7534:7544 SphereClassification.ConnectionBianchi <> VectorField def
+R7546:7546 SphereClassification.ConnectionBianchi <> M:105 var
+R7551:7561 SphereClassification.ConnectionBianchi <> VectorField def
+R7563:7563 SphereClassification.ConnectionBianchi <> M:105 var
+R7591:7610 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+not 7576:7576 <> :::'∇_'_x_x
+R7675:7694 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+not 7657:7657 <> :::'∇_{'_x_'}'_x
+ax 7774:7791 <> covar_linear_first
+R7807:7815 SphereClassification.Manifold <> Manifold3 rec
+binder 7803:7803 <> M:108
+R7827:7837 SphereClassification.ConnectionBianchi <> VectorField def
+R7839:7839 SphereClassification.ConnectionBianchi <> M:108 var
+binder 7819:7819 <> X:109
+binder 7821:7821 <> Y:110
+binder 7823:7823 <> Z:111
+R7849:7849 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7843:7843 <> a:112
+binder 7845:7845 <> b:113
+R7855:7855 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R7883:7889 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R7925:7925 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R7856:7860 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R7880:7881 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R7868:7872 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R7862:7866 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7861:7861 SphereClassification.ConnectionBianchi <> a:112 var
+R7867:7867 SphereClassification.ConnectionBianchi <> X:109 var
+R7874:7878 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7873:7873 SphereClassification.ConnectionBianchi <> b:113 var
+R7879:7879 SphereClassification.ConnectionBianchi <> Y:110 var
+R7882:7882 SphereClassification.ConnectionBianchi <> Z:111 var
+R7905:7909 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R7891:7896 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7904:7904 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7890:7890 SphereClassification.ConnectionBianchi <> a:112 var
+R7897:7900 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R7902:7902 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R7901:7901 SphereClassification.ConnectionBianchi <> X:109 var
+R7903:7903 SphereClassification.ConnectionBianchi <> Z:111 var
+R7911:7916 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7924:7924 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R7910:7910 SphereClassification.ConnectionBianchi <> b:113 var
+R7917:7920 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R7922:7922 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R7921:7921 SphereClassification.ConnectionBianchi <> Y:110 var
+R7923:7923 SphereClassification.ConnectionBianchi <> Z:111 var
+ax 7970:7988 <> covar_linear_second
+R8004:8012 SphereClassification.Manifold <> Manifold3 rec
+binder 8000:8000 <> M:116
+R8024:8034 SphereClassification.ConnectionBianchi <> VectorField def
+R8036:8036 SphereClassification.ConnectionBianchi <> M:116 var
+binder 8016:8016 <> X:117
+binder 8018:8018 <> Y:118
+binder 8020:8020 <> Z:119
+R8046:8046 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8040:8040 <> a:120
+binder 8042:8042 <> b:121
+R8052:8052 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R8080:8086 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R8122:8122 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R8053:8056 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8058:8059 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8079:8079 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8057:8057 SphereClassification.ConnectionBianchi <> X:117 var
+R8067:8071 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R8061:8065 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8060:8060 SphereClassification.ConnectionBianchi <> a:120 var
+R8066:8066 SphereClassification.ConnectionBianchi <> Y:118 var
+R8073:8077 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8072:8072 SphereClassification.ConnectionBianchi <> b:121 var
+R8078:8078 SphereClassification.ConnectionBianchi <> Z:119 var
+R8102:8106 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R8088:8093 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8101:8101 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8087:8087 SphereClassification.ConnectionBianchi <> a:120 var
+R8094:8097 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8099:8099 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8098:8098 SphereClassification.ConnectionBianchi <> X:117 var
+R8100:8100 SphereClassification.ConnectionBianchi <> Y:118 var
+R8108:8113 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8121:8121 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R8107:8107 SphereClassification.ConnectionBianchi <> b:121 var
+R8114:8117 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8119:8119 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8118:8118 SphereClassification.ConnectionBianchi <> X:117 var
+R8120:8120 SphereClassification.ConnectionBianchi <> Z:119 var
+ax 8190:8201 <> torsion_free
+R8217:8225 SphereClassification.Manifold <> Manifold3 rec
+binder 8213:8213 <> M:124
+R8235:8245 SphereClassification.ConnectionBianchi <> VectorField def
+R8247:8247 SphereClassification.ConnectionBianchi <> M:124 var
+binder 8229:8229 <> X:125
+binder 8231:8231 <> Y:126
+R8253:8253 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R8279:8284 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R8254:8257 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8259:8259 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8258:8258 SphereClassification.ConnectionBianchi <> X:125 var
+R8261:8265 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R8260:8260 SphereClassification.ConnectionBianchi <> Y:126 var
+R8266:8270 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R8278:8278 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R8271:8274 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8276:8276 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8275:8275 SphereClassification.ConnectionBianchi <> Y:126 var
+R8277:8277 SphereClassification.ConnectionBianchi <> X:125 var
+R8285:8285 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R8287:8288 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R8290:8290 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R8286:8286 SphereClassification.ConnectionBianchi <> X:125 var
+R8289:8289 SphereClassification.ConnectionBianchi <> Y:126 var
+ax 8368:8389 <> torsion_free_pointwise
+R8405:8413 SphereClassification.Manifold <> Manifold3 rec
+binder 8401:8401 <> M:129
+R8423:8433 SphereClassification.ConnectionBianchi <> VectorField def
+R8435:8435 SphereClassification.ConnectionBianchi <> M:129 var
+binder 8417:8417 <> X:130
+binder 8419:8419 <> Y:131
+R8443:8449 SphereClassification.Manifold <> sm_type proj
+R8451:8451 SphereClassification.ConnectionBianchi <> M:129 var
+binder 8439:8439 <> p:132
+R8478:8480 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8458:8468 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R8470:8470 SphereClassification.ConnectionBianchi <> M:129 var
+R8472:8472 SphereClassification.ConnectionBianchi <> X:130 var
+R8474:8474 SphereClassification.ConnectionBianchi <> Y:131 var
+R8477:8477 SphereClassification.ConnectionBianchi <> p:132 var
+R8481:8489 SphereClassification.RiemannMetric <> ts_add_of def
+R8491:8491 SphereClassification.ConnectionBianchi <> M:129 var
+R8495:8514 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R8516:8516 SphereClassification.ConnectionBianchi <> M:129 var
+R8518:8518 SphereClassification.ConnectionBianchi <> X:130 var
+R8520:8520 SphereClassification.ConnectionBianchi <> Y:131 var
+R8523:8523 SphereClassification.ConnectionBianchi <> p:132 var
+R8527:8535 SphereClassification.RiemannMetric <> ts_neg_of def
+R8537:8537 SphereClassification.ConnectionBianchi <> M:129 var
+R8541:8560 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R8562:8562 SphereClassification.ConnectionBianchi <> M:129 var
+R8564:8564 SphereClassification.ConnectionBianchi <> Y:131 var
+R8566:8566 SphereClassification.ConnectionBianchi <> X:130 var
+R8569:8569 SphereClassification.ConnectionBianchi <> p:132 var
+ax 8667:8681 <> covar_pointwise
+R8697:8705 SphereClassification.Manifold <> Manifold3 rec
+binder 8693:8693 <> M:135
+R8717:8727 SphereClassification.ConnectionBianchi <> VectorField def
+R8729:8729 SphereClassification.ConnectionBianchi <> M:135 var
+binder 8709:8709 <> X:136
+binder 8711:8711 <> Y:137
+binder 8713:8713 <> Z:138
+R8737:8743 SphereClassification.Manifold <> sm_type proj
+R8745:8745 SphereClassification.ConnectionBianchi <> M:135 var
+binder 8733:8733 <> p:139
+R8760:8763 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8754:8756 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8751:8751 SphereClassification.ConnectionBianchi <> X:136 var
+R8753:8753 SphereClassification.ConnectionBianchi <> p:139 var
+R8757:8757 SphereClassification.ConnectionBianchi <> Y:137 var
+R8759:8759 SphereClassification.ConnectionBianchi <> p:139 var
+R8775:8777 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8764:8768 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8770:8770 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8772:8774 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8769:8769 SphereClassification.ConnectionBianchi <> X:136 var
+R8771:8771 SphereClassification.ConnectionBianchi <> Z:138 var
+R8774:8774 SphereClassification.ConnectionBianchi <> p:139 var
+R8778:8782 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8784:8784 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8786:8788 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R8783:8783 SphereClassification.ConnectionBianchi <> Y:137 var
+R8785:8785 SphereClassification.ConnectionBianchi <> Z:138 var
+R8788:8788 SphereClassification.ConnectionBianchi <> p:139 var
+def 9114:9122 <> curvature
+R9129:9137 SphereClassification.Manifold <> Manifold3 rec
+binder 9125:9125 <> M:142
+R9149:9159 SphereClassification.ConnectionBianchi <> VectorField def
+R9161:9161 SphereClassification.ConnectionBianchi <> M:142 var
+binder 9141:9141 <> X:143
+binder 9143:9143 <> Y:144
+binder 9145:9145 <> Z:145
+R9166:9176 SphereClassification.ConnectionBianchi <> VectorField def
+R9178:9178 SphereClassification.ConnectionBianchi <> M:142 var
+binder 9189:9189 <> p:146
+R9194:9202 SphereClassification.RiemannMetric <> ts_add_of def
+R9204:9204 SphereClassification.ConnectionBianchi <> M:142 var
+R9211:9215 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9217:9218 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9226:9229 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9216:9216 SphereClassification.ConnectionBianchi <> X:143 var
+R9219:9222 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9224:9224 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9223:9223 SphereClassification.ConnectionBianchi <> Y:144 var
+R9225:9225 SphereClassification.ConnectionBianchi <> Z:145 var
+R9229:9229 SphereClassification.ConnectionBianchi <> p:146 var
+R9237:9245 SphereClassification.RiemannMetric <> ts_add_of def
+R9247:9247 SphereClassification.ConnectionBianchi <> M:142 var
+R9256:9264 SphereClassification.RiemannMetric <> ts_neg_of def
+R9266:9266 SphereClassification.ConnectionBianchi <> M:142 var
+R9269:9273 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9275:9276 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9284:9287 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9274:9274 SphereClassification.ConnectionBianchi <> Y:144 var
+R9277:9280 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9282:9282 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9281:9281 SphereClassification.ConnectionBianchi <> X:143 var
+R9283:9283 SphereClassification.ConnectionBianchi <> Z:145 var
+R9287:9287 SphereClassification.ConnectionBianchi <> p:146 var
+R9298:9306 SphereClassification.RiemannMetric <> ts_neg_of def
+R9308:9308 SphereClassification.ConnectionBianchi <> M:142 var
+R9311:9316 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R9323:9324 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R9326:9328 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R9317:9317 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R9319:9320 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R9322:9322 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R9318:9318 SphereClassification.ConnectionBianchi <> X:143 var
+R9321:9321 SphereClassification.ConnectionBianchi <> Y:144 var
+R9325:9325 SphereClassification.ConnectionBianchi <> Z:145 var
+R9328:9328 SphereClassification.ConnectionBianchi <> p:146 var
+prf 9390:9414 <> curvature_tensorial_third
+R9421:9429 SphereClassification.Manifold <> Manifold3 rec
+binder 9417:9417 <> M:147
+R9439:9449 SphereClassification.ConnectionBianchi <> VectorField def
+R9451:9451 SphereClassification.ConnectionBianchi <> M:147 var
+binder 9433:9433 <> X:148
+binder 9435:9435 <> Y:149
+R9461:9471 SphereClassification.ConnectionBianchi <> VectorField def
+R9473:9473 SphereClassification.ConnectionBianchi <> M:147 var
+binder 9455:9455 <> Z:150
+binder 9457:9457 <> W:151
+R9483:9483 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 9477:9477 <> a:152
+binder 9479:9479 <> b:153
+R9527:9533 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R9490:9498 SphereClassification.ConnectionBianchi <> curvature def
+R9500:9500 SphereClassification.ConnectionBianchi <> M:147 var
+R9502:9502 SphereClassification.ConnectionBianchi <> X:148 var
+R9504:9504 SphereClassification.ConnectionBianchi <> Y:149 var
+R9514:9518 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R9508:9512 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9507:9507 SphereClassification.ConnectionBianchi <> a:152 var
+R9513:9513 SphereClassification.ConnectionBianchi <> Z:150 var
+R9520:9524 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9519:9519 SphereClassification.ConnectionBianchi <> b:153 var
+R9525:9525 SphereClassification.ConnectionBianchi <> W:151 var
+R9559:9563 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R9535:9540 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9558:9558 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9534:9534 SphereClassification.ConnectionBianchi <> a:152 var
+R9541:9549 SphereClassification.ConnectionBianchi <> curvature def
+R9551:9551 SphereClassification.ConnectionBianchi <> M:147 var
+R9553:9553 SphereClassification.ConnectionBianchi <> X:148 var
+R9555:9555 SphereClassification.ConnectionBianchi <> Y:149 var
+R9557:9557 SphereClassification.ConnectionBianchi <> Z:150 var
+R9565:9570 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9588:9588 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R9564:9564 SphereClassification.ConnectionBianchi <> b:153 var
+R9571:9579 SphereClassification.ConnectionBianchi <> curvature def
+R9581:9581 SphereClassification.ConnectionBianchi <> M:147 var
+R9583:9583 SphereClassification.ConnectionBianchi <> X:148 var
+R9585:9585 SphereClassification.ConnectionBianchi <> Y:149 var
+R9587:9587 SphereClassification.ConnectionBianchi <> W:151 var
+R9692:9710 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9692:9710 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9746:9764 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9746:9764 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9800:9818 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9823:9833 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R9800:9818 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9823:9833 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R9872:9890 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9897:9900 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9902:9902 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9907:9910 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9912:9912 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9872:9890 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9897:9900 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9902:9902 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9907:9910 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9912:9912 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9942:9960 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9967:9970 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9972:9972 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9977:9980 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9982:9982 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9942:9960 SphereClassification.ConnectionBianchi <> covar_linear_second prfax
+R9967:9970 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9972:9972 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9977:9980 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R9982:9982 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10074:10098 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10074:10098 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10131:10155 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10131:10155 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10188:10212 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10188:10212 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10245:10269 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10245:10269 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10302:10326 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10302:10326 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R10354:10362 SphereClassification.ConnectionBianchi <> curvature def
+R10512:10518 SphereClassification.ConnectionBianchi <> pts_add def
+R10521:10529 SphereClassification.ConnectionBianchi <> pts_smult def
+R10544:10548 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10550:10551 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10559:10562 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10552:10555 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10557:10557 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10544:10548 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10550:10551 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10559:10562 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10552:10555 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10557:10557 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10594:10598 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10600:10601 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10609:10612 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10602:10605 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10607:10607 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10594:10598 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10600:10601 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10609:10612 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10602:10605 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10607:10607 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10647:10651 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10653:10654 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10662:10665 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10655:10658 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10660:10660 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10647:10651 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10653:10654 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10662:10665 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10655:10658 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10660:10660 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10697:10701 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10703:10704 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10712:10715 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10705:10708 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10710:10710 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10697:10701 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10703:10704 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10712:10715 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10705:10708 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10710:10710 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R10750:10755 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10762:10763 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10765:10767 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10756:10756 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10758:10759 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10761:10761 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10750:10755 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10762:10763 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10765:10767 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10756:10756 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10758:10759 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10761:10761 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10799:10804 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10811:10812 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10814:10816 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10805:10805 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10807:10808 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10810:10810 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10799:10804 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10811:10812 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10814:10816 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R10805:10805 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10807:10808 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10810:10810 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R10848:10856 SphereClassification.RiemannMetric <> ts_add_of def
+R10859:10869 SphereClassification.RiemannMetric <> ts_smult_of def
+R10872:10880 SphereClassification.RiemannMetric <> ts_neg_of def
+prf 10998:11016 <> curvature_skew_symm
+R11023:11031 SphereClassification.Manifold <> Manifold3 rec
+binder 11019:11019 <> M:154
+R11043:11053 SphereClassification.ConnectionBianchi <> VectorField def
+R11055:11055 SphereClassification.ConnectionBianchi <> M:154 var
+binder 11035:11035 <> X:155
+binder 11037:11037 <> Y:156
+binder 11039:11039 <> Z:157
+R11079:11083 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R11062:11070 SphereClassification.ConnectionBianchi <> curvature def
+R11072:11072 SphereClassification.ConnectionBianchi <> M:154 var
+R11074:11074 SphereClassification.ConnectionBianchi <> X:155 var
+R11076:11076 SphereClassification.ConnectionBianchi <> Y:156 var
+R11078:11078 SphereClassification.ConnectionBianchi <> Z:157 var
+R11084:11088 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11106:11106 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11089:11097 SphereClassification.ConnectionBianchi <> curvature def
+R11099:11099 SphereClassification.ConnectionBianchi <> M:154 var
+R11101:11101 SphereClassification.ConnectionBianchi <> Y:156 var
+R11103:11103 SphereClassification.ConnectionBianchi <> X:155 var
+R11105:11105 SphereClassification.ConnectionBianchi <> Z:157 var
+R11134:11142 SphereClassification.ConnectionBianchi <> curvature def
+R11145:11151 SphereClassification.ConnectionBianchi <> pts_neg def
+R11175:11195 SphereClassification.ConnectionBianchi <> lie_bracket_skew_symm prfax
+R11175:11195 SphereClassification.ConnectionBianchi <> lie_bracket_skew_symm prfax
+R11383:11397 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R11402:11412 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11422:11426 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11444:11444 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11427:11437 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11383:11397 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R11402:11412 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11422:11426 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11444:11444 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R11427:11437 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11469:11475 SphereClassification.ConnectionBianchi <> pts_neg def
+R11672:11689 SphereClassification.ConnectionBianchi <> covar_linear_first prfax
+R11694:11704 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11714:11721 SphereClassification.ConnectionBianchi <> pts_zero def
+R11672:11689 SphereClassification.ConnectionBianchi <> covar_linear_first prfax
+R11694:11704 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R11714:11721 SphereClassification.ConnectionBianchi <> pts_zero def
+R11777:11782 SphereClassification.ConnectionBianchi <> pts_eq def
+R12022:12024 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11967:11967 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R11996:12000 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R12019:12021 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R11968:11968 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11971:11977 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11995:11995 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11978:11988 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12002:12007 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12018:12018 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12008:12015 SphereClassification.ConnectionBianchi <> pts_zero def
+R12025:12030 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12048:12051 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12031:12041 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12022:12024 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11967:11967 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R11996:12000 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R12019:12021 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R11968:11968 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11971:11977 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11995:11995 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R11978:11988 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12002:12007 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12018:12018 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12008:12015 SphereClassification.ConnectionBianchi <> pts_zero def
+R12025:12030 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12048:12051 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12031:12041 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12066:12072 SphereClassification.ConnectionBianchi <> pts_add def
+R12075:12083 SphereClassification.ConnectionBianchi <> pts_smult def
+R12086:12092 SphereClassification.ConnectionBianchi <> pts_neg def
+R12114:12126 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12129:12139 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12142:12157 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12114:12126 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12114:12126 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12129:12139 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12129:12139 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12142:12157 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12142:12157 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12189:12203 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R12236:12240 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R12208:12208 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12211:12217 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12235:12235 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12218:12228 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12242:12247 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12258:12258 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12248:12255 SphereClassification.ConnectionBianchi <> pts_zero def
+R12262:12266 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12284:12284 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12267:12277 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12189:12203 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R12236:12240 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R12208:12208 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12211:12217 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12235:12235 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12218:12228 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12242:12247 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12258:12258 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R12248:12255 SphereClassification.ConnectionBianchi <> pts_zero def
+R12262:12266 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12284:12284 SphereClassification.ConnectionBianchi <> :::'⊖'_x not
+R12267:12277 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R12634:12636 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12617:12622 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12628:12629 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12631:12633 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12623:12623 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12625:12625 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12627:12627 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12637:12645 SphereClassification.RiemannMetric <> ts_neg_of def
+R12650:12655 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12661:12662 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12664:12666 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12656:12656 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12658:12658 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12660:12660 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12634:12636 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12617:12622 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12628:12629 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12631:12633 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12623:12623 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12625:12625 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12627:12627 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12637:12645 SphereClassification.RiemannMetric <> ts_neg_of def
+R12650:12655 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12661:12662 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12664:12666 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R12656:12656 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12658:12658 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12660:12660 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R12740:12748 SphereClassification.ConnectionBianchi <> pts_smult def
+R12751:12757 SphereClassification.ConnectionBianchi <> pts_add def
+R12779:12791 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12794:12804 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12807:12822 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12779:12791 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12779:12791 SphereClassification.ConnectionBianchi <> ts_smult_zero thm
+R12794:12804 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12794:12804 SphereClassification.RiemannMetric <> ts_add_zero thm
+R12807:12822 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12807:12822 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R12867:12875 SphereClassification.RiemannMetric <> ts_add_of def
+R12878:12886 SphereClassification.RiemannMetric <> ts_neg_of def
+R12901:12905 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12907:12908 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12916:12919 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12909:12912 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12914:12914 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12901:12905 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12907:12908 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12916:12919 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12909:12912 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12914:12914 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12951:12955 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12957:12958 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12966:12969 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12959:12962 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12964:12964 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12951:12955 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12957:12958 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12966:12969 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12959:12962 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R12964:12964 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+prf 13396:13420 <> expand_bracket_connection
+R13427:13435 SphereClassification.Manifold <> Manifold3 rec
+binder 13423:13423 <> M:158
+R13447:13457 SphereClassification.ConnectionBianchi <> VectorField def
+R13459:13459 SphereClassification.ConnectionBianchi <> M:158 var
+binder 13439:13439 <> X:159
+binder 13441:13441 <> Y:160
+binder 13443:13443 <> Z:161
+R13467:13473 SphereClassification.Manifold <> sm_type proj
+R13475:13475 SphereClassification.ConnectionBianchi <> M:158 var
+binder 13463:13463 <> p:162
+R13530:13534 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13483:13502 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13504:13504 SphereClassification.ConnectionBianchi <> M:158 var
+R13507:13517 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R13519:13519 SphereClassification.ConnectionBianchi <> M:158 var
+R13521:13521 SphereClassification.ConnectionBianchi <> X:159 var
+R13523:13523 SphereClassification.ConnectionBianchi <> Y:160 var
+R13526:13526 SphereClassification.ConnectionBianchi <> Z:161 var
+R13529:13529 SphereClassification.ConnectionBianchi <> p:162 var
+R13535:13543 SphereClassification.RiemannMetric <> ts_add_of def
+R13545:13545 SphereClassification.ConnectionBianchi <> M:158 var
+R13549:13568 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13570:13570 SphereClassification.ConnectionBianchi <> M:158 var
+R13573:13592 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13594:13594 SphereClassification.ConnectionBianchi <> M:158 var
+R13596:13596 SphereClassification.ConnectionBianchi <> X:159 var
+R13598:13598 SphereClassification.ConnectionBianchi <> Y:160 var
+R13601:13601 SphereClassification.ConnectionBianchi <> Z:161 var
+R13604:13604 SphereClassification.ConnectionBianchi <> p:162 var
+R13622:13630 SphereClassification.RiemannMetric <> ts_neg_of def
+R13632:13632 SphereClassification.ConnectionBianchi <> M:158 var
+R13636:13655 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13657:13657 SphereClassification.ConnectionBianchi <> M:158 var
+R13660:13679 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13681:13681 SphereClassification.ConnectionBianchi <> M:158 var
+R13683:13683 SphereClassification.ConnectionBianchi <> Y:160 var
+R13685:13685 SphereClassification.ConnectionBianchi <> X:159 var
+R13688:13688 SphereClassification.ConnectionBianchi <> Z:161 var
+R13691:13691 SphereClassification.ConnectionBianchi <> p:162 var
+R13715:13715 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13750:13756 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13794:13794 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13717:13722 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13749:13749 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13723:13742 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13757:13757 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13760:13766 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13793:13793 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13767:13786 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13715:13715 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13750:13756 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13794:13794 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R13717:13722 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13749:13749 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13723:13742 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13757:13757 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13760:13766 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13793:13793 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R13767:13786 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R13817:13819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13820:13830 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R13817:13819 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13820:13830 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R13856:13862 SphereClassification.ConnectionBianchi <> pts_add def
+R13865:13873 SphereClassification.ConnectionBianchi <> pts_smult def
+R13895:13904 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R13895:13904 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R13895:13904 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R13915:13930 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R13915:13930 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R13915:13930 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R13953:13974 SphereClassification.ConnectionBianchi <> torsion_free_pointwise prfax
+R13953:13974 SphereClassification.ConnectionBianchi <> torsion_free_pointwise prfax
+R13988:14002 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R14009:14019 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R13988:14002 SphereClassification.ConnectionBianchi <> covar_pointwise prfax
+R14009:14019 SphereClassification.ConnectionBianchi <> lie_bracket defax
+R14094:14111 SphereClassification.ConnectionBianchi <> covar_linear_first prfax
+R14116:14135 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R14145:14164 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R14094:14111 SphereClassification.ConnectionBianchi <> covar_linear_first prfax
+R14116:14135 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R14145:14164 SphereClassification.ConnectionBianchi <> covariant_derivative defax
+R14201:14206 SphereClassification.ConnectionBianchi <> pts_eq def
+R14247:14253 SphereClassification.ConnectionBianchi <> pts_add def
+R14256:14264 SphereClassification.ConnectionBianchi <> pts_smult def
+R14300:14309 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R14300:14309 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R14300:14309 SphereClassification.RiemannMetric <> ts_smult_1 thm
+R14330:14345 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R14330:14345 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+R14330:14345 SphereClassification.ConnectionBianchi <> ts_smult_neg_one thm
+def 14425:14442 <> curvature_unfolded
+R14449:14457 SphereClassification.Manifold <> Manifold3 rec
+binder 14445:14445 <> M:163
+R14469:14479 SphereClassification.ConnectionBianchi <> VectorField def
+R14481:14481 SphereClassification.ConnectionBianchi <> M:163 var
+binder 14461:14461 <> X:164
+binder 14463:14463 <> Y:165
+binder 14465:14465 <> Z:166
+R14486:14496 SphereClassification.ConnectionBianchi <> VectorField def
+R14498:14498 SphereClassification.ConnectionBianchi <> M:163 var
+binder 14509:14509 <> p:167
+R14514:14522 SphereClassification.RiemannMetric <> ts_add_of def
+R14524:14524 SphereClassification.ConnectionBianchi <> M:163 var
+R14531:14535 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14537:14538 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14546:14549 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14536:14536 SphereClassification.ConnectionBianchi <> X:164 var
+R14539:14542 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14544:14544 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14543:14543 SphereClassification.ConnectionBianchi <> Y:165 var
+R14545:14545 SphereClassification.ConnectionBianchi <> Z:166 var
+R14549:14549 SphereClassification.ConnectionBianchi <> p:167 var
+R14557:14565 SphereClassification.RiemannMetric <> ts_add_of def
+R14567:14567 SphereClassification.ConnectionBianchi <> M:163 var
+R14576:14584 SphereClassification.RiemannMetric <> ts_neg_of def
+R14586:14586 SphereClassification.ConnectionBianchi <> M:163 var
+R14589:14593 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14595:14596 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14604:14607 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14594:14594 SphereClassification.ConnectionBianchi <> Y:165 var
+R14597:14600 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14602:14602 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14601:14601 SphereClassification.ConnectionBianchi <> X:164 var
+R14603:14603 SphereClassification.ConnectionBianchi <> Z:166 var
+R14607:14607 SphereClassification.ConnectionBianchi <> p:167 var
+R14618:14626 SphereClassification.RiemannMetric <> ts_add_of def
+R14628:14628 SphereClassification.ConnectionBianchi <> M:163 var
+R14639:14647 SphereClassification.RiemannMetric <> ts_neg_of def
+R14649:14649 SphereClassification.ConnectionBianchi <> M:163 var
+R14652:14658 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14666:14668 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14670:14672 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14659:14662 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14664:14664 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14663:14663 SphereClassification.ConnectionBianchi <> X:164 var
+R14665:14665 SphereClassification.ConnectionBianchi <> Y:165 var
+R14669:14669 SphereClassification.ConnectionBianchi <> Z:166 var
+R14672:14672 SphereClassification.ConnectionBianchi <> p:167 var
+R14685:14691 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14699:14701 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14703:14705 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R14692:14695 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14697:14697 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R14696:14696 SphereClassification.ConnectionBianchi <> Y:165 var
+R14698:14698 SphereClassification.ConnectionBianchi <> X:164 var
+R14702:14702 SphereClassification.ConnectionBianchi <> Z:166 var
+R14705:14705 SphereClassification.ConnectionBianchi <> p:167 var
+prf 14718:14738 <> curvature_eq_unfolded
+R14745:14753 SphereClassification.Manifold <> Manifold3 rec
+binder 14741:14741 <> M:168
+R14765:14775 SphereClassification.ConnectionBianchi <> VectorField def
+R14777:14777 SphereClassification.ConnectionBianchi <> M:168 var
+binder 14757:14757 <> X:169
+binder 14759:14759 <> Y:170
+binder 14761:14761 <> Z:171
+R14785:14791 SphereClassification.Manifold <> sm_type proj
+R14793:14793 SphereClassification.ConnectionBianchi <> M:168 var
+binder 14781:14781 <> p:172
+R14819:14821 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R14800:14808 SphereClassification.ConnectionBianchi <> curvature def
+R14810:14810 SphereClassification.ConnectionBianchi <> M:168 var
+R14812:14812 SphereClassification.ConnectionBianchi <> X:169 var
+R14814:14814 SphereClassification.ConnectionBianchi <> Y:170 var
+R14816:14816 SphereClassification.ConnectionBianchi <> Z:171 var
+R14818:14818 SphereClassification.ConnectionBianchi <> p:172 var
+R14822:14839 SphereClassification.ConnectionBianchi <> curvature_unfolded def
+R14841:14841 SphereClassification.ConnectionBianchi <> M:168 var
+R14843:14843 SphereClassification.ConnectionBianchi <> X:169 var
+R14845:14845 SphereClassification.ConnectionBianchi <> Y:170 var
+R14847:14847 SphereClassification.ConnectionBianchi <> Z:171 var
+R14849:14849 SphereClassification.ConnectionBianchi <> p:172 var
+R14868:14876 SphereClassification.ConnectionBianchi <> curvature def
+R14879:14896 SphereClassification.ConnectionBianchi <> curvature_unfolded def
+R14930:14954 SphereClassification.ConnectionBianchi <> expand_bracket_connection thm
+R14930:14954 SphereClassification.ConnectionBianchi <> expand_bracket_connection thm
+R14930:14954 SphereClassification.ConnectionBianchi <> expand_bracket_connection thm
+R14976:14989 SphereClassification.ConnectionBianchi <> ts_neg_add_neg thm
+R14976:14989 SphereClassification.ConnectionBianchi <> ts_neg_add_neg thm
+def 15055:15065 <> bianchi_sum
+R15072:15080 SphereClassification.Manifold <> Manifold3 rec
+binder 15068:15068 <> M:173
+R15092:15102 SphereClassification.ConnectionBianchi <> VectorField def
+R15104:15104 SphereClassification.ConnectionBianchi <> M:173 var
+binder 15084:15084 <> X:174
+binder 15086:15086 <> Y:175
+binder 15088:15088 <> Z:176
+R15109:15119 SphereClassification.ConnectionBianchi <> VectorField def
+R15121:15121 SphereClassification.ConnectionBianchi <> M:173 var
+binder 15132:15132 <> p:177
+R15137:15145 SphereClassification.RiemannMetric <> ts_add_of def
+R15147:15147 SphereClassification.ConnectionBianchi <> M:173 var
+R15154:15162 SphereClassification.RiemannMetric <> ts_add_of def
+R15164:15164 SphereClassification.ConnectionBianchi <> M:173 var
+R15167:15175 SphereClassification.ConnectionBianchi <> curvature def
+R15177:15177 SphereClassification.ConnectionBianchi <> M:173 var
+R15179:15179 SphereClassification.ConnectionBianchi <> X:174 var
+R15181:15181 SphereClassification.ConnectionBianchi <> Y:175 var
+R15183:15183 SphereClassification.ConnectionBianchi <> Z:176 var
+R15185:15185 SphereClassification.ConnectionBianchi <> p:177 var
+R15189:15197 SphereClassification.ConnectionBianchi <> curvature def
+R15199:15199 SphereClassification.ConnectionBianchi <> M:173 var
+R15201:15201 SphereClassification.ConnectionBianchi <> Y:175 var
+R15203:15203 SphereClassification.ConnectionBianchi <> Z:176 var
+R15205:15205 SphereClassification.ConnectionBianchi <> X:174 var
+R15207:15207 SphereClassification.ConnectionBianchi <> p:177 var
+R15216:15224 SphereClassification.ConnectionBianchi <> curvature def
+R15226:15226 SphereClassification.ConnectionBianchi <> M:173 var
+R15228:15228 SphereClassification.ConnectionBianchi <> Z:176 var
+R15230:15230 SphereClassification.ConnectionBianchi <> X:174 var
+R15232:15232 SphereClassification.ConnectionBianchi <> Y:175 var
+R15234:15234 SphereClassification.ConnectionBianchi <> p:177 var
+prf 15313:15333 <> bianchi_eq_jacobi_sum
+R15340:15348 SphereClassification.Manifold <> Manifold3 rec
+binder 15336:15336 <> M:178
+R15360:15370 SphereClassification.ConnectionBianchi <> VectorField def
+R15372:15372 SphereClassification.ConnectionBianchi <> M:178 var
+binder 15352:15352 <> X:179
+binder 15354:15354 <> Y:180
+binder 15356:15356 <> Z:181
+R15380:15386 SphereClassification.Manifold <> sm_type proj
+R15388:15388 SphereClassification.ConnectionBianchi <> M:178 var
+binder 15376:15376 <> p:182
+R15416:15420 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R15395:15405 SphereClassification.ConnectionBianchi <> bianchi_sum def
+R15407:15407 SphereClassification.ConnectionBianchi <> M:178 var
+R15409:15409 SphereClassification.ConnectionBianchi <> X:179 var
+R15411:15411 SphereClassification.ConnectionBianchi <> Y:180 var
+R15413:15413 SphereClassification.ConnectionBianchi <> Z:181 var
+R15415:15415 SphereClassification.ConnectionBianchi <> p:182 var
+R15421:15429 SphereClassification.RiemannMetric <> ts_add_of def
+R15431:15431 SphereClassification.ConnectionBianchi <> M:178 var
+R15438:15446 SphereClassification.RiemannMetric <> ts_add_of def
+R15448:15448 SphereClassification.ConnectionBianchi <> M:178 var
+R15451:15451 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15453:15454 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15461:15463 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15452:15452 SphereClassification.ConnectionBianchi <> X:179 var
+R15455:15455 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15457:15458 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15460:15460 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15456:15456 SphereClassification.ConnectionBianchi <> Y:180 var
+R15459:15459 SphereClassification.ConnectionBianchi <> Z:181 var
+R15463:15463 SphereClassification.ConnectionBianchi <> p:182 var
+R15467:15467 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15469:15470 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15477:15479 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15468:15468 SphereClassification.ConnectionBianchi <> Y:180 var
+R15471:15471 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15473:15474 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15476:15476 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15472:15472 SphereClassification.ConnectionBianchi <> Z:181 var
+R15475:15475 SphereClassification.ConnectionBianchi <> X:179 var
+R15479:15479 SphereClassification.ConnectionBianchi <> p:182 var
+R15488:15488 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15490:15491 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15498:15500 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15489:15489 SphereClassification.ConnectionBianchi <> Z:181 var
+R15492:15492 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15494:15495 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15497:15497 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R15493:15493 SphereClassification.ConnectionBianchi <> X:179 var
+R15496:15496 SphereClassification.ConnectionBianchi <> Y:180 var
+R15500:15500 SphereClassification.ConnectionBianchi <> p:182 var
+prf 16502:16514 <> first_bianchi
+R16521:16529 SphereClassification.Manifold <> Manifold3 rec
+binder 16517:16517 <> M:183
+R16541:16551 SphereClassification.ConnectionBianchi <> VectorField def
+R16553:16553 SphereClassification.ConnectionBianchi <> M:183 var
+binder 16533:16533 <> X:184
+binder 16535:16535 <> Y:185
+binder 16537:16537 <> Z:186
+R16579:16583 SphereClassification.ConnectionBianchi <> :::x_'≡'_x not
+R16560:16570 SphereClassification.ConnectionBianchi <> bianchi_sum def
+R16572:16572 SphereClassification.ConnectionBianchi <> M:183 var
+R16574:16574 SphereClassification.ConnectionBianchi <> X:184 var
+R16576:16576 SphereClassification.ConnectionBianchi <> Y:185 var
+R16578:16578 SphereClassification.ConnectionBianchi <> Z:186 var
+R16584:16591 SphereClassification.ConnectionBianchi <> pts_zero def
+R16593:16593 SphereClassification.ConnectionBianchi <> M:183 var
+prf 17150:17172 <> first_bianchi_pointwise
+R17179:17187 SphereClassification.Manifold <> Manifold3 rec
+binder 17175:17175 <> M:187
+R17199:17209 SphereClassification.ConnectionBianchi <> VectorField def
+R17211:17211 SphereClassification.ConnectionBianchi <> M:187 var
+binder 17191:17191 <> X:188
+binder 17193:17193 <> Y:189
+binder 17195:17195 <> Z:190
+R17221:17227 SphereClassification.Manifold <> sm_type proj
+R17229:17229 SphereClassification.ConnectionBianchi <> M:187 var
+binder 17217:17217 <> p:191
+R17335:17337 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17236:17244 SphereClassification.RiemannMetric <> ts_add_of def
+R17246:17246 SphereClassification.ConnectionBianchi <> M:187 var
+R17253:17261 SphereClassification.RiemannMetric <> ts_add_of def
+R17263:17263 SphereClassification.ConnectionBianchi <> M:187 var
+R17266:17274 SphereClassification.ConnectionBianchi <> curvature def
+R17276:17276 SphereClassification.ConnectionBianchi <> M:187 var
+R17278:17278 SphereClassification.ConnectionBianchi <> X:188 var
+R17280:17280 SphereClassification.ConnectionBianchi <> Y:189 var
+R17282:17282 SphereClassification.ConnectionBianchi <> Z:190 var
+R17284:17284 SphereClassification.ConnectionBianchi <> p:191 var
+R17288:17296 SphereClassification.ConnectionBianchi <> curvature def
+R17298:17298 SphereClassification.ConnectionBianchi <> M:187 var
+R17300:17300 SphereClassification.ConnectionBianchi <> Y:189 var
+R17302:17302 SphereClassification.ConnectionBianchi <> Z:190 var
+R17304:17304 SphereClassification.ConnectionBianchi <> X:188 var
+R17306:17306 SphereClassification.ConnectionBianchi <> p:191 var
+R17315:17323 SphereClassification.ConnectionBianchi <> curvature def
+R17325:17325 SphereClassification.ConnectionBianchi <> M:187 var
+R17327:17327 SphereClassification.ConnectionBianchi <> Z:190 var
+R17329:17329 SphereClassification.ConnectionBianchi <> X:188 var
+R17331:17331 SphereClassification.ConnectionBianchi <> Y:189 var
+R17333:17333 SphereClassification.ConnectionBianchi <> p:191 var
+R17338:17347 SphereClassification.RiemannMetric <> ts_zero_of def
+R17349:17349 SphereClassification.ConnectionBianchi <> M:187 var
+R17373:17385 SphereClassification.ConnectionBianchi <> first_bianchi prfax
+R17373:17385 SphereClassification.ConnectionBianchi <> first_bianchi prfax
+R17411:17416 SphereClassification.ConnectionBianchi <> pts_eq def
+prf 17508:17536 <> curvature_tensorial_pointwise
+R17543:17551 SphereClassification.Manifold <> Manifold3 rec
+binder 17539:17539 <> M:192
+R17565:17575 SphereClassification.ConnectionBianchi <> VectorField def
+R17577:17577 SphereClassification.ConnectionBianchi <> M:192 var
+binder 17555:17555 <> X:193
+binder 17557:17557 <> Y:194
+binder 17559:17559 <> Z:195
+binder 17561:17561 <> W:196
+R17589:17589 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 17583:17583 <> a:197
+binder 17585:17585 <> b:198
+R17597:17603 SphereClassification.Manifold <> sm_type proj
+R17605:17605 SphereClassification.ConnectionBianchi <> M:192 var
+binder 17593:17593 <> p:199
+R17651:17655 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17612:17620 SphereClassification.ConnectionBianchi <> curvature def
+R17622:17622 SphereClassification.ConnectionBianchi <> M:192 var
+R17624:17624 SphereClassification.ConnectionBianchi <> X:193 var
+R17626:17626 SphereClassification.ConnectionBianchi <> Y:194 var
+R17636:17640 SphereClassification.ConnectionBianchi <> :::x_'⊕'_x not
+R17630:17634 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R17629:17629 SphereClassification.ConnectionBianchi <> a:197 var
+R17635:17635 SphereClassification.ConnectionBianchi <> Z:195 var
+R17642:17646 SphereClassification.ConnectionBianchi <> :::x_'⊙'_x not
+R17641:17641 SphereClassification.ConnectionBianchi <> b:198 var
+R17647:17647 SphereClassification.ConnectionBianchi <> W:196 var
+R17650:17650 SphereClassification.ConnectionBianchi <> p:199 var
+R17656:17664 SphereClassification.RiemannMetric <> ts_add_of def
+R17666:17666 SphereClassification.ConnectionBianchi <> M:192 var
+R17669:17679 SphereClassification.RiemannMetric <> ts_smult_of def
+R17681:17681 SphereClassification.ConnectionBianchi <> M:192 var
+R17683:17683 SphereClassification.ConnectionBianchi <> a:197 var
+R17686:17694 SphereClassification.ConnectionBianchi <> curvature def
+R17696:17696 SphereClassification.ConnectionBianchi <> M:192 var
+R17698:17698 SphereClassification.ConnectionBianchi <> X:193 var
+R17700:17700 SphereClassification.ConnectionBianchi <> Y:194 var
+R17702:17702 SphereClassification.ConnectionBianchi <> Z:195 var
+R17704:17704 SphereClassification.ConnectionBianchi <> p:199 var
+R17723:17733 SphereClassification.RiemannMetric <> ts_smult_of def
+R17735:17735 SphereClassification.ConnectionBianchi <> M:192 var
+R17737:17737 SphereClassification.ConnectionBianchi <> b:198 var
+R17740:17748 SphereClassification.ConnectionBianchi <> curvature def
+R17750:17750 SphereClassification.ConnectionBianchi <> M:192 var
+R17752:17752 SphereClassification.ConnectionBianchi <> X:193 var
+R17754:17754 SphereClassification.ConnectionBianchi <> Y:194 var
+R17756:17756 SphereClassification.ConnectionBianchi <> W:196 var
+R17758:17758 SphereClassification.ConnectionBianchi <> p:199 var
+R17784:17808 SphereClassification.ConnectionBianchi <> curvature_tensorial_third thm
+R17784:17808 SphereClassification.ConnectionBianchi <> curvature_tensorial_third thm
+R17840:17845 SphereClassification.ConnectionBianchi <> pts_eq def
+R17848:17854 SphereClassification.ConnectionBianchi <> pts_add def
+R17857:17865 SphereClassification.ConnectionBianchi <> pts_smult def
+prf 17900:17923 <> curvature_skew_pointwise
+R17930:17938 SphereClassification.Manifold <> Manifold3 rec
+binder 17926:17926 <> M:200
+R17950:17960 SphereClassification.ConnectionBianchi <> VectorField def
+R17962:17962 SphereClassification.ConnectionBianchi <> M:200 var
+binder 17942:17942 <> X:201
+binder 17944:17944 <> Y:202
+binder 17946:17946 <> Z:203
+R17972:17978 SphereClassification.Manifold <> sm_type proj
+R17980:17980 SphereClassification.ConnectionBianchi <> M:200 var
+binder 17968:17968 <> p:204
+R18006:18008 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R17987:17995 SphereClassification.ConnectionBianchi <> curvature def
+R17997:17997 SphereClassification.ConnectionBianchi <> M:200 var
+R17999:17999 SphereClassification.ConnectionBianchi <> X:201 var
+R18001:18001 SphereClassification.ConnectionBianchi <> Y:202 var
+R18003:18003 SphereClassification.ConnectionBianchi <> Z:203 var
+R18005:18005 SphereClassification.ConnectionBianchi <> p:204 var
+R18009:18017 SphereClassification.RiemannMetric <> ts_neg_of def
+R18019:18019 SphereClassification.ConnectionBianchi <> M:200 var
+R18022:18030 SphereClassification.ConnectionBianchi <> curvature def
+R18032:18032 SphereClassification.ConnectionBianchi <> M:200 var
+R18034:18034 SphereClassification.ConnectionBianchi <> Y:202 var
+R18036:18036 SphereClassification.ConnectionBianchi <> X:201 var
+R18038:18038 SphereClassification.ConnectionBianchi <> Z:203 var
+R18040:18040 SphereClassification.ConnectionBianchi <> p:204 var
+R18065:18083 SphereClassification.ConnectionBianchi <> curvature_skew_symm thm
+R18065:18083 SphereClassification.ConnectionBianchi <> curvature_skew_symm thm
+R18109:18114 SphereClassification.ConnectionBianchi <> pts_eq def
+R18117:18123 SphereClassification.ConnectionBianchi <> pts_neg def
+prf 18158:18177 <> curvature_zero_third
+R18184:18192 SphereClassification.Manifold <> Manifold3 rec
+binder 18180:18180 <> M:205
+R18202:18212 SphereClassification.ConnectionBianchi <> VectorField def
+R18214:18214 SphereClassification.ConnectionBianchi <> M:205 var
+binder 18196:18196 <> X:206
+binder 18198:18198 <> Y:207
+R18224:18230 SphereClassification.Manifold <> sm_type proj
+R18232:18232 SphereClassification.ConnectionBianchi <> M:205 var
+binder 18220:18220 <> p:208
+R18269:18271 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R18239:18247 SphereClassification.ConnectionBianchi <> curvature def
+R18249:18249 SphereClassification.ConnectionBianchi <> M:205 var
+R18251:18251 SphereClassification.ConnectionBianchi <> X:206 var
+R18253:18253 SphereClassification.ConnectionBianchi <> Y:207 var
+R18256:18263 SphereClassification.ConnectionBianchi <> pts_zero def
+R18265:18265 SphereClassification.ConnectionBianchi <> M:205 var
+R18268:18268 SphereClassification.ConnectionBianchi <> p:208 var
+R18272:18281 SphereClassification.RiemannMetric <> ts_zero_of def
+R18283:18283 SphereClassification.ConnectionBianchi <> M:205 var
+R18302:18310 SphereClassification.ConnectionBianchi <> curvature def
+R18313:18319 SphereClassification.ConnectionBianchi <> pts_add def
+R18322:18330 SphereClassification.ConnectionBianchi <> pts_smult def
+R18333:18340 SphereClassification.ConnectionBianchi <> pts_zero def
+R18362:18368 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18370:18372 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18407:18410 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18373:18377 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18379:18380 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18406:18406 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18394:18403 SphereClassification.RiemannMetric <> ts_zero_of def
+R18362:18368 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18370:18372 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18407:18410 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18373:18377 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18379:18380 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18406:18406 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18394:18403 SphereClassification.RiemannMetric <> ts_zero_of def
+R18442:18448 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18450:18452 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18487:18490 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18453:18457 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18459:18460 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18486:18486 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18474:18483 SphereClassification.RiemannMetric <> ts_zero_of def
+R18442:18448 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18450:18452 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18487:18490 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18453:18457 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18459:18460 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18486:18486 SphereClassification.ConnectionBianchi <> :::'∇_'_x_x not
+R18474:18483 SphereClassification.RiemannMetric <> ts_zero_of def
+R18522:18528 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18535:18537 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18563:18566 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18529:18529 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18531:18532 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18534:18534 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18551:18560 SphereClassification.RiemannMetric <> ts_zero_of def
+R18522:18528 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18535:18537 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18563:18566 SphereClassification.ConnectionBianchi <> :::'∇_{'_x_'}'_x not
+R18529:18529 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18531:18532 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18534:18534 SphereClassification.ConnectionBianchi <> :::'['_x_','_x_']' not
+R18551:18560 SphereClassification.RiemannMetric <> ts_zero_of def
+R18595:18603 SphereClassification.RiemannMetric <> ts_add_of def
+R18606:18614 SphereClassification.RiemannMetric <> ts_neg_of def
+R18617:18626 SphereClassification.RiemannMetric <> ts_zero_of def
+def 19003:19027 <> riemann_04_from_curvature
+R19034:19042 SphereClassification.Manifold <> Manifold3 rec
+binder 19030:19030 <> M:209
+R19050:19065 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R19067:19067 SphereClassification.ConnectionBianchi <> M:209 var
+binder 19046:19046 <> g:210
+R19083:19093 SphereClassification.ConnectionBianchi <> VectorField def
+R19095:19095 SphereClassification.ConnectionBianchi <> M:209 var
+binder 19073:19073 <> X:211
+binder 19075:19075 <> Y:212
+binder 19077:19077 <> Z:213
+binder 19079:19079 <> W:214
+R19103:19109 SphereClassification.Manifold <> sm_type proj
+R19111:19111 SphereClassification.ConnectionBianchi <> M:209 var
+binder 19099:19099 <> p:215
+R19116:19116 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R19123:19135 SphereClassification.RiemannMetric <> metric_tensor proj
+R19137:19137 SphereClassification.ConnectionBianchi <> M:209 var
+R19139:19139 SphereClassification.ConnectionBianchi <> g:210 var
+R19141:19141 SphereClassification.ConnectionBianchi <> p:215 var
+R19144:19152 SphereClassification.ConnectionBianchi <> curvature def
+R19154:19154 SphereClassification.ConnectionBianchi <> M:209 var
+R19156:19156 SphereClassification.ConnectionBianchi <> X:211 var
+R19158:19158 SphereClassification.ConnectionBianchi <> Y:212 var
+R19160:19160 SphereClassification.ConnectionBianchi <> Z:213 var
+R19162:19162 SphereClassification.ConnectionBianchi <> p:215 var
+R19166:19166 SphereClassification.ConnectionBianchi <> W:214 var
+R19168:19168 SphereClassification.ConnectionBianchi <> p:215 var
+prf 19179:19194 <> first_bianchi_04
+R19201:19209 SphereClassification.Manifold <> Manifold3 rec
+binder 19197:19197 <> M:216
+R19217:19232 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R19234:19234 SphereClassification.ConnectionBianchi <> M:216 var
+binder 19213:19213 <> g:217
+R19250:19260 SphereClassification.ConnectionBianchi <> VectorField def
+R19262:19262 SphereClassification.ConnectionBianchi <> M:216 var
+binder 19240:19240 <> X:218
+binder 19242:19242 <> Y:219
+binder 19244:19244 <> Z:220
+binder 19246:19246 <> W:221
+R19270:19276 SphereClassification.Manifold <> sm_type proj
+R19278:19278 SphereClassification.ConnectionBianchi <> M:216 var
+binder 19266:19266 <> p:222
+R19412:19414 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R19368:19372 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R19324:19328 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R19285:19309 SphereClassification.ConnectionBianchi <> riemann_04_from_curvature def
+R19311:19311 SphereClassification.ConnectionBianchi <> M:216 var
+R19313:19313 SphereClassification.ConnectionBianchi <> g:217 var
+R19315:19315 SphereClassification.ConnectionBianchi <> X:218 var
+R19317:19317 SphereClassification.ConnectionBianchi <> Y:219 var
+R19319:19319 SphereClassification.ConnectionBianchi <> Z:220 var
+R19321:19321 SphereClassification.ConnectionBianchi <> W:221 var
+R19323:19323 SphereClassification.ConnectionBianchi <> p:222 var
+R19329:19353 SphereClassification.ConnectionBianchi <> riemann_04_from_curvature def
+R19355:19355 SphereClassification.ConnectionBianchi <> M:216 var
+R19357:19357 SphereClassification.ConnectionBianchi <> g:217 var
+R19359:19359 SphereClassification.ConnectionBianchi <> Y:219 var
+R19361:19361 SphereClassification.ConnectionBianchi <> Z:220 var
+R19363:19363 SphereClassification.ConnectionBianchi <> X:218 var
+R19365:19365 SphereClassification.ConnectionBianchi <> W:221 var
+R19367:19367 SphereClassification.ConnectionBianchi <> p:222 var
+R19373:19397 SphereClassification.ConnectionBianchi <> riemann_04_from_curvature def
+R19399:19399 SphereClassification.ConnectionBianchi <> M:216 var
+R19401:19401 SphereClassification.ConnectionBianchi <> g:217 var
+R19403:19403 SphereClassification.ConnectionBianchi <> Z:220 var
+R19405:19405 SphereClassification.ConnectionBianchi <> X:218 var
+R19407:19407 SphereClassification.ConnectionBianchi <> Y:219 var
+R19409:19409 SphereClassification.ConnectionBianchi <> W:221 var
+R19411:19411 SphereClassification.ConnectionBianchi <> p:222 var

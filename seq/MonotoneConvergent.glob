@@ -1,0 +1,275 @@
+DIGEST a40c3657694df5d9cce66ac7a92fc1c3
+FMonotoneConvergent
+R27:31 Stdlib.Reals.Reals <> <> lib
+R33:37 Stdlib.Reals.RIneq <> <> lib
+R39:47 Stdlib.Reals.Ranalysis <> <> lib
+R77:86 Stdlib.Reals.Rfunctions <> <> lib
+R116:122 Stdlib.Reals.Rseries <> <> lib
+R152:158 Stdlib.Reals.SeqProp <> <> lib
+R188:190 Stdlib.micromega.Lra <> <> lib
+R220:222 Stdlib.micromega.Lia <> <> lib
+R252:262 Stdlib.Arith.Compare_dec <> <> lib
+def 549:558 <> increasing
+R568:571 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R565:567 Corelib.Init.Datatypes <> nat ind
+R572:572 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 561:561 <> f:1
+binder 594:594 <> n:2
+R600:603 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R597:597 MonotoneConvergent <> f:1 var
+R599:599 MonotoneConvergent <> n:2 var
+R604:604 MonotoneConvergent <> f:1 var
+R607:607 Corelib.Init.Datatypes <> S constr
+R609:609 MonotoneConvergent <> n:2 var
+def 625:634 <> decreasing
+R644:647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R641:643 Corelib.Init.Datatypes <> nat ind
+R648:648 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 637:637 <> f:3
+binder 670:670 <> n:4
+R680:683 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R673:673 MonotoneConvergent <> f:3 var
+R676:676 Corelib.Init.Datatypes <> S constr
+R678:678 MonotoneConvergent <> n:4 var
+R684:684 MonotoneConvergent <> f:3 var
+R686:686 MonotoneConvergent <> n:4 var
+def 701:708 <> monotone
+R718:721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R715:717 Corelib.Init.Datatypes <> nat ind
+R722:722 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 711:711 <> f:5
+R749:752 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R737:746 MonotoneConvergent <> increasing def
+R748:748 MonotoneConvergent <> f:5 var
+R753:762 MonotoneConvergent <> decreasing def
+R764:764 MonotoneConvergent <> f:5 var
+def 1030:1042 <> bounded_above
+R1052:1055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1049:1051 Corelib.Init.Datatypes <> nat ind
+R1056:1056 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1045:1045 <> f:6
+R1071:1077 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1083:1084 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1082:1082 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1078:1078 <> M:7
+binder 1092:1092 <> n:8
+R1098:1101 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1095:1095 MonotoneConvergent <> f:6 var
+R1097:1097 MonotoneConvergent <> n:8 var
+R1102:1102 MonotoneConvergent <> M:7 var
+def 1117:1129 <> bounded_below
+R1139:1142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1136:1138 Corelib.Init.Datatypes <> nat ind
+R1143:1143 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1132:1132 <> f:9
+R1158:1164 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1170:1171 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1169:1169 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1165:1165 <> m:10
+binder 1179:1179 <> n:11
+R1183:1186 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1182:1182 MonotoneConvergent <> m:10 var
+R1187:1187 MonotoneConvergent <> f:9 var
+R1189:1189 MonotoneConvergent <> n:11 var
+def 1204:1216 <> bounded_seq_R
+R1226:1229 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1223:1225 Corelib.Init.Datatypes <> nat ind
+R1230:1230 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1219:1219 <> f:12
+R1260:1263 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1245:1257 MonotoneConvergent <> bounded_above def
+R1259:1259 MonotoneConvergent <> f:12 var
+R1264:1276 MonotoneConvergent <> bounded_below def
+R1278:1278 MonotoneConvergent <> f:12 var
+def 1542:1553 <> convergent_R
+R1563:1566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1560:1562 Corelib.Init.Datatypes <> nat ind
+R1567:1567 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1556:1556 <> f:13
+R1575:1575 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1571:1571 <> L:14
+R1603:1603 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1597:1599 <> eps:15
+R1613:1620 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1609:1611 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1606:1608 MonotoneConvergent <> eps:15 var
+R1621:1627 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1635:1636 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1632:1634 Corelib.Init.Datatypes <> nat ind
+binder 1628:1628 <> N:16
+R1648:1650 Corelib.Init.Datatypes <> nat ind
+binder 1644:1644 <> n:17
+R1665:1668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1655:1658 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1654:1654 MonotoneConvergent <> N:16 var
+R1659:1659 MonotoneConvergent <> n:17 var
+R1683:1685 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R1669:1672 Stdlib.Reals.Rbasic_fun <> Rabs def
+R1678:1680 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1675:1675 MonotoneConvergent <> f:13 var
+R1677:1677 MonotoneConvergent <> n:17 var
+R1681:1681 MonotoneConvergent <> L:14 var
+R1686:1688 MonotoneConvergent <> eps:15 var
+prf 1946:1966 <> convergent_R_eq_Un_cv
+binder 1979:1979 <> f:18
+binder 1981:1981 <> L:19
+R2000:2004 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R1984:1995 MonotoneConvergent <> convergent_R def
+R1997:1997 MonotoneConvergent <> f:18 var
+R1999:1999 MonotoneConvergent <> L:19 var
+R2005:2009 Stdlib.Reals.Rseries <> Un_cv def
+R2013:2013 MonotoneConvergent <> L:19 var
+R2011:2011 MonotoneConvergent <> f:18 var
+R2134:2138 Stdlib.Reals.Rfunctions <> Rdist def
+R2251:2255 Stdlib.Reals.Rfunctions <> Rdist def
+prf 2544:2566 <> bounded_above_eq_has_ub
+binder 2579:2579 <> f:20
+R2597:2601 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2582:2594 MonotoneConvergent <> bounded_above def
+R2596:2596 MonotoneConvergent <> f:20 var
+R2602:2607 Stdlib.Reals.SeqProp <> has_ub def
+R2609:2609 MonotoneConvergent <> f:20 var
+R2663:2668 Stdlib.Reals.SeqProp <> has_ub def
+R2671:2675 Stdlib.Reals.Raxioms <> bound def
+R2752:2757 Stdlib.Reals.SeqProp <> has_ub def
+R2760:2764 Stdlib.Reals.Raxioms <> bound def
+prf 3122:3144 <> bounded_below_eq_has_lb
+binder 3157:3157 <> f:21
+R3175:3179 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R3160:3172 MonotoneConvergent <> bounded_below def
+R3174:3174 MonotoneConvergent <> f:21 var
+R3180:3185 Stdlib.Reals.SeqProp <> has_lb def
+R3187:3187 MonotoneConvergent <> f:21 var
+R3241:3246 Stdlib.Reals.SeqProp <> has_lb def
+R3249:3253 Stdlib.Reals.Raxioms <> bound def
+R3264:3265 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3264:3265 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3310:3316 Stdlib.Reals.SeqProp <> opp_seq def
+R3336:3339 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3336:3339 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3390:3395 Stdlib.Reals.SeqProp <> has_lb def
+R3398:3402 Stdlib.Reals.Raxioms <> bound def
+R3444:3445 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3444:3445 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3479:3480 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3479:3480 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3505:3507 Stdlib.Reals.Rseries <> EUn def
+R3522:3523 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3510:3516 Stdlib.Reals.SeqProp <> opp_seq def
+R3505:3507 Stdlib.Reals.Rseries <> EUn def
+R3522:3523 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3510:3516 Stdlib.Reals.SeqProp <> opp_seq def
+R3544:3546 Stdlib.Reals.Rseries <> EUn def
+R3549:3555 Stdlib.Reals.SeqProp <> opp_seq def
+R3614:3620 Stdlib.Reals.SeqProp <> opp_seq def
+prf 3897:3912 <> increasing_ge_f0
+binder 3925:3925 <> f:22
+binder 3927:3927 <> n:23
+R3942:3945 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3930:3939 MonotoneConvergent <> increasing def
+R3941:3941 MonotoneConvergent <> f:22 var
+R3953:3956 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3946:3946 MonotoneConvergent <> f:22 var
+R3957:3957 MonotoneConvergent <> f:22 var
+R3959:3959 MonotoneConvergent <> n:23 var
+prf 4314:4329 <> decreasing_le_f0
+binder 4342:4342 <> f:24
+binder 4344:4344 <> n:25
+R4359:4362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4347:4356 MonotoneConvergent <> decreasing def
+R4358:4358 MonotoneConvergent <> f:24 var
+R4366:4369 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R4363:4363 MonotoneConvergent <> f:24 var
+R4365:4365 MonotoneConvergent <> n:25 var
+R4370:4370 MonotoneConvergent <> f:24 var
+prf 4738:4757 <> convergent_R_bounded
+binder 4770:4770 <> f:26
+binder 4772:4772 <> L:27
+R4791:4794 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4775:4786 MonotoneConvergent <> convergent_R def
+R4788:4788 MonotoneConvergent <> f:26 var
+R4790:4790 MonotoneConvergent <> L:27 var
+R4795:4807 MonotoneConvergent <> bounded_seq_R def
+R4809:4809 MonotoneConvergent <> f:26 var
+R4847:4867 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+R4847:4867 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+R4899:4909 Stdlib.Reals.Rseries <> Cauchy_crit def
+R4899:4909 Stdlib.Reals.Rseries <> Cauchy_crit def
+R4925:4933 Stdlib.Reals.SeqProp <> CV_Cauchy thm
+R4925:4933 Stdlib.Reals.SeqProp <> CV_Cauchy thm
+R4977:4982 Stdlib.Reals.SeqProp <> has_ub def
+R4977:4982 Stdlib.Reals.SeqProp <> has_ub def
+R4998:5007 Stdlib.Reals.SeqProp <> cauchy_maj thm
+R4998:5007 Stdlib.Reals.SeqProp <> cauchy_maj thm
+R5043:5048 Stdlib.Reals.SeqProp <> has_lb def
+R5043:5048 Stdlib.Reals.SeqProp <> has_lb def
+R5064:5073 Stdlib.Reals.SeqProp <> cauchy_min thm
+R5064:5073 Stdlib.Reals.SeqProp <> cauchy_min thm
+R5112:5134 MonotoneConvergent <> bounded_above_eq_has_ub thm
+R5112:5134 MonotoneConvergent <> bounded_above_eq_has_ub thm
+R5158:5180 MonotoneConvergent <> bounded_below_eq_has_lb thm
+R5158:5180 MonotoneConvergent <> bounded_below_eq_has_lb thm
+prf 5467:5501 <> increasing_bounded_above_convergent
+binder 5514:5514 <> f:28
+R5529:5532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5517:5526 MonotoneConvergent <> increasing def
+R5528:5528 MonotoneConvergent <> f:28 var
+R5548:5553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5533:5545 MonotoneConvergent <> bounded_above def
+R5547:5547 MonotoneConvergent <> f:28 var
+R5554:5560 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5566:5567 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5565:5565 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5561:5561 <> L:29
+R5568:5579 MonotoneConvergent <> convergent_R def
+R5581:5581 MonotoneConvergent <> f:28 var
+R5583:5583 MonotoneConvergent <> L:29 var
+R5622:5644 MonotoneConvergent <> bounded_above_eq_has_ub thm
+R5622:5644 MonotoneConvergent <> bounded_above_eq_has_ub thm
+R5666:5675 Stdlib.Reals.SeqProp <> growing_cv thm
+R5666:5675 Stdlib.Reals.SeqProp <> growing_cv thm
+R5718:5738 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+R5718:5738 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+prf 6024:6058 <> decreasing_bounded_below_convergent
+binder 6071:6071 <> f:30
+R6086:6089 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6074:6083 MonotoneConvergent <> decreasing def
+R6085:6085 MonotoneConvergent <> f:30 var
+R6105:6110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6090:6102 MonotoneConvergent <> bounded_below def
+R6104:6104 MonotoneConvergent <> f:30 var
+R6111:6117 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6123:6124 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6122:6122 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6118:6118 <> L:31
+R6125:6136 MonotoneConvergent <> convergent_R def
+R6138:6138 MonotoneConvergent <> f:30 var
+R6140:6140 MonotoneConvergent <> L:31 var
+R6179:6201 MonotoneConvergent <> bounded_below_eq_has_lb thm
+R6179:6201 MonotoneConvergent <> bounded_below_eq_has_lb thm
+R6223:6235 Stdlib.Reals.SeqProp <> decreasing_cv thm
+R6223:6235 Stdlib.Reals.SeqProp <> decreasing_cv thm
+R6278:6298 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+R6278:6298 MonotoneConvergent <> convergent_R_eq_Un_cv thm
+prf 6583:6613 <> monotone_convergent_iff_bounded
+binder 6626:6626 <> f:32
+R6639:6644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6629:6636 MonotoneConvergent <> monotone def
+R6638:6638 MonotoneConvergent <> f:32 var
+R6645:6645 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R6676:6681 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R6646:6652 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6658:6659 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6657:6657 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6653:6653 <> L:33
+R6660:6671 MonotoneConvergent <> convergent_R def
+R6673:6673 MonotoneConvergent <> f:32 var
+R6675:6675 MonotoneConvergent <> L:33 var
+R6682:6694 MonotoneConvergent <> bounded_seq_R def
+R6696:6696 MonotoneConvergent <> f:32 var
+R6788:6807 MonotoneConvergent <> convergent_R_bounded thm
+R6788:6807 MonotoneConvergent <> convergent_R_bounded thm
+R6920:6954 MonotoneConvergent <> increasing_bounded_above_convergent thm
+R6920:6954 MonotoneConvergent <> increasing_bounded_above_convergent thm
+R6992:7026 MonotoneConvergent <> decreasing_bounded_below_convergent thm
+R6992:7026 MonotoneConvergent <> decreasing_bounded_below_convergent thm

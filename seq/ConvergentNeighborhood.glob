@@ -1,0 +1,79 @@
+DIGEST 7020becde79693b04c924ff9c1ace484
+FConvergentNeighborhood
+R27:31 Stdlib.Reals.Reals <> <> lib
+R33:37 Stdlib.Reals.RIneq <> <> lib
+R39:47 Stdlib.Reals.Ranalysis <> <> lib
+R77:92 Stdlib.Logic.ClassicalEpsilon <> <> lib
+R122:145 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R175:190 Stdlib.Logic.ProofIrrelevance <> <> lib
+rec 473:483 <> MetricSpace
+proj 499:499 <> X
+proj 512:515 <> dist
+proj 534:542 <> dist_self
+proj 572:579 <> dist_sym
+proj 618:630 <> dist_triangle
+proj 683:695 <> dist_eq_ident
+R520:523 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R519:519 ConvergentNeighborhood <> X:2 meth
+R525:528 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R524:524 ConvergentNeighborhood <> X:2 meth
+R529:529 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 553:553 <> x:4
+R564:566 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R556:559 ConvergentNeighborhood <> dist:3 meth
+R563:563 ConvergentNeighborhood <> x:4 var
+R561:561 ConvergentNeighborhood <> x:4 var
+binder 590:590 <> x:6
+binder 592:592 <> y:7
+R603:605 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R595:598 ConvergentNeighborhood <> dist:3 meth
+R602:602 ConvergentNeighborhood <> y:7 var
+R600:600 ConvergentNeighborhood <> x:6 var
+R606:609 ConvergentNeighborhood <> dist:3 meth
+R613:613 ConvergentNeighborhood <> x:6 var
+R611:611 ConvergentNeighborhood <> y:7 var
+binder 641:641 <> x:9
+binder 643:643 <> y:10
+binder 645:645 <> z:11
+R656:659 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R648:651 ConvergentNeighborhood <> dist:3 meth
+R655:655 ConvergentNeighborhood <> z:11 var
+R653:653 ConvergentNeighborhood <> x:9 var
+R668:670 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R660:663 ConvergentNeighborhood <> dist:3 meth
+R667:667 ConvergentNeighborhood <> y:10 var
+R665:665 ConvergentNeighborhood <> x:9 var
+R671:674 ConvergentNeighborhood <> dist:3 meth
+R678:678 ConvergentNeighborhood <> z:11 var
+R676:676 ConvergentNeighborhood <> y:10 var
+binder 706:706 <> x:13
+binder 708:708 <> y:14
+R723:726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R719:721 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R711:714 ConvergentNeighborhood <> dist:3 meth
+R718:718 ConvergentNeighborhood <> y:14 var
+R716:716 ConvergentNeighborhood <> x:13 var
+R728:730 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R727:727 ConvergentNeighborhood <> x:13 var
+R731:731 ConvergentNeighborhood <> y:14 var
+def 1001:1010 <> convergent
+R1018:1028 ConvergentNeighborhood <> MetricSpace rec
+binder 1013:1014 <> ms:16
+R1039:1042 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1036:1038 Corelib.Init.Datatypes <> nat ind
+R1043:1044 ConvergentNeighborhood <> ms:16 var
+binder 1032:1032 <> p:17
+R1053:1054 ConvergentNeighborhood <> ms:16 var
+binder 1048:1049 <> p0:18
+R1082:1082 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1076:1078 <> eps:19
+R1092:1099 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1088:1090 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1085:1087 ConvergentNeighborhood <> eps:19 var
+R1100:1106 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1114:1115 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1111:1113 Corelib.Init.Datatypes <> nat ind
+binder 1107:1107 <> N:20
+R1127:1129 Corelib.Init.Datatypes <> nat ind
+binder 1123:1123 <> n:21
+R1142:1145 Corelib.Init.Logic <> ::type_scope:x_'->'_x not

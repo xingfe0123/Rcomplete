@@ -1,0 +1,472 @@
+DIGEST bff2facffc9d26fe49e4b43983acc0ad
+FHilbert.V2_Independence
+R836:841 Stdlib.QArith.QArith <> <> lib
+R843:854 Stdlib.QArith.QOrderedType <> <> lib
+R884:888 Stdlib.Reals.Reals <> <> lib
+R918:920 Stdlib.micromega.Lra <> <> lib
+R950:955 Stdlib.ZArith.ZArith <> <> lib
+def 1256:1260 <> Point
+R1273:1275 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1272:1272 Stdlib.QArith.QArith_base <> Q rec
+R1276:1276 Stdlib.QArith.QArith_base <> Q rec
+def 1310:1316 <> coord_x
+R1323:1327 Hilbert.V2_Independence <> Point def
+binder 1319:1319 <> P:1
+R1332:1332 Stdlib.QArith.QArith_base <> Q rec
+R1337:1339 Corelib.Init.Datatypes <> fst def
+R1341:1341 Hilbert.V2_Independence <> P:1 var
+def 1355:1361 <> coord_y
+R1368:1372 Hilbert.V2_Independence <> Point def
+binder 1364:1364 <> P:2
+R1377:1377 Stdlib.QArith.QArith_base <> Q rec
+R1382:1384 Corelib.Init.Datatypes <> snd def
+R1386:1386 Hilbert.V2_Independence <> P:2 var
+ind 1446:1449 <> Line
+constr 1463:1468 <> mkLine
+R1473:1476 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1472:1472 Stdlib.QArith.QArith_base <> Q rec
+R1478:1481 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1477:1477 Stdlib.QArith.QArith_base <> Q rec
+R1483:1486 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1482:1482 Stdlib.QArith.QArith_base <> Q rec
+R1487:1490 Hilbert.V2_Independence <> Line:3 ind
+scheme 1446:1449 <> Line_rect
+scheme 1446:1449 <> Line_ind
+scheme 1446:1449 <> Line_rec
+scheme 1446:1449 <> Line_sind
+def 1549:1553 <> Incid
+R1560:1564 Hilbert.V2_Independence <> Point def
+binder 1556:1556 <> P:5
+R1572:1575 Hilbert.V2_Independence <> Line ind
+binder 1568:1568 <> l:6
+R1596:1596 Hilbert.V2_Independence <> l:6 var
+R1607:1612 Hilbert.V2_Independence <> mkLine constr
+R1656:1659 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R1652:1654 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R1636:1638 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R1624:1626 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1627:1633 Hilbert.V2_Independence <> coord_x def
+R1635:1635 Hilbert.V2_Independence <> P:5 var
+R1640:1642 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1643:1649 Hilbert.V2_Independence <> coord_y def
+R1651:1651 Hilbert.V2_Independence <> P:5 var
+def 1730:1738 <> collinear
+R1749:1753 Hilbert.V2_Independence <> Point def
+binder 1741:1741 <> A:8
+binder 1743:1743 <> B:9
+binder 1745:1745 <> C:10
+R1768:1775 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1784:1786 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1780:1783 Hilbert.V2_Independence <> Line ind
+binder 1776:1776 <> l:11
+R1796:1799 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1787:1791 Hilbert.V2_Independence <> Incid def
+R1793:1793 Hilbert.V2_Independence <> A:8 var
+R1795:1795 Hilbert.V2_Independence <> l:11 var
+R1809:1812 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1800:1804 Hilbert.V2_Independence <> Incid def
+R1806:1806 Hilbert.V2_Independence <> B:9 var
+R1808:1808 Hilbert.V2_Independence <> l:11 var
+R1813:1817 Hilbert.V2_Independence <> Incid def
+R1819:1819 Hilbert.V2_Independence <> C:10 var
+R1821:1821 Hilbert.V2_Independence <> l:11 var
+def 1836:1838 <> Bet
+R1849:1853 Hilbert.V2_Independence <> Point def
+binder 1841:1841 <> A:12
+binder 1843:1843 <> B:13
+binder 1845:1845 <> C:14
+R2121:2129 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2306:2306 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R1883:1889 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2120:2120 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1868:1876 Hilbert.V2_Independence <> collinear def
+R1878:1878 Hilbert.V2_Independence <> A:12 var
+R1880:1880 Hilbert.V2_Independence <> B:13 var
+R1882:1882 Hilbert.V2_Independence <> C:14 var
+R1944:1950 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1939:1942 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<='_x not
+R1890:1890 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1912:1916 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1938:1938 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1900:1902 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R1891:1897 Hilbert.V2_Independence <> coord_x def
+R1899:1899 Hilbert.V2_Independence <> A:12 var
+R1903:1909 Hilbert.V2_Independence <> coord_x def
+R1911:1911 Hilbert.V2_Independence <> B:13 var
+R1926:1928 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R1917:1923 Hilbert.V2_Independence <> coord_x def
+R1925:1925 Hilbert.V2_Independence <> C:14 var
+R1929:1935 Hilbert.V2_Independence <> coord_x def
+R1937:1937 Hilbert.V2_Independence <> B:13 var
+R2005:2011 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2000:2003 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<='_x not
+R1951:1951 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1973:1977 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1999:1999 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R1961:1963 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R1952:1958 Hilbert.V2_Independence <> coord_y def
+R1960:1960 Hilbert.V2_Independence <> A:12 var
+R1964:1970 Hilbert.V2_Independence <> coord_y def
+R1972:1972 Hilbert.V2_Independence <> B:13 var
+R1987:1989 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R1978:1984 Hilbert.V2_Independence <> coord_y def
+R1986:1986 Hilbert.V2_Independence <> C:14 var
+R1990:1996 Hilbert.V2_Independence <> coord_y def
+R1998:1998 Hilbert.V2_Independence <> B:13 var
+R2116:2118 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R2061:2066 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2012:2012 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2034:2038 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2060:2060 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2022:2024 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2013:2019 Hilbert.V2_Independence <> coord_x def
+R2021:2021 Hilbert.V2_Independence <> A:12 var
+R2025:2031 Hilbert.V2_Independence <> coord_x def
+R2033:2033 Hilbert.V2_Independence <> B:13 var
+R2048:2050 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2039:2045 Hilbert.V2_Independence <> coord_x def
+R2047:2047 Hilbert.V2_Independence <> C:14 var
+R2051:2057 Hilbert.V2_Independence <> coord_x def
+R2059:2059 Hilbert.V2_Independence <> B:13 var
+R2067:2067 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2089:2093 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2115:2115 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2077:2079 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2068:2074 Hilbert.V2_Independence <> coord_y def
+R2076:2076 Hilbert.V2_Independence <> A:12 var
+R2080:2086 Hilbert.V2_Independence <> coord_y def
+R2088:2088 Hilbert.V2_Independence <> B:13 var
+R2103:2105 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2094:2100 Hilbert.V2_Independence <> coord_y def
+R2102:2102 Hilbert.V2_Independence <> C:14 var
+R2106:2112 Hilbert.V2_Independence <> coord_y def
+R2114:2114 Hilbert.V2_Independence <> B:13 var
+R2274:2277 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R2239:2245 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2234:2237 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R2179:2184 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2130:2130 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2152:2156 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2178:2178 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2140:2142 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2131:2137 Hilbert.V2_Independence <> coord_x def
+R2139:2139 Hilbert.V2_Independence <> A:12 var
+R2143:2149 Hilbert.V2_Independence <> coord_x def
+R2151:2151 Hilbert.V2_Independence <> B:13 var
+R2166:2168 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2157:2163 Hilbert.V2_Independence <> coord_x def
+R2165:2165 Hilbert.V2_Independence <> C:14 var
+R2169:2175 Hilbert.V2_Independence <> coord_x def
+R2177:2177 Hilbert.V2_Independence <> B:13 var
+R2185:2185 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2207:2211 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2233:2233 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2195:2197 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2186:2192 Hilbert.V2_Independence <> coord_y def
+R2194:2194 Hilbert.V2_Independence <> A:12 var
+R2198:2204 Hilbert.V2_Independence <> coord_y def
+R2206:2206 Hilbert.V2_Independence <> B:13 var
+R2221:2223 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2212:2218 Hilbert.V2_Independence <> coord_y def
+R2220:2220 Hilbert.V2_Independence <> C:14 var
+R2224:2230 Hilbert.V2_Independence <> coord_y def
+R2232:2232 Hilbert.V2_Independence <> B:13 var
+R2246:2246 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2268:2272 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2256:2258 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2247:2253 Hilbert.V2_Independence <> coord_x def
+R2255:2255 Hilbert.V2_Independence <> A:12 var
+R2259:2265 Hilbert.V2_Independence <> coord_x def
+R2267:2267 Hilbert.V2_Independence <> B:13 var
+R2278:2278 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2300:2304 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2288:2290 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2279:2285 Hilbert.V2_Independence <> coord_y def
+R2287:2287 Hilbert.V2_Independence <> A:12 var
+R2291:2297 Hilbert.V2_Independence <> coord_y def
+R2299:2299 Hilbert.V2_Independence <> B:13 var
+def 2370:2380 <> euc_dist_sq
+R2391:2395 Hilbert.V2_Independence <> Point def
+binder 2383:2384 <> P1:15
+binder 2386:2387 <> P2:16
+R2400:2400 Stdlib.QArith.QArith_base <> Q rec
+R2427:2429 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2417:2423 Hilbert.V2_Independence <> coord_x def
+R2425:2426 Hilbert.V2_Independence <> P1:15 var
+R2430:2436 Hilbert.V2_Independence <> coord_x def
+R2438:2439 Hilbert.V2_Independence <> P2:16 var
+binder 2411:2412 <> dx:17
+R2466:2468 Stdlib.QArith.QArith_base <> ::Q_scope:x_'-'_x not
+R2456:2462 Hilbert.V2_Independence <> coord_y def
+R2464:2465 Hilbert.V2_Independence <> P1:15 var
+R2469:2475 Hilbert.V2_Independence <> coord_y def
+R2477:2478 Hilbert.V2_Independence <> P2:16 var
+binder 2450:2451 <> dy:18
+R2492:2494 Stdlib.QArith.QArith_base <> ::Q_scope:x_'+'_x not
+R2487:2489 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2485:2486 Hilbert.V2_Independence <> dx:17 var
+R2490:2491 Hilbert.V2_Independence <> dx:17 var
+R2497:2499 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2495:2496 Hilbert.V2_Independence <> dy:18 var
+R2500:2501 Hilbert.V2_Independence <> dy:18 var
+def 2516:2523 <> CongSeg'
+R2540:2544 Hilbert.V2_Independence <> Point def
+binder 2526:2527 <> P1:19
+binder 2529:2530 <> P2:20
+binder 2532:2533 <> Q1:21
+binder 2535:2536 <> Q2:22
+R2576:2579 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R2559:2569 Hilbert.V2_Independence <> euc_dist_sq def
+R2571:2572 Hilbert.V2_Independence <> P1:19 var
+R2574:2575 Hilbert.V2_Independence <> P2:20 var
+R2580:2590 Hilbert.V2_Independence <> euc_dist_sq def
+R2592:2593 Hilbert.V2_Independence <> Q1:21 var
+R2595:2596 Hilbert.V2_Independence <> Q2:22 var
+def 2657:2665 <> Parallel'
+R2674:2677 Hilbert.V2_Independence <> Line ind
+binder 2668:2668 <> l:23
+binder 2670:2670 <> m:24
+R2701:2701 Hilbert.V2_Independence <> m:24 var
+R2698:2698 Hilbert.V2_Independence <> l:23 var
+R2712:2717 Hilbert.V2_Independence <> mkLine constr
+R2729:2734 Hilbert.V2_Independence <> mkLine constr
+R2755:2758 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R2750:2752 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R2761:2763 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+prf 3100:3112 <> V1_holds_in_Q
+R3128:3128 Stdlib.QArith.QArith_base <> Q rec
+binder 3124:3124 <> q:27
+R3137:3142 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3133:3135 Stdlib.QArith.QArith_base <> ::Q_scope:x_'>'_x not
+R3132:3132 Hilbert.V2_Independence <> q:27 var
+R3143:3150 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3163:3165 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3155:3162 Corelib.Numbers.BinNums <> positive ind
+binder 3151:3151 <> n:28
+R3183:3185 Stdlib.QArith.QArith_base <> ::Q_scope:x_'>'_x not
+R3166:3166 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R3178:3181 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R3174:3176 Stdlib.QArith.QArith_base <> ::Q_scope:x_'#'_x not
+R3167:3171 Stdlib.ZArith.BinInt Z pos abbrev
+R3173:3173 Hilbert.V2_Independence <> n:28 var
+R3182:3182 Hilbert.V2_Independence <> q:27 var
+R3223:3234 Stdlib.QArith.QArith_base <> Qarchimedean thm
+R3237:3238 Stdlib.QArith.QArith_base <> ::Q_scope:'/'_x not
+R3223:3234 Stdlib.QArith.QArith_base <> Qarchimedean thm
+R3237:3238 Stdlib.QArith.QArith_base <> ::Q_scope:'/'_x not
+R3348:3357 Stdlib.QArith.QArith_base <> Qmult_lt_r thm
+R3348:3357 Stdlib.QArith.QArith_base <> Qmult_lt_r thm
+R3386:3395 Stdlib.QArith.QArith_base <> Qmult_comm thm
+R3398:3398 Stdlib.QArith.QArith_base <> ::Q_scope:'/'_x not
+R3386:3395 Stdlib.QArith.QArith_base <> Qmult_comm thm
+R3398:3398 Stdlib.QArith.QArith_base <> ::Q_scope:'/'_x not
+R3386:3395 Stdlib.QArith.QArith_base <> Qmult_comm thm
+R3398:3398 Stdlib.QArith.QArith_base <> ::Q_scope:'/'_x not
+R3432:3433 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3435:3438 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R3468:3477 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R3432:3433 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3435:3438 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R3468:3477 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R3521:3531 Stdlib.QArith.QArith_base <> Qmult_inv_r thm
+R3521:3531 Stdlib.QArith.QArith_base <> Qmult_inv_r thm
+R3521:3531 Stdlib.QArith.QArith_base <> Qmult_inv_r thm
+def 3998:4002 <> cut_L
+R4009:4009 Stdlib.QArith.QArith_base <> Q rec
+binder 4005:4005 <> x:29
+R4027:4029 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R4023:4025 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4022:4022 Hilbert.V2_Independence <> x:29 var
+R4026:4026 Hilbert.V2_Independence <> x:29 var
+def 4044:4048 <> cut_U
+R4055:4055 Stdlib.QArith.QArith_base <> Q rec
+binder 4051:4051 <> x:30
+R4073:4075 Stdlib.QArith.QArith_base <> ::Q_scope:x_'>'_x not
+R4069:4071 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4068:4068 Hilbert.V2_Independence <> x:30 var
+R4072:4072 Hilbert.V2_Independence <> x:30 var
+prf 4178:4190 <> cut_partition
+R4206:4206 Stdlib.QArith.QArith_base <> Q rec
+binder 4202:4202 <> x:31
+R4224:4229 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4210:4212 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4223:4223 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4218:4221 Stdlib.QArith.QArith_base <> ::Q_scope:x_'=='_x not
+R4214:4216 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4213:4213 Hilbert.V2_Independence <> x:31 var
+R4217:4217 Hilbert.V2_Independence <> x:31 var
+R4230:4230 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4249:4253 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4238:4241 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R4231:4235 Hilbert.V2_Independence <> cut_L def
+R4237:4237 Hilbert.V2_Independence <> x:31 var
+R4242:4246 Hilbert.V2_Independence <> cut_U def
+R4248:4248 Hilbert.V2_Independence <> x:31 var
+R4254:4256 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4275:4275 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4264:4267 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4257:4261 Hilbert.V2_Independence <> cut_L def
+R4263:4263 Hilbert.V2_Independence <> x:31 var
+R4268:4272 Hilbert.V2_Independence <> cut_U def
+R4274:4274 Hilbert.V2_Independence <> x:31 var
+R4314:4323 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R4327:4329 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4314:4323 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R4327:4329 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4425:4434 Stdlib.QArith.QArith_base <> Qlt_not_le thm
+R4451:4461 Stdlib.QArith.QArith_base <> Qlt_le_weak thm
+R4425:4434 Stdlib.QArith.QArith_base <> Qlt_not_le thm
+R4451:4461 Stdlib.QArith.QArith_base <> Qlt_le_weak thm
+R4545:4551 Stdlib.QArith.QArith_base <> Qeq_dec thm
+R4555:4557 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4545:4551 Stdlib.QArith.QArith_base <> Qeq_dec thm
+R4555:4557 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4636:4638 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R4640:4642 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4636:4638 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R4640:4642 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4665:4676 Stdlib.QArith.QArith_base <> Qle_lt_or_eq thm
+R4682:4682 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4665:4676 Stdlib.QArith.QArith_base <> Qle_lt_or_eq thm
+R4682:4682 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R4868:4877 Stdlib.QArith.QArith_base <> Qlt_not_le thm
+R4894:4904 Stdlib.QArith.QArith_base <> Qlt_le_weak thm
+R4868:4877 Stdlib.QArith.QArith_base <> Qlt_not_le thm
+R4894:4904 Stdlib.QArith.QArith_base <> Qlt_le_weak thm
+prf 4967:4980 <> cut_nonempty_L
+R4984:4991 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4997:4999 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4996:4996 Stdlib.QArith.QArith_base <> Q rec
+binder 4992:4992 <> x:32
+R5000:5004 Hilbert.V2_Independence <> cut_L def
+R5006:5006 Hilbert.V2_Independence <> x:32 var
+R5033:5037 Hilbert.V2_Independence <> cut_L def
+prf 5067:5080 <> cut_nonempty_U
+R5084:5091 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5097:5099 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5096:5096 Stdlib.QArith.QArith_base <> Q rec
+binder 5092:5092 <> x:33
+R5100:5104 Hilbert.V2_Independence <> cut_U def
+R5106:5106 Hilbert.V2_Independence <> x:33 var
+R5133:5137 Hilbert.V2_Independence <> cut_U def
+prf 5167:5181 <> cut_no_max_in_L
+R5197:5197 Stdlib.QArith.QArith_base <> Q rec
+binder 5193:5193 <> x:34
+R5208:5211 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5201:5205 Hilbert.V2_Independence <> cut_L def
+R5207:5207 Hilbert.V2_Independence <> x:34 var
+R5212:5219 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5225:5227 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5224:5224 Stdlib.QArith.QArith_base <> Q rec
+binder 5220:5220 <> y:35
+R5235:5238 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5228:5232 Hilbert.V2_Independence <> cut_L def
+R5234:5234 Hilbert.V2_Independence <> y:35 var
+R5240:5242 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R5239:5239 Hilbert.V2_Independence <> x:34 var
+R5243:5243 Hilbert.V2_Independence <> y:35 var
+prf 5351:5365 <> cut_no_min_in_U
+R5381:5381 Stdlib.QArith.QArith_base <> Q rec
+binder 5377:5377 <> x:36
+R5392:5395 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5385:5389 Hilbert.V2_Independence <> cut_U def
+R5391:5391 Hilbert.V2_Independence <> x:36 var
+R5396:5403 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5409:5411 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5408:5408 Stdlib.QArith.QArith_base <> Q rec
+binder 5404:5404 <> y:37
+R5419:5422 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5412:5416 Hilbert.V2_Independence <> cut_U def
+R5418:5418 Hilbert.V2_Independence <> y:37 var
+R5424:5426 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R5423:5423 Hilbert.V2_Independence <> y:37 var
+R5427:5427 Hilbert.V2_Independence <> x:36 var
+prf 5524:5536 <> V2_fails_in_Q
+R5542:5543 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5544:5551 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5557:5563 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5556:5556 Stdlib.QArith.QArith_base <> Q rec
+binder 5552:5552 <> S:38
+R5564:5564 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5597:5606 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5639:5639 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5577:5577 Stdlib.QArith.QArith_base <> Q rec
+binder 5573:5573 <> x:39
+R5588:5591 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5581:5585 Hilbert.V2_Independence <> cut_L def
+R5587:5587 Hilbert.V2_Independence <> x:39 var
+R5593:5595 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R5592:5592 Hilbert.V2_Independence <> x:39 var
+R5596:5596 Hilbert.V2_Independence <> S:38 var
+R5619:5619 Stdlib.QArith.QArith_base <> Q rec
+binder 5615:5615 <> y:40
+R5630:5633 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5623:5627 Hilbert.V2_Independence <> cut_U def
+R5629:5629 Hilbert.V2_Independence <> y:40 var
+R5635:5637 Stdlib.QArith.QArith_base <> ::Q_scope:x_'<'_x not
+R5634:5634 Hilbert.V2_Independence <> S:38 var
+R5638:5638 Hilbert.V2_Independence <> y:40 var
+R5785:5794 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R5798:5800 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R5785:5794 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R5798:5800 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R5876:5890 Hilbert.V2_Independence <> cut_no_max_in_L prfax
+R5876:5890 Hilbert.V2_Independence <> cut_no_max_in_L prfax
+R5943:5952 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R5959:5967 Stdlib.QArith.QArith_base <> Qlt_trans thm
+R5943:5952 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R5959:5967 Stdlib.QArith.QArith_base <> Qlt_trans thm
+R6047:6056 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R6062:6064 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R6047:6056 Stdlib.QArith.QArith_base <> Qlt_le_dec thm
+R6062:6064 Stdlib.QArith.QArith_base <> ::Q_scope:x_'*'_x not
+R6142:6156 Hilbert.V2_Independence <> cut_no_min_in_U prfax
+R6142:6156 Hilbert.V2_Independence <> cut_no_min_in_U prfax
+R6211:6220 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R6227:6235 Stdlib.QArith.QArith_base <> Qlt_trans thm
+R6211:6220 Stdlib.QArith.QArith_base <> Qlt_not_eq thm
+R6227:6235 Stdlib.QArith.QArith_base <> Qlt_trans thm
+R6460:6460 Corelib.Numbers.BinNums <> Z ind
+binder 6456:6456 <> n:41
+R6468:6468 Corelib.Numbers.BinNums <> Z ind
+binder 6464:6464 <> d:42
+R6472:6472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6481:6485 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6473:6476 Stdlib.ZArith.BinInt Z gt def
+R6478:6478 Hilbert.V2_Independence <> d:42 var
+R6523:6526 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6486:6486 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6496:6500 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6522:6522 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6487:6491 Stdlib.ZArith.BinInt Z pow def
+R6493:6493 Hilbert.V2_Independence <> n:41 var
+R6501:6505 Stdlib.ZArith.BinInt Z mul def
+R6512:6516 Stdlib.ZArith.BinInt Z pow def
+R6518:6518 Hilbert.V2_Independence <> d:42 var
+R6527:6531 Corelib.Init.Logic <> False ind
+R6460:6460 Corelib.Numbers.BinNums <> Z ind
+binder 6456:6456 <> n:43
+R6468:6468 Corelib.Numbers.BinNums <> Z ind
+binder 6464:6464 <> d:44
+R6472:6472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6481:6485 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6473:6476 Stdlib.ZArith.BinInt Z gt def
+R6478:6478 Hilbert.V2_Independence <> d:44 var
+R6523:6526 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6486:6486 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6496:6500 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6522:6522 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6487:6491 Stdlib.ZArith.BinInt Z pow def
+R6493:6493 Hilbert.V2_Independence <> n:43 var
+R6501:6505 Stdlib.ZArith.BinInt Z mul def
+R6512:6516 Stdlib.ZArith.BinInt Z pow def
+R6518:6518 Hilbert.V2_Independence <> d:44 var
+R6527:6531 Corelib.Init.Logic <> False ind
+R6573:6576 Stdlib.QArith.QArith_base <> Qnum proj
+R6582:6586 Stdlib.ZArith.BinInt Z pos abbrev
+R6589:6592 Stdlib.QArith.QArith_base <> Qden proj
+R6573:6576 Stdlib.QArith.QArith_base <> Qnum proj
+R6582:6586 Stdlib.ZArith.BinInt Z pos abbrev
+R6589:6592 Stdlib.QArith.QArith_base <> Qden proj
+R6614:6622 Stdlib.ZArith.Zorder <> Zgt_pos_0 thm
+R6614:6622 Stdlib.ZArith.Zorder <> Zgt_pos_0 thm

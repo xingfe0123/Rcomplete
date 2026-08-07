@@ -1,0 +1,235 @@
+DIGEST 5aa96e6e695a2fcfae002f060602d3fa
+FSeriesCauchy
+R27:31 Stdlib.Reals.Reals <> <> lib
+R33:37 Stdlib.Reals.RIneq <> <> lib
+R39:47 Stdlib.Reals.Ranalysis <> <> lib
+R77:79 Stdlib.micromega.Lra <> <> lib
+R109:111 Stdlib.micromega.Lia <> <> lib
+R141:150 Stdlib.Reals.Rfunctions <> <> lib
+R180:186 Stdlib.Reals.Rseries <> <> lib
+R216:222 Stdlib.Reals.SeqProp <> <> lib
+def 506:516 <> partial_sum
+R526:529 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R523:525 Corelib.Init.Datatypes <> nat ind
+R530:530 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 519:519 <> a:1
+R538:540 Corelib.Init.Datatypes <> nat ind
+binder 534:534 <> n:2
+R545:545 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R558:558 SeriesCauchy <> n:2 var
+R578:578 SeriesCauchy <> a:1 var
+R590:590 Corelib.Init.Datatypes <> S constr
+R612:614 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R597:607 SeriesCauchy <> partial_sum:3 def
+R609:609 SeriesCauchy <> a:1 var
+R615:615 SeriesCauchy <> a:1 var
+R618:618 Corelib.Init.Datatypes <> S constr
+def 902:918 <> series_convergent
+R928:931 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R925:927 Corelib.Init.Datatypes <> nat ind
+R932:932 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 921:921 <> a:5
+R940:940 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 936:936 <> L:6
+R955:959 Stdlib.Reals.Rseries <> Un_cv def
+R988:988 SeriesCauchy <> L:6 var
+binder 966:966 <> n:7
+R971:981 SeriesCauchy <> partial_sum def
+R983:983 SeriesCauchy <> a:5 var
+R985:985 SeriesCauchy <> n:7 var
+def 1003:1011 <> series_cv
+R1021:1024 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1018:1020 Corelib.Init.Datatypes <> nat ind
+R1025:1025 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1014:1014 <> a:8
+R1040:1046 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1052:1053 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1051:1051 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1047:1047 <> L:9
+R1054:1070 SeriesCauchy <> series_convergent def
+R1072:1072 SeriesCauchy <> a:8 var
+R1074:1074 SeriesCauchy <> L:9 var
+def 1508:1520 <> series_cauchy
+R1530:1533 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1527:1529 Corelib.Init.Datatypes <> nat ind
+R1534:1534 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1523:1523 <> a:10
+R1562:1562 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1556:1558 <> eps:11
+R1572:1579 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1568:1570 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1565:1567 SeriesCauchy <> eps:11 var
+R1580:1586 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1594:1595 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1591:1593 Corelib.Init.Datatypes <> nat ind
+binder 1587:1587 <> N:12
+R1609:1611 Corelib.Init.Datatypes <> nat ind
+binder 1603:1603 <> m:13
+binder 1605:1605 <> n:14
+R1626:1629 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1616:1619 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1615:1615 SeriesCauchy <> N:12 var
+R1620:1620 SeriesCauchy <> n:14 var
+R1642:1651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1632:1635 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R1631:1631 SeriesCauchy <> n:14 var
+R1636:1636 SeriesCauchy <> m:13 var
+R1692:1695 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1652:1655 Stdlib.Reals.Rbasic_fun <> Rabs def
+R1673:1675 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R1658:1668 SeriesCauchy <> partial_sum def
+R1670:1670 SeriesCauchy <> a:10 var
+R1672:1672 SeriesCauchy <> m:13 var
+R1676:1686 SeriesCauchy <> partial_sum def
+R1688:1688 SeriesCauchy <> a:10 var
+R1690:1690 SeriesCauchy <> n:14 var
+R1696:1698 SeriesCauchy <> eps:11 var
+prf 1958:1970 <> partial_sum_S
+R1991:1994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1988:1990 Corelib.Init.Datatypes <> nat ind
+R1995:1995 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1984:1984 <> a:15
+R2003:2005 Corelib.Init.Datatypes <> nat ind
+binder 1999:1999 <> n:16
+R2032:2034 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2013:2023 SeriesCauchy <> partial_sum def
+R2025:2025 SeriesCauchy <> a:15 var
+R2028:2028 Corelib.Init.Datatypes <> S constr
+R2030:2030 SeriesCauchy <> n:16 var
+R2050:2052 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2035:2045 SeriesCauchy <> partial_sum def
+R2047:2047 SeriesCauchy <> a:15 var
+R2049:2049 SeriesCauchy <> n:16 var
+R2053:2053 SeriesCauchy <> a:15 var
+R2056:2056 Corelib.Init.Datatypes <> S constr
+R2058:2058 SeriesCauchy <> n:16 var
+prf 2352:2363 <> half_gt_zero
+R2372:2372 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2366:2368 <> eps:17
+R2384:2387 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2380:2382 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2377:2379 SeriesCauchy <> eps:17 var
+R2395:2397 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2391:2393 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R2388:2390 SeriesCauchy <> eps:17 var
+R2429:2432 Stdlib.Reals.Rdefinitions <> Rdiv def
+R2455:2457 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2452:2453 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2455:2457 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2452:2453 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2470:2485 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R2470:2485 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R2513:2529 Stdlib.Reals.Raxioms <> Rmult_lt_compat_l thm
+R2532:2533 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2513:2529 Stdlib.Reals.Raxioms <> Rmult_lt_compat_l thm
+R2532:2533 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2565:2573 Stdlib.Reals.RIneq <> Rmult_0_r thm
+R2565:2573 Stdlib.Reals.RIneq <> Rmult_0_r thm
+R2565:2573 Stdlib.Reals.RIneq <> Rmult_0_r thm
+prf 2860:2887 <> series_convergent_iff_cauchy
+R2908:2911 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2905:2907 Corelib.Init.Datatypes <> nat ind
+R2912:2912 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2901:2901 <> a:18
+R2927:2931 Corelib.Init.Logic <> ::type_scope:x_'<->'_x not
+R2916:2924 SeriesCauchy <> series_cv def
+R2926:2926 SeriesCauchy <> a:18 var
+R2932:2944 SeriesCauchy <> series_cauchy def
+R2946:2946 SeriesCauchy <> a:18 var
+R3049:3060 SeriesCauchy <> half_gt_zero thm
+R3049:3060 SeriesCauchy <> half_gt_zero thm
+R3106:3108 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3106:3108 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3255:3258 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3255:3258 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3328:3350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3310:3312 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3295:3305 SeriesCauchy <> partial_sum def
+R3313:3323 SeriesCauchy <> partial_sum def
+R3351:3351 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3371:3375 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3395:3395 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3367:3369 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3352:3362 SeriesCauchy <> partial_sum def
+R3391:3393 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3376:3386 SeriesCauchy <> partial_sum def
+R3328:3350 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3310:3312 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3295:3305 SeriesCauchy <> partial_sum def
+R3313:3323 SeriesCauchy <> partial_sum def
+R3351:3351 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3371:3375 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3395:3395 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3367:3369 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3352:3362 SeriesCauchy <> partial_sum def
+R3391:3393 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3376:3386 SeriesCauchy <> partial_sum def
+R3472:3474 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3446:3449 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3467:3469 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3452:3462 SeriesCauchy <> partial_sum def
+R3478:3480 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3472:3474 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3446:3449 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3467:3469 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3452:3462 SeriesCauchy <> partial_sum def
+R3478:3480 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3520:3524 Stdlib.Reals.Rfunctions <> Rdist def
+R3592:3594 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3566:3569 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3587:3589 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3572:3582 SeriesCauchy <> partial_sum def
+R3598:3600 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3592:3594 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3566:3569 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3587:3589 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3572:3582 SeriesCauchy <> partial_sum def
+R3598:3600 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3640:3644 Stdlib.Reals.Rfunctions <> Rdist def
+R3675:3681 Stdlib.Reals.Rbasic_fun <> Rabs_le thm
+R3675:3681 Stdlib.Reals.Rbasic_fun <> Rabs_le thm
+R3813:3836 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3754:3756 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3812:3812 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3783:3785 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3757:3760 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3778:3780 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3763:3773 SeriesCauchy <> partial_sum def
+R3786:3789 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3807:3809 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3792:3802 SeriesCauchy <> partial_sum def
+R3837:3837 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3857:3861 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3881:3881 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3853:3855 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3838:3848 SeriesCauchy <> partial_sum def
+R3877:3879 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3862:3872 SeriesCauchy <> partial_sum def
+R3813:3836 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R3754:3756 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3812:3812 Stdlib.Reals.Rdefinitions <> ::R_scope:'-'_x not
+R3783:3785 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R3757:3760 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3778:3780 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3763:3773 SeriesCauchy <> partial_sum def
+R3786:3789 Stdlib.Reals.Rbasic_fun <> Rabs def
+R3807:3809 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3792:3802 SeriesCauchy <> partial_sum def
+R3837:3837 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3857:3861 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3881:3881 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3853:3855 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3838:3848 SeriesCauchy <> partial_sum def
+R3877:3879 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3862:3872 SeriesCauchy <> partial_sum def
+R3905:3913 Stdlib.Reals.Rbasic_fun <> Rabs_Ropp thm
+R3931:3933 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3916:3926 SeriesCauchy <> partial_sum def
+R3905:3913 Stdlib.Reals.Rbasic_fun <> Rabs_Ropp thm
+R3931:3933 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3916:3926 SeriesCauchy <> partial_sum def
+R3905:3913 Stdlib.Reals.Rbasic_fun <> Rabs_Ropp thm
+R3931:3933 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R3916:3926 SeriesCauchy <> partial_sum def
+R3953:3961 Stdlib.Reals.Rbasic_fun <> Rabs_def2 thm
+R3953:3961 Stdlib.Reals.Rbasic_fun <> Rabs_def2 thm

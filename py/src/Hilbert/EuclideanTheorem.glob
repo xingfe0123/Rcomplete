@@ -1,0 +1,449 @@
+DIGEST 372526b34238016cfa1a100333e30493
+FHilbert.EuclideanTheorem
+R1304:1312 Stdlib.Logic.Classical <> <> lib
+R1314:1318 Stdlib.Arith.Arith <> <> lib
+R1348:1357 Stdlib.Lists.List <> <> lib
+R1388:1403 Hilbert.HilbertStructure <> <> lib
+sec 1670:1685 <> EuclideanTheorem
+var 1702:1702 EuclideanTheorem I
+var 1727:1727 EuclideanTheorem O
+var 1762:1762 EuclideanTheorem C
+var 1804:1804 EuclideanTheorem P
+R1706:1723 Hilbert.HilbertStructure <> IncidenceStructure rec
+R1731:1744 Hilbert.HilbertStructure <> OrderStructure rec
+R1746:1746 Hilbert.EuclideanTheorem <> I:2 var
+R1766:1784 Hilbert.HilbertStructure <> CongruenceStructure rec
+R1786:1786 Hilbert.EuclideanTheorem <> I:2 var
+R1788:1788 Hilbert.EuclideanTheorem <> O:4 var
+R1808:1824 Hilbert.HilbertStructure <> ParallelStructure rec
+R1826:1826 Hilbert.EuclideanTheorem <> I:2 var
+var 1912:1915 EuclideanTheorem Bet'
+binder 1917:1917 <> A:9
+binder 1919:1919 <> B:10
+binder 1921:1921 <> C:11
+R1926:1928 Hilbert.HilbertStructure <> Bet proj
+R1930:1930 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R1932:1932 Hilbert.EuclideanTheorem <> EuclideanTheorem.O var
+R1934:1934 Hilbert.EuclideanTheorem <> A:9 var
+R1936:1936 Hilbert.EuclideanTheorem <> B:10 var
+R1938:1938 Hilbert.EuclideanTheorem <> C:11 var
+var 1947:1954 EuclideanTheorem CongSeg'
+binder 1956:1956 <> A:12
+binder 1958:1958 <> B:13
+binder 1960:1960 <> X:14
+binder 1962:1962 <> Y:15
+R1967:1973 Hilbert.HilbertStructure <> CongSeg proj
+R1975:1975 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R1977:1977 Hilbert.EuclideanTheorem <> EuclideanTheorem.O var
+R1979:1979 Hilbert.EuclideanTheorem <> EuclideanTheorem.C var
+R1981:1981 Hilbert.EuclideanTheorem <> A:12 var
+R1983:1983 Hilbert.EuclideanTheorem <> B:13 var
+R1985:1985 Hilbert.EuclideanTheorem <> X:14 var
+R1987:1987 Hilbert.EuclideanTheorem <> Y:15 var
+var 1996:2003 EuclideanTheorem CongAng'
+binder 2005:2005 <> A:16
+binder 2007:2007 <> B:17
+binder 2009:2009 <> X:18
+binder 2011:2011 <> Y:19
+binder 2013:2013 <> Z:20
+binder 2015:2015 <> W:21
+R2020:2026 Hilbert.HilbertStructure <> CongAng proj
+R2028:2028 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2030:2030 Hilbert.EuclideanTheorem <> EuclideanTheorem.O var
+R2032:2032 Hilbert.EuclideanTheorem <> EuclideanTheorem.C var
+R2034:2034 Hilbert.EuclideanTheorem <> A:16 var
+R2036:2036 Hilbert.EuclideanTheorem <> B:17 var
+R2038:2038 Hilbert.EuclideanTheorem <> X:18 var
+R2040:2040 Hilbert.EuclideanTheorem <> Y:19 var
+R2042:2042 Hilbert.EuclideanTheorem <> Z:20 var
+R2044:2044 Hilbert.EuclideanTheorem <> W:21 var
+var 2053:2061 EuclideanTheorem Parallel'
+binder 2063:2063 <> a:22
+binder 2065:2065 <> b:23
+R2070:2077 Hilbert.HilbertStructure <> Parallel proj
+R2079:2079 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2081:2081 Hilbert.EuclideanTheorem <> EuclideanTheorem.P var
+R2083:2083 Hilbert.EuclideanTheorem <> a:22 var
+R2085:2085 Hilbert.EuclideanTheorem <> b:23 var
+def 2402:2415 <> LinesIntersect
+R2424:2430 Hilbert.HilbertStructure <> IncLine proj
+R2432:2432 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 2418:2418 <> a:24
+binder 2420:2420 <> b:25
+R2449:2456 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R2471:2472 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R2461:2468 Hilbert.HilbertStructure <> IncPoint proj
+R2470:2470 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 2457:2457 <> P:26
+R2484:2487 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2473:2477 Hilbert.HilbertStructure <> Incid proj
+R2479:2479 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2481:2481 Hilbert.EuclideanTheorem <> P:26 var
+R2483:2483 Hilbert.EuclideanTheorem <> a:24 var
+R2488:2492 Hilbert.HilbertStructure <> Incid proj
+R2494:2494 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2496:2496 Hilbert.EuclideanTheorem <> P:26 var
+R2498:2498 Hilbert.EuclideanTheorem <> b:25 var
+def 2596:2606 <> Transversal
+R2617:2623 Hilbert.HilbertStructure <> IncLine proj
+R2625:2625 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 2609:2609 <> a:27
+binder 2611:2611 <> b:28
+binder 2613:2613 <> t:29
+R2660:2663 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2642:2655 Hilbert.EuclideanTheorem <> LinesIntersect def
+R2657:2657 Hilbert.EuclideanTheorem <> a:27 var
+R2659:2659 Hilbert.EuclideanTheorem <> t:29 var
+R2664:2677 Hilbert.EuclideanTheorem <> LinesIntersect def
+R2679:2679 Hilbert.EuclideanTheorem <> b:28 var
+R2681:2681 Hilbert.EuclideanTheorem <> t:29 var
+def 2719:2727 <> Collinear
+R2738:2745 Hilbert.HilbertStructure <> IncPoint proj
+R2747:2747 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 2730:2730 <> A:30
+binder 2732:2732 <> B:31
+binder 2734:2734 <> C:32
+R2764:2770 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2784:2785 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2775:2781 Hilbert.HilbertStructure <> IncLine proj
+R2783:2783 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 2771:2771 <> l:33
+R2797:2800 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2786:2790 Hilbert.HilbertStructure <> Incid proj
+R2792:2792 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2794:2794 Hilbert.EuclideanTheorem <> A:30 var
+R2796:2796 Hilbert.EuclideanTheorem <> l:33 var
+R2812:2815 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2801:2805 Hilbert.HilbertStructure <> Incid proj
+R2807:2807 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2809:2809 Hilbert.EuclideanTheorem <> B:31 var
+R2811:2811 Hilbert.EuclideanTheorem <> l:33 var
+R2816:2820 Hilbert.HilbertStructure <> Incid proj
+R2822:2822 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2824:2824 Hilbert.EuclideanTheorem <> C:32 var
+R2826:2826 Hilbert.EuclideanTheorem <> l:33 var
+rec 2918:2925 <> Triangle
+proj 2954:2958 <> tri_A
+proj 2978:2982 <> tri_B
+proj 3002:3006 <> tri_C
+proj 3026:3041 <> tri_noncollinear
+R2962:2969 Hilbert.HilbertStructure <> IncPoint proj
+R2971:2971 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R2986:2993 Hilbert.HilbertStructure <> IncPoint proj
+R2995:2995 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R3010:3017 Hilbert.HilbertStructure <> IncPoint proj
+R3019:3019 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R3045:3046 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3047:3055 Hilbert.EuclideanTheorem <> Collinear def
+R3057:3061 Hilbert.EuclideanTheorem <> tri_A:35 meth
+R3063:3067 Hilbert.EuclideanTheorem <> tri_B:36 meth
+R3069:3073 Hilbert.EuclideanTheorem <> tri_C:37 meth
+prf 4526:4535 <> theorem_28
+R4555:4561 Hilbert.HilbertStructure <> IncLine proj
+R4563:4563 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 4547:4547 <> a:39
+binder 4549:4549 <> b:40
+binder 4551:4551 <> t:41
+R4579:4586 Hilbert.HilbertStructure <> IncPoint proj
+R4588:4588 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 4567:4567 <> P:42
+binder 4569:4569 <> Q:43
+binder 4571:4571 <> A:44
+binder 4573:4573 <> B:45
+binder 4575:4575 <> T:46
+R4637:4640 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4619:4632 Hilbert.EuclideanTheorem <> LinesIntersect def
+R4634:4634 Hilbert.EuclideanTheorem <> a:39 var
+R4636:4636 Hilbert.EuclideanTheorem <> t:41 var
+R4659:4666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4641:4654 Hilbert.EuclideanTheorem <> LinesIntersect def
+R4656:4656 Hilbert.EuclideanTheorem <> b:40 var
+R4658:4658 Hilbert.EuclideanTheorem <> t:41 var
+R4678:4681 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4667:4671 Hilbert.HilbertStructure <> Incid proj
+R4673:4673 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4675:4675 Hilbert.EuclideanTheorem <> P:42 var
+R4677:4677 Hilbert.EuclideanTheorem <> a:39 var
+R4693:4700 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4682:4686 Hilbert.HilbertStructure <> Incid proj
+R4688:4688 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4690:4690 Hilbert.EuclideanTheorem <> P:42 var
+R4692:4692 Hilbert.EuclideanTheorem <> t:41 var
+R4712:4715 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4701:4705 Hilbert.HilbertStructure <> Incid proj
+R4707:4707 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4709:4709 Hilbert.EuclideanTheorem <> Q:43 var
+R4711:4711 Hilbert.EuclideanTheorem <> b:40 var
+R4727:4734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4716:4720 Hilbert.HilbertStructure <> Incid proj
+R4722:4722 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4724:4724 Hilbert.EuclideanTheorem <> Q:43 var
+R4726:4726 Hilbert.EuclideanTheorem <> t:41 var
+R4746:4749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4735:4739 Hilbert.HilbertStructure <> Incid proj
+R4741:4741 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4743:4743 Hilbert.EuclideanTheorem <> A:44 var
+R4745:4745 Hilbert.EuclideanTheorem <> a:39 var
+R4756:4763 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4751:4754 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4750:4750 Hilbert.EuclideanTheorem <> A:44 var
+R4755:4755 Hilbert.EuclideanTheorem <> P:42 var
+R4775:4778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4764:4768 Hilbert.HilbertStructure <> Incid proj
+R4770:4770 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4772:4772 Hilbert.EuclideanTheorem <> B:45 var
+R4774:4774 Hilbert.EuclideanTheorem <> b:40 var
+R4785:4792 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4780:4783 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4779:4779 Hilbert.EuclideanTheorem <> B:45 var
+R4784:4784 Hilbert.EuclideanTheorem <> Q:43 var
+R4804:4807 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4793:4797 Hilbert.HilbertStructure <> Incid proj
+R4799:4799 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4801:4801 Hilbert.EuclideanTheorem <> T:46 var
+R4803:4803 Hilbert.EuclideanTheorem <> t:41 var
+R4814:4817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4809:4812 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4808:4808 Hilbert.EuclideanTheorem <> T:46 var
+R4813:4813 Hilbert.EuclideanTheorem <> P:42 var
+R4824:4893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4819:4822 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R4818:4818 Hilbert.EuclideanTheorem <> T:46 var
+R4823:4823 Hilbert.EuclideanTheorem <> Q:43 var
+R4912:4964 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4894:4901 Hilbert.HilbertStructure <> SameSide proj
+R4903:4903 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R4905:4905 Hilbert.EuclideanTheorem <> EuclideanTheorem.O var
+R4907:4907 Hilbert.EuclideanTheorem <> A:44 var
+R4909:4909 Hilbert.EuclideanTheorem <> B:45 var
+R4911:4911 Hilbert.EuclideanTheorem <> t:41 var
+R4985:5018 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4965:4972 Hilbert.EuclideanTheorem <> EuclideanTheorem.CongAng' var
+R4974:4974 Hilbert.EuclideanTheorem <> A:44 var
+R4976:4976 Hilbert.EuclideanTheorem <> P:42 var
+R4978:4978 Hilbert.EuclideanTheorem <> T:46 var
+R4980:4980 Hilbert.EuclideanTheorem <> B:45 var
+R4982:4982 Hilbert.EuclideanTheorem <> Q:43 var
+R4984:4984 Hilbert.EuclideanTheorem <> T:46 var
+R5019:5027 Hilbert.EuclideanTheorem <> EuclideanTheorem.Parallel' var
+R5029:5029 Hilbert.EuclideanTheorem <> a:39 var
+R5031:5031 Hilbert.EuclideanTheorem <> b:40 var
+prf 6609:6618 <> theorem_30
+R6638:6644 Hilbert.HilbertStructure <> IncLine proj
+R6646:6646 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 6630:6630 <> a:47
+binder 6632:6632 <> b:48
+binder 6634:6634 <> t:49
+R6662:6669 Hilbert.HilbertStructure <> IncPoint proj
+R6671:6671 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 6650:6650 <> P:50
+binder 6652:6652 <> Q:51
+binder 6654:6654 <> A:52
+binder 6656:6656 <> B:53
+binder 6658:6658 <> T:54
+R6692:6699 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6679:6687 Hilbert.EuclideanTheorem <> EuclideanTheorem.Parallel' var
+R6689:6689 Hilbert.EuclideanTheorem <> a:47 var
+R6691:6691 Hilbert.EuclideanTheorem <> b:48 var
+R6718:6721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6700:6713 Hilbert.EuclideanTheorem <> LinesIntersect def
+R6715:6715 Hilbert.EuclideanTheorem <> a:47 var
+R6717:6717 Hilbert.EuclideanTheorem <> t:49 var
+R6740:6747 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6722:6735 Hilbert.EuclideanTheorem <> LinesIntersect def
+R6737:6737 Hilbert.EuclideanTheorem <> b:48 var
+R6739:6739 Hilbert.EuclideanTheorem <> t:49 var
+R6759:6762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6748:6752 Hilbert.HilbertStructure <> Incid proj
+R6754:6754 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6756:6756 Hilbert.EuclideanTheorem <> P:50 var
+R6758:6758 Hilbert.EuclideanTheorem <> a:47 var
+R6774:6781 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6763:6767 Hilbert.HilbertStructure <> Incid proj
+R6769:6769 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6771:6771 Hilbert.EuclideanTheorem <> P:50 var
+R6773:6773 Hilbert.EuclideanTheorem <> t:49 var
+R6793:6796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6782:6786 Hilbert.HilbertStructure <> Incid proj
+R6788:6788 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6790:6790 Hilbert.EuclideanTheorem <> Q:51 var
+R6792:6792 Hilbert.EuclideanTheorem <> b:48 var
+R6808:6815 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6797:6801 Hilbert.HilbertStructure <> Incid proj
+R6803:6803 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6805:6805 Hilbert.EuclideanTheorem <> Q:51 var
+R6807:6807 Hilbert.EuclideanTheorem <> t:49 var
+R6827:6830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6816:6820 Hilbert.HilbertStructure <> Incid proj
+R6822:6822 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6824:6824 Hilbert.EuclideanTheorem <> A:52 var
+R6826:6826 Hilbert.EuclideanTheorem <> a:47 var
+R6837:6844 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6832:6835 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6831:6831 Hilbert.EuclideanTheorem <> A:52 var
+R6836:6836 Hilbert.EuclideanTheorem <> P:50 var
+R6856:6859 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6845:6849 Hilbert.HilbertStructure <> Incid proj
+R6851:6851 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6853:6853 Hilbert.EuclideanTheorem <> B:53 var
+R6855:6855 Hilbert.EuclideanTheorem <> b:48 var
+R6866:6873 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6861:6864 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6860:6860 Hilbert.EuclideanTheorem <> B:53 var
+R6865:6865 Hilbert.EuclideanTheorem <> Q:51 var
+R6885:6888 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6874:6878 Hilbert.HilbertStructure <> Incid proj
+R6880:6880 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6882:6882 Hilbert.EuclideanTheorem <> T:54 var
+R6884:6884 Hilbert.EuclideanTheorem <> t:49 var
+R6895:6898 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6890:6893 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6889:6889 Hilbert.EuclideanTheorem <> T:54 var
+R6894:6894 Hilbert.EuclideanTheorem <> P:50 var
+R6905:6912 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6900:6903 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6899:6899 Hilbert.EuclideanTheorem <> T:54 var
+R6904:6904 Hilbert.EuclideanTheorem <> Q:51 var
+R6931:6938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6913:6920 Hilbert.HilbertStructure <> SameSide proj
+R6922:6922 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R6924:6924 Hilbert.EuclideanTheorem <> EuclideanTheorem.O var
+R6926:6926 Hilbert.EuclideanTheorem <> A:52 var
+R6928:6928 Hilbert.EuclideanTheorem <> B:53 var
+R6930:6930 Hilbert.EuclideanTheorem <> t:49 var
+R6939:6946 Hilbert.EuclideanTheorem <> EuclideanTheorem.CongAng' var
+R6948:6948 Hilbert.EuclideanTheorem <> A:52 var
+R6950:6950 Hilbert.EuclideanTheorem <> P:50 var
+R6952:6952 Hilbert.EuclideanTheorem <> T:54 var
+R6954:6954 Hilbert.EuclideanTheorem <> B:53 var
+R6956:6956 Hilbert.EuclideanTheorem <> Q:51 var
+R6958:6958 Hilbert.EuclideanTheorem <> T:54 var
+prf 9170:9179 <> theorem_29
+R9199:9206 Hilbert.HilbertStructure <> IncPoint proj
+R9208:9208 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9191:9191 <> A:55
+binder 9193:9193 <> B:56
+binder 9195:9195 <> C:57
+R9233:9240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9216:9217 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R9218:9226 Hilbert.EuclideanTheorem <> Collinear def
+R9228:9228 Hilbert.EuclideanTheorem <> A:55 var
+R9230:9230 Hilbert.EuclideanTheorem <> B:56 var
+R9232:9232 Hilbert.EuclideanTheorem <> C:57 var
+R9241:9241 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9299:9307 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9242:9248 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9265:9266 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9256:9262 Hilbert.HilbertStructure <> IncLine proj
+R9264:9264 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9249:9252 <> l_AB:58
+R9281:9284 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9267:9271 Hilbert.HilbertStructure <> Incid proj
+R9273:9273 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R9275:9275 Hilbert.EuclideanTheorem <> A:55 var
+R9277:9280 Hilbert.EuclideanTheorem <> l_AB:58 var
+R9285:9289 Hilbert.HilbertStructure <> Incid proj
+R9291:9291 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R9293:9293 Hilbert.EuclideanTheorem <> B:56 var
+R9295:9298 Hilbert.EuclideanTheorem <> l_AB:58 var
+R9308:9315 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9348:9394 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9320:9326 Hilbert.HilbertStructure <> IncLine proj
+R9328:9328 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9316:9316 <> l:59
+R9338:9345 Hilbert.HilbertStructure <> IncPoint proj
+R9347:9347 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9332:9332 <> D:60
+R9338:9345 Hilbert.HilbertStructure <> IncPoint proj
+R9347:9347 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9334:9334 <> E:61
+R9395:9395 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9481:9491 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9396:9402 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9419:9420 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9410:9416 Hilbert.HilbertStructure <> IncLine proj
+R9418:9418 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 9403:9406 <> l_AB:62
+R9435:9438 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9421:9425 Hilbert.HilbertStructure <> Incid proj
+R9427:9427 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R9429:9429 Hilbert.EuclideanTheorem <> A:55 var
+R9431:9434 Hilbert.EuclideanTheorem <> l_AB:62 var
+R9453:9464 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9439:9443 Hilbert.HilbertStructure <> Incid proj
+R9445:9445 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R9447:9447 Hilbert.EuclideanTheorem <> B:56 var
+R9449:9452 Hilbert.EuclideanTheorem <> l_AB:62 var
+R9465:9473 Hilbert.EuclideanTheorem <> EuclideanTheorem.Parallel' var
+R9475:9475 Hilbert.EuclideanTheorem <> l:59 var
+R9477:9480 Hilbert.EuclideanTheorem <> l_AB:62 var
+R9503:9557 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9492:9496 Hilbert.HilbertStructure <> Incid proj
+R9498:9498 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R9500:9500 Hilbert.EuclideanTheorem <> C:57 var
+R9502:9502 Hilbert.EuclideanTheorem <> l:59 var
+R9568:9635 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9558:9561 Hilbert.EuclideanTheorem <> EuclideanTheorem.Bet' var
+R9563:9563 Hilbert.EuclideanTheorem <> D:60 var
+R9565:9565 Hilbert.EuclideanTheorem <> C:57 var
+R9567:9567 Hilbert.EuclideanTheorem <> E:61 var
+R9656:9723 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9636:9643 Hilbert.EuclideanTheorem <> EuclideanTheorem.CongAng' var
+R9645:9645 Hilbert.EuclideanTheorem <> B:56 var
+R9647:9647 Hilbert.EuclideanTheorem <> C:57 var
+R9649:9649 Hilbert.EuclideanTheorem <> D:60 var
+R9651:9651 Hilbert.EuclideanTheorem <> A:55 var
+R9653:9653 Hilbert.EuclideanTheorem <> B:56 var
+R9655:9655 Hilbert.EuclideanTheorem <> C:57 var
+R9724:9731 Hilbert.EuclideanTheorem <> EuclideanTheorem.CongAng' var
+R9733:9733 Hilbert.EuclideanTheorem <> A:55 var
+R9735:9735 Hilbert.EuclideanTheorem <> C:57 var
+R9737:9737 Hilbert.EuclideanTheorem <> E:61 var
+R9739:9739 Hilbert.EuclideanTheorem <> C:57 var
+R9741:9741 Hilbert.EuclideanTheorem <> A:55 var
+R9743:9743 Hilbert.EuclideanTheorem <> B:56 var
+prf 11470:11479 <> theorem_31
+R11495:11497 Corelib.Init.Datatypes <> nat ind
+binder 11491:11491 <> n:63
+R11507:11510 Corelib.Init.Datatypes <> list ind
+R11513:11520 Hilbert.HilbertStructure <> IncPoint proj
+R11522:11522 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 11501:11503 <> pts:64
+R11537:11544 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11532:11535 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R11531:11531 Hilbert.EuclideanTheorem <> n:63 var
+R11559:11566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11555:11557 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11545:11550 Corelib.Init.Datatypes <> length def
+R11552:11554 Hilbert.EuclideanTheorem <> pts:64 var
+R11558:11558 Hilbert.EuclideanTheorem <> n:63 var
+R11576:11669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11567:11571 Stdlib.Lists.List <> NoDup ind
+R11573:11575 Hilbert.EuclideanTheorem <> pts:64 var
+R11670:11670 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11726:11801 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11671:11677 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11691:11692 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11682:11688 Hilbert.HilbertStructure <> IncLine proj
+R11690:11690 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+binder 11678:11678 <> l:65
+binder 11700:11700 <> p:66
+R11711:11714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11703:11704 Stdlib.Lists.List <> In def
+R11708:11710 Hilbert.EuclideanTheorem <> pts:64 var
+R11706:11706 Hilbert.EuclideanTheorem <> p:66 var
+R11715:11719 Hilbert.HilbertStructure <> Incid proj
+R11721:11721 Hilbert.EuclideanTheorem <> EuclideanTheorem.I var
+R11723:11723 Hilbert.EuclideanTheorem <> p:66 var
+R11725:11725 Hilbert.EuclideanTheorem <> l:65 var
+R11802:11809 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11835:11843 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R11822:11825 Corelib.Init.Datatypes <> list ind
+R11827:11834 Hilbert.EuclideanTheorem <> Triangle rec
+binder 11810:11818 <> triangles:67
+R11860:11862 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11844:11849 Corelib.Init.Datatypes <> length def
+R11851:11859 Hilbert.EuclideanTheorem <> triangles:67 var
+R11864:11866 Corelib.Init.Peano <> ::nat_scope:x_'-'_x not
+R11863:11863 Hilbert.EuclideanTheorem <> n:63 var
+R11907:11922 Hilbert.EuclideanTheorem EuclideanTheorem <> sec

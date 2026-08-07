@@ -1,0 +1,317 @@
+DIGEST 2edbea594e54ee3a6008a5355d290bce
+FLadyzhenskaya.RicciFlow
+R238:248 Ladyzhenskaya.HolderSpace <> <> lib
+R285:305 Ladyzhenskaya.ParabolicCoefficients <> <> lib
+R342:348 Ladyzhenskaya.DeTurck <> <> lib
+R449:456 SphereClassification.Manifold <> <> lib
+R458:470 SphereClassification.RiemannMetric <> <> lib
+R472:484 SphereClassification.RiemannTensor <> <> lib
+ax 1031:1049 <> christoffel_symbols
+R1067:1075 SphereClassification.Manifold <> Manifold3 rec
+binder 1063:1063 <> M:1
+R1083:1098 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1100:1100 Ladyzhenskaya.RicciFlow <> M:1 var
+binder 1079:1079 <> g:2
+R1117:1120 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1108:1116 SphereClassification.Manifold <> Manifold3 rec
+R1123:1126 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1121:1122 SphereClassification.RiemannMetric <> R3 def
+R1127:1127 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 1226:1245 <> covariant_derivative
+R1263:1271 SphereClassification.Manifold <> Manifold3 rec
+binder 1259:1259 <> M:5
+R1279:1294 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1296:1296 Ladyzhenskaya.RicciFlow <> M:5 var
+binder 1275:1275 <> g:6
+R1325:1328 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1304:1322 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1324:1324 Ladyzhenskaya.RicciFlow <> M:5 var
+R1350:1357 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1329:1347 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1349:1349 Ladyzhenskaya.RicciFlow <> M:5 var
+R1358:1376 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1378:1378 Ladyzhenskaya.RicciFlow <> M:5 var
+ax 1416:1436 <> lie_derivative_metric
+R1454:1462 SphereClassification.Manifold <> Manifold3 rec
+binder 1450:1450 <> M:9
+R1470:1485 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1487:1487 Ladyzhenskaya.RicciFlow <> M:9 var
+binder 1466:1466 <> g:10
+R1516:1519 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1495:1513 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R1515:1515 Ladyzhenskaya.RicciFlow <> M:9 var
+R1529:1532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1520:1528 SphereClassification.Manifold <> Manifold3 rec
+R1533:1533 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+rec 1927:1945 <> TimeDependentMetric
+proj 1954:1962 <> tdm_value
+R1975:1978 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1966:1974 SphereClassification.Manifold <> Manifold3 rec
+R1980:1983 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1979:1979 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1984:1984 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+rec 2413:2436 <> TimeDependentRicciTensor
+proj 2445:2453 <> tdt_value
+R2466:2469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2457:2465 SphereClassification.Manifold <> Manifold3 rec
+R2471:2474 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2470:2470 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2475:2475 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+rec 3221:3237 <> RicciFlowEquation
+proj 3246:3255 <> rfe_metric
+proj 3304:3312 <> rfe_ricci
+proj 3367:3378 <> rfe_residual
+R3259:3277 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+R3316:3339 Ladyzhenskaya.RicciFlow <> TimeDependentRicciTensor rec
+R3391:3394 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3382:3390 SphereClassification.Manifold <> Manifold3 rec
+R3396:3399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3395:3395 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3400:3400 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 3450:3463 <> RicciFlowHolds
+R3474:3490 Ladyzhenskaya.RicciFlow <> RicciFlowEquation rec
+binder 3468:3470 <> eqn:21
+R3498:3506 SphereClassification.Manifold <> Manifold3 rec
+binder 3494:3494 <> p:22
+R3514:3514 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3510:3510 <> t:23
+R3592:3594 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3572:3583 Ladyzhenskaya.RicciFlow <> rfe_residual proj
+R3591:3591 Ladyzhenskaya.RicciFlow <> t:23 var
+R3589:3589 Ladyzhenskaya.RicciFlow <> p:22 var
+R3585:3587 Ladyzhenskaya.RicciFlow <> eqn:21 var
+R3595:3596 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+def 3986:4011 <> RicciFlowShortTimeSolution
+R4020:4035 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 4016:4016 <> P:24
+R4043:4061 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 4039:4039 <> g:25
+binder 4083:4083 <> p:26
+binder 4085:4085 <> t:27
+R4120:4199 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4090:4093 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R4095:4098 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R4094:4094 Ladyzhenskaya.RicciFlow <> t:27 var
+R4094:4094 Ladyzhenskaya.RicciFlow <> t:27 var
+R4099:4114 Ladyzhenskaya.DeTurck <> rfp_time_horizon proj
+R4116:4116 Ladyzhenskaya.RicciFlow <> P:24 var
+R4200:4206 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4230:4237 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4213:4229 Ladyzhenskaya.RicciFlow <> RicciFlowEquation rec
+binder 4207:4209 <> eqn:28
+R4256:4265 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4252:4254 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4238:4247 Ladyzhenskaya.RicciFlow <> rfe_metric proj
+R4249:4251 Ladyzhenskaya.RicciFlow <> eqn:28 var
+R4255:4255 Ladyzhenskaya.RicciFlow <> g:25 var
+R4266:4279 Ladyzhenskaya.RicciFlow <> RicciFlowHolds def
+R4287:4287 Ladyzhenskaya.RicciFlow <> t:27 var
+R4285:4285 Ladyzhenskaya.RicciFlow <> p:26 var
+R4281:4283 Ladyzhenskaya.RicciFlow <> eqn:28 var
+def 4687:4702 <> flow_application
+R4711:4728 Ladyzhenskaya.DeTurck <> DeTurckVectorField rec
+binder 4707:4707 <> X:29
+R4736:4744 SphereClassification.Manifold <> Manifold3 rec
+binder 4732:4732 <> p:30
+R4752:4752 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4748:4748 <> t:31
+R4757:4765 SphereClassification.Manifold <> Manifold3 rec
+R4772:4772 Ladyzhenskaya.RicciFlow <> p:30 var
+def 4905:4920 <> pull_back_metric
+R4935:4948 Ladyzhenskaya.DeTurck <> DeformedMetric rec
+binder 4925:4931 <> g_tilde:32
+R4956:4973 Ladyzhenskaya.DeTurck <> DeTurckVectorField rec
+binder 4952:4952 <> X:33
+R4983:4991 SphereClassification.Manifold <> Manifold3 rec
+binder 4979:4979 <> p:34
+R4999:4999 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4995:4995 <> t:35
+R5004:5004 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5011:5023 Ladyzhenskaya.DeTurck <> dm_components proj
+R5058:5058 Ladyzhenskaya.RicciFlow <> t:35 var
+R5034:5049 Ladyzhenskaya.RicciFlow <> flow_application def
+R5055:5055 Ladyzhenskaya.RicciFlow <> t:35 var
+R5053:5053 Ladyzhenskaya.RicciFlow <> p:34 var
+R5051:5051 Ladyzhenskaya.RicciFlow <> X:33 var
+R5025:5031 Ladyzhenskaya.RicciFlow <> g_tilde:32 var
+prf 5594:5623 <> pull_back_preserves_ricci_flow
+R5641:5656 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 5637:5637 <> P:36
+R5670:5683 Ladyzhenskaya.DeTurck <> DeformedMetric rec
+binder 5660:5666 <> g_tilde:37
+R5691:5708 Ladyzhenskaya.DeTurck <> DeTurckVectorField rec
+binder 5687:5687 <> X:38
+R5725:5751 Ladyzhenskaya.DeTurck <> DeTurckEquationCoefficients rec
+binder 5716:5721 <> coeffs:39
+R5796:5803 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5759:5778 Ladyzhenskaya.DeTurck <> DeTurckEquationHolds def
+R5790:5795 Ladyzhenskaya.RicciFlow <> coeffs:39 var
+R5788:5788 Ladyzhenskaya.RicciFlow <> X:38 var
+R5780:5786 Ladyzhenskaya.RicciFlow <> g_tilde:37 var
+R5804:5810 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5834:5841 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5815:5833 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 5811:5811 <> g:40
+R5842:5867 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R5871:5871 Ladyzhenskaya.RicciFlow <> g:40 var
+R5869:5869 Ladyzhenskaya.RicciFlow <> P:36 var
+R5927:5942 Ladyzhenskaya.RicciFlow <> pull_back_metric def
+R5927:5942 Ladyzhenskaya.RicciFlow <> pull_back_metric def
+R5966:5990 Ladyzhenskaya.RicciFlow <> Build_TimeDependentMetric constr
+R5966:5990 Ladyzhenskaya.RicciFlow <> Build_TimeDependentMetric constr
+R6023:6045 Ladyzhenskaya.RicciFlow <> Build_RicciFlowEquation constr
+binder 6172:6172 <> p:41
+binder 6174:6174 <> t:42
+R6179:6180 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R6086:6115 Ladyzhenskaya.RicciFlow <> Build_TimeDependentRicciTensor constr
+binder 6128:6128 <> p:43
+binder 6130:6130 <> t:44
+R6135:6143 Ladyzhenskaya.DeTurck <> dec_ricci proj
+R6154:6154 Ladyzhenskaya.RicciFlow <> t:44 var
+R6152:6152 Ladyzhenskaya.RicciFlow <> p:43 var
+R6052:6076 Ladyzhenskaya.RicciFlow <> Build_TimeDependentMetric constr
+R6023:6045 Ladyzhenskaya.RicciFlow <> Build_RicciFlowEquation constr
+binder 6172:6172 <> p:45
+binder 6174:6174 <> t:46
+R6179:6180 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R6086:6115 Ladyzhenskaya.RicciFlow <> Build_TimeDependentRicciTensor constr
+binder 6128:6128 <> p:47
+binder 6130:6130 <> t:48
+R6135:6143 Ladyzhenskaya.DeTurck <> dec_ricci proj
+R6154:6154 Ladyzhenskaya.RicciFlow <> t:48 var
+R6152:6152 Ladyzhenskaya.RicciFlow <> p:47 var
+R6052:6076 Ladyzhenskaya.RicciFlow <> Build_TimeDependentMetric constr
+prf 7154:7182 <> deturck_equation_has_solution
+R7200:7215 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 7196:7196 <> P:49
+R7223:7229 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7254:7261 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7240:7253 Ladyzhenskaya.DeTurck <> DeformedMetric rec
+binder 7230:7236 <> g_tilde:50
+R7262:7268 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7291:7300 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7273:7290 Ladyzhenskaya.DeTurck <> DeTurckVectorField rec
+binder 7269:7269 <> X:51
+R7301:7320 Ladyzhenskaya.DeTurck <> DeTurckEquationHolds def
+R7343:7375 Ladyzhenskaya.DeTurck <> Build_DeTurckEquationCoefficients constr
+R7493:7494 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R7446:7447 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R7401:7402 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R7330:7330 Ladyzhenskaya.RicciFlow <> X:51 var
+R7322:7328 Ladyzhenskaya.RicciFlow <> g_tilde:50 var
+R7531:7553 Ladyzhenskaya.DeTurck <> deturck_ricci_existence thm
+R7531:7553 Ladyzhenskaya.DeTurck <> deturck_ricci_existence thm
+R7602:7625 Ladyzhenskaya.DeTurck <> Build_DeTurckVectorField constr
+R7655:7655 Corelib.Init.Logic <> I constr
+R7639:7640 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R7602:7625 Ladyzhenskaya.DeTurck <> Build_DeTurckVectorField constr
+R7655:7655 Corelib.Init.Logic <> I constr
+R7639:7640 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R7669:7688 Ladyzhenskaya.DeTurck <> DeTurckEquationHolds def
+R7714:7725 Ladyzhenskaya.DeTurck <> dec_residual proj
+prf 7832:7862 <> ricci_flow_short_time_existence
+R7880:7895 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 7876:7876 <> P:52
+R7903:7909 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7933:7940 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7914:7932 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 7910:7910 <> g:53
+R7941:7966 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R7970:7970 Ladyzhenskaya.RicciFlow <> g:53 var
+R7968:7968 Ladyzhenskaya.RicciFlow <> P:52 var
+R8005:8033 Ladyzhenskaya.RicciFlow <> deturck_equation_has_solution thm
+R8005:8033 Ladyzhenskaya.RicciFlow <> deturck_equation_has_solution thm
+R8071:8100 Ladyzhenskaya.RicciFlow <> pull_back_preserves_ricci_flow thm
+R8119:8151 Ladyzhenskaya.DeTurck <> Build_DeTurckEquationCoefficients constr
+R8197:8198 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8181:8182 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8165:8166 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8071:8100 Ladyzhenskaya.RicciFlow <> pull_back_preserves_ricci_flow thm
+R8119:8151 Ladyzhenskaya.DeTurck <> Build_DeTurckEquationCoefficients constr
+R8197:8198 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8181:8182 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R8165:8166 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+ax 8671:8691 <> ricci_flow_uniqueness
+R8709:8724 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 8705:8705 <> P:54
+R8736:8754 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 8728:8729 <> g1:55
+binder 8731:8732 <> g2:56
+R8793:8800 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8762:8787 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R8791:8792 Ladyzhenskaya.RicciFlow <> g1:55 var
+R8789:8789 Ladyzhenskaya.RicciFlow <> P:54 var
+R8832:8839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8801:8826 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R8830:8831 Ladyzhenskaya.RicciFlow <> g2:56 var
+R8828:8828 Ladyzhenskaya.RicciFlow <> P:54 var
+binder 8847:8847 <> t:57
+R8882:8891 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8852:8855 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R8857:8860 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R8856:8856 Ladyzhenskaya.RicciFlow <> t:57 var
+R8856:8856 Ladyzhenskaya.RicciFlow <> t:57 var
+R8861:8876 Ladyzhenskaya.DeTurck <> rfp_time_horizon proj
+R8878:8878 Ladyzhenskaya.RicciFlow <> P:54 var
+binder 8899:8899 <> p:58
+R8918:8920 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8902:8910 Ladyzhenskaya.RicciFlow <> tdm_value proj
+R8917:8917 Ladyzhenskaya.RicciFlow <> t:57 var
+R8915:8915 Ladyzhenskaya.RicciFlow <> p:58 var
+R8912:8913 Ladyzhenskaya.RicciFlow <> g1:55 var
+R8921:8929 Ladyzhenskaya.RicciFlow <> tdm_value proj
+R8936:8936 Ladyzhenskaya.RicciFlow <> t:57 var
+R8934:8934 Ladyzhenskaya.RicciFlow <> p:58 var
+R8931:8932 Ladyzhenskaya.RicciFlow <> g2:56 var
+prf 9424:9443 <> ricci_flow_existence
+R9461:9476 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 9457:9457 <> P:61
+R9484:9490 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9514:9521 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9495:9513 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 9491:9491 <> g:62
+R9522:9547 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R9551:9551 Ladyzhenskaya.RicciFlow <> g:62 var
+R9549:9549 Ladyzhenskaya.RicciFlow <> P:61 var
+R9583:9613 Ladyzhenskaya.RicciFlow <> ricci_flow_short_time_existence thm
+R9583:9613 Ladyzhenskaya.RicciFlow <> ricci_flow_short_time_existence thm
+prf 9633:9668 <> ricci_flow_short_time_existence_full
+R9686:9701 Ladyzhenskaya.DeTurck <> RicciFlowProblem rec
+binder 9682:9682 <> P:63
+R9709:9715 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9739:9746 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9720:9738 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 9716:9716 <> g:64
+R9777:9787 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9975:9975 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9747:9772 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R9776:9776 Ladyzhenskaya.RicciFlow <> g:64 var
+R9774:9774 Ladyzhenskaya.RicciFlow <> P:63 var
+R9800:9818 Ladyzhenskaya.RicciFlow <> TimeDependentMetric rec
+binder 9795:9796 <> g2:65
+R9861:9873 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9830:9855 Ladyzhenskaya.RicciFlow <> RicciFlowShortTimeSolution def
+R9859:9860 Ladyzhenskaya.RicciFlow <> g2:65 var
+R9857:9857 Ladyzhenskaya.RicciFlow <> P:63 var
+binder 9881:9881 <> t:66
+R9916:9930 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9886:9889 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R9891:9894 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x_'<='_x not
+R9890:9890 Ladyzhenskaya.RicciFlow <> t:66 var
+R9890:9890 Ladyzhenskaya.RicciFlow <> t:66 var
+R9895:9910 Ladyzhenskaya.DeTurck <> rfp_time_horizon proj
+R9912:9912 Ladyzhenskaya.RicciFlow <> P:63 var
+binder 9938:9938 <> p:67
+R9956:9958 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R9941:9949 Ladyzhenskaya.RicciFlow <> tdm_value proj
+R9955:9955 Ladyzhenskaya.RicciFlow <> t:66 var
+R9953:9953 Ladyzhenskaya.RicciFlow <> p:67 var
+R9951:9951 Ladyzhenskaya.RicciFlow <> g:64 var
+R9959:9967 Ladyzhenskaya.RicciFlow <> tdm_value proj
+R9974:9974 Ladyzhenskaya.RicciFlow <> t:66 var
+R9972:9972 Ladyzhenskaya.RicciFlow <> p:67 var
+R9969:9970 Ladyzhenskaya.RicciFlow <> g2:65 var
+R10009:10028 Ladyzhenskaya.RicciFlow <> ricci_flow_existence thm
+R10009:10028 Ladyzhenskaya.RicciFlow <> ricci_flow_existence thm
+R10115:10135 Ladyzhenskaya.RicciFlow <> ricci_flow_uniqueness prfax
+R10115:10135 Ladyzhenskaya.RicciFlow <> ricci_flow_uniqueness prfax

@@ -1,0 +1,755 @@
+DIGEST fd4f034ba745448b70de3c88c17eca28
+FHilbert.IV_Independence
+R1108:1112 Stdlib.Reals.Reals <> <> lib
+R1142:1144 Stdlib.micromega.Lra <> <> lib
+R1174:1176 Stdlib.micromega.Lia <> <> lib
+R1218:1224 Stdlib.setoid_ring.RealField <> RTheory thm
+def 1492:1493 <> V3
+R1510:1512 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1506:1508 Corelib.Init.Datatypes <> ::type_scope:x_'*'_x not
+R1505:1505 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1509:1509 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1513:1513 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 1527:1531 <> Point
+R1543:1544 Hilbert.IV_Independence <> V3 def
+def 1578:1584 <> coord_x
+R1591:1595 Hilbert.IV_Independence <> Point def
+binder 1587:1587 <> p:1
+R1600:1600 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1605:1607 Corelib.Init.Datatypes <> fst def
+R1610:1612 Corelib.Init.Datatypes <> fst def
+R1614:1614 Hilbert.IV_Independence <> p:1 var
+def 1629:1635 <> coord_y
+R1642:1646 Hilbert.IV_Independence <> Point def
+binder 1638:1638 <> p:2
+R1651:1651 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1656:1658 Corelib.Init.Datatypes <> snd def
+R1661:1663 Corelib.Init.Datatypes <> fst def
+R1665:1665 Hilbert.IV_Independence <> p:2 var
+def 1680:1686 <> coord_z
+R1693:1697 Hilbert.IV_Independence <> Point def
+binder 1689:1689 <> p:3
+R1702:1702 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1707:1709 Corelib.Init.Datatypes <> snd def
+R1711:1711 Hilbert.IV_Independence <> p:3 var
+def 1748:1761 <> on_unit_sphere
+R1768:1772 Hilbert.IV_Independence <> Point def
+binder 1764:1764 <> P:4
+R1832:1834 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1816:1818 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1800:1802 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1796:1798 Stdlib.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1787:1793 Hilbert.IV_Independence <> coord_x def
+R1795:1795 Hilbert.IV_Independence <> P:4 var
+R1812:1814 Stdlib.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1803:1809 Hilbert.IV_Independence <> coord_y def
+R1811:1811 Hilbert.IV_Independence <> P:4 var
+R1828:1830 Stdlib.Reals.Rfunctions <> ::R_scope:x_'^'_x not
+R1819:1825 Hilbert.IV_Independence <> coord_z def
+R1827:1827 Hilbert.IV_Independence <> P:4 var
+def 2095:2098 <> vadd
+R2107:2108 Hilbert.IV_Independence <> V3 def
+binder 2101:2101 <> u:5
+binder 2103:2103 <> v:6
+R2113:2114 Hilbert.IV_Independence <> V3 def
+R2121:2121 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2143:2144 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2166:2167 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2189:2189 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2131:2133 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2122:2128 Hilbert.IV_Independence <> coord_x def
+R2130:2130 Hilbert.IV_Independence <> u:5 var
+R2134:2140 Hilbert.IV_Independence <> coord_x def
+R2142:2142 Hilbert.IV_Independence <> v:6 var
+R2154:2156 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2145:2151 Hilbert.IV_Independence <> coord_y def
+R2153:2153 Hilbert.IV_Independence <> u:5 var
+R2157:2163 Hilbert.IV_Independence <> coord_y def
+R2165:2165 Hilbert.IV_Independence <> v:6 var
+R2177:2179 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2168:2174 Hilbert.IV_Independence <> coord_z def
+R2176:2176 Hilbert.IV_Independence <> u:5 var
+R2180:2186 Hilbert.IV_Independence <> coord_z def
+R2188:2188 Hilbert.IV_Independence <> v:6 var
+def 2204:2207 <> vsub
+R2216:2217 Hilbert.IV_Independence <> V3 def
+binder 2210:2210 <> u:7
+binder 2212:2212 <> v:8
+R2222:2223 Hilbert.IV_Independence <> V3 def
+R2230:2230 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2252:2253 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2275:2276 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2298:2298 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2240:2242 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2231:2237 Hilbert.IV_Independence <> coord_x def
+R2239:2239 Hilbert.IV_Independence <> u:7 var
+R2243:2249 Hilbert.IV_Independence <> coord_x def
+R2251:2251 Hilbert.IV_Independence <> v:8 var
+R2263:2265 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2254:2260 Hilbert.IV_Independence <> coord_y def
+R2262:2262 Hilbert.IV_Independence <> u:7 var
+R2266:2272 Hilbert.IV_Independence <> coord_y def
+R2274:2274 Hilbert.IV_Independence <> v:8 var
+R2286:2288 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R2277:2283 Hilbert.IV_Independence <> coord_z def
+R2285:2285 Hilbert.IV_Independence <> u:7 var
+R2289:2295 Hilbert.IV_Independence <> coord_z def
+R2297:2297 Hilbert.IV_Independence <> v:8 var
+def 2313:2318 <> vscale
+R2325:2325 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2321:2321 <> t:9
+R2333:2334 Hilbert.IV_Independence <> V3 def
+binder 2329:2329 <> v:10
+R2339:2340 Hilbert.IV_Independence <> V3 def
+R2347:2347 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2361:2362 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2376:2377 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2391:2391 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R2349:2351 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2348:2348 Hilbert.IV_Independence <> t:9 var
+R2352:2358 Hilbert.IV_Independence <> coord_x def
+R2360:2360 Hilbert.IV_Independence <> v:10 var
+R2364:2366 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2363:2363 Hilbert.IV_Independence <> t:9 var
+R2367:2373 Hilbert.IV_Independence <> coord_y def
+R2375:2375 Hilbert.IV_Independence <> v:10 var
+R2379:2381 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2378:2378 Hilbert.IV_Independence <> t:9 var
+R2382:2388 Hilbert.IV_Independence <> coord_z def
+R2390:2390 Hilbert.IV_Independence <> v:10 var
+def 2406:2408 <> dot
+R2417:2418 Hilbert.IV_Independence <> V3 def
+binder 2411:2411 <> u:11
+binder 2413:2413 <> v:12
+R2423:2423 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2475:2477 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2451:2453 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R2439:2441 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2430:2436 Hilbert.IV_Independence <> coord_x def
+R2438:2438 Hilbert.IV_Independence <> u:11 var
+R2442:2448 Hilbert.IV_Independence <> coord_x def
+R2450:2450 Hilbert.IV_Independence <> v:12 var
+R2463:2465 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2454:2460 Hilbert.IV_Independence <> coord_y def
+R2462:2462 Hilbert.IV_Independence <> u:11 var
+R2466:2472 Hilbert.IV_Independence <> coord_y def
+R2474:2474 Hilbert.IV_Independence <> v:12 var
+R2487:2489 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2478:2484 Hilbert.IV_Independence <> coord_z def
+R2486:2486 Hilbert.IV_Independence <> u:11 var
+R2490:2496 Hilbert.IV_Independence <> coord_z def
+R2498:2498 Hilbert.IV_Independence <> v:12 var
+def 2513:2519 <> norm_sq
+R2526:2527 Hilbert.IV_Independence <> V3 def
+binder 2522:2522 <> v:13
+R2532:2532 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2537:2539 Hilbert.IV_Independence <> dot def
+R2541:2541 Hilbert.IV_Independence <> v:13 var
+R2543:2543 Hilbert.IV_Independence <> v:13 var
+rec 2810:2813 <> Line
+proj 2836:2846 <> line_normal
+proj 2856:2872 <> line_norm_nonzero
+R2850:2851 Hilbert.IV_Independence <> V3 def
+R2895:2898 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2876:2882 Hilbert.IV_Independence <> norm_sq def
+R2884:2894 Hilbert.IV_Independence <> line_normal:15 meth
+def 2916:2920 <> Incid
+R2927:2931 Hilbert.IV_Independence <> Point def
+binder 2923:2923 <> P:17
+R2939:2942 Hilbert.IV_Independence <> Line rec
+binder 2935:2935 <> l:18
+R2978:2980 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2957:2959 Hilbert.IV_Independence <> dot def
+R2961:2961 Hilbert.IV_Independence <> P:17 var
+R2964:2974 Hilbert.IV_Independence <> line_normal proj
+R2976:2976 Hilbert.IV_Independence <> l:18 var
+def 3253:3264 <> sphere_angle
+R3273:3277 Hilbert.IV_Independence <> Point def
+binder 3267:3267 <> A:19
+binder 3269:3269 <> B:20
+R3282:3282 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3287:3290 Stdlib.Reals.Ratan <> acos def
+R3293:3295 Hilbert.IV_Independence <> dot def
+R3297:3297 Hilbert.IV_Independence <> A:19 var
+R3299:3299 Hilbert.IV_Independence <> B:20 var
+def 3315:3317 <> Bet
+R3328:3332 Hilbert.IV_Independence <> Point def
+binder 3320:3320 <> A:21
+binder 3322:3322 <> B:22
+binder 3324:3324 <> C:23
+R3347:3354 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3361:3363 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3359:3360 Hilbert.IV_Independence <> V3 def
+binder 3355:3355 <> n:24
+R3378:3385 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3373:3376 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3364:3370 Hilbert.IV_Independence <> norm_sq def
+R3372:3372 Hilbert.IV_Independence <> n:24 var
+R3397:3400 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3393:3395 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3386:3388 Hilbert.IV_Independence <> dot def
+R3390:3390 Hilbert.IV_Independence <> A:21 var
+R3392:3392 Hilbert.IV_Independence <> n:24 var
+R3412:3415 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3408:3410 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3401:3403 Hilbert.IV_Independence <> dot def
+R3405:3405 Hilbert.IV_Independence <> B:22 var
+R3407:3407 Hilbert.IV_Independence <> n:24 var
+R3427:3434 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3423:3425 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3416:3418 Hilbert.IV_Independence <> dot def
+R3420:3420 Hilbert.IV_Independence <> C:23 var
+R3422:3422 Hilbert.IV_Independence <> n:24 var
+R3446:3448 Hilbert.IV_Independence <> dot def
+R3450:3450 Hilbert.IV_Independence <> A:21 var
+R3452:3452 Hilbert.IV_Independence <> B:22 var
+binder 3439:3441 <> amb:25
+R3472:3474 Hilbert.IV_Independence <> dot def
+R3476:3476 Hilbert.IV_Independence <> B:22 var
+R3478:3478 Hilbert.IV_Independence <> C:23 var
+binder 3465:3467 <> bmc:26
+R3498:3500 Hilbert.IV_Independence <> dot def
+R3502:3502 Hilbert.IV_Independence <> A:21 var
+R3504:3504 Hilbert.IV_Independence <> C:23 var
+binder 3491:3493 <> amc:27
+R3522:3525 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3516:3518 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3513:3515 Hilbert.IV_Independence <> amb:25 var
+R3519:3521 Hilbert.IV_Independence <> amc:27 var
+R3535:3538 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3529:3531 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3526:3528 Hilbert.IV_Independence <> bmc:26 var
+R3532:3534 Hilbert.IV_Independence <> amc:27 var
+R3546:3549 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3542:3544 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3539:3541 Hilbert.IV_Independence <> amb:25 var
+R3557:3560 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3553:3555 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3550:3552 Hilbert.IV_Independence <> bmc:26 var
+R3564:3566 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3561:3563 Hilbert.IV_Independence <> amc:27 var
+ax 3834:3840 <> CongSeg
+R3849:3852 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3844:3848 Hilbert.IV_Independence <> Point def
+R3858:3861 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3853:3857 Hilbert.IV_Independence <> Point def
+R3867:3870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3862:3866 Hilbert.IV_Independence <> Point def
+R3876:3879 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3871:3875 Hilbert.IV_Independence <> Point def
+def 3897:3901 <> sdist
+R3910:3914 Hilbert.IV_Independence <> Point def
+binder 3904:3904 <> P:30
+binder 3906:3906 <> Q:31
+R3919:3919 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3924:3927 Stdlib.Reals.Ratan <> acos def
+R3930:3932 Hilbert.IV_Independence <> dot def
+R3934:3934 Hilbert.IV_Independence <> P:30 var
+R3936:3936 Hilbert.IV_Independence <> Q:31 var
+def 3951:3961 <> CongSeg_def
+R3974:3978 Hilbert.IV_Independence <> Point def
+binder 3964:3964 <> A:32
+binder 3966:3966 <> B:33
+binder 3968:3968 <> C:34
+binder 3970:3970 <> D:35
+R4000:4002 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3991:3995 Hilbert.IV_Independence <> sdist def
+R3997:3997 Hilbert.IV_Independence <> A:32 var
+R3999:3999 Hilbert.IV_Independence <> B:33 var
+R4003:4007 Hilbert.IV_Independence <> sdist def
+R4009:4009 Hilbert.IV_Independence <> C:34 var
+R4011:4011 Hilbert.IV_Independence <> D:35 var
+ax 4025:4031 <> CongAng
+R4040:4043 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4035:4039 Hilbert.IV_Independence <> Point def
+R4049:4052 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4044:4048 Hilbert.IV_Independence <> Point def
+R4058:4061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4053:4057 Hilbert.IV_Independence <> Point def
+R4067:4070 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4062:4066 Hilbert.IV_Independence <> Point def
+R4076:4079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4071:4075 Hilbert.IV_Independence <> Point def
+R4085:4088 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4080:4084 Hilbert.IV_Independence <> Point def
+def 4107:4113 <> tan_vec
+R4122:4126 Hilbert.IV_Independence <> Point def
+binder 4116:4116 <> A:38
+binder 4118:4118 <> B:39
+R4131:4132 Hilbert.IV_Independence <> V3 def
+R4137:4140 Hilbert.IV_Independence <> vsub def
+R4142:4142 Hilbert.IV_Independence <> A:38 var
+R4145:4150 Hilbert.IV_Independence <> vscale def
+R4153:4155 Hilbert.IV_Independence <> dot def
+R4157:4157 Hilbert.IV_Independence <> A:38 var
+R4159:4159 Hilbert.IV_Independence <> B:39 var
+R4162:4162 Hilbert.IV_Independence <> B:39 var
+def 4178:4193 <> sphere_cos_angle
+R4204:4208 Hilbert.IV_Independence <> Point def
+binder 4196:4196 <> A:40
+binder 4198:4198 <> B:41
+binder 4200:4200 <> C:42
+R4213:4213 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4229:4235 Hilbert.IV_Independence <> tan_vec def
+R4237:4237 Hilbert.IV_Independence <> A:40 var
+R4239:4239 Hilbert.IV_Independence <> B:41 var
+binder 4224:4224 <> u:43
+R4255:4261 Hilbert.IV_Independence <> tan_vec def
+R4263:4263 Hilbert.IV_Independence <> C:42 var
+R4265:4265 Hilbert.IV_Independence <> B:41 var
+binder 4250:4250 <> v:44
+R4282:4285 Stdlib.Reals.R_sqrt <> sqrt def
+R4288:4294 Hilbert.IV_Independence <> norm_sq def
+R4296:4296 Hilbert.IV_Independence <> u:43 var
+binder 4276:4277 <> nu:45
+R4314:4317 Stdlib.Reals.R_sqrt <> sqrt def
+R4320:4326 Hilbert.IV_Independence <> norm_sq def
+R4328:4328 Hilbert.IV_Independence <> v:44 var
+binder 4308:4309 <> nv:46
+R4343:4346 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4354:4354 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R4336:4338 Hilbert.IV_Independence <> dot def
+R4340:4340 Hilbert.IV_Independence <> u:43 var
+R4342:4342 Hilbert.IV_Independence <> v:44 var
+R4349:4351 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R4347:4348 Hilbert.IV_Independence <> nu:45 var
+R4352:4353 Hilbert.IV_Independence <> nv:46 var
+def 4369:4379 <> CongAng_def
+R4399:4403 Hilbert.IV_Independence <> Point def
+binder 4382:4382 <> A:47
+binder 4384:4384 <> B:48
+binder 4386:4386 <> C:49
+binder 4388:4389 <> A':50
+binder 4391:4392 <> B':51
+binder 4394:4395 <> C':52
+R4440:4442 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4418:4433 Hilbert.IV_Independence <> sphere_cos_angle def
+R4435:4435 Hilbert.IV_Independence <> A:47 var
+R4437:4437 Hilbert.IV_Independence <> B:48 var
+R4439:4439 Hilbert.IV_Independence <> C:49 var
+R4443:4458 Hilbert.IV_Independence <> sphere_cos_angle def
+R4460:4461 Hilbert.IV_Independence <> A':50 var
+R4463:4464 Hilbert.IV_Independence <> B':51 var
+R4466:4467 Hilbert.IV_Independence <> C':52 var
+def 4737:4744 <> Parallel
+R4753:4756 Hilbert.IV_Independence <> Line rec
+binder 4747:4747 <> a:53
+binder 4749:4749 <> b:54
+R4771:4772 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R4773:4779 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4789:4790 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4784:4788 Hilbert.IV_Independence <> Point def
+binder 4780:4780 <> P:55
+R4800:4803 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4791:4795 Hilbert.IV_Independence <> Incid def
+R4797:4797 Hilbert.IV_Independence <> P:55 var
+R4799:4799 Hilbert.IV_Independence <> a:53 var
+R4804:4808 Hilbert.IV_Independence <> Incid def
+R4810:4810 Hilbert.IV_Independence <> P:55 var
+R4812:4812 Hilbert.IV_Independence <> b:54 var
+prf 5131:5161 <> any_two_great_circles_intersect
+R5179:5182 Hilbert.IV_Independence <> Line rec
+binder 5173:5173 <> a:56
+binder 5175:5175 <> b:57
+R5188:5194 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5204:5205 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5199:5203 Hilbert.IV_Independence <> Point def
+binder 5195:5195 <> P:58
+R5215:5218 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5206:5210 Hilbert.IV_Independence <> Incid def
+R5212:5212 Hilbert.IV_Independence <> P:58 var
+R5214:5214 Hilbert.IV_Independence <> a:56 var
+R5228:5231 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5219:5223 Hilbert.IV_Independence <> Incid def
+R5225:5225 Hilbert.IV_Independence <> P:58 var
+R5227:5227 Hilbert.IV_Independence <> b:57 var
+R5232:5245 Hilbert.IV_Independence <> on_unit_sphere def
+R5247:5247 Hilbert.IV_Independence <> P:58 var
+prf 5760:5786 <> no_parallel_lines_on_sphere
+R5804:5807 Hilbert.IV_Independence <> Line rec
+binder 5798:5798 <> a:59
+binder 5800:5800 <> b:60
+R5811:5812 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R5813:5820 Hilbert.IV_Independence <> Parallel def
+R5822:5822 Hilbert.IV_Independence <> a:59 var
+R5824:5824 Hilbert.IV_Independence <> b:60 var
+R5855:5862 Hilbert.IV_Independence <> Parallel def
+R5886:5916 Hilbert.IV_Independence <> any_two_great_circles_intersect prfax
+R5886:5916 Hilbert.IV_Independence <> any_two_great_circles_intersect prfax
+R5979:5982 Corelib.Init.Logic <> conj constr
+R5979:5982 Corelib.Init.Logic <> conj constr
+prf 6061:6073 <> norm_sq_north
+R6103:6106 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6077:6083 Hilbert.IV_Independence <> norm_sq def
+R6100:6101 Hilbert.IV_Independence <> V3 def
+R6086:6086 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6093:6094 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6096:6096 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6087:6087 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6089:6090 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6092:6092 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6126:6132 Hilbert.IV_Independence <> norm_sq def
+R6135:6137 Hilbert.IV_Independence <> dot def
+R6140:6146 Hilbert.IV_Independence <> coord_x def
+R6149:6155 Hilbert.IV_Independence <> coord_y def
+R6158:6164 Hilbert.IV_Independence <> coord_z def
+def 6283:6292 <> north_pole
+R6296:6300 Hilbert.IV_Independence <> Point def
+R6305:6305 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6312:6313 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6315:6315 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6306:6306 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6308:6309 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6311:6311 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+def 6364:6377 <> equator_normal
+R6381:6382 Hilbert.IV_Independence <> V3 def
+R6387:6387 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6394:6395 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6397:6397 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6388:6388 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6390:6391 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R6393:6393 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+def 6431:6437 <> equator
+R6441:6444 Hilbert.IV_Independence <> Line rec
+R6449:6454 Hilbert.IV_Independence <> mkLine constr
+R6456:6469 Hilbert.IV_Independence <> equator_normal def
+R6471:6483 Hilbert.IV_Independence <> norm_sq_north thm
+prf 6593:6612 <> IV_1_fails_on_sphere
+R6616:6623 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6644:6648 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6628:6632 Hilbert.IV_Independence <> Point def
+binder 6624:6624 <> P:61
+R6640:6643 Hilbert.IV_Independence <> Line rec
+binder 6636:6636 <> a:62
+R6665:6668 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6649:6662 Hilbert.IV_Independence <> on_unit_sphere def
+R6664:6664 Hilbert.IV_Independence <> P:61 var
+R6680:6685 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6669:6670 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R6671:6675 Hilbert.IV_Independence <> Incid def
+R6677:6677 Hilbert.IV_Independence <> P:61 var
+R6679:6679 Hilbert.IV_Independence <> a:62 var
+R6686:6687 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R6688:6694 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6703:6704 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6699:6702 Hilbert.IV_Independence <> Line rec
+binder 6695:6695 <> b:63
+R6714:6717 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6705:6709 Hilbert.IV_Independence <> Incid def
+R6711:6711 Hilbert.IV_Independence <> P:61 var
+R6713:6713 Hilbert.IV_Independence <> b:63 var
+R6718:6725 Hilbert.IV_Independence <> Parallel def
+R6727:6727 Hilbert.IV_Independence <> a:62 var
+R6729:6729 Hilbert.IV_Independence <> b:63 var
+R6748:6757 Hilbert.IV_Independence <> north_pole def
+R6760:6766 Hilbert.IV_Independence <> equator def
+R6748:6757 Hilbert.IV_Independence <> north_pole def
+R6760:6766 Hilbert.IV_Independence <> equator def
+R6789:6802 Hilbert.IV_Independence <> on_unit_sphere def
+R6805:6811 Hilbert.IV_Independence <> coord_x def
+R6814:6820 Hilbert.IV_Independence <> coord_y def
+R6823:6829 Hilbert.IV_Independence <> coord_z def
+R6832:6841 Hilbert.IV_Independence <> north_pole def
+R6880:6884 Hilbert.IV_Independence <> Incid def
+R6887:6889 Hilbert.IV_Independence <> dot def
+R6892:6898 Hilbert.IV_Independence <> coord_x def
+R6901:6907 Hilbert.IV_Independence <> coord_y def
+R6910:6916 Hilbert.IV_Independence <> coord_z def
+R6919:6928 Hilbert.IV_Independence <> north_pole def
+R6931:6937 Hilbert.IV_Independence <> equator def
+R6940:6953 Hilbert.IV_Independence <> equator_normal def
+R7024:7054 Hilbert.IV_Independence <> any_two_great_circles_intersect prfax
+R7056:7062 Hilbert.IV_Independence <> equator def
+R7024:7054 Hilbert.IV_Independence <> any_two_great_circles_intersect prfax
+R7056:7062 Hilbert.IV_Independence <> equator def
+R7116:7142 Hilbert.IV_Independence <> no_parallel_lines_on_sphere thm
+R7144:7150 Hilbert.IV_Independence <> equator def
+R7116:7142 Hilbert.IV_Independence <> no_parallel_lines_on_sphere thm
+R7144:7150 Hilbert.IV_Independence <> equator def
+prf 7514:7535 <> I_1_holds_in_ell_plane
+R7553:7557 Hilbert.IV_Independence <> Point def
+binder 7547:7547 <> A:64
+binder 7549:7549 <> B:65
+R7579:7582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7563:7576 Hilbert.IV_Independence <> on_unit_sphere def
+R7578:7578 Hilbert.IV_Independence <> A:64 var
+R7599:7602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7583:7596 Hilbert.IV_Independence <> on_unit_sphere def
+R7598:7598 Hilbert.IV_Independence <> B:65 var
+R7609:7614 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7604:7607 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7603:7603 Hilbert.IV_Independence <> A:64 var
+R7608:7608 Hilbert.IV_Independence <> B:65 var
+R7615:7621 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7630:7631 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7626:7629 Hilbert.IV_Independence <> Line rec
+binder 7622:7622 <> l:66
+R7641:7644 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7632:7636 Hilbert.IV_Independence <> Incid def
+R7638:7638 Hilbert.IV_Independence <> A:64 var
+R7640:7640 Hilbert.IV_Independence <> l:66 var
+R7645:7649 Hilbert.IV_Independence <> Incid def
+R7651:7651 Hilbert.IV_Independence <> B:65 var
+R7653:7653 Hilbert.IV_Independence <> l:66 var
+R7806:7808 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7794:7796 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7785:7791 Hilbert.IV_Independence <> coord_y def
+R7797:7803 Hilbert.IV_Independence <> coord_z def
+R7818:7820 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7809:7815 Hilbert.IV_Independence <> coord_z def
+R7821:7827 Hilbert.IV_Independence <> coord_y def
+R7806:7808 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7794:7796 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7785:7791 Hilbert.IV_Independence <> coord_y def
+R7797:7803 Hilbert.IV_Independence <> coord_z def
+R7818:7820 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7809:7815 Hilbert.IV_Independence <> coord_z def
+R7821:7827 Hilbert.IV_Independence <> coord_y def
+R7867:7869 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7855:7857 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7846:7852 Hilbert.IV_Independence <> coord_z def
+R7858:7864 Hilbert.IV_Independence <> coord_x def
+R7879:7881 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7870:7876 Hilbert.IV_Independence <> coord_x def
+R7882:7888 Hilbert.IV_Independence <> coord_z def
+R7867:7869 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7855:7857 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7846:7852 Hilbert.IV_Independence <> coord_z def
+R7858:7864 Hilbert.IV_Independence <> coord_x def
+R7879:7881 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7870:7876 Hilbert.IV_Independence <> coord_x def
+R7882:7888 Hilbert.IV_Independence <> coord_z def
+R7928:7930 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7916:7918 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7907:7913 Hilbert.IV_Independence <> coord_x def
+R7919:7925 Hilbert.IV_Independence <> coord_y def
+R7940:7942 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7931:7937 Hilbert.IV_Independence <> coord_y def
+R7943:7949 Hilbert.IV_Independence <> coord_x def
+R7928:7930 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R7916:7918 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7907:7913 Hilbert.IV_Independence <> coord_x def
+R7919:7925 Hilbert.IV_Independence <> coord_y def
+R7940:7942 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7931:7937 Hilbert.IV_Independence <> coord_y def
+R7943:7949 Hilbert.IV_Independence <> coord_x def
+R7991:7994 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7971:7977 Hilbert.IV_Independence <> norm_sq def
+R7979:7979 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7982:7983 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7986:7987 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7990:7990 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7991:7994 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7971:7977 Hilbert.IV_Independence <> norm_sq def
+R7979:7979 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7982:7983 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7986:7987 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R7990:7990 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8010:8016 Hilbert.IV_Independence <> norm_sq def
+R8019:8021 Hilbert.IV_Independence <> dot def
+R8036:8042 Hilbert.IV_Independence <> coord_x def
+R8045:8051 Hilbert.IV_Independence <> coord_y def
+R8054:8060 Hilbert.IV_Independence <> coord_z def
+R8086:8091 Hilbert.IV_Independence <> mkLine constr
+R8093:8093 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8096:8097 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8100:8101 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8104:8104 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8086:8091 Hilbert.IV_Independence <> mkLine constr
+R8093:8093 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8096:8097 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8100:8101 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8104:8104 Corelib.Init.Datatypes <> ::core_scope:'('_x_','_x_','_'..'_','_x_')' not
+R8128:8132 Hilbert.IV_Independence <> Incid def
+R8135:8137 Hilbert.IV_Independence <> dot def
+R8152:8158 Hilbert.IV_Independence <> coord_x def
+R8161:8167 Hilbert.IV_Independence <> coord_y def
+R8170:8176 Hilbert.IV_Independence <> coord_z def
+prf 8284:8305 <> I_2_holds_in_ell_plane
+R8323:8326 Hilbert.IV_Independence <> Line rec
+binder 8317:8317 <> l:67
+binder 8319:8319 <> m:68
+R8336:8340 Hilbert.IV_Independence <> Point def
+binder 8330:8330 <> P:69
+binder 8332:8332 <> Q:70
+R8394:8397 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8355:8358 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8346:8350 Hilbert.IV_Independence <> Incid def
+R8352:8352 Hilbert.IV_Independence <> P:69 var
+R8354:8354 Hilbert.IV_Independence <> l:67 var
+R8368:8371 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8359:8363 Hilbert.IV_Independence <> Incid def
+R8365:8365 Hilbert.IV_Independence <> Q:70 var
+R8367:8367 Hilbert.IV_Independence <> l:67 var
+R8381:8384 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8372:8376 Hilbert.IV_Independence <> Incid def
+R8378:8378 Hilbert.IV_Independence <> P:69 var
+R8380:8380 Hilbert.IV_Independence <> m:68 var
+R8385:8389 Hilbert.IV_Independence <> Incid def
+R8391:8391 Hilbert.IV_Independence <> Q:70 var
+R8393:8393 Hilbert.IV_Independence <> m:68 var
+R8399:8401 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8398:8398 Hilbert.IV_Independence <> l:67 var
+R8402:8402 Hilbert.IV_Independence <> m:68 var
+prf 8512:8530 <> I_3_holds_in_sphere
+R8534:8534 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8606:8613 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8755:8755 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8546:8549 Hilbert.IV_Independence <> Line rec
+binder 8542:8542 <> l:71
+R8552:8558 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8570:8573 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8565:8569 Hilbert.IV_Independence <> Point def
+binder 8559:8559 <> P:72
+R8565:8569 Hilbert.IV_Independence <> Point def
+binder 8561:8561 <> Q:73
+R8583:8586 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8574:8578 Hilbert.IV_Independence <> Incid def
+R8580:8580 Hilbert.IV_Independence <> P:72 var
+R8582:8582 Hilbert.IV_Independence <> l:71 var
+R8596:8599 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8587:8591 Hilbert.IV_Independence <> Incid def
+R8593:8593 Hilbert.IV_Independence <> Q:73 var
+R8595:8595 Hilbert.IV_Independence <> l:71 var
+R8601:8604 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8600:8600 Hilbert.IV_Independence <> P:72 var
+R8605:8605 Hilbert.IV_Independence <> Q:73 var
+R8614:8620 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8634:8635 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8629:8633 Hilbert.IV_Independence <> Point def
+binder 8621:8621 <> A:74
+R8629:8633 Hilbert.IV_Independence <> Point def
+binder 8623:8623 <> B:75
+R8629:8633 Hilbert.IV_Independence <> Point def
+binder 8625:8625 <> C:76
+R8652:8655 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8636:8649 Hilbert.IV_Independence <> on_unit_sphere def
+R8651:8651 Hilbert.IV_Independence <> A:74 var
+R8672:8678 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8656:8669 Hilbert.IV_Independence <> on_unit_sphere def
+R8671:8671 Hilbert.IV_Independence <> B:75 var
+R8695:8698 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8679:8692 Hilbert.IV_Independence <> on_unit_sphere def
+R8694:8694 Hilbert.IV_Independence <> C:76 var
+R8699:8701 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R8754:8754 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R8702:8708 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8717:8718 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8713:8716 Hilbert.IV_Independence <> Line rec
+binder 8709:8709 <> l:77
+R8728:8731 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8719:8723 Hilbert.IV_Independence <> Incid def
+R8725:8725 Hilbert.IV_Independence <> A:74 var
+R8727:8727 Hilbert.IV_Independence <> l:77 var
+R8741:8744 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8732:8736 Hilbert.IV_Independence <> Incid def
+R8738:8738 Hilbert.IV_Independence <> B:75 var
+R8740:8740 Hilbert.IV_Independence <> l:77 var
+R8745:8749 Hilbert.IV_Independence <> Incid def
+R8751:8751 Hilbert.IV_Independence <> C:76 var
+R8753:8753 Hilbert.IV_Independence <> l:77 var
+prf 9048:9067 <> II_1_holds_in_sphere
+R9087:9091 Hilbert.IV_Independence <> Point def
+binder 9079:9079 <> A:78
+binder 9081:9081 <> B:79
+binder 9083:9083 <> C:80
+R9106:9109 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9097:9099 Hilbert.IV_Independence <> Bet def
+R9101:9101 Hilbert.IV_Independence <> A:78 var
+R9103:9103 Hilbert.IV_Independence <> B:79 var
+R9105:9105 Hilbert.IV_Independence <> C:80 var
+R9110:9112 Hilbert.IV_Independence <> Bet def
+R9114:9114 Hilbert.IV_Independence <> C:80 var
+R9116:9116 Hilbert.IV_Independence <> B:79 var
+R9118:9118 Hilbert.IV_Independence <> A:78 var
+prf 9154:9173 <> II_2_holds_in_sphere
+R9191:9195 Hilbert.IV_Independence <> Point def
+binder 9185:9185 <> A:81
+binder 9187:9187 <> C:82
+R9207:9210 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9202:9205 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9201:9201 Hilbert.IV_Independence <> A:81 var
+R9206:9206 Hilbert.IV_Independence <> C:82 var
+R9211:9218 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9228:9230 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9223:9227 Hilbert.IV_Independence <> Point def
+binder 9219:9219 <> B:83
+R9231:9233 Hilbert.IV_Independence <> Bet def
+R9235:9235 Hilbert.IV_Independence <> A:81 var
+R9237:9237 Hilbert.IV_Independence <> B:83 var
+R9239:9239 Hilbert.IV_Independence <> C:82 var
+prf 9275:9294 <> II_3_holds_in_sphere
+R9314:9318 Hilbert.IV_Independence <> Point def
+binder 9306:9306 <> A:84
+binder 9308:9308 <> B:85
+binder 9310:9310 <> C:86
+R9324:9324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9377:9383 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9325:9331 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9340:9341 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9336:9339 Hilbert.IV_Independence <> Line rec
+binder 9332:9332 <> l:87
+R9351:9354 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9342:9346 Hilbert.IV_Independence <> Incid def
+R9348:9348 Hilbert.IV_Independence <> A:84 var
+R9350:9350 Hilbert.IV_Independence <> l:87 var
+R9364:9367 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9355:9359 Hilbert.IV_Independence <> Incid def
+R9361:9361 Hilbert.IV_Independence <> B:85 var
+R9363:9363 Hilbert.IV_Independence <> l:87 var
+R9368:9372 Hilbert.IV_Independence <> Incid def
+R9374:9374 Hilbert.IV_Independence <> C:86 var
+R9376:9376 Hilbert.IV_Independence <> l:87 var
+R9390:9393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9385:9388 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9384:9384 Hilbert.IV_Independence <> A:84 var
+R9389:9389 Hilbert.IV_Independence <> B:85 var
+R9400:9403 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9395:9398 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9394:9394 Hilbert.IV_Independence <> B:85 var
+R9399:9399 Hilbert.IV_Independence <> C:86 var
+R9410:9416 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9452:9452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9405:9408 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9404:9404 Hilbert.IV_Independence <> A:84 var
+R9409:9409 Hilbert.IV_Independence <> C:86 var
+R9426:9429 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R9417:9419 Hilbert.IV_Independence <> Bet def
+R9421:9421 Hilbert.IV_Independence <> A:84 var
+R9423:9423 Hilbert.IV_Independence <> B:85 var
+R9425:9425 Hilbert.IV_Independence <> C:86 var
+R9439:9442 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R9430:9432 Hilbert.IV_Independence <> Bet def
+R9434:9434 Hilbert.IV_Independence <> B:85 var
+R9436:9436 Hilbert.IV_Independence <> A:84 var
+R9438:9438 Hilbert.IV_Independence <> C:86 var
+R9443:9445 Hilbert.IV_Independence <> Bet def
+R9447:9447 Hilbert.IV_Independence <> A:84 var
+R9449:9449 Hilbert.IV_Independence <> C:86 var
+R9451:9451 Hilbert.IV_Independence <> B:85 var
+prf 9743:9763 <> III_1_holds_in_sphere
+R9781:9785 Hilbert.IV_Independence <> Point def
+binder 9775:9775 <> A:88
+binder 9777:9777 <> B:89
+R9793:9797 Hilbert.IV_Independence <> Point def
+binder 9789:9789 <> C:90
+R9809:9812 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9804:9807 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9803:9803 Hilbert.IV_Independence <> A:88 var
+R9808:9808 Hilbert.IV_Independence <> B:89 var
+R9819:9822 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9814:9817 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9813:9813 Hilbert.IV_Independence <> C:90 var
+R9818:9818 Hilbert.IV_Independence <> A:88 var
+R9823:9830 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9840:9843 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R9835:9839 Hilbert.IV_Independence <> Point def
+binder 9831:9831 <> X:91
+R9860:9863 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R9844:9857 Hilbert.IV_Independence <> on_unit_sphere def
+R9859:9859 Hilbert.IV_Independence <> X:91 var
+R9864:9870 Hilbert.IV_Independence <> CongSeg defax
+R9872:9872 Hilbert.IV_Independence <> A:88 var
+R9874:9874 Hilbert.IV_Independence <> B:89 var
+R9876:9876 Hilbert.IV_Independence <> C:90 var
+R9878:9878 Hilbert.IV_Independence <> X:91 var

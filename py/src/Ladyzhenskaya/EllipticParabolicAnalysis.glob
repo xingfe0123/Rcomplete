@@ -1,0 +1,303 @@
+DIGEST 90d08d4500f1ad0de807f9a8d806134e
+FLadyzhenskaya.EllipticParabolicAnalysis
+R413:426 Corelib.Init.Logic <> <> lib
+R444:448 Stdlib.Reals.Reals <> <> lib
+R466:479 Stdlib.Logic.Classical_Prop <> <> lib
+R497:520 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R538:546 Stdlib.Logic.Classical <> <> lib
+R586:610 Ladyzhenskaya.HolderSpace <> <> lib
+R628:652 Ladyzhenskaya.Derivatives <> <> lib
+R670:704 Ladyzhenskaya.ParabolicCoefficients <> <> lib
+def 1616:1645 <> EllipticMatrixPositiveDefinite
+R1654:1656 Corelib.Init.Datatypes <> nat ind
+binder 1650:1650 <> n:1
+R1665:1668 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1664:1664 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1670:1673 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1669:1669 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1674:1674 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1660:1660 <> A:2
+R1683:1683 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1678:1679 <> mu:3
+R1724:1724 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1750:1797 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1840:1840 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+binder 1732:1732 <> i:4
+binder 1734:1734 <> j:5
+R1742:1744 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1737:1737 Ladyzhenskaya.EllipticParabolicAnalysis <> A:2 var
+R1741:1741 Ladyzhenskaya.EllipticParabolicAnalysis <> j:5 var
+R1739:1739 Ladyzhenskaya.EllipticParabolicAnalysis <> i:4 var
+R1745:1745 Ladyzhenskaya.EllipticParabolicAnalysis <> A:2 var
+R1749:1749 Ladyzhenskaya.EllipticParabolicAnalysis <> i:4 var
+R1747:1747 Ladyzhenskaya.EllipticParabolicAnalysis <> j:5 var
+R1810:1810 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1805:1806 <> xi:6
+R1826:1829 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1821:1823 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1816:1818 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1814:1815 Ladyzhenskaya.EllipticParabolicAnalysis <> mu:3 var
+R1819:1820 Ladyzhenskaya.EllipticParabolicAnalysis <> xi:6 var
+R1824:1825 Ladyzhenskaya.EllipticParabolicAnalysis <> xi:6 var
+R1830:1830 Ladyzhenskaya.EllipticParabolicAnalysis <> A:2 var
+R1835:1836 Ladyzhenskaya.EllipticParabolicAnalysis <> xi:6 var
+R1832:1833 Ladyzhenskaya.EllipticParabolicAnalysis <> xi:6 var
+def 2210:2240 <> ParabolicOperatorSignPreserving
+R2249:2251 Corelib.Init.Datatypes <> nat ind
+binder 2245:2245 <> n:7
+R2259:2259 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2282:2287 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2310:2310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2277:2280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2260:2276 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2281:2281 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2305:2308 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2288:2304 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2309:2309 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2255:2255 <> L:8
+R2344:2347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2327:2343 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2348:2348 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2323:2323 <> c:9
+binder 2415:2415 <> p:10
+R2422:2425 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R2419:2419 Ladyzhenskaya.EllipticParabolicAnalysis <> c:9 var
+R2421:2421 Ladyzhenskaya.EllipticParabolicAnalysis <> p:10 var
+ax 2612:2639 <> operator_sign_analysis_lemma
+R2657:2659 Corelib.Init.Datatypes <> nat ind
+binder 2653:2653 <> n:11
+R2667:2683 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 2663:2663 <> Q:12
+R2708:2711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2691:2707 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2712:2712 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2687:2687 <> u:13
+R2729:2729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2752:2757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2780:2780 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2747:2750 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2730:2746 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2751:2751 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2775:2778 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2758:2774 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2779:2779 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2725:2725 <> L:14
+R2814:2817 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2797:2813 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R2818:2818 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2793:2793 <> c:15
+R2940:3003 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2903:2933 Ladyzhenskaya.EllipticParabolicAnalysis <> ParabolicOperatorSignPreserving def
+R2935:2935 Ladyzhenskaya.EllipticParabolicAnalysis <> n:11 var
+R2937:2937 Ladyzhenskaya.EllipticParabolicAnalysis <> L:14 var
+R2939:2939 Ladyzhenskaya.EllipticParabolicAnalysis <> c:15 var
+R3004:3007 Corelib.Init.Logic <> True ind
+ax 3143:3171 <> strong_maximum_principle_sign
+R3189:3191 Corelib.Init.Datatypes <> nat ind
+binder 3185:3185 <> n:18
+R3199:3215 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 3195:3195 <> Q:19
+R3240:3243 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3223:3239 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R3244:3244 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3219:3219 <> u:20
+R3261:3261 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3284:3289 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3312:3312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3279:3282 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3262:3278 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R3283:3283 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R3307:3310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3290:3306 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R3311:3311 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3257:3257 <> L:21
+R3346:3349 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3329:3345 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R3350:3350 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3325:3325 <> c:22
+R3458:3461 Corelib.Init.Logic <> True ind
+ax 4199:4216 <> parabolic_boundary
+R4239:4242 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4222:4238 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4260:4263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4243:4259 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+def 4310:4330 <> on_parabolic_boundary
+R4339:4355 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 4335:4335 <> Q:27
+R4363:4379 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 4359:4359 <> p:28
+R4394:4411 Ladyzhenskaya.EllipticParabolicAnalysis <> parabolic_boundary defax
+R4413:4413 Ladyzhenskaya.EllipticParabolicAnalysis <> Q:27 var
+R4415:4415 Ladyzhenskaya.EllipticParabolicAnalysis <> p:28 var
+ax 4500:4521 <> weak_maximum_principle
+R4539:4541 Corelib.Init.Datatypes <> nat ind
+binder 4535:4535 <> n:29
+R4549:4565 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 4545:4545 <> Q:30
+R4590:4593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4573:4589 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4594:4594 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4569:4569 <> u:31
+R4611:4611 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4634:4639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4662:4662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4629:4632 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4612:4628 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4633:4633 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4657:4660 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4640:4656 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4661:4661 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4607:4607 <> L:32
+R4787:4790 Corelib.Init.Logic <> True ind
+ax 4893:4914 <> weak_minimum_principle
+R4932:4934 Corelib.Init.Datatypes <> nat ind
+binder 4928:4928 <> n:35
+R4942:4958 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 4938:4938 <> Q:36
+R4983:4986 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4966:4982 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R4987:4987 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4962:4962 <> u:37
+R5004:5004 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5027:5032 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5055:5055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5022:5025 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5005:5021 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5026:5026 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5050:5053 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5033:5049 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5054:5054 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5000:5000 <> L:38
+R5130:5133 Corelib.Init.Logic <> True ind
+ax 5228:5251 <> strong_maximum_principle
+R5269:5271 Corelib.Init.Datatypes <> nat ind
+binder 5265:5265 <> n:41
+R5279:5295 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 5275:5275 <> Q:42
+R5320:5323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5303:5319 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5324:5324 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5299:5299 <> u:43
+R5341:5341 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5364:5369 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5392:5392 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5359:5362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5342:5358 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5363:5363 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R5387:5390 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5370:5386 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5391:5391 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5337:5337 <> L:44
+R5530:5533 Corelib.Init.Logic <> True ind
+ax 5764:5788 <> extremum_hessian_property
+R5806:5808 Corelib.Init.Datatypes <> nat ind
+binder 5802:5802 <> n:47
+R5816:5832 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 5812:5812 <> Q:48
+R5857:5860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5840:5856 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R5861:5861 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5836:5836 <> u:49
+R5878:5894 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 5874:5874 <> p:50
+R5981:5984 Corelib.Init.Logic <> True ind
+ax 6180:6212 <> extremum_time_derivative_property
+R6230:6232 Corelib.Init.Datatypes <> nat ind
+binder 6226:6226 <> n:53
+R6240:6256 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 6236:6236 <> Q:54
+R6281:6284 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6264:6280 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R6285:6285 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6260:6260 <> u:55
+R6303:6319 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 6298:6299 <> x0:56
+R6328:6328 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6323:6324 <> t0:57
+R6438:6441 Corelib.Init.Logic <> True ind
+def 7214:7241 <> bernstein_auxiliary_function
+R7267:7270 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7250:7266 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7271:7271 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7246:7246 <> u:60
+R7284:7284 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7275:7280 <> lambda:61
+R7306:7309 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7289:7305 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7310:7310 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7321:7321 <> p:62
+R7347:7349 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R7326:7331 Stdlib.Reals.Rpower <> Rpower def
+R7334:7337 Stdlib.Reals.Rbasic_fun <> Rabs def
+R7340:7340 Ladyzhenskaya.EllipticParabolicAnalysis <> u:60 var
+R7342:7342 Ladyzhenskaya.EllipticParabolicAnalysis <> p:62 var
+R7356:7358 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R7350:7355 Ladyzhenskaya.EllipticParabolicAnalysis <> lambda:61 var
+R7359:7364 Stdlib.Reals.Rpower <> Rpower def
+R7367:7370 Stdlib.Reals.Rbasic_fun <> Rabs def
+R7373:7373 Ladyzhenskaya.EllipticParabolicAnalysis <> u:60 var
+R7375:7375 Ladyzhenskaya.EllipticParabolicAnalysis <> p:62 var
+ax 7445:7471 <> bernstein_gradient_estimate
+R7489:7491 Corelib.Init.Datatypes <> nat ind
+binder 7485:7485 <> n:63
+R7499:7515 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 7495:7495 <> Q:64
+R7540:7543 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7523:7539 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7544:7544 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7519:7519 <> u:65
+R7561:7561 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7557:7557 <> C:66
+R7637:7640 Corelib.Init.Logic <> True ind
+ax 7789:7814 <> spacetime_coupled_function
+R7832:7834 Corelib.Init.Datatypes <> nat ind
+binder 7828:7828 <> n:69
+R7859:7862 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7842:7858 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7863:7863 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7838:7838 <> u:70
+R7876:7876 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 7867:7872 <> lambda:71
+R7899:7902 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7882:7898 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R7903:7903 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 7971:7998 <> spacetime_coupled_inequality
+R8016:8018 Corelib.Init.Datatypes <> nat ind
+binder 8012:8012 <> n:74
+R8026:8042 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 8022:8022 <> Q:75
+R8067:8070 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8050:8066 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R8071:8071 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8046:8046 <> u:76
+R8093:8093 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8084:8089 <> lambda:77
+R8101:8101 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8097:8097 <> C:78
+R8259:8262 Corelib.Init.Logic <> True ind
+ax 8378:8406 <> spacetime_coupling_regularity
+R8424:8426 Corelib.Init.Datatypes <> nat ind
+binder 8420:8420 <> n:81
+R8434:8450 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 8430:8430 <> Q:82
+R8475:8478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8458:8474 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R8479:8479 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8454:8454 <> u:83
+R8496:8496 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8492:8492 <> C:84
+R8594:8597 Corelib.Init.Logic <> True ind
+ax 8732:8759 <> spacetime_de_giorgi_combined
+R8777:8779 Corelib.Init.Datatypes <> nat ind
+binder 8773:8773 <> n:87
+R8787:8803 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 8783:8783 <> Q:88
+R8828:8831 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8811:8827 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R8832:8832 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8807:8807 <> u:89
+R8853:8866 Ladyzhenskaya.HolderSpace <> HolderExponent rec
+binder 8845:8849 <> alpha:90
+R8874:8874 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 8870:8870 <> C:91
+R8994:8997 Corelib.Init.Logic <> True ind

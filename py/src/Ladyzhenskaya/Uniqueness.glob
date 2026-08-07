@@ -1,0 +1,3098 @@
+DIGEST 6e0a44453dcf81b3c2f59edf67a0958d
+FLadyzhenskaya.Uniqueness
+R157:186 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R223:233 Ladyzhenskaya.HolderSpace <> <> lib
+R270:290 Ladyzhenskaya.ParabolicCoefficients <> <> lib
+R327:337 Ladyzhenskaya.Derivatives <> <> lib
+R374:381 Ladyzhenskaya.Galerkin <> <> lib
+R418:429 Ladyzhenskaya.SobolevSpace <> <> lib
+prf 1285:1305 <> elliptic_hopf_barrier
+R1324:1334 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 1319:1320 <> Ω:1
+R1342:1342 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1358:1363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1379:1379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1353:1356 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1343:1349 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1351:1352 Ladyzhenskaya.Uniqueness <> Ω:1 var
+R1357:1357 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1374:1377 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1364:1370 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1372:1373 Ladyzhenskaya.Uniqueness <> Ω:1 var
+R1378:1378 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1338:1338 <> L:2
+R1397:1403 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1405:1406 Ladyzhenskaya.Uniqueness <> Ω:1 var
+binder 1392:1393 <> x0:3
+R1414:1414 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1410:1410 <> r:4
+R1450:1457 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1422:1444 Ladyzhenskaya.SobolevSpace <> interior_ball_condition def
+R1449:1449 Ladyzhenskaya.Uniqueness <> r:4 var
+R1446:1447 Ladyzhenskaya.Uniqueness <> x0:3 var
+R1458:1461 Corelib.Init.Logic <> True ind
+prf 1622:1645 <> elliptic_hopf_comparison
+R1664:1674 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 1659:1660 <> Ω:5
+R1682:1682 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1698:1703 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1719:1719 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1693:1696 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1683:1689 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1691:1692 Ladyzhenskaya.Uniqueness <> Ω:5 var
+R1697:1697 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R1714:1717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1704:1710 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1712:1713 Ladyzhenskaya.Uniqueness <> Ω:5 var
+R1718:1718 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1678:1678 <> L:6
+R1746:1749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1736:1742 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1744:1745 Ladyzhenskaya.Uniqueness <> Ω:5 var
+R1750:1750 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1732:1732 <> u:7
+R1759:1765 Ladyzhenskaya.HolderSpace <> ms_type proj
+R1767:1768 Ladyzhenskaya.Uniqueness <> Ω:5 var
+binder 1754:1755 <> x0:8
+R1776:1776 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1772:1772 <> r:9
+R1831:1870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1827:1830 Corelib.Init.Logic <> True ind
+R1899:1937 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1871:1893 Ladyzhenskaya.SobolevSpace <> interior_ball_condition def
+R1898:1898 Ladyzhenskaya.Uniqueness <> r:9 var
+R1895:1896 Ladyzhenskaya.Uniqueness <> x0:8 var
+R1938:1941 Corelib.Init.Logic <> True ind
+prf 2070:2088 <> elliptic_hopf_lemma
+R2107:2117 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 2102:2103 <> Ω:10
+R2125:2133 Ladyzhenskaya.SobolevSpace <> SobolevH1 rec
+R2135:2136 Ladyzhenskaya.Uniqueness <> Ω:10 var
+binder 2121:2121 <> u:11
+R2145:2151 Ladyzhenskaya.HolderSpace <> ms_type proj
+R2153:2154 Ladyzhenskaya.Uniqueness <> Ω:10 var
+binder 2140:2141 <> x0:12
+R2207:2246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2203:2206 Corelib.Init.Logic <> True ind
+R2247:2247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2303:2338 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2248:2254 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2260:2261 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2259:2259 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2255:2255 <> r:13
+R2271:2274 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2264:2266 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2267:2267 Ladyzhenskaya.Uniqueness <> r:13 var
+R2275:2297 Ladyzhenskaya.SobolevSpace <> interior_ball_condition def
+R2302:2302 Ladyzhenskaya.Uniqueness <> r:13 var
+R2299:2300 Ladyzhenskaya.Uniqueness <> x0:12 var
+R2339:2342 Corelib.Init.Logic <> True ind
+prf 2830:2869 <> elliptic_hopf_normal_derivative_positive
+R2888:2898 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 2883:2884 <> Ω:14
+R2906:2914 Ladyzhenskaya.SobolevSpace <> SobolevH1 rec
+R2916:2917 Ladyzhenskaya.Uniqueness <> Ω:14 var
+binder 2902:2902 <> u:15
+R2926:2932 Ladyzhenskaya.HolderSpace <> ms_type proj
+R2934:2935 Ladyzhenskaya.Uniqueness <> Ω:14 var
+binder 2921:2922 <> x0:16
+R2988:3027 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2984:2987 Corelib.Init.Logic <> True ind
+R3028:3028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3088:3123 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3029:3035 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3041:3042 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3040:3040 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3036:3036 <> r:17
+R3052:3055 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3045:3047 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3048:3048 Ladyzhenskaya.Uniqueness <> r:17 var
+R3057:3079 Ladyzhenskaya.SobolevSpace <> interior_ball_condition def
+R3081:3082 Ladyzhenskaya.Uniqueness <> Ω:14 var
+R3084:3085 Ladyzhenskaya.Uniqueness <> x0:16 var
+R3087:3087 Ladyzhenskaya.Uniqueness <> r:17 var
+R3124:3127 Corelib.Init.Logic <> True ind
+R3604:3624 Ladyzhenskaya.Uniqueness <> elliptic_hopf_barrier prfax
+R3648:3651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3638:3644 Ladyzhenskaya.HolderSpace <> ms_type proj
+R3652:3652 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3634:3634 <> f:18
+R3657:3657 Ladyzhenskaya.Uniqueness <> f:18 var
+R3604:3624 Ladyzhenskaya.Uniqueness <> elliptic_hopf_barrier prfax
+R3648:3651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3638:3644 Ladyzhenskaya.HolderSpace <> ms_type proj
+R3652:3652 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3634:3634 <> f:19
+R3657:3657 Ladyzhenskaya.Uniqueness <> f:19 var
+prf 4349:4370 <> parabolic_hopf_barrier
+R4389:4399 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 4384:4385 <> Ω:20
+R4407:4407 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4403:4403 <> T:21
+R4415:4415 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4431:4436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4452:4452 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4426:4429 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4416:4422 Ladyzhenskaya.HolderSpace <> ms_type proj
+R4424:4425 Ladyzhenskaya.Uniqueness <> Ω:20 var
+R4430:4430 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R4447:4450 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4437:4443 Ladyzhenskaya.HolderSpace <> ms_type proj
+R4445:4446 Ladyzhenskaya.Uniqueness <> Ω:20 var
+R4451:4451 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4411:4411 <> L:22
+R4470:4476 Ladyzhenskaya.HolderSpace <> ms_type proj
+R4478:4479 Ladyzhenskaya.Uniqueness <> Ω:20 var
+binder 4465:4466 <> x0:23
+R4488:4488 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4483:4484 <> t0:24
+R4496:4496 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4492:4492 <> r:25
+R4537:4544 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4533:4536 Corelib.Init.Logic <> True ind
+R4545:4548 Corelib.Init.Logic <> True ind
+prf 4776:4795 <> parabolic_hopf_lemma
+R4814:4824 Ladyzhenskaya.HolderSpace <> MetricSpace rec
+binder 4809:4810 <> Ω:26
+R4832:4832 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4828:4828 <> T:27
+R4840:4848 Ladyzhenskaya.SobolevSpace <> SobolevH1 rec
+R4850:4851 Ladyzhenskaya.Uniqueness <> Ω:26 var
+binder 4836:4836 <> u:28
+R4860:4866 Ladyzhenskaya.HolderSpace <> ms_type proj
+R4868:4869 Ladyzhenskaya.Uniqueness <> Ω:26 var
+binder 4855:4856 <> x0:29
+R4878:4878 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4873:4874 <> t0:30
+R4943:4994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4939:4942 Corelib.Init.Logic <> True ind
+R4999:5039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4995:4998 Corelib.Init.Logic <> True ind
+R5040:5043 Corelib.Init.Logic <> True ind
+prf 6019:6039 <> is_initial_time_point
+R6057:6072 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 6053:6053 <> P:31
+R6080:6096 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 6076:6076 <> u:32
+R6104:6120 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 6100:6100 <> x:33
+R6128:6131 Corelib.Init.Logic <> True ind
+prf 6251:6283 <> init_phi_equals_ps_function_at_t0
+R6301:6316 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 6297:6297 <> P:34
+R6324:6340 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 6320:6320 <> u:35
+R6348:6364 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 6344:6344 <> x:36
+R6395:6402 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6372:6390 Ladyzhenskaya.Galerkin <> short_time_solution def
+R6394:6394 Ladyzhenskaya.Uniqueness <> u:35 var
+R6392:6392 Ladyzhenskaya.Uniqueness <> P:34 var
+R6410:6417 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6403:6407 Ladyzhenskaya.Galerkin <> is_t0 defax
+R6409:6409 Ladyzhenskaya.Uniqueness <> x:36 var
+R6433:6435 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6418:6428 Ladyzhenskaya.Galerkin <> ps_function proj
+R6432:6432 Ladyzhenskaya.Uniqueness <> x:36 var
+R6430:6430 Ladyzhenskaya.Uniqueness <> u:35 var
+R6436:6443 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R6457:6457 Ladyzhenskaya.Uniqueness <> x:36 var
+R6446:6452 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+R6454:6454 Ladyzhenskaya.Uniqueness <> P:34 var
+R6536:6552 Ladyzhenskaya.Galerkin <> satisfies_initial def
+prf 6746:6762 <> ps_function_at_t0
+R6780:6795 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 6776:6776 <> P:37
+R6803:6819 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 6799:6799 <> u:38
+R6827:6843 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 6823:6823 <> x:39
+R6874:6881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6851:6869 Ladyzhenskaya.Galerkin <> short_time_solution def
+R6873:6873 Ladyzhenskaya.Uniqueness <> u:38 var
+R6871:6871 Ladyzhenskaya.Uniqueness <> P:37 var
+R6889:6896 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6882:6886 Ladyzhenskaya.Galerkin <> is_t0 defax
+R6888:6888 Ladyzhenskaya.Uniqueness <> x:39 var
+R6912:6914 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6897:6907 Ladyzhenskaya.Galerkin <> ps_function proj
+R6911:6911 Ladyzhenskaya.Uniqueness <> x:39 var
+R6909:6909 Ladyzhenskaya.Uniqueness <> u:38 var
+R6915:6922 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R6936:6936 Ladyzhenskaya.Uniqueness <> x:39 var
+R6925:6931 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+R6933:6933 Ladyzhenskaya.Uniqueness <> P:37 var
+R7015:7031 Ladyzhenskaya.Galerkin <> satisfies_initial def
+R7104:7120 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R7104:7120 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+prf 7269:7304 <> solution_satisfies_initial_condition
+R7322:7337 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 7318:7318 <> P:40
+R7345:7361 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 7341:7341 <> u:41
+R7369:7385 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 7365:7365 <> x:42
+R7416:7423 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7393:7411 Ladyzhenskaya.Galerkin <> short_time_solution def
+R7415:7415 Ladyzhenskaya.Uniqueness <> u:41 var
+R7413:7413 Ladyzhenskaya.Uniqueness <> P:40 var
+R7431:7438 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7424:7428 Ladyzhenskaya.Galerkin <> is_t0 defax
+R7430:7430 Ladyzhenskaya.Uniqueness <> x:42 var
+R7454:7456 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7439:7449 Ladyzhenskaya.Galerkin <> ps_function proj
+R7453:7453 Ladyzhenskaya.Uniqueness <> x:42 var
+R7451:7451 Ladyzhenskaya.Uniqueness <> u:41 var
+R7457:7464 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R7478:7478 Ladyzhenskaya.Uniqueness <> x:42 var
+R7467:7473 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+R7475:7475 Ladyzhenskaya.Uniqueness <> P:40 var
+R7557:7573 Ladyzhenskaya.Galerkin <> satisfies_initial def
+prf 7745:7761 <> same_initial_data
+R7779:7794 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 7775:7775 <> P:43
+R7806:7822 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 7798:7799 <> u1:44
+binder 7801:7802 <> u2:45
+R7830:7846 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 7826:7826 <> x:46
+R7878:7881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7854:7872 Ladyzhenskaya.Galerkin <> short_time_solution def
+R7876:7877 Ladyzhenskaya.Uniqueness <> u1:44 var
+R7874:7874 Ladyzhenskaya.Uniqueness <> P:43 var
+R7906:7950 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7882:7900 Ladyzhenskaya.Galerkin <> short_time_solution def
+R7904:7905 Ladyzhenskaya.Uniqueness <> u2:45 var
+R7902:7902 Ladyzhenskaya.Uniqueness <> P:43 var
+R7958:7965 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7951:7955 Ladyzhenskaya.Galerkin <> is_t0 defax
+R7957:7957 Ladyzhenskaya.Uniqueness <> x:46 var
+R7982:7984 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7966:7976 Ladyzhenskaya.Galerkin <> ps_function proj
+R7981:7981 Ladyzhenskaya.Uniqueness <> x:46 var
+R7978:7979 Ladyzhenskaya.Uniqueness <> u1:44 var
+R7985:7995 Ladyzhenskaya.Galerkin <> ps_function proj
+R8000:8000 Ladyzhenskaya.Uniqueness <> x:46 var
+R7997:7998 Ladyzhenskaya.Uniqueness <> u2:45 var
+R8054:8070 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8054:8070 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8109:8125 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8109:8125 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8166:8173 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R8176:8182 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+R8166:8173 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R8176:8182 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+prf 8314:8331 <> initial_data_match
+R8349:8364 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 8345:8345 <> P:47
+R8376:8392 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 8368:8369 <> u1:48
+binder 8371:8372 <> u2:49
+R8400:8416 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 8396:8396 <> x:50
+R8448:8451 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8424:8442 Ladyzhenskaya.Galerkin <> short_time_solution def
+R8446:8447 Ladyzhenskaya.Uniqueness <> u1:48 var
+R8444:8444 Ladyzhenskaya.Uniqueness <> P:47 var
+R8476:8483 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8452:8470 Ladyzhenskaya.Galerkin <> short_time_solution def
+R8474:8475 Ladyzhenskaya.Uniqueness <> u2:49 var
+R8472:8472 Ladyzhenskaya.Uniqueness <> P:47 var
+R8491:8498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8484:8488 Ladyzhenskaya.Galerkin <> is_t0 defax
+R8490:8490 Ladyzhenskaya.Uniqueness <> x:50 var
+R8515:8517 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8499:8509 Ladyzhenskaya.Galerkin <> ps_function proj
+R8514:8514 Ladyzhenskaya.Uniqueness <> x:50 var
+R8511:8512 Ladyzhenskaya.Uniqueness <> u1:48 var
+R8518:8528 Ladyzhenskaya.Galerkin <> ps_function proj
+R8533:8533 Ladyzhenskaya.Uniqueness <> x:50 var
+R8530:8531 Ladyzhenskaya.Uniqueness <> u2:49 var
+R8587:8603 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8587:8603 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8642:8658 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8642:8658 Ladyzhenskaya.Uniqueness <> ps_function_at_t0 thm
+R8699:8706 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R8709:8715 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+R8699:8706 Ladyzhenskaya.ParabolicCoefficients <> init_phi proj
+R8709:8715 Ladyzhenskaya.ParabolicCoefficients <> pp_init proj
+prf 8956:8975 <> is_on_boundary_point
+R8993:9008 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 8989:8989 <> P:51
+R9020:9036 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 9012:9013 <> u1:52
+binder 9015:9016 <> u2:53
+R9044:9060 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 9040:9040 <> x:54
+R9072:9079 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9068:9071 Corelib.Init.Logic <> True ind
+R9080:9083 Corelib.Init.Logic <> True ind
+prf 9349:9375 <> project_to_spatial_boundary
+R9393:9408 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 9389:9389 <> P:55
+R9420:9436 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 9412:9413 <> u1:56
+binder 9415:9416 <> u2:57
+R9444:9460 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 9440:9440 <> x:58
+R9472:9479 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9468:9471 Corelib.Init.Logic <> True ind
+R9480:9498 Ladyzhenskaya.Galerkin <> is_spatial_boundary defax
+R9500:9500 Ladyzhenskaya.Uniqueness <> x:58 var
+prf 9669:9694 <> spatial_boundary_predicate
+R9712:9727 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 9708:9708 <> P:59
+R9739:9755 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 9731:9732 <> u1:60
+binder 9734:9735 <> u2:61
+R9763:9779 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 9759:9759 <> x:62
+R9791:9798 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9787:9790 Corelib.Init.Logic <> True ind
+R9799:9817 Ladyzhenskaya.Galerkin <> is_spatial_boundary defax
+R9819:9819 Ladyzhenskaya.Uniqueness <> x:62 var
+prf 10093:10117 <> is_spatial_boundary_point
+R10135:10150 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 10131:10131 <> P:63
+R10162:10178 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 10154:10155 <> u1:64
+binder 10157:10158 <> u2:65
+R10186:10202 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 10182:10182 <> x:66
+R10214:10221 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10210:10213 Corelib.Init.Logic <> True ind
+R10222:10240 Ladyzhenskaya.Galerkin <> is_spatial_boundary defax
+R10242:10242 Ladyzhenskaya.Uniqueness <> x:66 var
+prf 10326:10343 <> same_boundary_data
+R10361:10376 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 10357:10357 <> P:67
+R10388:10404 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 10380:10381 <> u1:68
+binder 10383:10384 <> u2:69
+R10412:10428 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 10408:10408 <> x:70
+R10460:10463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10436:10454 Ladyzhenskaya.Galerkin <> short_time_solution def
+R10458:10459 Ladyzhenskaya.Uniqueness <> u1:68 var
+R10456:10456 Ladyzhenskaya.Uniqueness <> P:67 var
+R10488:10541 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10464:10482 Ladyzhenskaya.Galerkin <> short_time_solution def
+R10486:10487 Ladyzhenskaya.Uniqueness <> u2:69 var
+R10484:10484 Ladyzhenskaya.Uniqueness <> P:67 var
+R10546:10553 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R10542:10545 Corelib.Init.Logic <> True ind
+R10570:10572 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R10554:10564 Ladyzhenskaya.Galerkin <> ps_function proj
+R10569:10569 Ladyzhenskaya.Uniqueness <> x:70 var
+R10566:10567 Ladyzhenskaya.Uniqueness <> u1:68 var
+R10573:10583 Ladyzhenskaya.Galerkin <> ps_function proj
+R10588:10588 Ladyzhenskaya.Uniqueness <> x:70 var
+R10585:10586 Ladyzhenskaya.Uniqueness <> u2:69 var
+R10792:10809 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+R10830:10847 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+R11070:11094 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11070:11094 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11149:11173 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11149:11173 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11291:11292 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+prf 11461:11482 <> lateral_boundary_match
+R11500:11515 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 11496:11496 <> P:71
+R11527:11543 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 11519:11520 <> u1:72
+binder 11522:11523 <> u2:73
+R11551:11567 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 11547:11547 <> x:74
+R11599:11602 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11575:11593 Ladyzhenskaya.Galerkin <> short_time_solution def
+R11597:11598 Ladyzhenskaya.Uniqueness <> u1:72 var
+R11595:11595 Ladyzhenskaya.Uniqueness <> P:71 var
+R11627:11634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11603:11621 Ladyzhenskaya.Galerkin <> short_time_solution def
+R11625:11626 Ladyzhenskaya.Uniqueness <> u2:73 var
+R11623:11623 Ladyzhenskaya.Uniqueness <> P:71 var
+R11639:11646 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R11635:11638 Corelib.Init.Logic <> True ind
+R11663:11665 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11647:11657 Ladyzhenskaya.Galerkin <> ps_function proj
+R11662:11662 Ladyzhenskaya.Uniqueness <> x:74 var
+R11659:11660 Ladyzhenskaya.Uniqueness <> u1:72 var
+R11666:11676 Ladyzhenskaya.Galerkin <> ps_function proj
+R11681:11681 Ladyzhenskaya.Uniqueness <> x:74 var
+R11678:11679 Ladyzhenskaya.Uniqueness <> u2:73 var
+R11816:11833 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+R11854:11871 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+R11907:11931 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11907:11931 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11986:12010 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R11986:12010 Ladyzhenskaya.Uniqueness <> is_spatial_boundary_point prfax
+R12056:12057 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+prf 12313:12333 <> boundary_values_match
+R12351:12366 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 12347:12347 <> P:75
+R12378:12394 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 12370:12371 <> u1:76
+binder 12373:12374 <> u2:77
+R12402:12418 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 12398:12398 <> x:78
+R12450:12453 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12426:12444 Ladyzhenskaya.Galerkin <> short_time_solution def
+R12448:12449 Ladyzhenskaya.Uniqueness <> u1:76 var
+R12446:12446 Ladyzhenskaya.Uniqueness <> P:75 var
+R12478:12485 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12454:12472 Ladyzhenskaya.Galerkin <> short_time_solution def
+R12476:12477 Ladyzhenskaya.Uniqueness <> u2:77 var
+R12474:12474 Ladyzhenskaya.Uniqueness <> P:75 var
+R12490:12497 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12486:12489 Corelib.Init.Logic <> True ind
+R12514:12516 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12498:12508 Ladyzhenskaya.Galerkin <> ps_function proj
+R12513:12513 Ladyzhenskaya.Uniqueness <> x:78 var
+R12510:12511 Ladyzhenskaya.Uniqueness <> u1:76 var
+R12517:12527 Ladyzhenskaya.Galerkin <> ps_function proj
+R12532:12532 Ladyzhenskaya.Uniqueness <> x:78 var
+R12529:12530 Ladyzhenskaya.Uniqueness <> u2:77 var
+R12661:12678 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+R12700:12717 Ladyzhenskaya.Galerkin <> satisfies_boundary def
+ax 13167:13182 <> in_ball_interior
+R13200:13215 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 13196:13196 <> P:79
+R13227:13243 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 13219:13220 <> u1:80
+binder 13222:13223 <> u2:81
+R13251:13267 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 13247:13247 <> x:82
+R13299:13302 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13275:13293 Ladyzhenskaya.Galerkin <> short_time_solution def
+R13297:13298 Ladyzhenskaya.Uniqueness <> u1:80 var
+R13295:13295 Ladyzhenskaya.Uniqueness <> P:79 var
+R13327:13334 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13303:13321 Ladyzhenskaya.Galerkin <> short_time_solution def
+R13325:13326 Ladyzhenskaya.Uniqueness <> u2:81 var
+R13323:13323 Ladyzhenskaya.Uniqueness <> P:79 var
+R13339:13346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13335:13338 Corelib.Init.Logic <> True ind
+R13364:13367 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R13348:13358 Ladyzhenskaya.Galerkin <> ps_function proj
+R13363:13363 Ladyzhenskaya.Uniqueness <> x:82 var
+R13360:13361 Ladyzhenskaya.Uniqueness <> u1:80 var
+R13368:13378 Ladyzhenskaya.Galerkin <> ps_function proj
+R13383:13383 Ladyzhenskaya.Uniqueness <> x:82 var
+R13380:13381 Ladyzhenskaya.Uniqueness <> u2:81 var
+ax 13509:13531 <> barrier_function_exists
+R13549:13564 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 13545:13545 <> P:85
+R13576:13592 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 13568:13569 <> u1:86
+binder 13571:13572 <> u2:87
+R13600:13616 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 13596:13596 <> x:88
+R13648:13651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13624:13642 Ladyzhenskaya.Galerkin <> short_time_solution def
+R13646:13647 Ladyzhenskaya.Uniqueness <> u1:86 var
+R13644:13644 Ladyzhenskaya.Uniqueness <> P:85 var
+R13676:13683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13652:13670 Ladyzhenskaya.Galerkin <> short_time_solution def
+R13674:13675 Ladyzhenskaya.Uniqueness <> u2:87 var
+R13672:13672 Ladyzhenskaya.Uniqueness <> P:85 var
+R13684:13690 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13717:13722 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13712:13715 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13695:13711 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R13716:13716 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 13691:13691 <> v:89
+R13727:13734 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13723:13726 Corelib.Init.Logic <> True ind
+R13752:13755 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R13736:13746 Ladyzhenskaya.Galerkin <> ps_function proj
+R13751:13751 Ladyzhenskaya.Uniqueness <> x:88 var
+R13748:13749 Ladyzhenskaya.Uniqueness <> u1:86 var
+R13756:13766 Ladyzhenskaya.Galerkin <> ps_function proj
+R13771:13771 Ladyzhenskaya.Uniqueness <> x:88 var
+R13768:13769 Ladyzhenskaya.Uniqueness <> u2:87 var
+ax 13844:13865 <> barrier_value_positive
+R13883:13898 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 13879:13879 <> P:92
+R13910:13926 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 13902:13903 <> u1:93
+binder 13905:13906 <> u2:94
+R13934:13950 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 13930:13930 <> x:95
+R13982:13985 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13958:13976 Ladyzhenskaya.Galerkin <> short_time_solution def
+R13980:13981 Ladyzhenskaya.Uniqueness <> u1:93 var
+R13978:13978 Ladyzhenskaya.Uniqueness <> P:92 var
+R14010:14017 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13986:14004 Ladyzhenskaya.Galerkin <> short_time_solution def
+R14008:14009 Ladyzhenskaya.Uniqueness <> u2:94 var
+R14006:14006 Ladyzhenskaya.Uniqueness <> P:92 var
+R14022:14029 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14018:14021 Corelib.Init.Logic <> True ind
+R14047:14050 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R14031:14041 Ladyzhenskaya.Galerkin <> ps_function proj
+R14046:14046 Ladyzhenskaya.Uniqueness <> x:95 var
+R14043:14044 Ladyzhenskaya.Uniqueness <> u1:93 var
+R14051:14061 Ladyzhenskaya.Galerkin <> ps_function proj
+R14066:14066 Ladyzhenskaya.Uniqueness <> x:95 var
+R14063:14064 Ladyzhenskaya.Uniqueness <> u2:94 var
+ax 14133:14160 <> barrier_operator_nonnegative
+R14178:14193 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 14174:14174 <> P:98
+R14205:14221 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 14197:14198 <> u1:99
+binder 14200:14201 <> u2:100
+R14229:14245 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 14225:14225 <> x:101
+R14277:14280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14253:14271 Ladyzhenskaya.Galerkin <> short_time_solution def
+R14275:14276 Ladyzhenskaya.Uniqueness <> u1:99 var
+R14273:14273 Ladyzhenskaya.Uniqueness <> P:98 var
+R14305:14312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14281:14299 Ladyzhenskaya.Galerkin <> short_time_solution def
+R14303:14304 Ladyzhenskaya.Uniqueness <> u2:100 var
+R14301:14301 Ladyzhenskaya.Uniqueness <> P:98 var
+R14317:14324 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14313:14316 Corelib.Init.Logic <> True ind
+R14342:14345 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R14326:14336 Ladyzhenskaya.Galerkin <> ps_function proj
+R14341:14341 Ladyzhenskaya.Uniqueness <> x:101 var
+R14338:14339 Ladyzhenskaya.Uniqueness <> u1:99 var
+R14346:14356 Ladyzhenskaya.Galerkin <> ps_function proj
+R14361:14361 Ladyzhenskaya.Uniqueness <> x:101 var
+R14358:14359 Ladyzhenskaya.Uniqueness <> u2:100 var
+ax 14551:14584 <> barrier_function_positive_interior
+R14602:14617 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 14598:14598 <> P:104
+R14629:14645 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 14621:14622 <> u1:105
+binder 14624:14625 <> u2:106
+R14653:14669 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 14649:14649 <> x:107
+R14701:14704 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14677:14695 Ladyzhenskaya.Galerkin <> short_time_solution def
+R14699:14700 Ladyzhenskaya.Uniqueness <> u1:105 var
+R14697:14697 Ladyzhenskaya.Uniqueness <> P:104 var
+R14729:14736 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14705:14723 Ladyzhenskaya.Galerkin <> short_time_solution def
+R14727:14728 Ladyzhenskaya.Uniqueness <> u2:106 var
+R14725:14725 Ladyzhenskaya.Uniqueness <> P:104 var
+R14741:14748 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14737:14740 Corelib.Init.Logic <> True ind
+R14766:14769 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R14750:14760 Ladyzhenskaya.Galerkin <> ps_function proj
+R14765:14765 Ladyzhenskaya.Uniqueness <> x:107 var
+R14762:14763 Ladyzhenskaya.Uniqueness <> u1:105 var
+R14770:14780 Ladyzhenskaya.Galerkin <> ps_function proj
+R14785:14785 Ladyzhenskaya.Uniqueness <> x:107 var
+R14782:14783 Ladyzhenskaya.Uniqueness <> u2:106 var
+ax 14904:14921 <> on_sphere_boundary
+R14939:14954 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 14935:14935 <> P:110
+R14966:14982 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 14958:14959 <> u1:111
+binder 14961:14962 <> u2:112
+R14990:15006 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 14986:14986 <> x:113
+R15038:15041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15014:15032 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15036:15037 Ladyzhenskaya.Uniqueness <> u1:111 var
+R15034:15034 Ladyzhenskaya.Uniqueness <> P:110 var
+R15066:15073 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15042:15060 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15064:15065 Ladyzhenskaya.Uniqueness <> u2:112 var
+R15062:15062 Ladyzhenskaya.Uniqueness <> P:110 var
+R15078:15085 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15074:15077 Corelib.Init.Logic <> True ind
+R15103:15106 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R15087:15097 Ladyzhenskaya.Galerkin <> ps_function proj
+R15102:15102 Ladyzhenskaya.Uniqueness <> x:113 var
+R15099:15100 Ladyzhenskaya.Uniqueness <> u1:111 var
+R15107:15117 Ladyzhenskaya.Galerkin <> ps_function proj
+R15122:15122 Ladyzhenskaya.Uniqueness <> x:113 var
+R15119:15120 Ladyzhenskaya.Uniqueness <> u2:112 var
+ax 15198:15215 <> barrier_value_zero
+R15233:15248 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 15229:15229 <> P:116
+R15260:15276 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 15252:15253 <> u1:117
+binder 15255:15256 <> u2:118
+R15284:15300 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 15280:15280 <> x:119
+R15332:15335 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15308:15326 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15330:15331 Ladyzhenskaya.Uniqueness <> u1:117 var
+R15328:15328 Ladyzhenskaya.Uniqueness <> P:116 var
+R15360:15367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15336:15354 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15358:15359 Ladyzhenskaya.Uniqueness <> u2:118 var
+R15356:15356 Ladyzhenskaya.Uniqueness <> P:116 var
+R15372:15379 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15368:15371 Corelib.Init.Logic <> True ind
+R15397:15400 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R15381:15391 Ladyzhenskaya.Galerkin <> ps_function proj
+R15396:15396 Ladyzhenskaya.Uniqueness <> x:119 var
+R15393:15394 Ladyzhenskaya.Uniqueness <> u1:117 var
+R15401:15411 Ladyzhenskaya.Galerkin <> ps_function proj
+R15416:15416 Ladyzhenskaya.Uniqueness <> x:119 var
+R15413:15414 Ladyzhenskaya.Uniqueness <> u2:118 var
+ax 15548:15577 <> barrier_function_boundary_zero
+R15595:15610 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 15591:15591 <> P:122
+R15622:15638 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 15614:15615 <> u1:123
+binder 15617:15618 <> u2:124
+R15646:15662 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 15642:15642 <> x:125
+R15694:15697 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15670:15688 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15692:15693 Ladyzhenskaya.Uniqueness <> u1:123 var
+R15690:15690 Ladyzhenskaya.Uniqueness <> P:122 var
+R15722:15729 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15698:15716 Ladyzhenskaya.Galerkin <> short_time_solution def
+R15720:15721 Ladyzhenskaya.Uniqueness <> u2:124 var
+R15718:15718 Ladyzhenskaya.Uniqueness <> P:122 var
+R15734:15741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15730:15733 Corelib.Init.Logic <> True ind
+R15759:15762 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R15743:15753 Ladyzhenskaya.Galerkin <> ps_function proj
+R15758:15758 Ladyzhenskaya.Uniqueness <> x:125 var
+R15755:15756 Ladyzhenskaya.Uniqueness <> u1:123 var
+R15763:15773 Ladyzhenskaya.Galerkin <> ps_function proj
+R15778:15778 Ladyzhenskaya.Uniqueness <> x:125 var
+R15775:15776 Ladyzhenskaya.Uniqueness <> u2:124 var
+ax 15911:15938 <> hopf_inner_ball_construction
+R15956:15971 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 15952:15952 <> P:128
+R15983:15999 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 15975:15976 <> u1:129
+binder 15978:15979 <> u2:130
+R16007:16023 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 16003:16003 <> x:131
+R16055:16058 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16031:16049 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16053:16054 Ladyzhenskaya.Uniqueness <> u1:129 var
+R16051:16051 Ladyzhenskaya.Uniqueness <> P:128 var
+R16083:16090 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16059:16077 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16081:16082 Ladyzhenskaya.Uniqueness <> u2:130 var
+R16079:16079 Ladyzhenskaya.Uniqueness <> P:128 var
+R16091:16097 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16103:16104 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16102:16102 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 16098:16098 <> r:132
+R16126:16133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16114:16121 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16107:16109 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R16106:16106 Ladyzhenskaya.Uniqueness <> r:132 var
+R16122:16125 Corelib.Init.Logic <> True ind
+R16151:16154 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R16135:16145 Ladyzhenskaya.Galerkin <> ps_function proj
+R16150:16150 Ladyzhenskaya.Uniqueness <> x:131 var
+R16147:16148 Ladyzhenskaya.Uniqueness <> u1:129 var
+R16155:16165 Ladyzhenskaya.Galerkin <> ps_function proj
+R16170:16170 Ladyzhenskaya.Uniqueness <> x:131 var
+R16167:16168 Ladyzhenskaya.Uniqueness <> u2:130 var
+ax 16243:16264 <> hopf_barrier_existence
+R16282:16297 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 16278:16278 <> P:135
+R16309:16325 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 16301:16302 <> u1:136
+binder 16304:16305 <> u2:137
+R16333:16349 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 16329:16329 <> x:138
+R16381:16384 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16357:16375 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16379:16380 Ladyzhenskaya.Uniqueness <> u1:136 var
+R16377:16377 Ladyzhenskaya.Uniqueness <> P:135 var
+R16409:16416 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16385:16403 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16407:16408 Ladyzhenskaya.Uniqueness <> u2:137 var
+R16405:16405 Ladyzhenskaya.Uniqueness <> P:135 var
+R16417:16423 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16450:16455 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16445:16448 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16428:16444 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R16449:16449 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 16424:16424 <> v:139
+R16460:16467 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16456:16459 Corelib.Init.Logic <> True ind
+R16485:16488 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R16469:16479 Ladyzhenskaya.Galerkin <> ps_function proj
+R16484:16484 Ladyzhenskaya.Uniqueness <> x:138 var
+R16481:16482 Ladyzhenskaya.Uniqueness <> u1:136 var
+R16489:16499 Ladyzhenskaya.Galerkin <> ps_function proj
+R16504:16504 Ladyzhenskaya.Uniqueness <> x:138 var
+R16501:16502 Ladyzhenskaya.Uniqueness <> u2:137 var
+ax 16572:16594 <> hopf_barrier_comparison
+R16612:16627 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 16608:16608 <> P:142
+R16639:16655 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 16631:16632 <> u1:143
+binder 16634:16635 <> u2:144
+R16663:16679 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 16659:16659 <> x:145
+R16711:16714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16687:16705 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16709:16710 Ladyzhenskaya.Uniqueness <> u1:143 var
+R16707:16707 Ladyzhenskaya.Uniqueness <> P:142 var
+R16739:16746 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16715:16733 Ladyzhenskaya.Galerkin <> short_time_solution def
+R16737:16738 Ladyzhenskaya.Uniqueness <> u2:144 var
+R16735:16735 Ladyzhenskaya.Uniqueness <> P:142 var
+R16751:16758 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16747:16750 Corelib.Init.Logic <> True ind
+R16776:16779 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R16760:16770 Ladyzhenskaya.Galerkin <> ps_function proj
+R16775:16775 Ladyzhenskaya.Uniqueness <> x:145 var
+R16772:16773 Ladyzhenskaya.Uniqueness <> u1:143 var
+R16780:16790 Ladyzhenskaya.Galerkin <> ps_function proj
+R16795:16795 Ladyzhenskaya.Uniqueness <> x:145 var
+R16792:16793 Ladyzhenskaya.Uniqueness <> u2:144 var
+ax 16868:16896 <> hopf_normal_derivative_exists
+R16914:16929 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 16910:16910 <> P:148
+R16941:16957 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 16933:16934 <> u1:149
+binder 16936:16937 <> u2:150
+R16965:16981 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 16961:16961 <> x:151
+R17013:17016 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16989:17007 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17011:17012 Ladyzhenskaya.Uniqueness <> u1:149 var
+R17009:17009 Ladyzhenskaya.Uniqueness <> P:148 var
+R17041:17048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17017:17035 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17039:17040 Ladyzhenskaya.Uniqueness <> u2:150 var
+R17037:17037 Ladyzhenskaya.Uniqueness <> P:148 var
+R17049:17055 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17061:17066 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17060:17060 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 17056:17056 <> d:152
+R17071:17078 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17067:17070 Corelib.Init.Logic <> True ind
+R17096:17099 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R17080:17090 Ladyzhenskaya.Galerkin <> ps_function proj
+R17095:17095 Ladyzhenskaya.Uniqueness <> x:151 var
+R17092:17093 Ladyzhenskaya.Uniqueness <> u1:149 var
+R17100:17110 Ladyzhenskaya.Galerkin <> ps_function proj
+R17115:17115 Ladyzhenskaya.Uniqueness <> x:151 var
+R17112:17113 Ladyzhenskaya.Uniqueness <> u2:150 var
+ax 17164:17194 <> hopf_normal_derivative_positive
+R17212:17227 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 17208:17208 <> P:155
+R17239:17255 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 17231:17232 <> u1:156
+binder 17234:17235 <> u2:157
+R17263:17279 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 17259:17259 <> x:158
+R17311:17314 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17287:17305 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17309:17310 Ladyzhenskaya.Uniqueness <> u1:156 var
+R17307:17307 Ladyzhenskaya.Uniqueness <> P:155 var
+R17339:17346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17315:17333 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17337:17338 Ladyzhenskaya.Uniqueness <> u2:157 var
+R17335:17335 Ladyzhenskaya.Uniqueness <> P:155 var
+R17351:17358 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17347:17350 Corelib.Init.Logic <> True ind
+R17376:17379 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R17360:17370 Ladyzhenskaya.Galerkin <> ps_function proj
+R17375:17375 Ladyzhenskaya.Uniqueness <> x:158 var
+R17372:17373 Ladyzhenskaya.Uniqueness <> u1:156 var
+R17380:17390 Ladyzhenskaya.Galerkin <> ps_function proj
+R17395:17395 Ladyzhenskaya.Uniqueness <> x:158 var
+R17392:17393 Ladyzhenskaya.Uniqueness <> u2:157 var
+prf 17456:17495 <> elliptic_hopf_positive_normal_derivative
+R17513:17528 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 17509:17509 <> P:161
+R17540:17556 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 17532:17533 <> u1:162
+binder 17535:17536 <> u2:163
+R17564:17580 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 17560:17560 <> x:164
+R17612:17615 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17588:17606 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17610:17611 Ladyzhenskaya.Uniqueness <> u1:162 var
+R17608:17608 Ladyzhenskaya.Uniqueness <> P:161 var
+R17640:17647 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17616:17634 Ladyzhenskaya.Galerkin <> short_time_solution def
+R17638:17639 Ladyzhenskaya.Uniqueness <> u2:163 var
+R17636:17636 Ladyzhenskaya.Uniqueness <> P:161 var
+R17652:17659 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17648:17651 Corelib.Init.Logic <> True ind
+R17677:17680 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R17661:17671 Ladyzhenskaya.Galerkin <> ps_function proj
+R17676:17676 Ladyzhenskaya.Uniqueness <> x:164 var
+R17673:17674 Ladyzhenskaya.Uniqueness <> u1:162 var
+R17681:17691 Ladyzhenskaya.Galerkin <> ps_function proj
+R17696:17696 Ladyzhenskaya.Uniqueness <> x:164 var
+R17693:17694 Ladyzhenskaya.Uniqueness <> u2:163 var
+R17813:17843 Ladyzhenskaya.Uniqueness <> hopf_normal_derivative_positive prfax
+R17813:17843 Ladyzhenskaya.Uniqueness <> hopf_normal_derivative_positive prfax
+ax 18031:18060 <> time_barrier_function_positive
+R18078:18093 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 18074:18074 <> P:165
+R18105:18121 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 18097:18098 <> u1:166
+binder 18100:18101 <> u2:167
+R18129:18145 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 18125:18125 <> x:168
+R18177:18180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18153:18171 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18175:18176 Ladyzhenskaya.Uniqueness <> u1:166 var
+R18173:18173 Ladyzhenskaya.Uniqueness <> P:165 var
+R18205:18212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18181:18199 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18203:18204 Ladyzhenskaya.Uniqueness <> u2:167 var
+R18201:18201 Ladyzhenskaya.Uniqueness <> P:165 var
+R18217:18224 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18213:18216 Corelib.Init.Logic <> True ind
+R18242:18245 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R18226:18236 Ladyzhenskaya.Galerkin <> ps_function proj
+R18241:18241 Ladyzhenskaya.Uniqueness <> x:168 var
+R18238:18239 Ladyzhenskaya.Uniqueness <> u1:166 var
+R18246:18256 Ladyzhenskaya.Galerkin <> ps_function proj
+R18261:18261 Ladyzhenskaya.Uniqueness <> x:168 var
+R18258:18259 Ladyzhenskaya.Uniqueness <> u2:167 var
+ax 18348:18372 <> time_comparison_principle
+R18390:18405 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 18386:18386 <> P:171
+R18417:18433 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 18409:18410 <> u1:172
+binder 18412:18413 <> u2:173
+R18441:18457 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 18437:18437 <> x:174
+R18489:18492 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18465:18483 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18487:18488 Ladyzhenskaya.Uniqueness <> u1:172 var
+R18485:18485 Ladyzhenskaya.Uniqueness <> P:171 var
+R18517:18524 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18493:18511 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18515:18516 Ladyzhenskaya.Uniqueness <> u2:173 var
+R18513:18513 Ladyzhenskaya.Uniqueness <> P:171 var
+R18529:18536 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18525:18528 Corelib.Init.Logic <> True ind
+R18554:18557 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R18538:18548 Ladyzhenskaya.Galerkin <> ps_function proj
+R18553:18553 Ladyzhenskaya.Uniqueness <> x:174 var
+R18550:18551 Ladyzhenskaya.Uniqueness <> u1:172 var
+R18558:18568 Ladyzhenskaya.Galerkin <> ps_function proj
+R18573:18573 Ladyzhenskaya.Uniqueness <> x:174 var
+R18570:18571 Ladyzhenskaya.Uniqueness <> u2:173 var
+ax 18744:18774 <> time_barrier_function_existence
+R18792:18807 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 18788:18788 <> P:177
+R18819:18835 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 18811:18812 <> u1:178
+binder 18814:18815 <> u2:179
+R18843:18859 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 18839:18839 <> x:180
+R18891:18894 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18867:18885 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18889:18890 Ladyzhenskaya.Uniqueness <> u1:178 var
+R18887:18887 Ladyzhenskaya.Uniqueness <> P:177 var
+R18919:18926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18895:18913 Ladyzhenskaya.Galerkin <> short_time_solution def
+R18917:18918 Ladyzhenskaya.Uniqueness <> u2:179 var
+R18915:18915 Ladyzhenskaya.Uniqueness <> P:177 var
+R18927:18933 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18960:18965 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R18955:18958 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18938:18954 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R18959:18959 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 18934:18934 <> v:181
+R18970:18977 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18966:18969 Corelib.Init.Logic <> True ind
+R18995:18998 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R18979:18989 Ladyzhenskaya.Galerkin <> ps_function proj
+R18994:18994 Ladyzhenskaya.Uniqueness <> x:180 var
+R18991:18992 Ladyzhenskaya.Uniqueness <> u1:178 var
+R18999:19009 Ladyzhenskaya.Galerkin <> ps_function proj
+R19014:19014 Ladyzhenskaya.Uniqueness <> x:180 var
+R19011:19012 Ladyzhenskaya.Uniqueness <> u2:179 var
+ax 19101:19127 <> time_comparison_application
+R19145:19160 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 19141:19141 <> P:184
+R19172:19188 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 19164:19165 <> u1:185
+binder 19167:19168 <> u2:186
+R19196:19212 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 19192:19192 <> x:187
+R19244:19247 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19220:19238 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19242:19243 Ladyzhenskaya.Uniqueness <> u1:185 var
+R19240:19240 Ladyzhenskaya.Uniqueness <> P:184 var
+R19272:19279 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19248:19266 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19270:19271 Ladyzhenskaya.Uniqueness <> u2:186 var
+R19268:19268 Ladyzhenskaya.Uniqueness <> P:184 var
+R19284:19291 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19280:19283 Corelib.Init.Logic <> True ind
+R19309:19312 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R19293:19303 Ladyzhenskaya.Galerkin <> ps_function proj
+R19308:19308 Ladyzhenskaya.Uniqueness <> x:187 var
+R19305:19306 Ladyzhenskaya.Uniqueness <> u1:185 var
+R19313:19323 Ladyzhenskaya.Galerkin <> ps_function proj
+R19328:19328 Ladyzhenskaya.Uniqueness <> x:187 var
+R19325:19326 Ladyzhenskaya.Uniqueness <> u2:186 var
+ax 19401:19422 <> time_derivative_exists
+R19440:19455 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 19436:19436 <> P:190
+R19467:19483 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 19459:19460 <> u1:191
+binder 19462:19463 <> u2:192
+R19491:19507 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 19487:19487 <> x:193
+R19539:19542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19515:19533 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19537:19538 Ladyzhenskaya.Uniqueness <> u1:191 var
+R19535:19535 Ladyzhenskaya.Uniqueness <> P:190 var
+R19567:19574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19543:19561 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19565:19566 Ladyzhenskaya.Uniqueness <> u2:192 var
+R19563:19563 Ladyzhenskaya.Uniqueness <> P:190 var
+R19575:19581 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19587:19592 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19586:19586 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 19582:19582 <> d:194
+R19597:19604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19593:19596 Corelib.Init.Logic <> True ind
+R19622:19625 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R19606:19616 Ladyzhenskaya.Galerkin <> ps_function proj
+R19621:19621 Ladyzhenskaya.Uniqueness <> x:193 var
+R19618:19619 Ladyzhenskaya.Uniqueness <> u1:191 var
+R19626:19636 Ladyzhenskaya.Galerkin <> ps_function proj
+R19641:19641 Ladyzhenskaya.Uniqueness <> x:193 var
+R19638:19639 Ladyzhenskaya.Uniqueness <> u2:192 var
+ax 19691:19717 <> time_derivative_nonnegative
+R19735:19750 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 19731:19731 <> P:197
+R19762:19778 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 19754:19755 <> u1:198
+binder 19757:19758 <> u2:199
+R19786:19802 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 19782:19782 <> x:200
+R19834:19837 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19810:19828 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19832:19833 Ladyzhenskaya.Uniqueness <> u1:198 var
+R19830:19830 Ladyzhenskaya.Uniqueness <> P:197 var
+R19862:19869 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19838:19856 Ladyzhenskaya.Galerkin <> short_time_solution def
+R19860:19861 Ladyzhenskaya.Uniqueness <> u2:199 var
+R19858:19858 Ladyzhenskaya.Uniqueness <> P:197 var
+R19874:19881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19870:19873 Corelib.Init.Logic <> True ind
+R19899:19902 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R19883:19893 Ladyzhenskaya.Galerkin <> ps_function proj
+R19898:19898 Ladyzhenskaya.Uniqueness <> x:200 var
+R19895:19896 Ladyzhenskaya.Uniqueness <> u1:198 var
+R19903:19913 Ladyzhenskaya.Galerkin <> ps_function proj
+R19918:19918 Ladyzhenskaya.Uniqueness <> x:200 var
+R19915:19916 Ladyzhenskaya.Uniqueness <> u2:199 var
+prf 19980:20018 <> parabolic_hopf_positive_time_derivative
+R20036:20051 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 20032:20032 <> P:203
+R20063:20079 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 20055:20056 <> u1:204
+binder 20058:20059 <> u2:205
+R20087:20103 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 20083:20083 <> x:206
+R20135:20138 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20111:20129 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20133:20134 Ladyzhenskaya.Uniqueness <> u1:204 var
+R20131:20131 Ladyzhenskaya.Uniqueness <> P:203 var
+R20163:20170 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20139:20157 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20161:20162 Ladyzhenskaya.Uniqueness <> u2:205 var
+R20159:20159 Ladyzhenskaya.Uniqueness <> P:203 var
+R20175:20182 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20171:20174 Corelib.Init.Logic <> True ind
+R20200:20203 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R20184:20194 Ladyzhenskaya.Galerkin <> ps_function proj
+R20199:20199 Ladyzhenskaya.Uniqueness <> x:206 var
+R20196:20197 Ladyzhenskaya.Uniqueness <> u1:204 var
+R20204:20214 Ladyzhenskaya.Galerkin <> ps_function proj
+R20219:20219 Ladyzhenskaya.Uniqueness <> x:206 var
+R20216:20217 Ladyzhenskaya.Uniqueness <> u2:205 var
+R20331:20357 Ladyzhenskaya.Uniqueness <> time_derivative_nonnegative prfax
+R20331:20357 Ladyzhenskaya.Uniqueness <> time_derivative_nonnegative prfax
+ax 20513:20537 <> elliptic_hopf_inner_bound
+R20555:20570 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 20551:20551 <> P:207
+R20582:20598 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 20574:20575 <> u1:208
+binder 20577:20578 <> u2:209
+R20606:20622 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 20602:20602 <> x:210
+R20654:20657 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20630:20648 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20652:20653 Ladyzhenskaya.Uniqueness <> u1:208 var
+R20650:20650 Ladyzhenskaya.Uniqueness <> P:207 var
+R20682:20689 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20658:20676 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20680:20681 Ladyzhenskaya.Uniqueness <> u2:209 var
+R20678:20678 Ladyzhenskaya.Uniqueness <> P:207 var
+R20694:20701 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20690:20693 Corelib.Init.Logic <> True ind
+R20719:20722 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R20703:20713 Ladyzhenskaya.Galerkin <> ps_function proj
+R20718:20718 Ladyzhenskaya.Uniqueness <> x:210 var
+R20715:20716 Ladyzhenskaya.Uniqueness <> u1:208 var
+R20723:20733 Ladyzhenskaya.Galerkin <> ps_function proj
+R20738:20738 Ladyzhenskaya.Uniqueness <> x:210 var
+R20735:20736 Ladyzhenskaya.Uniqueness <> u2:209 var
+ax 20801:20828 <> elliptic_hopf_boundary_bound
+R20846:20861 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 20842:20842 <> P:213
+R20873:20889 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 20865:20866 <> u1:214
+binder 20868:20869 <> u2:215
+R20897:20913 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 20893:20893 <> x:216
+R20945:20948 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20921:20939 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20943:20944 Ladyzhenskaya.Uniqueness <> u1:214 var
+R20941:20941 Ladyzhenskaya.Uniqueness <> P:213 var
+R20973:20980 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20949:20967 Ladyzhenskaya.Galerkin <> short_time_solution def
+R20971:20972 Ladyzhenskaya.Uniqueness <> u2:215 var
+R20969:20969 Ladyzhenskaya.Uniqueness <> P:213 var
+R20985:20992 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20981:20984 Corelib.Init.Logic <> True ind
+R21010:21013 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R20994:21004 Ladyzhenskaya.Galerkin <> ps_function proj
+R21009:21009 Ladyzhenskaya.Uniqueness <> x:216 var
+R21006:21007 Ladyzhenskaya.Uniqueness <> u1:214 var
+R21014:21024 Ladyzhenskaya.Galerkin <> ps_function proj
+R21029:21029 Ladyzhenskaya.Uniqueness <> x:216 var
+R21026:21027 Ladyzhenskaya.Uniqueness <> u2:215 var
+ax 21097:21114 <> time_hopf_estimate
+R21132:21147 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 21128:21128 <> P:219
+R21159:21175 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 21151:21152 <> u1:220
+binder 21154:21155 <> u2:221
+R21183:21199 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 21179:21179 <> x:222
+R21231:21234 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21207:21225 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21229:21230 Ladyzhenskaya.Uniqueness <> u1:220 var
+R21227:21227 Ladyzhenskaya.Uniqueness <> P:219 var
+R21259:21266 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21235:21253 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21257:21258 Ladyzhenskaya.Uniqueness <> u2:221 var
+R21255:21255 Ladyzhenskaya.Uniqueness <> P:219 var
+R21271:21278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21267:21270 Corelib.Init.Logic <> True ind
+R21296:21299 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R21280:21290 Ladyzhenskaya.Galerkin <> ps_function proj
+R21295:21295 Ladyzhenskaya.Uniqueness <> x:222 var
+R21292:21293 Ladyzhenskaya.Uniqueness <> u1:220 var
+R21300:21310 Ladyzhenskaya.Galerkin <> ps_function proj
+R21315:21315 Ladyzhenskaya.Uniqueness <> x:222 var
+R21312:21313 Ladyzhenskaya.Uniqueness <> u2:221 var
+ax 21400:21422 <> spacetime_hopf_coupling
+R21440:21455 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 21436:21436 <> P:225
+R21467:21483 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 21459:21460 <> u1:226
+binder 21462:21463 <> u2:227
+R21491:21507 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 21487:21487 <> x:228
+R21539:21542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21515:21533 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21537:21538 Ladyzhenskaya.Uniqueness <> u1:226 var
+R21535:21535 Ladyzhenskaya.Uniqueness <> P:225 var
+R21567:21574 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21543:21561 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21565:21566 Ladyzhenskaya.Uniqueness <> u2:227 var
+R21563:21563 Ladyzhenskaya.Uniqueness <> P:225 var
+R21579:21586 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21575:21578 Corelib.Init.Logic <> True ind
+R21604:21607 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R21588:21598 Ladyzhenskaya.Galerkin <> ps_function proj
+R21603:21603 Ladyzhenskaya.Uniqueness <> x:228 var
+R21600:21601 Ladyzhenskaya.Uniqueness <> u1:226 var
+R21608:21618 Ladyzhenskaya.Galerkin <> ps_function proj
+R21623:21623 Ladyzhenskaya.Uniqueness <> x:228 var
+R21620:21621 Ladyzhenskaya.Uniqueness <> u2:227 var
+prf 21705:21729 <> hopf_derivative_condition
+R21747:21762 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 21743:21743 <> P:231
+R21774:21790 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 21766:21767 <> u1:232
+binder 21769:21770 <> u2:233
+R21798:21814 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 21794:21794 <> x:234
+R21846:21849 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21822:21840 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21844:21845 Ladyzhenskaya.Uniqueness <> u1:232 var
+R21842:21842 Ladyzhenskaya.Uniqueness <> P:231 var
+R21874:21881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21850:21868 Ladyzhenskaya.Galerkin <> short_time_solution def
+R21872:21873 Ladyzhenskaya.Uniqueness <> u2:233 var
+R21870:21870 Ladyzhenskaya.Uniqueness <> P:231 var
+R21886:21893 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21882:21885 Corelib.Init.Logic <> True ind
+R21911:21914 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R21895:21905 Ladyzhenskaya.Galerkin <> ps_function proj
+R21910:21910 Ladyzhenskaya.Uniqueness <> x:234 var
+R21907:21908 Ladyzhenskaya.Uniqueness <> u1:232 var
+R21915:21925 Ladyzhenskaya.Galerkin <> ps_function proj
+R21930:21930 Ladyzhenskaya.Uniqueness <> x:234 var
+R21927:21928 Ladyzhenskaya.Uniqueness <> u2:233 var
+R22040:22062 Ladyzhenskaya.Uniqueness <> spacetime_hopf_coupling prfax
+R22040:22062 Ladyzhenskaya.Uniqueness <> spacetime_hopf_coupling prfax
+prf 22488:22514 <> difference_supremum_bounded
+R22532:22547 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 22528:22528 <> P:235
+R22559:22575 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 22551:22552 <> u1:236
+binder 22554:22555 <> u2:237
+R22607:22610 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R22583:22601 Ladyzhenskaya.Galerkin <> short_time_solution def
+R22605:22606 Ladyzhenskaya.Uniqueness <> u1:236 var
+R22603:22603 Ladyzhenskaya.Uniqueness <> P:235 var
+R22635:22642 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R22611:22629 Ladyzhenskaya.Galerkin <> short_time_solution def
+R22633:22634 Ladyzhenskaya.Uniqueness <> u2:237 var
+R22631:22631 Ladyzhenskaya.Uniqueness <> P:235 var
+R22654:22670 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 22650:22650 <> x:238
+R22695:22697 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R22679:22689 Ladyzhenskaya.Galerkin <> ps_function proj
+R22694:22694 Ladyzhenskaya.Uniqueness <> x:238 var
+R22691:22692 Ladyzhenskaya.Uniqueness <> u1:236 var
+R22698:22708 Ladyzhenskaya.Galerkin <> ps_function proj
+R22713:22713 Ladyzhenskaya.Uniqueness <> x:238 var
+R22710:22711 Ladyzhenskaya.Uniqueness <> u2:237 var
+prf 22879:22900 <> difference_upper_bound
+R22918:22933 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 22914:22914 <> P:239
+R22945:22961 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 22937:22938 <> u1:240
+binder 22940:22941 <> u2:241
+R22993:22996 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R22969:22987 Ladyzhenskaya.Galerkin <> short_time_solution def
+R22991:22992 Ladyzhenskaya.Uniqueness <> u1:240 var
+R22989:22989 Ladyzhenskaya.Uniqueness <> P:239 var
+R23021:23028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R22997:23015 Ladyzhenskaya.Galerkin <> short_time_solution def
+R23019:23020 Ladyzhenskaya.Uniqueness <> u2:241 var
+R23017:23017 Ladyzhenskaya.Uniqueness <> P:239 var
+R23040:23056 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 23036:23036 <> x:242
+R23081:23083 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23065:23075 Ladyzhenskaya.Galerkin <> ps_function proj
+R23080:23080 Ladyzhenskaya.Uniqueness <> x:242 var
+R23077:23078 Ladyzhenskaya.Uniqueness <> u1:240 var
+R23084:23094 Ladyzhenskaya.Galerkin <> ps_function proj
+R23099:23099 Ladyzhenskaya.Uniqueness <> x:242 var
+R23096:23097 Ladyzhenskaya.Uniqueness <> u2:241 var
+prf 23270:23293 <> difference_infimum_lower
+R23311:23326 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 23307:23307 <> P:243
+R23338:23354 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 23330:23331 <> u1:244
+binder 23333:23334 <> u2:245
+R23386:23389 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23362:23380 Ladyzhenskaya.Galerkin <> short_time_solution def
+R23384:23385 Ladyzhenskaya.Uniqueness <> u1:244 var
+R23382:23382 Ladyzhenskaya.Uniqueness <> P:243 var
+R23414:23421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23390:23408 Ladyzhenskaya.Galerkin <> short_time_solution def
+R23412:23413 Ladyzhenskaya.Uniqueness <> u2:245 var
+R23410:23410 Ladyzhenskaya.Uniqueness <> P:243 var
+R23433:23449 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 23429:23429 <> x:246
+R23474:23476 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23458:23468 Ladyzhenskaya.Galerkin <> ps_function proj
+R23473:23473 Ladyzhenskaya.Uniqueness <> x:246 var
+R23470:23471 Ladyzhenskaya.Uniqueness <> u1:244 var
+R23477:23487 Ladyzhenskaya.Galerkin <> ps_function proj
+R23492:23492 Ladyzhenskaya.Uniqueness <> x:246 var
+R23489:23490 Ladyzhenskaya.Uniqueness <> u2:245 var
+prf 23581:23610 <> difference_infimum_at_boundary
+R23628:23643 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 23624:23624 <> P:247
+R23655:23671 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 23647:23648 <> u1:248
+binder 23650:23651 <> u2:249
+R23703:23706 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23679:23697 Ladyzhenskaya.Galerkin <> short_time_solution def
+R23701:23702 Ladyzhenskaya.Uniqueness <> u1:248 var
+R23699:23699 Ladyzhenskaya.Uniqueness <> P:247 var
+R23731:23738 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R23707:23725 Ladyzhenskaya.Galerkin <> short_time_solution def
+R23729:23730 Ladyzhenskaya.Uniqueness <> u2:249 var
+R23727:23727 Ladyzhenskaya.Uniqueness <> P:247 var
+R23750:23766 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 23746:23746 <> x:250
+R23791:23793 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R23775:23785 Ladyzhenskaya.Galerkin <> ps_function proj
+R23790:23790 Ladyzhenskaya.Uniqueness <> x:250 var
+R23787:23788 Ladyzhenskaya.Uniqueness <> u1:248 var
+R23794:23804 Ladyzhenskaya.Galerkin <> ps_function proj
+R23809:23809 Ladyzhenskaya.Uniqueness <> x:250 var
+R23806:23807 Ladyzhenskaya.Uniqueness <> u2:249 var
+prf 23949:23970 <> difference_lower_bound
+R23988:24003 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 23984:23984 <> P:251
+R24015:24031 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 24007:24008 <> u1:252
+binder 24010:24011 <> u2:253
+R24063:24066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24039:24057 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24061:24062 Ladyzhenskaya.Uniqueness <> u1:252 var
+R24059:24059 Ladyzhenskaya.Uniqueness <> P:251 var
+R24091:24098 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24067:24085 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24089:24090 Ladyzhenskaya.Uniqueness <> u2:253 var
+R24087:24087 Ladyzhenskaya.Uniqueness <> P:251 var
+R24110:24126 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 24106:24106 <> x:254
+R24151:24153 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R24135:24145 Ladyzhenskaya.Galerkin <> ps_function proj
+R24150:24150 Ladyzhenskaya.Uniqueness <> x:254 var
+R24147:24148 Ladyzhenskaya.Uniqueness <> u1:252 var
+R24154:24164 Ladyzhenskaya.Galerkin <> ps_function proj
+R24169:24169 Ladyzhenskaya.Uniqueness <> x:254 var
+R24166:24167 Ladyzhenskaya.Uniqueness <> u2:253 var
+prf 24310:24335 <> difference_supremum_finite
+R24353:24368 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 24349:24349 <> P:255
+R24380:24396 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 24372:24373 <> u1:256
+binder 24375:24376 <> u2:257
+R24428:24431 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24404:24422 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24426:24427 Ladyzhenskaya.Uniqueness <> u1:256 var
+R24424:24424 Ladyzhenskaya.Uniqueness <> P:255 var
+R24456:24463 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24432:24450 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24454:24455 Ladyzhenskaya.Uniqueness <> u2:257 var
+R24452:24452 Ladyzhenskaya.Uniqueness <> P:255 var
+R24475:24491 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 24471:24471 <> x:258
+R24516:24518 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R24500:24510 Ladyzhenskaya.Galerkin <> ps_function proj
+R24515:24515 Ladyzhenskaya.Uniqueness <> x:258 var
+R24512:24513 Ladyzhenskaya.Uniqueness <> u1:256 var
+R24519:24529 Ladyzhenskaya.Galerkin <> ps_function proj
+R24534:24534 Ladyzhenskaya.Uniqueness <> x:258 var
+R24531:24532 Ladyzhenskaya.Uniqueness <> u2:257 var
+prf 24602:24621 <> supremum_at_boundary
+R24639:24654 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 24635:24635 <> P:259
+R24666:24682 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 24658:24659 <> u1:260
+binder 24661:24662 <> u2:261
+R24690:24706 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 24686:24686 <> x:262
+R24738:24741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24714:24732 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24736:24737 Ladyzhenskaya.Uniqueness <> u1:260 var
+R24734:24734 Ladyzhenskaya.Uniqueness <> P:259 var
+R24766:24773 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24742:24760 Ladyzhenskaya.Galerkin <> short_time_solution def
+R24764:24765 Ladyzhenskaya.Uniqueness <> u2:261 var
+R24762:24762 Ladyzhenskaya.Uniqueness <> P:259 var
+R24778:24785 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R24774:24777 Corelib.Init.Logic <> True ind
+R24802:24804 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R24786:24796 Ladyzhenskaya.Galerkin <> ps_function proj
+R24801:24801 Ladyzhenskaya.Uniqueness <> x:262 var
+R24798:24799 Ladyzhenskaya.Uniqueness <> u1:260 var
+R24805:24815 Ladyzhenskaya.Galerkin <> ps_function proj
+R24820:24820 Ladyzhenskaya.Uniqueness <> x:262 var
+R24817:24818 Ladyzhenskaya.Uniqueness <> u2:261 var
+prf 24915:24932 <> weak_max_principle
+R24950:24965 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 24946:24946 <> P:263
+R24977:24993 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 24969:24970 <> u1:264
+binder 24972:24973 <> u2:265
+R25025:25028 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25001:25019 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25023:25024 Ladyzhenskaya.Uniqueness <> u1:264 var
+R25021:25021 Ladyzhenskaya.Uniqueness <> P:263 var
+R25053:25060 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25029:25047 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25051:25052 Ladyzhenskaya.Uniqueness <> u2:265 var
+R25049:25049 Ladyzhenskaya.Uniqueness <> P:263 var
+R25072:25088 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 25068:25068 <> x:266
+R25101:25110 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25097:25100 Corelib.Init.Logic <> True ind
+R25127:25129 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R25111:25121 Ladyzhenskaya.Galerkin <> ps_function proj
+R25126:25126 Ladyzhenskaya.Uniqueness <> x:266 var
+R25123:25124 Ladyzhenskaya.Uniqueness <> u1:264 var
+R25130:25140 Ladyzhenskaya.Galerkin <> ps_function proj
+R25145:25145 Ladyzhenskaya.Uniqueness <> x:266 var
+R25142:25143 Ladyzhenskaya.Uniqueness <> u2:265 var
+R25249:25274 Ladyzhenskaya.Uniqueness <> difference_supremum_finite prfax
+R25249:25274 Ladyzhenskaya.Uniqueness <> difference_supremum_finite prfax
+prf 25456:25479 <> principal_part_symmetric
+R25497:25512 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 25493:25493 <> P:267
+R25524:25540 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 25516:25517 <> u1:268
+binder 25519:25520 <> u2:269
+R25572:25575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25548:25566 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25570:25571 Ladyzhenskaya.Uniqueness <> u1:268 var
+R25568:25568 Ladyzhenskaya.Uniqueness <> P:267 var
+R25600:25607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25576:25594 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25598:25599 Ladyzhenskaya.Uniqueness <> u2:269 var
+R25596:25596 Ladyzhenskaya.Uniqueness <> P:267 var
+R25619:25635 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 25615:25615 <> x:270
+R25660:25662 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R25644:25654 Ladyzhenskaya.Galerkin <> ps_function proj
+R25659:25659 Ladyzhenskaya.Uniqueness <> x:270 var
+R25656:25657 Ladyzhenskaya.Uniqueness <> u1:268 var
+R25663:25673 Ladyzhenskaya.Galerkin <> ps_function proj
+R25678:25678 Ladyzhenskaya.Uniqueness <> x:270 var
+R25675:25676 Ladyzhenskaya.Uniqueness <> u2:269 var
+prf 25765:25794 <> divergence_form_representation
+R25812:25827 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 25808:25808 <> P:271
+R25839:25855 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 25831:25832 <> u1:272
+binder 25834:25835 <> u2:273
+R25887:25890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25863:25881 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25885:25886 Ladyzhenskaya.Uniqueness <> u1:272 var
+R25883:25883 Ladyzhenskaya.Uniqueness <> P:271 var
+R25915:25922 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R25891:25909 Ladyzhenskaya.Galerkin <> short_time_solution def
+R25913:25914 Ladyzhenskaya.Uniqueness <> u2:273 var
+R25911:25911 Ladyzhenskaya.Uniqueness <> P:271 var
+R25934:25950 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 25930:25930 <> x:274
+R25975:25977 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R25959:25969 Ladyzhenskaya.Galerkin <> ps_function proj
+R25974:25974 Ladyzhenskaya.Uniqueness <> x:274 var
+R25971:25972 Ladyzhenskaya.Uniqueness <> u1:272 var
+R25978:25988 Ladyzhenskaya.Galerkin <> ps_function proj
+R25993:25993 Ladyzhenskaya.Uniqueness <> x:274 var
+R25990:25991 Ladyzhenskaya.Uniqueness <> u2:273 var
+prf 26164:26194 <> parabolic_operator_self_adjoint
+R26212:26227 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 26208:26208 <> P:275
+R26239:26255 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 26231:26232 <> u1:276
+binder 26234:26235 <> u2:277
+R26287:26290 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26263:26281 Ladyzhenskaya.Galerkin <> short_time_solution def
+R26285:26286 Ladyzhenskaya.Uniqueness <> u1:276 var
+R26283:26283 Ladyzhenskaya.Uniqueness <> P:275 var
+R26315:26322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26291:26309 Ladyzhenskaya.Galerkin <> short_time_solution def
+R26313:26314 Ladyzhenskaya.Uniqueness <> u2:277 var
+R26311:26311 Ladyzhenskaya.Uniqueness <> P:275 var
+R26334:26350 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 26330:26330 <> x:278
+R26375:26377 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R26359:26369 Ladyzhenskaya.Galerkin <> ps_function proj
+R26374:26374 Ladyzhenskaya.Uniqueness <> x:278 var
+R26371:26372 Ladyzhenskaya.Uniqueness <> u1:276 var
+R26378:26388 Ladyzhenskaya.Galerkin <> ps_function proj
+R26393:26393 Ladyzhenskaya.Uniqueness <> x:278 var
+R26390:26391 Ladyzhenskaya.Uniqueness <> u2:277 var
+ax 26592:26610 <> harnack_upper_bound
+R26628:26643 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 26624:26624 <> P:279
+R26655:26671 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 26647:26648 <> u1:280
+binder 26650:26651 <> u2:281
+R26703:26706 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26679:26697 Ladyzhenskaya.Galerkin <> short_time_solution def
+R26701:26702 Ladyzhenskaya.Uniqueness <> u1:280 var
+R26699:26699 Ladyzhenskaya.Uniqueness <> P:279 var
+R26731:26738 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26707:26725 Ladyzhenskaya.Galerkin <> short_time_solution def
+R26729:26730 Ladyzhenskaya.Uniqueness <> u2:281 var
+R26727:26727 Ladyzhenskaya.Uniqueness <> P:279 var
+R26750:26766 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 26746:26746 <> x:282
+R26791:26793 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R26775:26785 Ladyzhenskaya.Galerkin <> ps_function proj
+R26790:26790 Ladyzhenskaya.Uniqueness <> x:282 var
+R26787:26788 Ladyzhenskaya.Uniqueness <> u1:280 var
+R26794:26804 Ladyzhenskaya.Galerkin <> ps_function proj
+R26809:26809 Ladyzhenskaya.Uniqueness <> x:282 var
+R26806:26807 Ladyzhenskaya.Uniqueness <> u2:281 var
+ax 26887:26905 <> harnack_lower_bound
+R26923:26938 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 26919:26919 <> P:285
+R26950:26966 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 26942:26943 <> u1:286
+binder 26945:26946 <> u2:287
+R26998:27001 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R26974:26992 Ladyzhenskaya.Galerkin <> short_time_solution def
+R26996:26997 Ladyzhenskaya.Uniqueness <> u1:286 var
+R26994:26994 Ladyzhenskaya.Uniqueness <> P:285 var
+R27026:27033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27002:27020 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27024:27025 Ladyzhenskaya.Uniqueness <> u2:287 var
+R27022:27022 Ladyzhenskaya.Uniqueness <> P:285 var
+R27045:27061 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 27041:27041 <> x:288
+R27086:27088 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R27070:27080 Ladyzhenskaya.Galerkin <> ps_function proj
+R27085:27085 Ladyzhenskaya.Uniqueness <> x:288 var
+R27082:27083 Ladyzhenskaya.Uniqueness <> u1:286 var
+R27089:27099 Ladyzhenskaya.Galerkin <> ps_function proj
+R27104:27104 Ladyzhenskaya.Uniqueness <> x:288 var
+R27101:27102 Ladyzhenskaya.Uniqueness <> u2:287 var
+ax 27228:27250 <> harnack_constant_exists
+R27268:27283 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 27264:27264 <> P:291
+R27295:27311 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 27287:27288 <> u1:292
+binder 27290:27291 <> u2:293
+R27343:27346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27319:27337 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27341:27342 Ladyzhenskaya.Uniqueness <> u1:292 var
+R27339:27339 Ladyzhenskaya.Uniqueness <> P:291 var
+R27371:27378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27347:27365 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27369:27370 Ladyzhenskaya.Uniqueness <> u2:293 var
+R27367:27367 Ladyzhenskaya.Uniqueness <> P:291 var
+R27379:27385 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R27391:27392 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R27390:27390 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 27386:27386 <> C:294
+R27402:27409 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R27395:27397 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R27394:27394 Ladyzhenskaya.Uniqueness <> C:294 var
+R27421:27437 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 27417:27417 <> x:295
+R27462:27464 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R27446:27456 Ladyzhenskaya.Galerkin <> ps_function proj
+R27461:27461 Ladyzhenskaya.Uniqueness <> x:295 var
+R27458:27459 Ladyzhenskaya.Uniqueness <> u1:292 var
+R27465:27475 Ladyzhenskaya.Galerkin <> ps_function proj
+R27480:27480 Ladyzhenskaya.Uniqueness <> x:295 var
+R27477:27478 Ladyzhenskaya.Uniqueness <> u2:293 var
+ax 27548:27570 <> subcylinder_containment
+R27588:27603 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 27584:27584 <> P:298
+R27615:27631 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 27607:27608 <> u1:299
+binder 27610:27611 <> u2:300
+R27663:27666 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27639:27657 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27661:27662 Ladyzhenskaya.Uniqueness <> u1:299 var
+R27659:27659 Ladyzhenskaya.Uniqueness <> P:298 var
+R27691:27698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27667:27685 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27689:27690 Ladyzhenskaya.Uniqueness <> u2:300 var
+R27687:27687 Ladyzhenskaya.Uniqueness <> P:298 var
+R27710:27726 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 27706:27706 <> x:301
+R27751:27753 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R27735:27745 Ladyzhenskaya.Galerkin <> ps_function proj
+R27750:27750 Ladyzhenskaya.Uniqueness <> x:301 var
+R27747:27748 Ladyzhenskaya.Uniqueness <> u1:299 var
+R27754:27764 Ladyzhenskaya.Galerkin <> ps_function proj
+R27769:27769 Ladyzhenskaya.Uniqueness <> x:301 var
+R27766:27767 Ladyzhenskaya.Uniqueness <> u2:300 var
+ax 27854:27874 <> time_harnack_estimate
+R27892:27907 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 27888:27888 <> P:304
+R27919:27935 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 27911:27912 <> u1:305
+binder 27914:27915 <> u2:306
+R27967:27970 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27943:27961 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27965:27966 Ladyzhenskaya.Uniqueness <> u1:305 var
+R27963:27963 Ladyzhenskaya.Uniqueness <> P:304 var
+R27995:28002 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R27971:27989 Ladyzhenskaya.Galerkin <> short_time_solution def
+R27993:27994 Ladyzhenskaya.Uniqueness <> u2:306 var
+R27991:27991 Ladyzhenskaya.Uniqueness <> P:304 var
+R28014:28030 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 28010:28010 <> x:307
+R28055:28057 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R28039:28049 Ladyzhenskaya.Galerkin <> ps_function proj
+R28054:28054 Ladyzhenskaya.Uniqueness <> x:307 var
+R28051:28052 Ladyzhenskaya.Uniqueness <> u1:305 var
+R28058:28068 Ladyzhenskaya.Galerkin <> ps_function proj
+R28073:28073 Ladyzhenskaya.Uniqueness <> x:307 var
+R28070:28071 Ladyzhenskaya.Uniqueness <> u2:306 var
+ax 28163:28184 <> space_harnack_estimate
+R28202:28217 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 28198:28198 <> P:310
+R28229:28245 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 28221:28222 <> u1:311
+binder 28224:28225 <> u2:312
+R28277:28280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28253:28271 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28275:28276 Ladyzhenskaya.Uniqueness <> u1:311 var
+R28273:28273 Ladyzhenskaya.Uniqueness <> P:310 var
+R28305:28312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28281:28299 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28303:28304 Ladyzhenskaya.Uniqueness <> u2:312 var
+R28301:28301 Ladyzhenskaya.Uniqueness <> P:310 var
+R28324:28340 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 28320:28320 <> x:313
+R28365:28367 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R28349:28359 Ladyzhenskaya.Galerkin <> ps_function proj
+R28364:28364 Ladyzhenskaya.Uniqueness <> x:313 var
+R28361:28362 Ladyzhenskaya.Uniqueness <> u1:311 var
+R28368:28378 Ladyzhenskaya.Galerkin <> ps_function proj
+R28383:28383 Ladyzhenskaya.Uniqueness <> x:313 var
+R28380:28381 Ladyzhenskaya.Uniqueness <> u2:312 var
+ax 28440:28465 <> spacetime_harnack_coupling
+R28483:28498 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 28479:28479 <> P:316
+R28510:28526 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 28502:28503 <> u1:317
+binder 28505:28506 <> u2:318
+R28558:28561 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28534:28552 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28556:28557 Ladyzhenskaya.Uniqueness <> u1:317 var
+R28554:28554 Ladyzhenskaya.Uniqueness <> P:316 var
+R28586:28593 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28562:28580 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28584:28585 Ladyzhenskaya.Uniqueness <> u2:318 var
+R28582:28582 Ladyzhenskaya.Uniqueness <> P:316 var
+R28605:28621 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 28601:28601 <> x:319
+R28646:28648 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R28630:28640 Ladyzhenskaya.Galerkin <> ps_function proj
+R28645:28645 Ladyzhenskaya.Uniqueness <> x:319 var
+R28642:28643 Ladyzhenskaya.Uniqueness <> u1:317 var
+R28649:28659 Ladyzhenskaya.Galerkin <> ps_function proj
+R28664:28664 Ladyzhenskaya.Uniqueness <> x:319 var
+R28661:28662 Ladyzhenskaya.Uniqueness <> u2:318 var
+ax 28744:28764 <> harnack_ratio_control
+R28782:28797 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 28778:28778 <> P:322
+R28809:28825 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 28801:28802 <> u1:323
+binder 28804:28805 <> u2:324
+R28857:28860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28833:28851 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28855:28856 Ladyzhenskaya.Uniqueness <> u1:323 var
+R28853:28853 Ladyzhenskaya.Uniqueness <> P:322 var
+R28885:28892 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R28861:28879 Ladyzhenskaya.Galerkin <> short_time_solution def
+R28883:28884 Ladyzhenskaya.Uniqueness <> u2:324 var
+R28881:28881 Ladyzhenskaya.Uniqueness <> P:322 var
+R28904:28920 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 28900:28900 <> x:325
+R28945:28947 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R28929:28939 Ladyzhenskaya.Galerkin <> ps_function proj
+R28944:28944 Ladyzhenskaya.Uniqueness <> x:325 var
+R28941:28942 Ladyzhenskaya.Uniqueness <> u1:323 var
+R28948:28958 Ladyzhenskaya.Galerkin <> ps_function proj
+R28963:28963 Ladyzhenskaya.Uniqueness <> x:325 var
+R28960:28961 Ladyzhenskaya.Uniqueness <> u2:324 var
+prf 29033:29050 <> harnack_inequality
+R29068:29083 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 29064:29064 <> P:328
+R29095:29111 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 29087:29088 <> u1:329
+binder 29090:29091 <> u2:330
+R29143:29146 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29119:29137 Ladyzhenskaya.Galerkin <> short_time_solution def
+R29141:29142 Ladyzhenskaya.Uniqueness <> u1:329 var
+R29139:29139 Ladyzhenskaya.Uniqueness <> P:328 var
+R29171:29178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29147:29165 Ladyzhenskaya.Galerkin <> short_time_solution def
+R29169:29170 Ladyzhenskaya.Uniqueness <> u2:330 var
+R29167:29167 Ladyzhenskaya.Uniqueness <> P:328 var
+R29190:29206 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 29186:29186 <> x:331
+R29231:29233 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R29215:29225 Ladyzhenskaya.Galerkin <> ps_function proj
+R29230:29230 Ladyzhenskaya.Uniqueness <> x:331 var
+R29227:29228 Ladyzhenskaya.Uniqueness <> u1:329 var
+R29234:29244 Ladyzhenskaya.Galerkin <> ps_function proj
+R29249:29249 Ladyzhenskaya.Uniqueness <> x:331 var
+R29246:29247 Ladyzhenskaya.Uniqueness <> u2:330 var
+R29363:29388 Ladyzhenskaya.Uniqueness <> spacetime_harnack_coupling prfax
+R29363:29388 Ladyzhenskaya.Uniqueness <> spacetime_harnack_coupling prfax
+ax 29602:29627 <> de_giorgi_class_inequality
+R29645:29660 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 29641:29641 <> P:332
+R29672:29688 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 29664:29665 <> u1:333
+binder 29667:29668 <> u2:334
+R29720:29723 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29696:29714 Ladyzhenskaya.Galerkin <> short_time_solution def
+R29718:29719 Ladyzhenskaya.Uniqueness <> u1:333 var
+R29716:29716 Ladyzhenskaya.Uniqueness <> P:332 var
+R29748:29755 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29724:29742 Ladyzhenskaya.Galerkin <> short_time_solution def
+R29746:29747 Ladyzhenskaya.Uniqueness <> u2:334 var
+R29744:29744 Ladyzhenskaya.Uniqueness <> P:332 var
+R29767:29783 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 29763:29763 <> x:335
+R29808:29810 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R29792:29802 Ladyzhenskaya.Galerkin <> ps_function proj
+R29807:29807 Ladyzhenskaya.Uniqueness <> x:335 var
+R29804:29805 Ladyzhenskaya.Uniqueness <> u1:333 var
+R29811:29821 Ladyzhenskaya.Galerkin <> ps_function proj
+R29826:29826 Ladyzhenskaya.Uniqueness <> x:335 var
+R29823:29824 Ladyzhenskaya.Uniqueness <> u2:334 var
+ax 29899:29923 <> de_giorgi_iteration_lemma
+R29941:29956 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 29937:29937 <> P:338
+R29968:29984 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 29960:29961 <> u1:339
+binder 29963:29964 <> u2:340
+R30016:30019 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R29992:30010 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30014:30015 Ladyzhenskaya.Uniqueness <> u1:339 var
+R30012:30012 Ladyzhenskaya.Uniqueness <> P:338 var
+R30044:30051 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30020:30038 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30042:30043 Ladyzhenskaya.Uniqueness <> u2:340 var
+R30040:30040 Ladyzhenskaya.Uniqueness <> P:338 var
+R30063:30079 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 30059:30059 <> x:341
+R30104:30106 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R30088:30098 Ladyzhenskaya.Galerkin <> ps_function proj
+R30103:30103 Ladyzhenskaya.Uniqueness <> x:341 var
+R30100:30101 Ladyzhenskaya.Uniqueness <> u1:339 var
+R30107:30117 Ladyzhenskaya.Galerkin <> ps_function proj
+R30122:30122 Ladyzhenskaya.Uniqueness <> x:341 var
+R30119:30120 Ladyzhenskaya.Uniqueness <> u2:340 var
+ax 30197:30222 <> oscillation_decay_estimate
+R30240:30255 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 30236:30236 <> P:344
+R30267:30283 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 30259:30260 <> u1:345
+binder 30262:30263 <> u2:346
+R30315:30318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30291:30309 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30313:30314 Ladyzhenskaya.Uniqueness <> u1:345 var
+R30311:30311 Ladyzhenskaya.Uniqueness <> P:344 var
+R30343:30350 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30319:30337 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30341:30342 Ladyzhenskaya.Uniqueness <> u2:346 var
+R30339:30339 Ladyzhenskaya.Uniqueness <> P:344 var
+R30362:30378 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 30358:30358 <> x:347
+R30403:30405 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R30387:30397 Ladyzhenskaya.Galerkin <> ps_function proj
+R30402:30402 Ladyzhenskaya.Uniqueness <> x:347 var
+R30399:30400 Ladyzhenskaya.Uniqueness <> u1:345 var
+R30406:30416 Ladyzhenskaya.Galerkin <> ps_function proj
+R30421:30421 Ladyzhenskaya.Uniqueness <> x:347 var
+R30418:30419 Ladyzhenskaya.Uniqueness <> u2:346 var
+ax 30490:30511 <> holder_exponent_exists
+R30529:30544 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 30525:30525 <> P:350
+R30556:30572 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 30548:30549 <> u1:351
+binder 30551:30552 <> u2:352
+R30604:30607 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30580:30598 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30602:30603 Ladyzhenskaya.Uniqueness <> u1:351 var
+R30600:30600 Ladyzhenskaya.Uniqueness <> P:350 var
+R30632:30639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30608:30626 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30630:30631 Ladyzhenskaya.Uniqueness <> u2:352 var
+R30628:30628 Ladyzhenskaya.Uniqueness <> P:350 var
+R30640:30646 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R30656:30657 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R30655:30655 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 30647:30651 <> alpha:353
+R30671:30674 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R30660:30662 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R30663:30667 Ladyzhenskaya.Uniqueness <> alpha:353 var
+R30688:30695 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R30681:30683 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R30676:30680 Ladyzhenskaya.Uniqueness <> alpha:353 var
+R30707:30723 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 30703:30703 <> x:354
+R30748:30750 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R30732:30742 Ladyzhenskaya.Galerkin <> ps_function proj
+R30747:30747 Ladyzhenskaya.Uniqueness <> x:354 var
+R30744:30745 Ladyzhenskaya.Uniqueness <> u1:351 var
+R30751:30761 Ladyzhenskaya.Galerkin <> ps_function proj
+R30766:30766 Ladyzhenskaya.Uniqueness <> x:354 var
+R30763:30764 Ladyzhenskaya.Uniqueness <> u2:352 var
+ax 30832:30857 <> de_giorgi_nash_oscillation
+R30875:30890 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 30871:30871 <> P:357
+R30902:30918 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 30894:30895 <> u1:358
+binder 30897:30898 <> u2:359
+R30950:30953 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30926:30944 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30948:30949 Ladyzhenskaya.Uniqueness <> u1:358 var
+R30946:30946 Ladyzhenskaya.Uniqueness <> P:357 var
+R30978:30985 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R30954:30972 Ladyzhenskaya.Galerkin <> short_time_solution def
+R30976:30977 Ladyzhenskaya.Uniqueness <> u2:359 var
+R30974:30974 Ladyzhenskaya.Uniqueness <> P:357 var
+R30997:31013 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 30993:30993 <> x:360
+R31038:31040 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R31022:31032 Ladyzhenskaya.Galerkin <> ps_function proj
+R31037:31037 Ladyzhenskaya.Uniqueness <> x:360 var
+R31034:31035 Ladyzhenskaya.Uniqueness <> u1:358 var
+R31041:31051 Ladyzhenskaya.Galerkin <> ps_function proj
+R31056:31056 Ladyzhenskaya.Uniqueness <> x:360 var
+R31053:31054 Ladyzhenskaya.Uniqueness <> u2:359 var
+prf 31107:31120 <> de_giorgi_nash
+R31138:31153 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 31134:31134 <> P:363
+R31165:31181 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 31157:31158 <> u1:364
+binder 31160:31161 <> u2:365
+R31213:31216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31189:31207 Ladyzhenskaya.Galerkin <> short_time_solution def
+R31211:31212 Ladyzhenskaya.Uniqueness <> u1:364 var
+R31209:31209 Ladyzhenskaya.Uniqueness <> P:363 var
+R31241:31248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31217:31235 Ladyzhenskaya.Galerkin <> short_time_solution def
+R31239:31240 Ladyzhenskaya.Uniqueness <> u2:365 var
+R31237:31237 Ladyzhenskaya.Uniqueness <> P:363 var
+R31260:31276 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 31256:31256 <> x:366
+R31301:31303 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R31285:31295 Ladyzhenskaya.Galerkin <> ps_function proj
+R31300:31300 Ladyzhenskaya.Uniqueness <> x:366 var
+R31297:31298 Ladyzhenskaya.Uniqueness <> u1:364 var
+R31304:31314 Ladyzhenskaya.Galerkin <> ps_function proj
+R31319:31319 Ladyzhenskaya.Uniqueness <> x:366 var
+R31316:31317 Ladyzhenskaya.Uniqueness <> u2:365 var
+R31433:31458 Ladyzhenskaya.Uniqueness <> de_giorgi_nash_oscillation prfax
+R31433:31458 Ladyzhenskaya.Uniqueness <> de_giorgi_nash_oscillation prfax
+ax 31608:31634 <> krylov_safonov_weak_harnack
+R31652:31667 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 31648:31648 <> P:367
+R31679:31695 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 31671:31672 <> u1:368
+binder 31674:31675 <> u2:369
+R31727:31730 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31703:31721 Ladyzhenskaya.Galerkin <> short_time_solution def
+R31725:31726 Ladyzhenskaya.Uniqueness <> u1:368 var
+R31723:31723 Ladyzhenskaya.Uniqueness <> P:367 var
+R31755:31762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31731:31749 Ladyzhenskaya.Galerkin <> short_time_solution def
+R31753:31754 Ladyzhenskaya.Uniqueness <> u2:369 var
+R31751:31751 Ladyzhenskaya.Uniqueness <> P:367 var
+R31774:31790 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 31770:31770 <> x:370
+R31815:31817 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R31799:31809 Ladyzhenskaya.Galerkin <> ps_function proj
+R31814:31814 Ladyzhenskaya.Uniqueness <> x:370 var
+R31811:31812 Ladyzhenskaya.Uniqueness <> u1:368 var
+R31818:31828 Ladyzhenskaya.Galerkin <> ps_function proj
+R31833:31833 Ladyzhenskaya.Uniqueness <> x:370 var
+R31830:31831 Ladyzhenskaya.Uniqueness <> u2:369 var
+ax 31899:31927 <> krylov_safonov_strong_harnack
+R31945:31960 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 31941:31941 <> P:373
+R31972:31988 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 31964:31965 <> u1:374
+binder 31967:31968 <> u2:375
+R32020:32023 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R31996:32014 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32018:32019 Ladyzhenskaya.Uniqueness <> u1:374 var
+R32016:32016 Ladyzhenskaya.Uniqueness <> P:373 var
+R32048:32055 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32024:32042 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32046:32047 Ladyzhenskaya.Uniqueness <> u2:375 var
+R32044:32044 Ladyzhenskaya.Uniqueness <> P:373 var
+R32067:32083 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 32063:32063 <> x:376
+R32108:32110 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R32092:32102 Ladyzhenskaya.Galerkin <> ps_function proj
+R32107:32107 Ladyzhenskaya.Uniqueness <> x:376 var
+R32104:32105 Ladyzhenskaya.Uniqueness <> u1:374 var
+R32111:32121 Ladyzhenskaya.Galerkin <> ps_function proj
+R32126:32126 Ladyzhenskaya.Uniqueness <> x:376 var
+R32123:32124 Ladyzhenskaya.Uniqueness <> u2:375 var
+ax 32179:32204 <> krylov_safonov_lp_estimate
+R32222:32237 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 32218:32218 <> P:379
+R32249:32265 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 32241:32242 <> u1:380
+binder 32244:32245 <> u2:381
+R32297:32300 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32273:32291 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32295:32296 Ladyzhenskaya.Uniqueness <> u1:380 var
+R32293:32293 Ladyzhenskaya.Uniqueness <> P:379 var
+R32325:32332 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32301:32319 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32323:32324 Ladyzhenskaya.Uniqueness <> u2:381 var
+R32321:32321 Ladyzhenskaya.Uniqueness <> P:379 var
+R32344:32360 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 32340:32340 <> x:382
+R32385:32387 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R32369:32379 Ladyzhenskaya.Galerkin <> ps_function proj
+R32384:32384 Ladyzhenskaya.Uniqueness <> x:382 var
+R32381:32382 Ladyzhenskaya.Uniqueness <> u1:380 var
+R32388:32398 Ladyzhenskaya.Galerkin <> ps_function proj
+R32403:32403 Ladyzhenskaya.Uniqueness <> x:382 var
+R32400:32401 Ladyzhenskaya.Uniqueness <> u2:381 var
+ax 32463:32485 <> krylov_safonov_estimate
+R32503:32518 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 32499:32499 <> P:385
+R32530:32546 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 32522:32523 <> u1:386
+binder 32525:32526 <> u2:387
+R32578:32581 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32554:32572 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32576:32577 Ladyzhenskaya.Uniqueness <> u1:386 var
+R32574:32574 Ladyzhenskaya.Uniqueness <> P:385 var
+R32606:32613 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32582:32600 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32604:32605 Ladyzhenskaya.Uniqueness <> u2:387 var
+R32602:32602 Ladyzhenskaya.Uniqueness <> P:385 var
+R32625:32641 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 32621:32621 <> x:388
+R32666:32668 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R32650:32660 Ladyzhenskaya.Galerkin <> ps_function proj
+R32665:32665 Ladyzhenskaya.Uniqueness <> x:388 var
+R32662:32663 Ladyzhenskaya.Uniqueness <> u1:386 var
+R32669:32679 Ladyzhenskaya.Galerkin <> ps_function proj
+R32684:32684 Ladyzhenskaya.Uniqueness <> x:388 var
+R32681:32682 Ladyzhenskaya.Uniqueness <> u2:387 var
+prf 32729:32742 <> krylov_safonov
+R32760:32775 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 32756:32756 <> P:391
+R32787:32803 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 32779:32780 <> u1:392
+binder 32782:32783 <> u2:393
+R32835:32838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32811:32829 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32833:32834 Ladyzhenskaya.Uniqueness <> u1:392 var
+R32831:32831 Ladyzhenskaya.Uniqueness <> P:391 var
+R32863:32870 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R32839:32857 Ladyzhenskaya.Galerkin <> short_time_solution def
+R32861:32862 Ladyzhenskaya.Uniqueness <> u2:393 var
+R32859:32859 Ladyzhenskaya.Uniqueness <> P:391 var
+R32882:32898 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 32878:32878 <> x:394
+R32923:32925 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R32907:32917 Ladyzhenskaya.Galerkin <> ps_function proj
+R32922:32922 Ladyzhenskaya.Uniqueness <> x:394 var
+R32919:32920 Ladyzhenskaya.Uniqueness <> u1:392 var
+R32926:32936 Ladyzhenskaya.Galerkin <> ps_function proj
+R32941:32941 Ladyzhenskaya.Uniqueness <> x:394 var
+R32938:32939 Ladyzhenskaya.Uniqueness <> u2:393 var
+R33046:33068 Ladyzhenskaya.Uniqueness <> krylov_safonov_estimate prfax
+R33046:33068 Ladyzhenskaya.Uniqueness <> krylov_safonov_estimate prfax
+ax 33196:33217 <> solution_Lp_integrable
+R33235:33250 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 33231:33231 <> P:395
+R33262:33278 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 33254:33255 <> u1:396
+binder 33257:33258 <> u2:397
+R33310:33313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33286:33304 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33308:33309 Ladyzhenskaya.Uniqueness <> u1:396 var
+R33306:33306 Ladyzhenskaya.Uniqueness <> P:395 var
+R33338:33345 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33314:33332 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33336:33337 Ladyzhenskaya.Uniqueness <> u2:397 var
+R33334:33334 Ladyzhenskaya.Uniqueness <> P:395 var
+R33357:33373 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 33353:33353 <> x:398
+R33398:33400 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R33382:33392 Ladyzhenskaya.Galerkin <> ps_function proj
+R33397:33397 Ladyzhenskaya.Uniqueness <> x:398 var
+R33394:33395 Ladyzhenskaya.Uniqueness <> u1:396 var
+R33401:33411 Ladyzhenskaya.Galerkin <> ps_function proj
+R33416:33416 Ladyzhenskaya.Uniqueness <> x:398 var
+R33413:33414 Ladyzhenskaya.Uniqueness <> u2:397 var
+ax 33500:33516 <> oscillation_decay
+R33534:33549 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 33530:33530 <> P:401
+R33561:33577 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 33553:33554 <> u1:402
+binder 33556:33557 <> u2:403
+R33609:33612 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33585:33603 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33607:33608 Ladyzhenskaya.Uniqueness <> u1:402 var
+R33605:33605 Ladyzhenskaya.Uniqueness <> P:401 var
+R33637:33644 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33613:33631 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33635:33636 Ladyzhenskaya.Uniqueness <> u2:403 var
+R33633:33633 Ladyzhenskaya.Uniqueness <> P:401 var
+R33656:33672 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 33652:33652 <> x:404
+R33697:33699 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R33681:33691 Ladyzhenskaya.Galerkin <> ps_function proj
+R33696:33696 Ladyzhenskaya.Uniqueness <> x:404 var
+R33693:33694 Ladyzhenskaya.Uniqueness <> u1:402 var
+R33700:33710 Ladyzhenskaya.Galerkin <> ps_function proj
+R33715:33715 Ladyzhenskaya.Uniqueness <> x:404 var
+R33712:33713 Ladyzhenskaya.Uniqueness <> u2:403 var
+ax 33769:33794 <> interior_holder_continuity
+R33812:33827 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 33808:33808 <> P:407
+R33839:33855 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 33831:33832 <> u1:408
+binder 33834:33835 <> u2:409
+R33887:33890 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33863:33881 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33885:33886 Ladyzhenskaya.Uniqueness <> u1:408 var
+R33883:33883 Ladyzhenskaya.Uniqueness <> P:407 var
+R33915:33922 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R33891:33909 Ladyzhenskaya.Galerkin <> short_time_solution def
+R33913:33914 Ladyzhenskaya.Uniqueness <> u2:409 var
+R33911:33911 Ladyzhenskaya.Uniqueness <> P:407 var
+R33934:33950 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 33930:33930 <> x:410
+R33975:33977 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R33959:33969 Ladyzhenskaya.Galerkin <> ps_function proj
+R33974:33974 Ladyzhenskaya.Uniqueness <> x:410 var
+R33971:33972 Ladyzhenskaya.Uniqueness <> u1:408 var
+R33978:33988 Ladyzhenskaya.Galerkin <> ps_function proj
+R33993:33993 Ladyzhenskaya.Uniqueness <> x:410 var
+R33990:33991 Ladyzhenskaya.Uniqueness <> u2:409 var
+ax 34047:34072 <> boundary_holder_continuity
+R34090:34105 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 34086:34086 <> P:413
+R34117:34133 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 34109:34110 <> u1:414
+binder 34112:34113 <> u2:415
+R34165:34168 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34141:34159 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34163:34164 Ladyzhenskaya.Uniqueness <> u1:414 var
+R34161:34161 Ladyzhenskaya.Uniqueness <> P:413 var
+R34193:34200 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34169:34187 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34191:34192 Ladyzhenskaya.Uniqueness <> u2:415 var
+R34189:34189 Ladyzhenskaya.Uniqueness <> P:413 var
+R34212:34228 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 34208:34208 <> x:416
+R34253:34255 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R34237:34247 Ladyzhenskaya.Galerkin <> ps_function proj
+R34252:34252 Ladyzhenskaya.Uniqueness <> x:416 var
+R34249:34250 Ladyzhenskaya.Uniqueness <> u1:414 var
+R34256:34266 Ladyzhenskaya.Galerkin <> ps_function proj
+R34271:34271 Ladyzhenskaya.Uniqueness <> x:416 var
+R34268:34269 Ladyzhenskaya.Uniqueness <> u2:415 var
+prf 34352:34370 <> elliptic_regularity
+R34388:34403 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 34384:34384 <> P:419
+R34415:34431 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 34407:34408 <> u1:420
+binder 34410:34411 <> u2:421
+R34463:34466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34439:34457 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34461:34462 Ladyzhenskaya.Uniqueness <> u1:420 var
+R34459:34459 Ladyzhenskaya.Uniqueness <> P:419 var
+R34491:34498 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34467:34485 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34489:34490 Ladyzhenskaya.Uniqueness <> u2:421 var
+R34487:34487 Ladyzhenskaya.Uniqueness <> P:419 var
+R34510:34526 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 34506:34506 <> x:422
+R34551:34553 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R34535:34545 Ladyzhenskaya.Galerkin <> ps_function proj
+R34550:34550 Ladyzhenskaya.Uniqueness <> x:422 var
+R34547:34548 Ladyzhenskaya.Uniqueness <> u1:420 var
+R34554:34564 Ladyzhenskaya.Galerkin <> ps_function proj
+R34569:34569 Ladyzhenskaya.Uniqueness <> x:422 var
+R34566:34567 Ladyzhenskaya.Uniqueness <> u2:421 var
+R34680:34705 Ladyzhenskaya.Uniqueness <> interior_holder_continuity prfax
+R34680:34705 Ladyzhenskaya.Uniqueness <> interior_holder_continuity prfax
+ax 34839:34870 <> harnack_constant_exists_interior
+R34888:34903 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 34884:34884 <> P:423
+R34915:34931 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 34907:34908 <> u1:424
+binder 34910:34911 <> u2:425
+R34963:34966 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34939:34957 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34961:34962 Ladyzhenskaya.Uniqueness <> u1:424 var
+R34959:34959 Ladyzhenskaya.Uniqueness <> P:423 var
+R34991:34998 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R34967:34985 Ladyzhenskaya.Galerkin <> short_time_solution def
+R34989:34990 Ladyzhenskaya.Uniqueness <> u2:425 var
+R34987:34987 Ladyzhenskaya.Uniqueness <> P:423 var
+R34999:35005 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R35011:35012 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R35010:35010 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 35006:35006 <> C:426
+R35022:35029 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R35015:35017 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R35014:35014 Ladyzhenskaya.Uniqueness <> C:426 var
+R35041:35057 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 35037:35037 <> x:427
+R35082:35084 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R35066:35076 Ladyzhenskaya.Galerkin <> ps_function proj
+R35081:35081 Ladyzhenskaya.Uniqueness <> x:427 var
+R35078:35079 Ladyzhenskaya.Uniqueness <> u1:424 var
+R35085:35095 Ladyzhenskaya.Galerkin <> ps_function proj
+R35100:35100 Ladyzhenskaya.Uniqueness <> x:427 var
+R35097:35098 Ladyzhenskaya.Uniqueness <> u2:425 var
+ax 35151:35184 <> interior_extremum_point_controlled
+R35202:35217 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 35198:35198 <> P:430
+R35229:35245 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 35221:35222 <> u1:431
+binder 35224:35225 <> u2:432
+R35277:35280 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35253:35271 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35275:35276 Ladyzhenskaya.Uniqueness <> u1:431 var
+R35273:35273 Ladyzhenskaya.Uniqueness <> P:430 var
+R35305:35312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35281:35299 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35303:35304 Ladyzhenskaya.Uniqueness <> u2:432 var
+R35301:35301 Ladyzhenskaya.Uniqueness <> P:430 var
+R35324:35340 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 35320:35320 <> x:433
+R35353:35362 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35349:35352 Corelib.Init.Logic <> True ind
+R35379:35381 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R35363:35373 Ladyzhenskaya.Galerkin <> ps_function proj
+R35378:35378 Ladyzhenskaya.Uniqueness <> x:433 var
+R35375:35376 Ladyzhenskaya.Uniqueness <> u1:431 var
+R35382:35392 Ladyzhenskaya.Galerkin <> ps_function proj
+R35397:35397 Ladyzhenskaya.Uniqueness <> x:433 var
+R35394:35395 Ladyzhenskaya.Uniqueness <> u2:432 var
+ax 35471:35488 <> harnack_controlled
+R35506:35521 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 35502:35502 <> P:436
+R35533:35549 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 35525:35526 <> u1:437
+binder 35528:35529 <> u2:438
+R35581:35584 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35557:35575 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35579:35580 Ladyzhenskaya.Uniqueness <> u1:437 var
+R35577:35577 Ladyzhenskaya.Uniqueness <> P:436 var
+R35609:35616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35585:35603 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35607:35608 Ladyzhenskaya.Uniqueness <> u2:438 var
+R35605:35605 Ladyzhenskaya.Uniqueness <> P:436 var
+R35628:35644 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 35624:35624 <> x:439
+R35669:35671 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R35653:35663 Ladyzhenskaya.Galerkin <> ps_function proj
+R35668:35668 Ladyzhenskaya.Uniqueness <> x:439 var
+R35665:35666 Ladyzhenskaya.Uniqueness <> u1:437 var
+R35672:35682 Ladyzhenskaya.Galerkin <> ps_function proj
+R35687:35687 Ladyzhenskaya.Uniqueness <> x:439 var
+R35684:35685 Ladyzhenskaya.Uniqueness <> u2:438 var
+ax 35756:35785 <> elliptic_regularity_controlled
+R35803:35818 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 35799:35799 <> P:442
+R35830:35846 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 35822:35823 <> u1:443
+binder 35825:35826 <> u2:444
+R35878:35881 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35854:35872 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35876:35877 Ladyzhenskaya.Uniqueness <> u1:443 var
+R35874:35874 Ladyzhenskaya.Uniqueness <> P:442 var
+R35906:35913 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R35882:35900 Ladyzhenskaya.Galerkin <> short_time_solution def
+R35904:35905 Ladyzhenskaya.Uniqueness <> u2:444 var
+R35902:35902 Ladyzhenskaya.Uniqueness <> P:442 var
+R35925:35941 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 35921:35921 <> x:445
+R35966:35968 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R35950:35960 Ladyzhenskaya.Galerkin <> ps_function proj
+R35965:35965 Ladyzhenskaya.Uniqueness <> x:445 var
+R35962:35963 Ladyzhenskaya.Uniqueness <> u1:443 var
+R35969:35979 Ladyzhenskaya.Galerkin <> ps_function proj
+R35984:35984 Ladyzhenskaya.Uniqueness <> x:445 var
+R35981:35982 Ladyzhenskaya.Uniqueness <> u2:444 var
+prf 36029:36050 <> interior_extremum_zero
+R36068:36083 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 36064:36064 <> P:448
+R36095:36111 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 36087:36088 <> u1:449
+binder 36090:36091 <> u2:450
+R36143:36146 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36119:36137 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36141:36142 Ladyzhenskaya.Uniqueness <> u1:449 var
+R36139:36139 Ladyzhenskaya.Uniqueness <> P:448 var
+R36171:36178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36147:36165 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36169:36170 Ladyzhenskaya.Uniqueness <> u2:450 var
+R36167:36167 Ladyzhenskaya.Uniqueness <> P:448 var
+R36190:36206 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 36186:36186 <> x:451
+R36231:36233 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R36215:36225 Ladyzhenskaya.Galerkin <> ps_function proj
+R36230:36230 Ladyzhenskaya.Uniqueness <> x:451 var
+R36227:36228 Ladyzhenskaya.Uniqueness <> u1:449 var
+R36234:36244 Ladyzhenskaya.Galerkin <> ps_function proj
+R36249:36249 Ladyzhenskaya.Uniqueness <> x:451 var
+R36246:36247 Ladyzhenskaya.Uniqueness <> u2:450 var
+R36342:36359 Ladyzhenskaya.Uniqueness <> harnack_controlled prfax
+R36342:36359 Ladyzhenskaya.Uniqueness <> harnack_controlled prfax
+ax 36521:36543 <> interior_extremum_point
+R36561:36576 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 36557:36557 <> P:452
+R36588:36604 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 36580:36581 <> u1:453
+binder 36583:36584 <> u2:454
+R36636:36639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36612:36630 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36634:36635 Ladyzhenskaya.Uniqueness <> u1:453 var
+R36632:36632 Ladyzhenskaya.Uniqueness <> P:452 var
+R36664:36671 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36640:36658 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36662:36663 Ladyzhenskaya.Uniqueness <> u2:454 var
+R36660:36660 Ladyzhenskaya.Uniqueness <> P:452 var
+R36683:36699 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 36679:36679 <> x:455
+R36712:36721 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36708:36711 Corelib.Init.Logic <> True ind
+R36738:36740 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R36722:36732 Ladyzhenskaya.Galerkin <> ps_function proj
+R36737:36737 Ladyzhenskaya.Uniqueness <> x:455 var
+R36734:36735 Ladyzhenskaya.Uniqueness <> u1:453 var
+R36741:36751 Ladyzhenskaya.Galerkin <> ps_function proj
+R36756:36756 Ladyzhenskaya.Uniqueness <> x:455 var
+R36753:36754 Ladyzhenskaya.Uniqueness <> u2:454 var
+ax 36828:36855 <> interior_extremum_zero_value
+R36873:36888 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 36869:36869 <> P:458
+R36900:36916 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 36892:36893 <> u1:459
+binder 36895:36896 <> u2:460
+R36948:36951 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36924:36942 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36946:36947 Ladyzhenskaya.Uniqueness <> u1:459 var
+R36944:36944 Ladyzhenskaya.Uniqueness <> P:458 var
+R36976:36983 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R36952:36970 Ladyzhenskaya.Galerkin <> short_time_solution def
+R36974:36975 Ladyzhenskaya.Uniqueness <> u2:460 var
+R36972:36972 Ladyzhenskaya.Uniqueness <> P:458 var
+R36995:37011 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 36991:36991 <> x:461
+R37024:37033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37020:37023 Corelib.Init.Logic <> True ind
+R37050:37052 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R37034:37044 Ladyzhenskaya.Galerkin <> ps_function proj
+R37049:37049 Ladyzhenskaya.Uniqueness <> x:461 var
+R37046:37047 Ladyzhenskaya.Uniqueness <> u1:459 var
+R37053:37063 Ladyzhenskaya.Galerkin <> ps_function proj
+R37068:37068 Ladyzhenskaya.Uniqueness <> x:461 var
+R37065:37066 Ladyzhenskaya.Uniqueness <> u2:460 var
+prf 37110:37135 <> strong_max_principle_axiom
+R37153:37168 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 37149:37149 <> P:464
+R37180:37196 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 37172:37173 <> u1:465
+binder 37175:37176 <> u2:466
+R37228:37231 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37204:37222 Ladyzhenskaya.Galerkin <> short_time_solution def
+R37226:37227 Ladyzhenskaya.Uniqueness <> u1:465 var
+R37224:37224 Ladyzhenskaya.Uniqueness <> P:464 var
+R37256:37263 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37232:37250 Ladyzhenskaya.Galerkin <> short_time_solution def
+R37254:37255 Ladyzhenskaya.Uniqueness <> u2:466 var
+R37252:37252 Ladyzhenskaya.Uniqueness <> P:464 var
+R37275:37291 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 37271:37271 <> x:467
+R37304:37313 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37300:37303 Corelib.Init.Logic <> True ind
+R37330:37332 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R37314:37324 Ladyzhenskaya.Galerkin <> ps_function proj
+R37329:37329 Ladyzhenskaya.Uniqueness <> x:467 var
+R37326:37327 Ladyzhenskaya.Uniqueness <> u1:465 var
+R37333:37343 Ladyzhenskaya.Galerkin <> ps_function proj
+R37348:37348 Ladyzhenskaya.Uniqueness <> x:467 var
+R37345:37346 Ladyzhenskaya.Uniqueness <> u2:466 var
+R37463:37490 Ladyzhenskaya.Uniqueness <> interior_extremum_zero_value prfax
+R37463:37490 Ladyzhenskaya.Uniqueness <> interior_extremum_zero_value prfax
+ax 37633:37661 <> weak_max_principle_conclusion
+R37679:37694 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 37675:37675 <> P:468
+R37706:37722 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 37698:37699 <> u1:469
+binder 37701:37702 <> u2:470
+R37754:37757 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37730:37748 Ladyzhenskaya.Galerkin <> short_time_solution def
+R37752:37753 Ladyzhenskaya.Uniqueness <> u1:469 var
+R37750:37750 Ladyzhenskaya.Uniqueness <> P:468 var
+R37782:37789 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37758:37776 Ladyzhenskaya.Galerkin <> short_time_solution def
+R37780:37781 Ladyzhenskaya.Uniqueness <> u2:470 var
+R37778:37778 Ladyzhenskaya.Uniqueness <> P:468 var
+R37801:37817 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 37797:37797 <> x:471
+R37830:37839 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R37826:37829 Corelib.Init.Logic <> True ind
+R37856:37858 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R37840:37850 Ladyzhenskaya.Galerkin <> ps_function proj
+R37855:37855 Ladyzhenskaya.Uniqueness <> x:471 var
+R37852:37853 Ladyzhenskaya.Uniqueness <> u1:469 var
+R37859:37869 Ladyzhenskaya.Galerkin <> ps_function proj
+R37874:37874 Ladyzhenskaya.Uniqueness <> x:471 var
+R37871:37872 Ladyzhenskaya.Uniqueness <> u2:470 var
+ax 37928:37955 <> strong_max_principle_applied
+R37973:37988 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 37969:37969 <> P:474
+R38000:38016 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 37992:37993 <> u1:475
+binder 37995:37996 <> u2:476
+R38048:38051 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38024:38042 Ladyzhenskaya.Galerkin <> short_time_solution def
+R38046:38047 Ladyzhenskaya.Uniqueness <> u1:475 var
+R38044:38044 Ladyzhenskaya.Uniqueness <> P:474 var
+R38076:38083 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38052:38070 Ladyzhenskaya.Galerkin <> short_time_solution def
+R38074:38075 Ladyzhenskaya.Uniqueness <> u2:476 var
+R38072:38072 Ladyzhenskaya.Uniqueness <> P:474 var
+R38095:38111 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 38091:38091 <> x:477
+R38124:38133 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38120:38123 Corelib.Init.Logic <> True ind
+R38150:38152 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R38134:38144 Ladyzhenskaya.Galerkin <> ps_function proj
+R38149:38149 Ladyzhenskaya.Uniqueness <> x:477 var
+R38146:38147 Ladyzhenskaya.Uniqueness <> u1:475 var
+R38153:38163 Ladyzhenskaya.Galerkin <> ps_function proj
+R38168:38168 Ladyzhenskaya.Uniqueness <> x:477 var
+R38165:38166 Ladyzhenskaya.Uniqueness <> u2:476 var
+prf 38243:38271 <> parabolic_max_principle_axiom
+R38289:38304 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 38285:38285 <> P:480
+R38316:38332 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 38308:38309 <> u1:481
+binder 38311:38312 <> u2:482
+R38364:38367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38340:38358 Ladyzhenskaya.Galerkin <> short_time_solution def
+R38362:38363 Ladyzhenskaya.Uniqueness <> u1:481 var
+R38360:38360 Ladyzhenskaya.Uniqueness <> P:480 var
+R38392:38399 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38368:38386 Ladyzhenskaya.Galerkin <> short_time_solution def
+R38390:38391 Ladyzhenskaya.Uniqueness <> u2:482 var
+R38388:38388 Ladyzhenskaya.Uniqueness <> P:480 var
+R38411:38427 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 38407:38407 <> x:483
+R38440:38449 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R38436:38439 Corelib.Init.Logic <> True ind
+R38466:38468 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R38450:38460 Ladyzhenskaya.Galerkin <> ps_function proj
+R38465:38465 Ladyzhenskaya.Uniqueness <> x:483 var
+R38462:38463 Ladyzhenskaya.Uniqueness <> u1:481 var
+R38469:38479 Ladyzhenskaya.Galerkin <> ps_function proj
+R38484:38484 Ladyzhenskaya.Uniqueness <> x:483 var
+R38481:38482 Ladyzhenskaya.Uniqueness <> u2:482 var
+R38597:38625 Ladyzhenskaya.Uniqueness <> weak_max_principle_conclusion prfax
+R38597:38625 Ladyzhenskaya.Uniqueness <> weak_max_principle_conclusion prfax
+prf 39451:39468 <> pde_linearity_zero
+R39490:39510 Ladyzhenskaya.ParabolicCoefficients <> ParabolicCoefficients rec
+binder 39482:39486 <> coefs:484
+R39539:39542 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39522:39538 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+R39543:39543 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 39514:39515 <> u1:485
+binder 39517:39518 <> u2:486
+R39551:39567 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 39547:39547 <> p:487
+R39575:39575 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39832:39840 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39576:39582 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39590:39598 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39589:39589 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 39583:39585 <> Lu1:488
+R39599:39599 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39811:39822 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39600:39606 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39619:39630 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 39607:39609 <> Lt1:489
+binder 39611:39614 <> Lxx1:490
+binder 39616:39618 <> Lx1:491
+R39649:39662 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39631:39639 Ladyzhenskaya.Derivatives <> partial_t def
+R39646:39648 Ladyzhenskaya.Uniqueness <> Lt1:489 var
+R39644:39644 Ladyzhenskaya.Uniqueness <> p:487 var
+R39641:39642 Ladyzhenskaya.Uniqueness <> u1:485 var
+R39687:39700 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39663:39673 Ladyzhenskaya.Derivatives <> partial_xi2 def
+R39683:39686 Ladyzhenskaya.Uniqueness <> Lxx1:490 var
+R39680:39681 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R39678:39678 Ladyzhenskaya.Uniqueness <> p:487 var
+R39675:39676 Ladyzhenskaya.Uniqueness <> u1:485 var
+R39723:39736 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39701:39710 Ladyzhenskaya.Derivatives <> partial_xi def
+R39720:39722 Ladyzhenskaya.Uniqueness <> Lx1:491 var
+R39717:39718 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R39715:39715 Ladyzhenskaya.Uniqueness <> p:487 var
+R39712:39713 Ladyzhenskaya.Uniqueness <> u1:485 var
+R39802:39804 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R39780:39782 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R39761:39763 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R39741:39743 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R39738:39740 Ladyzhenskaya.Uniqueness <> Lt1:489 var
+R39744:39747 Ladyzhenskaya.ParabolicCoefficients <> pc_a proj
+R39757:39760 Ladyzhenskaya.Uniqueness <> Lxx1:490 var
+R39755:39755 Ladyzhenskaya.Uniqueness <> p:487 var
+R39749:39753 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R39764:39767 Ladyzhenskaya.ParabolicCoefficients <> pc_b proj
+R39777:39779 Ladyzhenskaya.Uniqueness <> Lx1:491 var
+R39775:39775 Ladyzhenskaya.Uniqueness <> p:487 var
+R39769:39773 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R39795:39797 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R39783:39786 Ladyzhenskaya.ParabolicCoefficients <> pc_c proj
+R39794:39794 Ladyzhenskaya.Uniqueness <> p:487 var
+R39788:39792 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R39798:39799 Ladyzhenskaya.Uniqueness <> u1:485 var
+R39801:39801 Ladyzhenskaya.Uniqueness <> p:487 var
+R39805:39807 Ladyzhenskaya.Uniqueness <> Lu1:488 var
+R39826:39828 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R39823:39825 Ladyzhenskaya.Uniqueness <> Lu1:488 var
+R39841:39841 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R40098:40106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R39842:39848 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39856:39864 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39855:39855 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 39849:39851 <> Lu2:492
+R39865:39865 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40077:40088 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39866:39872 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R39885:39896 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 39873:39875 <> Lt2:493
+binder 39877:39880 <> Lxx2:494
+binder 39882:39884 <> Lx2:495
+R39915:39928 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39897:39905 Ladyzhenskaya.Derivatives <> partial_t def
+R39912:39914 Ladyzhenskaya.Uniqueness <> Lt2:493 var
+R39910:39910 Ladyzhenskaya.Uniqueness <> p:487 var
+R39907:39908 Ladyzhenskaya.Uniqueness <> u2:486 var
+R39953:39966 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39929:39939 Ladyzhenskaya.Derivatives <> partial_xi2 def
+R39949:39952 Ladyzhenskaya.Uniqueness <> Lxx2:494 var
+R39946:39947 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R39944:39944 Ladyzhenskaya.Uniqueness <> p:487 var
+R39941:39942 Ladyzhenskaya.Uniqueness <> u2:486 var
+R39989:40002 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R39967:39976 Ladyzhenskaya.Derivatives <> partial_xi def
+R39986:39988 Ladyzhenskaya.Uniqueness <> Lx2:495 var
+R39983:39984 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R39981:39981 Ladyzhenskaya.Uniqueness <> p:487 var
+R39978:39979 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40068:40070 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R40046:40048 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R40027:40029 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40007:40009 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40004:40006 Ladyzhenskaya.Uniqueness <> Lt2:493 var
+R40010:40013 Ladyzhenskaya.ParabolicCoefficients <> pc_a proj
+R40023:40026 Ladyzhenskaya.Uniqueness <> Lxx2:494 var
+R40021:40021 Ladyzhenskaya.Uniqueness <> p:487 var
+R40015:40019 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40030:40033 Ladyzhenskaya.ParabolicCoefficients <> pc_b proj
+R40043:40045 Ladyzhenskaya.Uniqueness <> Lx2:495 var
+R40041:40041 Ladyzhenskaya.Uniqueness <> p:487 var
+R40035:40039 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40061:40063 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R40049:40052 Ladyzhenskaya.ParabolicCoefficients <> pc_c proj
+R40060:40060 Ladyzhenskaya.Uniqueness <> p:487 var
+R40054:40058 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40064:40065 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40067:40067 Ladyzhenskaya.Uniqueness <> p:487 var
+R40071:40073 Ladyzhenskaya.Uniqueness <> Lu2:492 var
+R40092:40094 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R40089:40091 Ladyzhenskaya.Uniqueness <> Lu2:492 var
+R40107:40113 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R40120:40127 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R40119:40119 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 40114:40115 <> Lw:496
+R40128:40128 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40434:40444 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40129:40135 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R40151:40161 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+binder 40136:40139 <> Lt_w:497
+binder 40141:40145 <> Lxx_w:498
+binder 40147:40150 <> Lx_w:499
+R40208:40220 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40162:40170 Ladyzhenskaya.Derivatives <> partial_t def
+R40204:40207 Ladyzhenskaya.Uniqueness <> Lt_w:497 var
+R40202:40202 Ladyzhenskaya.Uniqueness <> p:487 var
+binder 40177:40178 <> p0:500
+R40189:40191 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40184:40185 Ladyzhenskaya.Uniqueness <> u1:485 var
+R40187:40188 Ladyzhenskaya.Uniqueness <> p0:500 var
+R40192:40193 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40195:40196 Ladyzhenskaya.Uniqueness <> p0:500 var
+R40273:40285 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40221:40231 Ladyzhenskaya.Derivatives <> partial_xi2 def
+R40268:40272 Ladyzhenskaya.Uniqueness <> Lxx_w:498 var
+R40265:40266 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R40263:40263 Ladyzhenskaya.Uniqueness <> p:487 var
+binder 40238:40239 <> p0:501
+R40250:40252 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40245:40246 Ladyzhenskaya.Uniqueness <> u1:485 var
+R40248:40249 Ladyzhenskaya.Uniqueness <> p0:501 var
+R40253:40254 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40256:40257 Ladyzhenskaya.Uniqueness <> p0:501 var
+R40336:40348 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R40286:40295 Ladyzhenskaya.Derivatives <> partial_xi def
+R40332:40335 Ladyzhenskaya.Uniqueness <> Lx_w:499 var
+R40329:40330 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R1 defax
+R40327:40327 Ladyzhenskaya.Uniqueness <> p:487 var
+binder 40302:40303 <> p0:502
+R40314:40316 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40309:40310 Ladyzhenskaya.Uniqueness <> u1:485 var
+R40312:40313 Ladyzhenskaya.Uniqueness <> p0:502 var
+R40317:40318 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40320:40321 Ladyzhenskaya.Uniqueness <> p0:502 var
+R40426:40428 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R40395:40397 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R40375:40377 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40354:40356 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40350:40353 Ladyzhenskaya.Uniqueness <> Lt_w:497 var
+R40357:40360 Ladyzhenskaya.ParabolicCoefficients <> pc_a proj
+R40370:40374 Ladyzhenskaya.Uniqueness <> Lxx_w:498 var
+R40368:40368 Ladyzhenskaya.Uniqueness <> p:487 var
+R40362:40366 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40378:40381 Ladyzhenskaya.ParabolicCoefficients <> pc_b proj
+R40391:40394 Ladyzhenskaya.Uniqueness <> Lx_w:499 var
+R40389:40389 Ladyzhenskaya.Uniqueness <> p:487 var
+R40383:40387 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40410:40413 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R40425:40425 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R40398:40401 Ladyzhenskaya.ParabolicCoefficients <> pc_c proj
+R40409:40409 Ladyzhenskaya.Uniqueness <> p:487 var
+R40403:40407 Ladyzhenskaya.Uniqueness <> coefs:484 var
+R40418:40420 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40414:40415 Ladyzhenskaya.Uniqueness <> u1:485 var
+R40417:40417 Ladyzhenskaya.Uniqueness <> p:487 var
+R40421:40422 Ladyzhenskaya.Uniqueness <> u2:486 var
+R40424:40424 Ladyzhenskaya.Uniqueness <> p:487 var
+R40429:40430 Ladyzhenskaya.Uniqueness <> Lw:496 var
+R40447:40449 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R40445:40446 Ladyzhenskaya.Uniqueness <> Lw:496 var
+R40826:40827 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R40826:40827 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R0 defax
+R40854:40856 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40870:40872 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40886:40888 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40854:40856 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40870:40872 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+R40886:40888 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'-'_x not
+prf 41104:41126 <> difference_well_defined
+R41144:41159 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 41140:41140 <> P:503
+R41171:41187 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 41163:41164 <> u1:504
+binder 41166:41167 <> u2:505
+R41195:41211 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 41191:41191 <> x:506
+R41243:41246 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41219:41237 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41241:41242 Ladyzhenskaya.Uniqueness <> u1:504 var
+R41239:41239 Ladyzhenskaya.Uniqueness <> P:503 var
+R41271:41278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41247:41265 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41269:41270 Ladyzhenskaya.Uniqueness <> u2:505 var
+R41267:41267 Ladyzhenskaya.Uniqueness <> P:503 var
+R41295:41297 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R41279:41289 Ladyzhenskaya.Galerkin <> ps_function proj
+R41294:41294 Ladyzhenskaya.Uniqueness <> x:506 var
+R41291:41292 Ladyzhenskaya.Uniqueness <> u1:504 var
+R41298:41308 Ladyzhenskaya.Galerkin <> ps_function proj
+R41313:41313 Ladyzhenskaya.Uniqueness <> x:506 var
+R41310:41311 Ladyzhenskaya.Uniqueness <> u2:505 var
+prf 41375:41410 <> difference_satisfies_homogeneous_pde
+R41428:41443 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 41424:41424 <> P:507
+R41455:41471 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 41447:41448 <> u1:508
+binder 41450:41451 <> u2:509
+R41479:41495 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 41475:41475 <> x:510
+R41527:41530 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41503:41521 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41525:41526 Ladyzhenskaya.Uniqueness <> u1:508 var
+R41523:41523 Ladyzhenskaya.Uniqueness <> P:507 var
+R41555:41562 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41531:41549 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41553:41554 Ladyzhenskaya.Uniqueness <> u2:509 var
+R41551:41551 Ladyzhenskaya.Uniqueness <> P:507 var
+R41579:41581 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R41563:41573 Ladyzhenskaya.Galerkin <> ps_function proj
+R41578:41578 Ladyzhenskaya.Uniqueness <> x:510 var
+R41575:41576 Ladyzhenskaya.Uniqueness <> u1:508 var
+R41582:41592 Ladyzhenskaya.Galerkin <> ps_function proj
+R41597:41597 Ladyzhenskaya.Uniqueness <> x:510 var
+R41594:41595 Ladyzhenskaya.Uniqueness <> u2:509 var
+prf 41685:41708 <> difference_satisfies_pde
+R41726:41741 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 41722:41722 <> P:511
+R41753:41769 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 41745:41746 <> u1:512
+binder 41748:41749 <> u2:513
+R41777:41793 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 41773:41773 <> x:514
+R41825:41828 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41801:41819 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41823:41824 Ladyzhenskaya.Uniqueness <> u1:512 var
+R41821:41821 Ladyzhenskaya.Uniqueness <> P:511 var
+R41853:41860 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R41829:41847 Ladyzhenskaya.Galerkin <> short_time_solution def
+R41851:41852 Ladyzhenskaya.Uniqueness <> u2:513 var
+R41849:41849 Ladyzhenskaya.Uniqueness <> P:511 var
+R41877:41879 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R41861:41871 Ladyzhenskaya.Galerkin <> ps_function proj
+R41876:41876 Ladyzhenskaya.Uniqueness <> x:514 var
+R41873:41874 Ladyzhenskaya.Uniqueness <> u1:512 var
+R41880:41890 Ladyzhenskaya.Galerkin <> ps_function proj
+R41895:41895 Ladyzhenskaya.Uniqueness <> x:514 var
+R41892:41893 Ladyzhenskaya.Uniqueness <> u2:513 var
+R42002:42037 Ladyzhenskaya.Uniqueness <> difference_satisfies_homogeneous_pde prfax
+R42002:42037 Ladyzhenskaya.Uniqueness <> difference_satisfies_homogeneous_pde prfax
+prf 42186:42202 <> point_in_interior
+R42220:42235 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 42216:42216 <> P:515
+R42247:42263 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 42239:42240 <> u1:516
+binder 42242:42243 <> u2:517
+R42271:42287 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 42267:42267 <> x:518
+R42319:42322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42295:42313 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42317:42318 Ladyzhenskaya.Uniqueness <> u1:516 var
+R42315:42315 Ladyzhenskaya.Uniqueness <> P:515 var
+R42347:42354 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42323:42341 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42345:42346 Ladyzhenskaya.Uniqueness <> u2:517 var
+R42343:42343 Ladyzhenskaya.Uniqueness <> P:515 var
+R42371:42373 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R42355:42365 Ladyzhenskaya.Galerkin <> ps_function proj
+R42370:42370 Ladyzhenskaya.Uniqueness <> x:518 var
+R42367:42368 Ladyzhenskaya.Uniqueness <> u1:516 var
+R42374:42384 Ladyzhenskaya.Galerkin <> ps_function proj
+R42389:42389 Ladyzhenskaya.Uniqueness <> x:518 var
+R42386:42387 Ladyzhenskaya.Uniqueness <> u2:517 var
+prf 42483:42505 <> w_has_interior_extremum
+R42523:42538 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 42519:42519 <> P:519
+R42550:42566 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 42542:42543 <> u1:520
+binder 42545:42546 <> u2:521
+R42574:42590 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 42570:42570 <> x:522
+R42622:42625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42598:42616 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42620:42621 Ladyzhenskaya.Uniqueness <> u1:520 var
+R42618:42618 Ladyzhenskaya.Uniqueness <> P:519 var
+R42650:42657 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42626:42644 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42648:42649 Ladyzhenskaya.Uniqueness <> u2:521 var
+R42646:42646 Ladyzhenskaya.Uniqueness <> P:519 var
+R42674:42676 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R42658:42668 Ladyzhenskaya.Galerkin <> ps_function proj
+R42673:42673 Ladyzhenskaya.Uniqueness <> x:522 var
+R42670:42671 Ladyzhenskaya.Uniqueness <> u1:520 var
+R42677:42687 Ladyzhenskaya.Galerkin <> ps_function proj
+R42692:42692 Ladyzhenskaya.Uniqueness <> x:522 var
+R42689:42690 Ladyzhenskaya.Uniqueness <> u2:521 var
+prf 42783:42818 <> homogeneous_pde_no_interior_extremum
+R42836:42851 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 42832:42832 <> P:523
+R42863:42879 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 42855:42856 <> u1:524
+binder 42858:42859 <> u2:525
+R42887:42903 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 42883:42883 <> x:526
+R42935:42938 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42911:42929 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42933:42934 Ladyzhenskaya.Uniqueness <> u1:524 var
+R42931:42931 Ladyzhenskaya.Uniqueness <> P:523 var
+R42963:42970 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R42939:42957 Ladyzhenskaya.Galerkin <> short_time_solution def
+R42961:42962 Ladyzhenskaya.Uniqueness <> u2:525 var
+R42959:42959 Ladyzhenskaya.Uniqueness <> P:523 var
+R42987:42989 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R42971:42981 Ladyzhenskaya.Galerkin <> ps_function proj
+R42986:42986 Ladyzhenskaya.Uniqueness <> x:526 var
+R42983:42984 Ladyzhenskaya.Uniqueness <> u1:524 var
+R42990:43000 Ladyzhenskaya.Galerkin <> ps_function proj
+R43005:43005 Ladyzhenskaya.Uniqueness <> x:526 var
+R43002:43003 Ladyzhenskaya.Uniqueness <> u2:525 var
+prf 43099:43129 <> difference_no_interior_extremum
+R43147:43162 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 43143:43143 <> P:527
+R43174:43190 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 43166:43167 <> u1:528
+binder 43169:43170 <> u2:529
+R43198:43214 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 43194:43194 <> x:530
+R43246:43249 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43222:43240 Ladyzhenskaya.Galerkin <> short_time_solution def
+R43244:43245 Ladyzhenskaya.Uniqueness <> u1:528 var
+R43242:43242 Ladyzhenskaya.Uniqueness <> P:527 var
+R43274:43281 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43250:43268 Ladyzhenskaya.Galerkin <> short_time_solution def
+R43272:43273 Ladyzhenskaya.Uniqueness <> u2:529 var
+R43270:43270 Ladyzhenskaya.Uniqueness <> P:527 var
+R43298:43300 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R43282:43292 Ladyzhenskaya.Galerkin <> ps_function proj
+R43297:43297 Ladyzhenskaya.Uniqueness <> x:530 var
+R43294:43295 Ladyzhenskaya.Uniqueness <> u1:528 var
+R43301:43311 Ladyzhenskaya.Galerkin <> ps_function proj
+R43316:43316 Ladyzhenskaya.Uniqueness <> x:530 var
+R43313:43314 Ladyzhenskaya.Uniqueness <> u2:529 var
+R43439:43474 Ladyzhenskaya.Uniqueness <> homogeneous_pde_no_interior_extremum prfax
+R43439:43474 Ladyzhenskaya.Uniqueness <> homogeneous_pde_no_interior_extremum prfax
+prf 43625:43639 <> w_boundary_zero
+R43657:43672 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 43653:43653 <> P:531
+R43684:43700 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 43676:43677 <> u1:532
+binder 43679:43680 <> u2:533
+R43708:43724 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 43704:43704 <> x:534
+R43756:43759 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43732:43750 Ladyzhenskaya.Galerkin <> short_time_solution def
+R43754:43755 Ladyzhenskaya.Uniqueness <> u1:532 var
+R43752:43752 Ladyzhenskaya.Uniqueness <> P:531 var
+R43784:43791 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R43760:43778 Ladyzhenskaya.Galerkin <> short_time_solution def
+R43782:43783 Ladyzhenskaya.Uniqueness <> u2:533 var
+R43780:43780 Ladyzhenskaya.Uniqueness <> P:531 var
+R43808:43810 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R43792:43802 Ladyzhenskaya.Galerkin <> ps_function proj
+R43807:43807 Ladyzhenskaya.Uniqueness <> x:534 var
+R43804:43805 Ladyzhenskaya.Uniqueness <> u1:532 var
+R43811:43821 Ladyzhenskaya.Galerkin <> ps_function proj
+R43826:43826 Ladyzhenskaya.Uniqueness <> x:534 var
+R43823:43824 Ladyzhenskaya.Uniqueness <> u2:533 var
+prf 43890:43911 <> w_continuous_extension
+R43929:43944 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 43925:43925 <> P:535
+R43956:43972 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 43948:43949 <> u1:536
+binder 43951:43952 <> u2:537
+R43980:43996 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 43976:43976 <> x:538
+R44028:44031 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44004:44022 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44026:44027 Ladyzhenskaya.Uniqueness <> u1:536 var
+R44024:44024 Ladyzhenskaya.Uniqueness <> P:535 var
+R44056:44063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44032:44050 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44054:44055 Ladyzhenskaya.Uniqueness <> u2:537 var
+R44052:44052 Ladyzhenskaya.Uniqueness <> P:535 var
+R44080:44082 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R44064:44074 Ladyzhenskaya.Galerkin <> ps_function proj
+R44079:44079 Ladyzhenskaya.Uniqueness <> x:538 var
+R44076:44077 Ladyzhenskaya.Uniqueness <> u1:536 var
+R44083:44093 Ladyzhenskaya.Galerkin <> ps_function proj
+R44098:44098 Ladyzhenskaya.Uniqueness <> x:538 var
+R44095:44096 Ladyzhenskaya.Uniqueness <> u2:537 var
+ax 44179:44209 <> strong_max_principle_conclusion
+R44227:44242 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 44223:44223 <> P:539
+R44254:44270 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 44246:44247 <> u1:540
+binder 44249:44250 <> u2:541
+R44278:44294 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 44274:44274 <> x:542
+R44326:44329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44302:44320 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44324:44325 Ladyzhenskaya.Uniqueness <> u1:540 var
+R44322:44322 Ladyzhenskaya.Uniqueness <> P:539 var
+R44354:44361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44330:44348 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44352:44353 Ladyzhenskaya.Uniqueness <> u2:541 var
+R44350:44350 Ladyzhenskaya.Uniqueness <> P:539 var
+R44378:44380 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R44362:44372 Ladyzhenskaya.Galerkin <> ps_function proj
+R44377:44377 Ladyzhenskaya.Uniqueness <> x:542 var
+R44374:44375 Ladyzhenskaya.Uniqueness <> u1:540 var
+R44381:44391 Ladyzhenskaya.Galerkin <> ps_function proj
+R44396:44396 Ladyzhenskaya.Uniqueness <> x:542 var
+R44393:44394 Ladyzhenskaya.Uniqueness <> u2:541 var
+prf 44473:44496 <> strong_max_principle_qed
+R44514:44529 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 44510:44510 <> P:545
+R44541:44557 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 44533:44534 <> u1:546
+binder 44536:44537 <> u2:547
+R44565:44581 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 44561:44561 <> x:548
+R44613:44616 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44589:44607 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44611:44612 Ladyzhenskaya.Uniqueness <> u1:546 var
+R44609:44609 Ladyzhenskaya.Uniqueness <> P:545 var
+R44641:44648 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R44617:44635 Ladyzhenskaya.Galerkin <> short_time_solution def
+R44639:44640 Ladyzhenskaya.Uniqueness <> u2:547 var
+R44637:44637 Ladyzhenskaya.Uniqueness <> P:545 var
+R44665:44667 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R44649:44659 Ladyzhenskaya.Galerkin <> ps_function proj
+R44664:44664 Ladyzhenskaya.Uniqueness <> x:548 var
+R44661:44662 Ladyzhenskaya.Uniqueness <> u1:546 var
+R44668:44678 Ladyzhenskaya.Galerkin <> ps_function proj
+R44683:44683 Ladyzhenskaya.Uniqueness <> x:548 var
+R44680:44681 Ladyzhenskaya.Uniqueness <> u2:547 var
+R44799:44829 Ladyzhenskaya.Uniqueness <> strong_max_principle_conclusion prfax
+R44799:44829 Ladyzhenskaya.Uniqueness <> strong_max_principle_conclusion prfax
+ax 44979:45004 <> elliptic_maximum_principle
+R45022:45037 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 45018:45018 <> P:549
+R45049:45065 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 45041:45042 <> u1:550
+binder 45044:45045 <> u2:551
+R45073:45089 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 45069:45069 <> x:552
+R45121:45124 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45097:45115 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45119:45120 Ladyzhenskaya.Uniqueness <> u1:550 var
+R45117:45117 Ladyzhenskaya.Uniqueness <> P:549 var
+R45149:45156 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45125:45143 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45147:45148 Ladyzhenskaya.Uniqueness <> u2:551 var
+R45145:45145 Ladyzhenskaya.Uniqueness <> P:549 var
+R45173:45175 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R45157:45167 Ladyzhenskaya.Galerkin <> ps_function proj
+R45172:45172 Ladyzhenskaya.Uniqueness <> x:552 var
+R45169:45170 Ladyzhenskaya.Uniqueness <> u1:550 var
+R45176:45186 Ladyzhenskaya.Galerkin <> ps_function proj
+R45191:45191 Ladyzhenskaya.Uniqueness <> x:552 var
+R45188:45189 Ladyzhenskaya.Uniqueness <> u2:551 var
+ax 45260:45291 <> parabolic_maximum_principle_time
+R45309:45324 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 45305:45305 <> P:555
+R45336:45352 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 45328:45329 <> u1:556
+binder 45331:45332 <> u2:557
+R45360:45376 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 45356:45356 <> x:558
+R45408:45411 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45384:45402 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45406:45407 Ladyzhenskaya.Uniqueness <> u1:556 var
+R45404:45404 Ladyzhenskaya.Uniqueness <> P:555 var
+R45436:45443 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45412:45430 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45434:45435 Ladyzhenskaya.Uniqueness <> u2:557 var
+R45432:45432 Ladyzhenskaya.Uniqueness <> P:555 var
+R45460:45462 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R45444:45454 Ladyzhenskaya.Galerkin <> ps_function proj
+R45459:45459 Ladyzhenskaya.Uniqueness <> x:558 var
+R45456:45457 Ladyzhenskaya.Uniqueness <> u1:556 var
+R45463:45473 Ladyzhenskaya.Galerkin <> ps_function proj
+R45478:45478 Ladyzhenskaya.Uniqueness <> x:558 var
+R45475:45476 Ladyzhenskaya.Uniqueness <> u2:557 var
+ax 45571:45588 <> spacetime_coupling
+R45606:45621 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 45602:45602 <> P:561
+R45633:45649 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 45625:45626 <> u1:562
+binder 45628:45629 <> u2:563
+R45657:45673 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 45653:45653 <> x:564
+R45705:45708 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45681:45699 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45703:45704 Ladyzhenskaya.Uniqueness <> u1:562 var
+R45701:45701 Ladyzhenskaya.Uniqueness <> P:561 var
+R45733:45740 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45709:45727 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45731:45732 Ladyzhenskaya.Uniqueness <> u2:563 var
+R45729:45729 Ladyzhenskaya.Uniqueness <> P:561 var
+R45757:45759 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R45741:45751 Ladyzhenskaya.Galerkin <> ps_function proj
+R45756:45756 Ladyzhenskaya.Uniqueness <> x:564 var
+R45753:45754 Ladyzhenskaya.Uniqueness <> u1:562 var
+R45760:45770 Ladyzhenskaya.Galerkin <> ps_function proj
+R45775:45775 Ladyzhenskaya.Uniqueness <> x:564 var
+R45772:45773 Ladyzhenskaya.Uniqueness <> u2:563 var
+prf 45844:45863 <> strong_max_principle
+R45881:45896 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 45877:45877 <> P:567
+R45908:45924 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 45900:45901 <> u1:568
+binder 45903:45904 <> u2:569
+R45932:45948 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 45928:45928 <> x:570
+R45980:45983 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45956:45974 Ladyzhenskaya.Galerkin <> short_time_solution def
+R45978:45979 Ladyzhenskaya.Uniqueness <> u1:568 var
+R45976:45976 Ladyzhenskaya.Uniqueness <> P:567 var
+R46008:46015 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R45984:46002 Ladyzhenskaya.Galerkin <> short_time_solution def
+R46006:46007 Ladyzhenskaya.Uniqueness <> u2:569 var
+R46004:46004 Ladyzhenskaya.Uniqueness <> P:567 var
+R46032:46034 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R46016:46026 Ladyzhenskaya.Galerkin <> ps_function proj
+R46031:46031 Ladyzhenskaya.Uniqueness <> x:570 var
+R46028:46029 Ladyzhenskaya.Uniqueness <> u1:568 var
+R46035:46045 Ladyzhenskaya.Galerkin <> ps_function proj
+R46050:46050 Ladyzhenskaya.Uniqueness <> x:570 var
+R46047:46048 Ladyzhenskaya.Uniqueness <> u2:569 var
+R46141:46158 Ladyzhenskaya.Uniqueness <> spacetime_coupling prfax
+R46141:46158 Ladyzhenskaya.Uniqueness <> spacetime_coupling prfax
+ax 46338:46365 <> hopf_lemma_normal_derivative
+R46383:46398 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 46379:46379 <> P:571
+R46410:46426 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 46402:46403 <> u1:572
+binder 46405:46406 <> u2:573
+R46434:46450 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 46430:46430 <> x:574
+R46482:46485 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46458:46476 Ladyzhenskaya.Galerkin <> short_time_solution def
+R46480:46481 Ladyzhenskaya.Uniqueness <> u1:572 var
+R46478:46478 Ladyzhenskaya.Uniqueness <> P:571 var
+R46510:46517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46486:46504 Ladyzhenskaya.Galerkin <> short_time_solution def
+R46508:46509 Ladyzhenskaya.Uniqueness <> u2:573 var
+R46506:46506 Ladyzhenskaya.Uniqueness <> P:571 var
+R46534:46536 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R46518:46528 Ladyzhenskaya.Galerkin <> ps_function proj
+R46533:46533 Ladyzhenskaya.Uniqueness <> x:574 var
+R46530:46531 Ladyzhenskaya.Uniqueness <> u1:572 var
+R46537:46547 Ladyzhenskaya.Galerkin <> ps_function proj
+R46552:46552 Ladyzhenskaya.Uniqueness <> x:574 var
+R46549:46550 Ladyzhenskaya.Uniqueness <> u2:573 var
+ax 46617:46636 <> boundary_value_match
+R46654:46669 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 46650:46650 <> P:577
+R46681:46697 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 46673:46674 <> u1:578
+binder 46676:46677 <> u2:579
+R46705:46721 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 46701:46701 <> x:580
+R46753:46756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46729:46747 Ladyzhenskaya.Galerkin <> short_time_solution def
+R46751:46752 Ladyzhenskaya.Uniqueness <> u1:578 var
+R46749:46749 Ladyzhenskaya.Uniqueness <> P:577 var
+R46781:46788 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R46757:46775 Ladyzhenskaya.Galerkin <> short_time_solution def
+R46779:46780 Ladyzhenskaya.Uniqueness <> u2:579 var
+R46777:46777 Ladyzhenskaya.Uniqueness <> P:577 var
+R46805:46807 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R46789:46799 Ladyzhenskaya.Galerkin <> ps_function proj
+R46804:46804 Ladyzhenskaya.Uniqueness <> x:580 var
+R46801:46802 Ladyzhenskaya.Uniqueness <> u1:578 var
+R46808:46818 Ladyzhenskaya.Galerkin <> ps_function proj
+R46823:46823 Ladyzhenskaya.Uniqueness <> x:580 var
+R46820:46821 Ladyzhenskaya.Uniqueness <> u2:579 var
+ax 46906:46941 <> normal_derivative_with_boundary_zero
+R46959:46974 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 46955:46955 <> P:583
+R46986:47002 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 46978:46979 <> u1:584
+binder 46981:46982 <> u2:585
+R47010:47026 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 47006:47006 <> x:586
+R47058:47061 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47034:47052 Ladyzhenskaya.Galerkin <> short_time_solution def
+R47056:47057 Ladyzhenskaya.Uniqueness <> u1:584 var
+R47054:47054 Ladyzhenskaya.Uniqueness <> P:583 var
+R47086:47093 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47062:47080 Ladyzhenskaya.Galerkin <> short_time_solution def
+R47084:47085 Ladyzhenskaya.Uniqueness <> u2:585 var
+R47082:47082 Ladyzhenskaya.Uniqueness <> P:583 var
+R47110:47112 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R47094:47104 Ladyzhenskaya.Galerkin <> ps_function proj
+R47109:47109 Ladyzhenskaya.Uniqueness <> x:586 var
+R47106:47107 Ladyzhenskaya.Uniqueness <> u1:584 var
+R47113:47123 Ladyzhenskaya.Galerkin <> ps_function proj
+R47128:47128 Ladyzhenskaya.Uniqueness <> x:586 var
+R47125:47126 Ladyzhenskaya.Uniqueness <> u2:585 var
+prf 47205:47241 <> difference_normal_derivative_positive
+R47259:47274 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 47255:47255 <> P:589
+R47286:47302 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 47278:47279 <> u1:590
+binder 47281:47282 <> u2:591
+R47310:47326 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 47306:47306 <> x:592
+R47358:47361 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47334:47352 Ladyzhenskaya.Galerkin <> short_time_solution def
+R47356:47357 Ladyzhenskaya.Uniqueness <> u1:590 var
+R47354:47354 Ladyzhenskaya.Uniqueness <> P:589 var
+R47386:47393 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47362:47380 Ladyzhenskaya.Galerkin <> short_time_solution def
+R47384:47385 Ladyzhenskaya.Uniqueness <> u2:591 var
+R47382:47382 Ladyzhenskaya.Uniqueness <> P:589 var
+R47410:47412 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R47394:47404 Ladyzhenskaya.Galerkin <> ps_function proj
+R47409:47409 Ladyzhenskaya.Uniqueness <> x:592 var
+R47406:47407 Ladyzhenskaya.Uniqueness <> u1:590 var
+R47413:47423 Ladyzhenskaya.Galerkin <> ps_function proj
+R47428:47428 Ladyzhenskaya.Uniqueness <> x:592 var
+R47425:47426 Ladyzhenskaya.Uniqueness <> u2:591 var
+R47546:47581 Ladyzhenskaya.Uniqueness <> normal_derivative_with_boundary_zero prfax
+R47546:47581 Ladyzhenskaya.Uniqueness <> normal_derivative_with_boundary_zero prfax
+prf 47868:47887 <> boundary_to_interior
+R47905:47920 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 47901:47901 <> P:593
+R47932:47948 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 47924:47925 <> u1:594
+binder 47927:47928 <> u2:595
+R47956:47972 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 47952:47952 <> x:596
+R48004:48007 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R47980:47998 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48002:48003 Ladyzhenskaya.Uniqueness <> u1:594 var
+R48000:48000 Ladyzhenskaya.Uniqueness <> P:593 var
+R48032:48039 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48008:48026 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48030:48031 Ladyzhenskaya.Uniqueness <> u2:595 var
+R48028:48028 Ladyzhenskaya.Uniqueness <> P:593 var
+R48044:48051 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48040:48043 Corelib.Init.Logic <> True ind
+R48056:48063 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48052:48055 Corelib.Init.Logic <> True ind
+R48080:48082 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R48064:48074 Ladyzhenskaya.Galerkin <> ps_function proj
+R48079:48079 Ladyzhenskaya.Uniqueness <> x:596 var
+R48076:48077 Ladyzhenskaya.Uniqueness <> u1:594 var
+R48083:48093 Ladyzhenskaya.Galerkin <> ps_function proj
+R48098:48098 Ladyzhenskaya.Uniqueness <> x:596 var
+R48095:48096 Ladyzhenskaya.Uniqueness <> u2:595 var
+R48215:48235 Ladyzhenskaya.Uniqueness <> boundary_values_match prfax
+R48215:48235 Ladyzhenskaya.Uniqueness <> boundary_values_match prfax
+prf 48435:48452 <> uniqueness_premise
+R48470:48485 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 48466:48466 <> P:597
+R48497:48513 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 48489:48490 <> u1:598
+binder 48492:48493 <> u2:599
+R48521:48537 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 48517:48517 <> x:600
+R48569:48572 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48545:48563 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48567:48568 Ladyzhenskaya.Uniqueness <> u1:598 var
+R48565:48565 Ladyzhenskaya.Uniqueness <> P:597 var
+R48597:48604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48573:48591 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48595:48596 Ladyzhenskaya.Uniqueness <> u2:599 var
+R48593:48593 Ladyzhenskaya.Uniqueness <> P:597 var
+R48621:48623 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R48605:48615 Ladyzhenskaya.Galerkin <> ps_function proj
+R48620:48620 Ladyzhenskaya.Uniqueness <> x:600 var
+R48617:48618 Ladyzhenskaya.Uniqueness <> u1:598 var
+R48624:48634 Ladyzhenskaya.Galerkin <> ps_function proj
+R48639:48639 Ladyzhenskaya.Uniqueness <> x:600 var
+R48636:48637 Ladyzhenskaya.Uniqueness <> u2:599 var
+prf 48728:48748 <> uniqueness_conclusion
+R48766:48781 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 48762:48762 <> P:601
+R48793:48809 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 48785:48786 <> u1:602
+binder 48788:48789 <> u2:603
+R48817:48833 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 48813:48813 <> x:604
+R48865:48868 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48841:48859 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48863:48864 Ladyzhenskaya.Uniqueness <> u1:602 var
+R48861:48861 Ladyzhenskaya.Uniqueness <> P:601 var
+R48893:48900 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R48869:48887 Ladyzhenskaya.Galerkin <> short_time_solution def
+R48891:48892 Ladyzhenskaya.Uniqueness <> u2:603 var
+R48889:48889 Ladyzhenskaya.Uniqueness <> P:601 var
+R48917:48919 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R48901:48911 Ladyzhenskaya.Galerkin <> ps_function proj
+R48916:48916 Ladyzhenskaya.Uniqueness <> x:604 var
+R48913:48914 Ladyzhenskaya.Uniqueness <> u1:602 var
+R48920:48930 Ladyzhenskaya.Galerkin <> ps_function proj
+R48935:48935 Ladyzhenskaya.Uniqueness <> x:604 var
+R48932:48933 Ladyzhenskaya.Uniqueness <> u2:603 var
+prf 49036:49060 <> max_principle_consequence
+R49078:49093 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 49074:49074 <> P:605
+R49105:49121 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 49097:49098 <> u1:606
+binder 49100:49101 <> u2:607
+R49129:49145 Ladyzhenskaya.HolderSpace <> ParabolicCylinder defax
+binder 49125:49125 <> x:608
+R49177:49180 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49153:49171 Ladyzhenskaya.Galerkin <> short_time_solution def
+R49175:49176 Ladyzhenskaya.Uniqueness <> u1:606 var
+R49173:49173 Ladyzhenskaya.Uniqueness <> P:605 var
+R49205:49212 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49181:49199 Ladyzhenskaya.Galerkin <> short_time_solution def
+R49203:49204 Ladyzhenskaya.Uniqueness <> u2:607 var
+R49201:49201 Ladyzhenskaya.Uniqueness <> P:605 var
+R49229:49231 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R49213:49223 Ladyzhenskaya.Galerkin <> ps_function proj
+R49228:49228 Ladyzhenskaya.Uniqueness <> x:608 var
+R49225:49226 Ladyzhenskaya.Uniqueness <> u1:606 var
+R49232:49242 Ladyzhenskaya.Galerkin <> ps_function proj
+R49247:49247 Ladyzhenskaya.Uniqueness <> x:608 var
+R49244:49245 Ladyzhenskaya.Uniqueness <> u2:607 var
+R49344:49364 Ladyzhenskaya.Uniqueness <> uniqueness_conclusion prfax
+R49344:49364 Ladyzhenskaya.Uniqueness <> uniqueness_conclusion prfax
+prf 49396:49418 <> parabolic_max_principle
+R49436:49451 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 49432:49432 <> P:609
+R49463:49479 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 49455:49456 <> u1:610
+binder 49458:49459 <> u2:611
+R49511:49514 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49487:49505 Ladyzhenskaya.Galerkin <> short_time_solution def
+R49509:49510 Ladyzhenskaya.Uniqueness <> u1:610 var
+R49507:49507 Ladyzhenskaya.Uniqueness <> P:609 var
+R49539:49546 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R49515:49533 Ladyzhenskaya.Galerkin <> short_time_solution def
+R49537:49538 Ladyzhenskaya.Uniqueness <> u2:611 var
+R49535:49535 Ladyzhenskaya.Uniqueness <> P:609 var
+R49561:49563 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R49547:49557 Ladyzhenskaya.Galerkin <> ps_function proj
+R49559:49560 Ladyzhenskaya.Uniqueness <> u1:610 var
+R49564:49574 Ladyzhenskaya.Galerkin <> ps_function proj
+R49576:49577 Ladyzhenskaya.Uniqueness <> u2:611 var
+R49619:49643 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R49619:49643 Stdlib.Logic.FunctionalExtensionality <> functional_extensionality thm
+R49665:49689 Ladyzhenskaya.Uniqueness <> max_principle_consequence thm
+R49665:49689 Ladyzhenskaya.Uniqueness <> max_principle_consequence thm
+def 50096:50115 <> parabolic_uniqueness
+R50122:50137 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 50118:50118 <> P:612
+R50149:50165 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 50141:50142 <> u1:613
+binder 50144:50145 <> u2:614
+R50194:50196 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R50180:50190 Ladyzhenskaya.Galerkin <> ps_function proj
+R50192:50193 Ladyzhenskaya.Uniqueness <> u1:613 var
+R50197:50207 Ladyzhenskaya.Galerkin <> ps_function proj
+R50209:50210 Ladyzhenskaya.Uniqueness <> u2:614 var
+prf 50222:50250 <> parabolic_uniqueness_from_max
+R50268:50283 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 50264:50264 <> P:615
+R50295:50311 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 50287:50288 <> u1:616
+binder 50290:50291 <> u2:617
+R50343:50346 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50319:50337 Ladyzhenskaya.Galerkin <> short_time_solution def
+R50341:50342 Ladyzhenskaya.Uniqueness <> u1:616 var
+R50339:50339 Ladyzhenskaya.Uniqueness <> P:615 var
+R50371:50374 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50347:50365 Ladyzhenskaya.Galerkin <> short_time_solution def
+R50369:50370 Ladyzhenskaya.Uniqueness <> u2:617 var
+R50367:50367 Ladyzhenskaya.Uniqueness <> P:615 var
+R50375:50394 Ladyzhenskaya.Uniqueness <> parabolic_uniqueness def
+R50401:50402 Ladyzhenskaya.Uniqueness <> u2:617 var
+R50398:50399 Ladyzhenskaya.Uniqueness <> u1:616 var
+R50396:50396 Ladyzhenskaya.Uniqueness <> P:615 var
+R50443:50462 Ladyzhenskaya.Uniqueness <> parabolic_uniqueness def
+R50475:50497 Ladyzhenskaya.Uniqueness <> parabolic_max_principle thm
+R50475:50497 Ladyzhenskaya.Uniqueness <> parabolic_max_principle thm
+prf 50862:50887 <> schauder_global_uniqueness
+R50905:50920 Ladyzhenskaya.ParabolicCoefficients <> ParabolicProblem rec
+binder 50901:50901 <> P:618
+R50932:50948 Ladyzhenskaya.Galerkin <> ParabolicSolution rec
+binder 50924:50925 <> u1:619
+binder 50927:50928 <> u2:620
+R50980:50987 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50956:50974 Ladyzhenskaya.Galerkin <> short_time_solution def
+R50978:50979 Ladyzhenskaya.Uniqueness <> u1:619 var
+R50976:50976 Ladyzhenskaya.Uniqueness <> P:618 var
+R51012:51019 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R50988:51006 Ladyzhenskaya.Galerkin <> short_time_solution def
+R51010:51011 Ladyzhenskaya.Uniqueness <> u2:620 var
+R51008:51008 Ladyzhenskaya.Uniqueness <> P:618 var
+R51034:51036 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R51020:51030 Ladyzhenskaya.Galerkin <> ps_function proj
+R51032:51033 Ladyzhenskaya.Uniqueness <> u1:619 var
+R51037:51047 Ladyzhenskaya.Galerkin <> ps_function proj
+R51049:51050 Ladyzhenskaya.Uniqueness <> u2:620 var
+R51094:51116 Ladyzhenskaya.Uniqueness <> parabolic_max_principle thm
+R51094:51116 Ladyzhenskaya.Uniqueness <> parabolic_max_principle thm

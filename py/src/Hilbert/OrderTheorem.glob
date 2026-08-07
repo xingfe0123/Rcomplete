@@ -1,0 +1,833 @@
+DIGEST 9dc26bc025ea1f5a13c70246daf69f73
+FHilbert.OrderTheorem
+R2394:2402 Stdlib.Logic.Classical <> <> lib
+R2404:2422 Stdlib.Sorting.Permutation <> <> lib
+R2424:2433 Stdlib.Lists.List <> <> lib
+R2435:2437 Stdlib.micromega.Lia <> <> lib
+R2468:2483 Hilbert.HilbertStructure <> <> lib
+sec 2749:2760 <> OrderTheorem
+var 2777:2777 OrderTheorem I
+var 2802:2802 OrderTheorem O
+R2781:2798 Hilbert.HilbertStructure <> IncidenceStructure rec
+R2806:2819 Hilbert.HilbertStructure <> OrderStructure rec
+R2821:2821 Hilbert.OrderTheorem <> I:2 var
+var 2832:2835 OrderTheorem Bet'
+binder 2837:2837 <> A:5
+binder 2839:2839 <> B:6
+binder 2841:2841 <> C:7
+R2846:2848 Hilbert.HilbertStructure <> Bet proj
+R2850:2850 Hilbert.OrderTheorem <> OrderTheorem.I var
+R2852:2852 Hilbert.OrderTheorem <> OrderTheorem.O var
+R2854:2854 Hilbert.OrderTheorem <> A:5 var
+R2856:2856 Hilbert.OrderTheorem <> B:6 var
+R2858:2858 Hilbert.OrderTheorem <> C:7 var
+prf 3127:3139 <> Bet_neq_lemma
+R3159:3166 Hilbert.HilbertStructure <> IncPoint proj
+R3168:3168 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3151:3151 <> A:8
+binder 3153:3153 <> B:9
+binder 3155:3155 <> C:10
+R3182:3185 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3172:3175 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3177:3177 Hilbert.OrderTheorem <> A:8 var
+R3179:3179 Hilbert.OrderTheorem <> B:9 var
+R3181:3181 Hilbert.OrderTheorem <> C:10 var
+R3187:3190 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3186:3186 Hilbert.OrderTheorem <> A:8 var
+R3191:3191 Hilbert.OrderTheorem <> B:9 var
+R3230:3234 Corelib.Init.Logic <> proj1 thm
+R3238:3247 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3249:3249 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3251:3251 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3230:3234 Corelib.Init.Logic <> proj1 thm
+R3238:3247 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3249:3249 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3251:3251 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 3280:3298 <> Bet_neq_prime_lemma
+R3318:3325 Hilbert.HilbertStructure <> IncPoint proj
+R3327:3327 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3310:3310 <> A:11
+binder 3312:3312 <> B:12
+binder 3314:3314 <> C:13
+R3341:3344 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3331:3334 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3336:3336 Hilbert.OrderTheorem <> A:11 var
+R3338:3338 Hilbert.OrderTheorem <> B:12 var
+R3340:3340 Hilbert.OrderTheorem <> C:13 var
+R3346:3349 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3345:3345 Hilbert.OrderTheorem <> B:12 var
+R3350:3350 Hilbert.OrderTheorem <> C:13 var
+R3389:3393 Corelib.Init.Logic <> proj1 thm
+R3396:3400 Corelib.Init.Logic <> proj2 thm
+R3404:3413 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3415:3415 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3417:3417 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3389:3393 Corelib.Init.Logic <> proj1 thm
+R3396:3400 Corelib.Init.Logic <> proj2 thm
+R3404:3413 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3415:3415 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3417:3417 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 3447:3462 <> Bet_neq_ne_lemma
+R3482:3489 Hilbert.HilbertStructure <> IncPoint proj
+R3491:3491 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3474:3474 <> A:14
+binder 3476:3476 <> B:15
+binder 3478:3478 <> C:16
+R3505:3508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3495:3498 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3500:3500 Hilbert.OrderTheorem <> A:14 var
+R3502:3502 Hilbert.OrderTheorem <> B:15 var
+R3504:3504 Hilbert.OrderTheorem <> C:16 var
+R3510:3513 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3509:3509 Hilbert.OrderTheorem <> A:14 var
+R3514:3514 Hilbert.OrderTheorem <> C:16 var
+R3553:3557 Corelib.Init.Logic <> proj2 thm
+R3560:3564 Corelib.Init.Logic <> proj2 thm
+R3568:3577 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3579:3579 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3581:3581 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3553:3557 Corelib.Init.Logic <> proj2 thm
+R3560:3564 Corelib.Init.Logic <> proj2 thm
+R3568:3577 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3579:3579 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3581:3581 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 3611:3623 <> Bet_sym_lemma
+R3643:3650 Hilbert.HilbertStructure <> IncPoint proj
+R3652:3652 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3635:3635 <> A:17
+binder 3637:3637 <> B:18
+binder 3639:3639 <> C:19
+R3666:3669 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3656:3659 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3661:3661 Hilbert.OrderTheorem <> A:17 var
+R3663:3663 Hilbert.OrderTheorem <> B:18 var
+R3665:3665 Hilbert.OrderTheorem <> C:19 var
+R3670:3673 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3675:3675 Hilbert.OrderTheorem <> C:19 var
+R3677:3677 Hilbert.OrderTheorem <> B:18 var
+R3679:3679 Hilbert.OrderTheorem <> A:17 var
+R3718:3724 Hilbert.HilbertStructure <> Bet_sym proj
+R3726:3726 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3728:3728 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3718:3724 Hilbert.HilbertStructure <> Bet_sym proj
+R3726:3726 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3728:3728 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 3756:3773 <> not_Bet_self_lemma
+R3791:3798 Hilbert.HilbertStructure <> IncPoint proj
+R3800:3800 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3785:3785 <> A:20
+binder 3787:3787 <> B:21
+R3804:3805 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R3806:3809 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R3811:3811 Hilbert.OrderTheorem <> A:20 var
+R3813:3813 Hilbert.OrderTheorem <> B:21 var
+R3815:3815 Hilbert.OrderTheorem <> A:20 var
+R3860:3869 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3871:3871 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3873:3873 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3860:3869 Hilbert.HilbertStructure <> Bet_nondeg proj
+R3871:3871 Hilbert.OrderTheorem <> OrderTheorem.I var
+R3873:3873 Hilbert.OrderTheorem <> OrderTheorem.O var
+R3924:3930 Corelib.Init.Logic <> eq_refl constr
+R3924:3930 Corelib.Init.Logic <> eq_refl constr
+prf 3953:3962 <> Bet_unique
+R3982:3989 Hilbert.HilbertStructure <> IncPoint proj
+R3991:3991 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 3974:3974 <> A:22
+binder 3976:3976 <> B:23
+binder 3978:3978 <> C:24
+R4009:4012 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3999:4002 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4004:4004 Hilbert.OrderTheorem <> A:22 var
+R4006:4006 Hilbert.OrderTheorem <> B:23 var
+R4008:4008 Hilbert.OrderTheorem <> C:24 var
+R4023:4026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4013:4016 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4018:4018 Hilbert.OrderTheorem <> A:22 var
+R4020:4020 Hilbert.OrderTheorem <> C:24 var
+R4022:4022 Hilbert.OrderTheorem <> B:23 var
+R4028:4030 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R4027:4027 Hilbert.OrderTheorem <> B:23 var
+R4031:4031 Hilbert.OrderTheorem <> C:24 var
+R4087:4096 Hilbert.HilbertStructure <> Bet_nondeg proj
+R4098:4098 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4100:4100 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4087:4096 Hilbert.HilbertStructure <> Bet_nondeg proj
+R4098:4098 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4100:4100 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4151:4154 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4151:4154 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4176:4182 Hilbert.HilbertStructure <> Bet_sym proj
+R4176:4182 Hilbert.HilbertStructure <> Bet_sym proj
+R4219:4222 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4219:4222 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4246:4254 Hilbert.HilbertStructure <> Bet_trans proj
+R4256:4256 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4258:4258 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4246:4254 Hilbert.HilbertStructure <> Bet_trans proj
+R4256:4256 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4258:4258 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4306:4323 Hilbert.OrderTheorem <> not_Bet_self_lemma thm
+R4306:4323 Hilbert.OrderTheorem <> not_Bet_self_lemma thm
+prf 4352:4366 <> Bet_trans_lemma
+R4388:4395 Hilbert.HilbertStructure <> IncPoint proj
+R4397:4397 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 4378:4378 <> A:25
+binder 4380:4380 <> B:26
+binder 4382:4382 <> C:27
+binder 4384:4384 <> D:28
+R4415:4418 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4405:4408 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4410:4410 Hilbert.OrderTheorem <> A:25 var
+R4412:4412 Hilbert.OrderTheorem <> B:26 var
+R4414:4414 Hilbert.OrderTheorem <> C:27 var
+R4429:4432 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4419:4422 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4424:4424 Hilbert.OrderTheorem <> B:26 var
+R4426:4426 Hilbert.OrderTheorem <> C:27 var
+R4428:4428 Hilbert.OrderTheorem <> D:28 var
+R4433:4436 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R4438:4438 Hilbert.OrderTheorem <> A:25 var
+R4440:4440 Hilbert.OrderTheorem <> B:26 var
+R4442:4442 Hilbert.OrderTheorem <> D:28 var
+R4499:4508 Hilbert.HilbertStructure <> Bet_nondeg proj
+R4510:4510 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4512:4512 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4499:4508 Hilbert.HilbertStructure <> Bet_nondeg proj
+R4510:4510 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4512:4512 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4554:4562 Hilbert.HilbertStructure <> Bet_trans proj
+R4564:4564 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4566:4566 Hilbert.OrderTheorem <> OrderTheorem.O var
+R4554:4562 Hilbert.HilbertStructure <> Bet_trans proj
+R4564:4564 Hilbert.OrderTheorem <> OrderTheorem.I var
+R4566:4566 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 5076:5084 <> theorem_3
+R5102:5109 Hilbert.HilbertStructure <> IncPoint proj
+R5111:5111 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 5096:5096 <> A:29
+binder 5098:5098 <> C:30
+R5119:5125 Hilbert.HilbertStructure <> IncLine proj
+R5127:5127 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 5115:5115 <> l:31
+R5146:5149 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5135:5139 Hilbert.HilbertStructure <> Incid proj
+R5141:5141 Hilbert.OrderTheorem <> OrderTheorem.I var
+R5143:5143 Hilbert.OrderTheorem <> A:29 var
+R5145:5145 Hilbert.OrderTheorem <> l:31 var
+R5161:5164 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5150:5154 Hilbert.HilbertStructure <> Incid proj
+R5156:5156 Hilbert.OrderTheorem <> OrderTheorem.I var
+R5158:5158 Hilbert.OrderTheorem <> C:30 var
+R5160:5160 Hilbert.OrderTheorem <> l:31 var
+R5171:5178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5166:5169 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5165:5165 Hilbert.OrderTheorem <> A:29 var
+R5170:5170 Hilbert.OrderTheorem <> C:30 var
+R5179:5185 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5200:5201 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5190:5197 Hilbert.HilbertStructure <> IncPoint proj
+R5199:5199 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 5186:5186 <> B:32
+R5213:5216 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5202:5206 Hilbert.HilbertStructure <> Incid proj
+R5208:5208 Hilbert.OrderTheorem <> OrderTheorem.I var
+R5210:5210 Hilbert.OrderTheorem <> B:32 var
+R5212:5212 Hilbert.OrderTheorem <> l:31 var
+R5217:5220 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R5222:5222 Hilbert.OrderTheorem <> A:29 var
+R5224:5224 Hilbert.OrderTheorem <> B:32 var
+R5226:5226 Hilbert.OrderTheorem <> C:30 var
+R5279:5282 Hilbert.HilbertStructure <> II_3 proj
+R5284:5284 Hilbert.OrderTheorem <> OrderTheorem.I var
+R5286:5286 Hilbert.OrderTheorem <> OrderTheorem.O var
+R5296:5299 Corelib.Init.Logic <> conj constr
+R5305:5308 Corelib.Init.Logic <> conj constr
+R5279:5282 Hilbert.HilbertStructure <> II_3 proj
+R5284:5284 Hilbert.OrderTheorem <> OrderTheorem.I var
+R5286:5286 Hilbert.OrderTheorem <> OrderTheorem.O var
+R5296:5299 Corelib.Init.Logic <> conj constr
+R5305:5308 Corelib.Init.Logic <> conj constr
+prf 5969:5995 <> three_collinear_one_between
+R6015:6022 Hilbert.HilbertStructure <> IncPoint proj
+R6024:6024 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 6007:6007 <> A:33
+binder 6009:6009 <> B:34
+binder 6011:6011 <> C:35
+R6032:6038 Hilbert.HilbertStructure <> IncLine proj
+R6040:6040 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 6028:6028 <> l:36
+R6059:6062 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6048:6052 Hilbert.HilbertStructure <> Incid proj
+R6054:6054 Hilbert.OrderTheorem <> OrderTheorem.I var
+R6056:6056 Hilbert.OrderTheorem <> A:33 var
+R6058:6058 Hilbert.OrderTheorem <> l:36 var
+R6074:6077 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6063:6067 Hilbert.HilbertStructure <> Incid proj
+R6069:6069 Hilbert.OrderTheorem <> OrderTheorem.I var
+R6071:6071 Hilbert.OrderTheorem <> B:34 var
+R6073:6073 Hilbert.OrderTheorem <> l:36 var
+R6089:6096 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6078:6082 Hilbert.HilbertStructure <> Incid proj
+R6084:6084 Hilbert.OrderTheorem <> OrderTheorem.I var
+R6086:6086 Hilbert.OrderTheorem <> C:35 var
+R6088:6088 Hilbert.OrderTheorem <> l:36 var
+R6103:6106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6098:6101 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6097:6097 Hilbert.OrderTheorem <> A:33 var
+R6102:6102 Hilbert.OrderTheorem <> B:34 var
+R6113:6116 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6108:6111 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6107:6107 Hilbert.OrderTheorem <> B:34 var
+R6112:6112 Hilbert.OrderTheorem <> C:35 var
+R6123:6130 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6118:6121 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6117:6117 Hilbert.OrderTheorem <> A:33 var
+R6122:6122 Hilbert.OrderTheorem <> C:35 var
+R6131:6131 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R6142:6146 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R6132:6135 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R6137:6137 Hilbert.OrderTheorem <> A:33 var
+R6139:6139 Hilbert.OrderTheorem <> B:34 var
+R6141:6141 Hilbert.OrderTheorem <> C:35 var
+R6147:6147 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R6158:6163 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R6174:6174 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R6148:6151 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R6153:6153 Hilbert.OrderTheorem <> B:34 var
+R6155:6155 Hilbert.OrderTheorem <> C:35 var
+R6157:6157 Hilbert.OrderTheorem <> A:33 var
+R6164:6167 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R6169:6169 Hilbert.OrderTheorem <> C:35 var
+R6171:6171 Hilbert.OrderTheorem <> A:33 var
+R6173:6173 Hilbert.OrderTheorem <> B:34 var
+prf 6958:6966 <> theorem_4
+R6986:6993 Hilbert.HilbertStructure <> IncPoint proj
+R6995:6995 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 6978:6978 <> A:37
+binder 6980:6980 <> B:38
+binder 6982:6982 <> C:39
+R7003:7009 Hilbert.HilbertStructure <> IncLine proj
+R7011:7011 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 6999:6999 <> l:40
+R7030:7033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7019:7023 Hilbert.HilbertStructure <> Incid proj
+R7025:7025 Hilbert.OrderTheorem <> OrderTheorem.I var
+R7027:7027 Hilbert.OrderTheorem <> A:37 var
+R7029:7029 Hilbert.OrderTheorem <> l:40 var
+R7045:7048 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7034:7038 Hilbert.HilbertStructure <> Incid proj
+R7040:7040 Hilbert.OrderTheorem <> OrderTheorem.I var
+R7042:7042 Hilbert.OrderTheorem <> B:38 var
+R7044:7044 Hilbert.OrderTheorem <> l:40 var
+R7060:7067 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7049:7053 Hilbert.HilbertStructure <> Incid proj
+R7055:7055 Hilbert.OrderTheorem <> OrderTheorem.I var
+R7057:7057 Hilbert.OrderTheorem <> C:39 var
+R7059:7059 Hilbert.OrderTheorem <> l:40 var
+R7074:7077 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7069:7072 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7068:7068 Hilbert.OrderTheorem <> A:37 var
+R7073:7073 Hilbert.OrderTheorem <> B:38 var
+R7084:7087 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7079:7082 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7078:7078 Hilbert.OrderTheorem <> B:38 var
+R7083:7083 Hilbert.OrderTheorem <> C:39 var
+R7094:7101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7089:7092 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7088:7088 Hilbert.OrderTheorem <> A:37 var
+R7093:7093 Hilbert.OrderTheorem <> C:39 var
+R7102:7102 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R7145:7153 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R7113:7116 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7103:7106 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7108:7108 Hilbert.OrderTheorem <> A:37 var
+R7110:7110 Hilbert.OrderTheorem <> B:38 var
+R7112:7112 Hilbert.OrderTheorem <> C:39 var
+R7129:7132 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7117:7118 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7119:7122 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7124:7124 Hilbert.OrderTheorem <> B:38 var
+R7126:7126 Hilbert.OrderTheorem <> C:39 var
+R7128:7128 Hilbert.OrderTheorem <> A:37 var
+R7133:7134 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7135:7138 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7140:7140 Hilbert.OrderTheorem <> C:39 var
+R7142:7142 Hilbert.OrderTheorem <> A:37 var
+R7144:7144 Hilbert.OrderTheorem <> B:38 var
+R7154:7154 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R7197:7206 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R7249:7249 Corelib.Init.Logic <> ::type_scope:x_'\/'_x not
+R7165:7168 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7155:7158 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7160:7160 Hilbert.OrderTheorem <> B:38 var
+R7162:7162 Hilbert.OrderTheorem <> C:39 var
+R7164:7164 Hilbert.OrderTheorem <> A:37 var
+R7181:7184 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7169:7170 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7171:7174 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7176:7176 Hilbert.OrderTheorem <> A:37 var
+R7178:7178 Hilbert.OrderTheorem <> B:38 var
+R7180:7180 Hilbert.OrderTheorem <> C:39 var
+R7185:7186 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7187:7190 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7192:7192 Hilbert.OrderTheorem <> C:39 var
+R7194:7194 Hilbert.OrderTheorem <> A:37 var
+R7196:7196 Hilbert.OrderTheorem <> B:38 var
+R7217:7220 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7207:7210 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7212:7212 Hilbert.OrderTheorem <> C:39 var
+R7214:7214 Hilbert.OrderTheorem <> A:37 var
+R7216:7216 Hilbert.OrderTheorem <> B:38 var
+R7233:7236 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7221:7222 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7223:7226 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7228:7228 Hilbert.OrderTheorem <> A:37 var
+R7230:7230 Hilbert.OrderTheorem <> B:38 var
+R7232:7232 Hilbert.OrderTheorem <> C:39 var
+R7237:7238 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7239:7242 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R7244:7244 Hilbert.OrderTheorem <> B:38 var
+R7246:7246 Hilbert.OrderTheorem <> C:39 var
+R7248:7248 Hilbert.OrderTheorem <> A:37 var
+prf 8562:8582 <> theorem_5_permutation
+R8608:8615 Hilbert.HilbertStructure <> IncPoint proj
+R8617:8617 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8594:8595 <> P1:41
+binder 8597:8598 <> P2:42
+binder 8600:8601 <> P3:43
+binder 8603:8604 <> P4:44
+R8625:8631 Hilbert.HilbertStructure <> IncLine proj
+R8633:8633 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8621:8621 <> l:45
+R8653:8656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8641:8645 Hilbert.HilbertStructure <> Incid proj
+R8647:8647 Hilbert.OrderTheorem <> OrderTheorem.I var
+R8649:8650 Hilbert.OrderTheorem <> P1:41 var
+R8652:8652 Hilbert.OrderTheorem <> l:45 var
+R8669:8672 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8657:8661 Hilbert.HilbertStructure <> Incid proj
+R8663:8663 Hilbert.OrderTheorem <> OrderTheorem.I var
+R8665:8666 Hilbert.OrderTheorem <> P2:42 var
+R8668:8668 Hilbert.OrderTheorem <> l:45 var
+R8685:8688 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8673:8677 Hilbert.HilbertStructure <> Incid proj
+R8679:8679 Hilbert.OrderTheorem <> OrderTheorem.I var
+R8681:8682 Hilbert.OrderTheorem <> P3:43 var
+R8684:8684 Hilbert.OrderTheorem <> l:45 var
+R8701:8708 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8689:8693 Hilbert.HilbertStructure <> Incid proj
+R8695:8695 Hilbert.OrderTheorem <> OrderTheorem.I var
+R8697:8698 Hilbert.OrderTheorem <> P4:44 var
+R8700:8700 Hilbert.OrderTheorem <> l:45 var
+R8717:8720 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8711:8714 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8709:8710 Hilbert.OrderTheorem <> P1:41 var
+R8715:8716 Hilbert.OrderTheorem <> P2:42 var
+R8729:8732 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8723:8726 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8721:8722 Hilbert.OrderTheorem <> P1:41 var
+R8727:8728 Hilbert.OrderTheorem <> P3:43 var
+R8741:8744 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8735:8738 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8733:8734 Hilbert.OrderTheorem <> P1:41 var
+R8739:8740 Hilbert.OrderTheorem <> P4:44 var
+R8753:8756 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8747:8750 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8745:8746 Hilbert.OrderTheorem <> P2:42 var
+R8751:8752 Hilbert.OrderTheorem <> P3:43 var
+R8765:8768 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8759:8762 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8757:8758 Hilbert.OrderTheorem <> P2:42 var
+R8763:8764 Hilbert.OrderTheorem <> P4:44 var
+R8777:8784 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8771:8774 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8769:8770 Hilbert.OrderTheorem <> P3:43 var
+R8775:8776 Hilbert.OrderTheorem <> P4:44 var
+R8785:8792 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8813:8821 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8803:8810 Hilbert.HilbertStructure <> IncPoint proj
+R8812:8812 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8793:8793 <> A:46
+R8803:8810 Hilbert.HilbertStructure <> IncPoint proj
+R8812:8812 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8795:8795 <> B:47
+R8803:8810 Hilbert.HilbertStructure <> IncPoint proj
+R8812:8812 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8797:8797 <> C:48
+R8803:8810 Hilbert.HilbertStructure <> IncPoint proj
+R8812:8812 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 8799:8799 <> D:49
+R8889:8898 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8822:8832 Stdlib.Sorting.Permutation <> Permutation ind
+R8863:8866 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8861:8862 Hilbert.OrderTheorem <> P1:41 var
+R8869:8872 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8867:8868 Hilbert.OrderTheorem <> P2:42 var
+R8875:8878 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8873:8874 Hilbert.OrderTheorem <> P3:43 var
+R8881:8884 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8879:8880 Hilbert.OrderTheorem <> P4:44 var
+R8885:8887 Corelib.Init.Datatypes <> nil constr
+R8836:8839 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8835:8835 Hilbert.OrderTheorem <> A:46 var
+R8841:8844 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8840:8840 Hilbert.OrderTheorem <> B:47 var
+R8846:8849 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8845:8845 Hilbert.OrderTheorem <> C:48 var
+R8851:8854 Corelib.Init.Datatypes <> ::list_scope:x_'::'_x not
+R8850:8850 Hilbert.OrderTheorem <> D:49 var
+R8855:8857 Corelib.Init.Datatypes <> nil constr
+R8899:8899 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8910:8914 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8900:8903 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R8905:8905 Hilbert.OrderTheorem <> A:46 var
+R8907:8907 Hilbert.OrderTheorem <> B:47 var
+R8909:8909 Hilbert.OrderTheorem <> C:48 var
+R8915:8915 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8926:8936 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8916:8919 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R8921:8921 Hilbert.OrderTheorem <> A:46 var
+R8923:8923 Hilbert.OrderTheorem <> B:47 var
+R8925:8925 Hilbert.OrderTheorem <> D:49 var
+R8937:8937 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8948:8953 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8964:8964 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R8938:8941 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R8943:8943 Hilbert.OrderTheorem <> A:46 var
+R8945:8945 Hilbert.OrderTheorem <> C:48 var
+R8947:8947 Hilbert.OrderTheorem <> D:49 var
+R8954:8957 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R8959:8959 Hilbert.OrderTheorem <> B:47 var
+R8961:8961 Hilbert.OrderTheorem <> C:48 var
+R8963:8963 Hilbert.OrderTheorem <> D:49 var
+R9255:9281 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R9255:9281 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R9560:9586 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R9560:9586 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R9889:9915 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R9889:9915 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R10218:10244 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R10218:10244 Hilbert.OrderTheorem <> three_collinear_one_between prfax
+R10577:10592 Stdlib.Sorting.Permutation <> Permutation_refl thm
+R10577:10592 Stdlib.Sorting.Permutation <> Permutation_refl thm
+prf 12378:12386 <> theorem_6
+R12407:12410 Corelib.Init.Datatypes <> list ind
+R12413:12420 Hilbert.HilbertStructure <> IncPoint proj
+R12422:12422 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12398:12403 <> points:50
+R12431:12437 Hilbert.HilbertStructure <> IncLine proj
+R12439:12439 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12427:12427 <> l:51
+R12447:12447 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12484:12492 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+binder 12455:12455 <> p:52
+R12469:12472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12458:12459 Stdlib.Lists.List <> In def
+R12463:12468 Hilbert.OrderTheorem <> points:50 var
+R12461:12461 Hilbert.OrderTheorem <> p:52 var
+R12473:12477 Hilbert.HilbertStructure <> Incid proj
+R12479:12479 Hilbert.OrderTheorem <> OrderTheorem.I var
+R12481:12481 Hilbert.OrderTheorem <> p:52 var
+R12483:12483 Hilbert.OrderTheorem <> l:51 var
+R12505:12512 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12493:12497 Stdlib.Lists.List <> NoDup ind
+R12499:12504 Hilbert.OrderTheorem <> points:50 var
+R12513:12520 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12548:12554 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12531:12534 Corelib.Init.Datatypes <> list ind
+R12537:12544 Hilbert.HilbertStructure <> IncPoint proj
+R12546:12546 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12521:12527 <> ordered:53
+R12581:12588 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12555:12565 Stdlib.Sorting.Permutation <> Permutation ind
+R12575:12580 Hilbert.OrderTheorem <> points:50 var
+R12567:12573 Hilbert.OrderTheorem <> ordered:53 var
+R12605:12607 Corelib.Init.Datatypes <> nat ind
+binder 12597:12597 <> i:54
+binder 12599:12599 <> j:55
+binder 12601:12601 <> k:56
+R12622:12625 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12618:12620 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R12617:12617 Hilbert.OrderTheorem <> i:54 var
+R12621:12621 Hilbert.OrderTheorem <> k:56 var
+R12631:12634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12627:12629 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R12626:12626 Hilbert.OrderTheorem <> k:56 var
+R12630:12630 Hilbert.OrderTheorem <> j:55 var
+R12653:12662 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R12636:12638 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R12635:12635 Hilbert.OrderTheorem <> j:55 var
+R12639:12644 Corelib.Init.Datatypes <> length def
+R12646:12652 Hilbert.OrderTheorem <> ordered:53 var
+R12663:12670 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12689:12699 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R12679:12686 Hilbert.HilbertStructure <> IncPoint proj
+R12688:12688 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12671:12671 <> A:57
+R12679:12686 Hilbert.HilbertStructure <> IncPoint proj
+R12688:12688 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12673:12673 <> C:58
+R12679:12686 Hilbert.HilbertStructure <> IncPoint proj
+R12688:12688 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 12675:12675 <> B:59
+R12728:12739 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12719:12721 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12700:12708 Stdlib.Lists.List <> nth_error def
+R12718:12718 Hilbert.OrderTheorem <> i:54 var
+R12710:12716 Hilbert.OrderTheorem <> ordered:53 var
+R12722:12725 Corelib.Init.Datatypes <> Some constr
+R12727:12727 Hilbert.OrderTheorem <> A:57 var
+R12768:12779 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12759:12761 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12740:12748 Stdlib.Lists.List <> nth_error def
+R12758:12758 Hilbert.OrderTheorem <> k:56 var
+R12750:12756 Hilbert.OrderTheorem <> ordered:53 var
+R12762:12765 Corelib.Init.Datatypes <> Some constr
+R12767:12767 Hilbert.OrderTheorem <> C:58 var
+R12808:12819 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R12799:12801 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12780:12788 Stdlib.Lists.List <> nth_error def
+R12798:12798 Hilbert.OrderTheorem <> j:55 var
+R12790:12796 Hilbert.OrderTheorem <> ordered:53 var
+R12802:12805 Corelib.Init.Datatypes <> Some constr
+R12807:12807 Hilbert.OrderTheorem <> B:59 var
+R12820:12823 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R12825:12825 Hilbert.OrderTheorem <> A:57 var
+R12827:12827 Hilbert.OrderTheorem <> C:58 var
+R12829:12829 Hilbert.OrderTheorem <> B:59 var
+prf 13608:13616 <> theorem_7
+R13636:13643 Hilbert.HilbertStructure <> IncPoint proj
+R13645:13645 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 13628:13628 <> A:60
+binder 13630:13630 <> B:61
+binder 13632:13632 <> C:62
+R13653:13659 Hilbert.HilbertStructure <> IncLine proj
+R13661:13661 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 13649:13649 <> l:63
+R13680:13683 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13669:13673 Hilbert.HilbertStructure <> Incid proj
+R13675:13675 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13677:13677 Hilbert.OrderTheorem <> A:60 var
+R13679:13679 Hilbert.OrderTheorem <> l:63 var
+R13695:13698 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13684:13688 Hilbert.HilbertStructure <> Incid proj
+R13690:13690 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13692:13692 Hilbert.OrderTheorem <> B:61 var
+R13694:13694 Hilbert.OrderTheorem <> l:63 var
+R13710:13717 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13699:13703 Hilbert.HilbertStructure <> Incid proj
+R13705:13705 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13707:13707 Hilbert.OrderTheorem <> C:62 var
+R13709:13709 Hilbert.OrderTheorem <> l:63 var
+R13724:13727 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13719:13722 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R13718:13718 Hilbert.OrderTheorem <> A:60 var
+R13723:13723 Hilbert.OrderTheorem <> B:61 var
+R13738:13745 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R13728:13731 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R13733:13733 Hilbert.OrderTheorem <> A:60 var
+R13735:13735 Hilbert.OrderTheorem <> C:62 var
+R13737:13737 Hilbert.OrderTheorem <> B:61 var
+R13746:13753 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13768:13770 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R13758:13765 Hilbert.HilbertStructure <> IncPoint proj
+R13767:13767 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 13754:13754 <> D:64
+R13782:13785 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13771:13775 Hilbert.HilbertStructure <> Incid proj
+R13777:13777 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13779:13779 Hilbert.OrderTheorem <> D:64 var
+R13781:13781 Hilbert.OrderTheorem <> l:63 var
+R13796:13799 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13786:13789 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R13791:13791 Hilbert.OrderTheorem <> A:60 var
+R13793:13793 Hilbert.OrderTheorem <> D:64 var
+R13795:13795 Hilbert.OrderTheorem <> C:62 var
+R13806:13809 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R13801:13804 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R13800:13800 Hilbert.OrderTheorem <> D:64 var
+R13805:13805 Hilbert.OrderTheorem <> A:60 var
+R13811:13814 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R13810:13810 Hilbert.OrderTheorem <> D:64 var
+R13815:13815 Hilbert.OrderTheorem <> C:62 var
+R13929:13938 Hilbert.HilbertStructure <> Bet_nondeg proj
+R13940:13940 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13942:13942 Hilbert.OrderTheorem <> OrderTheorem.O var
+R13929:13938 Hilbert.HilbertStructure <> Bet_nondeg proj
+R13940:13940 Hilbert.OrderTheorem <> OrderTheorem.I var
+R13942:13942 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14054:14057 Hilbert.HilbertStructure <> II_3 proj
+R14059:14059 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14061:14061 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14071:14074 Corelib.Init.Logic <> conj constr
+R14080:14083 Corelib.Init.Logic <> conj constr
+R14054:14057 Hilbert.HilbertStructure <> II_3 proj
+R14059:14059 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14061:14061 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14071:14074 Corelib.Init.Logic <> conj constr
+R14080:14083 Corelib.Init.Logic <> conj constr
+R14263:14272 Hilbert.HilbertStructure <> Bet_nondeg proj
+R14274:14274 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14276:14276 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14263:14272 Hilbert.HilbertStructure <> Bet_nondeg proj
+R14274:14274 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14276:14276 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14440:14449 Hilbert.HilbertStructure <> Bet_nondeg proj
+R14451:14451 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14453:14453 Hilbert.OrderTheorem <> OrderTheorem.O var
+R14440:14449 Hilbert.HilbertStructure <> Bet_nondeg proj
+R14451:14451 Hilbert.OrderTheorem <> OrderTheorem.I var
+R14453:14453 Hilbert.OrderTheorem <> OrderTheorem.O var
+prf 15410:15428 <> theorem_extension_B
+R15446:15453 Hilbert.HilbertStructure <> IncPoint proj
+R15455:15455 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15440:15440 <> A:65
+binder 15442:15442 <> B:66
+R15463:15469 Hilbert.HilbertStructure <> IncLine proj
+R15471:15471 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15459:15459 <> l:67
+R15490:15493 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15479:15483 Hilbert.HilbertStructure <> Incid proj
+R15485:15485 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15487:15487 Hilbert.OrderTheorem <> A:65 var
+R15489:15489 Hilbert.OrderTheorem <> l:67 var
+R15505:15508 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15494:15498 Hilbert.HilbertStructure <> Incid proj
+R15500:15500 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15502:15502 Hilbert.OrderTheorem <> B:66 var
+R15504:15504 Hilbert.OrderTheorem <> l:67 var
+R15515:15522 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15510:15513 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15509:15509 Hilbert.OrderTheorem <> A:65 var
+R15514:15514 Hilbert.OrderTheorem <> B:66 var
+R15523:15529 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15544:15545 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15534:15541 Hilbert.HilbertStructure <> IncPoint proj
+R15543:15543 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15530:15530 <> C:68
+R15557:15560 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15546:15550 Hilbert.HilbertStructure <> Incid proj
+R15552:15552 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15554:15554 Hilbert.OrderTheorem <> C:68 var
+R15556:15556 Hilbert.OrderTheorem <> l:67 var
+R15561:15564 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R15566:15566 Hilbert.OrderTheorem <> A:65 var
+R15568:15568 Hilbert.OrderTheorem <> B:66 var
+R15570:15570 Hilbert.OrderTheorem <> C:68 var
+R15623:15626 Hilbert.HilbertStructure <> II_1 proj
+R15628:15628 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15630:15630 Hilbert.OrderTheorem <> OrderTheorem.O var
+R15640:15643 Corelib.Init.Logic <> conj constr
+R15649:15652 Corelib.Init.Logic <> conj constr
+R15623:15626 Hilbert.HilbertStructure <> II_1 proj
+R15628:15628 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15630:15630 Hilbert.OrderTheorem <> OrderTheorem.O var
+R15640:15643 Corelib.Init.Logic <> conj constr
+R15649:15652 Corelib.Init.Logic <> conj constr
+prf 15684:15702 <> theorem_extension_A
+R15720:15727 Hilbert.HilbertStructure <> IncPoint proj
+R15729:15729 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15714:15714 <> A:69
+binder 15716:15716 <> B:70
+R15737:15743 Hilbert.HilbertStructure <> IncLine proj
+R15745:15745 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15733:15733 <> l:71
+R15764:15767 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15753:15757 Hilbert.HilbertStructure <> Incid proj
+R15759:15759 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15761:15761 Hilbert.OrderTheorem <> A:69 var
+R15763:15763 Hilbert.OrderTheorem <> l:71 var
+R15779:15782 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15768:15772 Hilbert.HilbertStructure <> Incid proj
+R15774:15774 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15776:15776 Hilbert.OrderTheorem <> B:70 var
+R15778:15778 Hilbert.OrderTheorem <> l:71 var
+R15789:15796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15784:15787 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15783:15783 Hilbert.OrderTheorem <> A:69 var
+R15788:15788 Hilbert.OrderTheorem <> B:70 var
+R15797:15803 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15818:15819 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15808:15815 Hilbert.HilbertStructure <> IncPoint proj
+R15817:15817 Hilbert.OrderTheorem <> OrderTheorem.I var
+binder 15804:15804 <> D:72
+R15831:15834 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15820:15824 Hilbert.HilbertStructure <> Incid proj
+R15826:15826 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15828:15828 Hilbert.OrderTheorem <> D:72 var
+R15830:15830 Hilbert.OrderTheorem <> l:71 var
+R15835:15838 Hilbert.OrderTheorem <> OrderTheorem.Bet' var
+R15840:15840 Hilbert.OrderTheorem <> D:72 var
+R15842:15842 Hilbert.OrderTheorem <> A:69 var
+R15844:15844 Hilbert.OrderTheorem <> B:70 var
+R15897:15900 Hilbert.HilbertStructure <> II_2 proj
+R15902:15902 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15904:15904 Hilbert.OrderTheorem <> OrderTheorem.O var
+R15914:15917 Corelib.Init.Logic <> conj constr
+R15923:15926 Corelib.Init.Logic <> conj constr
+R15897:15900 Hilbert.HilbertStructure <> II_2 proj
+R15902:15902 Hilbert.OrderTheorem <> OrderTheorem.I var
+R15904:15904 Hilbert.OrderTheorem <> OrderTheorem.O var
+R15914:15917 Corelib.Init.Logic <> conj constr
+R15923:15926 Corelib.Init.Logic <> conj constr
+R15952:15963 Hilbert.OrderTheorem OrderTheorem <> sec
+ax 17110:17127 <> SameSide_PointLine
+R17143:17160 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 17139:17139 <> I:73
+R17175:17178 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17166:17172 Hilbert.HilbertStructure <> IncLine proj
+R17174:17174 Hilbert.OrderTheorem <> I:73 var
+R17189:17192 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17179:17186 Hilbert.HilbertStructure <> IncPoint proj
+R17188:17188 Hilbert.OrderTheorem <> I:73 var
+R17203:17206 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17193:17200 Hilbert.HilbertStructure <> IncPoint proj
+R17202:17202 Hilbert.OrderTheorem <> I:73 var
+prf 17222:17242 <> theorem_8_unavailable
+R17258:17275 Hilbert.HilbertStructure <> IncidenceStructure rec
+binder 17254:17254 <> I:76
+R17285:17291 Hilbert.HilbertStructure <> IncLine proj
+R17293:17293 Hilbert.OrderTheorem <> I:76 var
+binder 17281:17281 <> a:77
+R17305:17312 Hilbert.HilbertStructure <> IncPoint proj
+R17314:17314 Hilbert.OrderTheorem <> I:76 var
+binder 17297:17297 <> P:78
+binder 17299:17299 <> Q:79
+binder 17301:17301 <> R:80
+R17333:17336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17320:17321 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17322:17326 Hilbert.HilbertStructure <> Incid proj
+R17328:17328 Hilbert.OrderTheorem <> I:76 var
+R17330:17330 Hilbert.OrderTheorem <> P:78 var
+R17332:17332 Hilbert.OrderTheorem <> a:77 var
+R17350:17353 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17337:17338 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17339:17343 Hilbert.HilbertStructure <> Incid proj
+R17345:17345 Hilbert.OrderTheorem <> I:76 var
+R17347:17347 Hilbert.OrderTheorem <> Q:79 var
+R17349:17349 Hilbert.OrderTheorem <> a:77 var
+R17367:17372 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17354:17355 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17356:17360 Hilbert.HilbertStructure <> Incid proj
+R17362:17362 Hilbert.OrderTheorem <> I:76 var
+R17364:17364 Hilbert.OrderTheorem <> R:80 var
+R17366:17366 Hilbert.OrderTheorem <> a:77 var
+R17401:17404 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17373:17374 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17375:17392 Hilbert.OrderTheorem <> SameSide_PointLine defax
+R17394:17394 Hilbert.OrderTheorem <> I:76 var
+R17396:17396 Hilbert.OrderTheorem <> a:77 var
+R17398:17398 Hilbert.OrderTheorem <> P:78 var
+R17400:17400 Hilbert.OrderTheorem <> Q:79 var
+R17431:17436 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17405:17422 Hilbert.OrderTheorem <> SameSide_PointLine defax
+R17424:17424 Hilbert.OrderTheorem <> I:76 var
+R17426:17426 Hilbert.OrderTheorem <> a:77 var
+R17428:17428 Hilbert.OrderTheorem <> P:78 var
+R17430:17430 Hilbert.OrderTheorem <> R:80 var
+R17437:17454 Hilbert.OrderTheorem <> SameSide_PointLine defax
+R17456:17456 Hilbert.OrderTheorem <> I:76 var
+R17458:17458 Hilbert.OrderTheorem <> a:77 var
+R17460:17460 Hilbert.OrderTheorem <> Q:79 var
+R17462:17462 Hilbert.OrderTheorem <> R:80 var

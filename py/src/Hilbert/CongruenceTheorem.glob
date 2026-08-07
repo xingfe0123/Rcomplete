@@ -1,0 +1,1574 @@
+DIGEST 1c0882f2a4eb62269ebf4aa28f8b0399
+FHilbert.CongruenceTheorem
+R819:827 Stdlib.Logic.Classical <> <> lib
+R858:873 Hilbert.HilbertStructure <> <> lib
+sec 885:901 <> CongruenceTheorem
+var 918:918 CongruenceTheorem I
+var 943:943 CongruenceTheorem O
+var 978:978 CongruenceTheorem C
+R922:939 Hilbert.HilbertStructure <> IncidenceStructure rec
+R947:960 Hilbert.HilbertStructure <> OrderStructure rec
+R962:962 Hilbert.CongruenceTheorem <> I:2 var
+R982:1000 Hilbert.HilbertStructure <> CongruenceStructure rec
+R1002:1002 Hilbert.CongruenceTheorem <> I:2 var
+R1004:1004 Hilbert.CongruenceTheorem <> O:4 var
+var 1015:1018 CongruenceTheorem Bet'
+binder 1020:1020 <> A:7
+binder 1022:1022 <> B:8
+binder 1024:1024 <> C:9
+R1029:1031 Hilbert.HilbertStructure <> Bet proj
+R1033:1033 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1035:1035 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1037:1037 Hilbert.CongruenceTheorem <> A:7 var
+R1039:1039 Hilbert.CongruenceTheorem <> B:8 var
+R1041:1041 Hilbert.CongruenceTheorem <> C:9 var
+var 1050:1057 CongruenceTheorem CongSeg'
+binder 1059:1059 <> A:10
+binder 1061:1061 <> B:11
+binder 1063:1063 <> X:12
+binder 1065:1065 <> Y:13
+R1070:1076 Hilbert.HilbertStructure <> CongSeg proj
+R1078:1078 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1080:1080 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1082:1082 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R1084:1084 Hilbert.CongruenceTheorem <> A:10 var
+R1086:1086 Hilbert.CongruenceTheorem <> B:11 var
+R1088:1088 Hilbert.CongruenceTheorem <> X:12 var
+R1090:1090 Hilbert.CongruenceTheorem <> Y:13 var
+var 1099:1106 CongruenceTheorem CongAng'
+binder 1108:1108 <> A:14
+binder 1110:1110 <> B:15
+binder 1112:1112 <> X:16
+binder 1114:1114 <> Y:17
+binder 1116:1116 <> Z:18
+binder 1118:1118 <> W:19
+R1123:1129 Hilbert.HilbertStructure <> CongAng proj
+R1131:1131 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1133:1133 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1135:1135 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R1137:1137 Hilbert.CongruenceTheorem <> A:14 var
+R1139:1139 Hilbert.CongruenceTheorem <> B:15 var
+R1141:1141 Hilbert.CongruenceTheorem <> X:16 var
+R1143:1143 Hilbert.CongruenceTheorem <> Y:17 var
+R1145:1145 Hilbert.CongruenceTheorem <> Z:18 var
+R1147:1147 Hilbert.CongruenceTheorem <> W:19 var
+var 1548:1565 CongruenceTheorem exists_ray_through
+R1585:1592 Hilbert.HilbertStructure <> IncPoint proj
+R1594:1594 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 1577:1579 <> O_p:20
+binder 1581:1581 <> P:21
+R1602:1608 Hilbert.HilbertStructure <> IncLine proj
+R1610:1610 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 1598:1598 <> l:22
+R1631:1634 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1618:1622 Hilbert.HilbertStructure <> Incid proj
+R1624:1624 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1626:1628 Hilbert.CongruenceTheorem <> O_p:20 var
+R1630:1630 Hilbert.CongruenceTheorem <> l:22 var
+R1646:1649 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1635:1639 Hilbert.HilbertStructure <> Incid proj
+R1641:1641 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1643:1643 Hilbert.CongruenceTheorem <> P:21 var
+R1645:1645 Hilbert.CongruenceTheorem <> l:22 var
+R1658:1665 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1653:1656 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R1650:1652 Hilbert.CongruenceTheorem <> O_p:20 var
+R1657:1657 Hilbert.CongruenceTheorem <> P:21 var
+R1666:1672 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1684:1685 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R1677:1679 Hilbert.HilbertStructure <> Ray proj
+R1681:1681 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1683:1683 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 1673:1673 <> r:23
+R1699:1702 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1686:1690 Hilbert.HilbertStructure <> OnRay proj
+R1692:1692 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1694:1694 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1696:1696 Hilbert.CongruenceTheorem <> P:21 var
+R1698:1698 Hilbert.CongruenceTheorem <> r:23 var
+R1725:1728 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1719:1721 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1703:1712 Hilbert.HilbertStructure <> ray_origin proj
+R1714:1714 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1716:1716 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1718:1718 Hilbert.CongruenceTheorem <> r:23 var
+R1722:1724 Hilbert.CongruenceTheorem <> O_p:20 var
+R1743:1745 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1729:1736 Hilbert.HilbertStructure <> ray_line proj
+R1738:1738 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R1740:1740 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R1742:1742 Hilbert.CongruenceTheorem <> r:23 var
+R1746:1746 Hilbert.CongruenceTheorem <> l:22 var
+var 2237:2246 CongruenceTheorem angle_copy
+R2272:2279 Hilbert.HilbertStructure <> IncPoint proj
+R2281:2281 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 2258:2258 <> A:26
+binder 2260:2260 <> B:27
+binder 2262:2262 <> C:28
+binder 2264:2266 <> O_p:29
+binder 2268:2268 <> X:30
+R2289:2291 Hilbert.HilbertStructure <> Ray proj
+R2293:2293 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R2295:2295 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 2285:2285 <> r:31
+R2309:2312 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2304:2307 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2303:2303 Hilbert.CongruenceTheorem <> A:26 var
+R2308:2308 Hilbert.CongruenceTheorem <> B:27 var
+R2319:2322 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2314:2317 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2313:2313 Hilbert.CongruenceTheorem <> B:27 var
+R2318:2318 Hilbert.CongruenceTheorem <> C:28 var
+R2329:2336 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2324:2327 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2323:2323 Hilbert.CongruenceTheorem <> A:26 var
+R2328:2328 Hilbert.CongruenceTheorem <> C:28 var
+R2345:2352 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2340:2343 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2337:2339 Hilbert.CongruenceTheorem <> O_p:29 var
+R2344:2344 Hilbert.CongruenceTheorem <> X:30 var
+R2353:2359 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2374:2381 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2364:2371 Hilbert.HilbertStructure <> IncPoint proj
+R2373:2373 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 2360:2360 <> Y:32
+R2395:2398 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2382:2386 Hilbert.HilbertStructure <> OnRay proj
+R2388:2388 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R2390:2390 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R2392:2392 Hilbert.CongruenceTheorem <> Y:32 var
+R2394:2394 Hilbert.CongruenceTheorem <> r:31 var
+R2399:2406 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R2408:2408 Hilbert.CongruenceTheorem <> A:26 var
+R2410:2410 Hilbert.CongruenceTheorem <> B:27 var
+R2412:2412 Hilbert.CongruenceTheorem <> C:28 var
+R2414:2414 Hilbert.CongruenceTheorem <> X:30 var
+R2416:2418 Hilbert.CongruenceTheorem <> O_p:29 var
+R2420:2420 Hilbert.CongruenceTheorem <> Y:32 var
+prf 2861:2870 <> theorem_11
+R2891:2898 Hilbert.HilbertStructure <> IncPoint proj
+R2900:2900 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 2882:2882 <> A:35
+binder 2884:2884 <> B:36
+binder 2886:2887 <> C':37
+R2914:2917 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2909:2912 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2908:2908 Hilbert.CongruenceTheorem <> A:35 var
+R2913:2913 Hilbert.CongruenceTheorem <> B:36 var
+R2925:2928 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2919:2922 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2918:2918 Hilbert.CongruenceTheorem <> B:36 var
+R2923:2924 Hilbert.CongruenceTheorem <> C':37 var
+R2936:2943 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2930:2933 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R2929:2929 Hilbert.CongruenceTheorem <> A:35 var
+R2934:2935 Hilbert.CongruenceTheorem <> C':37 var
+R2961:2968 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2944:2951 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R2953:2953 Hilbert.CongruenceTheorem <> A:35 var
+R2955:2955 Hilbert.CongruenceTheorem <> B:36 var
+R2957:2957 Hilbert.CongruenceTheorem <> A:35 var
+R2959:2960 Hilbert.CongruenceTheorem <> C':37 var
+R2969:2976 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R2978:2978 Hilbert.CongruenceTheorem <> A:35 var
+R2980:2980 Hilbert.CongruenceTheorem <> B:36 var
+R2982:2983 Hilbert.CongruenceTheorem <> C':37 var
+R2985:2985 Hilbert.CongruenceTheorem <> A:35 var
+R2987:2988 Hilbert.CongruenceTheorem <> C':37 var
+R2990:2990 Hilbert.CongruenceTheorem <> B:36 var
+R3064:3067 Hilbert.HilbertStructure <> III4 proj
+R3069:3069 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3071:3071 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3073:3073 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R3064:3067 Hilbert.HilbertStructure <> III4 proj
+R3069:3069 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3071:3071 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3073:3073 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R3121:3135 Hilbert.HilbertStructure <> III6_undirected proj
+R3137:3137 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3139:3139 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3141:3141 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R3121:3135 Hilbert.HilbertStructure <> III6_undirected proj
+R3137:3137 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3139:3139 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3141:3141 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R3188:3191 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3188:3191 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R3260:3263 Hilbert.HilbertStructure <> III7 proj
+R3265:3265 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3267:3267 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3269:3269 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R3260:3263 Hilbert.HilbertStructure <> III7 proj
+R3265:3265 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3267:3267 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3269:3269 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+var 3833:3846 CongruenceTheorem ray_same_angle
+R3868:3875 Hilbert.HilbertStructure <> IncPoint proj
+R3877:3877 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 3858:3858 <> A:38
+binder 3860:3860 <> B:39
+binder 3862:3862 <> C:40
+binder 3864:3864 <> D:41
+R3885:3887 Hilbert.HilbertStructure <> Ray proj
+R3889:3889 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3891:3891 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 3881:3881 <> r:42
+R3919:3926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3915:3917 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3899:3908 Hilbert.HilbertStructure <> ray_origin proj
+R3910:3910 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3912:3912 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3914:3914 Hilbert.CongruenceTheorem <> r:42 var
+R3918:3918 Hilbert.CongruenceTheorem <> A:38 var
+R3940:3943 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3927:3931 Hilbert.HilbertStructure <> OnRay proj
+R3933:3933 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3935:3935 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3937:3937 Hilbert.CongruenceTheorem <> C:40 var
+R3939:3939 Hilbert.CongruenceTheorem <> r:42 var
+R3957:3964 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3944:3948 Hilbert.HilbertStructure <> OnRay proj
+R3950:3950 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R3952:3952 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R3954:3954 Hilbert.CongruenceTheorem <> D:41 var
+R3956:3956 Hilbert.CongruenceTheorem <> r:42 var
+R3965:3972 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R3974:3974 Hilbert.CongruenceTheorem <> B:39 var
+R3976:3976 Hilbert.CongruenceTheorem <> A:38 var
+R3978:3978 Hilbert.CongruenceTheorem <> C:40 var
+R3980:3980 Hilbert.CongruenceTheorem <> B:39 var
+R3982:3982 Hilbert.CongruenceTheorem <> A:38 var
+R3984:3984 Hilbert.CongruenceTheorem <> D:41 var
+var 4023:4036 CongruenceTheorem cong_ang_trans
+R4067:4074 Hilbert.HilbertStructure <> IncPoint proj
+R4076:4076 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4047:4047 <> A:45
+binder 4049:4049 <> B:46
+binder 4051:4051 <> C:47
+binder 4053:4053 <> D:48
+binder 4055:4055 <> E:49
+binder 4057:4057 <> F:50
+binder 4059:4059 <> G:51
+binder 4061:4061 <> H:52
+binder 4063:4063 <> I:53
+R4103:4106 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4083:4090 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R4092:4092 Hilbert.CongruenceTheorem <> A:45 var
+R4094:4094 Hilbert.CongruenceTheorem <> B:46 var
+R4096:4096 Hilbert.CongruenceTheorem <> C:47 var
+R4098:4098 Hilbert.CongruenceTheorem <> D:48 var
+R4100:4100 Hilbert.CongruenceTheorem <> E:49 var
+R4102:4102 Hilbert.CongruenceTheorem <> F:50 var
+R4127:4130 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4107:4114 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R4116:4116 Hilbert.CongruenceTheorem <> D:48 var
+R4118:4118 Hilbert.CongruenceTheorem <> E:49 var
+R4120:4120 Hilbert.CongruenceTheorem <> F:50 var
+R4122:4122 Hilbert.CongruenceTheorem <> G:51 var
+R4124:4124 Hilbert.CongruenceTheorem <> H:52 var
+R4126:4126 Hilbert.CongruenceTheorem <> I:53 var
+R4131:4138 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R4140:4140 Hilbert.CongruenceTheorem <> A:45 var
+R4142:4142 Hilbert.CongruenceTheorem <> B:46 var
+R4144:4144 Hilbert.CongruenceTheorem <> C:47 var
+R4146:4146 Hilbert.CongruenceTheorem <> G:51 var
+R4148:4148 Hilbert.CongruenceTheorem <> H:52 var
+R4150:4150 Hilbert.CongruenceTheorem <> I:53 var
+var 4189:4200 CongruenceTheorem cong_ang_sym
+R4225:4232 Hilbert.HilbertStructure <> IncPoint proj
+R4234:4234 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4211:4211 <> A:56
+binder 4213:4213 <> B:57
+binder 4215:4215 <> C:58
+binder 4217:4217 <> D:59
+binder 4219:4219 <> E:60
+binder 4221:4221 <> F:61
+R4261:4264 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4241:4248 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R4250:4250 Hilbert.CongruenceTheorem <> A:56 var
+R4252:4252 Hilbert.CongruenceTheorem <> B:57 var
+R4254:4254 Hilbert.CongruenceTheorem <> C:58 var
+R4256:4256 Hilbert.CongruenceTheorem <> D:59 var
+R4258:4258 Hilbert.CongruenceTheorem <> E:60 var
+R4260:4260 Hilbert.CongruenceTheorem <> F:61 var
+R4265:4272 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R4274:4274 Hilbert.CongruenceTheorem <> D:59 var
+R4276:4276 Hilbert.CongruenceTheorem <> E:60 var
+R4278:4278 Hilbert.CongruenceTheorem <> F:61 var
+R4280:4280 Hilbert.CongruenceTheorem <> A:56 var
+R4282:4282 Hilbert.CongruenceTheorem <> B:57 var
+R4284:4284 Hilbert.CongruenceTheorem <> C:58 var
+var 4340:4352 CongruenceTheorem cong_seg_sym1
+R4373:4380 Hilbert.HilbertStructure <> IncPoint proj
+R4382:4382 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4363:4363 <> A:64
+binder 4365:4365 <> B:65
+binder 4367:4367 <> C:66
+binder 4369:4369 <> D:67
+R4405:4408 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4389:4396 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R4398:4398 Hilbert.CongruenceTheorem <> A:64 var
+R4400:4400 Hilbert.CongruenceTheorem <> B:65 var
+R4402:4402 Hilbert.CongruenceTheorem <> C:66 var
+R4404:4404 Hilbert.CongruenceTheorem <> D:67 var
+R4409:4416 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R4418:4418 Hilbert.CongruenceTheorem <> B:65 var
+R4420:4420 Hilbert.CongruenceTheorem <> A:64 var
+R4422:4422 Hilbert.CongruenceTheorem <> C:66 var
+R4424:4424 Hilbert.CongruenceTheorem <> D:67 var
+var 4480:4492 CongruenceTheorem cong_seg_sym2
+R4513:4520 Hilbert.HilbertStructure <> IncPoint proj
+R4522:4522 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4503:4503 <> A:70
+binder 4505:4505 <> B:71
+binder 4507:4507 <> C:72
+binder 4509:4509 <> D:73
+R4545:4548 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4529:4536 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R4538:4538 Hilbert.CongruenceTheorem <> A:70 var
+R4540:4540 Hilbert.CongruenceTheorem <> B:71 var
+R4542:4542 Hilbert.CongruenceTheorem <> C:72 var
+R4544:4544 Hilbert.CongruenceTheorem <> D:73 var
+R4549:4556 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R4558:4558 Hilbert.CongruenceTheorem <> A:70 var
+R4560:4560 Hilbert.CongruenceTheorem <> B:71 var
+R4562:4562 Hilbert.CongruenceTheorem <> D:73 var
+R4564:4564 Hilbert.CongruenceTheorem <> C:72 var
+var 4943:4958 CongruenceTheorem angle_ray_unique
+R4980:4987 Hilbert.HilbertStructure <> IncPoint proj
+R4989:4989 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4970:4970 <> A:76
+binder 4972:4972 <> B:77
+binder 4974:4974 <> C:78
+binder 4976:4976 <> D:79
+R4997:5003 Hilbert.HilbertStructure <> IncLine proj
+R5005:5005 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 4993:4993 <> l:80
+R5024:5027 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5013:5017 Hilbert.HilbertStructure <> Incid proj
+R5019:5019 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5021:5021 Hilbert.CongruenceTheorem <> A:76 var
+R5023:5023 Hilbert.CongruenceTheorem <> l:80 var
+R5039:5046 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5028:5032 Hilbert.HilbertStructure <> Incid proj
+R5034:5034 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5036:5036 Hilbert.CongruenceTheorem <> B:77 var
+R5038:5038 Hilbert.CongruenceTheorem <> l:80 var
+R5053:5056 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5048:5051 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5047:5047 Hilbert.CongruenceTheorem <> B:77 var
+R5052:5052 Hilbert.CongruenceTheorem <> A:76 var
+R5063:5066 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5058:5061 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5057:5057 Hilbert.CongruenceTheorem <> B:77 var
+R5062:5062 Hilbert.CongruenceTheorem <> C:78 var
+R5073:5076 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5068:5071 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5067:5067 Hilbert.CongruenceTheorem <> B:77 var
+R5072:5072 Hilbert.CongruenceTheorem <> D:79 var
+R5083:5086 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5078:5081 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5077:5077 Hilbert.CongruenceTheorem <> A:76 var
+R5082:5082 Hilbert.CongruenceTheorem <> C:78 var
+R5093:5100 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5088:5091 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5087:5087 Hilbert.CongruenceTheorem <> A:76 var
+R5092:5092 Hilbert.CongruenceTheorem <> D:79 var
+R5119:5126 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5101:5108 Hilbert.HilbertStructure <> SameSide proj
+R5110:5110 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5112:5112 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5114:5114 Hilbert.CongruenceTheorem <> C:78 var
+R5116:5116 Hilbert.CongruenceTheorem <> D:79 var
+R5118:5118 Hilbert.CongruenceTheorem <> l:80 var
+R5147:5154 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5127:5134 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R5136:5136 Hilbert.CongruenceTheorem <> A:76 var
+R5138:5138 Hilbert.CongruenceTheorem <> B:77 var
+R5140:5140 Hilbert.CongruenceTheorem <> C:78 var
+R5142:5142 Hilbert.CongruenceTheorem <> A:76 var
+R5144:5144 Hilbert.CongruenceTheorem <> B:77 var
+R5146:5146 Hilbert.CongruenceTheorem <> D:79 var
+R5155:5162 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5174:5176 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5167:5169 Hilbert.HilbertStructure <> Ray proj
+R5171:5171 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5173:5173 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 5163:5163 <> r:81
+R5197:5200 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5193:5195 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5177:5186 Hilbert.HilbertStructure <> ray_origin proj
+R5188:5188 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5190:5190 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5192:5192 Hilbert.CongruenceTheorem <> r:81 var
+R5196:5196 Hilbert.CongruenceTheorem <> B:77 var
+R5214:5217 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R5201:5205 Hilbert.HilbertStructure <> OnRay proj
+R5207:5207 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5209:5209 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5211:5211 Hilbert.CongruenceTheorem <> C:78 var
+R5213:5213 Hilbert.CongruenceTheorem <> r:81 var
+R5218:5222 Hilbert.HilbertStructure <> OnRay proj
+R5224:5224 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5226:5226 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5228:5228 Hilbert.CongruenceTheorem <> D:79 var
+R5230:5230 Hilbert.CongruenceTheorem <> r:81 var
+var 5522:5534 CongruenceTheorem ray_same_side
+R5555:5562 Hilbert.HilbertStructure <> IncPoint proj
+R5564:5564 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 5546:5547 <> Op:84
+binder 5549:5549 <> P:85
+binder 5551:5551 <> Q:86
+R5572:5578 Hilbert.HilbertStructure <> IncLine proj
+R5580:5580 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 5568:5568 <> l:87
+R5588:5590 Hilbert.HilbertStructure <> Ray proj
+R5592:5592 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5594:5594 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 5584:5584 <> r:88
+R5623:5630 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5618:5620 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5602:5611 Hilbert.HilbertStructure <> ray_origin proj
+R5613:5613 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5615:5615 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5617:5617 Hilbert.CongruenceTheorem <> r:88 var
+R5621:5622 Hilbert.CongruenceTheorem <> Op:84 var
+R5643:5650 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5631:5635 Hilbert.HilbertStructure <> Incid proj
+R5637:5637 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5639:5640 Hilbert.CongruenceTheorem <> Op:84 var
+R5642:5642 Hilbert.CongruenceTheorem <> l:87 var
+R5664:5667 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5651:5655 Hilbert.HilbertStructure <> OnRay proj
+R5657:5657 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5659:5659 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5661:5661 Hilbert.CongruenceTheorem <> P:85 var
+R5663:5663 Hilbert.CongruenceTheorem <> r:88 var
+R5681:5688 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5668:5672 Hilbert.HilbertStructure <> OnRay proj
+R5674:5674 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5676:5676 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5678:5678 Hilbert.CongruenceTheorem <> Q:86 var
+R5680:5680 Hilbert.CongruenceTheorem <> r:88 var
+R5696:5699 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5690:5693 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5689:5689 Hilbert.CongruenceTheorem <> P:85 var
+R5694:5695 Hilbert.CongruenceTheorem <> Op:84 var
+R5707:5714 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5701:5704 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R5700:5700 Hilbert.CongruenceTheorem <> Q:86 var
+R5705:5706 Hilbert.CongruenceTheorem <> Op:84 var
+R5715:5722 Hilbert.HilbertStructure <> SameSide proj
+R5724:5724 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R5726:5726 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R5728:5728 Hilbert.CongruenceTheorem <> P:85 var
+R5730:5730 Hilbert.CongruenceTheorem <> Q:86 var
+R5732:5732 Hilbert.CongruenceTheorem <> l:87 var
+var 6014:6024 CongruenceTheorem ray_on_line
+R6040:6047 Hilbert.HilbertStructure <> IncPoint proj
+R6049:6049 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 6036:6036 <> P:91
+R6057:6059 Hilbert.HilbertStructure <> Ray proj
+R6061:6061 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6063:6063 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 6053:6053 <> r:92
+R6084:6087 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6071:6075 Hilbert.HilbertStructure <> OnRay proj
+R6077:6077 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6079:6079 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R6081:6081 Hilbert.CongruenceTheorem <> P:91 var
+R6083:6083 Hilbert.CongruenceTheorem <> r:92 var
+R6088:6092 Hilbert.HilbertStructure <> Incid proj
+R6094:6094 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6096:6096 Hilbert.CongruenceTheorem <> P:91 var
+R6099:6106 Hilbert.HilbertStructure <> ray_line proj
+R6108:6108 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6110:6110 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R6112:6112 Hilbert.CongruenceTheorem <> r:92 var
+var 6388:6405 CongruenceTheorem ray_origin_on_line
+R6421:6423 Hilbert.HilbertStructure <> Ray proj
+R6425:6425 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6427:6427 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+binder 6417:6417 <> r:95
+R6435:6439 Hilbert.HilbertStructure <> Incid proj
+R6441:6441 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6444:6453 Hilbert.HilbertStructure <> ray_origin proj
+R6455:6455 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6457:6457 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R6459:6459 Hilbert.CongruenceTheorem <> r:95 var
+R6463:6470 Hilbert.HilbertStructure <> ray_line proj
+R6472:6472 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R6474:6474 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R6476:6476 Hilbert.CongruenceTheorem <> r:95 var
+var 6755:6765 CongruenceTheorem seg_nonzero
+R6785:6792 Hilbert.HilbertStructure <> IncPoint proj
+R6794:6794 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 6777:6777 <> A:98
+binder 6779:6779 <> B:99
+binder 6781:6781 <> C:100
+R6808:6811 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6803:6806 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R6802:6802 Hilbert.CongruenceTheorem <> A:98 var
+R6807:6807 Hilbert.CongruenceTheorem <> B:99 var
+R6812:6812 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R6813:6820 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R6822:6822 Hilbert.CongruenceTheorem <> A:98 var
+R6824:6824 Hilbert.CongruenceTheorem <> B:99 var
+R6826:6826 Hilbert.CongruenceTheorem <> C:100 var
+R6828:6828 Hilbert.CongruenceTheorem <> C:100 var
+var 7111:7129 CongruenceTheorem angle_non_collinear
+R7158:7165 Hilbert.HilbertStructure <> IncPoint proj
+R7167:7167 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 7141:7141 <> A:103
+binder 7143:7143 <> B:104
+binder 7145:7145 <> C:105
+binder 7147:7148 <> A':106
+binder 7150:7151 <> B':107
+binder 7153:7154 <> C':108
+R7198:7205 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7175:7182 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R7184:7184 Hilbert.CongruenceTheorem <> A:103 var
+R7186:7186 Hilbert.CongruenceTheorem <> B:104 var
+R7188:7188 Hilbert.CongruenceTheorem <> C:105 var
+R7190:7191 Hilbert.CongruenceTheorem <> A':106 var
+R7193:7194 Hilbert.CongruenceTheorem <> B':107 var
+R7196:7197 Hilbert.CongruenceTheorem <> C':108 var
+R7206:7208 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7275:7275 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R7209:7215 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7229:7230 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7220:7226 Hilbert.HilbertStructure <> IncLine proj
+R7228:7228 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 7216:7216 <> l:109
+R7243:7246 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7231:7235 Hilbert.HilbertStructure <> Incid proj
+R7237:7237 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R7239:7240 Hilbert.CongruenceTheorem <> A':106 var
+R7242:7242 Hilbert.CongruenceTheorem <> l:109 var
+R7259:7262 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7247:7251 Hilbert.HilbertStructure <> Incid proj
+R7253:7253 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R7255:7256 Hilbert.CongruenceTheorem <> B':107 var
+R7258:7258 Hilbert.CongruenceTheorem <> l:109 var
+R7263:7267 Hilbert.HilbertStructure <> Incid proj
+R7269:7269 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R7271:7272 Hilbert.CongruenceTheorem <> C':108 var
+R7274:7274 Hilbert.CongruenceTheorem <> l:109 var
+prf 7645:7654 <> theorem_12
+R7685:7692 Hilbert.HilbertStructure <> IncPoint proj
+R7694:7694 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 7666:7666 <> A:112
+binder 7668:7668 <> B:113
+binder 7670:7671 <> C':114
+binder 7673:7674 <> A':115
+binder 7676:7677 <> B':116
+binder 7679:7681 <> C'':117
+R7708:7711 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7703:7706 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7702:7702 Hilbert.CongruenceTheorem <> A:112 var
+R7707:7707 Hilbert.CongruenceTheorem <> B:113 var
+R7719:7722 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7713:7716 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7712:7712 Hilbert.CongruenceTheorem <> B:113 var
+R7717:7718 Hilbert.CongruenceTheorem <> C':114 var
+R7730:7737 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7724:7727 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7723:7723 Hilbert.CongruenceTheorem <> A:112 var
+R7728:7729 Hilbert.CongruenceTheorem <> C':114 var
+R7746:7749 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7740:7743 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7738:7739 Hilbert.CongruenceTheorem <> A':115 var
+R7744:7745 Hilbert.CongruenceTheorem <> B':116 var
+R7759:7762 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7752:7755 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7750:7751 Hilbert.CongruenceTheorem <> B':116 var
+R7756:7758 Hilbert.CongruenceTheorem <> C'':117 var
+R7772:7779 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7765:7768 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R7763:7764 Hilbert.CongruenceTheorem <> A':115 var
+R7769:7771 Hilbert.CongruenceTheorem <> C'':117 var
+R7798:7805 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7780:7787 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R7789:7789 Hilbert.CongruenceTheorem <> A:112 var
+R7791:7791 Hilbert.CongruenceTheorem <> B:113 var
+R7793:7794 Hilbert.CongruenceTheorem <> A':115 var
+R7796:7797 Hilbert.CongruenceTheorem <> B':116 var
+R7831:7838 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7806:7813 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R7815:7815 Hilbert.CongruenceTheorem <> B:113 var
+R7817:7817 Hilbert.CongruenceTheorem <> A:112 var
+R7819:7820 Hilbert.CongruenceTheorem <> C':114 var
+R7822:7823 Hilbert.CongruenceTheorem <> B':116 var
+R7825:7826 Hilbert.CongruenceTheorem <> A':115 var
+R7828:7830 Hilbert.CongruenceTheorem <> C'':117 var
+R7864:7871 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7839:7846 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R7848:7848 Hilbert.CongruenceTheorem <> A:112 var
+R7850:7850 Hilbert.CongruenceTheorem <> B:113 var
+R7852:7853 Hilbert.CongruenceTheorem <> C':114 var
+R7855:7856 Hilbert.CongruenceTheorem <> A':115 var
+R7858:7859 Hilbert.CongruenceTheorem <> B':116 var
+R7861:7863 Hilbert.CongruenceTheorem <> C'':117 var
+R7892:7895 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7872:7879 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R7881:7881 Hilbert.CongruenceTheorem <> A:112 var
+R7883:7884 Hilbert.CongruenceTheorem <> C':114 var
+R7886:7887 Hilbert.CongruenceTheorem <> A':115 var
+R7889:7891 Hilbert.CongruenceTheorem <> C'':117 var
+R7916:7925 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R7896:7903 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R7905:7905 Hilbert.CongruenceTheorem <> B:113 var
+R7907:7908 Hilbert.CongruenceTheorem <> C':114 var
+R7910:7911 Hilbert.CongruenceTheorem <> B':116 var
+R7913:7915 Hilbert.CongruenceTheorem <> C'':117 var
+R7926:7933 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R7935:7935 Hilbert.CongruenceTheorem <> A:112 var
+R7937:7938 Hilbert.CongruenceTheorem <> C':114 var
+R7940:7940 Hilbert.CongruenceTheorem <> B:113 var
+R7942:7943 Hilbert.CongruenceTheorem <> A':115 var
+R7945:7947 Hilbert.CongruenceTheorem <> C'':117 var
+R7949:7950 Hilbert.CongruenceTheorem <> B':116 var
+R8214:8215 Hilbert.HilbertStructure <> I1 proj
+R8217:8217 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R8214:8215 Hilbert.HilbertStructure <> I1 proj
+R8217:8217 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R8282:8285 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8282:8285 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R8346:8363 Hilbert.CongruenceTheorem <> exists_ray_through prfax
+R8346:8363 Hilbert.CongruenceTheorem <> exists_ray_through prfax
+R8638:8641 Hilbert.HilbertStructure <> III1 proj
+R8643:8643 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R8645:8645 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R8647:8647 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R8638:8641 Hilbert.HilbertStructure <> III1 proj
+R8643:8643 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R8645:8645 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R8647:8647 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R8896:8909 Hilbert.CongruenceTheorem <> ray_same_angle prfax
+R8896:8909 Hilbert.CongruenceTheorem <> ray_same_angle prfax
+R9036:9049 Hilbert.CongruenceTheorem <> cong_ang_trans prfax
+R9036:9049 Hilbert.CongruenceTheorem <> cong_ang_trans prfax
+R9216:9219 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9216:9219 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9284:9294 Hilbert.CongruenceTheorem <> seg_nonzero prfax
+R9284:9294 Hilbert.CongruenceTheorem <> seg_nonzero prfax
+R9349:9352 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9349:9352 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9417:9435 Hilbert.CongruenceTheorem <> angle_non_collinear prfax
+R9417:9435 Hilbert.CongruenceTheorem <> angle_non_collinear prfax
+R9549:9559 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R9549:9559 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R9708:9711 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9708:9711 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R9867:9870 Hilbert.HilbertStructure <> III7 proj
+R9872:9872 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R9874:9874 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R9876:9876 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R9867:9870 Hilbert.HilbertStructure <> III7 proj
+R9872:9872 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R9874:9874 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R9876:9876 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R10229:10232 Hilbert.HilbertStructure <> III6 proj
+R10234:10234 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10236:10236 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R10238:10238 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R10229:10232 Hilbert.HilbertStructure <> III6 proj
+R10234:10234 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10236:10236 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R10238:10238 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R10291:10304 Hilbert.CongruenceTheorem <> cong_ang_trans prfax
+R10291:10304 Hilbert.CongruenceTheorem <> cong_ang_trans prfax
+R10462:10463 Hilbert.HilbertStructure <> I1 proj
+R10465:10465 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10462:10463 Hilbert.HilbertStructure <> I1 proj
+R10465:10465 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10586:10589 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10626:10631 Corelib.Init.Logic <> eq_sym thm
+R10586:10589 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10626:10631 Corelib.Init.Logic <> eq_sym thm
+R10664:10667 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10706:10711 Corelib.Init.Logic <> eq_sym thm
+R10664:10667 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R10706:10711 Corelib.Init.Logic <> eq_sym thm
+R10743:10747 Hilbert.HilbertStructure <> Incid proj
+R10749:10749 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10743:10747 Hilbert.HilbertStructure <> Incid proj
+R10749:10749 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R10795:10807 Hilbert.CongruenceTheorem <> ray_same_side prfax
+R10795:10807 Hilbert.CongruenceTheorem <> ray_same_side prfax
+R11021:11024 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11021:11024 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11093:11096 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11093:11096 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R11157:11172 Hilbert.CongruenceTheorem <> angle_ray_unique prfax
+R11157:11172 Hilbert.CongruenceTheorem <> angle_ray_unique prfax
+R11513:11517 Hilbert.HilbertStructure <> Incid proj
+R11519:11519 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11524:11531 Hilbert.HilbertStructure <> ray_line proj
+R11533:11533 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11535:11535 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11513:11517 Hilbert.HilbertStructure <> Incid proj
+R11519:11519 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11524:11531 Hilbert.HilbertStructure <> ray_line proj
+R11533:11533 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11535:11535 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11557:11567 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11557:11567 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11632:11636 Hilbert.HilbertStructure <> Incid proj
+R11638:11638 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11643:11650 Hilbert.HilbertStructure <> ray_line proj
+R11652:11652 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11654:11654 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11632:11636 Hilbert.HilbertStructure <> Incid proj
+R11638:11638 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11643:11650 Hilbert.HilbertStructure <> ray_line proj
+R11652:11652 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11654:11654 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11677:11687 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11677:11687 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11752:11756 Hilbert.HilbertStructure <> Incid proj
+R11758:11758 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11765:11772 Hilbert.HilbertStructure <> ray_line proj
+R11774:11774 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11776:11776 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11752:11756 Hilbert.HilbertStructure <> Incid proj
+R11758:11758 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11765:11772 Hilbert.HilbertStructure <> ray_line proj
+R11774:11774 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R11776:11776 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R11798:11808 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11798:11808 Hilbert.CongruenceTheorem <> ray_on_line prfax
+R11961:11967 Stdlib.Logic.Classical_Prop <> classic prfax
+R11971:11973 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R11961:11967 Stdlib.Logic.Classical_Prop <> classic prfax
+R11971:11973 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12133:12136 Hilbert.HilbertStructure <> III7 proj
+R12138:12138 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12140:12140 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12142:12142 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R12133:12136 Hilbert.HilbertStructure <> III7 proj
+R12138:12138 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12140:12140 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12142:12142 Hilbert.CongruenceTheorem <> CongruenceTheorem.C var
+R12299:12302 Corelib.Init.Logic <> conj constr
+R12313:12316 Corelib.Init.Logic <> conj constr
+R12299:12302 Corelib.Init.Logic <> conj constr
+R12313:12316 Corelib.Init.Logic <> conj constr
+R12551:12553 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12554:12561 Hilbert.HilbertStructure <> ray_line proj
+R12563:12563 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12565:12565 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12551:12553 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R12554:12561 Hilbert.HilbertStructure <> ray_line proj
+R12563:12563 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12565:12565 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12598:12599 Hilbert.HilbertStructure <> I2 proj
+R12601:12601 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12610:12617 Hilbert.HilbertStructure <> ray_line proj
+R12619:12619 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12621:12621 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12654:12657 Corelib.Init.Logic <> conj constr
+R12676:12679 Corelib.Init.Logic <> conj constr
+R12696:12699 Corelib.Init.Logic <> conj constr
+R12598:12599 Hilbert.HilbertStructure <> I2 proj
+R12601:12601 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12610:12617 Hilbert.HilbertStructure <> ray_line proj
+R12619:12619 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R12621:12621 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R12654:12657 Corelib.Init.Logic <> conj constr
+R12676:12679 Corelib.Init.Logic <> conj constr
+R12696:12699 Corelib.Init.Logic <> conj constr
+R13024:13028 Hilbert.HilbertStructure <> Incid proj
+R13030:13030 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13036:13043 Hilbert.HilbertStructure <> ray_line proj
+R13045:13045 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13047:13047 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13024:13028 Hilbert.HilbertStructure <> Incid proj
+R13030:13030 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13036:13043 Hilbert.HilbertStructure <> ray_line proj
+R13045:13045 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13047:13047 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13171:13175 Hilbert.HilbertStructure <> Incid proj
+R13177:13177 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13183:13190 Hilbert.HilbertStructure <> ray_line proj
+R13192:13192 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13194:13194 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13171:13175 Hilbert.HilbertStructure <> Incid proj
+R13177:13177 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13183:13190 Hilbert.HilbertStructure <> ray_line proj
+R13192:13192 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13194:13194 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13239:13256 Hilbert.CongruenceTheorem <> ray_origin_on_line prfax
+R13239:13256 Hilbert.CongruenceTheorem <> ray_origin_on_line prfax
+R13369:13371 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13352:13359 Hilbert.HilbertStructure <> ray_line proj
+R13361:13361 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13363:13363 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13369:13371 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R13352:13359 Hilbert.HilbertStructure <> ray_line proj
+R13361:13361 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13363:13363 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13403:13404 Hilbert.HilbertStructure <> I2 proj
+R13406:13406 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13409:13416 Hilbert.HilbertStructure <> ray_line proj
+R13418:13418 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13420:13420 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13458:13461 Corelib.Init.Logic <> conj constr
+R13471:13474 Corelib.Init.Logic <> conj constr
+R13484:13487 Corelib.Init.Logic <> conj constr
+R13403:13404 Hilbert.HilbertStructure <> I2 proj
+R13406:13406 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13409:13416 Hilbert.HilbertStructure <> ray_line proj
+R13418:13418 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13420:13420 Hilbert.CongruenceTheorem <> CongruenceTheorem.O var
+R13458:13461 Corelib.Init.Logic <> conj constr
+R13471:13474 Corelib.Init.Logic <> conj constr
+R13484:13487 Corelib.Init.Logic <> conj constr
+R13698:13702 Hilbert.HilbertStructure <> Incid proj
+R13704:13704 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13698:13702 Hilbert.HilbertStructure <> Incid proj
+R13704:13704 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R13977:13995 Hilbert.CongruenceTheorem <> angle_non_collinear prfax
+R13977:13995 Hilbert.CongruenceTheorem <> angle_non_collinear prfax
+prf 14502:14511 <> theorem_14
+R14547:14554 Hilbert.HilbertStructure <> IncPoint proj
+R14556:14556 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 14523:14523 <> A:118
+binder 14525:14525 <> B:119
+binder 14527:14528 <> C':120
+binder 14530:14531 <> A':121
+binder 14533:14534 <> B':122
+binder 14536:14538 <> C'':123
+binder 14540:14540 <> D:124
+binder 14542:14543 <> D':125
+R14570:14573 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14565:14568 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14564:14564 Hilbert.CongruenceTheorem <> A:118 var
+R14569:14569 Hilbert.CongruenceTheorem <> B:119 var
+R14581:14584 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14575:14578 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14574:14574 Hilbert.CongruenceTheorem <> B:119 var
+R14579:14580 Hilbert.CongruenceTheorem <> C':120 var
+R14592:14599 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14586:14589 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14585:14585 Hilbert.CongruenceTheorem <> A:118 var
+R14590:14591 Hilbert.CongruenceTheorem <> C':120 var
+R14608:14611 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14602:14605 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14600:14601 Hilbert.CongruenceTheorem <> A':121 var
+R14606:14607 Hilbert.CongruenceTheorem <> B':122 var
+R14621:14624 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14614:14617 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14612:14613 Hilbert.CongruenceTheorem <> B':122 var
+R14618:14620 Hilbert.CongruenceTheorem <> C'':123 var
+R14634:14641 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14627:14630 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14625:14626 Hilbert.CongruenceTheorem <> A':121 var
+R14631:14633 Hilbert.CongruenceTheorem <> C'':123 var
+R14648:14651 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14643:14646 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14642:14642 Hilbert.CongruenceTheorem <> D:124 var
+R14647:14647 Hilbert.CongruenceTheorem <> B:119 var
+R14658:14665 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14653:14656 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14652:14652 Hilbert.CongruenceTheorem <> D:124 var
+R14657:14657 Hilbert.CongruenceTheorem <> A:118 var
+R14674:14677 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14668:14671 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14666:14667 Hilbert.CongruenceTheorem <> D':125 var
+R14672:14673 Hilbert.CongruenceTheorem <> B':122 var
+R14686:14693 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14680:14683 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R14678:14679 Hilbert.CongruenceTheorem <> D':125 var
+R14684:14685 Hilbert.CongruenceTheorem <> A':121 var
+R14719:14726 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14694:14701 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R14703:14703 Hilbert.CongruenceTheorem <> A:118 var
+R14705:14705 Hilbert.CongruenceTheorem <> B:119 var
+R14707:14708 Hilbert.CongruenceTheorem <> C':120 var
+R14710:14711 Hilbert.CongruenceTheorem <> A':121 var
+R14713:14714 Hilbert.CongruenceTheorem <> B':122 var
+R14716:14718 Hilbert.CongruenceTheorem <> C'':123 var
+R14739:14742 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14728:14731 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R14733:14734 Hilbert.CongruenceTheorem <> C':120 var
+R14736:14736 Hilbert.CongruenceTheorem <> B:119 var
+R14738:14738 Hilbert.CongruenceTheorem <> D:124 var
+R14758:14765 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R14744:14747 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R14749:14751 Hilbert.CongruenceTheorem <> C'':123 var
+R14753:14754 Hilbert.CongruenceTheorem <> B':122 var
+R14756:14757 Hilbert.CongruenceTheorem <> D':125 var
+R14766:14773 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R14775:14775 Hilbert.CongruenceTheorem <> A:118 var
+R14777:14777 Hilbert.CongruenceTheorem <> B:119 var
+R14779:14779 Hilbert.CongruenceTheorem <> D:124 var
+R14781:14782 Hilbert.CongruenceTheorem <> A':121 var
+R14784:14785 Hilbert.CongruenceTheorem <> B':122 var
+R14787:14788 Hilbert.CongruenceTheorem <> D':125 var
+def 15087:15099 <> perpendicular
+R15108:15114 Hilbert.HilbertStructure <> IncLine proj
+R15116:15116 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15102:15102 <> l:126
+binder 15104:15104 <> m:127
+R15133:15139 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15154:15155 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15144:15151 Hilbert.HilbertStructure <> IncPoint proj
+R15153:15153 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15140:15140 <> P:128
+R15167:15170 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15156:15160 Hilbert.HilbertStructure <> Incid proj
+R15162:15162 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15164:15164 Hilbert.CongruenceTheorem <> P:128 var
+R15166:15166 Hilbert.CongruenceTheorem <> l:126 var
+R15182:15191 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15171:15175 Hilbert.HilbertStructure <> Incid proj
+R15177:15177 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15179:15179 Hilbert.CongruenceTheorem <> P:128 var
+R15181:15181 Hilbert.CongruenceTheorem <> m:127 var
+R15192:15199 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15234:15244 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R15206:15213 Hilbert.HilbertStructure <> IncPoint proj
+R15215:15215 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15200:15200 <> A:129
+R15206:15213 Hilbert.HilbertStructure <> IncPoint proj
+R15215:15215 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15202:15202 <> B:130
+R15224:15231 Hilbert.HilbertStructure <> IncPoint proj
+R15233:15233 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15219:15220 <> C':131
+R15256:15259 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15245:15249 Hilbert.HilbertStructure <> Incid proj
+R15251:15251 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15253:15253 Hilbert.CongruenceTheorem <> A:129 var
+R15255:15255 Hilbert.CongruenceTheorem <> l:126 var
+R15271:15274 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15260:15264 Hilbert.HilbertStructure <> Incid proj
+R15266:15266 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15268:15268 Hilbert.CongruenceTheorem <> B:130 var
+R15270:15270 Hilbert.CongruenceTheorem <> l:126 var
+R15287:15298 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15275:15279 Hilbert.HilbertStructure <> Incid proj
+R15281:15281 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15283:15284 Hilbert.CongruenceTheorem <> C':131 var
+R15286:15286 Hilbert.CongruenceTheorem <> m:127 var
+R15305:15308 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15300:15303 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15299:15299 Hilbert.CongruenceTheorem <> A:129 var
+R15304:15304 Hilbert.CongruenceTheorem <> P:128 var
+R15315:15318 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15310:15313 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15309:15309 Hilbert.CongruenceTheorem <> B:130 var
+R15314:15314 Hilbert.CongruenceTheorem <> P:128 var
+R15326:15337 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15321:15324 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R15319:15320 Hilbert.CongruenceTheorem <> C':131 var
+R15325:15325 Hilbert.CongruenceTheorem <> P:128 var
+R15349:15360 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15339:15342 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R15344:15344 Hilbert.CongruenceTheorem <> A:129 var
+R15346:15346 Hilbert.CongruenceTheorem <> P:128 var
+R15348:15348 Hilbert.CongruenceTheorem <> B:130 var
+R15361:15368 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R15370:15370 Hilbert.CongruenceTheorem <> A:129 var
+R15372:15372 Hilbert.CongruenceTheorem <> P:128 var
+R15374:15375 Hilbert.CongruenceTheorem <> C':131 var
+R15377:15378 Hilbert.CongruenceTheorem <> C':131 var
+R15380:15380 Hilbert.CongruenceTheorem <> P:128 var
+R15382:15382 Hilbert.CongruenceTheorem <> B:130 var
+prf 15747:15756 <> theorem_19
+R15772:15778 Hilbert.HilbertStructure <> IncLine proj
+R15780:15780 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15768:15768 <> l:132
+R15788:15795 Hilbert.HilbertStructure <> IncPoint proj
+R15797:15797 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15784:15784 <> P:133
+R15816:15823 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R15805:15809 Hilbert.HilbertStructure <> Incid proj
+R15811:15811 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15813:15813 Hilbert.CongruenceTheorem <> P:133 var
+R15815:15815 Hilbert.CongruenceTheorem <> l:132 var
+R15824:15831 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R15845:15846 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R15836:15842 Hilbert.HilbertStructure <> IncLine proj
+R15844:15844 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 15832:15832 <> m:134
+R15858:15861 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R15847:15851 Hilbert.HilbertStructure <> Incid proj
+R15853:15853 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R15855:15855 Hilbert.CongruenceTheorem <> P:133 var
+R15857:15857 Hilbert.CongruenceTheorem <> m:134 var
+R15862:15874 Hilbert.CongruenceTheorem <> perpendicular def
+R15876:15876 Hilbert.CongruenceTheorem <> l:132 var
+R15878:15878 Hilbert.CongruenceTheorem <> m:134 var
+prf 16269:16278 <> theorem_20
+R16294:16300 Hilbert.HilbertStructure <> IncLine proj
+R16302:16302 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16290:16290 <> l:135
+R16310:16317 Hilbert.HilbertStructure <> IncPoint proj
+R16319:16319 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16306:16306 <> P:136
+R16340:16347 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16327:16328 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R16329:16333 Hilbert.HilbertStructure <> Incid proj
+R16335:16335 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R16337:16337 Hilbert.CongruenceTheorem <> P:136 var
+R16339:16339 Hilbert.CongruenceTheorem <> l:135 var
+R16348:16355 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R16369:16370 Corelib.Init.Logic <> ::type_scope:'exists'_'!'_x_'..'_x_','_x not
+R16360:16366 Hilbert.HilbertStructure <> IncLine proj
+R16368:16368 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16356:16356 <> m:137
+R16382:16385 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16371:16375 Hilbert.HilbertStructure <> Incid proj
+R16377:16377 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R16379:16379 Hilbert.CongruenceTheorem <> P:136 var
+R16381:16381 Hilbert.CongruenceTheorem <> m:137 var
+R16386:16398 Hilbert.CongruenceTheorem <> perpendicular def
+R16400:16400 Hilbert.CongruenceTheorem <> l:135 var
+R16402:16402 Hilbert.CongruenceTheorem <> m:137 var
+prf 16792:16801 <> theorem_21
+R16822:16829 Hilbert.HilbertStructure <> IncPoint proj
+R16831:16831 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16813:16813 <> A:138
+binder 16815:16815 <> B:139
+binder 16817:16818 <> C':140
+R16845:16848 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16840:16843 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R16839:16839 Hilbert.CongruenceTheorem <> A:138 var
+R16844:16844 Hilbert.CongruenceTheorem <> B:139 var
+R16856:16859 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16850:16853 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R16849:16849 Hilbert.CongruenceTheorem <> B:139 var
+R16854:16855 Hilbert.CongruenceTheorem <> C':140 var
+R16867:16874 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16861:16864 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R16860:16860 Hilbert.CongruenceTheorem <> A:138 var
+R16865:16866 Hilbert.CongruenceTheorem <> C':140 var
+R16875:16875 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17025:17033 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R16876:16883 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16914:16922 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R16888:16894 Hilbert.HilbertStructure <> IncLine proj
+R16896:16896 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16884:16884 <> l:141
+R16904:16911 Hilbert.HilbertStructure <> IncPoint proj
+R16913:16913 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 16900:16900 <> D:142
+R16934:16937 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16923:16927 Hilbert.HilbertStructure <> Incid proj
+R16929:16929 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R16931:16931 Hilbert.CongruenceTheorem <> B:139 var
+R16933:16933 Hilbert.CongruenceTheorem <> l:141 var
+R16950:16959 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16938:16942 Hilbert.HilbertStructure <> Incid proj
+R16944:16944 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R16946:16947 Hilbert.CongruenceTheorem <> C':140 var
+R16949:16949 Hilbert.CongruenceTheorem <> l:141 var
+R16971:16980 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16960:16964 Hilbert.HilbertStructure <> Incid proj
+R16966:16966 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R16968:16968 Hilbert.CongruenceTheorem <> D:142 var
+R16970:16970 Hilbert.CongruenceTheorem <> l:141 var
+R16993:17002 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R16982:16985 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R16987:16987 Hilbert.CongruenceTheorem <> D:142 var
+R16989:16990 Hilbert.CongruenceTheorem <> C':140 var
+R16992:16992 Hilbert.CongruenceTheorem <> B:139 var
+R17003:17010 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R17012:17012 Hilbert.CongruenceTheorem <> A:138 var
+R17014:17015 Hilbert.CongruenceTheorem <> C':140 var
+R17017:17017 Hilbert.CongruenceTheorem <> D:142 var
+R17019:17019 Hilbert.CongruenceTheorem <> A:138 var
+R17021:17022 Hilbert.CongruenceTheorem <> C':140 var
+R17024:17024 Hilbert.CongruenceTheorem <> B:139 var
+R17053:17056 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R17034:17035 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17036:17043 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R17045:17045 Hilbert.CongruenceTheorem <> A:138 var
+R17047:17047 Hilbert.CongruenceTheorem <> B:139 var
+R17049:17049 Hilbert.CongruenceTheorem <> A:138 var
+R17051:17052 Hilbert.CongruenceTheorem <> C':140 var
+R17057:17058 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17059:17066 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R17068:17068 Hilbert.CongruenceTheorem <> A:138 var
+R17070:17070 Hilbert.CongruenceTheorem <> B:139 var
+R17072:17072 Hilbert.CongruenceTheorem <> B:139 var
+R17074:17075 Hilbert.CongruenceTheorem <> C':140 var
+prf 17468:17477 <> theorem_22
+R17500:17507 Hilbert.HilbertStructure <> IncPoint proj
+R17509:17509 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 17489:17489 <> A:143
+binder 17491:17491 <> B:144
+binder 17493:17494 <> C':145
+binder 17496:17496 <> D:146
+R17517:17523 Hilbert.HilbertStructure <> IncLine proj
+R17525:17525 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 17513:17513 <> l:147
+R17601:17608 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17533:17535 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17600:17600 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17536:17542 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17556:17557 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R17547:17553 Hilbert.HilbertStructure <> IncLine proj
+R17555:17555 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 17543:17543 <> m:148
+R17569:17572 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R17558:17562 Hilbert.HilbertStructure <> Incid proj
+R17564:17564 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17566:17566 Hilbert.CongruenceTheorem <> A:143 var
+R17568:17568 Hilbert.CongruenceTheorem <> m:148 var
+R17584:17587 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R17573:17577 Hilbert.HilbertStructure <> Incid proj
+R17579:17579 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17581:17581 Hilbert.CongruenceTheorem <> B:144 var
+R17583:17583 Hilbert.CongruenceTheorem <> m:148 var
+R17588:17592 Hilbert.HilbertStructure <> Incid proj
+R17594:17594 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17596:17597 Hilbert.CongruenceTheorem <> C':145 var
+R17599:17599 Hilbert.CongruenceTheorem <> m:148 var
+R17620:17623 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17609:17613 Hilbert.HilbertStructure <> Incid proj
+R17615:17615 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17617:17617 Hilbert.CongruenceTheorem <> A:143 var
+R17619:17619 Hilbert.CongruenceTheorem <> l:147 var
+R17636:17639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17624:17628 Hilbert.HilbertStructure <> Incid proj
+R17630:17630 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17632:17633 Hilbert.CongruenceTheorem <> C':145 var
+R17635:17635 Hilbert.CongruenceTheorem <> l:147 var
+R17651:17658 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17640:17644 Hilbert.HilbertStructure <> Incid proj
+R17646:17646 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R17648:17648 Hilbert.CongruenceTheorem <> D:146 var
+R17650:17650 Hilbert.CongruenceTheorem <> l:147 var
+R17671:17678 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R17660:17663 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R17665:17665 Hilbert.CongruenceTheorem <> A:143 var
+R17667:17668 Hilbert.CongruenceTheorem <> C':145 var
+R17670:17670 Hilbert.CongruenceTheorem <> D:146 var
+R17703:17706 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R17679:17680 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17681:17688 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R17690:17690 Hilbert.CongruenceTheorem <> B:144 var
+R17692:17693 Hilbert.CongruenceTheorem <> C':145 var
+R17695:17695 Hilbert.CongruenceTheorem <> D:146 var
+R17697:17698 Hilbert.CongruenceTheorem <> C':145 var
+R17700:17700 Hilbert.CongruenceTheorem <> A:143 var
+R17702:17702 Hilbert.CongruenceTheorem <> B:144 var
+R17707:17708 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R17709:17716 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R17718:17718 Hilbert.CongruenceTheorem <> B:144 var
+R17720:17721 Hilbert.CongruenceTheorem <> C':145 var
+R17723:17723 Hilbert.CongruenceTheorem <> D:146 var
+R17725:17725 Hilbert.CongruenceTheorem <> A:143 var
+R17727:17727 Hilbert.CongruenceTheorem <> B:144 var
+R17729:17730 Hilbert.CongruenceTheorem <> C':145 var
+prf 18119:18128 <> theorem_23
+R18146:18152 Hilbert.HilbertStructure <> IncLine proj
+R18154:18154 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 18140:18140 <> l:149
+binder 18142:18142 <> m:150
+R18166:18173 Hilbert.HilbertStructure <> IncPoint proj
+R18175:18175 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 18158:18158 <> P:151
+binder 18160:18160 <> F:152
+binder 18162:18162 <> Q:153
+R18196:18203 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18183:18184 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R18185:18189 Hilbert.HilbertStructure <> Incid proj
+R18191:18191 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18193:18193 Hilbert.CongruenceTheorem <> P:151 var
+R18195:18195 Hilbert.CongruenceTheorem <> l:149 var
+R18215:18218 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18204:18208 Hilbert.HilbertStructure <> Incid proj
+R18210:18210 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18212:18212 Hilbert.CongruenceTheorem <> P:151 var
+R18214:18214 Hilbert.CongruenceTheorem <> m:150 var
+R18230:18237 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18219:18223 Hilbert.HilbertStructure <> Incid proj
+R18225:18225 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18227:18227 Hilbert.CongruenceTheorem <> F:152 var
+R18229:18229 Hilbert.CongruenceTheorem <> m:150 var
+R18249:18252 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18238:18242 Hilbert.HilbertStructure <> Incid proj
+R18244:18244 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18246:18246 Hilbert.CongruenceTheorem <> F:152 var
+R18248:18248 Hilbert.CongruenceTheorem <> l:149 var
+R18264:18271 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18253:18257 Hilbert.HilbertStructure <> Incid proj
+R18259:18259 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18261:18261 Hilbert.CongruenceTheorem <> Q:153 var
+R18263:18263 Hilbert.CongruenceTheorem <> l:149 var
+R18278:18285 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18273:18276 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R18272:18272 Hilbert.CongruenceTheorem <> Q:153 var
+R18277:18277 Hilbert.CongruenceTheorem <> F:152 var
+R18303:18310 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18286:18298 Hilbert.CongruenceTheorem <> perpendicular def
+R18300:18300 Hilbert.CongruenceTheorem <> l:149 var
+R18302:18302 Hilbert.CongruenceTheorem <> m:150 var
+R18311:18312 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R18313:18320 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R18322:18322 Hilbert.CongruenceTheorem <> P:151 var
+R18324:18324 Hilbert.CongruenceTheorem <> F:152 var
+R18326:18326 Hilbert.CongruenceTheorem <> P:151 var
+R18328:18328 Hilbert.CongruenceTheorem <> Q:153 var
+prf 18721:18730 <> theorem_24
+R18752:18759 Hilbert.HilbertStructure <> IncPoint proj
+R18761:18761 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 18742:18742 <> A:154
+binder 18744:18744 <> B:155
+binder 18746:18746 <> M:156
+binder 18748:18748 <> P:157
+R18771:18777 Hilbert.HilbertStructure <> IncLine proj
+R18779:18779 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 18765:18765 <> l:158
+binder 18767:18767 <> m:159
+R18793:18796 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18788:18791 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R18787:18787 Hilbert.CongruenceTheorem <> A:154 var
+R18792:18792 Hilbert.CongruenceTheorem <> B:155 var
+R18803:18806 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18798:18801 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R18797:18797 Hilbert.CongruenceTheorem <> M:156 var
+R18802:18802 Hilbert.CongruenceTheorem <> A:154 var
+R18813:18816 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18808:18811 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R18807:18807 Hilbert.CongruenceTheorem <> M:156 var
+R18812:18812 Hilbert.CongruenceTheorem <> B:155 var
+R18823:18830 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18818:18821 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R18817:18817 Hilbert.CongruenceTheorem <> P:157 var
+R18822:18822 Hilbert.CongruenceTheorem <> M:156 var
+R18842:18845 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18831:18835 Hilbert.HilbertStructure <> Incid proj
+R18837:18837 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18839:18839 Hilbert.CongruenceTheorem <> A:154 var
+R18841:18841 Hilbert.CongruenceTheorem <> m:159 var
+R18857:18864 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18846:18850 Hilbert.HilbertStructure <> Incid proj
+R18852:18852 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18854:18854 Hilbert.CongruenceTheorem <> B:155 var
+R18856:18856 Hilbert.CongruenceTheorem <> m:159 var
+R18876:18883 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18865:18869 Hilbert.HilbertStructure <> Incid proj
+R18871:18871 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18873:18873 Hilbert.CongruenceTheorem <> M:156 var
+R18875:18875 Hilbert.CongruenceTheorem <> m:159 var
+R18895:18902 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18885:18888 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R18890:18890 Hilbert.CongruenceTheorem <> A:154 var
+R18892:18892 Hilbert.CongruenceTheorem <> M:156 var
+R18894:18894 Hilbert.CongruenceTheorem <> B:155 var
+R18919:18926 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18903:18910 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R18912:18912 Hilbert.CongruenceTheorem <> A:154 var
+R18914:18914 Hilbert.CongruenceTheorem <> M:156 var
+R18916:18916 Hilbert.CongruenceTheorem <> B:155 var
+R18918:18918 Hilbert.CongruenceTheorem <> M:156 var
+R18938:18941 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18927:18931 Hilbert.HilbertStructure <> Incid proj
+R18933:18933 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18935:18935 Hilbert.CongruenceTheorem <> P:157 var
+R18937:18937 Hilbert.CongruenceTheorem <> l:158 var
+R18953:18960 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18942:18946 Hilbert.HilbertStructure <> Incid proj
+R18948:18948 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R18950:18950 Hilbert.CongruenceTheorem <> M:156 var
+R18952:18952 Hilbert.CongruenceTheorem <> l:158 var
+R18978:18985 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R18961:18973 Hilbert.CongruenceTheorem <> perpendicular def
+R18975:18975 Hilbert.CongruenceTheorem <> m:159 var
+R18977:18977 Hilbert.CongruenceTheorem <> l:158 var
+R18986:18993 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R18995:18995 Hilbert.CongruenceTheorem <> P:157 var
+R18997:18997 Hilbert.CongruenceTheorem <> A:154 var
+R18999:18999 Hilbert.CongruenceTheorem <> P:157 var
+R19001:19001 Hilbert.CongruenceTheorem <> B:155 var
+prf 19395:19404 <> theorem_25
+R19426:19433 Hilbert.HilbertStructure <> IncPoint proj
+R19435:19435 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 19416:19416 <> A:160
+binder 19418:19418 <> B:161
+binder 19420:19420 <> M:162
+binder 19422:19422 <> P:163
+R19443:19449 Hilbert.HilbertStructure <> IncLine proj
+R19451:19451 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 19439:19439 <> m:164
+R19465:19468 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19460:19463 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R19459:19459 Hilbert.CongruenceTheorem <> A:160 var
+R19464:19464 Hilbert.CongruenceTheorem <> B:161 var
+R19475:19478 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19470:19473 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R19469:19469 Hilbert.CongruenceTheorem <> M:162 var
+R19474:19474 Hilbert.CongruenceTheorem <> A:160 var
+R19485:19488 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19480:19483 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R19479:19479 Hilbert.CongruenceTheorem <> M:162 var
+R19484:19484 Hilbert.CongruenceTheorem <> B:161 var
+R19495:19502 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19490:19493 Corelib.Init.Logic <> ::type_scope:x_'<>'_x not
+R19489:19489 Hilbert.CongruenceTheorem <> P:163 var
+R19494:19494 Hilbert.CongruenceTheorem <> M:162 var
+R19514:19517 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19503:19507 Hilbert.HilbertStructure <> Incid proj
+R19509:19509 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R19511:19511 Hilbert.CongruenceTheorem <> A:160 var
+R19513:19513 Hilbert.CongruenceTheorem <> m:164 var
+R19529:19532 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19518:19522 Hilbert.HilbertStructure <> Incid proj
+R19524:19524 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R19526:19526 Hilbert.CongruenceTheorem <> B:161 var
+R19528:19528 Hilbert.CongruenceTheorem <> m:164 var
+R19544:19551 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19533:19537 Hilbert.HilbertStructure <> Incid proj
+R19539:19539 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R19541:19541 Hilbert.CongruenceTheorem <> M:162 var
+R19543:19543 Hilbert.CongruenceTheorem <> m:164 var
+R19563:19570 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19553:19556 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R19558:19558 Hilbert.CongruenceTheorem <> A:160 var
+R19560:19560 Hilbert.CongruenceTheorem <> M:162 var
+R19562:19562 Hilbert.CongruenceTheorem <> B:161 var
+R19587:19594 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19571:19578 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R19580:19580 Hilbert.CongruenceTheorem <> A:160 var
+R19582:19582 Hilbert.CongruenceTheorem <> M:162 var
+R19584:19584 Hilbert.CongruenceTheorem <> B:161 var
+R19586:19586 Hilbert.CongruenceTheorem <> M:162 var
+R19611:19618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R19595:19602 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R19604:19604 Hilbert.CongruenceTheorem <> P:163 var
+R19606:19606 Hilbert.CongruenceTheorem <> A:160 var
+R19608:19608 Hilbert.CongruenceTheorem <> P:163 var
+R19610:19610 Hilbert.CongruenceTheorem <> B:161 var
+R19619:19625 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19639:19640 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R19630:19636 Hilbert.HilbertStructure <> IncLine proj
+R19638:19638 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 19626:19626 <> l:165
+R19652:19655 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R19641:19645 Hilbert.HilbertStructure <> Incid proj
+R19647:19647 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R19649:19649 Hilbert.CongruenceTheorem <> P:163 var
+R19651:19651 Hilbert.CongruenceTheorem <> l:165 var
+R19667:19670 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R19656:19660 Hilbert.HilbertStructure <> Incid proj
+R19662:19662 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R19664:19664 Hilbert.CongruenceTheorem <> M:162 var
+R19666:19666 Hilbert.CongruenceTheorem <> l:165 var
+R19671:19683 Hilbert.CongruenceTheorem <> perpendicular def
+R19685:19685 Hilbert.CongruenceTheorem <> m:164 var
+R19687:19687 Hilbert.CongruenceTheorem <> l:165 var
+prf 20080:20089 <> theorem_26
+R20110:20117 Hilbert.HilbertStructure <> IncPoint proj
+R20119:20119 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20101:20101 <> A:166
+binder 20103:20103 <> B:167
+binder 20105:20106 <> C':168
+R20135:20141 Hilbert.HilbertStructure <> IncLine proj
+R20143:20143 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20123:20126 <> m_AB:169
+binder 20128:20131 <> m_BC:170
+R20219:20226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20151:20153 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R20218:20218 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R20154:20160 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20174:20175 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20165:20171 Hilbert.HilbertStructure <> IncLine proj
+R20173:20173 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20161:20161 <> l:171
+R20187:20190 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20176:20180 Hilbert.HilbertStructure <> Incid proj
+R20182:20182 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20184:20184 Hilbert.CongruenceTheorem <> A:166 var
+R20186:20186 Hilbert.CongruenceTheorem <> l:171 var
+R20202:20205 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20191:20195 Hilbert.HilbertStructure <> Incid proj
+R20197:20197 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20199:20199 Hilbert.CongruenceTheorem <> B:167 var
+R20201:20201 Hilbert.CongruenceTheorem <> l:171 var
+R20206:20210 Hilbert.HilbertStructure <> Incid proj
+R20212:20212 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20214:20215 Hilbert.CongruenceTheorem <> C':168 var
+R20217:20217 Hilbert.CongruenceTheorem <> l:171 var
+R20227:20227 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20501:20509 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R20228:20235 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20273:20281 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20243:20250 Hilbert.HilbertStructure <> IncPoint proj
+R20252:20252 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20236:20239 <> M_AB:172
+R20263:20270 Hilbert.HilbertStructure <> IncPoint proj
+R20272:20272 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20256:20259 <> M_BC:173
+R20299:20302 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20282:20286 Hilbert.HilbertStructure <> Incid proj
+R20288:20288 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20290:20293 Hilbert.CongruenceTheorem <> M_AB:172 var
+R20295:20298 Hilbert.CongruenceTheorem <> m_AB:169 var
+R20317:20320 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20303:20307 Hilbert.HilbertStructure <> Incid proj
+R20309:20309 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20311:20311 Hilbert.CongruenceTheorem <> A:166 var
+R20313:20316 Hilbert.CongruenceTheorem <> m_AB:169 var
+R20335:20344 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20321:20325 Hilbert.HilbertStructure <> Incid proj
+R20327:20327 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20329:20329 Hilbert.CongruenceTheorem <> B:167 var
+R20331:20334 Hilbert.CongruenceTheorem <> m_AB:169 var
+R20359:20362 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20346:20349 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R20351:20351 Hilbert.CongruenceTheorem <> A:166 var
+R20353:20356 Hilbert.CongruenceTheorem <> M_AB:172 var
+R20358:20358 Hilbert.CongruenceTheorem <> B:167 var
+R20385:20394 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20363:20370 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R20372:20372 Hilbert.CongruenceTheorem <> A:166 var
+R20374:20377 Hilbert.CongruenceTheorem <> M_AB:172 var
+R20379:20379 Hilbert.CongruenceTheorem <> B:167 var
+R20381:20384 Hilbert.CongruenceTheorem <> M_AB:172 var
+R20412:20415 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20395:20399 Hilbert.HilbertStructure <> Incid proj
+R20401:20401 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20403:20406 Hilbert.CongruenceTheorem <> M_BC:173 var
+R20408:20411 Hilbert.CongruenceTheorem <> m_BC:170 var
+R20430:20433 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20416:20420 Hilbert.HilbertStructure <> Incid proj
+R20422:20422 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20424:20424 Hilbert.CongruenceTheorem <> B:167 var
+R20426:20429 Hilbert.CongruenceTheorem <> m_BC:170 var
+R20449:20458 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20434:20438 Hilbert.HilbertStructure <> Incid proj
+R20440:20440 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20442:20443 Hilbert.CongruenceTheorem <> C':168 var
+R20445:20448 Hilbert.CongruenceTheorem <> m_BC:170 var
+R20474:20477 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20460:20463 Hilbert.CongruenceTheorem <> CongruenceTheorem.Bet' var
+R20465:20465 Hilbert.CongruenceTheorem <> B:167 var
+R20467:20470 Hilbert.CongruenceTheorem <> M_BC:173 var
+R20472:20473 Hilbert.CongruenceTheorem <> C':168 var
+R20478:20485 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R20487:20487 Hilbert.CongruenceTheorem <> B:167 var
+R20489:20492 Hilbert.CongruenceTheorem <> M_BC:173 var
+R20494:20495 Hilbert.CongruenceTheorem <> C':168 var
+R20497:20500 Hilbert.CongruenceTheorem <> M_BC:173 var
+R20510:20516 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20532:20539 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20522:20529 Hilbert.HilbertStructure <> IncPoint proj
+R20531:20531 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20517:20518 <> O':174
+R20540:20540 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20734:20744 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20541:20547 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20574:20583 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R20565:20571 Hilbert.HilbertStructure <> IncLine proj
+R20573:20573 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20548:20551 <> l_AB:175
+R20565:20571 Hilbert.HilbertStructure <> IncLine proj
+R20573:20573 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20553:20556 <> l_BC:176
+R20565:20571 Hilbert.HilbertStructure <> IncLine proj
+R20573:20573 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 20558:20561 <> l_AC:177
+R20599:20602 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20584:20588 Hilbert.HilbertStructure <> Incid proj
+R20590:20590 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20592:20593 Hilbert.CongruenceTheorem <> O':174 var
+R20595:20598 Hilbert.CongruenceTheorem <> l_AB:175 var
+R20626:20637 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20603:20615 Hilbert.CongruenceTheorem <> perpendicular def
+R20617:20620 Hilbert.CongruenceTheorem <> m_AB:169 var
+R20622:20625 Hilbert.CongruenceTheorem <> l_AB:175 var
+R20653:20656 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20638:20642 Hilbert.HilbertStructure <> Incid proj
+R20644:20644 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20646:20647 Hilbert.CongruenceTheorem <> O':174 var
+R20649:20652 Hilbert.CongruenceTheorem <> l_BC:176 var
+R20680:20691 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20657:20669 Hilbert.CongruenceTheorem <> perpendicular def
+R20671:20674 Hilbert.CongruenceTheorem <> m_BC:170 var
+R20676:20679 Hilbert.CongruenceTheorem <> l_BC:176 var
+R20707:20710 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20692:20696 Hilbert.HilbertStructure <> Incid proj
+R20698:20698 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R20700:20701 Hilbert.CongruenceTheorem <> O':174 var
+R20703:20706 Hilbert.CongruenceTheorem <> l_AC:177 var
+R20711:20723 Hilbert.CongruenceTheorem <> perpendicular def
+R20725:20728 Hilbert.CongruenceTheorem <> m_AB:169 var
+R20730:20733 Hilbert.CongruenceTheorem <> l_AC:177 var
+R20763:20766 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20745:20752 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R20754:20755 Hilbert.CongruenceTheorem <> O':174 var
+R20757:20757 Hilbert.CongruenceTheorem <> A:166 var
+R20759:20760 Hilbert.CongruenceTheorem <> O':174 var
+R20762:20762 Hilbert.CongruenceTheorem <> B:167 var
+R20786:20789 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R20767:20774 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R20776:20777 Hilbert.CongruenceTheorem <> O':174 var
+R20779:20779 Hilbert.CongruenceTheorem <> B:167 var
+R20781:20782 Hilbert.CongruenceTheorem <> O':174 var
+R20784:20785 Hilbert.CongruenceTheorem <> C':168 var
+R20790:20797 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongSeg' var
+R20799:20800 Hilbert.CongruenceTheorem <> O':174 var
+R20802:20802 Hilbert.CongruenceTheorem <> A:166 var
+R20804:20805 Hilbert.CongruenceTheorem <> O':174 var
+R20807:20808 Hilbert.CongruenceTheorem <> C':168 var
+prf 21201:21210 <> theorem_27
+R21231:21238 Hilbert.HilbertStructure <> IncPoint proj
+R21240:21240 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 21222:21222 <> A:178
+binder 21224:21224 <> B:179
+binder 21226:21227 <> C':180
+R21316:21323 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R21248:21250 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R21315:21315 Corelib.Init.Logic <> ::type_scope:'~'_x not
+R21251:21257 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21271:21272 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21262:21268 Hilbert.HilbertStructure <> IncLine proj
+R21270:21270 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 21258:21258 <> l:181
+R21284:21287 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R21273:21277 Hilbert.HilbertStructure <> Incid proj
+R21279:21279 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R21281:21281 Hilbert.CongruenceTheorem <> A:178 var
+R21283:21283 Hilbert.CongruenceTheorem <> l:181 var
+R21299:21302 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R21288:21292 Hilbert.HilbertStructure <> Incid proj
+R21294:21294 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R21296:21296 Hilbert.CongruenceTheorem <> B:179 var
+R21298:21298 Hilbert.CongruenceTheorem <> l:181 var
+R21303:21307 Hilbert.HilbertStructure <> Incid proj
+R21309:21309 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+R21311:21312 Hilbert.CongruenceTheorem <> C':180 var
+R21314:21314 Hilbert.CongruenceTheorem <> l:181 var
+R21324:21330 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21346:21353 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R21336:21343 Hilbert.HilbertStructure <> IncPoint proj
+R21345:21345 Hilbert.CongruenceTheorem <> CongruenceTheorem.I var
+binder 21331:21332 <> O':182
+R21377:21386 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R21354:21361 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R21363:21364 Hilbert.CongruenceTheorem <> C':180 var
+R21366:21366 Hilbert.CongruenceTheorem <> A:178 var
+R21368:21369 Hilbert.CongruenceTheorem <> O':182 var
+R21371:21372 Hilbert.CongruenceTheorem <> O':182 var
+R21374:21374 Hilbert.CongruenceTheorem <> A:178 var
+R21376:21376 Hilbert.CongruenceTheorem <> B:179 var
+R21410:21419 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R21387:21394 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R21396:21396 Hilbert.CongruenceTheorem <> A:178 var
+R21398:21398 Hilbert.CongruenceTheorem <> B:179 var
+R21400:21401 Hilbert.CongruenceTheorem <> O':182 var
+R21403:21404 Hilbert.CongruenceTheorem <> O':182 var
+R21406:21406 Hilbert.CongruenceTheorem <> B:179 var
+R21408:21409 Hilbert.CongruenceTheorem <> C':180 var
+R21420:21427 Hilbert.CongruenceTheorem <> CongruenceTheorem.CongAng' var
+R21429:21429 Hilbert.CongruenceTheorem <> B:179 var
+R21431:21432 Hilbert.CongruenceTheorem <> C':180 var
+R21434:21435 Hilbert.CongruenceTheorem <> O':182 var
+R21437:21438 Hilbert.CongruenceTheorem <> O':182 var
+R21440:21441 Hilbert.CongruenceTheorem <> C':180 var
+R21443:21443 Hilbert.CongruenceTheorem <> A:178 var

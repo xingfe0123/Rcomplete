@@ -1,0 +1,459 @@
+DIGEST 1715c87ccd31c776657e128fa6353aac
+FSphereClassification.KillingHopf
+R482:486 Stdlib.Reals.Reals <> <> lib
+R504:517 Stdlib.Logic.Classical_Prop <> <> lib
+R535:537 Stdlib.micromega.Lra <> <> lib
+R539:549 Stdlib.Reals.RIneq <> <> lib
+R567:590 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R608:616 Stdlib.Logic.Classical <> <> lib
+R656:684 SphereClassification.Topology <> <> lib
+R702:738 SphereClassification.FundamentalGroup <> <> lib
+R756:784 SphereClassification.Manifold <> <> lib
+R802:835 SphereClassification.RiemannMetric <> <> lib
+R853:886 SphereClassification.RiemannTensor <> <> lib
+R904:932 SphereClassification.Geodesic <> <> lib
+R950:979 SphereClassification.HopfRinow <> <> lib
+ind 1222:1232 <> IsIsometric
+constr 1320:1332 <> mkIsIsometric
+R1243:1251 SphereClassification.Manifold <> Manifold3 rec
+binder 1235:1236 <> M1:1
+binder 1238:1239 <> M2:2
+R1260:1275 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1277:1278 SphereClassification.KillingHopf <> M1:1 var
+binder 1255:1256 <> g1:3
+R1287:1302 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1304:1305 SphereClassification.KillingHopf <> M2:2 var
+binder 1282:1283 <> g2:4
+R1340:1343 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1344:1354 SphereClassification.KillingHopf <> IsIsometric:5 ind
+R1365:1366 SphereClassification.KillingHopf <> g2:4 var
+R1362:1363 SphereClassification.KillingHopf <> g1:3 var
+R1359:1360 SphereClassification.KillingHopf <> M2:2 var
+R1356:1357 SphereClassification.KillingHopf <> M1:1 var
+scheme 1222:1232 <> IsIsometric_ind
+scheme 1222:1232 <> IsIsometric_sind
+ind 1609:1621 <> SpaceFormType
+constr 1637:1645 <> SF_Sphere
+constr 1672:1683 <> SF_Euclidean
+constr 1707:1719 <> SF_Hyperbolic
+scheme 1609:1621 <> SpaceFormType_rect
+scheme 1609:1621 <> SpaceFormType_ind
+scheme 1609:1621 <> SpaceFormType_rec
+scheme 1609:1621 <> SpaceFormType_sind
+ax 1751:1769 <> standard_space_form
+R1786:1789 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1773:1785 SphereClassification.KillingHopf <> SpaceFormType ind
+R1790:1798 SphereClassification.Manifold <> Manifold3 rec
+ax 1811:1836 <> standard_space_form_metric
+R1854:1866 SphereClassification.KillingHopf <> SpaceFormType ind
+binder 1848:1850 <> sft:11
+R1870:1885 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1888:1906 SphereClassification.KillingHopf <> standard_space_form defax
+R1908:1910 SphereClassification.KillingHopf <> sft:11 var
+rec 1922:1940 <> IsStandardSpaceForm
+proj 2012:2018 <> sf_type
+proj 2039:2050 <> sf_curvature
+proj 2059:2076 <> sf_curvature_range
+proj 2228:2239 <> sf_isometric
+R1947:1955 SphereClassification.Manifold <> Manifold3 rec
+binder 1943:1943 <> M:14
+R1963:1978 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1980:1980 SphereClassification.KillingHopf <> M:14 var
+binder 1959:1959 <> g:15
+R2022:2034 SphereClassification.KillingHopf <> SpaceFormType ind
+R2054:2054 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R2086:2092 SphereClassification.KillingHopf <> sf_type:17 meth
+R2105:2113 SphereClassification.KillingHopf <> SF_Sphere constr
+R2134:2136 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2122:2133 SphereClassification.KillingHopf <> sf_curvature:18 meth
+R2145:2156 SphereClassification.KillingHopf <> SF_Euclidean constr
+R2174:2176 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2162:2173 SphereClassification.KillingHopf <> sf_curvature:18 meth
+R2185:2197 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R2214:2216 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2202:2213 SphereClassification.KillingHopf <> sf_curvature:18 meth
+R2243:2253 SphereClassification.KillingHopf <> IsIsometric ind
+R2255:2255 SphereClassification.KillingHopf <> M:14 var
+R2258:2276 SphereClassification.KillingHopf <> standard_space_form defax
+R2278:2284 SphereClassification.KillingHopf <> sf_type:17 meth
+R2287:2287 SphereClassification.KillingHopf <> g:15 var
+R2290:2315 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R2317:2323 SphereClassification.KillingHopf <> sf_type:17 meth
+def 2570:2589 <> HasConstantCurvature
+R2596:2604 SphereClassification.Manifold <> Manifold3 rec
+binder 2592:2592 <> M:22
+R2612:2627 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2629:2629 SphereClassification.KillingHopf <> M:22 var
+binder 2608:2608 <> g:23
+R2637:2637 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2633:2633 <> K:24
+R2664:2670 SphereClassification.Manifold <> sm_type proj
+R2672:2672 SphereClassification.KillingHopf <> M:22 var
+binder 2660:2660 <> p:25
+R2682:2700 SphereClassification.RiemannMetric <> TangentSpaceType_of def
+R2702:2702 SphereClassification.KillingHopf <> M:22 var
+binder 2676:2676 <> u:26
+binder 2678:2678 <> v:27
+R2745:2747 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2710:2734 SphereClassification.RiemannTensor <> sectional_curvature_alias def
+R2736:2736 SphereClassification.KillingHopf <> M:22 var
+R2738:2738 SphereClassification.KillingHopf <> g:23 var
+R2740:2740 SphereClassification.KillingHopf <> p:25 var
+R2742:2742 SphereClassification.KillingHopf <> u:26 var
+R2744:2744 SphereClassification.KillingHopf <> v:27 var
+R2748:2748 SphereClassification.KillingHopf <> K:24 var
+def 2763:2790 <> HasPositiveConstantCurvature
+R2797:2805 SphereClassification.Manifold <> Manifold3 rec
+binder 2793:2793 <> M:28
+R2813:2828 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2830:2830 SphereClassification.KillingHopf <> M:28 var
+binder 2809:2809 <> g:29
+R2845:2851 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2857:2858 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2856:2856 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2852:2852 <> K:30
+R2864:2867 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R2860:2862 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2859:2859 SphereClassification.KillingHopf <> K:30 var
+R2868:2887 SphereClassification.KillingHopf <> HasConstantCurvature def
+R2889:2889 SphereClassification.KillingHopf <> M:28 var
+R2891:2891 SphereClassification.KillingHopf <> g:29 var
+R2893:2893 SphereClassification.KillingHopf <> K:30 var
+def 2908:2931 <> HasZeroConstantCurvature
+R2938:2946 SphereClassification.Manifold <> Manifold3 rec
+binder 2934:2934 <> M:31
+R2954:2969 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2971:2971 SphereClassification.KillingHopf <> M:31 var
+binder 2950:2950 <> g:32
+R2986:2992 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2998:2999 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2997:2997 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2993:2993 <> K:33
+R3005:3008 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3001:3003 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R3000:3000 SphereClassification.KillingHopf <> K:33 var
+R3009:3028 SphereClassification.KillingHopf <> HasConstantCurvature def
+R3030:3030 SphereClassification.KillingHopf <> M:31 var
+R3032:3032 SphereClassification.KillingHopf <> g:32 var
+R3034:3034 SphereClassification.KillingHopf <> K:33 var
+def 3049:3076 <> HasNegativeConstantCurvature
+R3083:3091 SphereClassification.Manifold <> Manifold3 rec
+binder 3079:3079 <> M:34
+R3099:3114 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3116:3116 SphereClassification.KillingHopf <> M:34 var
+binder 3095:3095 <> g:35
+R3131:3137 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3143:3144 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3142:3142 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3138:3138 <> K:36
+R3150:3153 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R3146:3148 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3145:3145 SphereClassification.KillingHopf <> K:36 var
+R3154:3173 SphereClassification.KillingHopf <> HasConstantCurvature def
+R3175:3175 SphereClassification.KillingHopf <> M:34 var
+R3177:3177 SphereClassification.KillingHopf <> g:35 var
+R3179:3179 SphereClassification.KillingHopf <> K:36 var
+ax 3828:3846 <> cartan_exp_covering
+R3864:3872 SphereClassification.Manifold <> Manifold3 rec
+binder 3860:3860 <> M:37
+R3880:3895 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3897:3897 SphereClassification.KillingHopf <> M:37 var
+binder 3876:3876 <> g:38
+R3905:3905 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3901:3901 <> K:39
+R3935:3942 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3913:3930 SphereClassification.HopfRinow <> is_metric_complete def
+R3932:3932 SphereClassification.KillingHopf <> M:37 var
+R3934:3934 SphereClassification.KillingHopf <> g:38 var
+R3969:3976 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3943:3962 SphereClassification.KillingHopf <> HasConstantCurvature def
+R3964:3964 SphereClassification.KillingHopf <> M:37 var
+R3966:3966 SphereClassification.KillingHopf <> g:38 var
+R3968:3968 SphereClassification.KillingHopf <> K:39 var
+R3989:3995 SphereClassification.Manifold <> sm_type proj
+R3997:3997 SphereClassification.KillingHopf <> M:37 var
+binder 3985:3985 <> p:40
+R4055:4058 Corelib.Init.Logic <> True ind
+ax 4283:4313 <> covering_implies_diffeomorphism
+R4331:4339 SphereClassification.Manifold <> Manifold3 rec
+binder 4327:4327 <> M:43
+binder 4343:4343 <> N:44
+R4360:4363 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4359:4359 SphereClassification.KillingHopf <> N:44 var
+R4364:4370 SphereClassification.Manifold <> sm_type proj
+R4372:4372 SphereClassification.KillingHopf <> M:43 var
+binder 4354:4355 <> pi:45
+R4424:4462 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4380:4396 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R4399:4405 SphereClassification.Manifold <> sm_type proj
+R4407:4407 SphereClassification.KillingHopf <> M:43 var
+R4411:4420 SphereClassification.Manifold <> sm_toplogy proj
+R4422:4422 SphereClassification.KillingHopf <> M:43 var
+R4467:4507 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4463:4466 Corelib.Init.Logic <> True ind
+R4508:4511 Corelib.Init.Logic <> True ind
+prf 5103:5117 <> exp_is_isometry
+R5135:5143 SphereClassification.Manifold <> Manifold3 rec
+binder 5131:5131 <> M:48
+R5151:5166 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R5168:5168 SphereClassification.KillingHopf <> M:48 var
+binder 5147:5147 <> g:49
+R5176:5176 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5172:5172 <> K:50
+R5206:5213 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5184:5201 SphereClassification.HopfRinow <> is_metric_complete def
+R5203:5203 SphereClassification.KillingHopf <> M:48 var
+R5205:5205 SphereClassification.KillingHopf <> g:49 var
+R5258:5265 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5214:5230 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R5233:5239 SphereClassification.Manifold <> sm_type proj
+R5241:5241 SphereClassification.KillingHopf <> M:48 var
+R5245:5254 SphereClassification.Manifold <> sm_toplogy proj
+R5256:5256 SphereClassification.KillingHopf <> M:48 var
+R5292:5299 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5266:5285 SphereClassification.KillingHopf <> HasConstantCurvature def
+R5287:5287 SphereClassification.KillingHopf <> M:48 var
+R5289:5289 SphereClassification.KillingHopf <> g:49 var
+R5291:5291 SphereClassification.KillingHopf <> K:50 var
+R5300:5307 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5336:5344 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R5313:5331 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R5333:5333 SphereClassification.KillingHopf <> M:48 var
+R5335:5335 SphereClassification.KillingHopf <> g:49 var
+binder 5308:5309 <> sf:51
+R5364:5366 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5345:5356 SphereClassification.KillingHopf <> sf_curvature proj
+R5358:5358 SphereClassification.KillingHopf <> M:48 var
+R5360:5360 SphereClassification.KillingHopf <> g:49 var
+R5362:5363 SphereClassification.KillingHopf <> sf:51 var
+R5367:5367 SphereClassification.KillingHopf <> K:50 var
+R5484:5490 Stdlib.Reals.RIneq <> Rlt_dec thm
+R5484:5490 Stdlib.Reals.RIneq <> Rlt_dec thm
+R5525:5545 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5551:5563 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5573:5585 SphereClassification.KillingHopf <> mkIsIsometric constr
+R5590:5608 SphereClassification.KillingHopf <> standard_space_form defax
+R5610:5622 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5628:5653 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R5655:5667 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5670:5673 Corelib.Init.Logic <> True ind
+R5525:5545 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5551:5563 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5573:5585 SphereClassification.KillingHopf <> mkIsIsometric constr
+R5590:5608 SphereClassification.KillingHopf <> standard_space_form defax
+R5610:5622 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5628:5653 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R5655:5667 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R5670:5673 Corelib.Init.Logic <> True ind
+R5709:5715 Stdlib.Reals.RIneq <> Rlt_dec thm
+R5709:5715 Stdlib.Reals.RIneq <> Rlt_dec thm
+R5752:5772 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5778:5786 SphereClassification.KillingHopf <> SF_Sphere constr
+R5796:5808 SphereClassification.KillingHopf <> mkIsIsometric constr
+R5813:5831 SphereClassification.KillingHopf <> standard_space_form defax
+R5833:5841 SphereClassification.KillingHopf <> SF_Sphere constr
+R5847:5872 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R5874:5882 SphereClassification.KillingHopf <> SF_Sphere constr
+R5885:5888 Corelib.Init.Logic <> True ind
+R5752:5772 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R5778:5786 SphereClassification.KillingHopf <> SF_Sphere constr
+R5796:5808 SphereClassification.KillingHopf <> mkIsIsometric constr
+R5813:5831 SphereClassification.KillingHopf <> standard_space_form defax
+R5833:5841 SphereClassification.KillingHopf <> SF_Sphere constr
+R5847:5872 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R5874:5882 SphereClassification.KillingHopf <> SF_Sphere constr
+R5885:5888 Corelib.Init.Logic <> True ind
+R5933:5935 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5958:5968 Stdlib.Reals.RIneq <> Rle_antisym thm
+R5988:5997 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+R6032:6041 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+R5933:5935 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R5958:5968 Stdlib.Reals.RIneq <> Rle_antisym thm
+R5988:5997 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+R6032:6041 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+R6077:6097 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R6103:6114 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6124:6136 SphereClassification.KillingHopf <> mkIsIsometric constr
+R6141:6159 SphereClassification.KillingHopf <> standard_space_form defax
+R6161:6172 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6178:6203 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R6205:6216 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6219:6222 Corelib.Init.Logic <> True ind
+R6077:6097 SphereClassification.KillingHopf <> mkIsStandardSpaceForm constr
+R6103:6114 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6124:6136 SphereClassification.KillingHopf <> mkIsIsometric constr
+R6141:6159 SphereClassification.KillingHopf <> standard_space_form defax
+R6161:6172 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6178:6203 SphereClassification.KillingHopf <> standard_space_form_metric defax
+R6205:6216 SphereClassification.KillingHopf <> SF_Euclidean constr
+R6219:6222 Corelib.Init.Logic <> True ind
+prf 6489:6508 <> killing_hopf_theorem
+R6526:6534 SphereClassification.Manifold <> Manifold3 rec
+binder 6522:6522 <> M:52
+R6542:6557 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R6559:6559 SphereClassification.KillingHopf <> M:52 var
+binder 6538:6538 <> g:53
+R6567:6567 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6563:6563 <> K:54
+R6597:6604 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6575:6592 SphereClassification.HopfRinow <> is_metric_complete def
+R6594:6594 SphereClassification.KillingHopf <> M:52 var
+R6596:6596 SphereClassification.KillingHopf <> g:53 var
+R6649:6656 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6605:6621 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R6624:6630 SphereClassification.Manifold <> sm_type proj
+R6632:6632 SphereClassification.KillingHopf <> M:52 var
+R6636:6645 SphereClassification.Manifold <> sm_toplogy proj
+R6647:6647 SphereClassification.KillingHopf <> M:52 var
+R6683:6690 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6657:6676 SphereClassification.KillingHopf <> HasConstantCurvature def
+R6678:6678 SphereClassification.KillingHopf <> M:52 var
+R6680:6680 SphereClassification.KillingHopf <> g:53 var
+R6682:6682 SphereClassification.KillingHopf <> K:54 var
+R6691:6698 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6727:6735 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6704:6722 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R6724:6724 SphereClassification.KillingHopf <> M:52 var
+R6726:6726 SphereClassification.KillingHopf <> g:53 var
+binder 6699:6700 <> sf:55
+R6755:6757 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R6736:6747 SphereClassification.KillingHopf <> sf_curvature proj
+R6749:6749 SphereClassification.KillingHopf <> M:52 var
+R6751:6751 SphereClassification.KillingHopf <> g:53 var
+R6753:6754 SphereClassification.KillingHopf <> sf:55 var
+R6758:6758 SphereClassification.KillingHopf <> K:54 var
+R6818:6832 SphereClassification.KillingHopf <> exp_is_isometry thm
+R6818:6832 SphereClassification.KillingHopf <> exp_is_isometry thm
+prf 7108:7138 <> killing_hopf_positive_curvature
+R7156:7164 SphereClassification.Manifold <> Manifold3 rec
+binder 7152:7152 <> M:56
+R7172:7187 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R7189:7189 SphereClassification.KillingHopf <> M:56 var
+binder 7168:7168 <> g:57
+R7219:7226 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7197:7214 SphereClassification.HopfRinow <> is_metric_complete def
+R7216:7216 SphereClassification.KillingHopf <> M:56 var
+R7218:7218 SphereClassification.KillingHopf <> g:57 var
+R7271:7278 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7227:7243 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R7246:7252 SphereClassification.Manifold <> sm_type proj
+R7254:7254 SphereClassification.KillingHopf <> M:56 var
+R7258:7267 SphereClassification.Manifold <> sm_toplogy proj
+R7269:7269 SphereClassification.KillingHopf <> M:56 var
+R7311:7318 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7279:7306 SphereClassification.KillingHopf <> HasPositiveConstantCurvature def
+R7308:7308 SphereClassification.KillingHopf <> M:56 var
+R7310:7310 SphereClassification.KillingHopf <> g:57 var
+R7319:7326 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7355:7357 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7332:7350 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R7352:7352 SphereClassification.KillingHopf <> M:56 var
+R7354:7354 SphereClassification.KillingHopf <> g:57 var
+binder 7327:7328 <> sf:58
+R7372:7374 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7358:7364 SphereClassification.KillingHopf <> sf_type proj
+R7366:7366 SphereClassification.KillingHopf <> M:56 var
+R7368:7368 SphereClassification.KillingHopf <> g:57 var
+R7370:7371 SphereClassification.KillingHopf <> sf:58 var
+R7375:7383 SphereClassification.KillingHopf <> SF_Sphere constr
+R7481:7495 SphereClassification.KillingHopf <> exp_is_isometry thm
+R7481:7495 SphereClassification.KillingHopf <> exp_is_isometry thm
+prf 7729:7755 <> killing_hopf_zero_curvature
+R7773:7781 SphereClassification.Manifold <> Manifold3 rec
+binder 7769:7769 <> M:59
+R7789:7804 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R7806:7806 SphereClassification.KillingHopf <> M:59 var
+binder 7785:7785 <> g:60
+R7836:7843 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7814:7831 SphereClassification.HopfRinow <> is_metric_complete def
+R7833:7833 SphereClassification.KillingHopf <> M:59 var
+R7835:7835 SphereClassification.KillingHopf <> g:60 var
+R7888:7895 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7844:7860 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R7863:7869 SphereClassification.Manifold <> sm_type proj
+R7871:7871 SphereClassification.KillingHopf <> M:59 var
+R7875:7884 SphereClassification.Manifold <> sm_toplogy proj
+R7886:7886 SphereClassification.KillingHopf <> M:59 var
+R7924:7931 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7896:7919 SphereClassification.KillingHopf <> HasZeroConstantCurvature def
+R7921:7921 SphereClassification.KillingHopf <> M:59 var
+R7923:7923 SphereClassification.KillingHopf <> g:60 var
+R7932:7939 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7968:7970 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R7945:7963 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R7965:7965 SphereClassification.KillingHopf <> M:59 var
+R7967:7967 SphereClassification.KillingHopf <> g:60 var
+binder 7940:7941 <> sf:61
+R7985:7987 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R7971:7977 SphereClassification.KillingHopf <> sf_type proj
+R7979:7979 SphereClassification.KillingHopf <> M:59 var
+R7981:7981 SphereClassification.KillingHopf <> g:60 var
+R7983:7984 SphereClassification.KillingHopf <> sf:61 var
+R7988:7999 SphereClassification.KillingHopf <> SF_Euclidean constr
+R8100:8114 SphereClassification.KillingHopf <> exp_is_isometry thm
+R8100:8114 SphereClassification.KillingHopf <> exp_is_isometry thm
+prf 8348:8378 <> killing_hopf_negative_curvature
+R8396:8404 SphereClassification.Manifold <> Manifold3 rec
+binder 8392:8392 <> M:62
+R8412:8427 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R8429:8429 SphereClassification.KillingHopf <> M:62 var
+binder 8408:8408 <> g:63
+R8459:8466 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8437:8454 SphereClassification.HopfRinow <> is_metric_complete def
+R8456:8456 SphereClassification.KillingHopf <> M:62 var
+R8458:8458 SphereClassification.KillingHopf <> g:63 var
+R8511:8518 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8467:8483 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R8486:8492 SphereClassification.Manifold <> sm_type proj
+R8494:8494 SphereClassification.KillingHopf <> M:62 var
+R8498:8507 SphereClassification.Manifold <> sm_toplogy proj
+R8509:8509 SphereClassification.KillingHopf <> M:62 var
+R8551:8558 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8519:8546 SphereClassification.KillingHopf <> HasNegativeConstantCurvature def
+R8548:8548 SphereClassification.KillingHopf <> M:62 var
+R8550:8550 SphereClassification.KillingHopf <> g:63 var
+R8559:8566 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8595:8597 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R8572:8590 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R8592:8592 SphereClassification.KillingHopf <> M:62 var
+R8594:8594 SphereClassification.KillingHopf <> g:63 var
+binder 8567:8568 <> sf:64
+R8612:8614 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R8598:8604 SphereClassification.KillingHopf <> sf_type proj
+R8606:8606 SphereClassification.KillingHopf <> M:62 var
+R8608:8608 SphereClassification.KillingHopf <> g:63 var
+R8610:8611 SphereClassification.KillingHopf <> sf:64 var
+R8615:8627 SphereClassification.KillingHopf <> SF_Hyperbolic constr
+R8725:8739 SphereClassification.KillingHopf <> exp_is_isometry thm
+R8725:8739 SphereClassification.KillingHopf <> exp_is_isometry thm
+prf 9204:9241 <> killing_hopf_positive_curvature_sphere
+R9259:9267 SphereClassification.Manifold <> Manifold3 rec
+binder 9255:9255 <> M:65
+R9275:9290 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R9292:9292 SphereClassification.KillingHopf <> M:65 var
+binder 9271:9271 <> g:66
+R9322:9329 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9300:9317 SphereClassification.HopfRinow <> is_metric_complete def
+R9319:9319 SphereClassification.KillingHopf <> M:65 var
+R9321:9321 SphereClassification.KillingHopf <> g:66 var
+R9374:9381 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9330:9346 SphereClassification.FundamentalGroup <> IsSimplyConnected rec
+R9349:9355 SphereClassification.Manifold <> sm_type proj
+R9357:9357 SphereClassification.KillingHopf <> M:65 var
+R9361:9370 SphereClassification.Manifold <> sm_toplogy proj
+R9372:9372 SphereClassification.KillingHopf <> M:65 var
+R9414:9421 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R9382:9409 SphereClassification.KillingHopf <> HasPositiveConstantCurvature def
+R9411:9411 SphereClassification.KillingHopf <> M:65 var
+R9413:9413 SphereClassification.KillingHopf <> g:66 var
+R9422:9429 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9458:9460 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R9435:9453 SphereClassification.KillingHopf <> IsStandardSpaceForm rec
+R9455:9455 SphereClassification.KillingHopf <> M:65 var
+R9457:9457 SphereClassification.KillingHopf <> g:66 var
+binder 9430:9431 <> sf:67
+R9461:9464 Corelib.Init.Logic <> True ind
+R9523:9553 SphereClassification.KillingHopf <> killing_hopf_positive_curvature thm
+R9523:9553 SphereClassification.KillingHopf <> killing_hopf_positive_curvature thm
+R9617:9623 Corelib.Init.Logic <> I constr
+R9617:9623 Corelib.Init.Logic <> I constr

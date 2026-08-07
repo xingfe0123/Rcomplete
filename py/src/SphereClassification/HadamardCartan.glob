@@ -1,0 +1,113 @@
+DIGEST 22cef59a1cda420789f6d746c86cc373
+FSphereClassification.HadamardCartan
+R108:112 Stdlib.Reals.Reals <> <> lib
+R130:143 Stdlib.Logic.Classical_Prop <> <> lib
+R161:165 Stdlib.Reals.Reals <> <> lib
+R167:169 Stdlib.micromega.Lra <> <> lib
+R187:210 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R228:236 Stdlib.Logic.Classical <> <> lib
+R276:304 SphereClassification.Manifold <> <> lib
+R322:350 SphereClassification.Topology <> <> lib
+R368:401 SphereClassification.RiemannMetric <> <> lib
+R419:452 SphereClassification.RiemannTensor <> <> lib
+def 697:718 <> has_positive_curvature
+R725:733 SphereClassification.Manifold <> Manifold3 rec
+binder 721:721 <> M:1
+R746:749 Corelib.Init.Logic <> True ind
+rec 1291:1305 <> IsDiffeomorphic
+proj 1352:1361 <> diffeo_map
+proj 1393:1402 <> diffeo_inv
+proj 1434:1444 <> diffeo_cont
+proj 1531:1545 <> diffeo_inv_cont
+proj 1632:1644 <> diffeo_smooth
+proj 1685:1701 <> diffeo_inv_smooth
+R1316:1324 SphereClassification.Manifold <> Manifold3 rec
+binder 1308:1309 <> M1:2
+binder 1311:1312 <> M2:3
+R1375:1378 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1365:1371 SphereClassification.Manifold <> sm_type proj
+R1373:1374 SphereClassification.HadamardCartan <> M1:2 var
+R1379:1385 SphereClassification.Manifold <> sm_type proj
+R1387:1388 SphereClassification.HadamardCartan <> M2:3 var
+R1416:1419 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1406:1412 SphereClassification.Manifold <> sm_type proj
+R1414:1415 SphereClassification.HadamardCartan <> M2:3 var
+R1420:1426 SphereClassification.Manifold <> sm_type proj
+R1428:1429 SphereClassification.HadamardCartan <> M1:2 var
+R1448:1457 SphereClassification.Topology <> Continuous def
+R1460:1466 SphereClassification.Manifold <> sm_type proj
+R1468:1469 SphereClassification.HadamardCartan <> M1:2 var
+R1473:1479 SphereClassification.Manifold <> sm_type proj
+R1481:1482 SphereClassification.HadamardCartan <> M2:3 var
+R1486:1495 SphereClassification.Manifold <> sm_toplogy proj
+R1497:1498 SphereClassification.HadamardCartan <> M1:2 var
+R1502:1511 SphereClassification.Manifold <> sm_toplogy proj
+R1513:1514 SphereClassification.HadamardCartan <> M2:3 var
+R1517:1526 SphereClassification.HadamardCartan <> diffeo_map:5 meth
+R1549:1558 SphereClassification.Topology <> Continuous def
+R1561:1567 SphereClassification.Manifold <> sm_type proj
+R1569:1570 SphereClassification.HadamardCartan <> M2:3 var
+R1574:1580 SphereClassification.Manifold <> sm_type proj
+R1582:1583 SphereClassification.HadamardCartan <> M1:2 var
+R1587:1596 SphereClassification.Manifold <> sm_toplogy proj
+R1598:1599 SphereClassification.HadamardCartan <> M2:3 var
+R1603:1612 SphereClassification.Manifold <> sm_toplogy proj
+R1614:1615 SphereClassification.HadamardCartan <> M1:2 var
+R1618:1627 SphereClassification.HadamardCartan <> diffeo_inv:6 meth
+R1648:1651 Corelib.Init.Logic <> True ind
+R1705:1708 Corelib.Init.Logic <> True ind
+ax 1987:2001 <> hadamard_cartan
+R2019:2027 SphereClassification.Manifold <> Manifold3 rec
+binder 2015:2015 <> M:11
+R2035:2050 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2052:2052 SphereClassification.HadamardCartan <> M:11 var
+binder 2031:2031 <> g:12
+R2084:2087 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2060:2081 SphereClassification.HadamardCartan <> has_positive_curvature def
+R2083:2083 SphereClassification.HadamardCartan <> M:11 var
+R2088:2091 Corelib.Init.Logic <> True ind
+ax 2331:2355 <> positive_curvature_sphere
+R2373:2381 SphereClassification.Manifold <> Manifold3 rec
+binder 2369:2369 <> M:15
+R2389:2404 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2406:2406 SphereClassification.HadamardCartan <> M:15 var
+binder 2385:2385 <> g:16
+R2438:2445 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2414:2435 SphereClassification.HadamardCartan <> has_positive_curvature def
+R2437:2437 SphereClassification.HadamardCartan <> M:15 var
+R2446:2453 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2482:2490 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2469:2472 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2460:2466 SphereClassification.Manifold <> sm_type proj
+R2468:2468 SphereClassification.HadamardCartan <> M:15 var
+R2473:2479 SphereClassification.Manifold <> sm_type proj
+R2481:2481 SphereClassification.HadamardCartan <> M:15 var
+binder 2454:2456 <> phi:17
+R2491:2494 Corelib.Init.Logic <> True ind
+prf 2992:3025 <> diffeomorphic_implies_homeomorphic
+R3047:3055 SphereClassification.Manifold <> Manifold3 rec
+binder 3039:3040 <> M1:20
+binder 3042:3043 <> M2:21
+R3084:3091 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3063:3077 SphereClassification.HadamardCartan <> IsDiffeomorphic rec
+R3079:3080 SphereClassification.HadamardCartan <> M1:20 var
+R3082:3083 SphereClassification.HadamardCartan <> M2:21 var
+R3092:3105 SphereClassification.Topology <> IsHomeomorphic rec
+R3108:3114 SphereClassification.Manifold <> sm_type proj
+R3116:3117 SphereClassification.HadamardCartan <> M1:20 var
+R3121:3127 SphereClassification.Manifold <> sm_type proj
+R3129:3130 SphereClassification.HadamardCartan <> M2:21 var
+R3134:3143 SphereClassification.Manifold <> sm_toplogy proj
+R3145:3146 SphereClassification.HadamardCartan <> M1:20 var
+R3150:3159 SphereClassification.Manifold <> sm_toplogy proj
+R3161:3162 SphereClassification.HadamardCartan <> M2:21 var
+R3319:3334 SphereClassification.Topology <> mkIsHomeomorphic constr
+R3337:3343 SphereClassification.Manifold <> sm_type proj
+R3350:3356 SphereClassification.Manifold <> sm_type proj
+R3363:3372 SphereClassification.Manifold <> sm_toplogy proj
+R3379:3388 SphereClassification.Manifold <> sm_toplogy proj
+R3319:3334 SphereClassification.Topology <> mkIsHomeomorphic constr
+R3337:3343 SphereClassification.Manifold <> sm_type proj
+R3350:3356 SphereClassification.Manifold <> sm_type proj
+R3363:3372 SphereClassification.Manifold <> sm_toplogy proj
+R3379:3388 SphereClassification.Manifold <> sm_toplogy proj

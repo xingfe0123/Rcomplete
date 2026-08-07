@@ -1,0 +1,100 @@
+DIGEST 01f8dcf145df9213ec550ccbc25f5718
+FSphereClassification.InjectivityRadius
+R192:199 SphereClassification.Topology <> <> lib
+R201:208 SphereClassification.Manifold <> <> lib
+R210:222 SphereClassification.RiemannMetric <> <> lib
+R224:236 SphereClassification.RiemannTensor <> <> lib
+R238:245 SphereClassification.Geodesic <> <> lib
+R264:268 Stdlib.Reals.Reals <> <> lib
+R286:299 Stdlib.Logic.Classical_Prop <> <> lib
+R317:321 Stdlib.Reals.Reals <> <> lib
+R323:325 Stdlib.micromega.Lra <> <> lib
+R343:366 Stdlib.Logic.FunctionalExtensionality <> <> lib
+R384:392 Stdlib.Logic.Classical <> <> lib
+R410:418 Stdlib.Sets.Ensembles <> <> lib
+def 1060:1082 <> exp_p_is_diffeo_on_ball
+R1093:1101 SphereClassification.Manifold <> Manifold3 rec
+binder 1089:1089 <> M:1
+R1109:1124 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R1126:1126 SphereClassification.InjectivityRadius <> M:1 var
+binder 1105:1105 <> g:2
+R1134:1140 SphereClassification.Manifold <> sm_type proj
+R1142:1142 SphereClassification.InjectivityRadius <> M:1 var
+binder 1130:1130 <> p:3
+R1154:1154 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1150:1150 <> r:4
+R1178:1339 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R1171:1173 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1170:1170 SphereClassification.InjectivityRadius <> r:4 var
+R1340:1343 Corelib.Init.Logic <> True ind
+def 2050:2065 <> point_inj_radius
+R2076:2084 SphereClassification.Manifold <> Manifold3 rec
+binder 2072:2072 <> M:5
+R2092:2107 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2109:2109 SphereClassification.InjectivityRadius <> M:5 var
+binder 2088:2088 <> g:6
+R2117:2123 SphereClassification.Manifold <> sm_type proj
+R2125:2125 SphereClassification.InjectivityRadius <> M:5 var
+binder 2113:2113 <> p:7
+R2130:2130 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+def 2531:2548 <> injectivity_radius
+R2559:2567 SphereClassification.Manifold <> Manifold3 rec
+binder 2555:2555 <> M:8
+R2575:2590 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R2592:2592 SphereClassification.InjectivityRadius <> M:8 var
+binder 2571:2571 <> g:9
+R2597:2597 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 2979:3001 <> point_inj_radius_nonneg
+R3019:3027 SphereClassification.Manifold <> Manifold3 rec
+binder 3015:3015 <> M:10
+R3035:3050 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3052:3052 SphereClassification.InjectivityRadius <> M:10 var
+binder 3031:3031 <> g:11
+R3060:3066 SphereClassification.Manifold <> sm_type proj
+R3068:3068 SphereClassification.InjectivityRadius <> M:10 var
+binder 3056:3056 <> p:12
+R3098:3101 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R3076:3091 SphereClassification.InjectivityRadius <> point_inj_radius def
+R3093:3093 SphereClassification.InjectivityRadius <> M:10 var
+R3095:3095 SphereClassification.InjectivityRadius <> g:11 var
+R3097:3097 SphereClassification.InjectivityRadius <> p:12 var
+ax 3172:3191 <> compact_inj_positive
+R3209:3217 SphereClassification.Manifold <> Manifold3 rec
+binder 3205:3205 <> M:15
+R3225:3240 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3242:3242 SphereClassification.InjectivityRadius <> M:15 var
+binder 3221:3221 <> g:16
+R3309:3311 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3287:3304 SphereClassification.InjectivityRadius <> injectivity_radius def
+R3306:3306 SphereClassification.InjectivityRadius <> M:15 var
+R3308:3308 SphereClassification.InjectivityRadius <> g:16 var
+ax 3427:3460 <> injectivity_radius_curvature_bound
+R3478:3486 SphereClassification.Manifold <> Manifold3 rec
+binder 3474:3474 <> M:19
+R3494:3509 SphereClassification.RiemannMetric <> RiemannianMetric rec
+R3511:3511 SphereClassification.InjectivityRadius <> M:19 var
+binder 3490:3490 <> g:20
+R3519:3525 SphereClassification.Manifold <> sm_type proj
+R3527:3527 SphereClassification.InjectivityRadius <> M:19 var
+binder 3515:3515 <> p:21
+R3548:3548 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3540:3544 <> K_max:22
+R3590:3597 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3556:3577 SphereClassification.RiemannTensor <> SectionalCurvature_def def
+R3579:3579 SphereClassification.InjectivityRadius <> M:19 var
+R3581:3581 SphereClassification.InjectivityRadius <> g:20 var
+R3583:3583 SphereClassification.InjectivityRadius <> p:21 var
+R3585:3589 SphereClassification.InjectivityRadius <> K_max:22 var
+R3611:3618 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3604:3606 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R3599:3603 SphereClassification.InjectivityRadius <> K_max:22 var
+R3641:3644 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>='_x not
+R3619:3634 SphereClassification.InjectivityRadius <> point_inj_radius def
+R3636:3636 SphereClassification.InjectivityRadius <> M:19 var
+R3638:3638 SphereClassification.InjectivityRadius <> g:20 var
+R3640:3640 SphereClassification.InjectivityRadius <> p:21 var
+R3647:3649 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R3645:3646 Stdlib.Reals.Rtrigo1 <> PI def
+R3650:3653 Stdlib.Reals.R_sqrt <> sqrt def
+R3656:3659 Stdlib.Reals.RIneq <> Rsqr def
+R3661:3665 SphereClassification.InjectivityRadius <> K_max:22 var

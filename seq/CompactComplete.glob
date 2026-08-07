@@ -1,0 +1,614 @@
+DIGEST 52c61bbe36ecee1981c8054191156ec9
+FCompactComplete
+R27:31 Stdlib.Reals.Reals <> <> lib
+R33:37 Stdlib.Reals.RIneq <> <> lib
+R39:47 Stdlib.Reals.Ranalysis <> <> lib
+R77:79 Stdlib.micromega.Lra <> <> lib
+R109:111 Stdlib.micromega.Lia <> <> lib
+R141:151 Stdlib.Arith.Compare_dec <> <> lib
+R181:196 Stdlib.Logic.ClassicalEpsilon <> <> lib
+R226:241 Stdlib.Logic.ProofIrrelevance <> <> lib
+R271:294 Stdlib.Logic.FunctionalExtensionality <> <> lib
+rec 577:587 <> MetricSpace
+proj 603:609 <> Carrier
+proj 622:625 <> dist
+proj 656:664 <> dist_self
+proj 694:701 <> dist_sym
+proj 740:752 <> dist_triangle
+proj 805:817 <> dist_eq_ident
+R636:639 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R629:635 CompactComplete <> Carrier:2 meth
+R647:650 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R640:646 CompactComplete <> Carrier:2 meth
+R651:651 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 675:675 <> x:4
+R686:688 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R678:681 CompactComplete <> dist:3 meth
+R685:685 CompactComplete <> x:4 var
+R683:683 CompactComplete <> x:4 var
+binder 712:712 <> x:6
+binder 714:714 <> y:7
+R725:727 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R717:720 CompactComplete <> dist:3 meth
+R724:724 CompactComplete <> y:7 var
+R722:722 CompactComplete <> x:6 var
+R728:731 CompactComplete <> dist:3 meth
+R735:735 CompactComplete <> x:6 var
+R733:733 CompactComplete <> y:7 var
+binder 763:763 <> x:9
+binder 765:765 <> y:10
+binder 767:767 <> z:11
+R778:781 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R770:773 CompactComplete <> dist:3 meth
+R777:777 CompactComplete <> z:11 var
+R775:775 CompactComplete <> x:9 var
+R790:792 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R782:785 CompactComplete <> dist:3 meth
+R789:789 CompactComplete <> y:10 var
+R787:787 CompactComplete <> x:9 var
+R793:796 CompactComplete <> dist:3 meth
+R800:800 CompactComplete <> z:11 var
+R798:798 CompactComplete <> y:10 var
+binder 828:828 <> x:13
+binder 830:830 <> y:14
+R845:848 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R841:843 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R833:836 CompactComplete <> dist:3 meth
+R840:840 CompactComplete <> y:14 var
+R838:838 CompactComplete <> x:13 var
+R850:852 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R849:849 CompactComplete <> x:13 var
+R853:853 CompactComplete <> y:14 var
+prf 1115:1135 <> Rmult_le_compat_r_pos
+R1156:1156 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 1146:1146 <> r:16
+binder 1148:1149 <> r1:17
+binder 1151:1152 <> r2:18
+R1164:1167 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1160:1162 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1159:1159 CompactComplete <> r:16 var
+R1176:1179 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R1170:1173 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1168:1169 CompactComplete <> r1:17 var
+R1174:1175 CompactComplete <> r2:18 var
+R1186:1189 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1181:1183 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1180:1180 CompactComplete <> r:16 var
+R1184:1185 CompactComplete <> r1:17 var
+R1191:1193 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1190:1190 CompactComplete <> r:16 var
+R1194:1195 CompactComplete <> r2:18 var
+R1240:1256 Stdlib.Reals.RIneq <> Rmult_le_compat_l thm
+R1240:1256 Stdlib.Reals.RIneq <> Rmult_le_compat_l thm
+prf 1287:1297 <> dist_nonneg
+R1316:1326 CompactComplete <> MetricSpace rec
+binder 1311:1312 <> ms:19
+R1336:1337 CompactComplete <> ms:19 var
+binder 1330:1330 <> x:20
+binder 1332:1332 <> y:21
+R1342:1345 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1347:1350 CompactComplete <> dist proj
+R1352:1353 CompactComplete <> ms:19 var
+R1355:1355 CompactComplete <> x:20 var
+R1357:1357 CompactComplete <> y:21 var
+R1411:1414 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1400:1403 CompactComplete <> dist proj
+R1427:1429 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1416:1419 CompactComplete <> dist proj
+R1431:1434 CompactComplete <> dist proj
+R1411:1414 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R1400:1403 CompactComplete <> dist proj
+R1427:1429 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1416:1419 CompactComplete <> dist proj
+R1431:1434 CompactComplete <> dist proj
+R1457:1469 CompactComplete <> dist_triangle proj
+R1457:1469 CompactComplete <> dist_triangle proj
+R1490:1498 CompactComplete <> dist_self proj
+R1490:1498 CompactComplete <> dist_self proj
+R1490:1498 CompactComplete <> dist_self proj
+R1553:1555 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1538:1540 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1527:1530 CompactComplete <> dist proj
+R1542:1545 CompactComplete <> dist proj
+R1568:1570 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1557:1560 CompactComplete <> dist proj
+R1572:1575 CompactComplete <> dist proj
+R1553:1555 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1538:1540 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1527:1530 CompactComplete <> dist proj
+R1542:1545 CompactComplete <> dist proj
+R1568:1570 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1557:1560 CompactComplete <> dist proj
+R1572:1575 CompactComplete <> dist proj
+R1607:1614 CompactComplete <> dist_sym proj
+R1607:1614 CompactComplete <> dist_sym proj
+R1685:1687 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1670:1672 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1659:1662 CompactComplete <> dist proj
+R1674:1677 CompactComplete <> dist proj
+R1689:1691 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1693:1696 CompactComplete <> dist proj
+R1685:1687 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1670:1672 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R1659:1662 CompactComplete <> dist proj
+R1674:1677 CompactComplete <> dist proj
+R1689:1691 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1693:1696 CompactComplete <> dist proj
+R1754:1756 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1751:1752 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1754:1756 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R1751:1752 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1769:1784 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R1769:1784 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R1810:1830 CompactComplete <> Rmult_le_compat_r_pos thm
+R1833:1834 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1842:1844 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1846:1849 CompactComplete <> dist proj
+R1810:1830 CompactComplete <> Rmult_le_compat_r_pos thm
+R1833:1834 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1842:1844 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1846:1849 CompactComplete <> dist proj
+R1890:1892 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1886:1888 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1883:1884 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1890:1892 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1886:1888 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1883:1884 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1907:1916 Stdlib.Reals.Raxioms <> Rmult_comm thm
+R1907:1916 Stdlib.Reals.Raxioms <> Rmult_comm thm
+R1907:1916 Stdlib.Reals.Raxioms <> Rmult_comm thm
+R1925:1930 Stdlib.Reals.RIneq <> Rinv_r thm
+R1925:1930 Stdlib.Reals.RIneq <> Rinv_r thm
+R1979:1981 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1958:1961 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1978:1978 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1955:1956 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1963:1965 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1967:1970 CompactComplete <> dist proj
+R1983:1986 CompactComplete <> dist proj
+R1979:1981 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R1958:1961 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1978:1978 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1955:1956 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R1963:1965 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R1967:1970 CompactComplete <> dist proj
+R1983:1986 CompactComplete <> dist proj
+R2012:2022 Stdlib.Reals.Raxioms <> Rmult_assoc thm
+R2012:2022 Stdlib.Reals.Raxioms <> Rmult_assoc thm
+R2012:2022 Stdlib.Reals.Raxioms <> Rmult_assoc thm
+R2046:2054 Stdlib.Reals.Raxioms <> Rmult_1_l thm
+R2046:2054 Stdlib.Reals.Raxioms <> Rmult_1_l thm
+R2046:2054 Stdlib.Reals.Raxioms <> Rmult_1_l thm
+R2086:2088 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2082:2084 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2079:2080 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2086:2088 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R2082:2084 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R2079:2080 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R2101:2109 Stdlib.Reals.RIneq <> Rmult_0_r thm
+R2101:2109 Stdlib.Reals.RIneq <> Rmult_0_r thm
+def 2428:2437 <> cauchy_seq
+R2445:2455 CompactComplete <> MetricSpace rec
+binder 2440:2441 <> ms:22
+R2466:2469 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2463:2465 Corelib.Init.Datatypes <> nat ind
+R2470:2471 CompactComplete <> ms:22 var
+binder 2459:2459 <> p:23
+R2499:2499 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2493:2495 <> eps:24
+R2509:2516 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2505:2507 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2502:2504 CompactComplete <> eps:24 var
+R2517:2523 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2531:2532 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2528:2530 Corelib.Init.Datatypes <> nat ind
+binder 2524:2524 <> N:25
+R2546:2548 Corelib.Init.Datatypes <> nat ind
+binder 2540:2540 <> m:26
+binder 2542:2542 <> n:27
+R2563:2566 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2553:2556 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2552:2552 CompactComplete <> N:25 var
+R2557:2557 CompactComplete <> m:26 var
+R2579:2582 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2569:2572 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R2568:2568 CompactComplete <> N:25 var
+R2573:2573 CompactComplete <> n:27 var
+R2603:2605 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R2584:2587 CompactComplete <> dist proj
+R2589:2590 CompactComplete <> ms:22 var
+R2593:2593 CompactComplete <> p:23 var
+R2595:2595 CompactComplete <> m:26 var
+R2599:2599 CompactComplete <> p:23 var
+R2601:2601 CompactComplete <> n:27 var
+R2606:2608 CompactComplete <> eps:24 var
+def 2872:2881 <> convergent
+R2889:2899 CompactComplete <> MetricSpace rec
+binder 2884:2885 <> ms:28
+R2910:2913 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2907:2909 Corelib.Init.Datatypes <> nat ind
+R2914:2915 CompactComplete <> ms:28 var
+binder 2903:2903 <> p:29
+R2924:2925 CompactComplete <> ms:28 var
+binder 2919:2920 <> p0:30
+R2953:2953 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 2947:2949 <> eps:31
+R2963:2970 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R2959:2961 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R2956:2958 CompactComplete <> eps:31 var
+R2971:2977 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2985:2986 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R2982:2984 Corelib.Init.Datatypes <> nat ind
+binder 2978:2978 <> N:32
+R2998:3000 Corelib.Init.Datatypes <> nat ind
+binder 2994:2994 <> n:33
+R3015:3018 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3005:3008 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R3004:3004 CompactComplete <> N:32 var
+R3009:3009 CompactComplete <> n:33 var
+R3036:3038 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3020:3023 CompactComplete <> dist proj
+R3025:3026 CompactComplete <> ms:28 var
+R3029:3029 CompactComplete <> p:29 var
+R3031:3031 CompactComplete <> n:33 var
+R3034:3035 CompactComplete <> p0:30 var
+R3039:3041 CompactComplete <> eps:31 var
+def 3310:3317 <> complete
+R3325:3335 CompactComplete <> MetricSpace rec
+binder 3320:3321 <> ms:34
+R3364:3367 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3361:3363 Corelib.Init.Datatypes <> nat ind
+R3368:3369 CompactComplete <> ms:34 var
+binder 3357:3357 <> p:35
+R3387:3390 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3372:3381 CompactComplete <> cauchy_seq def
+R3383:3384 CompactComplete <> ms:34 var
+R3386:3386 CompactComplete <> p:35 var
+R3391:3397 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3405:3406 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R3403:3404 CompactComplete <> ms:34 var
+binder 3398:3399 <> p0:36
+R3407:3416 CompactComplete <> convergent def
+R3418:3419 CompactComplete <> ms:34 var
+R3421:3421 CompactComplete <> p:35 var
+R3423:3424 CompactComplete <> p0:36 var
+def 3688:3696 <> open_ball
+R3704:3714 CompactComplete <> MetricSpace rec
+binder 3699:3700 <> ms:37
+R3722:3723 CompactComplete <> ms:37 var
+binder 3718:3718 <> c:38
+R3731:3731 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 3727:3727 <> r:39
+R3738:3741 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R3736:3737 CompactComplete <> ms:37 var
+binder 3756:3756 <> x:40
+R3773:3775 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R3762:3765 CompactComplete <> dist proj
+R3767:3768 CompactComplete <> ms:37 var
+R3770:3770 CompactComplete <> x:40 var
+R3772:3772 CompactComplete <> c:38 var
+R3776:3776 CompactComplete <> r:39 var
+def 4041:4050 <> open_cover
+R4058:4068 CompactComplete <> MetricSpace rec
+binder 4053:4054 <> ms:41
+R4078:4081 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4076:4077 CompactComplete <> ms:41 var
+binder 4072:4072 <> U:42
+binder 4089:4089 <> I:43
+R4105:4108 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4104:4104 CompactComplete <> I:43 var
+R4111:4114 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4109:4110 CompactComplete <> ms:41 var
+binder 4100:4100 <> f:44
+R4133:4133 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4220:4226 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4145:4145 CompactComplete <> I:43 var
+binder 4141:4141 <> i:45
+R4148:4155 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4170:4172 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4160:4161 CompactComplete <> ms:41 var
+binder 4156:4156 <> c:46
+R4169:4169 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 4165:4165 <> r:47
+R4178:4181 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4174:4176 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R4173:4173 CompactComplete <> r:47 var
+R4193:4194 CompactComplete <> ms:41 var
+binder 4189:4189 <> x:48
+R4213:4216 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4209:4211 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R4198:4201 CompactComplete <> dist proj
+R4203:4204 CompactComplete <> ms:41 var
+R4206:4206 CompactComplete <> x:48 var
+R4208:4208 CompactComplete <> c:46 var
+R4212:4212 CompactComplete <> r:47 var
+R4217:4217 CompactComplete <> U:42 var
+R4219:4219 CompactComplete <> x:48 var
+R4238:4239 CompactComplete <> ms:41 var
+binder 4234:4234 <> x:49
+R4245:4248 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4242:4242 CompactComplete <> U:42 var
+R4244:4244 CompactComplete <> x:49 var
+R4249:4255 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4261:4262 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4260:4260 CompactComplete <> I:43 var
+binder 4256:4256 <> i:50
+R4263:4263 CompactComplete <> f:44 var
+R4267:4267 CompactComplete <> x:49 var
+R4265:4265 CompactComplete <> i:50 var
+def 4546:4556 <> seq_compact
+R4564:4574 CompactComplete <> MetricSpace rec
+binder 4559:4560 <> ms:51
+R4603:4606 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4600:4602 Corelib.Init.Datatypes <> nat ind
+R4607:4608 CompactComplete <> ms:51 var
+binder 4596:4596 <> p:52
+R4615:4622 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4649:4657 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R4632:4635 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4629:4631 Corelib.Init.Datatypes <> nat ind
+R4636:4638 Corelib.Init.Datatypes <> nat ind
+binder 4623:4625 <> phi:53
+R4647:4648 CompactComplete <> ms:51 var
+binder 4642:4643 <> p0:54
+R4658:4658 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4711:4721 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R4672:4674 Corelib.Init.Datatypes <> nat ind
+binder 4666:4666 <> m:55
+binder 4668:4668 <> n:56
+R4688:4691 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R4679:4681 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4678:4678 CompactComplete <> m:55 var
+R4682:4682 CompactComplete <> n:56 var
+R4698:4700 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R4693:4695 CompactComplete <> phi:53 var
+R4697:4697 CompactComplete <> m:55 var
+R4701:4703 CompactComplete <> phi:53 var
+R4705:4705 CompactComplete <> n:56 var
+R4722:4731 CompactComplete <> convergent def
+R4733:4734 CompactComplete <> ms:51 var
+binder 4741:4741 <> n:57
+R4746:4746 CompactComplete <> p:52 var
+R4749:4751 CompactComplete <> phi:53 var
+R4753:4753 CompactComplete <> n:57 var
+R4757:4758 CompactComplete <> p0:54 var
+prf 5016:5027 <> half_gt_zero
+R5036:5036 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5030:5032 <> eps:58
+R5048:5051 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5044:5046 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5041:5043 CompactComplete <> eps:58 var
+R5059:5061 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5055:5057 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R5052:5054 CompactComplete <> eps:58 var
+R5093:5096 Stdlib.Reals.Rdefinitions <> Rdiv def
+R5119:5121 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5116:5117 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R5119:5121 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5116:5117 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R5134:5149 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R5134:5149 Stdlib.Reals.RIneq <> Rinv_0_lt_compat thm
+R5177:5193 Stdlib.Reals.Raxioms <> Rmult_lt_compat_l thm
+R5196:5197 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R5177:5193 Stdlib.Reals.Raxioms <> Rmult_lt_compat_l thm
+R5196:5197 Stdlib.Reals.Rdefinitions <> ::R_scope:'/'_x not
+R5229:5237 Stdlib.Reals.RIneq <> Rmult_0_r thm
+R5229:5237 Stdlib.Reals.RIneq <> Rmult_0_r thm
+R5229:5237 Stdlib.Reals.RIneq <> Rmult_0_r thm
+prf 5522:5536 <> lt_all_eps_le_0
+R5543:5543 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5539:5539 <> x:59
+R5550:5550 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5585:5589 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5564:5564 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 5558:5560 <> eps:60
+R5574:5577 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5570:5572 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R5567:5569 CompactComplete <> eps:60 var
+R5579:5581 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R5578:5578 CompactComplete <> x:59 var
+R5582:5584 CompactComplete <> eps:60 var
+R5591:5594 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R5590:5590 CompactComplete <> x:59 var
+R5623:5632 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+R5623:5632 Stdlib.Reals.RIneq <> Rnot_lt_le thm
+prf 5938:5951 <> cauchy_bounded
+R5970:5980 CompactComplete <> MetricSpace rec
+binder 5965:5966 <> ms:61
+R5991:5994 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R5988:5990 Corelib.Init.Datatypes <> nat ind
+R5995:5996 CompactComplete <> ms:61 var
+binder 5984:5984 <> p:62
+R6019:6026 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6004:6013 CompactComplete <> cauchy_seq def
+R6015:6016 CompactComplete <> ms:61 var
+R6018:6018 CompactComplete <> p:62 var
+R6027:6034 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6049:6051 Corelib.Init.Logic <> ::type_scope:'exists'_x_'..'_x_','_x not
+R6039:6040 CompactComplete <> ms:61 var
+binder 6035:6035 <> q:63
+R6048:6048 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+binder 6044:6044 <> M:64
+R6057:6060 Corelib.Init.Logic <> ::type_scope:x_'/\'_x not
+R6053:6055 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6052:6052 CompactComplete <> M:64 var
+R6072:6074 Corelib.Init.Datatypes <> nat ind
+binder 6068:6068 <> n:65
+R6093:6095 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<'_x not
+R6078:6081 CompactComplete <> dist proj
+R6083:6084 CompactComplete <> ms:61 var
+R6087:6087 CompactComplete <> p:62 var
+R6089:6089 CompactComplete <> n:65 var
+R6092:6092 CompactComplete <> q:63 var
+R6096:6096 CompactComplete <> M:64 var
+R6181:6183 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6181:6183 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'>'_x not
+R6270:6278 Stdlib.Arith.Compare_dec <> le_lt_dec def
+R6270:6278 Stdlib.Arith.Compare_dec <> le_lt_dec def
+R6329:6332 Corelib.Init.Peano <> le_n constr
+R6329:6332 Corelib.Init.Peano <> le_n constr
+prf 6420:6439 <> strict_increasing_ge
+R6462:6465 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6459:6461 Corelib.Init.Datatypes <> nat ind
+R6466:6468 Corelib.Init.Datatypes <> nat ind
+binder 6453:6455 <> phi:66
+R6476:6476 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6529:6537 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6490:6492 Corelib.Init.Datatypes <> nat ind
+binder 6484:6484 <> m:67
+binder 6486:6486 <> n:68
+R6506:6509 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R6497:6499 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6496:6496 CompactComplete <> m:67 var
+R6500:6500 CompactComplete <> n:68 var
+R6516:6518 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6511:6513 CompactComplete <> phi:66 var
+R6515:6515 CompactComplete <> m:67 var
+R6519:6521 CompactComplete <> phi:66 var
+R6523:6523 CompactComplete <> n:68 var
+binder 6545:6545 <> k:69
+R6554:6557 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R6549:6551 CompactComplete <> phi:66 var
+R6553:6553 CompactComplete <> k:69 var
+R6558:6558 CompactComplete <> k:69 var
+R6647:6649 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6650:6650 Corelib.Init.Datatypes <> S constr
+R6647:6649 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R6650:6650 Corelib.Init.Datatypes <> S constr
+R6690:6690 Corelib.Init.Datatypes <> S constr
+R6690:6690 Corelib.Init.Datatypes <> S constr
+prf 6981:6998 <> cauchy_subseq_conv
+R7017:7027 CompactComplete <> MetricSpace rec
+binder 7012:7013 <> ms:70
+R7038:7041 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7035:7037 Corelib.Init.Datatypes <> nat ind
+R7042:7043 CompactComplete <> ms:70 var
+binder 7031:7031 <> p:71
+R7056:7059 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7053:7055 Corelib.Init.Datatypes <> nat ind
+R7060:7062 Corelib.Init.Datatypes <> nat ind
+binder 7047:7049 <> phi:72
+R7070:7071 CompactComplete <> ms:70 var
+binder 7066:7066 <> L:73
+R7094:7101 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7079:7088 CompactComplete <> cauchy_seq def
+R7090:7091 CompactComplete <> ms:70 var
+R7093:7093 CompactComplete <> p:71 var
+R7102:7102 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7155:7163 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7116:7118 Corelib.Init.Datatypes <> nat ind
+binder 7110:7110 <> m:74
+binder 7112:7112 <> n:75
+R7132:7135 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7123:7125 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R7122:7122 CompactComplete <> m:74 var
+R7126:7126 CompactComplete <> n:75 var
+R7142:7144 Corelib.Init.Peano <> ::nat_scope:x_'<'_x not
+R7137:7139 CompactComplete <> phi:72 var
+R7141:7141 CompactComplete <> m:74 var
+R7145:7147 CompactComplete <> phi:72 var
+R7149:7149 CompactComplete <> n:75 var
+R7200:7207 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R7164:7173 CompactComplete <> convergent def
+R7175:7176 CompactComplete <> ms:70 var
+binder 7183:7183 <> n:76
+R7188:7188 CompactComplete <> p:71 var
+R7191:7193 CompactComplete <> phi:72 var
+R7195:7195 CompactComplete <> n:76 var
+R7199:7199 CompactComplete <> L:73 var
+R7208:7217 CompactComplete <> convergent def
+R7219:7220 CompactComplete <> ms:70 var
+R7222:7222 CompactComplete <> p:71 var
+R7224:7224 CompactComplete <> L:73 var
+R7306:7317 CompactComplete <> half_gt_zero thm
+R7306:7317 CompactComplete <> half_gt_zero thm
+R7365:7367 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7365:7367 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7414:7416 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7414:7416 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'/'_x not
+R7452:7454 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7452:7454 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7498:7501 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7498:7501 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7542:7545 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7558:7560 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7553:7555 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7542:7545 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7558:7560 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7553:7555 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7606:7609 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R7601:7603 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7596:7598 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7617:7619 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7612:7614 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7606:7609 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R7601:7603 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7596:7598 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7617:7619 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7612:7614 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7641:7660 CompactComplete <> strict_increasing_ge thm
+R7641:7660 CompactComplete <> strict_increasing_ge thm
+R7710:7713 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7726:7728 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7721:7723 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7710:7713 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7726:7728 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7721:7723 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7774:7777 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R7769:7771 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7764:7766 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7785:7787 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7780:7782 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7774:7777 Corelib.Init.Peano <> ::nat_scope:x_'>='_x not
+R7769:7771 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7764:7766 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7785:7787 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7780:7782 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7809:7828 CompactComplete <> strict_increasing_ge thm
+R7809:7828 CompactComplete <> strict_increasing_ge thm
+R7882:7884 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7877:7879 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7882:7884 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7877:7879 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7929:7932 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7940:7942 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7935:7937 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7929:7932 Corelib.Init.Peano <> ::nat_scope:x_'<='_x not
+R7940:7942 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R7935:7937 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8027:8029 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8022:8024 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8027:8029 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8022:8024 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8084:8087 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R8069:8072 CompactComplete <> dist proj
+R8132:8134 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8089:8092 CompactComplete <> dist proj
+R8120:8122 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8115:8117 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8136:8139 CompactComplete <> dist proj
+R8161:8163 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8156:8158 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8084:8087 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'<='_x not
+R8069:8072 CompactComplete <> dist proj
+R8132:8134 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'+'_x not
+R8089:8092 CompactComplete <> dist proj
+R8120:8122 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8115:8117 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8136:8139 CompactComplete <> dist proj
+R8161:8163 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8156:8158 Corelib.Init.Peano <> ::nat_scope:x_'+'_x not
+R8190:8202 CompactComplete <> dist_triangle proj
+R8190:8202 CompactComplete <> dist_triangle proj
+R8220:8231 Stdlib.Reals.RIneq <> Rle_lt_trans thm
+R8220:8231 Stdlib.Reals.RIneq <> Rle_lt_trans thm
+prf 8526:8545 <> seq_compact_complete
+R8564:8574 CompactComplete <> MetricSpace rec
+binder 8559:8560 <> ms:77
+R8592:8595 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R8578:8588 CompactComplete <> seq_compact def
+R8590:8591 CompactComplete <> ms:77 var
+R8596:8603 CompactComplete <> complete def
+R8605:8606 CompactComplete <> ms:77 var
+R8720:8737 CompactComplete <> cauchy_subseq_conv thm
+R8720:8737 CompactComplete <> cauchy_subseq_conv thm
