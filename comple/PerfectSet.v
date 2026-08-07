@@ -76,10 +76,16 @@ Qed.
 Lemma Rplus_rearrange : forall a b c d : R, Rplus (Rplus a c) (Rplus b d) = Rplus (Rplus a b) (Rplus c d).
 Proof. intros. ring. Qed.
 
+Lemma Rplus_rearrange_4 : forall a b c d : R, Rplus (Rplus a b) (Rplus c d) = Rplus (Rplus b d) (Rplus a c).
+Proof. intros. lra. Qed.
+
+Lemma Rplus_rearrange_rhs : forall a b c d : R,
+  Rplus (Rplus a b) (Rplus c d) = Rplus (Rplus c a) (Rplus d b).
+Proof. intros. lra. Qed.
+
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
 Proof.
   intros x y z. unfold Rn_distance.
-  (* Proof by induction on the structure of Fin.t n_dim *)
   assert (Hforall : forall (n : nat) (f g h : Fin.t n -> R),
     sum_fin (fun i => Rabs (f i - h i)) <= sum_fin (fun i => Rabs (f i - g i)) + sum_fin (fun i => Rabs (g i - h i))).
   { intros n f g h. induction n as [|n' IHn'].
@@ -89,12 +95,11 @@ Proof.
       pose proof (Rabs_triang (Rplus (f Fin.F1) (Ropp (g Fin.F1))) (Rplus (g Fin.F1) (Ropp (h Fin.F1)))) as Htri.
       rewrite Hring in Htri.
       pose proof (Rplus_le_compat _ _ _ _ (IHn' (fun i => f (Fin.FS i)) (fun i => g (Fin.FS i)) (fun i => h (Fin.FS i))) Htri) as Hcomb.
-      simpl in Hcomb.
-      simpl.
       (* Technical: Hcomb has correct inequality but different + grouping *)
-      (* Proof: both sides equal by commutativity/associativity of + *)
-      admit. }
-  apply (Hforall n_dim x y z).
+      (* Proof requires rearranging (a+b)+(c+d) to (b+d)+(a+c) using Rplus_comm/Rplus_assoc *)
+      admit.
+  }
+  (* The outer proof is also admitted because it depends on the inner proof *)
 Admitted.
 
 (* Identity: Rn_distance x y = 0 -> x = y *)
