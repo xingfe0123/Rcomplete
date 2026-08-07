@@ -83,31 +83,13 @@ Proof.
     { specialize (HN m Hm). unfold Rdist in HN. exact HN. }
     assert (Hn_abs : Rabs (partial_sum a n - L) < eps / 2).
     { specialize (HN n Hn). unfold Rdist in HN. exact HN. }
-    apply Rabs_le. split.
-    + (* -(eps) <= (S_m - L) - (S_n - L) *)
-      assert (H1 : (partial_sum a m - L) - (partial_sum a n - L) >=
-                    - (Rabs (partial_sum a m - L) + Rabs (partial_sum a n - L))).
-      { assert (Ht : Rabs ((partial_sum a m - L) + - (partial_sum a n - L)) <=
-                          Rabs (partial_sum a m - L) + Rabs (- (partial_sum a n - L))).
-        { apply Rabs_triang. }
-        rewrite Rabs_Ropp in Ht.
-        assert (Ht2 : Rabs ((partial_sum a m - L) - (partial_sum a n - L)) <=
-                          Rabs (partial_sum a m - L) + Rabs (partial_sum a n - L)).
-        { lra. }
-        apply Rabs_def2 in Ht2. lra. }
-      lra.
-    + (* (S_m - L) - (S_n - L) <= eps *)
-      assert (H2 : (partial_sum a m - L) - (partial_sum a n - L) <=
-                    Rabs (partial_sum a m - L) + Rabs (partial_sum a n - L)).
-      { assert (Ht : Rabs ((partial_sum a m - L) + - (partial_sum a n - L)) <=
-                          Rabs (partial_sum a m - L) + Rabs (- (partial_sum a n - L))).
-        { apply Rabs_triang. }
-        rewrite Rabs_Ropp in Ht.
-        assert (Ht2 : Rabs ((partial_sum a m - L) - (partial_sum a n - L)) <=
-                          Rabs (partial_sum a m - L) + Rabs (partial_sum a n - L)).
-        { lra. }
-        apply Rabs_def2 in Ht2. lra. }
-      lra.
+    (* |S_m - S_n| = |(S_m - L) + -(S_n - L)| <= |S_m - L| + |-(S_n - L)| = |S_m - L| + |S_n - L| < eps *)
+    replace (partial_sum a m - partial_sum a n)
+      with ((partial_sum a m - L) + - (partial_sum a n - L)) by lra.
+    rewrite Rabs_Ropp.
+    apply Rle_trans with (Rabs (partial_sum a m - L) + Rabs (partial_sum a n - L)).
+    + apply Rabs_triang.
+    + lra.
   - (* Cauchy ⟹ 收敛 *)
     intros Hcauchy.
     (* 证明部分和序列是 Cauchy 列 *)
