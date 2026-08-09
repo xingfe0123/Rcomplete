@@ -159,10 +159,18 @@ Theorem continuous_eps_delta_iff_open_preimage :
   forall (ms1 ms2 : MetricSpace) (f : @Carrier ms1 -> @Carrier ms2),
     continuous_eps_delta ms1 ms2 f <-> continuous_open_preimage ms1 ms2 f.
 Proof.
-  intros ms1 ms2 f.
-  apply iff_trans with (continuous_preimage ms1 ms2 f).
-  - apply continuous_eps_delta_iff_preimage.
-  - apply continuous_preimage_iff_open_preimage.
+  intros ms1 ms2 f. split.
+  - intros Hed U Hopen x HUfx.
+    assert (Hpre := continuous_eps_delta_iff_preimage ms1 ms2 f).
+    destruct (Hpre 1) as Hpre.
+    apply Hpre. exact Hed.
+    apply Hopen. exact HUfx.
+  - intros Hopen x eps Heps.
+    assert (Hpre := continuous_preimage_iff_open_preimage ms1 ms2 f).
+    destruct (Hpre 2) as Hpre.
+    apply Hpre. exact Hopen.
+    exists eps. split. exact Heps.
+    intros y Hy. exact Hy.
 Qed.
 
 (******************************************************************************)
@@ -284,10 +292,15 @@ Theorem R_continuous_eps_delta_iff_open_preimage :
   forall (f : R -> R),
     R_continuous_eps_delta f <-> R_continuous_open_preimage f.
 Proof.
-  intros f.
-  apply iff_trans with (R_continuous_preimage f).
-  - apply R_continuous_eps_delta_iff_preimage.
-  - apply R_continuous_preimage_iff_open_preimage.
+  intros f. split.
+  - intros Hed U Hopen x HUfx.
+    assert (Hpre := R_continuous_eps_delta_iff_preimage f).
+    destruct (Hpre 1) as Hpre.
+    apply Hpre. exact Hed. exact Hopen. exact HUfx.
+  - intros Hopen x W HW.
+    assert (Hpre := R_continuous_preimage_iff_open_preimage f).
+    destruct (Hpre 2) as Hpre.
+    apply Hpre. exact Hopen. exact HW.
 Qed.
 
 (******************************************************************************)

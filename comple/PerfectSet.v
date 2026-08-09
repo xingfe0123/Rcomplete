@@ -282,7 +282,6 @@ Proof.
   intros s Hcauchy.
   set (lim := fun i : Fin.t n_dim => proj1_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))).
   exists lim.
-  unfold LimitSeq.
   intros eps Heps.
   destruct (Compare_dec.lt_dec 0 n_dim) as [Hn | Hn].
   - (* n_dim > 0: use sum_fin_bound_eps *)
@@ -294,7 +293,6 @@ Proof.
       get_conv_N n_dim s i (lim i) (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))) (eps / INR n_dim) Hpos_div).
     exists (max_over_fin n_dim get_N).
     intros n Hn0.
-    unfold Rn_distance.
     assert (Hsum : @sum_fin n_dim (fun i => Rabs (s n i - lim i)) < (INR n_dim) * (eps / INR n_dim)).
     { apply (sum_fin_bound_eps n_dim (fun i => Rabs (s n i - lim i)) (eps / INR n_dim) Hn).
       intro i.
