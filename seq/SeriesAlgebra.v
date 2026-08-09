@@ -410,6 +410,94 @@ Theorem mertens_theorem :
     series_convergent a A -> absolutely_convergent a ->
     series_convergent b B ->
     series_convergent (fun n => cauchy_product a b n) (A * B).
+Proof.
+  intros a b A B Ha Habs_a Hb.
+  assert (Habs_cv : series_cv (fun n => Rabs (a n))) by exact Habs_a.
+  destruct Habs_cv as [Aabs HAabs].
+  (* |a_n| 的部分和递增有界 *)
+  assert (Habs_growing : Un_growing (fun n => partial_sum (fun k => Rabs (a k)) n)).
+  { red. intro n. rewrite partial_sum_S.
+    assert (H : Rabs (a (S n)) >= 0) by apply Rabs_pos. lra. }
+  assert (Habs_has_ub : has_ub (fun n => partial_sum (fun k => Rabs (a k)) n)).
+  { unfold has_ub, bound, is_upper_bound.
+    exists Aabs. intros x [i Hx]. rewrite Hx.
+    apply growing_cv_is_ub; [exact Habs_growing | exact HAabs]. }
+  assert (HA_bounded : forall n, Rabs (partial_sum a n) <= Aabs + 1).
+  { intro n. apply Rle_trans with (partial_sum (fun k => Rabs (a k)) n).
+    - induction n as [|n IH].
+      + simpl. apply Rabs_pos.
+      + rewrite partial_sum_S. rewrite partial_sum_S.
+        apply Rle_trans with (Rabs (partial_sum a n) + Rabs (a (S n))).
+        * apply Rabs_triang.
+        * apply Rplus_le_compat; [exact IH | apply Rabs_pos].
+    - apply Rle_trans with Aabs; [apply growing_cv_is_ub; [exact Habs_growing | exact HAabs] | lra]. }
+  assert (HB_cv : Un_cv (fun n => partial_sum b n) B) by exact Hb.
+  assert (HA_cv : Un_cv (fun n => partial_sum a n) A) by exact Ha.
+  (* B_n 有界 *)
+  assert (HB_bounded : exists Mb, Mb > 0 /\ forall n, Rabs (partial_sum b n) <= Mb).
+  { exists (Rabs B + 1). split; [lra |].
+    intro n. apply Rle_trans with (Rabs (partial_sum b n - B) + Rabs B).
+    - rewrite Rabs_triang. apply Rle_refl.
+    - apply Rplus_le_compat; [| apply Rle_refl].
+      unfold Un_cv, Rdist in HB_cv. specialize (HB_cv 1%R) as [N HN]; [lra |].
+      destruct (le_dec N n) as [Hle | Hgt].
+      + specialize (HN n Hle). unfold Rdist in HN. lra.
+      + (* 有限项有界 *)
+        induction N as [|N IH].
+        - simpl. rewrite Rabs_Ropp. rewrite Rabs_triang. lra.
+        - destruct IH as [M2 HM2].
+          assert (HM2_new : forall k, (k <= S N)%nat -> Rabs (partial_sum b k) <= Rmax M2 (Rabs (partial_sum b (S N)))).
+          { intros k Hk. destruct (Nat.eq_dec k (S N)) as [Heq | Hneq].
+            - subst. apply Rmax2.
+            - apply Rle_trans with M2; [apply Rmax1 | apply HM2; lia]. }
+          apply Rle_trans with (Rmax M2 (Rabs (partial_sum b (S N)))).
+          * apply HM2_new. lia.
+          * apply Rmax2. }
+  destruct HB_bounded as [Mb [HMb_pos Habs_B_bound]].
+  (* 关键恒等式：A_n * B_n - C_n = sum_{k=0}^{n} (A_n - A_k) * b_{n-k} *)
+  (* 其中 C_n = S_n(cauchy_product a b) *)
+  (* 证明 C_n -> A * B 等价于 A_n * B_n - C_n -> 0 *)
+  (* |A_n * B_n - C_n| <= sum_{k=0}^{n} |A_n - A_k| * |b_{n-k}| *)
+  (* 分成 k=0..p 和 k=p+1..n 两部分 *)
+  (* 对 k <= p: |A_n - A_k| <= sum_{i=k+1}^{n} |a_i| <= sum_{i=p+1}^{n} |a_i| + sum_{i=k+1}^{p} |a_i| *)
+  (* 简化：取 p = n/2, 但更简单的方法是直接用 Cauchy 准则 *)
+  unfold series_convergent, Un_cv, Rdist. intros eps Heps.
+  assert (H3Mb : eps / (3 * Mb) > 0).
+  { unfold Rdiv. apply Rmult_lt_0_compat; [exact Heps |].
+    apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra. }
+  assert (H3Aabs : eps / (3 * (Aabs + 1)) > 0).
+  { unfold Rdiv. apply Rmult_lt_0_compat; [exact Heps |].
+    apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra. }
+  assert (H3Mb2 : eps / (3 * Mb * (Aabs + 1)) > 0).
+  { unfold Rdiv. apply Rmult_lt_0_compat; [exact Heps |].
+    apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; [lra | apply Rmult_lt_0_compat; lra]. }
+  (* 取 N1 使得 n >= N1 时 |A_n - A| < eps/(3*Mb) *)
+  destruct (HA_cv (eps / (3 * Mb))) as [N1 HN1]; [exact H3Mb |].
+  (* 取 N2 使得 n >= N2 时 |B_n - B| < eps/(3*(Aabs+1)) *)
+  destruct (HB_cv (eps / (3 * (Aabs + 1)))) as [N2 HN2]; [exact H3Aabs |].
+  (* 取 N3 使得 m >= n >= N3 时 sum_{k=n+1}^{m} |a_k| < eps/(3*Mb) *)
+  assert (Habs_cauchy : series_cauchy (fun n => Rabs (a n))).
+  { apply series_convergent_iff_cauchy. exact Habs_cv. }
+  destruct (Habs_cauchy (eps / (3 * Mb))) as [N3 HN3]; [exact H3Mb |].
+  set (N0 := max (max N1 N2) N3).
+  exists N0. intro n. assert (Hn : (n >= N0)%nat) by lia.
+  assert (Hn1 : (n >= N1)%nat) by lia.
+  assert (Hn2 : (n >= N2)%nat) by lia.
+  assert (Hn3 : (n >= N3)%nat) by lia.
+  specialize (HN1 n Hn1). specialize (HN2 n Hn2).
+  unfold Rdist in HN1, HN2.
+  (* |S_n(C) - A * B| <= |A_n * B_n - S_n(C)| + |A_n * B_n - A * B| *)
+  (* |A_n * B_n - A * B| <= |A_n| * |B_n - B| + |A_n - A| * |B| *)
+  (*                     <= (Aabs+1) * |B_n - B| + |A_n - A| * Mb *)
+  (* |A_n * B_n - S_n(C)| = |sum_{k=0}^{n} (A_n - A_k) * b_{n-k}| *)
+  (* 分成 k=0..N3-1 和 k=N3..n *)
+  (* 对 k >= N3: |A_n - A_k| <= sum_{i=k+1}^{n} |a_i| < eps/(3*Mb) *)
+  (* 对 k < N3: |A_n - A_k| <= |A_n - A| + |A - A_k| *)
+  (*           |A_n - A| < eps/(3*Mb), |A_k| <= Aabs+1, |A - A_k| <= Aabs+1+|A| *)
+  (* Mertens 定理的完整证明需要建立 Cauchy 乘积恒等式：
+     S_n(a) * S_n(b) - S_n(c) = sum_{k=0}^{n} (A_n - A_k) * b_{n-k}
+     然后按 k < N3 和 k >= N3 分段精细估计，证明每项均 < eps/3。
+     由于涉及大量代数恒等式的精确立化，当前标记为 Axiom 保留。*)
 Admitted.
 
 (******************************************************************************)
@@ -477,8 +565,12 @@ Theorem series_scal_distr :
       (series_plus_cv (fun n => c * a n) (fun n => c * b n)
         (series_scal_cv c a) (series_scal_cv c b)).
 Proof.
-  intros c a b Ha Hb.
-  (* c * (A + B) = c * A + c * B *)
-  (* series_limit 的 match 结构使等式证明复杂，暂 Admitted *)
-  admit.
-Admitted.
+  intros c a b [A Ha] [B Hb].
+  (* LHS: series_limit (fun n => c*(a n + b n)) (series_scal_cv c ... (series_plus_cv a b))
+     = c * (A + B)
+     RHS: series_limit (fun n => c*a n + c*b n) (series_plus_cv ... (series_scal_cv c a) (series_scal_cv c b))
+     = c*A + c*B
+     Goal: c * (A + B) = c * A + c * B *)
+  simpl.
+  rewrite Rmult_plus_distr_l. reflexivity.
+Qed.

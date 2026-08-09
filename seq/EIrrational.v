@@ -221,11 +221,54 @@ Axiom e_remainder_lt :
   forall n, (1 <= n)%nat -> e - e_partial n < / INR (n * fact n).
 
 (******************************************************************************)
-(* (D) q * n! * S_n 是整数（当 n >= 1, q >= 1）                              *)
-(* 因为 q * n! / k! = q * n*(n-1)*...*(k+1) 是整数对 k <= n                 *)
-Axiom q_fact_partial_sum_is_nat :
+(* (D) q * n! * S_n 是整数（当 n >= 1, q >= 1）
+(* 因为 q * n! / k! = q * n*(n-1)*...*(k+1) 是整数对 k <= n *)
+Lemma q_fact_partial_sum_is_nat :
   forall q n, (1 <= q)%nat ->
   exists m, INR q * INR (fact n) * e_partial n = INR m.
+Proof.
+  intros q n Hq.
+  unfold e_partial, inv_fact.
+  (* INR q * INR(fact n) * sum_{k=0}^{n} 1/fact(k)
+     = sum_{k=0}^{n} INR q * INR(fact n) / INR(fact k)
+     对 k <= n: fact k | fact n, 每项都是 INR 的整数 *)
+  revert q Hq.
+  induction n as [|n IH].
+  - (* n = 0: e_partial 0 = 1/fact(0) = 1, INR q * INR 1 * 1 = INR q *)
+    intros q Hq.
+    exists q.
+    simpl.
+    rewrite Rmult_1_r. rewrite Rmult_1_r. reflexivity.
+  - (* n = S n: e_partial (S n) = e_partial n + 1/fact(S n) *)
+    (* INR q * INR(fact(S n)) * e_partial(S n)
+       = INR q * INR((S n) * fact n) * (e_partial n + inv_fact(S n))
+       = INR q * INR((S n) * fact n) * e_partial n
+         + INR q * INR((S n) * fact n) * inv_fact(S n) *)
+    (* 第一项 = INR(S n) * (INR q * INR(fact n) * e_partial n) = INR(S n) * INR m' = INR((S n) * m') *)
+    (* 第二项 = INR q * INR((S n) * fact n) / INR((S n) * fact n) = INR q *)
+    intros q Hq.
+    destruct (IH q Hq) as [m' Hm'].
+    exists ((S n) * m' + q).
+    rewrite partial_sum_S.
+    rewrite fact_S. rewrite mult_INR.
+    rewrite Rmult_plus_distr_l.
+    rewrite plus_INR.
+    rewrite mult_INR.
+    f_equal.
+    - (* 第一项: INR q * INR((S n) * fact n) * e_partial n = INR(S n) * INR m' *)
+      rewrite <- mult_INR.
+      rewrite <- Rmult_assoc.
+      rewrite Rmult_comm.
+      rewrite Rmult_assoc.
+      rewrite Hm'.
+      reflexivity.
+    - (* 第二项: INR q * INR((S n) * fact n) * inv_fact(S n) = INR q *)
+      rewrite fact_S.
+      rewrite <- Rmult_assoc.
+      rewrite Rinv_r.
+      + rewrite Rmult_1_r. reflexivity.
+      + apply Rgt_not_eq. apply lt_0_INR. lia.
+Qed.
 
 (******************************************************************************)
 (* q * n! * (e - S_n) < 1  (当 n > q)                                        *)

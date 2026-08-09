@@ -240,7 +240,53 @@ Lemma root_bound_power :
     0 <= r -> (N <= n)%nat ->
     Rabs (c n) ^ (/ INR (S n)) <= r ->
     Rabs (power_series c z n) <= (r * Rabs z) ^ n.
-Admitted.
+Proof.
+  intros c r z N n Hr0 Hn Hroot.
+  unfold power_series. rewrite Rabs_mult. rewrite <- Rabs_pow.
+  assert (Hr_pos : 0 < r) by lra.
+  assert (Hn_pos : 0 < INR (S n)).
+  { apply lt_0_INR. lia. }
+  assert (Hcn_abs_pos : 0 <= Rabs (c n)).
+  { apply Rabs_pos. }
+  assert (Hcn_abs_nonneg : 0 < Rabs (c n) \/ Rabs (c n) = 0).
+  { destruct (Rabs (c n)) as [|x] eqn:Heq.
+    - right. reflexivity.
+    - left. apply Rlt_0_plus. }
+  destruct Hcn_abs_nonneg as [Hcn_pos | Hcn_zero].
+  - (* Rabs(c_n) > 0 *)
+    assert (Hroot_pow : Rabs (c n) <= r ^ (S n)).
+    { assert (H1 : Rabs (c n) = (Rabs (c n) ^ (/ INR (S n))) ^ (INR (S n))).
+      { rewrite <- Rpow_Rpow.
+        - reflexivity.
+        - exact Hcn_pos. }
+      rewrite H1.
+      assert (H2 : r ^ (INR (S n)) = r ^ (S n)).
+      { rewrite <- Rpow_nat_Rpow.
+        - reflexivity.
+        - exact Hr_pos. }
+      rewrite H2.
+      apply Rpow_le2; [exact Hroot | exact Hr0]. }
+    assert (Hz_abs_nonneg : 0 <= Rabs z) by apply Rabs_pos.
+    apply Rle_trans with (r ^ (S n) * Rabs z ^ n).
+    - apply Rmult_le_compat_r; [exact Hz_abs_nonneg | exact Hroot_pow].
+    - assert (H3 : r ^ (S n) * Rabs z ^ n = r * (r ^ n * Rabs z ^ n)).
+      { simpl. rewrite Rmult_assoc. reflexivity. }
+      rewrite H3. rewrite <- Rpow_pow_Rpow.
+      + rewrite Rmult_assoc. rewrite <- Rpow_add.
+        * f_equal. lia.
+        * exact Hr_pos.
+        * apply Rabs_pos.
+      + exact Hr_pos.
+      + apply Rabs_pos.
+  - (* Rabs(c_n) = 0 *)
+    rewrite Hcn_zero. rewrite Rmult_0_l.
+    assert (Hz_abs_nonneg : 0 <= Rabs z) by apply Rabs_pos.
+    assert (Hr_z_nonneg : 0 <= r * Rabs z).
+    { apply Rmult_le_compat; [exact Hr0 | exact Hz_abs_nonneg]. }
+    apply Rle_trans with (0 * (r * Rabs z) ^ n).
+    - lra.
+    - rewrite Rmult_0_l. apply Rle_refl.
+Qed.
 
 (******************************************************************************)
 (* 主定理 1：|z| < R 时幂级数绝对收敛                                         *)
@@ -258,7 +304,52 @@ Theorem power_series_convergent :
     a > 0 ->
     Rabs z < / a ->
     series_cv (power_series c z).
-Admitted.
+Proof.
+  intros c z a Ha Habs.
+  assert (Ha_pos : 0 < a) by exact Ha.
+  assert (Hz_abs_nonneg : 0 <= Rabs z) by apply Rabs_pos.
+  assert (Haz : a * Rabs z < 1).
+  { assert (H1 : a * Rabs z < a * / a).
+    { apply Rmult_lt_compat_l; [exact Ha_pos | exact Habs]. }
+    rewrite Rmult_comm. rewrite Rinv_r in H1.
+    - lra.
+    - apply Rgt_not_eq. exact Ha_pos. }
+  (* 取 eps 使得 (a + eps) * |z| < 1 *)
+  assert (Heps_exists : exists eps, eps > 0 /\ (a + eps) * Rabs z < 1).
+  { assert (Hdiff : 1 - a * Rabs z > 0) by lra.
+    destruct (Rabs z) as [|xz] eqn:Heq_z.
+    + rewrite Rabs_R0 in *. exists 1. split; lra.
+    + assert (Hz_pos : 0 < Rabs z) by (apply Rabs_pos_lt; apply Rlt_0_plus).
+      exists ((1 - a * Rabs z) / (2 * Rabs z)).
+      * unfold Rdiv. apply Rmult_lt_0_compat; [lra |].
+        apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra.
+      * rewrite Rmult_plus_distr_l.
+        rewrite Rmult_assoc. rewrite Rinv_r.
+        -- rewrite Rmult_1_r. lra.
+        -- apply Rgt_not_eq. exact Hz_pos. }
+  destruct Heps_exists as [eps [Heps_pos Heps_bound]].
+  assert (Ha_eps_pos : 0 < a + eps) by lra.
+  assert (Ha_eps_nonneg : 0 <= a + eps) by lra.
+  assert (Heq : limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = a) by reflexivity.
+  destruct (limsup_root_spec (fun n => Rabs (c n) ^ (/ INR (S n))) a Heq) as [Hnneg [Hupper _]].
+  destruct (Hupper eps Heps_pos) as [N HN].
+  assert (Hr_z_lt_1 : Rabs ((a + eps) * Rabs z) < 1).
+  { rewrite Rabs_mult.
+    assert (H1 : Rabs (a + eps) = a + eps) by (apply Rabs_right; left; exact Ha_eps_pos).
+    rewrite H1. exact Heps_bound. }
+  assert (Hgeo : series_cv (fun n => ((a + eps) * Rabs z) ^ n)).
+  { apply geometric_series_cv. exact Hr_z_lt_1. }
+  (* 用 root_test_convergent：对 n >= N, |c_n * z^n| <= ((a+eps)*|z|)^n *)
+  assert (Hr_z_nonneg : 0 <= (a + eps) * Rabs z).
+  { apply Rmult_le_compat; [exact Ha_eps_nonneg | exact Hz_abs_nonneg]. }
+  assert (Habs_tail : forall n, (N <= n)%nat ->
+    Rabs (power_series c z n) <= ((a + eps) * Rabs z) ^ n).
+  { intros n Hn. apply root_bound_power; [exact Ha_eps_nonneg | exact Hn | apply HN; exact Hn]. }
+  apply root_test_convergent with (r := (a + eps) * Rabs z).
+  - exact Hr_z_nonneg.
+  - exact Heps_bound.
+  - exists N. exact Habs_tail.
+Qed.
 
 (******************************************************************************)
 (* 主定理 2：|z| > R 时幂级数发散                                             *)
@@ -276,7 +367,86 @@ Theorem power_series_divergent :
     a > 0 ->
     Rabs z > / a ->
     ~ series_cv (power_series c z).
-Admitted.
+Proof.
+  intros c z a Ha Habs Hcv.
+  assert (Ha_pos : 0 < a) by exact Ha.
+  assert (Hz_abs_pos : 0 < Rabs z) by lra.
+  assert (Haz : a * Rabs z > 1).
+  { assert (H1 : a * Rabs z > a * / a).
+    { apply Rmult_gt_compat_l; [exact Ha_pos | exact Habs]. }
+    rewrite Rmult_comm. rewrite Rinv_r in H1.
+    - lra.
+    - apply Rgt_not_eq. exact Ha_pos. }
+  assert (Heps_exists : exists eps, eps > 0 /\ (a - eps) * Rabs z > 1).
+  { exists ((a * Rabs z - 1) / (2 * Rabs z)).
+    - unfold Rdiv. apply Rmult_lt_0_compat; [lra |].
+      apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; [exact Hz_abs_pos | lra].
+    - rewrite Rmult_minus_distr_l.
+      rewrite Rmult_assoc. rewrite Rinv_r.
+      + rewrite Rmult_1_r. lra.
+      + apply Rgt_not_eq. exact Hz_abs_pos. }
+  destruct Heps_exists as [eps [Heps_pos Heps_bound]].
+  assert (Ha_eps_pos : 0 < a - eps) by lra.
+  assert (Ha_eps_nonneg : 0 <= a - eps) by lra.
+  assert (Heq : limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = a) by reflexivity.
+  destruct (limsup_root_spec (fun n => Rabs (c n) ^ (/ INR (S n))) a Heq) as [Hnneg [_ Hlower]].
+  (* 通项不趋于 0 *)
+  assert (Hnot_tendsto_0 : ~ Un_cv (fun n => power_series c z n) 0).
+  { intro H0. unfold Un_cv, Rdist in H0.
+    assert (Hr_z_pos : 0 < (a - eps) * Rabs z) by lra.
+    specialize (H0 (1 - 1)) as [M HM].
+    - lra.
+    - (* 对任意 M, 存在 n >= M 使得 |c_n|^{1/n} >= a - eps *)
+      specialize (Hlower M) as [n [Hn Hroot_lower]].
+      assert (Hn_M : (n >= M)%nat) by exact Hn.
+      specialize (HM n Hn_M). unfold Rdist in HM.
+      (* |c_n * z^n| >= ((a-eps)*|z|)^n > 1 *)
+      assert (Habs_cn : Rabs (c n) >= (a - eps) ^ (S n)).
+      { assert (H1 : Rabs (c n) = (Rabs (c n) ^ (/ INR (S n))) ^ (INR (S n))).
+        { destruct (Rabs (c n)) as [|cn] eqn:Heq_cn.
+          - rewrite Rabs_R0 in Heq_cn. rewrite Heq_cn. rewrite Rpow_R0.
+            + reflexivity.
+            + apply lt_0_INR. lia.
+          - rewrite <- Rpow_Rpow; [reflexivity | apply Rlt_0_plus]. }
+        rewrite H1.
+        assert (H2 : (a - eps) ^ (INR (S n)) = (a - eps) ^ (S n)).
+        { rewrite <- Rpow_nat_Rpow; [reflexivity | exact Ha_eps_pos]. }
+        rewrite H2.
+        apply Rpow_le2; [exact Hroot_lower | exact Ha_eps_nonneg]. }
+      assert (Hps_abs : Rabs (power_series c z n) >= ((a - eps) * Rabs z) ^ n).
+      { rewrite power_series_abs.
+        assert (Hz_pow_pos : 0 <= Rabs z ^ n) by (apply pow_le; apply Rabs_pos).
+        assert (Hcn_nonneg : 0 <= Rabs (c n)) by apply Rabs_pos.
+        assert (Hcn_ge : Rabs (c n) >= (a - eps) ^ (S n)) by exact Habs_cn.
+        assert (Hr_eps_n : (a - eps) ^ (S n) = (a - eps) * (a - eps) ^ n).
+        { simpl. rewrite Rmult_assoc. reflexivity. }
+        rewrite Hr_eps_n in Hcn_ge.
+        apply Rle_trans with ((a - eps) * (a - eps) ^ n * Rabs z ^ n).
+        - apply Rmult_le_compat; [exact Hcn_nonneg | exact Hz_pow_pos].
+          exact Hcn_ge.
+        - rewrite Rmult_assoc. rewrite <- Rmult_assoc with ((a - eps) ^ n) (Rabs z ^ n).
+          f_equal. rewrite <- Rpow_pow_Rpow.
+          + rewrite <- Rpow_add.
+            * f_equal. lia.
+            * exact Ha_eps_pos.
+            * apply Rabs_pos.
+          + exact Ha_eps_pos.
+          + apply Rabs_pos. }
+      assert (Hr_z_n_gt_1 : ((a - eps) * Rabs z) ^ n > 1).
+      { assert (Hr_z_gt_1 : (a - eps) * Rabs z > 1) by exact Heps_bound.
+        revert n Hn. induction n as [|n IH]; intros Hn.
+        - lia.
+        - assert (Hn_gt_0 : (n > 0)%nat) by lia.
+          assert (HIH : ((a - eps) * Rabs z) ^ n > 1) by apply IH.
+          simpl. apply Rmult_gt_compat_l; [lra | exact HIH]. }
+      assert (Hps_gt_1 : Rabs (power_series c z n) > 1) by lra.
+      assert (Hd : Rdist (power_series c z n) 0 = Rabs (power_series c z n)).
+      { unfold Rdist. rewrite Rminus_0_r. reflexivity. }
+      rewrite Hd in HM. lra. }
+  assert (Htendsto_0 : Un_cv (fun n => power_series c z n) 0).
+  { apply series_cv_tendsto_0. exact Hcv. }
+  apply Hnot_tendsto_0. exact Htendsto_0.
+Qed.
 
 (******************************************************************************)
 (* 主定理 3：a = 0 时 R = +infty，对所有 z 收敛                              *)
@@ -286,7 +456,49 @@ Theorem power_series_convergent_infty :
   forall (c : nat -> R) (z : R),
     limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = 0 ->
     series_cv (power_series c z).
-Admitted.
+Proof.
+  intros c z Ha.
+  assert (Hz_abs_nonneg : 0 <= Rabs z) by apply Rabs_pos.
+  destruct (Rabs z) as [|xz] eqn:Heq_z.
+  - (* z = 0 *)
+    rewrite Rabs_R0 in Heq_z.
+    assert (Hps_0 : forall n, power_series c z n = c n * 0 ^ n).
+    { intro n. unfold power_series. rewrite Heq_z. reflexivity. }
+    assert (Hps_0_n : forall n, (0 < n)%nat -> power_series c z n = 0).
+    { intros n Hn. rewrite Hps_0. simpl. lra. }
+    assert (Hps_0_0 : power_series c z 0 = c 0).
+    { rewrite Hps_0. simpl. lra. }
+    exists (c 0). unfold series_convergent, Un_cv, Rdist. intros eps Heps.
+    exists 1%nat. intro n. assert (Hn : (n >= 1)%nat) by lia.
+    destruct n as [|n].
+    - lia.
+    - rewrite partial_sum_S. rewrite Hps_0_n; lia. rewrite Hps_0_0. lra.
+  - (* z <> 0 *)
+    assert (Hz_abs_pos : 0 < Rabs z) by (apply Rabs_pos_lt; apply Rlt_0_plus).
+    (* a = 0, 对任意 r > 0, 存在 N 使得 n >= N 时 |c_n|^{1/n} <= r *)
+    (* 取 r 使得 r * |z| < 1, 即 r < 1/|z| *)
+    assert (Hinv_z_pos : 0 < / Rabs z).
+    { apply Rinv_0_lt_compat. exact Hz_abs_pos. }
+    assert (Hr_exists : exists r, 0 < r /\ r * Rabs z < 1).
+    { exists (/ (2 * Rabs z)).
+      - unfold Rdiv. apply Rmult_lt_0_compat; [lra |].
+        apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; [exact Hz_abs_pos | lra].
+      - rewrite Rmult_assoc. rewrite Rinv_r.
+        + rewrite Rmult_1_r. lra.
+        + apply Rgt_not_eq. apply Rmult_lt_0_compat; [exact Hz_abs_pos | lra]. }
+    destruct Hr_exists as [r [Hr_pos Hr_bound]].
+    assert (Hr_nonneg : 0 <= r) by lra.
+    assert (Heq : limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = 0) by exact Ha.
+    destruct (limsup_root_spec (fun n => Rabs (c n) ^ (/ INR (S n))) 0 Heq) as [Hnneg [Hupper _]].
+    destruct (Hupper r Hr_pos) as [N HN].
+    assert (Habs_tail : forall n, (N <= n)%nat ->
+      Rabs (power_series c z n) <= (r * Rabs z) ^ n).
+    { intros n Hn. apply root_bound_power; [exact Hr_nonneg | exact Hn | apply HN; exact Hn]. }
+    apply root_test_convergent with (r := r * Rabs z).
+    - apply Rmult_le_compat; [exact Hr_nonneg | exact Hz_abs_nonneg].
+    - exact Hr_bound.
+    - exists N. exact Habs_tail.
+Qed.
 
 (******************************************************************************)
 (* 综合定理：Cauchy-Hadamard                                                  *)

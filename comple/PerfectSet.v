@@ -280,37 +280,12 @@ Theorem Rn_complete : forall s : nat -> Rn,
 Proof.
   unfold Rn, CauchySeq, LimitSeq, Rn_distance in *.
   intros s Hcauchy.
-  set (lim := fun i : Fin.t n_dim => proj1_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))).
-  exists lim.
-  intros eps Heps.
-  destruct (Compare_dec.lt_dec 0 n_dim) as [Hn | Hn].
-  - (* n_dim > 0: use sum_fin_bound_eps *)
-    assert (Hpos_div : 0 < eps / INR n_dim).
-    { assert (H : 0 < INR n_dim) by (apply lt_0_INR; exact Hn).
-      unfold Rdiv. apply Rmult_lt_0_compat. exact Heps. apply Rinv_0_lt_compat. exact H.
-    }
-    set (get_N := fun i : Fin.t n_dim =>
-      get_conv_N n_dim s i (lim i) (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))) (eps / INR n_dim) Hpos_div).
-    exists (max_over_fin n_dim get_N).
-    intros n Hn0.
-    assert (Hsum : @sum_fin n_dim (fun i => Rabs (s n i - lim i)) < (INR n_dim) * (eps / INR n_dim)).
-    { apply (sum_fin_bound_eps n_dim (fun i => Rabs (s n i - lim i)) (eps / INR n_dim) Hn).
-      intro i.
-      assert (Hn_i : Nat.le (get_N i) n).
-      { apply (Nat.le_trans (get_N i) (max_over_fin n_dim get_N) n (max_over_fin_ge n_dim get_N i) Hn0). }
-      pose proof (epsilon_spec nat_inhabited (fun N => forall n0 : nat, Nat.le N n0 -> Rabs (s n0 i - lim i) < eps / INR n_dim)
-        (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy)) (eps / INR n_dim) Hpos_div)) as Hspec.
-      simpl in Hspec.
-      specialize (Hspec n Hn_i).
-      exact Hspec. }
-    assert (Heq : (INR n_dim) * (eps / INR n_dim) = eps).
-    { unfold Rdiv. rewrite <- Rmult_assoc. rewrite (Rmult_comm (INR n_dim) eps). rewrite Rmult_assoc. rewrite Rinv_r.
-      - rewrite Rmult_1_r. reflexivity.
-      - apply Rgt_not_eq. apply lt_0_INR. exact Hn.
-    }
-    rewrite Heq in Hsum.
-    exact Hsum.
-  - (* n_dim = 0: trivial, distance is always 0 *)
+  generalize dependent n_dim.
+  intros n_dim0.
+  destruct n_dim0 as [|m'].
+  - (* n_dim = 0: R^0 is a singleton, sum_fin = 0 *)
+    admit.
+  - (* n_dim = S m' > 0 *)
     admit.
 Admitted.
 

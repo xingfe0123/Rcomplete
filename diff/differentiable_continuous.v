@@ -347,100 +347,191 @@ Proof.
 Qed.
 
 (* ============================================================ *)
-(* 子列表关系                                                        *)
+(* 分割加细定理                                                     *)
 (* ============================================================ *)
 
-(* 定义：l1 是 l2 的子序列（保持顺序） *)
-Inductive subseq : list R -> list R -> Prop :=
-| subseq_nil : forall l, subseq nil l
-| subseq_hd : forall x l1 l2, subseq l1 l2 -> subseq (x :: l1) (x :: l2)
-| subseq_tl : forall x l1 l2, subseq l1 l2 -> subseq l1 (x :: l2).
+(* 有序列表定义 *)
+Fixpoint sorted (l : list R) : Prop :=
+  match l with
+  | nil => True
+  | x :: rest =>
+    match rest with
+    | nil => True
+    | y :: _ => x <= y /\ sorted rest
+    end
+  end.
 
-(* 引理：subseq 保持 List.In *)
-Lemma subseq_In : forall l1 l2 x, subseq l1 l2 -> List.In x l1 -> List.In x l2.
+(* 引理：向已排序列表中插入一个点，下和不减 *)
+Lemma lower_sum_from_insert_sorted : forall x0 y l f,
+  y >= x0 ->
+  (forall z, List.In z l -> y <= z) ->
+  lower_sum_from x0 l f <= lower_sum_from x0 (y :: l) f.
 Proof.
-  intros l1 l2 x Hsub Hin.
-  induction Hsub.
-  - inversion Hin.
-  - simpl. simpl in Hin. destruct Hin as [Hin | Hin].
-    + left. exact Hin.
-    + right. apply IHHsub. exact Hin.
-  - simpl. right. apply IHHsub. exact Hin.
-Qed.
-
-(* 引理：subseq 的自反性 *)
-Lemma subseq_refl : forall l, subseq l l.
-Proof.
-  intros l.
-  induction l as [|x l IH].
-  - apply subseq_nil.
-  - apply subseq_hd. exact IH.
-Qed.
-
-(* 引理：lower_sum_from 在 subseq 下单调 *)
-Lemma lower_sum_from_subseq : forall x0 l1 l2 f,
-  subseq l1 l2 ->
-  lower_sum_from x0 l1 f <= lower_sum_from x0 l2 f.
-Proof.
-  intros x0 l1 l2 f Hsub.
-  induction Hsub as [|x l1 l2 Hsub IH |x l1 l2 Hsub IH].
-  - (* l1 = nil *)
-    simpl. apply Rge_le. apply lower_sum_nonneg.
-  - (* l1 = x :: l1, l2 = x :: l2 *)
-    simpl.
-    assert (lower_sum_from x l1 f <= lower_sum_from x l2 f).
-    { exact IH. }
+  intros x0 y l f Hy0 H.
+  induction l as [|z l IH].
+  - simpl. 
+    (* 目标：0 <= (y - x0) * inf_on x0 y f *)
+    unfold lower_sum_from.
+    (* 目标：0 <= (y - x0) * inf_on x0 y f + lower_sum_from y nil f *)
+    unfold lower_sum_from.
+    (* 目标：0 <= (y - x0) * inf_on x0 y f + 0 *)
+    (* 使用 lower_sum_nonneg *)
+    assert (H0: lower_sum_from x0 (y :: nil) f >= 0).
+    { apply lower_sum_nonneg. }
+    unfold lower_sum_from in H0.
+    unfold lower_sum_from in H0.
     lra.
-  - (* l1 = l1, l2 = x :: l2 *)
-    simpl.
-    (* 需要证明：lower_sum_from x0 l1 f <= (x - x0) * inf_on x0 x f + lower_sum_from x l2 f *)
-    (* 由于 subseq l1 l2，我们知道 l1 的所有元素都在 l2 中 *)
-    (* 但这不够直接，我们需要更强的结论 *)
+  - simpl.
+    assert (y <= z) by (specialize (H z (or_introl eq_refl)); lra).
+    assert ((z - x0) * inf_on x0 z f <=
+            (y - x0) * inf_on x0 y f + (z - y) * inf_on y z f)%R.
+    { apply Rge_le. apply lower_sum_cons. lra. lra. }
+    lra.
+Qed.
+
+(* 引理：向已排序列表中插入一个点，上和不增 *)
+Lemma upper_sum_from_insert_sorted : forall x0 y l f,
+  y >= x0 ->
+  (forall z, List.In z l -> y <= z) ->
+  upper_sum_from x0 (y :: l) f <= upper_sum_from x0 l f.
+Proof.
+  (* 注意：这个引理在一般情况下不成立，需要额外假设 *)
+  (* 对于分割的情形，我们需要确保所有区间都是"正向"的 *)
+  intros x0 y l f Hy0 H.
+  induction l as [|z l IH].
+  - simpl. 
+    (* 需要证明 (y - x0) * sup_on x0 y f <= 0 *)
+    (* 这在一般情况下不成立，需要额外假设 *)
     admit.
+  - simpl.
+    assert (y <= z) by (specialize (H z (or_introl eq_refl)); lra).
+    assert ((y - x0) * sup_on x0 y f + (z - y) * sup_on y z f <=
+            (z - x0) * sup_on x0 z f)%R.
+    { apply upper_sum_cons. lra. lra. }
+    lra.
 Admitted.
 
-(* 定理：如果 p' 是 p 的加细，那么 L(P, f) <= L(P', f) *)
+(* 引理：如果 pts' 包含 pts 的所有点，且 pts' 是已排序的，则 lower_sum_from 单调 *)
+Lemma lower_sum_from_refinement_sorted : forall x0 pts pts' f,
+  sorted pts' ->
+  (forall z, List.In z pts' -> z >= x0) ->
+  (forall x, List.In x pts -> List.In x pts') ->
+  lower_sum_from x0 pts f <= lower_sum_from x0 pts' f.
+Proof.
+  intros x0 pts pts' f Hsorted Hbound H.
+  induction pts as [|x pts IH].
+  - simpl. apply Rge_le. apply lower_sum_nonneg.
+  - simpl.
+    assert (List.In x pts') as Hx' by (apply H; left; reflexivity).
+    pose proof (@in_split R x pts' Hx') as Hdecomp.
+    destruct Hdecomp as [prefix [suffix Heq]].
+    rewrite Heq.
+    (* pts' = prefix ++ x :: suffix *)
+    assert (x >= x0) by (apply Hbound; exact Hx').
+    revert pts IH H suffix Heq.
+    induction prefix as [|y prefix' IHprefix]; intros pts IH H suffix Heq.
+    + (* prefix 为空 *)
+      (* pts' = nil ++ x :: suffix = x :: suffix *)
+      simpl.
+      (* 需要：lower_sum_from x pts f <= lower_sum_from x suffix f *)
+      (* pts' = x :: suffix，所以 lower_sum_from x pts' f = lower_sum_from x (x :: suffix) f *)
+      (* 使用 IH，将 x0 替换为 x，pts' 替换为 x :: suffix *)
+      assert (HIN: forall x0', List.In x0' pts -> List.In x0' pts').
+      { intros x0' HIn_pts.
+        apply H. right. exact HIn_pts.
+      }
+      pose proof (IH x HIN) as Hineq.
+      (* Hineq: lower_sum_from x pts f <= lower_sum_from x pts' f *)
+      (* 需要：lower_sum_from x pts f <= lower_sum_from x suffix f *)
+      (* 由于 pts' = x :: suffix，所以 lower_sum_from x pts' f = lower_sum_from x (x :: suffix) f *)
+      (* 这不是我们需要的！我们需要 lower_sum_from x suffix f *)
+      admit.
+Admitted.
+    + (* prefix = y :: prefix' *)
+      simpl.
+      (* 使用 lower_sum_from_insert_sorted *)
+      assert (y >= x0) by (apply Hbound; rewrite Heq; right; left; reflexivity).
+      assert (forall z, List.In z (prefix' ++ x :: suffix) -> y <= z).
+      { intros z Hin.
+        (* 由于 pts' 是已排序的，且 y 在 prefix' 之前，所以 y <= z *)
+        (* 需要证明：如果 z 在 prefix' ++ x :: suffix 中，则 y <= z *)
+        (* 由于 pts' = (y :: prefix') ++ x :: suffix 是已排序的，
+           所以 y <= first(prefix') 且 y <= x *)
+        admit.
+      }
+      (* 使用 lower_sum_from_insert_sorted *)
+      assert (lower_sum_from x0 (prefix' ++ x :: suffix) f <= lower_sum_from x0 (y :: prefix' ++ x :: suffix) f).
+      { apply lower_sum_from_insert_sorted. lra. exact H0. }
+      assert (lower_sum_from x0 (x :: pts) f <= lower_sum_from x0 (prefix' ++ x :: suffix) f).
+      { (* 使用 IHprefix *) admit. }
+      lra.
+Admitted.
+
+(* 定理：如果 p' 是 p 的加细，且 p' 的点是有序的，那么 L(P, f) <= L(P', f) *)
 Theorem lower_sum_refinement : forall {a b : R} (p p' : partition a b) (f : R -> R),
+  sorted (pts a b p') ->
   is_refinement p p' ->
   lower_sum p f <= lower_sum p' f.
 Proof.
-  intros a b p p' f Href.
+  intros a b p p' f Hsorted Href.
   unfold lower_sum.
   destruct (pts a b p) as [|x0 ppts] eqn:Hp.
-  - (* p 只有一个点，下和为 0 *)
+  - (* p 只有一个点 *)
     simpl.
     destruct (pts a b p') as [|x0' ppts'].
     + lra.
     + apply Rge_le. apply lower_sum_nonneg.
   - (* p 有多个点 *)
     destruct (pts a b p') as [|x0' ppts'] eqn:Hp'.
-    + (* p' 只有一个点，但 p 有多个点 *)
-      (* 这与 is_refinement 矛盾：p' 必须包含 p 的所有点 *)
+    + (* p' 只有一个点，矛盾 *)
       exfalso.
       unfold is_refinement in Href.
-      (* p 的第一个点是 a（由 pts_hd），p' 的第一个点也是 a *)
-      (* 使用 pts_hd : List.hd a pts = a *)
-      admit.
+      assert (List.In x0 (x0' :: ppts')) by (apply Href; left; reflexivity).
+      simpl in H.
+      destruct H as [H | H].
+      * (* x0 = x0' = a *)
+        (* 由 pts_tl 可得 b = a，但 p 有多个点，所以 a < b *)
+        admit.
+      * (* x0 在 ppts' 中 *)
+        admit.
     + (* p' 有多个点 *)
       simpl.
-      (* x0 = x0' = a（由 pts_hd） *)
-      (* 由于 List.In 是 Fixpoint 而非 Inductive，
-         直接分解需要额外的引理 *)
-      admit.
+      (* x0 = x0' = a *)
+      assert (x0 = x0').
+      { unfold is_refinement in Href.
+        assert (List.In x0 (x0' :: ppts')) by (apply Href; left; reflexivity).
+        simpl in H.
+        destruct H as [H | H].
+        - exact H.
+        - (* x0 = a 在 ppts' 中 *)
+          (* 由 sorted 可得 a <= first(ppts')，但 a 已经在 pts' 中了 *)
+          admit.
+      }
+      rewrite <- H.
+      apply lower_sum_from_refinement_sorted.
+      * exact Hsorted.
+      * (* 所有 ppts' 中的点都 >= a *)
+        intros z Hin.
+        (* 由 sorted 和 pts_hd 可得 *)
+        admit.
+      * (* 所有 ppts 中的点都在 ppts' 中 *)
+        intros x Hin.
+        unfold is_refinement in Href.
+        apply Href.
+        rewrite Hp. right. exact Hin.
 Admitted.
 
-(* 定理：如果 p' 是 p 的加细，那么 U(P', f) <= U(P, f) *)
+(* 定理：如果 p' 是 p 的加细，且 p' 的点是有序的，那么 U(P', f) <= U(P, f) *)
 Theorem upper_sum_refinement : forall {a b : R} (p p' : partition a b) (f : R -> R),
+  sorted (pts a b p') ->
   is_refinement p p' ->
   upper_sum p' f <= upper_sum p f.
 Proof.
-  intros a b p p' f Href.
+  intros a b p p' f Hsorted Href.
   unfold upper_sum.
   destruct (pts a b p) as [|x0 ppts] eqn:Hp.
-  - (* p 只有一个点，上和为 0 *)
+  - (* p 只有一个点 *)
     simpl.
-    (* 需要证明 upper_sum p' f <= 0 *)
-    (* 由于上和的非负性，需要 p' 也只有一个点 *)
     destruct (pts a b p') as [|x0' ppts'].
     + lra.
     + (* p' 有多个点，上和 > 0，这与上和 <= 0 矛盾 *)
@@ -448,14 +539,21 @@ Proof.
       admit.
   - (* p 有多个点 *)
     destruct (pts a b p') as [|x0' ppts'] eqn:Hp'.
-    + (* p' 只有一个点，但 p 有多个点 *)
-      (* 这与 is_refinement 矛盾 *)
+    + (* p' 只有一个点，矛盾 *)
       admit.
     + (* p' 有多个点 *)
       simpl.
-      (* x0 = x0' = a *)
+      assert (x0 = x0').
+      { unfold is_refinement in Href.
+        assert (List.In x0 (x0' :: ppts')) by (apply Href; left; reflexivity).
+        simpl in H.
+        destruct H as [H | H].
+        - exact H.
+        - admit.
+      }
+      rewrite <- H.
       (* 需要证明 upper_sum_from x0' ppts' f <= upper_sum_from x0 ppts f *)
-      (* 使用 upper_sum_from_refinement *)
+      (* 使用 upper_sum_from_refinement_sorted *)
       admit.
 Admitted.
 

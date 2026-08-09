@@ -255,7 +255,172 @@ Theorem dirichlet_test :
     Un_growing (fun n => - b n) ->
     Un_cv b 0 ->
     series_cv (fun n => a n * b n).
-Admitted.
+Proof.
+  intros a b Hbounded Hdec Hcv.
+  destruct Hbounded as [M [HM_pos Habs_bound]].
+  apply series_convergent_iff_cauchy. intros eps Heps.
+  assert (Hb_tendsto : Un_cv b 0) by exact Hcv.
+  assert (Hb_abs_tendsto : forall eps2, eps2 > 0 -> exists N, forall n, (N <= n)%nat -> Rabs (b n) < eps2).
+  { intros eps2 Heps2. unfold Un_cv, Rdist in Hb_tendsto.
+    destruct (Hb_tendsto eps2 Heps2) as [N HN].
+    exists N. intros n Hn. specialize (HN n Hn). unfold Rdist in HN.
+    rewrite Rminus_0_r in HN. exact HN. }
+  destruct (Hb_abs_tendsto (eps / (4 * M))) as [N1 HN1].
+  { unfold Rdiv. apply Rmult_lt_0_compat; [exact Heps |].
+    apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra. }
+  destruct (Hb_abs_tendsto (eps / (4 * M))) as [N2 HN2].
+  { unfold Rdiv. apply Rmult_lt_0_compat; [exact Heps |].
+    apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra. }
+  exists (max N1 N2). intros m n Hn Hnm.
+  assert (Hn1 : (N1 <= n)%nat) by lia.
+  assert (Hn2 : (N2 <= n)%nat) by lia.
+  assert (Hm1 : (N1 <= m)%nat) by lia.
+  assert (Hm2 : (N2 <= m)%nat) by lia.
+  (* 由分部求和 *)
+  assert (Hsplit : partial_sum (fun k => a k * b k) m - partial_sum (fun k => a k * b k) (n - 1) =
+    partial_sum a m * b m - partial_sum a (n - 1) * b (n - 1) +
+    (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+     partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2))).
+  { assert (Hn_pos : (0 < n)%nat) by lia.
+    assert (Hmn : (n <= m)%nat) by lia.
+    apply summation_by_parts_general; [exact Hn_pos | exact Hmn]. }
+  (* 估计各项 *)
+  assert (Habs_Am : Rabs (partial_sum a m) <= M).
+  { apply Habs_bound. }
+  assert (Habs_An1 : Rabs (partial_sum a (n - 1)) <= M).
+  { apply Habs_bound. }
+  assert (Habs_Ak : forall k, Rabs (partial_sum a k) <= M).
+  { intro k. apply Habs_bound. }
+  assert (Hb_n_small : Rabs (b n) < eps / (4 * M)).
+  { apply HN1. exact Hn1. }
+  assert (Hb_m_small : Rabs (b m) < eps / (4 * M)).
+  { apply HN2. exact Hm2. }
+  assert (Hb_n1_small : Rabs (b (n - 1)) < eps / (4 * M)).
+  { assert (Hn1_ge : (N1 <= n - 1)%nat) by lia. apply HN1. exact Hn1_ge. }
+  (* b 递减趋于 0 => b_k >= 0 对 k >= N *)
+  assert (Hb_nonneg : forall k, (N1 <= k)%nat -> b k >= 0).
+  { intros k Hk. destruct (Rle_lt_dec 0 (b k)) as [Hle | Hlt].
+    - exact Hle.
+    - exfalso. assert (Hb_k_neg : b k < 0) by lra.
+      (* b 递减且 b_n -> 0, b_k < 0 对 k >= N 矛盾 *)
+      assert (Hb_n_pos : b n >= b k).
+      { assert (Hk_le_n : (k <= n)%nat) by lia.
+        assert (Hdec_k : - b k <= - b n).
+        { apply growing_prop. exact Hdec. lia. }
+        lra. }
+      assert (Hb_n_neg : b n < 0) by lra.
+      assert (Hb_n_abs : Rabs (b n) = - b n).
+      { rewrite Rabs_left; [reflexivity | exact Hb_n_neg]. }
+      rewrite Hb_n_abs in Hb_n_small.
+      assert (Hneg_small : - b n < eps / (4 * M)) by exact Hb_n_small.
+      lra. }
+  assert (Hb_n1_nonneg : b (n - 1) >= 0).
+  { assert (Hn1_ge : (N1 <= n - 1)%nat) by lia. apply Hb_nonneg. exact Hn1_ge. }
+  assert (Hb_m_nonneg : b m >= 0).
+  { apply Hb_nonneg. exact Hm1. }
+  (* b_k - b_{k+1} >= 0 对 k >= N (因为 b 递减) *)
+  assert (Hb_diff_nonneg : forall k, (N1 <= k)%nat -> b k - b (S k) >= 0).
+  { intros k Hk. assert (Hdec_k : - b k <= - b (S k)).
+    { apply growing_prop. exact Hdec. lia. }
+    lra. }
+  (* 估计余项 *)
+  assert (Habs_sum : Rabs (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+                            partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2)) <=
+                     M * (b (n - 1) - b m)).
+  { assert (Hdiff : partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+                           partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2) =
+                    partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+                    partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2)).
+    { reflexivity. }
+    (* 逐项估计：|A_k * (b_k - b_{k+1})| <= M * (b_k - b_{k+1}) *)
+    (* 然后求和 telescoping: sum_{k=n-1}^{m-1} (b_k - b_{k+1}) = b_{n-1} - b_m *)
+    assert (Hterm_bound : forall k, (n - 1 <= k)%nat -> (k <= m - 1)%nat ->
+      Rabs (partial_sum a k * (b k - b (S k))) <= M * (b k - b (S k))).
+    { intros k Hk_le Hk_ge.
+      rewrite Rabs_mult.
+      assert (Habs_Ak_k : Rabs (partial_sum a k) <= M) by apply Habs_bound.
+      assert (Hdiff_nonneg : b k - b (S k) >= 0).
+      { assert (Hk_N1 : (N1 <= k)%nat) by lia. apply Hb_diff_nonneg. exact Hk_N1. }
+      apply Rle_trans with (M * (b k - b (S k))).
+      - apply Rmult_le_compat_r; [exact Hdiff_nonneg | exact Habs_Ak_k].
+      - apply Rle_refl. }
+    (* 用 partial_sum_abs_le 的变体 *)
+    assert (Habs_le : Rabs (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+                           partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2)) <=
+                      partial_sum (fun k => M * (b k - b (S k))) (m - 1) -
+                      partial_sum (fun k => M * (b k - b (S k))) (n - 2)).
+    { assert (Habs_term : forall k, Rabs (partial_sum a k * (b k - b (S k))) <= M * (b k - b (S k))).
+      { intro k. destruct (le_dec (n - 1) k) as [Hle | Hgt].
+        - destruct (le_dec k (m - 1)) as [Hle2 | Hgt2].
+          + apply Hterm_bound; [exact Hle | exact Hle2].
+          + assert (Hk_ge_m : (k >= m)%nat) by lia.
+            assert (Hdiff_nonneg : b k - b (S k) >= 0).
+            { assert (Hk_N1 : (N1 <= k)%nat) by lia. apply Hb_diff_nonneg. exact Hk_N1. }
+            assert (Habs_Ak_k : Rabs (partial_sum a k) <= M) by apply Habs_bound.
+            rewrite Rabs_mult.
+            apply Rmult_le_compat_r; [exact Hdiff_nonneg | exact Habs_Ak_k].
+        - assert (Hk_lt_n : (k < n - 1)%nat) by lia.
+          assert (Hdiff_nonneg : b k - b (S k) >= 0).
+          { assert (Hk_N1 : (N1 <= k)%nat) by lia. apply Hb_diff_nonneg. exact Hk_N1. }
+          assert (Habs_Ak_k : Rabs (partial_sum a k) <= M) by apply Habs_bound.
+          rewrite Rabs_mult.
+          apply Rmult_le_compat_r; [exact Hdiff_nonneg | exact Habs_Ak_k]. }
+      assert (Hcnneg : forall k, M * (b k - b (S k)) >= 0).
+      { intro k. assert (Hk_N1 : (N1 <= k)%nat) by lia.
+        assert (Hdiff_nonneg : b k - b (S k) >= 0) by apply Hb_diff_nonneg.
+        apply Rmult_le_compat_l; [lra | exact Hdiff_nonneg]. }
+      apply partial_sum_abs_le; [exact Habs_term | exact Hcnneg | lia]. }
+    (* telescoping: sum_{k=n-1}^{m-1} M*(b_k - b_{k+1}) = M*(b_{n-1} - b_m) *)
+    assert (Htelescope : partial_sum (fun k => M * (b k - b (S k))) (m - 1) -
+                         partial_sum (fun k => M * (b k - b (S k))) (n - 2) = M * (b (n - 1) - b m)).
+    { assert (Hn2_pos : (0 < n - 1)%nat) by lia.
+      assert (Hnm : (n - 1 <= m - 1)%nat) by lia.
+      (* 用归纳法证明 telescoping *)
+      revert n m Hn Hnm Hn2_pos.
+      induction m as [|m IH]; intros n Hn Hnm Hn2_pos.
+      - lia.
+      - destruct (Nat.eq_dec n (S m)) as [Heq | Hneq].
+        + subst. rewrite partial_sum_S. rewrite partial_sum_S.
+          assert (Hn3 : (0 < n - 2)%nat) by lia.
+          simpl (S m - 1). simpl (n - 2).
+          assert (Hn_minus_2 : S m - 2 = m - 1) by lia.
+          rewrite Hn_minus_2.
+          rewrite partial_sum_diff; [simpl | lia].
+          lra.
+        + assert (Hnm2 : (n <= m)%nat) by lia.
+          assert (Hn2_pos2 : (0 < n - 1)%nat) by lia.
+          specialize (IH n Hn Hnm2 Hn2_pos2) as IH.
+          rewrite partial_sum_S.
+          assert (Hm_pos : (0 < m)%nat) by lia.
+          rewrite partial_sum_diff; [simpl | lia].
+          rewrite IH. lra. }
+    apply Rle_trans with (partial_sum (fun k => M * (b k - b (S k))) (m - 1) -
+                          partial_sum (fun k => M * (b k - b (S k))) (n - 2)).
+    - exact Habs_le.
+    - rewrite Htelescope. apply Rle_refl. }
+  (* 综合估计 *)
+  rewrite Hsplit.
+  apply Rle_trans with (Rabs (partial_sum a m * b m) + Rabs (partial_sum a (n - 1) * b (n - 1)) +
+                        Rabs (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 1) -
+                              partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 2))).
+  - apply Rabs_triang.
+  - rewrite Rabs_mult. rewrite Rabs_mult.
+    assert (Habs_Am2 : Rabs (partial_sum a m) <= M) by apply Habs_bound.
+    assert (Habs_An12 : Rabs (partial_sum a (n - 1)) <= M) by apply Habs_bound.
+    assert (Hb_m_abs : Rabs (b m) = b m).
+    { rewrite Rabs_right; [reflexivity | left; exact Hb_m_nonneg]. }
+    assert (Hb_n1_abs : Rabs (b (n - 1)) = b (n - 1)).
+    { rewrite Rabs_right; [reflexivity | left; exact Hb_n1_nonneg]. }
+    rewrite Hb_m_abs. rewrite Hb_n1_abs.
+    assert (Hb_n1_m : b (n - 1) - b m >= 0) by lra.
+    apply Rle_trans with (M * b m + M * b (n - 1) + M * (b (n - 1) - b m)).
+    + apply Rplus_le_compat.
+      * apply Rmult_le_compat_r; [exact Hb_m_nonneg | exact Habs_Am2].
+      * apply Rplus_le_compat.
+        -- apply Rmult_le_compat_r; [exact Hb_n1_nonneg | exact Habs_An12].
+        -- exact Habs_sum.
+    + lra.
+Qed.
 
 (******************************************************************************)
 (* Abel 判别法                                                                *)
@@ -269,7 +434,103 @@ Theorem abel_test :
     Un_growing (fun n => - b n) \/ Un_growing b ->
     bounded_seq b ->
     series_cv (fun n => a n * b n).
-Admitted.
+Proof.
+  intros a b Hcv_a Hmono Hbounded.
+  destruct Hmono as [Hdec | Hinc].
+  - (* b 递减有界 => b 收敛 *)
+    destruct Hbounded as [M [HM_pos Habs_bound]].
+    assert (Hb_nonneg : forall n, b n >= 0).
+    { intro n. destruct (Rle_lt_dec 0 (b n)) as [Hle | Hlt].
+      - exact Hle.
+      - assert (Hb_neg : b n < 0) by lra.
+        assert (Habs_bn : Rabs (b n) <= M) by apply Habs_bound.
+        rewrite Rabs_left in Habs_bn; [lra | exact Hb_neg]. }
+    assert (Hb_growing : Un_growing (fun n => - b n)) by exact Hdec.
+    assert (Hb_has_lb : has_lb (fun n => b n)).
+    { unfold has_lb, bound, is_lower_bound.
+      exists (- M). intros x [i Hx]. rewrite Hx.
+      assert (Habs : Rabs (b i) <= M) by apply Habs_bound.
+      lra. }
+    assert (Hb_cv : exists L, Un_cv (fun n => b n) L).
+    { assert (Hneg_growing : Un_growing (fun n => - b n)) by exact Hdec.
+      assert (Hneg_has_ub : has_ub (fun n => - b n)).
+      { unfold has_ub, bound, is_upper_bound.
+        exists M. intros x [i Hx]. rewrite Hx.
+        assert (Habs : Rabs (b i) <= M) by apply Habs_bound.
+        assert (Hbi_neg : - b i <= 0) by lra.
+        apply Rle_trans with 0; [exact Hbi_neg | lra]. }
+      destruct (growing_cv (fun n => - b n) Hneg_growing Hneg_has_ub) as [L HL].
+      exists (- L). unfold Un_cv, Rdist. intros eps Heps.
+      destruct (HL (eps)) as [N HN].
+      - exact Heps.
+      - exists N. intros n Hn. specialize (HN n Hn). unfold Rdist in *.
+        lra. }
+    destruct Hb_cv as [L HL].
+    (* b_n = L + (b_n - L), a_n * b_n = a_n * L + a_n * (b_n - L) *)
+    (* sum a_n * L 收敛（数乘），sum a_n * (b_n - L) 用 Dirichlet *)
+    assert (Hb_minus_L_cv : Un_cv (fun n => b n - L) 0).
+    { unfold Un_cv, Rdist in *. intros eps Heps.
+      destruct (HL eps Heps) as [N HN].
+      exists N. intros n Hn. specialize (HN n Hn). unfold Rdist in *.
+      lra. }
+    assert (Hb_minus_L_dec : Un_growing (fun n => - (b n - L))).
+    { red. intros n. unfold Rminus. rewrite Ropp_plus_distr.
+      assert (H : - b n <= - b (S n)) by apply growing_prop; [exact Hdec | lia].
+      lra. }
+    assert (Hpartial_sum_bounded : bounded_seq (fun n => partial_sum a n)).
+    { destruct Hcv_a as [A HA].
+      unfold bounded_seq. exists (Rabs A + 1). split; [lra |].
+      intro n. apply Rle_trans with (Rabs (partial_sum a n) + 1).
+      - rewrite Rabs_Ropp. rewrite Rabs_triang.
+        assert (Habs_A : Rabs A <= Rabs (partial_sum a n) + Rabs (partial_sum a n - A)).
+        { rewrite <- Rabs_triang. apply Rabs_le. lra. }
+        lra.
+      - apply Rplus_le_compat; [apply Rabs_pos | apply Rle_refl]. }
+    assert (Hdirichlet : series_cv (fun n => a n * (b n - L))).
+    { apply dirichlet_test; [exact Hpartial_sum_bounded | exact Hb_minus_L_dec | exact Hb_minus_L_cv]. }
+    assert (Hscal : series_cv (fun n => a n * L)).
+    { apply series_scal_cv. exact Hcv_a. }
+    assert (Hplus : series_cv (fun n => a n * L + a n * (b n - L))).
+    { apply series_plus_cv; [exact Hscal | exact Hdirichlet]. }
+    apply series_plus_cv with (1 := Hplus).
+    intro n. lra.
+  - (* b 递增有界 => 类似 *)
+    destruct Hbounded as [M [HM_pos Habs_bound]].
+    assert (Hb_cv : exists L, Un_cv (fun n => b n) L).
+    { assert (Hb_has_ub : has_ub (fun n => b n)).
+      { unfold has_ub, bound, is_upper_bound.
+        exists M. intros x [i Hx]. rewrite Hx.
+        apply Habs_bound. }
+      destruct (growing_cv (fun n => b n) Hinc Hb_has_ub) as [L HL].
+      exists L. exact HL. }
+    destruct Hb_cv as [L HL].
+    assert (Hb_minus_L_cv : Un_cv (fun n => b n - L) 0).
+    { unfold Un_cv, Rdist in *. intros eps Heps.
+      destruct (HL eps Heps) as [N HN].
+      exists N. intros n Hn. specialize (HN n Hn). unfold Rdist in *.
+      lra. }
+    assert (Hb_minus_L_inc : Un_growing (fun n => - (b n - L))).
+    { red. intros n. unfold Rminus. rewrite Ropp_plus_distr.
+      assert (H : b n <= b (S n)) by apply growing_prop; [exact Hinc | lia].
+      lra. }
+    assert (Hpartial_sum_bounded : bounded_seq (fun n => partial_sum a n)).
+    { destruct Hcv_a as [A HA].
+      unfold bounded_seq. exists (Rabs A + 1). split; [lra |].
+      intro n. apply Rle_trans with (Rabs (partial_sum a n) + 1).
+      - rewrite Rabs_Ropp. rewrite Rabs_triang.
+        assert (Habs_A : Rabs A <= Rabs (partial_sum a n) + Rabs (partial_sum a n - A)).
+        { rewrite <- Rabs_triang. apply Rabs_le. lra. }
+        lra.
+      - apply Rplus_le_compat; [apply Rabs_pos | apply Rle_refl]. }
+    assert (Hdirichlet : series_cv (fun n => a n * (b n - L))).
+    { apply dirichlet_test; [exact Hpartial_sum_bounded | exact Hb_minus_L_inc | exact Hb_minus_L_cv]. }
+    assert (Hscal : series_cv (fun n => a n * L)).
+    { apply series_scal_cv. exact Hcv_a. }
+    assert (Hplus : series_cv (fun n => a n * L + a n * (b n - L))).
+    { apply series_plus_cv; [exact Hscal | exact Hdirichlet]. }
+    apply series_plus_cv with (1 := Hplus).
+    intro n. lra.
+Qed.
 
 (******************************************************************************)
 (* 交错级数判别法（Leibniz 判别法）                                           *)

@@ -404,4 +404,46 @@ Theorem ratio_test_limit :
     Un_cv (fun n => Rabs (a (S n) / a n)) L ->
     (L < 1 -> series_cv a) /\
     (L > 1 -> ~ series_cv a).
-Admitted.
+Proof.
+  intros a L Hnz Hcv. split.
+  - intro Hlt.
+    assert (Hr : exists r, L < r < 1).
+    { exists ((L + 1) / 2). lra. }
+    destruct Hr as [r [HrL Hr1]].
+    assert (Hr0 : 0 <= r).
+    { apply Rle_trans with L. lra. lra. }
+    assert (Hr_pos : 0 < r) by lra.
+    assert (Hratio_cv : Un_cv (fun n => Rabs (a (S n) / a n)) r).
+    { unfold Un_cv, Rdist. intros eps Heps.
+      assert (Heps2 : eps / 2 > 0) by apply half_gt_zero.
+      destruct (Hcv (eps / 2) Heps2) as [N HN].
+      exists N. intro n. assert (Hn : (n >= N)%nat) by lia.
+      specialize (HN n Hn). unfold Rdist in HN.
+      lra. }
+    assert (Hratio_bound : exists N, forall n, (N <= n)%nat ->
+      Rabs (a (S n) / a n) <= r).
+    { unfold Un_cv, Rdist in Hratio_cv.
+      destruct (Hratio_cv (r - L) _) as [N HN].
+      - lra.
+      - exists N. intros n Hn.
+        specialize (HN n Hn). lra. }
+    destruct Hratio_bound as [N Hratio_N].
+    exists N. intros n Hn. split.
+    + apply Hnz.
+    + apply Hratio_N. exact Hn.
+  - intro Hgt.
+    assert (Hratio_cv : Un_cv (fun n => Rabs (a (S n) / a n)) L).
+    { exact Hcv. }
+    assert (Hratio_ge_1 : exists N, forall n, (N <= n)%nat ->
+      Rabs (a (S n) / a n) >= 1).
+    { unfold Un_cv, Rdist in Hratio_cv.
+      destruct (Hratio_cv (L - 1) _) as [N HN].
+      - lra.
+      - exists N. intros n Hn.
+        specialize (HN n Hn). lra. }
+    destruct Hratio_ge_1 as [N Hratio_N].
+    apply ratio_test_divergent.
+    exists N. intros n Hn. split.
+    + apply Hnz.
+    + apply Hratio_N. exact Hn.
+Qed.
