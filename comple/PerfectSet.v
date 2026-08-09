@@ -97,11 +97,35 @@ Qed.
 Lemma Rplus_rearrange_4 : forall a b c d : R, Rplus (Rplus a b) (Rplus c d) = Rplus (Rplus b d) (Rplus a c).
 Proof. intros. lra. Qed.
 
+Lemma sum_fin_add : forall (n : nat) (f g : Fin.t n -> R),
+  sum_fin (fun i => f i + g i) = sum_fin f + sum_fin g.
+Proof.
+  intros n f g. induction n as [|n' IHn'].
+  - simpl. lra.
+  - simpl. rewrite IHn'. lra.
+Qed.
+
+Lemma sum_fin_tri_lemma : forall (n : nat) (x y z : Fin.t n -> R),
+  sum_fin (fun i => Rabs (x i - z i)) <= sum_fin (fun i => Rabs (x i - y i)) + sum_fin (fun i => Rabs (y i - z i)).
+Proof.
+  intros n x y z. induction n as [|n' IHn'].
+  - simpl. lra.
+  - simpl.
+    assert (Htri_F1 : Rabs (x Fin.F1 - z Fin.F1) <= Rabs (x Fin.F1 - y Fin.F1) + Rabs (y Fin.F1 - z Fin.F1)).
+    {
+      assert (Heq : x Fin.F1 - z Fin.F1 = (x Fin.F1 - y Fin.F1) + (y Fin.F1 - z Fin.F1)) by lra.
+      rewrite Heq.
+      apply (Rabs_triang (x Fin.F1 - y Fin.F1) (y Fin.F1 - z Fin.F1)).
+    }
+    assert (Htri_rest : sum_fin (fun i => Rabs (x (Fin.FS i) - z (Fin.FS i))) <= sum_fin (fun i => Rabs (x (Fin.FS i) - y (Fin.FS i))) + sum_fin (fun i => Rabs (y (Fin.FS i) - z (Fin.FS i)))).
+    { apply IHn'. }
+    lra.
+Qed.
+
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
 Proof.
-  (* Proof sketch: By induction on n_dim using pointwise Rabs triangle inequality *)
-  (* Technical blocker: lra cannot handle sum_fin recursive function. *)
-Admitted.
+  intros x y z. unfold Rn_distance. apply sum_fin_tri_lemma.
+Qed.
 
 Lemma Rn_dist_iden_aux : forall (n : nat) (x y : Fin.t n -> R),
   sum_fin (fun i => Rabs (x i - y i)) = 0 -> forall i, Rabs (x i - y i) <= 0%R.

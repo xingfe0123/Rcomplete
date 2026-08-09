@@ -1,6 +1,7 @@
 From Stdlib Require Import Reals RIneq Ranalysis.
 From Stdlib Require Import Lra.
 From Stdlib Require Import Lia.
+From Stdlib Require Import Arith.
 From Stdlib Require Import Rfunctions.
 From Stdlib Require Import Rseries.
 From Stdlib Require Import SeqProp.
