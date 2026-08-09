@@ -69,10 +69,12 @@ Proof.
       { assert (Hlt_raw: Rabs ((f x' - f x) / (x' - x) - l) + Rabs l < 1 + Rabs l).
         { apply (Rplus_lt_compat_r _ _ _ Hf1). }
         assert (Hcomm: 1 + Rabs l = Rabs l + 1) by (rewrite Rplus_comm; reflexivity).
-        exact (eq_rect_r _ _ Hlt_raw _ Hcomm). }
+        destruct Hcomm.
+        exact Hlt_raw. }
       assert (Hchain: Rabs ((f x' - f x) / (x' - x) - l + l) < Rabs l + 1).
       { apply (Rle_lt_trans _ _ _ Htri Hlt). }
-      exact (eq_rect_r _ _ Hchain _ Heq_div). }
+      replace ((f x' - f x) / (x' - x) - l + l) with ((f x' - f x) / (x' - x)) in Hchain by lra.
+      exact Hchain. }
 
     (* 计算 |f(x')-f(x)| = |x'-x| * |(f(x')-f(x))/(x'-x)| *)
     replace (f x' - f x) with ((x' - x) * ((f x' - f x) / (x' - x))).

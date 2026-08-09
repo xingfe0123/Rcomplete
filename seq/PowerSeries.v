@@ -277,71 +277,6 @@ Theorem power_series_divergent :
     Rabs z > / a ->
     ~ series_cv (power_series c z).
 Admitted.
-  intros c z a Ha Habs_z Hcv.
-  assert (Ha_pos : 0 < a) by exact Ha.
-  assert (Hinv_a_pos : 0 < / a).
-  { apply Rinv_0_lt_compat. exact Ha_pos. }
-  assert (Haz : a * Rabs z > 1).
-  { assert (H : Rabs z > / a) by exact Habs_z.
-    apply Rmult_lt_reg_l with (/ a).
-    - exact Hinv_a_pos.
-    - rewrite Rmult_0_r. rewrite Rmult_assoc. rewrite Rinv_r.
-      + rewrite Rmult_1_l. lra.
-      + apply Rgt_not_eq. exact Ha_pos. }
-  (* 取 eps 使得 (a - eps) * |z| > 1 且 a - eps > 0 *)
-  assert (Hexists_eps : exists eps, eps > 0 /\ a - eps > 0 /\ (a - eps) * Rabs z > 1).
-  { exists (a / 2).
-    split.
-    - unfold Rdiv. apply Rmult_lt_0_compat.
-      + exact Ha_pos.
-      + apply Rinv_0_lt_compat. lra.
-    - split.
-      + unfold Rdiv. apply Rmult_lt_reg_l with 2.
-        * apply Rinv_0_lt_compat. lra.
-        * rewrite Rmult_0_r. rewrite Rmult_assoc. rewrite Rinv_r.
-          -- lra.
-          -- apply Rgt_not_eq. lra.
-      + unfold Rdiv. apply Rmult_lt_reg_l with 2.
-        * apply Rinv_0_lt_compat. lra.
-        * rewrite Rmult_0_r. rewrite Rmult_plus_distr_l.
-          rewrite <- (Rmult_comm 2 (Rabs z)).
-          rewrite Rmult_assoc. rewrite Rinv_r.
-          -- lra.
-          -- apply Rgt_not_eq. lra. }
-  destruct Hexists_eps as [eps [Heps_pos [Ha_eps_pos Heps_bound]]].
-  (* 由 limsup 定义，对任意 N 存在 n >= N 使得 |c_n|^{1/n} >= a - eps *)
-  assert (Hlimsup : limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = a).
-  { reflexivity. }
-  destruct (limsup_root_spec (fun n => Rabs (c n) ^ (/ INR (S n))) a Hlimsup)
-    as [_ Hspec].
-  (* (D) 对每个 N 存在 n >= N 使得 |c_n|^{1/n} >= a - eps                   *)
-  (* 则 |c_n * z^n| >= ((a-eps)*|z|)^n > 1 对无穷多个 n                    *)
-  (* 所以 c_n * z^n 不趋于 0                                                 *)
-  assert (Hnot_tendsto_0 : ~ Un_cv (fun n => power_series c z n) 0).
-  { intro H0. unfold Un_cv, Rdist in H0.
-    specialize (H0 1 lra) as [M HM].
-    (* 存在 n >= M 使得 |c_n|^{1/n} >= a - eps *)
-    assert (Hn : exists n, (M <= n)%nat /\
-      Rabs (c n) ^ (/ INR (S n)) >= a - eps).
-    { admit. }
-    destruct Hn as [n [Hn_M Hn_root]].
-    specialize (HM n Hn_M). unfold Rdist in HM.
-    (* |c_n * z^n| >= ((a-eps)*|z|)^n > 1, 但 |c_n * z^n| < 1, 矛盾 *)
-    assert (Habs_n : Rabs (power_series c z n) >= ((a - eps) * Rabs z) ^ n).
-    { (* (D) 由 |c_n|^{1/n} >= a - eps 推出 |c_n| >= (a-eps)^n              *)
-      admit. }
-    assert (Hpow_gt_1 : ((a - eps) * Rabs z) ^ n > 1).
-    { (* (a-eps)*|z| > 1 => ((a-eps)*|z|)^n > 1 对 n >= 1                  *)
-      admit. }
-    assert (Habs_lt_1 : Rabs (power_series c z n) < 1).
-    { assert (Hd : Rdist (power_series c z n) 0 = Rabs (power_series c z n)).
-      { unfold Rdist. rewrite Rminus_0_r. reflexivity. }
-      rewrite Hd in HM. exact HM. }
-    lra. }
-  assert (Htendsto_0 : Un_cv (fun n => power_series c z n) 0).
-  { apply series_cv_tendsto_0. exact Hcv. }
-  apply Hnot_tendsto_0. exact Htendsto_0.
-Qed.
 
 (******************************************************************************)
 (* 主定理 3：a = 0 时 R = +infty，对所有 z 收敛                              *)
@@ -351,36 +286,7 @@ Theorem power_series_convergent_infty :
   forall (c : nat -> R) (z : R),
     limsup_root (fun n => Rabs (c n) ^ (/ INR (S n))) = 0 ->
     series_cv (power_series c z).
-Proof.
-  intros c z Ha.
-  (* a = 0 => 对任意 eps > 0, 存在 N 使得 n >= N 时 |c_n|^{1/n} <= eps     *)
-  (* 取 eps 使得 eps * |z| < 1 (当 |z| > 0) 或 eps < 1 (当 |z| = 0)       *)
-  destruct (Rle_dec (Rabs z) 0) as [Hz0 | Hz0].
-  - (* |z| = 0 => c_n * 0^n = 0 对 n >= 1, 级数只有 c_0 项 *)
-    assert (Hz_eq : Rabs z = 0) by lra.
-    assert (Hz : z = 0).
-    { apply Rabs_eq_0. exact Hz_eq. }
-    rewrite Hz.
-    exists (c 0%nat * 0 ^ 0%nat).
-    unfold series_convergent, Un_cv, Rdist. intros eps Heps.
-    exists 0%nat. intros n Hn.
-    simpl (0 ^ 0%nat). rewrite Rmult_1_l.
-    destruct n as [|n].
-    - simpl. rewrite Rminus_0_r. rewrite Rabs_R0. lra.
-    - simpl (0 ^ S n). rewrite Rmult_0_r.
-      rewrite Rminus_0_r. rewrite Rabs_R0. lra.
-  - (* |z| > 0 => 取 eps = 1/(2*|z|) 使得 eps*|z| = 1/2 < 1 *)
-    assert (Habs_z_pos : 0 < Rabs z) by lra.
-    set (eps := / (2 * Rabs z)).
-    assert (Heps_pos : eps > 0).
-    { unfold eps. apply Rinv_0_lt_compat. apply Rmult_lt_0_compat; lra. }
-    assert (Heps_bound : eps * Rabs z < 1).
-    { unfold eps. rewrite Rmult_assoc. rewrite Rinv_r.
-      - rewrite Rmult_1_l. lra.
-      - apply Rgt_not_eq. apply Rmult_lt_0_compat; lra. }
-    (* (D) 由 limsup = 0 得到 |c_n|^{1/n} <= eps 对 n >= N *)
-    admit.
-Qed.
+Admitted.
 
 (******************************************************************************)
 (* 综合定理：Cauchy-Hadamard                                                  *)
