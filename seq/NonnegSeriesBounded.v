@@ -98,7 +98,6 @@ Lemma partial_sum_abs_eq :
 Proof.
   intros a Hnneg n.
   apply Rabs_right.
-  apply Rle_ge.
   apply partial_sum_nonneg; exact Hnneg.
 Qed.
 
@@ -127,12 +126,18 @@ Proof.
   - intros n Hle. simpl. subst. lra.
   - intros n Hle.
     destruct (Nat.eq_dec n (S N)) as [Heq | Hneq].
-    + subst. simpl. apply Rmax1.
+    + subst. simpl.
+      unfold Rmax. destruct (Rle_dec (Rabs (partial_sum a (S N)))
+                                 (max_partial_sum_abs a N)) as [Hd | Hd].
+      * lra.
+      * lra.
     + assert (Hlt : (n <= N)%nat) by lia.
       specialize (IH n Hlt).
-      simpl. apply Rle_trans with (max_partial_sum_abs a N).
-      * exact IH.
-      * apply Rmax2.
+      simpl.
+      unfold Rmax. destruct (Rle_dec (Rabs (partial_sum a (S N)))
+                                 (max_partial_sum_abs a N)) as [Hd | Hd].
+      * apply Rle_trans with (max_partial_sum_abs a N); [exact IH | lra].
+      * lra.
 Qed.
 
 (******************************************************************************)
@@ -144,7 +149,10 @@ Lemma max_partial_sum_abs_nonneg :
 Proof.
   intros a N. induction N as [|N IH].
   - simpl. apply Rabs_pos.
-  - simpl. apply Rle_ge. apply Rmax_l. apply Rabs_pos. apply Rle_ge. exact IH.
+  - simpl. unfold Rmax.
+    destruct (Rle_dec (Rabs (partial_sum a (S N))) (max_partial_sum_abs a N)).
+    + apply Rle_ge. lra.
+    + apply Rle_ge. lra.
 Qed.
 
 (******************************************************************************)
@@ -162,10 +170,10 @@ Proof.
   - exists (Rabs L + 1 + max_partial_sum_abs a N).
     intro n.
     destruct (le_lt_dec N n) as [Hge | Hlt].
-    + (* n >= N: |S_n| <= |L| + |S_n - L| < |L| + 1 *)
+    + (* n >= N: |S_n - L| < eps/2 <= Rabs L + 1 *)
       specialize (HN n Hge). unfold Rdist in HN.
-      apply Rle_trans with (Rabs L + 1).
-      * rewrite <- Rabs_triang. lra.
+      apply Rle_trans with (eps / 2).
+      * apply Rlt_le. exact HN.
       * lra.
     + (* n < N: |S_n| <= max_{i<=N} |S_i| *)
       apply Rle_trans with (max_partial_sum_abs a N).

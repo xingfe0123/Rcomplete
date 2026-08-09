@@ -245,8 +245,19 @@ Definition CantorSpace := nat -> bool.
 
 Theorem cantor_space_uncountable : ~ exists f : nat -> CantorSpace, forall bs, exists n, f n = bs.
 Proof.
-  (* (D) Cantor's diagonal argument *)
-Admitted.
+  intro Hcont.
+  destruct Hcont as [f Hf].
+  set (bs := fun n => negb (f n n)).
+  specialize (Hf bs).
+  destruct Hf as [n Hn].
+  assert (Hcontra : bs n = f n n).
+  { apply f_equal with (f := fun g => g n) in Hn.
+    symmetry.
+    exact Hn. }
+  unfold bs in Hcontra.
+  set (b := f n n) in Hcontra.
+  destruct b; discriminate.
+Qed.
 
 (* ===================================================================== *)
 (* Main Theorem (D-class)                                                 *)
