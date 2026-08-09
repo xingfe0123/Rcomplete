@@ -44,6 +44,9 @@ Fixpoint fact (n : nat) : nat :=
 Lemma fact_pos : forall n, (0 < fact n)%nat.
 Proof. induction n; simpl; lia. Qed.
 
+Lemma fact_S : forall n, fact (S n) = (S n) * fact n.
+Proof. reflexivity. Qed.
+
 (******************************************************************************)
 (* e 的级数项：a_n = 1 / n!                                                    *)
 (******************************************************************************)
@@ -78,7 +81,6 @@ Proof.
   - destruct n as [|n].
     + lia.
     + simpl fact.
-      assert (Hge2 : (2 <= S (S n))%nat) by lia.
       assert (H2_le : INR 2 <= INR (S (S n))).
       { apply le_INR. lia. }
       assert (Hinv_ssn : / INR (S (S n)) <= / INR 2).
@@ -98,49 +100,17 @@ Proof.
 Qed.
 
 (******************************************************************************)
-(* 几何级数部分和公式                                                          *)
+(* 引理：/2 ^ n >= 0                                                          *)
 (******************************************************************************)
 
-Lemma geometric_sum :
-  forall r n, r <> 1 ->
-  partial_sum (fun k => r ^ k) n = (1 - r ^ (S n)) / (1 - r).
+Lemma half_pow_nonneg : forall n, / 2 ^ n >= 0.
 Proof.
-  intros r n Hr. induction n as [|n IH].
-  - simpl. field. lra.
-  - rewrite partial_sum_S. rewrite IH. field. lra.
-Qed.
-
-(******************************************************************************)
-(* e 的部分和有上界 3                                                          *)
-(* S_n = 1 + 1 + 1/2! + ... + 1/n!                                           *)
-(*     <= 1 + 1 + 1/2 + 1/2^2 + ... + 1/2^{n-1}  (对 k>=2: 1/k!<=1/2^{k-1})*)
-(*     = 2 + (1/2 + 1/4 + ... + 1/2^{n-1})                                   *)
-(*     = 2 + (1 - (1/2)^{n-1})  (当 n>=2)                                    *)
-(*     <= 3                                                                  *)
-(******************************************************************************)
-
-Lemma e_partial_le_3 : forall n, e_partial n <= 3.
-Proof.
-  intro n. unfold e_partial.
-  induction n as [|n IH].
+  intro n. induction n as [|n IH].
   - simpl. lra.
-  - rewrite partial_sum_S.
-    destruct n as [|n].
-    + simpl. lra.
-    + assert (Hle : inv_fact (S (S n)) <= / 2 ^ (S n)).
-      { apply inv_fact_le_pow2. lia. }
-      assert (H0 : inv_fact (S (S n)) >= 0) by apply inv_fact_nonneg.
-      assert (Hpow : / 2 ^ (S n) >= 0).
-      { apply pow_ge_0. lra. }
-      (* S_{S(S n)} = S_{S n} + 1/(S(S n))! <= S_{S n} + 1/2^{S n} *)
-      (* 需要证明 S_{S n} + 1/2^{S n} <= 3 *)
-      (* S_{S n} = 1 + 1 + sum_{k=2}^{S n} 1/k! <= 2 + sum_{k=2}^{S n} 1/2^{k-1} *)
-      (* = 2 + sum_{j=1}^{n} 1/2^j = 2 + (1/2)(1-(1/2)^n)/(1-1/2) = 2 + 1 - (1/2)^n *)
-      (* <= 3 - (1/2)^n *)
-      (* 所以 S_{S n} + 1/2^{S n} <= 3 - (1/2)^n + 1/2^{S n} = 3 *)
-      (* 但这需要展开 S_{S n} 的上界，归纳假设不够强 *)
-      (* 改用更强的归纳：e_partial n <= 3 - / 2 ^ (n - 1) (n >= 2) *)
-      admit.
+  - unfold Rdiv. rewrite Rmult_assoc.
+    apply Rle_ge. apply Rmult_le_compat_l.
+    + apply Rinv_0_lt_compat. lra.
+    + apply Rle_ge. exact IH.
 Qed.
 
 (******************************************************************************)
@@ -159,25 +129,24 @@ Proof.
       assert (Hle : inv_fact (S (S n)) <= / 2 ^ (S n)).
       { apply inv_fact_le_pow2. lia. }
       assert (H0 : inv_fact (S (S n)) >= 0) by apply inv_fact_nonneg.
-      assert (Hpow : / 2 ^ (S n) >= 0).
-      { apply pow_ge_0. lra. }
+      assert (Hpow : / 2 ^ (S n) >= 0) by apply half_pow_nonneg.
       destruct (Nat.eq_dec n 0) as [Hz | Hnz].
-      * (* n = 0, S(S n) = 2 *)
-        subst. simpl. lra.
-      * (* n >= 1, S n >= 2 *)
-        assert (Hge2 : (2 <= S n)%nat) by lia.
+      * subst. simpl. lra.
+      * assert (Hge2 : (2 <= S n)%nat) by lia.
         specialize (IH Hge2).
-        (* IH: e_partial (S n) <= 3 - / 2 ^ n *)
-        (* 目标: e_partial (S n) + inv_fact (S (S n)) <= 3 - / 2 ^ (S n) *)
         apply Rle_trans with (3 - / 2 ^ n + / 2 ^ (S n)).
         -- lra.
         -- replace (/ 2 ^ (S n)) with (/ 2 * / 2 ^ n).
            ++ lra.
-           ++ unfold Rdiv. rewrite <- Rmult_assoc.
+           ++ unfold Rdiv. rewrite Rmult_assoc.
               rewrite <- Rinv_r.
               * reflexivity.
               * apply Rgt_not_eq. lra.
 Qed.
+
+(******************************************************************************)
+(* e 的部分和有上界 3                                                          *)
+(******************************************************************************)
 
 Lemma e_partial_le_3 : forall n, e_partial n <= 3.
 Proof.
@@ -188,7 +157,8 @@ Proof.
     + simpl. lra.
     + apply Rle_trans with (3 - / 2 ^ (S n - 1)%nat).
       * apply e_partial_le_3_minus. lia.
-      * lra.
+      * assert (H : / 2 ^ (S n - 1)%nat >= 0) by apply half_pow_nonneg.
+        lra.
 Qed.
 
 (******************************************************************************)

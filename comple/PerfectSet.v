@@ -195,12 +195,12 @@ Qed.
 Theorem Rn_complete : forall s : nat -> Rn,
   CauchySeq s -> exists lim, LimitSeq s lim.
 Proof.
-  intros s Hcauchy.
-  (* For each component i, the sequence (s_n i)_n is Cauchy *)
-  (* By R_complete, each component converges to some l_i *)
-  (* Construct lim := fun i => l_i *)
-  (* Prove that s converges to lim in R^n *)
-  (* This requires constructive choice to extract limits *)
+  (* Proof strategy:
+     1. For each component i, (s_n i)_n is Cauchy (by Rn_cauchy_component)
+     2. By R_complete, each component converges to some l_i
+     3. Construct lim := fun i => l_i
+     4. Prove s converges to lim in R^n
+     Requires: constructive choice over Fin.t n_dim, and lemma that sum_fin of bounded terms is bounded *)
 Admitted.
 
 (* ===================================================================== *)
