@@ -28,18 +28,19 @@ Proof.
   destruct Htmp_diff as [l Hl].
 
   (* 第一步：用 eps=1 取 delta1，使 |(f(x+h)-f(x))/h - l| < 1 *)
-  assert (Htmp := Hl 1 (Rlt_0_1)).
-  destruct Htmp as [delta1 Htmp2].
-  destruct Htmp2 as [Hdelta1_pos H1].
+  destruct (Hl 1 (Rlt_0_1)) as [delta1 H1].
+  destruct delta1 as [delta1 Hdelta1_pos]. simpl in H1.
 
   (* 第二步：取 delta = min(delta1, eps/(|l|+1)) *)
   exists (Rmin delta1 (eps / (Rabs l + 1))).
   split.
   { apply Rmin_pos.
     - exact Hdelta1_pos.
-    - apply Rlt_div_l.
-      + apply Rlt_le_trans with 1; [apply Rlt_0_1 | apply Rle_refl].
-      + lra. }
+    - replace (eps / (Rabs l + 1)) with (eps * /(Rabs l + 1)).
+      + apply Rmult_lt_0_compat.
+        * exact Heps.
+        * apply Rinv_pos. assert (H: 0 <= Rabs l) by apply Rabs_pos. assert (H': Rabs l + 1 > 0) by lra. exact H'.
+      + unfold Rdiv. reflexivity. }
 
   intros x' Hx'.
   destruct (Req_dec x' x) as [Heq|Hneq].
@@ -52,42 +53,49 @@ Proof.
     set (h := x' - x).
     assert (Hh: h <> 0) by (unfold h; lra).
     assert (Hplus: x + h = x') by (unfold h; lra).
+    assert (Hx1: Rabs (x' - x) < delta1).
+    { eapply Rlt_le_trans.
+      - exact Hx'.
+      - apply Rmin_l. }
+    assert (Hx2: Rabs (x' - x) < eps / (Rabs l + 1)).
+    { eapply Rlt_le_trans.
+      - exact Hx'.
+      - apply Rmin_r. }
 
     (* 由可微性：|(f(x+h)-f(x))/h - l| < 1 *)
     assert (Hf1: Rabs ((f (x + h) - f x) / h - l) < 1).
-    { apply (H1 h Hh).
-      apply (Rmin_l _ _) in Hx'. exact Hx'. }
+    { apply (H1 h Hh). exact Hx1. }
+
+    (* 证明 |(f(x+h)-f x)/h| <= |l| + 1 *)
+    assert (Hbound: Rabs ((f (x + h) - f x) / h) <= Rabs l + 1).
+    { unfold Rle. right.
+      replace ((f (x + h) - f x) / h) with (((f (x + h) - f x) / h - l) + l) by lra.
+      apply (Rle_trans _ (Rabs ((f (x + h) - f x) / h - l) + Rabs l) _).
+      + apply Rabs_triang.
+      + apply Rplus_lt_compat_l.
+        exact Hf1. }
 
     (* 计算 |f(x')-f(x)| = |h * ((f(x+h)-f x)/h)| *)
-    rewrite Hplus.
-    replace (f (x + h) - f x) with (h * ((f (x + h) - f x) / h)) by (field; lra).
+    change (f x') with (f (x + h)).
+    replace (f (x + h) - f x) with (h * ((f (x + h) - f x) / h)).
+    2: { field. lra. }
 
     (* |h * A| = |h| * |A| *)
     rewrite Rabs_mult.
 
     (* 证明 |h| * |(f(x+h)-f x)/h| < eps *)
-    (* 先用 |(f(x+h)-f x)/h| <= |l| + 1 *)
-    assert (Hbound: Rabs ((f (x + h) - f x) / h) <= Rabs l + 1).
-    { unfold Rle. right.
-      replace ((f (x + h) - f x) / h) with (((f (x + h) - f x) / h - l) + l) by lra.
-      rewrite Rabs_triang.
-      apply Rplus_lt_compat_l.
-      exact Hf1. }
-
-    (* |h| * |(f(x+h)-f x)/h| <= |h| * (|l|+1) < eps *)
     apply (Rle_lt_trans _ (Rabs h * (Rabs l + 1)) eps).
     + apply Rmult_le_compat_l.
       * exact Hbound.
       * apply Rabs_pos.
     + (* 证明 |h| * (|l|+1) < eps *)
       unfold h.
-      apply (Rmin_r _ _) in Hx'.
       assert (Hlt: Rabs (x' - x) * (Rabs l + 1) < eps / (Rabs l + 1) * (Rabs l + 1)).
       { apply Rmult_lt_compat_r.
-        - apply Rlt_le_trans with 1; [apply Rlt_0_1 | apply Rle_refl].
-          exact Hx'. }
+        - assert (H: Rabs l + 1 > 0) by lra. exact H.
+        - exact Hx2. }
       assert (Hrw: eps / (Rabs l + 1) * (Rabs l + 1) = eps).
-      { field. apply Rlt_le_trans with 1; [apply Rlt_0_1 | apply Rle_refl]. }
+      { field. discrR. }
       rewrite Hrw in Hlt.
       exact Hlt.
 Qed.

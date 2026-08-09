@@ -122,7 +122,7 @@ Proof.
     lra.
 Qed.
 
-(* Helper: if each f i < eps, then sum_fin f < INR n * eps *)
+(* Helper: if each f i < eps, then @sum_fin n f < (INR n) * eps *)
 (* sum_fin of constant function = n * eps *)
 Lemma sum_fin_const : forall (n : nat) (eps : R),
   sum_fin (fun _ : Fin.t n => eps) = INR n * eps.
@@ -145,10 +145,7 @@ Proof.
 Qed.
 
 Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
-  (forall i, f i < eps) -> sum_fin f < INR n * eps.
-Proof.
-  (* Proof by induction on n with Fin.caseS *)
-  (* Technical blocker: dependent type matching in fixpoint *)
+  (0 < n)%nat -> (forall i, f i < eps) -> @sum_fin n f < (INR n) * eps.
 Admitted.
 
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
