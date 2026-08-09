@@ -130,7 +130,8 @@ Qed.
 Lemma Rn_dist_iden_aux : forall (n : nat) (x y : Fin.t n -> R),
   sum_fin (fun i => Rabs (x i - y i)) = 0 -> forall i, Rabs (x i - y i) <= 0%R.
 Proof.
-  (* Proof by induction on n using Fin.caseS - technical details with dependent types *)
+  (* Proof by induction on n using Fin.caseS + Rplus_eq_0 *)
+  (* Technical blocker: lra cannot handle sum_fin recursive function *)
 Admitted.
 
 Lemma Rn_dist_iden : forall x y, Rn_distance x y = 0 -> x = y.
