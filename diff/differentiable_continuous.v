@@ -102,10 +102,10 @@ Proof.
 Qed.
 
 (* ============================================================ *)
-(* 微分法则：可加、可乘、倒数                                      *)
+(* 微分法则：可加、可乘、复合、倒数                                *)
 (* ============================================================ *)
 
-(* 导数存在性：f 在 x 点可微且导数为 l *)
+(* 导数存在性 *)
 Definition derivable_at (f : R -> R) (x l : R) : Prop :=
   derivable_pt_lim f x l.
 
@@ -118,8 +118,13 @@ Proof.
   intros f g x lf lg Hf Hg.
   unfold derivable_at in *.
   intros eps Heps.
-  destruct (Hf eps Heps) as [df Hf_eps].
-  destruct (Hg eps Heps) as [dg Hg_eps].
+  assert (Heps2 : 0 < eps / 2).
+  { apply Rlt_div_l.
+    - lra.
+    - exact Heps.
+  }
+  destruct (Hf (eps / 2) Heps2) as [df Hf_eps].
+  destruct (Hg (eps / 2) Heps2) as [dg Hg_eps].
   destruct df as [df_val df_pos].
   destruct dg as [dg_val dg_pos].
   assert (Hmin_pos : 0 < Rmin df_val dg_val).
@@ -127,25 +132,15 @@ Proof.
     - exact df_pos.
     - exact dg_pos.
   }
-  exists (exist _ (Rmin df_val dg_val) Hmin_pos).
+  exists {| pos := Rmin df_val dg_val; cond_pos := Hmin_pos |}.
   simpl.
   intros h Hh_lt Hh_neq.
-  unfold Rminus.
-  replace ((f (x + h) + g (x + h) - (f x + g x)) / h) with
-    ((f (x + h) - f x) / h + (g (x + h) - g x) / h).
-  2: { field. lra. }
-  replace (lf + lg) with (lf + lg) by reflexivity.
-  apply Rle_lt_trans with
-    (Rabs ((f (x + h) - f x) / h - lf) + Rabs ((g (x + h) - g x) / h - lg)).
-  - rewrite Rabs_triang.
-    right. reflexivity.
-  - apply Rplus_lt_compat.
-    + apply Hf_eps.
-      * lra.
-      * exact Hh_neq.
-    + apply Hg_eps.
-      * lra.
-      * exact Hh_neq.
+  replace ((f (x + h) + g (x + h) - (f x + g x)) / h - (lf + lg))
+    with (((f (x + h) - f x) / h - lf) + ((g (x + h) - g x) / h - lg))
+    by (field; lra).
+  apply Rle_lt_trans with (Rabs ((f (x + h) - f x) / h - lf) + Rabs ((g (x + h) - g x) / h - lg)).
+  - apply Rabs_triang.
+  - apply (Rplus_lt_compat _ _ _ _ (Hf_eps _ _ Hh_lt Hh_neq) (Hg_eps _ _ Hh_lt Hh_neq)).
 Qed.
 
 (* 乘法法则：(fg)' = f'g + fg' *)
@@ -158,32 +153,66 @@ Proof.
   unfold derivable_at in *.
   intros eps Heps.
 
-  (* 利用可微 => 连续 *)
+  (* 利用可微 => 连续，得到 f 的有界性 *)
   assert (Hf_cont: continuous_at f x).
   { apply (differentiable_continuous f x x (or_introl (refl_equal _)) (ex_intro _ lf Hf)). }
 
-  destruct (Hf eps Heps) as [df Hf_tmp].
-  destruct Hf_tmp as [Hdf_pos Hf_eps].
-  destruct (Hg eps Heps) as [dg Hg_tmp].
-  destruct Hg_tmp as [Hdg_pos Hg_eps].
-  destruct (Hf_cont 1 (Rlt_0_1)) as [df_cont Hf_cont_tmp].
-  destruct Hf_cont_tmp as [Hdf_cont_pos Hf_cont_bound].
+  destruct (Hf eps Heps) as [df Hf_eps].
+  destruct (Hg eps Heps) as [dg Hg_eps].
+  destruct df as [df_val df_pos].
+  destruct dg as [dg_val dg_pos].
+  destruct (Hf_cont 1 (Rlt_0_1)) as [df_cont Hf_cont_bound].
+  destruct df_cont as [df_cont_val df_cont_pos].
 
-  exists (Rmin df (Rmin dg df_cont)).
-  split.
-  { apply Rmin_pos.
-    - exact Hdf_pos.
-    - apply Rmin_pos; [exact Hdg_pos | exact Hdf_cont_pos]. }
-
+  assert (Hmin_pos : 0 < Rmin df_val (Rmin dg_val df_cont_val)).
+  { apply (Rmin_case df_val (Rmin dg_val df_cont_val) (fun r => 0 < r)).
+    - exact df_pos.
+    - apply (Rmin_case dg_val df_cont_val (fun r => 0 < r)).
+      + exact dg_pos.
+      + exact df_cont_pos.
+  }
+  exists (exist _ (Rmin df_val (Rmin dg_val df_cont_val)) Hmin_pos).
+  simpl.
   intros h Hh_lt Hh_neq.
-  (* 代数变换 *)
+
+  (* 代数变换：(fg)(x+h) - (fg)(x) = (f(x+h)-f(x))g(x+h) + f(x)(g(x+h)-g(x)) *)
   replace ((f (x + h) * g (x + h) - f x * g x) / h) with
     ((f (x + h) - f x) / h * g (x + h) + f x * ((g (x + h) - g x) / h)).
   2: { field. lra. }
 
-  (* 现在需要证明这个表达式与 lf * g x + f x * lg 的差在 eps 内 *)
-  assert (Hlt_arg: 0 < 1) by apply Rlt_0_1.
+  (* 目标：表达式的值在 lf*g(x) + f(x)*lg 的 eps 范围内 *)
+  (* 分解为两部分：A = (f(x+h)-f(x))/h * g(x+h) - lf*g(x) *)
+  (*              B = f(x) * ((g(x+h)-g(x))/h - lg) *)
+  (* A = (f(x+h)-f(x))/h * g(x+h) - lf*g(x+h) + lf*g(x+h) - lf*g(x) *)
+  (*   = g(x+h) * ((f(x+h)-f(x))/h - lf) + lf * (g(x+h) - g(x)) *)
 
+  (* 使用三角不等式 *)
+  apply Rle_lt_trans with
+    (Rabs (g (x + h) * ((f (x + h) - f x) / h - lf) + lf * (g (x + h) - g x))
+     + Rabs (f x * ((g (x + h) - g x) / h - lg))).
+Admitted.
+
+(* 链式法则（复合函数）：(g ∘ f)'(x) = g'(f(x)) · f'(x) *)
+Theorem derivable_comp : forall (f g : R -> R) (x lf lg : R),
+  derivable_at f x lf ->
+  derivable_at g (f x) lg ->
+  derivable_at (fun z => g (f z)) x (lg * lf).
+Proof.
+  intros f g x lf lg Hf Hg.
+  unfold derivable_at in *.
+  intros eps Heps.
+
+  (* 首先，由 g 在 f(x) 可微，得到 g 在 f(x) 的导数定义 *)
+  destruct (Hg eps Heps) as [dg_pos Hg_eps].
+  destruct dg_pos as [dg Hg_pos].
+
+  (* 由 f 在 x 可微，且 f 连续，f 在 x 附近有界 *)
+  assert (Hf_cont: continuous_at f x).
+  { apply (differentiable_continuous f x x (or_introl (refl_equal _)) (ex_intro _ lf Hf)). }
+
+  (* 由连续性，存在 delta1 > 0 使得 |x' - x| < delta1 => |f(x') - f(x)| < dg *)
+  destruct (Hf_cont dg Hf_cont_bound) as [df_cont Hf_cont_bound'].
+  destruct df_cont as [df_cont_val df_cont_pos].
 Admitted.
 
 (* 倒数法则：(1/g)' = -g'/g^2 *)

@@ -66,9 +66,12 @@ Proof.
     assert (Htri: rn_dist y c <= rn_dist y x + rn_dist x c).
     { apply rn_dist_triangle. }
     eapply Rle_lt_trans. exact Htri.
-    assert (Hsym: rn_dist y x = rn_dist x y). apply rn_dist_sym.
-    rewrite Hsym in Hy.
-    lra.
+    unfold open_ball in Hy.
+    assert (Hsum: rn_dist y x + rn_dist x c < r).
+    { assert (Hsym: rn_dist x y = rn_dist y x). apply rn_dist_sym.
+      rewrite <- Hsym. lra. }
+    unfold open_ball.
+    assert (Hfinal: rn_dist y c < r). lra. exact Hfinal.
 Qed.
 
 (* ================================================================ *)
