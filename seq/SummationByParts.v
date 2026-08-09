@@ -75,7 +75,9 @@ Proof.
     specialize (IH m Hm_n).
     destruct (Nat.eq_dec m (S n)) as [Heq | Hneq].
     + subst. simpl. lra.
-    + simpl (S (S n) - m). simpl (S n - m).
+    + assert (Hdiff1 : S (S n) - m = S (S n - m)) by lia.
+      assert (Hdiff2 : S n - m = S (n - m)) by lia.
+      rewrite Hdiff1. rewrite Hdiff2.
       rewrite IH. lra.
 Qed.
 
@@ -97,7 +99,8 @@ Proof.
       rewrite partial_sum_S.
       rewrite IH.
       assert (Hm_pos : (0 < m)%nat) by lia.
-      rewrite pred_Sn. rewrite partial_sum_S. lra.
+      assert (Hpred_m : pred m = m - 1) by lia.
+      rewrite Hpred_m. rewrite partial_sum_S. lra.
 Qed.
 
 (******************************************************************************)
@@ -153,12 +156,13 @@ Proof.
       assert (Hsum_split : sum_from (fun k => partial_sum a k * (b k - b (S k))) m n =
         sum_from (fun k => partial_sum a k * (b k - b (S k))) m (pred n) +
         partial_sum a n * (b n - b (S n))).
-      { destruct (Nat.eq_dec m (S n)) as [Heq2 | Hneq2].
-        - subst. simpl. rewrite partial_sum_S. lra.
-        - rewrite sum_from_S by lia.
-          assert (Hm_le_n : (m <= n)%nat) by lia.
-          assert (Hm_le_pred_n : (m <= pred n)%nat).
-          { destruct (Nat.eq_dec m (S n)); lia. }
+      { destruct (Nat.eq_dec m n) as [Heq2 | Hneq2].
+        - (* m = n: sum_from m n = a_m, sum_from m (pred n) = a_m (pred n = m-1 < m) *)
+          subst. simpl. lra.
+        - (* m < n *)
+          assert (Hm_lt_n : (m < n)%nat) by lia.
+          rewrite sum_from_S by lia.
+          assert (Hm_le_pred_n : (m <= pred n)%nat) by lia.
           rewrite sum_from_S by lia.
           lra. }
       rewrite Hsum_split. lra.
@@ -182,36 +186,18 @@ Proof.
   - (* n = S n *)
     rewrite partial_sum_S. rewrite partial_sum_S.
     rewrite IH.
+    (* IH: S_n(a*b) = A_n * b_n + S_{n-1}(A*(b-b')) *)
+    (* 目标: S_n(a*b) + a_{Sn}*b_{Sn} = A_{Sn}*b_{Sn} + S_n(A*(b-b')) *)
+    (* 其中 A_{Sn} = A_n + a_{Sn} *)
+    (* S_n(A*(b-b')) = S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn}) *)
     rewrite partial_sum_S.
-    (* 目标：
-       S_n(a*b) + a_{Sn}*b_{Sn} = S_n(a)*b_{Sn} + a_{Sn}*b_{Sn} + S_n(A*(b-b')) + A_n*(b_n - b_{Sn})
-       
-       由 IH: S_n(a*b) = S_n(a)*b_n + S_{n-1}(A*(b-b'))
-       
-       所以 S_n(a)*b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
-         = S_n(a)*b_{Sn} + a_{Sn}*b_{Sn} + S_n(A*(b-b')) + A_n*(b_n - b_{Sn})
-       
-       即 S_n(a)*b_n + S_{n-1}(A*(b-b'))
-         = S_n(a)*b_{Sn} + S_n(A*(b-b')) + A_n*(b_n - b_{Sn})
-         = S_n(a)*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn}) + A_n*(b_n - b_{Sn})
-       
-       不对，让我重新算：
-       S_n(A*(b-b')) = S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn})
-       
-       所以右边 = S_n(a)*b_{Sn} + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn})
-       
-       左边 = S_n(a)*b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
-       
-       需要 S_n(a)*b_n = S_n(a)*b_{Sn} + A_n*(b_n - b_{Sn})
-                        = S_n(a)*b_{Sn} + A_n*b_n - A_n*b_{Sn}
-                        = (S_n(a) - A_n)*b_{Sn} + A_n*b_n
-       
-       但 S_n(a) = A_n，所以 S_n(a)*b_n = A_n*b_{Sn} + A_n*b_n - A_n*b_{Sn} = A_n*b_n ✓
-       
-       等等，S_n(a) 就是 partial_sum a n = A_n。所以：
-       A_n*b_n = A_n*b_{Sn} + A_n*(b_n - b_{Sn}) = A_n*b_n ✓
+    (* 现在目标:
+       A_n * b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
+       = (A_n + a_{Sn}) * b_{Sn} + S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn})
+       = A_n * b_{Sn} + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*b_n - A_n*b_{Sn}
+       化简: A_n * b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
+           = A_n*b_n + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b'))  ✓
     *)
-    assert (HAn : partial_sum a n = partial_sum a n) by reflexivity.
     lra.
 Qed.
 

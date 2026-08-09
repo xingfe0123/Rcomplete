@@ -120,14 +120,14 @@ Proof.
   intros eps Heps.
   destruct (Hf eps Heps) as [df Hf_tmp].
   destruct Hf_tmp as [Hdf_pos Hf_eps].
-  destruct df as [df Hdf_pos']. simpl in Hf_eps.
   destruct (Hg eps Heps) as [dg Hg_tmp].
   destruct Hg_tmp as [Hdg_pos Hg_eps].
-  destruct dg as [dg Hdg_pos']. simpl in Hg_eps.
   exists (Rmin df dg).
   split.
   { apply Rmin_pos; [exact Hdf_pos | exact Hdg_pos]. }
-  refine (fun (h : R) (Hh_lt : Rabs h < Rmin df dg) (Hh_neq : h <> 0) => _).
+  intros h.
+  intros Hh_lt.
+  intros Hh_neq.
   unfold Rminus.
   replace ((f (x + h) + g (x + h) - (f x + g x)) / h) with
     ((f (x + h) - f x) / h + (g (x + h) - g x) / h).
