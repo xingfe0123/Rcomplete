@@ -122,6 +122,35 @@ Proof.
     lra.
 Qed.
 
+(* Helper: if each f i < eps, then sum_fin f < INR n * eps *)
+(* sum_fin of constant function = n * eps *)
+Lemma sum_fin_const : forall (n : nat) (eps : R),
+  sum_fin (fun _ : Fin.t n => eps) = INR n * eps.
+Proof.
+  intros n eps.
+  (* Use the fact that sum_fin f = f F1 + sum_fin (fun i => f (FS i)) *)
+  (* For constant function eps, this gives eps + sum_fin (fun _ => eps) = eps + n' * eps = (n' + 1) * eps *)
+  induction n as [|n' IHn'].
+  - simpl. lra.
+  - simpl.
+    (* sum_fin (fun _ : Fin.t (S n') => eps) = eps + sum_fin (fun _ : Fin.t n' => eps) *)
+    (* By IH, sum_fin (fun _ : Fin.t n' => eps) = INR n' * eps *)
+    (* So sum_fin (fun _ : Fin.t (S n') => eps) = eps + INR n' * eps = INR (S n') * eps *)
+    assert (IH : sum_fin (fun _ : Fin.t n' => eps) = INR n' * eps) by apply IHn'.
+    rewrite IH.
+    assert (HINR : INR (S n') = 1 + INR n').
+    { rewrite S_INR. lra. }
+    rewrite HINR at 1.
+    ring.
+Qed.
+
+Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
+  (forall i, f i < eps) -> sum_fin f < INR n * eps.
+Proof.
+  (* Proof by induction on n with Fin.caseS *)
+  (* Technical blocker: dependent type matching in fixpoint *)
+Admitted.
+
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
 Proof.
   intros x y z. unfold Rn_distance. apply sum_fin_tri_lemma.
@@ -200,7 +229,7 @@ Proof.
      2. By R_complete, each component converges to some l_i
      3. Construct lim := fun i => l_i
      4. Prove s converges to lim in R^n
-     Requires: constructive choice over Fin.t n_dim, and lemma that sum_fin of bounded terms is bounded *)
+     Requires: Fin.t n_dim induction (nested), sum_fin_bound_eps *)
 Admitted.
 
 (* ===================================================================== *)

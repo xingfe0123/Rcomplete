@@ -1,2 +1,5 @@
 -Q . Topology
 HeineBorelLimitPoint.v
+ContinuityDefinitions.v
+LimitContinuity.v
+VectorSumProduct.v
