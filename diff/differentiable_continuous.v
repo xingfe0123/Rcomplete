@@ -347,77 +347,56 @@ Proof.
 Qed.
 
 (* ============================================================ *)
-(* 分割加细定理                                                    *)
+(* 子列表关系                                                        *)
 (* ============================================================ *)
 
-(* 引理：向分割中加入一个点，下和不减 *)
-(* 设 p = [x0, x1, ..., xn]，加入点 y ∈ (x_{k-1}, x_k) 得到 p' *)
-(* 则 L(P', f) - L(P, f) = (y - x_{k-1}) * inf_on x_{k-1} y f + (x_k - y) * inf_on y x_k f - (x_k - x_{k-1}) * inf_on x_{k-1} x_k f >= 0 *)
-Lemma lower_sum_insert_point : forall x0 x y x1 rest f,
-  x0 <= x -> x <= y -> y <= x1 ->
-  lower_sum_from x0 (x :: x1 :: rest) f <=
-  lower_sum_from x0 (x :: y :: x1 :: rest) f.
+(* 定义：l1 是 l2 的子序列（保持顺序） *)
+Inductive subseq : list R -> list R -> Prop :=
+| subseq_nil : forall l, subseq nil l
+| subseq_hd : forall x l1 l2, subseq l1 l2 -> subseq (x :: l1) (x :: l2)
+| subseq_tl : forall x l1 l2, subseq l1 l2 -> subseq l1 (x :: l2).
+
+(* 引理：subseq 保持 List.In *)
+Lemma subseq_In : forall l1 l2 x, subseq l1 l2 -> List.In x l1 -> List.In x l2.
 Proof.
-  intros x0 x y x1 rest f H0x Hxy Hyx1.
-  simpl.
-  assert ((x1 - x) * inf_on x x1 f <=
-          (y - x) * inf_on x y f + (x1 - y) * inf_on y x1 f)%R.
-  { apply Rge_le. apply lower_sum_cons. lra. lra. }
-  lra.
+  intros l1 l2 x Hsub Hin.
+  induction Hsub.
+  - inversion Hin.
+  - simpl. simpl in Hin. destruct Hin as [Hin | Hin].
+    + left. exact Hin.
+    + right. apply IHHsub. exact Hin.
+  - simpl. right. apply IHHsub. exact Hin.
 Qed.
 
-(* 引理：向分割中加入一个点，上和不增 *)
-Lemma upper_sum_insert_point : forall x0 x y x1 rest f,
-  x0 <= x -> x <= y -> y <= x1 ->
-  upper_sum_from x0 (x :: y :: x1 :: rest) f <=
-  upper_sum_from x0 (x :: x1 :: rest) f.
+(* 引理：subseq 的自反性 *)
+Lemma subseq_refl : forall l, subseq l l.
 Proof.
-  intros x0 x y x1 rest f H0x Hxy Hyx1.
-  simpl.
-  assert ((y - x) * sup_on x y f + (x1 - y) * sup_on y x1 f <=
-          (x1 - x) * sup_on x x1 f)%R.
-  { apply upper_sum_cons. lra. lra. }
-  lra.
+  intros l.
+  induction l as [|x l IH].
+  - apply subseq_nil.
+  - apply subseq_hd. exact IH.
 Qed.
 
-(* 引理：lower_sum_from 在尾部追加点时单调 *)
-Lemma lower_sum_from_tail_mono : forall x0 pts rest f,
-  lower_sum_from x0 pts f <= lower_sum_from x0 (pts ++ rest) f.
+(* 引理：lower_sum_from 在 subseq 下单调 *)
+Lemma lower_sum_from_subseq : forall x0 l1 l2 f,
+  subseq l1 l2 ->
+  lower_sum_from x0 l1 f <= lower_sum_from x0 l2 f.
 Proof.
-  (* 由于类型推断问题，这里使用 Admitted *)
-  (* 证明思路：对 pts 进行归纳，利用 IH 和 lra *)
-Admitted.
-
-(* 引理：upper_sum_from 在尾部追加点时单调 *)
-Lemma upper_sum_from_tail_mono : forall x0 pts rest f,
-  upper_sum_from x0 (pts ++ rest) f <= upper_sum_from x0 pts f.
-Proof.
-  (* 由于类型推断问题，这里使用 Admitted *)
-  (* 证明思路：对 pts 进行归纳，利用 IH 和 lra *)
-Admitted.
-
-(* 关键引理：如果 pts' 包含 pts 的所有点（作为保序子序列），则 lower_sum_from 单调 *)
-(* 证明策略：对 pts 进行归纳，使用 in_split 在 pts' 中找到 x 的位置 *)
-Lemma lower_sum_from_refinement : forall x0 pts pts' f,
-  (forall x, List.In x pts -> List.In x pts') ->
-  lower_sum_from x0 pts f <= lower_sum_from x0 pts' f.
-Proof.
-  (* 由于列表操作的复杂性，这里使用 Admitted *)
-  (* 完整的证明需要：
-     1. 对 pts 进行归纳
-     2. 使用 in_split 在 pts' 中找到 x 的位置
-     3. 对 prefix 进行归纳，逐个插入点
-     4. 使用 lower_sum_insert_point 证明单调性 *)
-Admitted.
-
-(* 引理：upper_sum_from 在尾部追加点时单调 *)
-(* 关键引理：如果 pts' 包含 pts 的所有点，则 upper_sum_from 单调 *)
-Lemma upper_sum_from_refinement : forall x0 pts pts' f,
-  (forall x, List.In x pts -> List.In x pts') ->
-  upper_sum_from x0 pts' f <= upper_sum_from x0 pts f.
-Proof.
-  (* 与 lower_sum_from_refinement 对称 *)
-  (* 由于列表操作的复杂性，这里使用 Admitted *)
+  intros x0 l1 l2 f Hsub.
+  induction Hsub as [|x l1 l2 Hsub IH |x l1 l2 Hsub IH].
+  - (* l1 = nil *)
+    simpl. apply Rge_le. apply lower_sum_nonneg.
+  - (* l1 = x :: l1, l2 = x :: l2 *)
+    simpl.
+    assert (lower_sum_from x l1 f <= lower_sum_from x l2 f).
+    { exact IH. }
+    lra.
+  - (* l1 = l1, l2 = x :: l2 *)
+    simpl.
+    (* 需要证明：lower_sum_from x0 l1 f <= (x - x0) * inf_on x0 x f + lower_sum_from x l2 f *)
+    (* 由于 subseq l1 l2，我们知道 l1 的所有元素都在 l2 中 *)
+    (* 但这不够直接，我们需要更强的结论 *)
+    admit.
 Admitted.
 
 (* 定理：如果 p' 是 p 的加细，那么 L(P, f) <= L(P', f) *)

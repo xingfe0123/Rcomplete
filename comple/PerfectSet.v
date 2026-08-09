@@ -278,6 +278,7 @@ Definition get_conv_N (n_dim0 : nat) (s : nat -> Fin.t n_dim0 -> R) (i : Fin.t n
 Theorem Rn_complete : forall s : nat -> Rn,
   CauchySeq s -> exists lim, LimitSeq s lim.
 Proof.
+  unfold Rn, CauchySeq, LimitSeq, Rn_distance in *.
   intros s Hcauchy.
   set (lim := fun i : Fin.t n_dim => proj1_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))).
   exists lim.
@@ -287,9 +288,7 @@ Proof.
   - (* n_dim > 0: use sum_fin_bound_eps *)
     assert (Hpos_div : 0 < eps / INR n_dim).
     { assert (H : 0 < INR n_dim) by (apply lt_0_INR; exact Hn).
-      assert (Hpos : Rdiv eps (INR n_dim) > 0).
-      { unfold Rdiv. apply Rmult_lt_0_compat. exact Heps. apply Rinv_0_lt_compat. exact H. }
-      exact Hpos.
+      unfold Rdiv. apply Rmult_lt_0_compat. exact Heps. apply Rinv_0_lt_compat. exact H.
     }
     set (get_N := fun i : Fin.t n_dim =>
       get_conv_N n_dim s i (lim i) (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))) (eps / INR n_dim) Hpos_div).
