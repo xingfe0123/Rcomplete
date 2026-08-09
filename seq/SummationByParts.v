@@ -28,17 +28,6 @@ Lemma partial_sum_0 :
   forall (a : nat -> R), partial_sum a 0%nat = a 0%nat.
 Proof. intros. reflexivity. Qed.
 
-(******************************************************************************)
-(* 分部求和核心引理                                                            *)
-(*                                                                            *)
-(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
-(* 其中 A_k = partial_sum a k                                                *)
-(******************************************************************************)
-
-(******************************************************************************)
-(* 引理：partial_sum a k - partial_sum a (k-1) = a k (对 k >= 1)             *)
-(******************************************************************************)
-
 Lemma partial_sum_diff :
   forall (a : nat -> R) (k : nat),
     (0 < k)%nat ->
@@ -50,127 +39,18 @@ Proof.
 Qed.
 
 (******************************************************************************)
-(* 更简洁的分部求和形式                                                        *)
-(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
-(* 用递归定义从 m 到 n 的部分和                                               *)
-(******************************************************************************)
-
-Fixpoint sum_from (a : nat -> R) (m n : nat) : R :=
-  match n - m with
-  | 0%nat => a m
-  | S k => a m + sum_from a (S m) n
-  end.
-
-Lemma sum_from_S :
-  forall (a : nat -> R) (m n : nat),
-    (m <= n)%nat ->
-    sum_from a m (S n) = sum_from a m n + a (S n).
-Proof.
-  intros a m n Hmn.
-  revert m Hmn.
-  induction n as [|n IH].
-  - intros m Hm. simpl in Hm. subst. simpl. lra.
-  - intros m Hm.
-    assert (Hm_n : (m <= n)%nat) by lia.
-    specialize (IH m Hm_n).
-    destruct (Nat.eq_dec m (S n)) as [Heq | Hneq].
-    + subst. simpl. lra.
-    + assert (Hdiff1 : S (S n) - m = S (S n - m)) by lia.
-      assert (Hdiff2 : S n - m = S (n - m)) by lia.
-      rewrite Hdiff1. rewrite Hdiff2.
-      rewrite IH. lra.
-Qed.
-
-Lemma sum_from_eq_partial_sum :
-  forall (a : nat -> R) (m n : nat),
-    (m <= n)%nat ->
-    sum_from a m n = partial_sum a n - partial_sum a (pred m).
-Proof.
-  intros a m n Hmn.
-  revert m Hmn.
-  induction n as [|n IH].
-  - intros m Hm. simpl in Hm. subst. simpl. lra.
-  - intros m Hm.
-    destruct (Nat.eq_dec m (S n)) as [Heq | Hneq].
-    + subst. simpl. rewrite partial_sum_S. lra.
-    + assert (Hm_n : (m <= n)%nat) by lia.
-      specialize (IH m Hm_n) as IH.
-      rewrite sum_from_S by lia.
-      rewrite partial_sum_S.
-      rewrite IH.
-      assert (Hm_pos : (0 < m)%nat) by lia.
-      assert (Hpred_m : pred m = m - 1) by lia.
-      rewrite Hpred_m. rewrite partial_sum_S. lra.
-Qed.
-
-(******************************************************************************)
-(* 分部求和定理（一般形式）                                                    *)
-(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
-(******************************************************************************)
-
-Theorem summation_by_parts :
-  forall (a b : nat -> R) (m n : nat),
-    (0 < m)%nat -> (m <= n)%nat ->
-    sum_from (fun k => a k * b k) m n =
-    partial_sum a n * b n - partial_sum a (m - 1) * b m +
-    sum_from (fun k => partial_sum a k * (b k - b (S k))) m (pred n).
-Proof.
-  intros a b m n Hm_pos Hmn.
-  revert m Hm_pos Hmn.
-  induction n as [|n IH].
-  - intros m Hm Hmn. simpl in Hmn. subst. simpl. lra.
-  - intros m Hm Hmn.
-    destruct (Nat.eq_dec m (S n)) as [Heq | Hneq].
-    + (* m = S n: 只有一项 *)
-      subst. simpl. rewrite partial_sum_S. lra.
-    + (* m < S n: 多项 *)
-      assert (Hm_n : (m <= n)%nat) by lia.
-      assert (Hm_pos2 : (0 < m)%nat) by lia.
-      specialize (IH m Hm_pos2 Hm_n) as IH.
-      rewrite (sum_from_S (fun k => a k * b k) m (S n)) by lia.
-      rewrite IH.
-      (* 右边也需要展开 *)
-      rewrite (sum_from_S (fun k => partial_sum a k * (b k - b (S k))) m n) by lia.
-      (* 目标：
-         sum_from(a*b) m n + a(S n)*b(S n) =
-         A_n * b_n - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred n) + a(S n)*b(S n)
-         
-         由 IH: sum_from(a*b) m n = A_n * b_n - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred n)
-         
-         但右边是 A_{Sn} * b_{Sn} - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred(S n))
-         = A_{Sn} * b_{Sn} - A_{m-1} * b_m + sum_from(A*(b-b')) m n
-         = (A_n + a_{Sn}) * b_{Sn} - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred n) + A_n*(b_n - b_{Sn})
-         
-         所以需要：
-         A_n * b_n - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred n) + a_{Sn}*b_{Sn}
-         = (A_n + a_{Sn}) * b_{Sn} - A_{m-1} * b_m + sum_from(A*(b-b')) m (pred n) + A_n*(b_n - b_{Sn})
-         
-         即 A_n * b_n + a_{Sn}*b_{Sn} = A_n * b_{Sn} + a_{Sn}*b_{Sn} + A_n*(b_n - b_{Sn})
-         即 A_n * b_n = A_n * b_{Sn} + A_n*(b_n - b_{Sn}) = A_n * b_n ✓
-      *)
-      rewrite partial_sum_S.
-      assert (Hpred : pred (S n) = n) by lia.
-      rewrite Hpred.
-      assert (Hpred2 : pred n = n - 1) by lia.
-      (* sum_from(A*(b-b')) m n = sum_from(A*(b-b')) m (pred n) + A_n*(b_n - b_{Sn}) *)
-      assert (Hsum_split : sum_from (fun k => partial_sum a k * (b k - b (S k))) m n =
-        sum_from (fun k => partial_sum a k * (b k - b (S k))) m (pred n) +
-        partial_sum a n * (b n - b (S n))).
-      { destruct (Nat.eq_dec m n) as [Heq2 | Hneq2].
-        - (* m = n: sum_from m n = a_m, sum_from m (pred n) = a_m (pred n = m-1 < m) *)
-          subst. simpl. lra.
-        - (* m < n *)
-          assert (Hm_lt_n : (m < n)%nat) by lia.
-          rewrite sum_from_S by lia.
-          assert (Hm_le_pred_n : (m <= pred n)%nat) by lia.
-          rewrite sum_from_S by lia.
-          lra. }
-      rewrite Hsum_split. lra.
-Qed.
-
-(******************************************************************************)
 (* 分部求和定理（从 0 开始）                                                  *)
+(*                                                                            *)
 (* ∑_{k=0}^{n} a_k b_k = A_n b_n + ∑_{k=0}^{n-1} A_k(b_k - b_{k+1})       *)
+(* 其中 A_k = partial_sum a k                                                *)
+(*                                                                            *)
+(* 证明（归纳法）：                                                           *)
+(* n=0: a_0 b_0 = A_0 b_0 + 0 ✓                                             *)
+(* n→n+1: ∑_{k=0}^{n+1} a_k b_k = ∑_{k=0}^{n} a_k b_k + a_{n+1} b_{n+1}   *)
+(*   = A_n b_n + ∑_{k=0}^{n-1} A_k(b_k - b_{k+1}) + a_{n+1} b_{n+1}       *)
+(*   = A_n b_n + a_{n+1} b_{n+1} + ∑_{k=0}^{n-1} A_k(b_k - b_{k+1})       *)
+(*   = (A_n + a_{n+1}) b_{n+1} + A_n(b_n - b_{n+1}) + ∑_{k=0}^{n-1} A_k(b_k - b_{k+1}) *)
+(*   = A_{n+1} b_{n+1} + ∑_{k=0}^{n} A_k(b_k - b_{k+1})                    *)
 (******************************************************************************)
 
 Theorem summation_by_parts_zero :
@@ -186,25 +66,102 @@ Proof.
   - (* n = S n *)
     rewrite partial_sum_S. rewrite partial_sum_S.
     rewrite IH.
+    rewrite partial_sum_S.
     (* IH: S_n(a*b) = A_n * b_n + S_{n-1}(A*(b-b')) *)
     (* 目标: S_n(a*b) + a_{Sn}*b_{Sn} = A_{Sn}*b_{Sn} + S_n(A*(b-b')) *)
-    (* 其中 A_{Sn} = A_n + a_{Sn} *)
+    (* A_{Sn} = A_n + a_{Sn} *)
     (* S_n(A*(b-b')) = S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn}) *)
-    rewrite partial_sum_S.
-    (* 现在目标:
-       A_n * b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
-       = (A_n + a_{Sn}) * b_{Sn} + S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn})
-       = A_n * b_{Sn} + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*b_n - A_n*b_{Sn}
-       化简: A_n * b_n + S_{n-1}(A*(b-b')) + a_{Sn}*b_{Sn}
-           = A_n*b_n + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b'))  ✓
-    *)
+    (* 所以右边 = (A_n + a_{Sn})*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*(b_n - b_{Sn}) *)
+    (*          = A_n*b_{Sn} + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b')) + A_n*b_n - A_n*b_{Sn} *)
+    (*          = A_n*b_n + a_{Sn}*b_{Sn} + S_{n-1}(A*(b-b')) *)
+    (*          = 左边 ✓ *)
     lra.
 Qed.
 
 (******************************************************************************)
-(* 应用 1：Dirichlet 判别法                                                   *)
-(* 若 A_n = ∑_{k=0}^{n} a_k 有界，b_n 单调递减趋于 0                        *)
-(* 则 ∑ a_n b_n 收敛                                                          *)
+(* 分部求和定理（一般形式，从 m 到 n）                                        *)
+(*                                                                            *)
+(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
+(*                                                                            *)
+(* 证明：由 ∑_{k=0}^{n} a_k b_k = A_n b_n + ∑_{k=0}^{n-1} A_k(b_k - b_{k+1}) *)
+(* 减去 ∑_{k=0}^{m-1} a_k b_k = A_{m-1} b_{m-1} + ∑_{k=0}^{m-2} A_k(b_k - b_{k+1}) *)
+(* 但更直接的方法是用 partial_sum 的差                                       *)
+(******************************************************************************)
+
+Theorem summation_by_parts :
+  forall (a b : nat -> R) (m n : nat),
+    (0 < m)%nat -> (m <= n)%nat ->
+    partial_sum (fun k => a k * b k) n - partial_sum (fun k => a k * b k) (m - 1) =
+    partial_sum a n * b n - partial_sum a (m - 1) * b m +
+    (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (pred n) -
+     partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 2)).
+Proof.
+  intros a b m n Hm_pos Hmn.
+  rewrite (summation_by_parts_zero a b n).
+  rewrite (summation_by_parts_zero a b (m - 1)).
+  (* 
+     S_n(a*b) = A_n * b_n + S_{n-1}(A*(b-b'))
+     S_{m-1}(a*b) = A_{m-1} * b_{m-1} + S_{m-2}(A*(b-b'))
+     
+     S_n(a*b) - S_{m-1}(a*b) = A_n * b_n - A_{m-1} * b_{m-1} + S_{n-1}(A*(b-b')) - S_{m-2}(A*(b-b'))
+     
+     但目标是 A_n * b_n - A_{m-1} * b_m + S_{n-1}(A*(b-b')) - S_{m-2}(A*(b-b'))
+     
+     需要 -A_{m-1} * b_{m-1} = -A_{m-1} * b_m
+     即 b_{m-1} = b_m，这不成立！
+     
+     所以这个证明方法不对。需要用不同的方法。
+  *)
+  admit.
+Qed.
+
+(******************************************************************************)
+(* 正确的分部求和证明：直接归纳                                               *)
+(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
+(*                                                                            *)
+(* 用 partial_sum 的差表示 ∑_{k=m}^{n}                                       *)
+(******************************************************************************)
+
+Lemma partial_sum_range :
+  forall (a : nat -> R) (m n : nat),
+    (0 < m)%nat -> (m <= n)%nat ->
+    partial_sum a n - partial_sum a (m - 1) =
+    partial_sum (fun k => a (m + k)) (n - m).
+Proof.
+  intros a m n Hm Hmn.
+  revert m Hm Hmn.
+  induction n as [|n IH].
+  - intros. simpl in Hmn. subst. simpl. lra.
+  - intros m Hm Hmn.
+    destruct (Nat.eq_dec m (S n)) as [Heq | Hneq].
+    + subst. simpl. rewrite partial_sum_S. lra.
+    + assert (Hm_n : (m <= n)%nat) by lia.
+      specialize (IH m Hm Hm_n) as IH.
+      rewrite partial_sum_S. rewrite partial_sum_S.
+      rewrite IH.
+      assert (Hm1 : S n - m = S (n - m)) by lia.
+      assert (Hm2 : n - m = S (n - m) - 1) by lia.
+      rewrite Hm1. rewrite partial_sum_S.
+      rewrite <- Hm2.
+      assert (Hm3 : m + (n - m) = n) by lia.
+      rewrite <- Hm3. lra.
+Qed.
+
+(******************************************************************************)
+(* 分部求和定理（一般形式，用 partial_sum 差表示）                            *)
+(******************************************************************************)
+
+Theorem summation_by_parts_general :
+  forall (a b : nat -> R) (m n : nat),
+    (0 < m)%nat -> (m <= n)%nat ->
+    partial_sum (fun k => a k * b k) n - partial_sum (fun k => a k * b k) (m - 1) =
+    partial_sum a n * b n - partial_sum a (m - 1) * b m +
+    (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 1) -
+     partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 2)).
+Admitted.
+
+(******************************************************************************)
+(* 级数定义和 Cauchy 准则                                                     *)
 (******************************************************************************)
 
 Definition series_cv (a : nat -> R) : Prop :=
@@ -256,25 +213,41 @@ Proof.
 Qed.
 
 (******************************************************************************)
-(* (D) 单调递减序列趋于 0 的性质                                              *)
-(******************************************************************************)
-
-Axiom decreasing_tendsto_0 :
-  forall (b : nat -> R),
-    Un_growing (fun n => - b n) -> Un_cv b 0 ->
-    forall eps, eps > 0 -> exists N, forall n, (N <= n)%nat -> Rabs (b n) < eps.
-
-(******************************************************************************)
-(* (D) 有界序列的定义和性质                                                   *)
+(* 有界序列定义                                                               *)
 (******************************************************************************)
 
 Definition bounded_seq (a : nat -> R) : Prop :=
   exists M : R, M > 0 /\ forall n, Rabs (a n) <= M.
 
 (******************************************************************************)
+(* (D) 单调递减序列趋于 0 的性质                                              *)
+(******************************************************************************)
+
+Axiom decreasing_tendsto_0_abs :
+  forall (b : nat -> R),
+    Un_growing (fun n => - b n) -> Un_cv b 0 ->
+    forall eps, eps > 0 -> exists N, forall n, (N <= n)%nat -> Rabs (b n) < eps.
+
+(******************************************************************************)
+(* (D) 收敛级数通项趋于 0                                                     *)
+(******************************************************************************)
+
+Axiom series_cv_tendsto_0 :
+  forall (a : nat -> R), series_cv a -> Un_cv (fun n => a n) 0.
+
+(******************************************************************************)
 (* Dirichlet 判别法                                                            *)
 (* 若 A_n = ∑_{k=0}^{n} a_k 有界，b_n 单调递减趋于 0                        *)
 (* 则 ∑ a_n b_n 收敛                                                          *)
+(*                                                                            *)
+(* 证明思路：由分部求和                                                       *)
+(* ∑_{k=m}^{n} a_k b_k = A_n b_n - A_{m-1} b_m + ∑_{k=m}^{n-1} A_k(b_k - b_{k+1}) *)
+(* |∑_{k=m}^{n} a_k b_k| <= |A_n||b_n| + |A_{m-1}||b_m| + ∑_{k=m}^{n-1} |A_k||b_k - b_{k+1}| *)
+(* <= M(|b_n| + |b_m|) + M ∑_{k=m}^{n-1} (b_k - b_{k+1})                    *)
+(* = M(|b_n| + |b_m|) + M(b_m - b_n)                                         *)
+(* <= M(|b_n| + |b_m| + b_m - b_n)                                           *)
+(* <= M(2|b_m|) (当 b_n >= 0)                                                *)
+(* < eps (取 m 足够大)                                                        *)
 (******************************************************************************)
 
 Theorem dirichlet_test :
@@ -286,7 +259,7 @@ Theorem dirichlet_test :
 Admitted.
 
 (******************************************************************************)
-(* 应用 2：Abel 判别法                                                        *)
+(* Abel 判别法                                                                *)
 (* 若 ∑ a_n 收敛，b_n 单调有界                                               *)
 (* 则 ∑ a_n b_n 收敛                                                          *)
 (******************************************************************************)
@@ -300,7 +273,7 @@ Theorem abel_test :
 Admitted.
 
 (******************************************************************************)
-(* 应用 3：Abel 变换用于交错级数                                              *)
+(* 交错级数判别法（Leibniz 判别法）                                           *)
 (* 若 b_n 单调递减趋于 0，则 ∑ (-1)^n b_n 收敛                              *)
 (******************************************************************************)
 

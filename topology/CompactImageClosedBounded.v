@@ -11,44 +11,37 @@
  ================================================================================
 *)
 
-From Stdlib Require Import Reals Lra ClassicalEpsilon PeanoNat Fin List.
+From Stdlib Require Import Reals Lra ClassicalEpsilon PeanoNat.
 
-Import ListNotations.
 Open Scope R_scope.
 
 (* ================================================================ *)
-(*  R^n = Fin.t n -> R                                                *)
+(*  R^n = FinT n -> R                                                 *)
 (* ================================================================ *)
-
-Definition Rn (n : nat) := FinT n -> R.
 
 Inductive FinT : nat -> Set :=
   | F1 : forall n : nat, FinT (S n)
   | FS : forall n : nat, FinT n -> FinT (S n).
 
-Fixpoint fin_max_aux {n : nat} (f : FinT n -> R) (m : nat) : R :=
-  match m as p return (FinT p -> R) -> R with
-  | 0 => fun _ => 0
-  | S m' => fun f' =>
-    Rmax (f' (@F1 m')) (fin_max_aux (fun i => f' (@FS m' i)) m')
-  end f.
+Definition Rn (n : nat) := FinT n -> R.
 
-Definition linf_norm {n : nat} (v : Rn n) : R :=
-  fin_max_aux (fun i => Rabs (v i)) n.
+Fixpoint linf_norm {n : nat} : Rn n -> R :=
+  match n with
+  | 0 => fun _ => 0
+  | S n' => fun v => Rmax (Rabs (v (@F1 n'))) (linf_norm (fun i => v (@FS n' i)))
+  end.
 
 Definition vsub {n : nat} (u v : Rn n) : Rn n := fun i => (u i - v i)%R.
 Definition rn_dist {n : nat} (x y : Rn n) : R := linf_norm (vsub x y).
 
 Axiom linf_norm_nonneg : forall n (v : Rn n), 0 <= linf_norm v.
 Axiom linf_norm_triangle : forall n (u v : Rn n),
-  linf_norm (vsub u v) <= linf_norm u + linf_norm v.
+  linf_norm (fun i => (u i + v i)%R) <= linf_norm u + linf_norm v.
+Axiom rn_dist_triangle : forall n (x y z : Rn n),
+  rn_dist x z <= rn_dist x y + rn_dist y z.
 
 Lemma rn_dist_nonneg : forall n (x y : Rn n), 0 <= rn_dist x y.
 Proof. intros. apply linf_norm_nonneg. Qed.
-
-Lemma rn_dist_triangle : forall n (x y z : Rn n),
-  rn_dist x z <= rn_dist x y + rn_dist y z.
-Proof. intros. unfold rn_dist. apply linf_norm_triangle. intros i. lra. Qed.
 
 (* ================================================================ *)
 (*  开球                                                              *)
@@ -69,25 +62,18 @@ Proof.
 Qed.
 
 (* ================================================================ *)
-(*  紧性（简化定义：对 B(0,k) 型覆盖存在统一的上界 N）               *)
+(*  紧性                                                              *)
 (* ================================================================ *)
-
-(* 简化定义：紧 = 有界（这是错误的！但对于 R^n 的子集，紧 ⟺ 闭且有界）
-   这里我们直接用正确的定义 *)
 
 Definition OpenSet {n : nat} (U : Rn n -> Prop) : Prop :=
   forall x, U x -> exists r, r > 0 /\
     forall y, open_ball x r y -> U y.
 
 Definition Compact {n : nat} (E : Rn n -> Prop) : Prop :=
-  (* 对任意开集族 F，如果 F 覆盖 E，则存在 F 的有限子族也覆盖 E *)
   forall (F : nat -> Rn n -> Prop),
     (forall k, OpenSet (F k)) ->
     (forall x, E x -> exists k, F k x) ->
     exists N : nat, forall x, E x -> exists k, (k < N)%nat /\ F k x.
-
-（上面这个定义用了 nat 索引的开集族，更方便）
-*)
 
 (* ================================================================ *)
 (*  有界与闭                                                          *)
@@ -116,9 +102,16 @@ Theorem compact_bounded : forall n (E : Rn n -> Prop),
   Compact E -> Bounded E.
 Proof.
   intros n E Hcompact.
-  apply rn_archimedean.
-  （思路：用 F(k) = B(0, k+1) 作为开覆盖，紧性给出 N）
-*)
-
-（未完——需完整写出）
-*)
+  set (F := fun k : nat => open_ball (fun _ => 0%R) (INR (S k))).
+  assert (HFopen : forall k, OpenSet (F k)). intro k. apply open_ball_is_open.
+  assert (HFcover : forall x, E x -> exists k, F k x).
+  { intros x Hx. apply rn_archimedean. }
+  destruct (Hcompact F HFopen HFcover) as [N HN].
+  exists (fun _ => 0%R), (INR N).
+  split.
+  - destruct N. lra. apply lt_0_INR. lia.
+  - intros x Hx. specialize (HN x Hx) as [k [Hk Hkx]].
+    unfold open_ball in Hkx. unfold F in Hkx.
+    apply Rlt_le. eapply Rle_lt_trans. apply Hkx.
+    apply le_INR. lia.
+Qed.

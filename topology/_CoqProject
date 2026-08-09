@@ -3,3 +3,4 @@ HeineBorelLimitPoint.v
 ContinuityDefinitions.v
 LimitContinuity.v
 ContinuousCompact.v
+CompactImageClosedBounded.v

@@ -118,16 +118,18 @@ Proof.
   intros f g x lf lg Hf Hg.
   unfold derivable_at in *.
   intros eps Heps.
-  destruct (Hf eps Heps) as [df Hf_tmp].
-  destruct Hf_tmp as [Hdf_pos Hf_eps].
-  destruct (Hg eps Heps) as [dg Hg_tmp].
-  destruct Hg_tmp as [Hdg_pos Hg_eps].
-  exists (Rmin df dg).
-  split.
-  { apply Rmin_pos; [exact Hdf_pos | exact Hdg_pos]. }
-  intros h.
-  intros Hh_lt.
-  intros Hh_neq.
+  destruct (Hf eps Heps) as [df Hf_eps].
+  destruct (Hg eps Heps) as [dg Hg_eps].
+  destruct df as [df_val df_pos].
+  destruct dg as [dg_val dg_pos].
+  assert (Hmin_pos : 0 < Rmin df_val dg_val).
+  { apply (Rmin_case df_val dg_val (fun r => 0 < r)).
+    - exact df_pos.
+    - exact dg_pos.
+  }
+  exists (exist _ (Rmin df_val dg_val) Hmin_pos).
+  simpl.
+  intros h Hh_lt Hh_neq.
   unfold Rminus.
   replace ((f (x + h) + g (x + h) - (f x + g x)) / h) with
     ((f (x + h) - f x) / h + (g (x + h) - g x) / h).

@@ -6,3 +6,5 @@ LimitContinuity.vo LimitContinuity.glob LimitContinuity.v.beautified LimitContin
 LimitContinuity.vos LimitContinuity.vok LimitContinuity.required_vos: LimitContinuity.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
 ContinuousCompact.vo ContinuousCompact.glob ContinuousCompact.v.beautified ContinuousCompact.required_vo: ContinuousCompact.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
 ContinuousCompact.vos ContinuousCompact.vok ContinuousCompact.required_vos: ContinuousCompact.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
+CompactImageClosedBounded.vo CompactImageClosedBounded.glob CompactImageClosedBounded.v.beautified CompactImageClosedBounded.required_vo: CompactImageClosedBounded.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
+CompactImageClosedBounded.vos CompactImageClosedBounded.vok CompactImageClosedBounded.required_vos: CompactImageClosedBounded.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
