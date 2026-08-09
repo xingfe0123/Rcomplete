@@ -4,5 +4,5 @@ ContinuityDefinitions.vo ContinuityDefinitions.glob ContinuityDefinitions.v.beau
 ContinuityDefinitions.vos ContinuityDefinitions.vok ContinuityDefinitions.required_vos: ContinuityDefinitions.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
 LimitContinuity.vo LimitContinuity.glob LimitContinuity.v.beautified LimitContinuity.required_vo: LimitContinuity.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
 LimitContinuity.vos LimitContinuity.vok LimitContinuity.required_vos: LimitContinuity.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
-VectorSumProduct.vo VectorSumProduct.glob VectorSumProduct.v.beautified VectorSumProduct.required_vo: VectorSumProduct.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
-VectorSumProduct.vos VectorSumProduct.vok VectorSumProduct.required_vos: VectorSumProduct.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
+ContinuousCompact.vo ContinuousCompact.glob ContinuousCompact.v.beautified ContinuousCompact.required_vo: ContinuousCompact.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker
+ContinuousCompact.vos ContinuousCompact.vok ContinuousCompact.required_vos: ContinuousCompact.v /Users/luoxing/.opam/default/lib/rocq-runtime/rocqworker

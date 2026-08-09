@@ -252,7 +252,8 @@ Proof.
   assert (HrN_ne : r ^ N <> 0). { apply Rgt_not_eq. exact HrN_pos. }
   assert (Hrn_pos : 0 < r ^ n). { apply pow_lt. exact Hr. }
   assert (Hpow : r ^ (n - N) * r ^ N = r ^ n).
-  { rewrite <- pow_add_r. lia. }
+  { assert (H : n - N + N = n) by lia.
+    rewrite H. rewrite pow_add. reflexivity. }
   unfold Rdiv. rewrite Rmult_assoc.
   rewrite <- (Rmult_comm (Rabs (a N))).
   rewrite Rmult_assoc.

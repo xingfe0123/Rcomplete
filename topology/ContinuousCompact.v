@@ -11,27 +11,27 @@
  ================================================================================
 *)
 
-From Stdlib Require Import Reals Lra ClassicalEpsilon.
+From Stdlib Require Import Reals Lra ClassicalEpsilon PeanoNat Compare_dec.
 
 Open Scope R_scope.
 
 (* ================================================================ *)
-(*  度量空间                                                          *)
+(*  度量空间（用 MS 作字段名避免与参数冲突）                         *)
 (* ================================================================ *)
 
 Record MetricSpace : Type := mkMetricSpace {
-  X : Type;
-  d : X -> X -> R;
+  MS : Type;
+  d : MS -> MS -> R;
   d_nonneg : forall x y, 0 <= d x y;
   d_eq : forall x y, d x y = 0 <-> x = y;
   d_sym : forall x y, d x y = d y x;
   d_triangle : forall x y z, d x z <= d x y + d y z
 }.
 
-Definition ball {M : MetricSpace} (c : X M) (r : R) : X M -> Prop :=
+Definition ball (M : MetricSpace) (c : MS M) (r : R) : MS M -> Prop :=
   fun x => d M c x < r.
 
-Definition OpenSet {M : MetricSpace} (U : X M -> Prop) : Prop :=
+Definition OpenSet (M : MetricSpace) (U : MS M -> Prop) : Prop :=
   forall x, U x -> exists r, r > 0 /\
     forall y, ball M x r y -> U y.
 
@@ -39,37 +39,35 @@ Definition OpenSet {M : MetricSpace} (U : X M -> Prop) : Prop :=
 (*  连续函数                                                          *)
 (* ================================================================ *)
 
-Definition ContinuousAt {M1 M2 : MetricSpace} (f : X M1 -> X M2) (p : X M1) : Prop :=
+Definition ContinuousAt (M1 M2 : MetricSpace) (f : MS M1 -> MS M2) (p : MS M1) : Prop :=
   forall eps, eps > 0 ->
     exists delta, delta > 0 /\
       forall x, d M1 p x < delta -> d M2 (f p) (f x) < eps.
 
-Definition Continuous {M1 M2 : MetricSpace} (f : X M1 -> X M2) : Prop :=
-  forall p, ContinuousAt f p.
+Definition Continuous (M1 M2 : MetricSpace) (f : MS M1 -> MS M2) : Prop :=
+  forall p, ContinuousAt M1 M2 f p.
 
 (* ================================================================ *)
 (*  像集与预像                                                        *)
 (* ================================================================ *)
 
-Definition Image {M1 M2 : MetricSpace} (f : X M1 -> X M2) (E : X M1 -> Prop) : X M2 -> Prop :=
+Definition Image (M1 M2 : MetricSpace) (f : MS M1 -> MS M2) (E : MS M1 -> Prop) : MS M2 -> Prop :=
   fun y => exists x, E x /\ f x = y.
 
-Definition PreImage {M1 M2 : MetricSpace} (f : X M1 -> X M2) (V : X M2 -> Prop) : X M1 -> Prop :=
+Definition PreImage (M1 M2 : MetricSpace) (f : MS M1 -> MS M2) (V : MS M2 -> Prop) : MS M1 -> Prop :=
   fun x => V (f x).
 
 (* ================================================================ *)
-(*  紧性（用 nat + 上界 n 避免 Fin.t 导入冲突）                       *)
+(*  紧性                                                              *)
 (* ================================================================ *)
 
-Definition Cover {M : MetricSpace} (E : X M -> Prop) (F : (X M -> Prop) -> Prop) : Prop :=
-  (forall U, F U -> OpenSet U) /\
+Definition Cover (M : MetricSpace) (E : MS M -> Prop) (F : (MS M -> Prop) -> Prop) : Prop :=
+  (forall U, F U -> OpenSet M U) /\
   (forall x, E x -> exists U, F U /\ U x).
 
-(* 紧性的定义：对任意开覆盖，存在 n 和 sigma : nat -> (X M -> Prop)，
-   使得 i < n 时 sigma(i) ∈ F，且 E ⊆ ⋃_{i<n} sigma(i) *)
-Definition Compact {M : MetricSpace} (E : X M -> Prop) : Prop :=
-  forall F : (X M -> Prop) -> Prop, Cover E F ->
-    exists (n : nat) (sigma : nat -> (X M -> Prop)),
+Definition Compact (M : MetricSpace) (E : MS M -> Prop) : Prop :=
+  forall F : (MS M -> Prop) -> Prop, Cover M E F ->
+    exists (n : nat) (sigma : nat -> MS M -> Prop),
       (forall i, (i < n)%nat -> F (sigma i)) /\
       (forall x, E x -> exists i, (i < n)%nat /\ sigma i x).
 
@@ -77,9 +75,9 @@ Definition Compact {M : MetricSpace} (E : X M -> Prop) : Prop :=
 (*  引理                                                              *)
 (* ================================================================ *)
 
-Lemma preimage_of_open_is_open : forall {M1 M2 : MetricSpace}
-  (f : X M1 -> X M2) (V : X M2 -> Prop),
-  Continuous f -> OpenSet V -> OpenSet (PreImage f V).
+Lemma preimage_of_open_is_open : forall (M1 M2 : MetricSpace)
+  (f : MS M1 -> MS M2) (V : MS M2 -> Prop),
+  Continuous M1 M2 f -> OpenSet M2 V -> OpenSet M1 (PreImage M1 M2 f V).
 Proof.
   intros M1 M2 f V Hcont HV.
   unfold OpenSet. intros x Hx.
@@ -96,49 +94,47 @@ Qed.
 (* ================================================================ *)
 
 Theorem continuous_image_of_compact_is_compact :
-  forall (M1 M2 : MetricSpace) (f : X M1 -> X M2) (E : X M1 -> Prop),
-  Compact E ->
-  Continuous f ->
-  Compact (Image f E).
+  forall (M1 M2 : MetricSpace) (f : MS M1 -> MS M2) (E : MS M1 -> Prop),
+  Compact M1 E ->
+  Continuous M1 M2 f ->
+  Compact M2 (Image M1 M2 f E).
 Proof.
   intros M1 M2 f E Hcomp Hcont.
   unfold Compact. intros F HcoverF.
   unfold Compact in Hcomp.
-  set (G := fun U : X M1 -> Prop => exists V, F V /\ U = PreImage f V).
-  assert (HG : Cover E G).
+  set (G := fun U : MS M1 -> Prop => exists V, F V /\ U = PreImage M1 M2 f V).
+  assert (HG : Cover M1 E G).
   { split.
     - intros U [V [HVF HUV]].
       rewrite HUV. apply preimage_of_open_is_open.
       + exact Hcont.
       + destruct HcoverF as [HFopen _]. apply HFopen. exact HVF.
     - intros x Hx.
-      assert (Hfx : Image f E (f x)). { exists x. split. exact Hx. reflexivity. }
+      assert (Hfx : Image M1 M2 f E (f x)). { exists x. split. exact Hx. reflexivity. }
       destruct HcoverF as [_ HFcover].
       specialize (HFcover (f x) Hfx) as [V [HVF HVfx]].
-      exists (PreImage f V).
+      exists (PreImage M1 M2 f V).
       split.
       + exists V. auto.
       + exact HVfx.
   }
   specialize (Hcomp G HG) as [n [sigma [HGsub HGcover]]].
-  (* 从 sigma(i) : G 提取对应的 V_i : F *)
   assert (Hex : forall i, (i < n)%nat ->
-    exists V : X M2 -> Prop, F V /\ sigma i = PreImage f V).
+    exists V : MS M2 -> Prop, F V /\ sigma i = PreImage M1 M2 f V).
   { intros i Hi. specialize (HGsub i Hi) as [V [HVF Hisigma]].
     exists V. auto. }
-  (* 用 constructive choice 构造 select *)
   set (select := fun i : nat =>
-    match lt_dec i n with
+    match Compare_dec.lt_dec i n with
     | left Hi => proj1_sig (constructive_indefinite_description _ (Hex i Hi))
-    | right _ => fun _ => True  (* _dummy，不会被使用 *)
+    | right _ => fun _ => True
     end).
   assert (HselectF : forall i, (i < n)%nat -> F (select i)).
-  { intros i Hi. unfold select. destruct (lt_dec i n) as [Hi' | Hn].
-    - destruct constructive_indefinite_description as [V [HVF _]]. exact HVF.
+  { intros i Hi. unfold select. destruct (Compare_dec.lt_dec i n).
+    - unfold proj1_sig. destruct constructive_indefinite_description as [V [HVF _]]. exact HVF.
     - contradiction. }
-  assert (HselectEq : forall i, (i < n)%nat -> sigma i = PreImage f (select i)).
-  { intros i Hi. unfold select. destruct (lt_dec i n) as [Hi' | Hn].
-    - destruct constructive_indefinite_description as [V [_ Heq]]. exact Heq.
+  assert (HselectEq : forall i, (i < n)%nat -> sigma i = PreImage M1 M2 f (select i)).
+  { intros i Hi. unfold select. destruct (Compare_dec.lt_dec i n).
+    - unfold proj1_sig. destruct constructive_indefinite_description as [V [_ Heq]]. exact Heq.
     - contradiction. }
   exists n. exists select.
   split.
