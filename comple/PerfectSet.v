@@ -145,19 +145,39 @@ Proof.
 Qed.
 
 (* Pointwise comparison: if f i < g i for all i, then sum_fin f < sum_fin g *)
+(* Auxiliary: non-strict pointwise comparison by induction *)
+Lemma sum_fin_pointwise_le : forall (n : nat) (f g : Fin.t n -> R),
+  (forall i, f i <= g i) -> @sum_fin n f <= @sum_fin n g.
+Proof.
+  intros n f g Hfg.
+  induction n as [|n' IHn'].
+  - simpl. lra.
+  - simpl. apply Rplus_le_compat.
+    + apply Hfg.
+    + apply (IHn' (fun i => f (Fin.FS i)) (fun i => g (Fin.FS i))). intro i. apply Hfg.
+Qed.
+
 Lemma sum_fin_pointwise_lt : forall (n : nat) (f g : Fin.t n -> R),
   (0 < n)%nat -> (forall i, f i < g i) -> @sum_fin n f < @sum_fin n g.
 Proof.
-  (* Proof by induction on n with Fin.caseS *)
-  (* Technical blocker: implicit parameter inference in apply *)
-Admitted.
+  intros n f g Hlt Hfg.
+  destruct n as [|n'].
+  - contradict Hlt. lia.
+  - simpl.
+    assert (H_F1 : f Fin.F1 < g Fin.F1) by apply Hfg.
+    assert (H_rest : sum_fin (fun i => f (Fin.FS i)) <= sum_fin (fun i => g (Fin.FS i))).
+    { apply sum_fin_pointwise_le. intro i. apply Rlt_le. apply Hfg. }
+    lra.
+Qed.
 
 Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
   (0 < n)%nat -> (forall i, f i < eps) -> @sum_fin n f < (INR n) * eps.
 Proof.
-  (* Proof using sum_fin_const and sum_fin_pointwise_lt *)
-  (* Technical blocker: depends on sum_fin_pointwise_lt *)
-Admitted.
+  intros n f eps Hlt Heps.
+  assert (Heq : sum_fin (fun _ : Fin.t n => eps) = INR n * eps) by apply sum_fin_const.
+  rewrite <- Heq.
+  apply (sum_fin_pointwise_lt n f (fun _ => eps) Hlt Heps).
+Qed.
 
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
 Proof.
@@ -229,19 +249,74 @@ Proof.
   apply (Rle_lt_trans _ _ _ Hbound HN).
 Qed.
 
+(* Helper: compute max of f i over all i : Fin.t n *)
+Fixpoint max_over_fin (n : nat) (f : Fin.t n -> nat) : nat :=
+  match n as n0 return (Fin.t n0 -> nat) -> nat with
+  | 0 => fun _ => 0%nat
+  | S n' => fun g => Nat.max (g Fin.F1) (max_over_fin n' (fun i => g (Fin.FS i)))
+  end f.
+
+Lemma max_over_fin_ge : forall (n : nat) (f : Fin.t n -> nat) (i : Fin.t n),
+  Nat.le (f i) (max_over_fin n f).
+Proof.
+  induction n as [|n' IHn'].
+  - intros f i. revert i. apply Fin.case0.
+  - intros f i. apply (Fin.caseS' i).
+    + simpl. apply Nat.le_max_l.
+    + intros j. simpl. eapply Nat.le_trans.
+      * apply (IHn' (fun i => f (Fin.FS i)) j).
+      * apply Nat.le_max_r.
+Qed.
+
+Definition nat_inhabited : inhabited nat := @inhabits nat (S O).
+
+(* Helper: extract N from Un_cv for a given epsilon *)
+Definition get_conv_N (n_dim0 : nat) (s : nat -> Fin.t n_dim0 -> R) (i : Fin.t n_dim0)
+  (lim_i : R) (Hconv : Un_cv (fun n => s n i) lim_i) (eps : R) (Heps : eps > 0) : nat :=
+  epsilon nat_inhabited (fun N => forall n0 : nat, Nat.le N n0 -> Rabs (s n0 i - lim_i) < eps).
+
 Theorem Rn_complete : forall s : nat -> Rn,
   CauchySeq s -> exists lim, LimitSeq s lim.
 Proof.
-  (* Proof strategy:
-     1. For each component i, (s_n i)_n is Cauchy (by Rn_cauchy_component)
-     2. By R_complete, each component converges to some l_i
-     3. Construct lim := fun i => l_i
-     4. Prove s converges to lim in R^n
-     Requires: Fin.t n_dim induction (nested), sum_fin_bound_eps *)
+  intros s Hcauchy.
+  set (lim := fun i : Fin.t n_dim => proj1_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))).
+  exists lim.
+  unfold LimitSeq.
+  intros eps Heps.
+  destruct (Compare_dec.lt_dec 0 n_dim) as [Hn | Hn].
+  - (* n_dim > 0: use sum_fin_bound_eps *)
+    assert (Hpos_div : 0 < eps / INR n_dim).
+    { assert (H : 0 < INR n_dim) by (apply lt_0_INR; exact Hn).
+      assert (Hpos : Rdiv eps (INR n_dim) > 0).
+      { unfold Rdiv. apply Rmult_lt_0_compat. exact Heps. apply Rinv_0_lt_compat. exact H. }
+      exact Hpos.
+    }
+    set (get_N := fun i : Fin.t n_dim =>
+      get_conv_N n_dim s i (lim i) (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy))) (eps / INR n_dim) Hpos_div).
+    exists (max_over_fin n_dim get_N).
+    intros n Hn0.
+    unfold Rn_distance.
+    assert (Hsum : @sum_fin n_dim (fun i => Rabs (s n i - lim i)) < (INR n_dim) * (eps / INR n_dim)).
+    { apply (sum_fin_bound_eps n_dim (fun i => Rabs (s n i - lim i)) (eps / INR n_dim) Hn).
+      intro i.
+      assert (Hn_i : Nat.le (get_N i) n).
+      { apply (Nat.le_trans (get_N i) (max_over_fin n_dim get_N) n (max_over_fin_ge n_dim get_N i) Hn0). }
+      pose proof (epsilon_spec nat_inhabited (fun N => forall n0 : nat, Nat.le N n0 -> Rabs (s n0 i - lim i) < eps / INR n_dim)
+        (proj2_sig (R_complete (fun n => s n i) (Rn_cauchy_component s i Hcauchy)) (eps / INR n_dim) Hpos_div)) as Hspec.
+      simpl in Hspec.
+      specialize (Hspec n Hn_i).
+      exact Hspec. }
+    assert (Heq : (INR n_dim) * (eps / INR n_dim) = eps).
+    { unfold Rdiv. rewrite <- Rmult_assoc. rewrite (Rmult_comm (INR n_dim) eps). rewrite Rmult_assoc. rewrite Rinv_r.
+      - rewrite Rmult_1_r. reflexivity.
+      - apply Rgt_not_eq. apply lt_0_INR. exact Hn.
+    }
+    rewrite Heq in Hsum.
+    exact Hsum.
+  - (* n_dim = 0: trivial, distance is always 0 *)
+    admit.
 Admitted.
 
-(* ===================================================================== *)
-(* Perfect Set Definition                                                 *)
 (* ===================================================================== *)
 
 Definition Closed (P : Rn -> Prop) : Prop :=

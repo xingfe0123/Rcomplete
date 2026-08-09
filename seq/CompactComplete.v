@@ -123,6 +123,31 @@ Proof.
 Qed.
 
 (******************************************************************************)
+(* 引理：有限最大值                                                             *)
+(******************************************************************************)
+
+Fixpoint maxn (f : nat -> R) (n : nat) : R :=
+  match n with
+  | 0 => 0
+  | S k => max (f k) (maxn f k)
+  end.
+
+Lemma maxn_ge :
+  forall (f : nat -> R) (n m : nat),
+    (m < n)%nat -> f m <= maxn f n.
+Proof.
+  intros f. induction n as [|n IH].
+  - intro m Hm. lia.
+  - intro m Hm. simpl.
+    destruct (Nat.eq_dec m n) as [Hmne | Hmne].
+    + subst. apply max_le.
+      * lra.
+      * exact (IH Hm).
+    + apply max_le_r.
+      * exact (IH Hm).
+Qed.
+
+(******************************************************************************)
 (* 引理：Cauchy 列有界                                                         *)
 (******************************************************************************)
 
@@ -132,16 +157,26 @@ Lemma cauchy_bounded :
     exists (q : ms) (M : R), M > 0 /\ forall n : nat, @dist ms (p n) q < M.
 Proof.
   intros ms p Hcauchy.
-  specialize (Hcauchy 1) as [N HN].
-  assert (H1 : 1 > 0). { lra. } exact H1.
-  exists (p N). exists 1.
-  split. lra.
-  intro n.
-  destruct (le_lt_dec N n) as [Hge | Hlt].
-  - specialize (HN n N Hge (le_n N)). lra.
-  - (* n < N: 用有限个距离的最大值 *)
-    admit.
-Admitted.
+  assert (H1 : 1 > 0). { lra. }
+  specialize (Hcauchy 1 H1) as [N HN].
+  exists (p N).
+  exists (2 + maxn (fun k => @dist ms (p k) (p N)) N).
+  split.
+  - assert (Hnonneg : 0 <= maxn (fun k => @dist ms (p k) (p N)) N).
+    { induction N as [|N IH].
+      - reflexivity.
+      - simpl. apply max_nonneg. exact IH. rewrite dist_nonneg. }
+    lra.
+  - intro n.
+    destruct (Nat.le_dec n N) as [HnN | HnN].
+    + (* n <= N *)
+      assert (Hn_lt : (n < S N)%nat). { lia. }
+      assert (Hdist_le : @dist ms (p n) (p N) <= maxn (fun k => @dist ms (p k) (p N)) (S N)).
+      { apply maxn_ge. exact Hn_lt. }
+      lra.
+    + (* n > N *)
+      specialize (HN n n HnN HnN). lra.
+Qed.
 
 Lemma strict_increasing_ge :
   forall (phi : nat -> nat),

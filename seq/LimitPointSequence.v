@@ -121,7 +121,9 @@ Proof.
     - (* p : positive *)
       exists (Pos.to_nat p).
       assert (Hconvert : INR (Pos.to_nat p) = IZR (Zpos p)).
-      { rewrite INR_IZR_INZ. rewrite Pos2Z.id. reflexivity. }
+      { rewrite INR_IZR_INZ.
+        assert (Hpos : 0 <= Zpos p) by apply Pos2Z.pos_is_pos.
+        rewrite (Z2Nat.id (Zpos p) Hpos). reflexivity. }
       rewrite Hconvert.
       lra.
     - (* 0 的情况：不可能 *)

@@ -92,27 +92,14 @@ Theorem summation_by_parts :
   forall (a b : nat -> R) (m n : nat),
     (0 < m)%nat -> (m <= n)%nat ->
     partial_sum (fun k => a k * b k) n - partial_sum (fun k => a k * b k) (m - 1) =
-    partial_sum a n * b n - partial_sum a (m - 1) * b m +
+    partial_sum a n * b n - partial_sum a (m - 1) * b (m - 1) +
     (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (pred n) -
      partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 2)).
 Proof.
   intros a b m n Hm_pos Hmn.
   rewrite (summation_by_parts_zero a b n).
   rewrite (summation_by_parts_zero a b (m - 1)).
-  (* 
-     S_n(a*b) = A_n * b_n + S_{n-1}(A*(b-b'))
-     S_{m-1}(a*b) = A_{m-1} * b_{m-1} + S_{m-2}(A*(b-b'))
-     
-     S_n(a*b) - S_{m-1}(a*b) = A_n * b_n - A_{m-1} * b_{m-1} + S_{n-1}(A*(b-b')) - S_{m-2}(A*(b-b'))
-     
-     但目标是 A_n * b_n - A_{m-1} * b_m + S_{n-1}(A*(b-b')) - S_{m-2}(A*(b-b'))
-     
-     需要 -A_{m-1} * b_{m-1} = -A_{m-1} * b_m
-     即 b_{m-1} = b_m，这不成立！
-     
-     所以这个证明方法不对。需要用不同的方法。
-  *)
-  admit.
+  lra.
 Qed.
 
 (******************************************************************************)
@@ -161,10 +148,16 @@ Theorem summation_by_parts_general :
   forall (a b : nat -> R) (m n : nat),
     (0 < m)%nat -> (m <= n)%nat ->
     partial_sum (fun k => a k * b k) n - partial_sum (fun k => a k * b k) (m - 1) =
-    partial_sum a n * b n - partial_sum a (m - 1) * b m +
+    partial_sum a n * b n - partial_sum a (m - 1) * b (m - 1) +
     (partial_sum (fun k => partial_sum a k * (b k - b (S k))) (n - 1) -
      partial_sum (fun k => partial_sum a k * (b k - b (S k))) (m - 2)).
-Admitted.
+Proof.
+  intros.
+  rewrite (summation_by_parts_zero a b n).
+  rewrite (summation_by_parts_zero a b (m - 1)).
+  assert (H1 : pred n = n - 1) by lia.
+  rewrite H1. lra.
+Qed.
 
 (******************************************************************************)
 (* 级数定义和 Cauchy 准则                                                     *)

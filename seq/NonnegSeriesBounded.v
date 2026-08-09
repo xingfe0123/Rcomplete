@@ -170,11 +170,13 @@ Proof.
   - exists (Rabs L + 1 + max_partial_sum_abs a N).
     intro n.
     destruct (le_lt_dec N n) as [Hge | Hlt].
-    + (* n >= N: |S_n - L| < eps/2 <= Rabs L + 1 *)
+    + (* n >= N: |S_n - L| < 1, so |S_n| <= |L| + 1 *)
       specialize (HN n Hge). unfold Rdist in HN.
-      apply Rle_trans with (eps / 2).
-      * apply Rlt_le. exact HN.
-      * lra.
+      assert (Habs : Rabs (partial_sum a n) <= Rabs L + 1).
+      { apply Rle_trans with (Rabs (partial_sum a n - L) + Rabs L).
+        - rewrite Rabs_triang. lra.
+        - lra. }
+      lra.
     + (* n < N: |S_n| <= max_{i<=N} |S_i| *)
       apply Rle_trans with (max_partial_sum_abs a N).
       * apply max_partial_sum_abs_ub. lia.
