@@ -16,7 +16,7 @@ From Stdlib Require Import Reals Lra ClassicalEpsilon PeanoNat Compare_dec.
 Open Scope R_scope.
 
 (* ================================================================ *)
-(*  度量空间（用 MS 作字段名避免与参数冲突）                         *)
+(*  度量空间                                                          *)
 (* ================================================================ *)
 
 Record MetricSpace : Type := mkMetricSpace {
@@ -123,18 +123,23 @@ Proof.
     exists V : MS M2 -> Prop, F V /\ sigma i = PreImage M1 M2 f V).
   { intros i Hi. specialize (HGsub i Hi) as [V [HVF Hisigma]].
     exists V. auto. }
+  set (select_raw := fun (i : nat) (Hi : (i < n)%nat) =>
+    proj1_sig (constructive_indefinite_description _ (Hex i Hi))).
   set (select := fun i : nat =>
     match Compare_dec.lt_dec i n with
-    | left Hi => proj1_sig (constructive_indefinite_description _ (Hex i Hi))
+    | left Hi => select_raw i Hi
     | right _ => fun _ => True
     end).
   assert (HselectF : forall i, (i < n)%nat -> F (select i)).
   { intros i Hi. unfold select. destruct (Compare_dec.lt_dec i n).
-    - unfold proj1_sig. destruct constructive_indefinite_description as [V [HVF _]]. exact HVF.
+    - unfold select_raw. unfold proj1_sig.
+      destruct constructive_indefinite_description as [V [HVF _]]. exact HVF.
     - contradiction. }
   assert (HselectEq : forall i, (i < n)%nat -> sigma i = PreImage M1 M2 f (select i)).
   { intros i Hi. unfold select. destruct (Compare_dec.lt_dec i n).
-    - unfold proj1_sig. destruct constructive_indefinite_description as [V [_ Heq]]. exact Heq.
+    - unfold select_raw. unfold proj1_sig.
+      destruct constructive_indefinite_description as [V [_ Heq]].
+      rewrite Heq. reflexivity.
     - contradiction. }
   exists n. exists select.
   split.
@@ -144,6 +149,6 @@ Proof.
     specialize (HGcover x Hx) as [i [Hi Hsigmaix]].
     exists i. split.
     + exact Hi.
-    + rewrite HselectEq. unfold PreImage.
-      rewrite <- Hfxy. exact Hsigmaix.
+    + rewrite (HselectEq i Hi) in Hsigmaix. unfold PreImage in Hsigmaix.
+      rewrite (eq_sym Hfxy). exact Hsigmaix.
 Qed.

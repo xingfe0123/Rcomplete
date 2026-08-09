@@ -60,16 +60,19 @@ Proof.
 
     (* 证明 |(f(x')-f x)/(x'-x)| <= |l| + 1 *)
     (* 证明 |(f(x')-f x)/(x'-x)| <= |l| + 1 *)
-    assert (Htri: Rabs (((f x' - f x) / (x' - x) - l) + l) <= Rabs ((f x' - f x) / (x' - x) - l) + Rabs l).
-    { apply Rabs_triang. }
+    assert (Heq_div: (f x' - f x) / (x' - x) = (f x' - f x) / (x' - x) - l + l) by lra.
     assert (Hbound: Rabs ((f x' - f x) / (x' - x)) <= Rabs l + 1).
     { unfold Rle. left.
-      replace (Rabs ((f x' - f x) / (x' - x))) with (Rabs ((f x' - f x) / (x' - x) - l + l)).
-      2: { repeat f_equal; lra. }
-      apply (Rle_lt_trans _ _ _ Htri).
-      replace (Rabs l + 1) with (1 + Rabs l).
-      2: { rewrite Rplus_comm. reflexivity. }
-      apply (Rplus_lt_compat_r _ _ _ Hf1). }
+      assert (Htri: Rabs (((f x' - f x) / (x' - x) - l) + l) <= Rabs ((f x' - f x) / (x' - x) - l) + Rabs l).
+      { apply Rabs_triang. }
+      assert (Hlt: Rabs ((f x' - f x) / (x' - x) - l) + Rabs l < Rabs l + 1).
+      { assert (Hlt_raw: Rabs ((f x' - f x) / (x' - x) - l) + Rabs l < 1 + Rabs l).
+        { apply (Rplus_lt_compat_r _ _ _ Hf1). }
+        assert (Hcomm: 1 + Rabs l = Rabs l + 1) by (rewrite Rplus_comm; reflexivity).
+        exact (eq_rect_r _ _ Hlt_raw _ Hcomm). }
+      assert (Hchain: Rabs ((f x' - f x) / (x' - x) - l + l) < Rabs l + 1).
+      { apply (Rle_lt_trans _ _ _ Htri Hlt). }
+      exact (eq_rect_r _ _ Hchain _ Heq_div). }
 
     (* 计算 |f(x')-f(x)| = |x'-x| * |(f(x')-f(x))/(x'-x)| *)
     replace (f x' - f x) with ((x' - x) * ((f x' - f x) / (x' - x))).

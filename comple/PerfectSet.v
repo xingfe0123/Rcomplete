@@ -144,11 +144,19 @@ Proof.
     ring.
 Qed.
 
-Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
-  (0 < n)%nat -> (forall i, f i < eps) -> @sum_fin n f < (INR n) * eps.
+(* Pointwise comparison: if f i < g i for all i, then sum_fin f < sum_fin g *)
+Lemma sum_fin_pointwise_lt : forall (n : nat) (f g : Fin.t n -> R),
+  (0 < n)%nat -> (forall i, f i < g i) -> @sum_fin n f < @sum_fin n g.
 Proof.
   (* Proof by induction on n with Fin.caseS *)
   (* Technical blocker: implicit parameter inference in apply *)
+Admitted.
+
+Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
+  (0 < n)%nat -> (forall i, f i < eps) -> @sum_fin n f < (INR n) * eps.
+Proof.
+  (* Proof using sum_fin_const and sum_fin_pointwise_lt *)
+  (* Technical blocker: depends on sum_fin_pointwise_lt *)
 Admitted.
 
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.
