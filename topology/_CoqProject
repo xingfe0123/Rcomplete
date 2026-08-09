@@ -3,4 +3,11 @@ HeineBorelLimitPoint.v
 ContinuityDefinitions.v
 LimitContinuity.v
 ContinuousCompact.v
-CompactImageClosedBounded.v
+ContinuousBounded.v
+ContinuousInverse.v
+UniformContinuity.v
+NonCompactCounterExamples.v
+Vec.v
+ContinuousConnected.v
+MonotoneLimits.v
+MonotoneDiscontinuities.v
