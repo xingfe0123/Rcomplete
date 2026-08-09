@@ -205,7 +205,36 @@ Theorem root_test_convergent :
     (exists N : nat, forall n : nat, (N <= n)%nat ->
       Rabs (a n) <= r ^ n) ->
     series_cv a.
-Admitted.
+Proof.
+  intros a r Hr0 Hr1 [N HN].
+  assert (Hr_abs : Rabs r < 1).
+  { apply Rle_lt_trans with r; [apply Rabs_pos | exact Hr1]. }
+  assert (Hgeo : series_cv (fun n => r ^ n)).
+  { apply geometric_series_cv. exact Hr_abs. }
+  assert (Habs : forall n, Rabs (a n) <= (fun n => r ^ n) n).
+  { intro n. destruct (le_dec N n) as [Hle | Hgt].
+    - apply HN. exact Hle.
+    - assert (Hr_n_pos : 0 <= r ^ n). { apply pow_le. exact Hr0. }
+      apply Rle_trans with (r ^ N).
+      + apply Rabs_pos.
+      + assert (Hn_lt_N : (n < N)%nat) by lia.
+        assert (Hr_N_pos : 0 <= r ^ N). { apply pow_le. exact Hr0. }
+        assert (Hr_n_le_N : r ^ n <= r ^ N).
+        { revert n Hn_lt_N. induction n as [|n IH]; intros Hn.
+          - lia.
+          - destruct (Nat.eq_dec n (N - 1)) as [Heq | Hneq].
+            * subst. assert (H : N = S (N - 1)) by lia. rewrite H. simpl.
+              apply Rmult_le_compat_l; [exact Hr0 | apply Rle_refl].
+            * assert (Hn_lt : (n < N - 1)%nat) by lia.
+              assert (HIH : r ^ n <= r ^ (N - 1)) by apply IH.
+              simpl. apply Rle_trans with (r * r ^ (N - 1)).
+              -- apply Rmult_le_compat_l; [exact Hr0 | exact HIH].
+              -- rewrite Rmult_comm. apply Rmult_le_compat_l; [exact Hr0 | apply Rle_refl]. }
+        exact Hr_n_le_N. }
+  assert (Hcnneg : forall n, (fun n => r ^ n) n >= 0).
+  { intro n. apply pow_le. exact Hr0. }
+  apply comparison_test; [exact Habs | exact Hcnneg | exact Hgeo].
+Qed.
 
 (******************************************************************************)
 (* 根值收敛法 — 发散部分                                                       *)

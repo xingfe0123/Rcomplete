@@ -275,7 +275,55 @@ Theorem ratio_test_convergent :
     (exists N : nat, forall n : nat, (N <= n)%nat ->
       a n <> 0 /\ Rabs (a (S n) / a n) <= r) ->
     series_cv a.
-Admitted.
+Proof.
+  intros a r Hr0 Hr1 [N HN].
+  assert (Hnz : forall n, (N <= n)%nat -> a n <> 0).
+  { intros n Hn. destruct (HN n Hn) as [Hnz _]. exact Hnz. }
+  assert (Hratio : forall n, (N <= n)%nat -> Rabs (a (S n) / a n) <= r).
+  { intros n Hn. destruct (HN n Hn) as [_ Hratio]. exact Hratio. }
+  assert (Hr_pos : 0 < r) by lra.
+  assert (Hbound : forall n, (N <= n)%nat -> Rabs (a n) <= Rabs (a N) * r ^ (n - N)).
+  { apply ratio_bound; [exact Hr0 | exact Hr1 | exact Hnz | exact Hratio]. }
+  assert (Hr_abs : Rabs r < 1).
+  { apply Rle_lt_trans with r; [apply Rabs_pos | exact Hr1]. }
+  assert (Hgeo : series_cv (fun n => r ^ n)).
+  { apply geometric_series_cv. exact Hr_abs. }
+  assert (Habs_N_pos : 0 < Rabs (a N)).
+  { apply Rabs_pos_lt. apply Hnz. lia. }
+  assert (Habs_N_nonneg : 0 <= Rabs (a N)).
+  { apply Rlt_le. exact Habs_N_pos. }
+  assert (Hscal : series_cv (fun n => Rabs (a N) * r ^ n)).
+  { apply series_scal_cv. exact Hgeo. }
+  assert (Habs : forall n, Rabs (a n) <= (fun n => Rabs (a N) * r ^ n) n).
+  { intro n. destruct (le_dec N n) as [Hle | Hgt].
+    - assert (Hb : Rabs (a n) <= Rabs (a N) * r ^ (n - N)) by apply Hbound.
+      rewrite abs_N_r_shift.
+      + exact Hb.
+      + exact Hr_pos.
+      + exact Hle.
+    - assert (Hr_n_pos : 0 <= r ^ n) by (apply pow_le; exact Hr0).
+      apply Rle_trans with (Rabs (a N) * r ^ N).
+      + apply Rabs_pos.
+      + assert (Hr_N_pos : 0 <= r ^ N) by (apply pow_le; exact Hr0).
+        assert (Hn_lt_N : (n < N)%nat) by lia.
+        assert (Hr_n_le_N : r ^ n <= r ^ N).
+        { revert n Hn_lt_N. induction n as [|n IH]; intros Hn.
+          - lia.
+          - destruct (Nat.eq_dec n (N - 1)) as [Heq | Hneq].
+            * subst. assert (H : N = S (N - 1)) by lia. rewrite H. simpl.
+              apply Rmult_le_compat_l; [exact Hr0 | apply Rle_refl].
+            * assert (Hn_lt : (n < N - 1)%nat) by lia.
+              assert (HIH : r ^ n <= r ^ (N - 1)) by apply IH.
+              simpl. apply Rle_trans with (r * r ^ (N - 1)).
+              -- apply Rmult_le_compat_l; [exact Hr0 | exact HIH].
+              -- rewrite Rmult_comm. apply Rmult_le_compat_l; [exact Hr0 | apply Rle_refl]. }
+        apply Rmult_le_compat_l; [exact Habs_N_nonneg | exact Hr_n_le_N]. }
+  assert (Hcnneg : forall n, (fun n => Rabs (a N) * r ^ n) n >= 0).
+  { intro n. unfold Rdiv. apply Rmult_le_compat_l.
+    - apply Rabs_pos.
+    - apply pow_le. exact Hr0. }
+  apply comparison_test; [exact Habs | exact Hcnneg | exact Hscal].
+Qed.
 
 (******************************************************************************)
 (* 比率收敛法 — 发散部分                                                       *)
