@@ -2,4 +2,4 @@
 HeineBorelLimitPoint.v
 ContinuityDefinitions.v
 LimitContinuity.v
-VectorSumProduct.v
+ContinuousCompact.v

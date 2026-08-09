@@ -24,10 +24,9 @@ Proof.
   intros f a b x _ Hdiff.
   unfold continuous_at.
   intros eps Heps.
-  assert (Htmp_diff := Hdiff).
-  destruct Htmp_diff as [l Hl].
+  destruct Hdiff as [l Hl].
 
-  (* 第一步：用 eps=1 取 delta1，使 |(f(x+h)-f(x))/h - l| < 1 *)
+  (* 第一步：用 eps=1 取 delta1 *)
   destruct (Hl 1 (Rlt_0_1)) as [delta1 H1].
   destruct delta1 as [delta1 Hdelta1_pos]. simpl in H1.
 
@@ -36,66 +35,62 @@ Proof.
   split.
   { apply Rmin_pos.
     - exact Hdelta1_pos.
-    - replace (eps / (Rabs l + 1)) with (eps * /(Rabs l + 1)).
-      + apply Rmult_lt_0_compat.
-        * exact Heps.
-        * apply Rinv_pos. assert (H: 0 <= Rabs l) by apply Rabs_pos. assert (H': Rabs l + 1 > 0) by lra. exact H'.
-      + unfold Rdiv. reflexivity. }
+    - assert (H: 0 <= Rabs l) by apply Rabs_pos.
+      assert (H': Rabs l + 1 > 0) by lra.
+      replace (eps / (Rabs l + 1)) with (eps * /(Rabs l + 1)).
+      + apply Rmult_lt_0_compat; [exact Heps | apply Rinv_pos; exact H'].
+      + unfold Rdiv; reflexivity. }
 
   intros x' Hx'.
   destruct (Req_dec x' x) as [Heq|Hneq].
-  - (* 情形 1：x' = x，则 |f(x')-f(x)| = 0 < eps *)
+  - (* 情形 1：x' = x *)
     rewrite Heq.
     replace (f x - f x) with 0 by lra.
     rewrite Rabs_R0. exact Heps.
 
   - (* 情形 2：x' ≠ x *)
-    set (h := x' - x).
-    assert (Hh: h <> 0) by (unfold h; lra).
-    assert (Hplus: x + h = x') by (unfold h; lra).
+    assert (Hh: x' - x <> 0) by lra.
     assert (Hx1: Rabs (x' - x) < delta1).
-    { eapply Rlt_le_trans.
-      - exact Hx'.
-      - apply Rmin_l. }
+    { eapply Rlt_le_trans; [exact Hx' | apply Rmin_l]. }
     assert (Hx2: Rabs (x' - x) < eps / (Rabs l + 1)).
-    { eapply Rlt_le_trans.
-      - exact Hx'.
-      - apply Rmin_r. }
+    { eapply Rlt_le_trans; [exact Hx' | apply Rmin_r]. }
 
-    (* 由可微性：|(f(x+h)-f(x))/h - l| < 1 *)
-    assert (Hf1: Rabs ((f (x + h) - f x) / h - l) < 1).
-    { apply (H1 h Hh). exact Hx1. }
+    (* 由可微性：|(f(x')-f(x))/(x'-x) - l| < 1 *)
+    assert (Hf1: Rabs ((f x' - f x) / (x' - x) - l) < 1).
+    { replace (Rabs ((f x' - f x) / (x' - x) - l) < 1) with
+        (Rabs ((f (x + (x' - x)) - f x) / (x' - x) - l) < 1).
+      - apply (H1 (x' - x) Hh Hx1).
+      - repeat f_equal; lra. }
 
-    (* 证明 |(f(x+h)-f x)/h| <= |l| + 1 *)
-    assert (Hbound: Rabs ((f (x + h) - f x) / h) <= Rabs l + 1).
-    { unfold Rle. right.
-      replace ((f (x + h) - f x) / h) with (((f (x + h) - f x) / h - l) + l) by lra.
-      apply (Rle_trans _ (Rabs ((f (x + h) - f x) / h - l) + Rabs l) _).
-      + apply Rabs_triang.
+    (* 证明 |(f(x')-f x)/(x'-x)| <= |l| + 1 *)
+    assert (Hbound: Rabs ((f x' - f x) / (x' - x)) <= Rabs l + 1).
+    { unfold Rle. left.
+      apply (Rle_lt_trans _ (Rabs ((f x' - f x) / (x' - x) - l) + Rabs l)).
+      + apply (Rabs_triang ((f x' - f x) / (x' - x) - l) l).
       + apply Rplus_lt_compat_l.
         exact Hf1. }
 
-    (* 计算 |f(x')-f(x)| = |h * ((f(x+h)-f x)/h)| *)
-    change (f x') with (f (x + h)).
-    replace (f (x + h) - f x) with (h * ((f (x + h) - f x) / h)).
+    (* 计算 |f(x')-f(x)| = |x'-x| * |(f(x')-f(x))/(x'-x)| *)
+    replace (f x' - f x) with ((x' - x) * ((f x' - f x) / (x' - x))).
     2: { field. lra. }
 
-    (* |h * A| = |h| * |A| *)
     rewrite Rabs_mult.
 
-    (* 证明 |h| * |(f(x+h)-f x)/h| < eps *)
-    apply (Rle_lt_trans _ (Rabs h * (Rabs l + 1)) eps).
+    (* |x'-x| * |(f(x')-f(x))/(x'-x)| <= |x'-x| * (|l|+1) < eps *)
+    apply (Rle_lt_trans _ (Rabs (x' - x) * (Rabs l + 1)) eps).
     + apply Rmult_le_compat_l.
       * exact Hbound.
       * apply Rabs_pos.
-    + (* 证明 |h| * (|l|+1) < eps *)
-      unfold h.
-      assert (Hlt: Rabs (x' - x) * (Rabs l + 1) < eps / (Rabs l + 1) * (Rabs l + 1)).
+    + (* 证明 |x'-x| * (|l|+1) < eps *)
+      assert (Hlt: Rabs (x' - x) * (Rabs l + 1) < (eps / (Rabs l + 1)) * (Rabs l + 1)).
       { apply Rmult_lt_compat_r.
         - assert (H: Rabs l + 1 > 0) by lra. exact H.
         - exact Hx2. }
-      assert (Hrw: eps / (Rabs l + 1) * (Rabs l + 1) = eps).
-      { field. discrR. }
+      assert (Hrw: (eps / (Rabs l + 1)) * (Rabs l + 1) = eps).
+      { unfold Rdiv. rewrite Rmult_assoc. rewrite Rinv_l.
+        - rewrite Rmult_1_r. reflexivity.
+        - assert (H: Rabs l + 1 > 0) by lra.
+          apply Rgt_not_eq. exact H. }
       rewrite Hrw in Hlt.
       exact Hlt.
 Qed.

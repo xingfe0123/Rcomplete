@@ -146,6 +146,9 @@ Qed.
 
 Lemma sum_fin_bound_eps : forall (n : nat) (f : Fin.t n -> R) (eps : R),
   (0 < n)%nat -> (forall i, f i < eps) -> @sum_fin n f < (INR n) * eps.
+Proof.
+  (* Proof by induction on n with Fin.caseS *)
+  (* Technical blocker: implicit parameter inference in apply *)
 Admitted.
 
 Lemma Rn_dist_tri : forall x y z, Rn_distance x z <= Rn_distance x y + Rn_distance y z.

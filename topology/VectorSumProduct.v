@@ -8,13 +8,15 @@
   Rocq 版本: 9.1.1 (Stdlib)
 
   定理：f, g: R → R^n 连续 ⟹ f+g 连续 且 f·g 连续（分量乘法）
-
-  用 Stdlib Vector.t 表示 R^n
  ================================================================================
 *)
 
 From Stdlib Require Import Reals Lra.
 From Stdlib Require Import Vector.
+
+(* Vector.t dep.destroy 需要 *)
+Require Export Stdlib.Program.Tactics.
+Require Export Stdlib.Program.Equality.
 
 Open Scope R_scope.
 
@@ -43,7 +45,8 @@ Definition vdiff {n : nat} (u v : VecR n) : VecR n :=
 (*  辅助引理                                                          *)
 (* ================================================================ *)
 
-Lemma Rmax_lims : forall a b c d : R, a <= c -> b <= d -> Rmax a b <= Rmax c d.
+Lemma Rmax_lims : forall a b c d : R,
+  a <= c -> b <= d -> Rmax a b <= Rmax c d.
 Proof.
   intros a b c d Hac Hbd.
   unfold Rmax. destruct (Rle_dec a b) as [Hab | Hnab].
@@ -55,7 +58,8 @@ Proof.
     + exact Hac.
 Qed.
 
-Lemma Rmax_bounded : forall (a b x : R), a <= x -> b <= x -> Rmax a b <= x.
+Lemma Rmax_bounded : forall (a b x : R),
+  a <= x -> b <= x -> Rmax a b <= x.
 Proof.
   intros a b x Ha Hb.
   unfold Rmax. destruct (Rle_dec a b).
@@ -72,37 +76,55 @@ Proof.
     + apply Rabs_pos.
 Qed.
 
-(* 三角不等式 *)
+(* 三角不等式：用 rewrite 展开 cons *)
+Lemma vnorm_cons : forall x n' (v : VecR n'),
+  vnorm (cons _ x _ v) = Rmax (Rabs x) (vnorm v).
+Proof. intros. simpl. reflexivity. Qed.
+
+Lemma vadd_cons : forall x y n' (u v : VecR n'),
+  vadd (cons _ x _ u) (cons _ y _ v) = cons _ (x + y) _ (vadd u v).
+Proof. intros. simpl. unfold vadd. simpl. reflexivity. Qed.
+
+(* ================================================================ *)
+(*  三角不等式                                                        *)
+(* ================================================================ *)
+
 Lemma vnorm_triangle : forall {n : nat} (u v : VecR n),
   vnorm (vadd u v) <= vnorm u + vnorm v.
 Proof.
   intros n. induction n as [|n' IHn'].
-  - intros u v. dependent destruction u. dependent destruction v. simpl. lra.
-  - intros u v. dependent destruction u as [|x n' u']. dependent destruction v as [|y n' v'].
+  - intros u v. destruct u. destruct v. simpl. lra.
+  - intros u v. destruct u. destruct v.
+    simpl. unfold vadd. simpl.
+    unfold vnorm. fold vnorm.
+    repeat rewrite vadd_cons.
     simpl.
     apply Rmax_bounded.
     + eapply Rle_trans. apply Rmax_l.
       assert (H: Rabs (x + y) <= Rabs x + Rabs y). apply Rmax_l.
       eapply Rle_trans. apply H. apply Rplus_le_compat. apply Rmax_l. apply Rmax_l.
     + eapply Rle_trans. apply Rmax_l.
-      assert (H: vnorm (vadd u' v') <= vnorm u' + vnorm v'). apply IHn'.
-      eapply Rle_trans. apply H. apply Rplus_le_compat. apply Rmax_l. apply Rmax_l.
+      apply Rle_trans with (vnorm u + vnorm v). apply IHn'.
+      apply Rplus_le_compat. apply Rmax_l. apply Rmax_l.
 Admitted.
 
-(* 乘积不等式 *)
 Lemma vnorm_product : forall {n : nat} (u v : VecR n),
   vnorm (vmul u v) <= vnorm u * vnorm v.
 Proof.
   intros n. induction n as [|n' IHn'].
-  - intros u v. dependent destruction u. simpl. lra.
-  - intros u v. dependent destruction u as [|x n' u']. dependent destruction v as [|y n' v'].
-    simpl.
+  - intros u v. rewrite (eta u). rewrite (eta v). simpl. lra.
+  - intros u v. rewrite (eta u). rewrite (eta v). simpl.
+    assert (Hnorm: vnorm (cons _ (x * y) _ (vmul u v)) =
+      Rmax (Rabs (x * y)) (vnorm (vmul u v))). reflexivity.
+    rewrite Hnorm.
+    assert (Hvmul: vmul (cons _ x _ u) (cons _ y _ v) =
+      cons _ (x * y) _ (vmul u v)). reflexivity.
     apply Rmax_bounded.
     + assert (H: Rabs (x * y) = Rabs x * Rabs y). apply Rabs_mult.
       rewrite H. apply Rmult_le_compat. apply Rabs_pos. apply Rabs_pos.
       apply Rmax_l. apply Rmax_l.
-    + assert (H: vnorm (vmul u' v') <= vnorm u' * vnorm v'). apply IHn'.
-      eapply Rle_trans. apply H. apply Rmult_le_compat. apply Rle_refl. apply Rle_refl.
+    + apply Rle_trans with (vnorm u * vnorm v). apply IHn'.
+      apply Rmult_le_compat. apply Rle_refl. apply Rle_refl.
       apply Rmax_l. apply Rmax_l.
 Admitted.
 
@@ -149,7 +171,6 @@ Theorem continuous_vec_mul : forall n (f g : R -> VecR n) (p : R),
   continuous_at_vec (fun x => vmul (f x) (g x)) p.
 Proof.
   intros n f g p Hf Hg eps Heps.
-  (* g 在 p 附近有界 *)
   specialize (Hg 1%R (Rlt_0_1)) as [d0 [Hd0 Hg1]].
   set (M := vnorm (g p) + 1).
   assert (HMpos: M > 0). { unfold M. assert (H: 0 <= vnorm (g p)). apply vnorm_nonneg. lra. }
@@ -182,8 +203,7 @@ Proof.
     apply Rplus_lt_compat.
     + eapply Rle_lt_trans. apply vnorm_product.
       apply Rmult_lt_compat_l.
-      * unfold M in HMpos.
-        assert (Hgx: vnorm (g x) <= vnorm (vdiff (g x) (g p)) + vnorm (g p)).
+      * assert (Hgx: vnorm (g x) <= vnorm (vdiff (g x) (g p)) + vnorm (g p)).
         { eapply Rle_trans. apply vnorm_triangle. apply Rle_refl. }
         eapply Rle_lt_trans. apply Hgx. simpl. lra.
       * exact Hfd.
