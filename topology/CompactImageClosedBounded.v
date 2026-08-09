@@ -37,6 +37,7 @@ Definition rn_dist {n : nat} (x y : Rn n) : R := linf_norm (vsub x y).
 Axiom linf_norm_nonneg : forall n (v : Rn n), 0 <= linf_norm v.
 Axiom linf_norm_triangle : forall n (u v : Rn n),
   linf_norm (fun i => (u i + v i)%R) <= linf_norm u + linf_norm v.
+Axiom rn_dist_sym : forall n (x y : Rn n), rn_dist x y = rn_dist y x.
 Axiom rn_dist_triangle : forall n (x y z : Rn n),
   rn_dist x z <= rn_dist x y + rn_dist y z.
 
@@ -56,9 +57,18 @@ Lemma open_ball_is_open : forall n (c : Rn n) (r : R),
 Proof.
   intros n c r x Hx.
   exists (r - rn_dist x c).
-  split. lra. apply rn_dist_nonneg.
-  intros y Hy. eapply Rlt_trans. exact Hy.
-  eapply Rle_lt_trans. apply rn_dist_triangle. simpl. lra.
+  split.
+  - assert (Hpos: rn_dist x c < r). exact Hx.
+    assert (Hdiff: 0 <= r - rn_dist x c). lra.
+    lra.
+  - intros y Hy.
+    unfold open_ball.
+    assert (Htri: rn_dist y c <= rn_dist y x + rn_dist x c).
+    { apply rn_dist_triangle. }
+    eapply Rle_lt_trans. exact Htri.
+    assert (Hsym: rn_dist y x = rn_dist x y). apply rn_dist_sym.
+    rewrite Hsym in Hy.
+    lra.
 Qed.
 
 (* ================================================================ *)

@@ -139,12 +139,18 @@ Proof.
       specialize (IH m Hm Hm_n) as IH.
       rewrite partial_sum_S. rewrite partial_sum_S.
       rewrite IH.
-      assert (Hm1 : S n - m = S (n - m)) by lia.
-      assert (Hm2 : n - m = S (n - m) - 1) by lia.
-      rewrite Hm1. rewrite partial_sum_S.
-      rewrite <- Hm2.
-      assert (Hm3 : m + (n - m) = n) by lia.
-      rewrite <- Hm3. lra.
+      (* 目标: partial_sum a n - partial_sum a (m-1) + a (S n) =
+               partial_sum (fun k => a (m+k)) (n-m) + a (S n) *)
+      (* 由 IH: partial_sum a n - partial_sum a (m-1) = partial_sum (fun k => a (m+k)) (n-m) *)
+      (* 但右边是 partial_sum (fun k => a (m+k)) (S n - m) *)
+      (* S n - m = S (n - m), 所以 partial_sum_S 展开 *)
+      assert (Hdiff : S n - m = S (n - m)) by lia.
+      rewrite Hdiff. rewrite partial_sum_S.
+      (* (fun k => a (m + k)) (S (n - m)) = a (m + S (n - m)) = a (S n) *)
+      assert (Hidx2 : m + S (n - m) = S n) by lia.
+      replace (a (m + S (n - m))) with (a (S n)).
+      - lra.
+      - rewrite Hidx2. reflexivity.
 Qed.
 
 (******************************************************************************)
