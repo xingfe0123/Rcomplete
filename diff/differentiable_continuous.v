@@ -24,10 +24,10 @@ Proof.
   intros f a b x _ Hdiff.
   unfold continuous_at.
   intros eps Heps.
-  destruct Hdiff as [l Hl].
+  destruct Hdiff as (l & Hl).
 
-  destruct (Hl 1 (Rlt_0_1)) as [delta1 H1].
-  destruct delta1 as [delta1 Hdelta1_pos]. simpl in H1.
+  destruct (Hl 1 (Rlt_0_1)) as (delta1 & H1).
+  destruct delta1 as (delta1 & Hdelta1_pos). simpl in H1.
 
   exists (Rmin delta1 (eps / (Rabs l + 1))).
   split.
@@ -59,7 +59,6 @@ Proof.
       - repeat f_equal; lra. }
 
     (* 证明 |(f(x')-f x)/(x'-x)| <= |l| + 1 *)
-    (* 证明 |(f(x')-f x)/(x'-x)| <= |l| + 1 *)
     assert (Heq_div: (f x' - f x) / (x' - x) = (f x' - f x) / (x' - x) - l + l) by lra.
     assert (Hbound: Rabs ((f x' - f x) / (x' - x)) <= Rabs l + 1).
     { unfold Rle. left.
@@ -84,17 +83,20 @@ Proof.
 
     apply (Rle_lt_trans _ (Rabs (x' - x) * (Rabs l + 1)) eps).
     + apply Rmult_le_compat_l.
-      * exact Hbound.
       * apply Rabs_pos.
+      * exact Hbound.
     + assert (Hlt: Rabs (x' - x) * (Rabs l + 1) < (eps / (Rabs l + 1)) * (Rabs l + 1)).
       { apply Rmult_lt_compat_r.
-        - assert (H: Rabs l + 1 > 0) by lra. exact H.
+        - assert (H: 0 <= Rabs l) by apply Rabs_pos.
+          assert (H': Rabs l + 1 > 0) by lra.
+          exact H'.
         - exact Hx2. }
       assert (Hrw: (eps / (Rabs l + 1)) * (Rabs l + 1) = eps).
       { unfold Rdiv. rewrite Rmult_assoc. rewrite Rinv_l.
         - rewrite Rmult_1_r. reflexivity.
-        - assert (H: Rabs l + 1 > 0) by lra.
-          apply Rgt_not_eq. exact H. }
+        - assert (H: 0 <= Rabs l) by apply Rabs_pos.
+          assert (H': Rabs l + 1 > 0) by lra.
+          apply Rgt_not_eq. exact H'. }
       rewrite Hrw in Hlt.
       exact Hlt.
 Qed.
@@ -116,12 +118,16 @@ Proof.
   intros f g x lf lg Hf Hg.
   unfold derivable_at in *.
   intros eps Heps.
-  destruct (Hf eps Heps) as [df [Hdf_pos Hf_eps]].
-  destruct (Hg eps Heps) as [dg [Hdg_pos Hg_eps]].
+  destruct (Hf eps Heps) as [df Hf_tmp].
+  destruct Hf_tmp as [Hdf_pos Hf_eps].
+  destruct df as [df Hdf_pos']. simpl in Hf_eps.
+  destruct (Hg eps Heps) as [dg Hg_tmp].
+  destruct Hg_tmp as [Hdg_pos Hg_eps].
+  destruct dg as [dg Hdg_pos']. simpl in Hg_eps.
   exists (Rmin df dg).
   split.
   { apply Rmin_pos; [exact Hdf_pos | exact Hdg_pos]. }
-  intros h Hh_lt Hh_neq.
+  refine (fun (h : R) (Hh_lt : Rabs h < Rmin df dg) (Hh_neq : h <> 0) => _).
   unfold Rminus.
   replace ((f (x + h) + g (x + h) - (f x + g x)) / h) with
     ((f (x + h) - f x) / h + (g (x + h) - g x) / h).
@@ -154,11 +160,12 @@ Proof.
   assert (Hf_cont: continuous_at f x).
   { apply (differentiable_continuous f x x (or_introl (refl_equal _)) (ex_intro _ lf Hf)). }
 
-  destruct (Hf eps Heps) as [df [Hdf_pos Hf_eps]].
-  destruct (Hg eps Heps) as [dg [Hdg_pos Hg_eps]].
-
-  (* 连续性给出界 *)
-  destruct (Hf_cont 1 (Rlt_0_1)) as [df_cont [Hdf_cont_pos Hf_cont_bound]].
+  destruct (Hf eps Heps) as [df Hf_tmp].
+  destruct Hf_tmp as [Hdf_pos Hf_eps].
+  destruct (Hg eps Heps) as [dg Hg_tmp].
+  destruct Hg_tmp as [Hdg_pos Hg_eps].
+  destruct (Hf_cont 1 (Rlt_0_1)) as [df_cont Hf_cont_tmp].
+  destruct Hf_cont_tmp as [Hdf_cont_pos Hf_cont_bound].
 
   exists (Rmin df (Rmin dg df_cont)).
   split.
@@ -172,8 +179,9 @@ Proof.
     ((f (x + h) - f x) / h * g (x + h) + f x * ((g (x + h) - g x) / h)).
   2: { field. lra. }
 
-  apply Rle_lt_trans with
-    (Rabs ((f (x + h) - f x) / h * g (x + h) + f x * ((g (x + h) - g x) / h) - (lf * g x + f x * lg))).
+  (* 现在需要证明这个表达式与 lf * g x + f x * lg 的差在 eps 内 *)
+  assert (Hlt_arg: 0 < 1) by apply Rlt_0_1.
+
 Admitted.
 
 (* 倒数法则：(1/g)' = -g'/g^2 *)
