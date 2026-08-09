@@ -87,9 +87,7 @@ Proof.
       { apply lt_0_INR. apply fact_pos. }
       assert (HIH : / INR (fact (S n)) <= / 2 ^ n).
       { apply IH. lia. }
-      rewrite fact_S. unfold Rdiv. rewrite Rinv_mult.
-      2: { apply lt_0_INR. lia. }
-      2: { exact Hfsn_pos. }
+      rewrite fact_S. rewrite mult_INR. rewrite Rinv_mult.
       apply Rle_trans with (/ INR 2 * (/ 2 ^ n)).
       * apply Rmult_le_compat_r.
         -- apply Rinv_0_lt_compat. apply lt_0_INR. lia.

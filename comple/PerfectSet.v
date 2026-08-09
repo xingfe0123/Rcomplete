@@ -130,9 +130,25 @@ Qed.
 Lemma Rn_dist_iden_aux : forall (n : nat) (x y : Fin.t n -> R),
   sum_fin (fun i => Rabs (x i - y i)) = 0 -> forall i, Rabs (x i - y i) <= 0%R.
 Proof.
-  (* Proof by induction on n using Fin.caseS + Rplus_eq_0 *)
-  (* Technical blocker: lra cannot handle sum_fin recursive function *)
-Admitted.
+  induction n as [|n' IHn'].
+  - intros x y Hsum i. revert i. apply Fin.case0.
+  - intros x y Hsum i.
+    apply (Fin.caseS' i).
+    + simpl in Hsum.
+      assert (Hpos : 0 <= Rabs (x Fin.F1 - y Fin.F1)) by apply Rabs_pos.
+      assert (Hpos_rest : 0 <= sum_fin (fun i => Rabs (x (Fin.FS i) - y (Fin.FS i)))).
+      { apply (sum_fin_nonneg n' (fun i => Rabs (x (Fin.FS i) - y (Fin.FS i)))). intro. apply Rabs_pos. }
+      destruct (Rplus_eq_0 _ _ Hpos Hpos_rest Hsum) as [H1 H2].
+      rewrite H1.
+      apply Rle_refl.
+    + intros j.
+      simpl in Hsum.
+      assert (Hpos : 0 <= Rabs (x Fin.F1 - y Fin.F1)) by apply Rabs_pos.
+      assert (Hpos_rest : 0 <= sum_fin (fun i => Rabs (x (Fin.FS i) - y (Fin.FS i)))).
+      { apply (sum_fin_nonneg n' (fun i => Rabs (x (Fin.FS i) - y (Fin.FS i)))). intro. apply Rabs_pos. }
+      destruct (Rplus_eq_0 _ _ Hpos Hpos_rest Hsum) as [H1 H2].
+      apply (IHn' (fun i => x (Fin.FS i)) (fun i => y (Fin.FS i)) H2 j).
+Qed.
 
 Lemma Rn_dist_iden : forall x y, Rn_distance x y = 0 -> x = y.
 Proof.
